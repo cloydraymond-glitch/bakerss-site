@@ -3,486 +3,277 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Client Testimonials | Bakerss Services</title>
-
-  <meta name="description" content="Read what clients say about Bakerss Services and our white-glove property care for high-end homes in Myrtle Beach, Murrells Inlet, Conway, and Pawleys Island." />
-  <meta name="robots" content="index, follow" />
-  <link rel="canonical" href="https://www.bakerss.com/testimonials.html" />
-
+  <title>Testimonials | Bakersss Property Services</title>
+  <meta
+    name="description"
+    content="Read what customers are saying about Bakersss Property Services. Trusted property maintenance and landscaping services with a 5.0 star Google rating."
+  />
   <style>
-    :root {
-      --navy: #0f2f57;
-      --navy-dark: #0a203d;
-      --gold: #c89b3c;
-      --gold-soft: #f3ead6;
-      --white: #ffffff;
-      --text: #233243;
-      --muted: #5d6978;
-      --bg: #f8f8f6;
-      --card: #ffffff;
-      --border: rgba(15, 47, 87, 0.10);
-      --shadow: 0 14px 40px rgba(12, 29, 53, 0.08);
-      --radius: 20px;
-      --container: 1180px;
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
     }
-
-    * { box-sizing: border-box; }
-    html { scroll-behavior: smooth; }
 
     body {
-      margin: 0;
-      font-family: Arial, Helvetica, sans-serif;
-      background: var(--bg);
-      color: var(--text);
+      font-family: Arial, sans-serif;
       line-height: 1.6;
-    }
-
-    a { color: inherit; text-decoration: none; }
-
-    .container {
-      width: min(calc(100% - 32px), var(--container));
-      margin: 0 auto;
-    }
-
-    .topbar {
-      background: var(--navy-dark);
-      color: var(--white);
-      font-size: 0.95rem;
-    }
-
-    .topbar-inner {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      gap: 16px;
-      padding: 10px 0;
-      flex-wrap: wrap;
-    }
-
-    .site-header {
-      position: sticky;
-      top: 0;
-      z-index: 1000;
-      background: rgba(255,255,255,0.96);
-      backdrop-filter: blur(10px);
-      border-bottom: 1px solid var(--border);
-    }
-
-    .header-inner {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      gap: 20px;
-      padding: 16px 0;
-      position: relative;
-    }
-
-    .logo {
-      display: inline-block;
-      color: var(--navy);
-      line-height: 1;
-    }
-
-    .logo-title {
-      display: block;
-      font-family: Georgia, "Times New Roman", serif;
-      font-size: clamp(1.8rem, 2.8vw, 2.5rem);
-      font-weight: 700;
-      text-transform: uppercase;
-      letter-spacing: 0.03em;
-    }
-
-    .logo-subtitle {
-      display: inline-block;
-      margin-top: 4px;
-      font-size: 0.98rem;
-      font-weight: 700;
-      letter-spacing: 0.08em;
-      text-transform: uppercase;
-      color: var(--gold);
-    }
-
-    .nav-toggle {
-      display: none;
-      border: 1px solid var(--border);
-      background: var(--white);
-      padding: 10px 14px;
-      border-radius: 12px;
-      font-weight: 700;
-      cursor: pointer;
-      color: var(--navy);
-    }
-
-    .nav {
-      display: flex;
-      align-items: center;
-      gap: 24px;
-      font-weight: 700;
-      color: var(--navy);
-    }
-
-    .nav a:hover { color: var(--gold); }
-
-    .nav-cta {
-      display: inline-flex;
-      align-items: center;
-      justify-content: center;
-      padding: 12px 18px;
-      border-radius: 999px;
-      background: var(--navy);
-      color: var(--white) !important;
+      color: #222;
+      background: #f7f7f7;
     }
 
     .hero {
-      background:
-        linear-gradient(rgba(10, 24, 46, 0.58), rgba(10, 24, 46, 0.74)),
-        url('https://images.unsplash.com/photo-1513694203232-719a280e022f?auto=format&fit=crop&w=1800&q=80') center/cover no-repeat;
-      color: var(--white);
+      background: linear-gradient(rgba(0,0,0,.55), rgba(0,0,0,.55)),
+        url('images/testimonials-hero.jpg') center/cover no-repeat;
+      color: white;
+      text-align: center;
+      padding: 90px 20px 70px;
     }
 
-    .hero-inner {
-      padding: 86px 0 74px;
-    }
-
-    .eyebrow {
-      display: inline-block;
-      margin-bottom: 18px;
-      padding: 8px 14px;
-      background: rgba(255,255,255,0.12);
-      border: 1px solid rgba(255,255,255,0.18);
-      border-radius: 999px;
-      font-size: 0.88rem;
-      font-weight: 700;
-      letter-spacing: 0.08em;
-      text-transform: uppercase;
-    }
-
-    h1, h2, h3 { margin: 0 0 16px; line-height: 1.15; }
-
-    h1 {
-      font-family: Georgia, "Times New Roman", serif;
-      font-size: clamp(2.5rem, 5vw, 4.6rem);
-      max-width: 12ch;
+    .hero h1 {
+      font-size: 2.4rem;
+      margin-bottom: 15px;
     }
 
     .hero p {
-      max-width: 70ch;
-      font-size: 1.08rem;
-      color: rgba(255,255,255,0.94);
-      margin: 0 0 28px;
+      max-width: 760px;
+      margin: 0 auto;
+      font-size: 1.05rem;
     }
 
-    .button-row {
-      display: flex;
-      gap: 16px;
-      flex-wrap: wrap;
-      align-items: center;
+    .reviews-summary {
+      max-width: 1100px;
+      margin: -30px auto 40px;
+      background: white;
+      border-radius: 14px;
+      box-shadow: 0 10px 25px rgba(0,0,0,.08);
+      padding: 28px 20px;
+      text-align: center;
     }
 
-    .btn {
-      display: inline-flex;
-      align-items: center;
-      justify-content: center;
-      padding: 15px 22px;
-      border-radius: 999px;
-      border: none;
-      font-size: 1rem;
-      font-weight: 700;
-      cursor: pointer;
-      transition: transform 0.2s ease;
-    }
-
-    .btn:hover { transform: translateY(-2px); }
-
-    .btn-primary { background: var(--gold); color: var(--white); }
-    .btn-secondary {
-      background: rgba(255,255,255,0.1);
-      color: var(--white);
-      border: 1px solid rgba(255,255,255,0.24);
-    }
-
-    .section { padding: 76px 0; }
-
-    .section-header {
-      max-width: 840px;
-      margin-bottom: 34px;
-    }
-
-    .section-header h2 {
-      color: var(--navy);
-      font-family: Georgia, "Times New Roman", serif;
-      font-size: clamp(2rem, 4vw, 3rem);
-    }
-
-    .section-header p {
-      color: var(--muted);
-      font-size: 1.08rem;
-      margin: 0;
-    }
-
-    .note-box,
-    .review-card,
-    .cta-box {
-      background: var(--card);
-      border: 1px solid var(--border);
-      border-radius: 24px;
-      box-shadow: var(--shadow);
-    }
-
-    .note-box {
-      padding: 24px 26px;
-      margin-bottom: 28px;
-      color: var(--muted);
-    }
-
-    .reviews-grid {
-      display: grid;
-      grid-template-columns: repeat(3, minmax(0, 1fr));
-      gap: 22px;
-    }
-
-    .review-card {
-      padding: 28px;
-      position: relative;
+    .reviews-summary h2 {
+      font-size: 1.7rem;
+      margin-bottom: 10px;
+      color: #111;
     }
 
     .stars {
-      color: var(--gold);
-      font-size: 1.1rem;
+      font-size: 1.8rem;
+      color: #f4b400;
+      margin-bottom: 10px;
       letter-spacing: 2px;
-      margin-bottom: 14px;
     }
 
-    .review-text {
-      color: var(--text);
+    .rating-text {
       font-size: 1rem;
-      margin-bottom: 18px;
+      color: #444;
     }
 
-    .review-meta {
-      color: var(--muted);
-      font-size: 0.95rem;
-      font-weight: 700;
+    .testimonials-section {
+      max-width: 1100px;
+      margin: 0 auto 60px;
+      padding: 0 20px;
     }
 
-    .cta-section {
+    .section-title {
       text-align: center;
-      background: linear-gradient(180deg, #f7f4ec, #ffffff);
+      font-size: 2rem;
+      margin-bottom: 12px;
+      color: #111;
     }
 
-    .cta-box {
-      max-width: 920px;
-      margin: 0 auto;
-      padding: 46px 28px;
+    .section-subtitle {
+      text-align: center;
+      max-width: 760px;
+      margin: 0 auto 35px;
+      color: #555;
     }
 
-    .cta-box h2 {
-      color: var(--navy);
-      font-family: Georgia, "Times New Roman", serif;
-      font-size: clamp(2rem, 4vw, 3rem);
+    .testimonial-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 24px;
+    }
+
+    .testimonial-card {
+      background: white;
+      border-radius: 14px;
+      padding: 28px 22px;
+      box-shadow: 0 8px 20px rgba(0,0,0,.06);
+      border-top: 4px solid #1d4d2f;
+    }
+
+    .testimonial-card .card-stars {
+      color: #f4b400;
+      font-size: 1.1rem;
       margin-bottom: 14px;
     }
 
-    .cta-box p {
-      max-width: 720px;
+    .testimonial-card p {
+      color: #333;
+      margin-bottom: 18px;
+      min-height: 110px;
+    }
+
+    .reviewer {
+      font-weight: bold;
+      color: #1d4d2f;
+    }
+
+    .review-source {
+      font-size: 0.92rem;
+      color: #666;
+    }
+
+    .trust-section {
+      max-width: 1100px;
+      margin: 0 auto 60px;
+      padding: 0 20px;
+    }
+
+    .trust-box {
+      background: #1d4d2f;
+      color: white;
+      border-radius: 14px;
+      padding: 38px 24px;
+      text-align: center;
+    }
+
+    .trust-box h3 {
+      font-size: 1.8rem;
+      margin-bottom: 14px;
+    }
+
+    .trust-box p {
+      max-width: 760px;
       margin: 0 auto 24px;
-      color: var(--muted);
-      font-size: 1.08rem;
+      color: #e8f0ea;
     }
 
-    .footer {
-      background: var(--navy-dark);
-      color: rgba(255,255,255,0.92);
-      padding: 28px 0;
+    .cta-btn {
+      display: inline-block;
+      background: #f4b400;
+      color: #111;
+      text-decoration: none;
+      padding: 14px 26px;
+      border-radius: 8px;
+      font-weight: bold;
+      transition: 0.2s ease;
     }
 
-    .footer-inner {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      gap: 18px;
-      flex-wrap: wrap;
+    .cta-btn:hover {
+      opacity: 0.9;
     }
 
-    .footer-nav {
-      display: flex;
-      gap: 18px;
-      flex-wrap: wrap;
+    footer {
+      background: #111;
+      color: #ddd;
+      text-align: center;
+      padding: 24px 20px;
+      font-size: 0.95rem;
     }
 
-    @media (max-width: 980px) {
-      .reviews-grid { grid-template-columns: 1fr; }
-    }
-
-    @media (max-width: 860px) {
-      .nav-toggle { display: inline-flex; }
-      .nav {
-        display: none;
-        position: absolute;
-        left: 16px;
-        right: 16px;
-        top: calc(100% + 8px);
-        background: var(--white);
-        border: 1px solid var(--border);
-        border-radius: 18px;
-        box-shadow: var(--shadow);
-        padding: 18px;
-        flex-direction: column;
-        align-items: flex-start;
+    @media (max-width: 768px) {
+      .hero h1 {
+        font-size: 2rem;
       }
-      .nav.open { display: flex; }
-    }
 
-    @media (max-width: 640px) {
-      .topbar-inner,
-      .footer-inner {
-        flex-direction: column;
-        align-items: flex-start;
+      .section-title {
+        font-size: 1.7rem;
       }
-      .section { padding: 58px 0; }
-      .hero-inner { padding: 70px 0 58px; }
-      .review-card,
-      .cta-box,
-      .note-box { padding: 22px; }
-      .button-row .btn { width: 100%; }
+
+      .testimonial-card p {
+        min-height: auto;
+      }
     }
   </style>
 </head>
 <body>
-  <div class="topbar">
-    <div class="container topbar-inner">
-      <div>White-Glove Property Services for High-End Homes</div>
-      <div><a href="tel:8434677136">Call 843-467-7136</a></div>
-    </div>
-  </div>
 
-  <header class="site-header">
-    <div class="container header-inner">
-      <a class="logo" href="index.html" aria-label="Bakerss Services home">
-        <span class="logo-title">Bakerss</span>
-        <span class="logo-subtitle">Services</span>
-      </a>
+  <section class="hero">
+    <h1>Customer Reviews & Testimonials</h1>
+    <p>
+      Bakersss Property Services is proud to provide dependable property maintenance,
+      landscaping, and exterior care backed by trusted local service and a strong reputation.
+    </p>
+  </section>
 
-      <button class="nav-toggle" id="navToggle" aria-expanded="false" aria-controls="siteNav">Menu</button>
+  <section class="reviews-summary">
+    <h2>Rated 5.0 Stars on Google</h2>
+    <div class="stars">★★★★★</div>
+    <p class="rating-text">Based on 5 Google reviews for Bakersss Property Services</p>
+  </section>
 
-      <nav class="nav" id="siteNav" aria-label="Primary Navigation">
-        <a href="index.html">Home</a>
-        <a href="services.html">Services</a>
-        <a href="about.html">About</a>
-        <a href="testimonials.html">Testimonials</a>
-        <a href="mailto:info@bakerss.com" class="nav-cta">Request a Quote</a>
-      </nav>
-    </div>
-  </header>
+  <section class="testimonials-section">
+    <h2 class="section-title">What Our Customers Are Saying</h2>
+    <p class="section-subtitle">
+      Real feedback helps build trust. Below is a review section designed to highlight
+      your Google reputation, improve credibility, and support local SEO for property maintenance services.
+    </p>
 
-  <main>
-    <section class="hero">
-      <div class="container hero-inner">
-        <div class="eyebrow">Client Testimonials</div>
-        <h1>What Clients Are Saying</h1>
+    <div class="testimonial-grid">
+      <div class="testimonial-card">
+        <div class="card-stars">★★★★★</div>
+        <p>"Ray does a great job on yard work. He listens and makes sure you are pleased before he is finished."</p>
+        <div class="reviewer">Google Reviewer</div>
+        <div class="review-source">Google Review</div>
+      </div>
+
+      <div class="testimonial-card">
+        <div class="card-stars">★★★★★</div>
         <p>
-          Homeowners choose Bakerss Services because they want more than basic maintenance. They want communication, consistency, professionalism, and results that reflect the quality of their home.
+          " 
+They worked really fast and I’m really happy with the outcome"
         </p>
-        <div class="button-row">
-          <a class="btn btn-primary" href="mailto:info@bakerss.com">Request a Quote</a>
-          <a class="btn btn-secondary" href="tel:8434677136">Call 843-467-7136</a>
-        </div>
+        <div class="reviewer">Google Reviewer</div>
+        <div class="review-source">Google Review</div>
       </div>
-    </section>
 
-    <section class="section">
-      <div class="container">
-        <div class="section-header">
-          <h2>Google Reviews</h2>
-          <p>
-            Replace the placeholder testimonial text below with exact review wording from your Google Business Profile. This keeps the page truthful and compliant.
-          </p>
-        </div>
-
-        <div class="note-box">
-          I could not reliably verify your live Google review profile from public search results, so I set this page up with a finished layout and safe placeholders instead of inventing quotes. Once you send your Google Business Profile link or paste the reviews, I can swap them in exactly.
-        </div>
-
-        <div class="reviews-grid">
-          <article class="review-card">
-            <div class="stars">★★★★★</div>
-            <p class="review-text">“Add an exact Google review here. Choose a review that highlights communication, professionalism, and overall service quality.”</p>
-            <div class="review-meta">Google Review • Client Name</div>
-          </article>
-
-          <article class="review-card">
-            <div class="stars">★★★★★</div>
-            <p class="review-text">“Add an exact Google review here. This one should ideally mention white-glove service, attention to detail, or reliability.”</p>
-            <div class="review-meta">Google Review • Client Name</div>
-          </article>
-
-          <article class="review-card">
-            <div class="stars">★★★★★</div>
-            <p class="review-text">“Add an exact Google review here. A strong option would mention landscaping, pressure washing, gutter cleaning, or full property care.”</p>
-            <div class="review-meta">Google Review • Client Name</div>
-          </article>
-
-          <article class="review-card">
-            <div class="stars">★★★★★</div>
-            <p class="review-text">“Add an exact Google review here. Use one that speaks to responsiveness, scheduling, and ease of working with your team.”</p>
-            <div class="review-meta">Google Review • Client Name</div>
-          </article>
-
-          <article class="review-card">
-            <div class="stars">★★★★★</div>
-            <p class="review-text">“Add an exact Google review here. A review that mentions premium workmanship or trust is ideal for this section.”</p>
-            <div class="review-meta">Google Review • Client Name</div>
-          </article>
-
-          <article class="review-card">
-            <div class="stars">★★★★★</div>
-            <p class="review-text">“Add an exact Google review here. Choose one that reinforces your positioning above standard lawn care or maintenance companies.”</p>
-            <div class="review-meta">Google Review • Client Name</div>
-          </article>
-        </div>
+      <div class="testimonial-card">
+        <div class="card-stars">★★★★★</div>
+        <p>
+          "From start to finish, their team demonstrates professionalism, attention to detail, and a genuine passion for creating beautiful outdoor spaces. They take the time to understand your vision and bring it to life with precision and care. The quality of their work stands out whether it’s lawn maintenance, garden design, or a full landscape transformation, everything is done neatly and efficiently. Their reliability and consistency make them easy to trust, and their friendly customer service makes the entire experience smooth and enjoyable. If you’re looking for a landscaping company that delivers both quality results and excellent service, Bakerss Personal Touch is a fantastic choice. Highly recommended for anyone wanting to elevate their outdoor space."
+        </p>
+        <div class="reviewer">Google Reviewer</div>
+        <div class="review-source">Google Review</div>
       </div>
-    </section>
 
-    <section class="section cta-section">
-      <div class="container">
-        <div class="cta-box">
-          <h2>Ready for a Better Property Service Experience?</h2>
-          <p>
-            Bakerss Services provides white-glove property care for high-end homes in Myrtle Beach, Murrells Inlet, Conway, and Pawleys Island.
-          </p>
-          <div class="button-row" style="justify-content:center;">
-            <a class="btn btn-primary" href="mailto:info@bakerss.com">Email info@bakerss.com</a>
-            <a class="btn" style="background: var(--navy); color: var(--white);" href="tel:8434677136">Call 843-467-7136</a>
-            <a class="btn" style="background: var(--gold-soft); color: var(--navy);" href="services.html">View All Services</a>
-          </div>
-        </div>
+      <div class="testimonial-card">
+        <div class="card-stars">★★★★★</div>
+        <p>
+          " 
+Bakerss services did a wonderful job doing landscaping ,powering washing.And repainting my house and they are reasonable with prices !this company is a all in one"
+        </p>
+        <div class="reviewer">Google Reviewer</div>
+        <div class="review-source">Google Review</div>
       </div>
-    </section>
-  </main>
 
-  <footer class="footer">
-    <div class="container footer-inner">
-      <div>
-        <strong>Bakerss Services</strong><br />
-        White-Glove Property Care for High-End Homes
+      <div class="testimonial-card">
+        <div class="card-stars">★★★★★</div>
+        <p>
+          "The cleaning team did an amazing job on my house! They were professional, on time, and extremely thorough. Every room looked spotless and smelled fresh when they finished. I really appreciated their attention to detail and how respectful they were of my home. I would definitely recommend this company to anyone looking for reliable and high-quality cleaning services."
+        </p>
+        <div class="reviewer">Google Reviewer</div>
+        <div class="review-source">Google Review</div>
       </div>
-      <nav class="footer-nav" aria-label="Footer Navigation">
-        <a href="index.html">Home</a>
-        <a href="services.html">Services</a>
-        <a href="about.html">About</a>
-        <a href="mailto:info@bakerss.com">info@bakerss.com</a>
-      </nav>
     </div>
+  </section>
+
+  <section class="trust-section">
+    <div class="trust-box">
+      <h3>Trusted Local Property Maintenance</h3>
+      <p>
+        Bakersss Property Services is committed to reliable service, consistent communication,
+        and quality results. From landscaping to ongoing property upkeep, we work to deliver
+        professional service that homeowners and property managers can count on.
+      </p>
+      <a href="contact.html" class="cta-btn">Request a Quote</a>
+    </div>
+  </section>
+
+  <footer>
+    © 2025 Bakersss Property Services. All rights reserved.
   </footer>
 
-  <script>
-    const navToggle = document.getElementById('navToggle');
-    const siteNav = document.getElementById('siteNav');
-
-    navToggle.addEventListener('click', function () {
-      const isOpen = siteNav.classList.toggle('open');
-      navToggle.setAttribute('aria-expanded', String(isOpen));
-    });
-  </script>
 </body>
 </html>
