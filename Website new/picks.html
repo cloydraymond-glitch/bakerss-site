@@ -1,0 +1,705 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Today’s Picks | Winning 4 U Sports Picks & Daily Betting Card</title>
+  <meta name="description" content="Access today’s sports picks from Winning 4 U for NBA, NHL, NFL, and MLB. Daily betting picks are $10 with a clean layout for posting premium plays, analysis, and subscriber access." />
+  <meta name="keywords" content="today's picks, daily sports picks, premium picks, betting card, NBA picks today, NHL picks today, NFL picks today, MLB picks today, sports handicapping picks" />
+  <meta name="robots" content="index, follow" />
+  <meta name="author" content="Winning 4 U" />
+  <link rel="canonical" href="https://www.winning4u.com/picks.html" />
+
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Today’s Picks | Winning 4 U Sports Picks" />
+  <meta property="og:description" content="Daily sports picks for NBA, NHL, NFL, and MLB. Premium picks are $10 per day with simple access and documented analysis." />
+  <meta property="og:url" content="https://www.winning4u.com/picks.html" />
+  <meta property="og:image" content="https://www.winning4u.com/images/winning4u-logo.png" />
+
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Today’s Picks | Winning 4 U" />
+  <meta name="twitter:description" content="Get daily sports picks for only $10 per day." />
+  <meta name="twitter:image" content="https://www.winning4u.com/images/winning4u-logo.png" />
+
+  <style>
+    :root {
+      --bg: #07111f;
+      --bg-soft: #0d1b2f;
+      --card: #12233b;
+      --card-2: #0f2036;
+      --text: #f5f7fb;
+      --muted: #b7c3d6;
+      --green: #54d26f;
+      --green-dark: #35b654;
+      --gold: #ffc93c;
+      --gold-dark: #e3af1e;
+      --border: rgba(255, 255, 255, 0.12);
+      --shadow: 0 18px 50px rgba(0, 0, 0, 0.35);
+      --radius: 20px;
+      --max: 1200px;
+    }
+
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      background: linear-gradient(180deg, #06101d 0%, #0b1930 100%);
+      color: var(--text);
+      line-height: 1.6;
+    }
+
+    a { color: inherit; text-decoration: none; }
+    .container { width: min(var(--max), 92%); margin: 0 auto; }
+
+    .site-header {
+      position: sticky;
+      top: 0;
+      z-index: 50;
+      backdrop-filter: blur(12px);
+      background: rgba(6, 16, 29, 0.85);
+      border-bottom: 1px solid var(--border);
+    }
+
+    .header-inner {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 24px;
+      padding: 16px 0;
+    }
+
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      font-weight: 700;
+    }
+
+    .brand-logo {
+      width: 52px;
+      height: 52px;
+      border-radius: 16px;
+      background: linear-gradient(135deg, var(--green), var(--gold));
+      display: grid;
+      place-items: center;
+      color: #091321;
+      font-size: 1.2rem;
+      box-shadow: var(--shadow);
+    }
+
+    .brand-text strong {
+      display: block;
+      font-size: 1.15rem;
+      letter-spacing: 0.02em;
+    }
+
+    .brand-text span {
+      display: block;
+      font-size: 0.88rem;
+      color: var(--muted);
+    }
+
+    .site-nav {
+      display: flex;
+      align-items: center;
+      gap: 26px;
+      flex-wrap: wrap;
+      color: var(--muted);
+      font-weight: 700;
+      font-size: 0.95rem;
+    }
+
+    .site-nav a:hover,
+    .site-nav a:focus { color: var(--text); }
+
+    .btn {
+      display: inline-block;
+      border: 0;
+      border-radius: 12px;
+      padding: 14px 22px;
+      font-weight: 700;
+      cursor: pointer;
+      transition: transform 0.2s ease, opacity 0.2s ease, background 0.2s ease;
+      box-shadow: var(--shadow);
+    }
+
+    .btn:hover,
+    .btn:focus { transform: translateY(-1px); }
+
+    .btn-green { background: var(--green); color: #07111f; }
+    .btn-green:hover,
+    .btn-green:focus { background: var(--green-dark); }
+
+    .btn-gold { background: var(--gold); color: #07111f; }
+    .btn-gold:hover,
+    .btn-gold:focus { background: var(--gold-dark); }
+
+    .btn-outline {
+      background: transparent;
+      color: var(--text);
+      border: 1px solid var(--border);
+      box-shadow: none;
+    }
+
+    .hero {
+      padding: 72px 0 42px;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .hero::before {
+      content: "";
+      position: absolute;
+      width: 340px;
+      height: 340px;
+      right: -80px;
+      top: -70px;
+      border-radius: 999px;
+      background: rgba(255, 201, 60, 0.18);
+      filter: blur(75px);
+      pointer-events: none;
+    }
+
+    .eyebrow {
+      display: inline-block;
+      margin-bottom: 18px;
+      padding: 7px 12px;
+      border-radius: 999px;
+      background: rgba(255,255,255,0.06);
+      border: 1px solid var(--border);
+      color: var(--gold);
+      font-size: 0.86rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+    }
+
+    .hero-grid {
+      position: relative;
+      z-index: 1;
+      display: grid;
+      grid-template-columns: 1.15fr 0.85fr;
+      gap: 28px;
+      align-items: start;
+    }
+
+    .hero h1 {
+      margin: 0 0 14px;
+      font-size: clamp(2.4rem, 5vw, 4.2rem);
+      line-height: 0.98;
+      letter-spacing: -0.03em;
+    }
+
+    .hero p {
+      margin: 0;
+      max-width: 780px;
+      color: var(--muted);
+      font-size: 1.06rem;
+    }
+
+    .hero-actions {
+      display: flex;
+      gap: 14px;
+      flex-wrap: wrap;
+      margin-top: 24px;
+    }
+
+    .card {
+      background: linear-gradient(180deg, rgba(18, 35, 59, 0.95), rgba(11, 25, 48, 0.98));
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+      padding: 24px;
+    }
+
+    .pricing-card h2,
+    .section-title {
+      margin: 0 0 12px;
+      font-size: clamp(1.8rem, 3vw, 2.6rem);
+      line-height: 1.05;
+    }
+
+    .pricing-line {
+      display: flex;
+      justify-content: space-between;
+      gap: 18px;
+      padding: 13px 0;
+      border-bottom: 1px solid var(--border);
+      color: var(--muted);
+    }
+
+    .pricing-line strong { color: var(--text); }
+    .price-tag {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      margin-bottom: 16px;
+      padding: 9px 14px;
+      border-radius: 999px;
+      background: rgba(84, 210, 111, 0.12);
+      color: var(--green);
+      font-weight: 700;
+    }
+
+    section { padding: 28px 0 72px; }
+
+    .section-copy {
+      margin: 0 0 26px;
+      max-width: 760px;
+      color: var(--muted);
+      font-size: 1.03rem;
+    }
+
+    .layout-grid {
+      display: grid;
+      grid-template-columns: 1.1fr 0.9fr;
+      gap: 24px;
+      align-items: start;
+    }
+
+    .pick-list {
+      display: grid;
+      gap: 16px;
+    }
+
+    .pick-item {
+      padding: 18px;
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      background: rgba(255,255,255,0.04);
+    }
+
+    .pick-meta {
+      display: flex;
+      gap: 10px;
+      flex-wrap: wrap;
+      margin-bottom: 10px;
+    }
+
+    .badge {
+      display: inline-flex;
+      padding: 6px 10px;
+      border-radius: 999px;
+      background: rgba(255,255,255,0.08);
+      color: var(--gold);
+      font-size: 0.8rem;
+      font-weight: 700;
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+    }
+
+    .pick-item h3 {
+      margin: 0 0 8px;
+      font-size: 1.2rem;
+    }
+
+    .pick-item p {
+      margin: 0 0 10px;
+      color: var(--muted);
+    }
+
+    .pick-notes {
+      font-size: 0.94rem;
+      color: #d9e2f1;
+    }
+
+    .editor-box {
+      display: grid;
+      gap: 16px;
+    }
+
+    .editor-box label {
+      display: block;
+      margin-bottom: 6px;
+      font-size: 0.9rem;
+      font-weight: 700;
+      color: var(--text);
+    }
+
+    .editor-box input,
+    .editor-box select,
+    .editor-box textarea {
+      width: 100%;
+      padding: 13px 14px;
+      border-radius: 12px;
+      border: 1px solid var(--border);
+      background: rgba(255,255,255,0.04);
+      color: var(--text);
+      font: inherit;
+    }
+
+    .editor-box textarea {
+      min-height: 110px;
+      resize: vertical;
+    }
+
+    .editor-box small {
+      display: block;
+      color: var(--muted);
+      margin-top: 6px;
+      line-height: 1.5;
+    }
+
+    .editor-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 14px;
+    }
+
+    .steps {
+      display: grid;
+      gap: 14px;
+    }
+
+    .step {
+      display: flex;
+      gap: 14px;
+      padding: 16px;
+      border-radius: 16px;
+      background: rgba(255,255,255,0.04);
+      border: 1px solid var(--border);
+    }
+
+    .step-number {
+      width: 36px;
+      height: 36px;
+      border-radius: 12px;
+      background: linear-gradient(135deg, var(--green), var(--gold));
+      color: #07111f;
+      display: grid;
+      place-items: center;
+      font-weight: 800;
+      flex: 0 0 36px;
+    }
+
+    .step h3 {
+      margin: 0 0 4px;
+      font-size: 1.02rem;
+    }
+
+    .step p {
+      margin: 0;
+      color: var(--muted);
+      font-size: 0.95rem;
+    }
+
+    .faq-item {
+      padding: 20px;
+      border-radius: 16px;
+      background: rgba(255,255,255,0.04);
+      border: 1px solid var(--border);
+      margin-top: 14px;
+    }
+
+    .faq-item h3 {
+      margin: 0 0 8px;
+      font-size: 1.05rem;
+    }
+
+    .faq-item p {
+      margin: 0;
+      color: var(--muted);
+    }
+
+    .site-footer {
+      margin-top: 16px;
+      border-top: 1px solid var(--border);
+      padding: 34px 0 42px;
+      color: var(--muted);
+    }
+
+    .footer-grid {
+      display: grid;
+      grid-template-columns: 1fr auto;
+      gap: 24px;
+      align-items: start;
+    }
+
+    .footer-links {
+      display: flex;
+      gap: 18px;
+      flex-wrap: wrap;
+      justify-content: flex-end;
+      font-weight: 700;
+    }
+
+    @media (max-width: 980px) {
+      .hero-grid,
+      .layout-grid,
+      .editor-grid,
+      .footer-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .header-inner {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+    }
+
+    @media (max-width: 640px) {
+      .site-nav {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 12px;
+      }
+
+      .hero-actions .btn,
+      .btn {
+        width: 100%;
+        text-align: center;
+      }
+    }
+  </style>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebPage",
+    "name": "Today's Picks",
+    "url": "https://www.winning4u.com/picks.html",
+    "description": "Daily sports picks page for Winning 4 U with NBA, NHL, NFL, and MLB betting plays."
+  }
+  </script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="/" class="brand" aria-label="Winning 4 U home">
+        <div class="brand-logo">W4U</div>
+        <div class="brand-text">
+          <strong>Winning 4 U</strong>
+          <span>Daily sports picks & handicapping services</span>
+        </div>
+      </a>
+
+      <nav class="site-nav" aria-label="Primary">
+        <a href="/">Home</a>
+        <a href="/picks.html">Today's Picks</a>
+        <a href="/results.html">Results Tracker</a>
+        <a href="/faq.html">FAQ</a>
+        <a href="/contact.html">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container hero-grid">
+        <div>
+          <div class="eyebrow">Daily premium card</div>
+          <h1>Today’s sports picks and daily betting card.</h1>
+          <p>
+            Use this page to post the current premium plays for NBA, NHL, NFL, and MLB. The layout lets you update plays daily,
+            link to your payment button, and keep your homepage focused on broader sports picks SEO terms.
+          </p>
+          <div class="hero-actions">
+            <a class="btn btn-green" href="https://buy.stripe.com/your-payment-link">Buy Today’s Picks – $10</a>
+            <a class="btn btn-gold" href="/results.html">View Results Tracker</a>
+            <a class="btn btn-outline" href="#editor">How to Update This Page</a>
+          </div>
+        </div>
+
+        <aside class="card pricing-card" aria-label="Daily pick access pricing">
+          <div class="price-tag">Subscriber Access</div>
+          <h2>Daily picks are only $10.</h2>
+          <p style="margin: 0 0 18px; color: var(--muted);">
+            Keep this page current with today’s plays, then send buyers here after checkout or let the payment button live above the card.
+          </p>
+          <div class="pricing-line"><span>Price</span><strong>$10 / day</strong></div>
+          <div class="pricing-line"><span>Sports</span><strong>NBA, NHL, NFL, MLB</strong></div>
+          <div class="pricing-line"><span>Includes</span><strong>Daily premium card + notes</strong></div>
+          <div class="hero-actions" style="margin-top: 18px;">
+            <a class="btn btn-green" href="https://buy.stripe.com/your-payment-link">Pay for Today’s Plays</a>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <section>
+      <div class="container layout-grid">
+        <div>
+          <h2 class="section-title">Sample layout for today’s plays</h2>
+          <p class="section-copy">
+            Replace the sample picks below every day with the latest card. This page works best when each pick has the sport, market,
+            game, line, odds, unit size, and a short analysis note.
+          </p>
+
+          <div class="pick-list">
+            <article class="pick-item">
+              <div class="pick-meta">
+                <span class="badge">NBA</span>
+                <span class="badge">Spread</span>
+                <span class="badge">1 Unit</span>
+              </div>
+              <h3>Lakers +4.5 vs Celtics</h3>
+              <p><strong style="color: var(--text);">Odds:</strong> -110</p>
+              <div class="pick-notes">Short writeup: Example angle goes here. Mention form, matchup edge, injuries, rest advantage, or situational value.</div>
+            </article>
+
+            <article class="pick-item">
+              <div class="pick-meta">
+                <span class="badge">NHL</span>
+                <span class="badge">Moneyline</span>
+                <span class="badge">1.5 Units</span>
+              </div>
+              <h3>Rangers Moneyline</h3>
+              <p><strong style="color: var(--text);">Odds:</strong> -105</p>
+              <div class="pick-notes">Short writeup: Add goaltending matchup, recent form, travel angle, or special teams note.</div>
+            </article>
+
+            <article class="pick-item">
+              <div class="pick-meta">
+                <span class="badge">MLB</span>
+                <span class="badge">Total</span>
+                <span class="badge">1 Unit</span>
+              </div>
+              <h3>Over 8.5 Runs</h3>
+              <p><strong style="color: var(--text);">Odds:</strong> -115</p>
+              <div class="pick-notes">Short writeup: Add pitcher note, bullpen edge, park factor, or lineup trend.</div>
+            </article>
+          </div>
+        </div>
+
+        <aside class="card">
+          <h2 style="margin-top:0;">Best way to run daily subscriptions</h2>
+          <div class="steps">
+            <div class="step">
+              <div class="step-number">1</div>
+              <div>
+                <h3>Update this page every morning</h3>
+                <p>Swap out the sample picks with the new card for the day.</p>
+              </div>
+            </div>
+            <div class="step">
+              <div class="step-number">2</div>
+              <div>
+                <h3>Keep the payment link visible</h3>
+                <p>Use your Stripe, PayPal, or checkout link above the fold so buyers can pay fast.</p>
+              </div>
+            </div>
+            <div class="step">
+              <div class="step-number">3</div>
+              <div>
+                <h3>Move completed plays to results</h3>
+                <p>After the games finish, move the record to <strong style="color: var(--text);">results.html</strong> to keep this page current.</p>
+              </div>
+            </div>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <section id="editor">
+      <div class="container layout-grid">
+        <div class="card">
+          <h2 class="section-title" style="font-size: 2rem;">Simple daily update template</h2>
+          <p class="section-copy" style="margin-bottom:18px;">
+            Copy this format when you want to add new plays. This makes it easy for you to update the page without changing the whole design.
+          </p>
+
+          <div class="editor-box">
+            <div class="editor-grid">
+              <div>
+                <label>Sport</label>
+                <input type="text" value="NBA" readonly />
+              </div>
+              <div>
+                <label>Market</label>
+                <input type="text" value="Spread / Total / Moneyline" readonly />
+              </div>
+            </div>
+
+            <div class="editor-grid">
+              <div>
+                <label>Game or Team</label>
+                <input type="text" value="Lakers +4.5 vs Celtics" readonly />
+              </div>
+              <div>
+                <label>Odds / Units</label>
+                <input type="text" value="-110 | 1 Unit" readonly />
+              </div>
+            </div>
+
+            <div>
+              <label>Short analysis note</label>
+              <textarea readonly>Write 1 to 3 sentences on why you like the play. Mention matchup edge, injuries, line value, travel, rest, pitching, goalie, or pace depending on the sport.</textarea>
+            </div>
+
+            <small>
+              Best workflow: duplicate one pick block in the code, replace the sport, market, line, odds, units, and note, then save and republish.
+              This page is designed so you can add plays daily without rebuilding the layout.
+            </small>
+          </div>
+        </div>
+
+        <aside class="card">
+          <h2 style="margin-top:0;">Recommended subscription flow</h2>
+          <p style="color: var(--muted); margin-bottom:16px;">
+            For SEO and usability, keep this page public with enough information to rank and convert, then use one of these options:
+          </p>
+          <div class="steps">
+            <div class="step">
+              <div class="step-number">A</div>
+              <div>
+                <h3>Button to pay, then reveal full card elsewhere</h3>
+                <p>Good for controlled access, but requires a member flow or manual delivery.</p>
+              </div>
+            </div>
+            <div class="step">
+              <div class="step-number">B</div>
+              <div>
+                <h3>Public picks page with buy button on page</h3>
+                <p>Best for SEO because the page stays crawlable and still monetizes visitors.</p>
+              </div>
+            </div>
+          </div>
+          <p style="margin-top:16px; color: var(--muted);">
+            Best choice: <strong style="color: var(--text);">public picks page + buy button + results tracker</strong>.
+          </p>
+        </aside>
+      </div>
+    </section>
+
+    <section>
+      <div class="container">
+        <h2 class="section-title">Today’s picks FAQ</h2>
+
+        <div class="faq-item">
+          <h3>How do I add new plays every day?</h3>
+          <p>Edit the pick blocks on this page, replace the sample text with the new plays, then publish the update. Keep yesterday’s results on the results tracker page.</p>
+        </div>
+
+        <div class="faq-item">
+          <h3>Should I put the payment button on the homepage or picks page?</h3>
+          <p>The picks page is better because it matches user intent. Visitors searching for today’s picks are more likely to convert there than on the homepage.</p>
+        </div>
+
+        <div class="faq-item">
+          <h3>What should each play include?</h3>
+          <p>Each play should include the sport, market, matchup or team, odds, unit size, and a short analysis note. That makes the page more useful and more credible.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <strong style="display:block; color: var(--text); margin-bottom: 8px;">Winning 4 U</strong>
+        <div>Daily sports picks and handicapping services for NBA, NHL, NFL, and MLB.</div>
+        <div style="margin-top: 12px; font-size: 0.92rem;">
+          Sports picks are for informational and entertainment purposes only. Please wager responsibly and follow all laws in your location.
+        </div>
+      </div>
+
+      <div class="footer-links">
+        <a href="/">Home</a>
+        <a href="/results.html">Results</a>
+        <a href="/contact.html">Contact</a>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
