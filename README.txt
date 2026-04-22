@@ -1,20 +1,29 @@
 Bakerss Property Maintenance Website
 
-Upload everything in this folder to the root of your web hosting account for www.Bakerss.com.
+Files included:
+- index.html
+- white-glove.html
+- lawn-care.html
+- interior-cleaning.html
+- pressure-washing.html
+- handyman.html
+- contact.html
+- styles.css
+- script.js
+- robots.txt
+- sitemap.xml
+- site.webmanifest
 
-Required image files:
-/images/homepage.jpeg
-/images/interior-cleaning.jpeg
-/images/lawncare.jpeg
-/images/pressure-washing.jpeg
-/images/white-glove.jpeg
+Image paths used in the HTML/CSS:
+- /images/home/jpg
+- /images/white-glove.jpg
+- /images/lawn.jpg
+- /images/interior.png
+- /images/pressure-washing.png
+- /images/handyman.png
 
-Optional recommended image files if you want matching backgrounds on every service page:
-/images/landscaping.jpeg
-/images/handyman.jpeg
+Upload all files to your website root.
+Then place the images in the exact /images paths above.
 
-Notes:
-- The site is mobile-friendly and SEO-focused.
-- Phone links use tel:8434677136
-- Contact form uses mailto: for simple deployment.
-- Submit sitemap.xml to Google Search Console after publishing.
+Note: the home image path was written exactly as requested: /images/home/jpg
+If you meant /images/home.jpg instead, update index.html body style and replace the path.

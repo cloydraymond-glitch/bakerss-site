@@ -3,7 +3,7 @@
   "short_name": "Bakerss",
   "start_url": "/",
   "display": "standalone",
-  "background_color": "#101010",
-  "theme_color": "#e65c9c",
-  "icons": []
+  "background_color": "#111111",
+  "theme_color": "#111111",
+  "description": "Property maintenance services in Horry County, South Carolina."
 }
