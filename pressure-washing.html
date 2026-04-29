@@ -241,6 +241,13 @@
     .cross-link { display: inline-flex; align-items: center; gap: 5px; font-size: 13px; font-weight: 600; color: var(--pink-light); }
     .cross-link:hover { color: var(--white); }
 
+    .loc-cluster { display: grid; grid-template-columns: repeat(auto-fit,minmax(200px,1fr)); gap: 16px; margin-top: 36px; }
+    .loc-cluster-card { background: var(--white); border: 1px solid var(--border); border-radius: 10px; padding: 22px 18px; border-top: 3px solid var(--pink); text-decoration: none; display: flex; flex-direction: column; gap: 5px; transition: box-shadow .2s, transform .2s; }
+    .loc-cluster-card:hover { box-shadow: 0 8px 28px rgba(232,67,122,.12); transform: translateY(-3px); border-color: var(--pink); }
+    .loc-cluster-city { font-family: var(--font-display); font-size: 17px; font-weight: 600; color: var(--black); }
+    .loc-cluster-desc { font-size: 13px; color: var(--mid-gray); line-height: 1.55; flex: 1; }
+    .loc-cluster-link { font-size: 12px; font-weight: 600; color: var(--pink); margin-top: 5px; }
+
     /* CTA BAND */
     .cta-band { background: var(--pink); padding: 60px 24px; text-align: center; position: relative; overflow: hidden; }
     .cta-band::before { content: ''; position: absolute; inset: 0; background: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%23ffffff' fill-opacity='0.04'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/svg%3E"); }
@@ -537,11 +544,11 @@
       <h2 class="section-heading">Pressure Washing Across Horry County, SC</h2>
       <p class="lead">We provide professional pressure washing throughout Horry County — serving the coastal communities where salt air, humidity, and storm exposure make regular exterior cleaning essential.</p>
       <div class="areas-grid">
-        <div class="area-card"><div class="area-dot"></div><span>Myrtle Beach</span></div>
-        <div class="area-card"><div class="area-dot"></div><span>Conway</span></div>
-        <div class="area-card"><div class="area-dot"></div><span>Murrells Inlet</span></div>
-        <div class="area-card"><div class="area-dot"></div><span>Surfside Beach</span></div>
-        <div class="area-card"><div class="area-dot"></div><span>Carolina Forest</span></div>
+        <a href="/pressure-washing-myrtle-beach.html" class="area-card"><div class="area-dot"></div><span>Myrtle Beach</span></a>
+        <a href="/pressure-washing-conway-sc.html" class="area-card"><div class="area-dot"></div><span>Conway</span></a>
+        <a href="/pressure-washing-murrells-inlet.html" class="area-card"><div class="area-dot"></div><span>Murrells Inlet</span></a>
+        <a href="/pressure-washing-surfside-beach.html" class="area-card"><div class="area-dot"></div><span>Surfside Beach</span></a>
+        <a href="/pressure-washing-carolina-forest.html" class="area-card"><div class="area-dot"></div><span>Carolina Forest</span></a>
         <div class="area-card"><div class="area-dot"></div><span>Horry County</span></div>
       </div>
 
@@ -593,6 +600,42 @@
           <p>Small repairs, painting, and punch-list items handled alongside your exterior cleaning for a complete property refresh.</p>
           <a href="/handyman.html" class="cross-link">View Handyman Services →</a>
         </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- LOCATION CLUSTER -->
+  <section class="section section-alt">
+    <div class="inner">
+      <span class="section-label">Pressure Washing by City</span>
+      <h2 class="section-heading">Pressure Washing Across Horry County — By City</h2>
+      <p class="lead">Every city in Horry County has different exterior challenges — salt air, marsh deposits, pine debris, or HOA standards. Click your city for location-specific pressure washing information.</p>
+      <div class="loc-cluster">
+        <a href="/pressure-washing-myrtle-beach.html" class="loc-cluster-card">
+          <div class="loc-cluster-city">🏖️ Myrtle Beach</div>
+          <div class="loc-cluster-desc">Salt air, humidity, and year-round mold growth. The Grand Strand's most demanding exterior cleaning environment — driveways, siding, and vacation rental prep.</div>
+          <div class="loc-cluster-link">Pressure Washing — Myrtle Beach →</div>
+        </a>
+        <a href="/pressure-washing-murrells-inlet.html" class="loc-cluster-card">
+          <div class="loc-cluster-city">🌾 Murrells Inlet</div>
+          <div class="loc-cluster-desc">Marsh sediment, tidal deposits, and concentrated salt spray. Waterfront homes, docks, and MarshWalk-area vacation rentals face the heaviest buildup in Horry County.</div>
+          <div class="loc-cluster-link">Pressure Washing — Murrells Inlet →</div>
+        </a>
+        <a href="/pressure-washing-conway-sc.html" class="loc-cluster-card">
+          <div class="loc-cluster-city">🌳 Conway</div>
+          <div class="loc-cluster-desc">Oak canopy debris, river moisture, and historic surfaces. Centipede and organic staining on shaded driveways — plus careful soft-washing for historic brick and older homes.</div>
+          <div class="loc-cluster-link">Pressure Washing — Conway, SC →</div>
+        </a>
+        <a href="/pressure-washing-surfside-beach.html" class="loc-cluster-card">
+          <div class="loc-cluster-city">🏡 Surfside Beach</div>
+          <div class="loc-cluster-desc">The Family Beach — sand blasting, concentrated salt, and multi-level raised beach houses. Siding, elevated decks, and vacation rental curb appeal all need regular washing.</div>
+          <div class="loc-cluster-link">Pressure Washing — Surfside Beach →</div>
+        </a>
+        <a href="/pressure-washing-carolina-forest.html" class="loc-cluster-card">
+          <div class="loc-cluster-city">⛳ Carolina Forest</div>
+          <div class="loc-cluster-desc">Pine debris, severe pollen season, and HOA compliance requirements. Golf community aesthetics and HOA exterior standards demand consistent, professional pressure washing.</div>
+          <div class="loc-cluster-link">Pressure Washing — Carolina Forest →</div>
+        </a>
       </div>
     </div>
   </section>
