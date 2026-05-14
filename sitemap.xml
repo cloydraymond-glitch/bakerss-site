@@ -1,134 +1,158 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<?xml-stylesheet type="text/xsl" href="/sitemap.xsl"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+                            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
 
-  <!-- CORE PAGES -->
+  <!-- ═══ HOMEPAGE ════════════════════════════════════════════ -->
   <url>
     <loc>https://www.bakerss.com/</loc>
-    <changefreq>monthly</changefreq>
-    <priority>1.0</priority>
-  </url>
-  <url>
-    <loc>https://www.bakerss.com/index.html</loc>
-    <changefreq>monthly</changefreq>
+    <lastmod>2026-01-01</lastmod>
+    <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
 
-  <!-- SERVICE HUB PAGES -->
+  <!-- ═══ CORE PAGES ══════════════════════════════════════════ -->
   <url>
-    <loc>https://www.bakerss.com/interior-cleaning.html</loc>
+    <loc>https://www.bakerss.com/reviews</loc>
+    <lastmod>2026-01-01</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.bakerss.com/contact</loc>
+    <lastmod>2026-01-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <!-- ═══ SILO 1 — EXTERIOR SERVICES ════════════════════════ -->
+  <url>
+    <loc>https://www.bakerss.com/services/lawn-care</loc>
+    <lastmod>2026-01-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://www.bakerss.com/lawn-care.html</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
-  </url>
-  <url>
-    <loc>https://www.bakerss.com/pressure-washing.html</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
-  </url>
-  <url>
-    <loc>https://www.bakerss.com/white-glove.html</loc>
+    <loc>https://www.bakerss.com/services/landscaping</loc>
+    <lastmod>2026-01-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.bakerss.com/handyman.html</loc>
+    <loc>https://www.bakerss.com/services/bush-trimming</loc>
+    <lastmod>2026-01-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.bakerss.com/services/gutter-cleaning</loc>
+    <lastmod>2026-01-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.bakerss.com/reviews.html</loc>
+    <loc>https://www.bakerss.com/services/pressure-washing</loc>
+    <lastmod>2026-01-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- ═══ SILO 2 — INTERIOR & SPECIALIZED ════════════════════ -->
+  <url>
+    <loc>https://www.bakerss.com/services/interior-cleaning</loc>
+    <lastmod>2026-01-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://www.bakerss.com/services/airbnb-turnover-cleaning</loc>
+    <lastmod>2026-01-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://www.bakerss.com/services/painting</loc>
+    <lastmod>2026-01-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.bakerss.com/services/epoxy-flooring</loc>
+    <lastmod>2026-01-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
+
+  <!-- ═══ SILO 3 — PROPERTY TRADES ═══════════════════════════ -->
   <url>
-    <loc>https://www.bakerss.com/contact.html</loc>
+    <loc>https://www.bakerss.com/services/plumbing</loc>
+    <lastmod>2026-01-01</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.bakerss.com/services/electrical</loc>
+    <lastmod>2026-01-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.bakerss.com/services/handyman</loc>
+    <lastmod>2026-01-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
   </url>
 
-  <!-- AIRBNB / INTERIOR CLEANING LOCATION PAGES -->
+  <!-- ═══ SERVICE AREAS ════════════════════════════════════════ -->
   <url>
-    <loc>https://www.bakerss.com/airbnb-cleaning-myrtle-beach.html</loc>
+    <loc>https://www.bakerss.com/service-areas/myrtle-beach</loc>
+    <lastmod>2026-01-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://www.bakerss.com/airbnb-cleaning-murrells-inlet.html</loc>
+    <loc>https://www.bakerss.com/service-areas/murrells-inlet</loc>
+    <lastmod>2026-01-01</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
+    <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.bakerss.com/airbnb-cleaning-conway-sc.html</loc>
+    <loc>https://www.bakerss.com/service-areas/surfside-beach</loc>
+    <lastmod>2026-01-01</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
+    <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.bakerss.com/airbnb-cleaning-surfside-beach.html</loc>
+    <loc>https://www.bakerss.com/service-areas/garden-city</loc>
+    <lastmod>2026-01-01</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
+    <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.bakerss.com/airbnb-cleaning-carolina-forest.html</loc>
+    <loc>https://www.bakerss.com/service-areas/horry-county</loc>
+    <lastmod>2026-01-01</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
-  </url>
-
-  <!-- LAWN CARE LOCATION PAGES -->
-  <url>
-    <loc>https://www.bakerss.com/lawn-care-myrtle-beach.html</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
-  </url>
-  <url>
-    <loc>https://www.bakerss.com/lawn-care-murrells-inlet.html</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
-  </url>
-  <url>
-    <loc>https://www.bakerss.com/lawn-care-conway-sc.html</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
-  </url>
-  <url>
-    <loc>https://www.bakerss.com/lawn-care-surfside-beach.html</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
-  </url>
-  <url>
-    <loc>https://www.bakerss.com/lawn-care-carolina-forest.html</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
+    <priority>0.8</priority>
   </url>
 
-  <!-- PRESSURE WASHING LOCATION PAGES -->
-  <url>
-    <loc>https://www.bakerss.com/pressure-washing-myrtle-beach.html</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
-  </url>
-  <url>
-    <loc>https://www.bakerss.com/pressure-washing-murrells-inlet.html</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
-  </url>
-  <url>
-    <loc>https://www.bakerss.com/pressure-washing-conway-sc.html</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
-  </url>
-  <url>
-    <loc>https://www.bakerss.com/pressure-washing-surfside-beach.html</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
-  </url>
-  <url>
-    <loc>https://www.bakerss.com/pressure-washing-carolina-forest.html</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
-  </url>
+  <!-- ═══ LOCALIZED SERVICE PAGES (high-intent long-tail) ════ -->
+  <!-- Lawn Care by City -->
+  <url><loc>https://www.bakerss.com/services/lawn-care-myrtle-beach</loc><lastmod>2026-01-01</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://www.bakerss.com/services/lawn-care-murrells-inlet</loc><lastmod>2026-01-01</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.bakerss.com/services/lawn-care-surfside-beach</loc><lastmod>2026-01-01</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.bakerss.com/services/lawn-care-garden-city</loc><lastmod>2026-01-01</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <!-- Cleaning by City -->
+  <url><loc>https://www.bakerss.com/services/airbnb-cleaning-myrtle-beach</loc><lastmod>2026-01-01</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://www.bakerss.com/services/interior-cleaning-myrtle-beach</loc><lastmod>2026-01-01</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <!-- Pressure Washing by City -->
+  <url><loc>https://www.bakerss.com/services/pressure-washing-myrtle-beach</loc><lastmod>2026-01-01</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <!-- Gutter by City -->
+  <url><loc>https://www.bakerss.com/services/gutter-cleaning-myrtle-beach</loc><lastmod>2026-01-01</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <!-- Plumbing by City -->
+  <url><loc>https://www.bakerss.com/services/plumbing-myrtle-beach</loc><lastmod>2026-01-01</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <!-- Painting by City -->
+  <url><loc>https://www.bakerss.com/services/painting-myrtle-beach</loc><lastmod>2026-01-01</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
 
 </urlset>
