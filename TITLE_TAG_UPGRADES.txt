@@ -1,0 +1,63 @@
+UPGRADED TITLE TAGS & META DESCRIPTIONS FOR 12 SERVICE PAGES
+======================================================================
+
+FILE: services/lawn-care.html
+NEW TITLE: Lawn Care Myrtle Beach SC | Mowing, Edging & Coastal Turf Service | Bakerss
+NEW META:  Professional lawn care in Myrtle Beach, Murrells Inlet, Surfside Beach & Horry County SC. Mowing, edging, weed trimming & yard cleanup. St. Augustine & Bermuda specialists. Starting at $50. Veteran owned. 843-467-7136.
+NEW H1:    Lawn Care in Myrtle Beach, SC — Mowing, Edging & Coastal Turf Service
+
+FILE: services/landscaping.html
+NEW TITLE: Landscaping Myrtle Beach SC | Garden Beds, Coastal Plants & Design | Bakerss
+NEW META:  Professional landscaping in Myrtle Beach & Horry County SC. Garden bed installation, salt-tolerant plants, coastal design & seasonal cleanup. Veteran owned. Call 843-467-7136.
+NEW H1:    Landscaping in Myrtle Beach, SC — Coastal Garden Beds, Plants & Design
+
+FILE: services/bush-trimming.html
+NEW TITLE: Bush & Hedge Trimming Myrtle Beach SC | Shrub Shaping & Maintenance | Bakerss
+NEW META:  Professional bush trimming & hedge shaping in Myrtle Beach & Horry County SC. Shrub maintenance, overgrown hedge restoration & recurring trim plans. Starting at $60. Veteran owned. Call 843-467-7136.
+NEW H1:    Bush & Hedge Trimming in Myrtle Beach, SC — Shrub Shaping & Exterior Maintenance
+
+FILE: services/gutter-cleaning.html
+NEW TITLE: Gutter Cleaning Myrtle Beach SC | Pine Needle & Storm Debris Removal | Bakerss
+NEW META:  Professional gutter cleaning in Myrtle Beach & Horry County SC. Pine needle removal, downspout flushing, hurricane debris & storm prep. Starting at $125. Veteran owned. Call 843-467-7136.
+NEW H1:    Gutter Cleaning in Myrtle Beach, SC — Pine Needles, Storm Debris & Downspout Flushing
+
+FILE: services/pressure-washing.html
+NEW TITLE: Pressure Washing Myrtle Beach SC | Driveway, Deck & House Washing | Bakerss
+NEW META:  Professional pressure washing in Myrtle Beach & Horry County SC. Driveways, pool decks, siding, patios & walkways. Mold, mildew & salt air removed. Starting at $125. Veteran owned. Call 843-467-7136.
+NEW H1:    Pressure Washing in Myrtle Beach, SC — Driveways, Pool Decks, Siding & House Washing
+
+FILE: services/interior-cleaning.html
+NEW TITLE: Interior Cleaning Myrtle Beach SC | Deep Clean, Move-Out & Recurring | Bakerss
+NEW META:  Professional interior cleaning in Myrtle Beach & Horry County SC. Deep cleaning, move-out prep, recurring residential & landlord turnover. Starting at $100. Veteran owned. Call 843-467-7136.
+NEW H1:    Interior Cleaning in Myrtle Beach, SC — Deep Cleaning, Move-Out & Recurring Service
+
+FILE: services/airbnb-turnover-cleaning.html
+NEW TITLE: Airbnb Cleaning Myrtle Beach SC | Vacation Rental Turnover Service | Bakerss
+NEW META:  Airbnb & VRBO turnover cleaning in Myrtle Beach & Horry County SC. Same-day turnovers, booking calendar sync, beach sand cleanup & linen staging. Starting at $100. Veteran owned. Call 843-467-7136.
+NEW H1:    Airbnb & Vacation Rental Cleaning in Myrtle Beach, SC — Same-Day Turnovers & Booking Sync
+
+FILE: services/painting.html
+NEW TITLE: Painting Myrtle Beach SC | Interior & Exterior Coastal Home Painting | Bakerss
+NEW META:  Professional painting in Myrtle Beach & Horry County SC. Interior & exterior painting with salt-air rated materials. Vacation rental refresh, pre-sale & coastal homes. Veteran owned. Call 843-467-7136.
+NEW H1:    Painting in Myrtle Beach, SC — Interior & Exterior with Coastal-Grade Materials
+
+FILE: services/epoxy-flooring.html
+NEW TITLE: Epoxy Flooring Myrtle Beach SC | Garage Coating & Concrete Finishing | Bakerss
+NEW META:  Professional epoxy flooring in Myrtle Beach & Horry County SC. Garage floor coating, decorative chip systems, moisture-resistant finishes. Durable, easy to clean. Veteran owned. Call 843-467-7136.
+NEW H1:    Epoxy Flooring in Myrtle Beach, SC — Garage Floor Coating & Decorative Concrete
+
+FILE: services/plumbing.html
+NEW TITLE: Plumbing Repairs Myrtle Beach SC | Faucets, Fixtures & Drain Cleaning | Bakerss
+NEW META:  Property maintenance plumbing in Myrtle Beach & Horry County SC. Leaky faucets, running toilets, fixture installation & drain cleaning. Property pricing — not emergency rates. Veteran owned. Call 843-467-7136.
+NEW H1:    Plumbing Repairs in Myrtle Beach, SC — Faucets, Fixtures, Drains & Preventative Maintenance
+
+FILE: services/electrical.html
+NEW TITLE: Electrical Repairs Myrtle Beach SC | Outlets, Fixtures & Ceiling Fans | Bakerss
+NEW META:  Property maintenance electrical repairs in Myrtle Beach & Horry County SC. Outlets, switches, light fixtures, ceiling fans & GFCI installation. Property pricing — not emergency rates. Veteran owned. Call 843-467-7136.
+NEW H1:    Electrical Repairs in Myrtle Beach, SC — Outlets, Fixtures, Fans & GFCI Installation
+
+FILE: services/handyman.html
+NEW TITLE: Handyman Services Myrtle Beach SC | Repairs, Drywall & Punch-Lists | Bakerss
+NEW META:  Handyman services in Myrtle Beach & Horry County SC. Drywall repair, door adjustments, screen replacement, property punch-lists & minor repairs. One call, one team. Veteran owned. Call 843-467-7136.
+NEW H1:    Handyman Services in Myrtle Beach, SC — Drywall, Screen Repair & Property Punch-Lists
+
