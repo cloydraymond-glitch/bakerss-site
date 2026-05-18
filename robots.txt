@@ -2,3 +2,6 @@ User-agent: *
 Allow: /
 
 Sitemap: https://www.bakerss.com/sitemap.xml
+
+# Bakerss Property Maintenance — bakerss.com
+# Serving all of Horry County, SC

@@ -1,49 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Page Not Found | Bakerss Property Maintenance</title>
-  <link rel="stylesheet" href="/css/style.css">
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>Page Not Found | Bakerss Property Maintenance</title>
+<meta name="robots" content="noindex">
+<link rel="stylesheet" href="/css/global.css">
+<style>
+.error-page{min-height:70vh;display:flex;align-items:center;justify-content:center;text-align:center;padding:60px 24px;}
+.error-wrap{max-width:560px;}
+.error-code{font-family:'Cormorant Garamond',serif;font-size:8rem;font-weight:700;color:rgba(212,85,110,0.12);line-height:1;margin-bottom:-20px;}
+.error-wrap h1{font-size:2.2rem;margin-bottom:16px;}
+.error-wrap p{color:var(--grey);font-size:1rem;margin-bottom:32px;}
+.error-links{display:flex;gap:12px;justify-content:center;flex-wrap:wrap;margin-top:36px;}
+.error-link{font-family:'Jost',sans-serif;font-size:0.78rem;font-weight:600;letter-spacing:0.08em;color:var(--grey);border:1px solid var(--border);padding:10px 20px;border-radius:4px;transition:all 0.2s;}
+.error-link:hover{border-color:var(--pink);color:var(--pink);}
+</style>
 </head>
 <body>
-<div class="topbar"><div class="container"><span>🌴 Serving All of Horry County, SC</span><div class="topbar-right"><a href="tel:8434677136">📞 (843) 467-7136</a></div></div></div>
-<header class="site-header">
-  <nav class="nav-inner">
-    <a href="/"><img src="/images/logo.png" alt="Bakerss Property Maintenance" style="height:56px;width:auto;"></a>
-    <ul class="nav-menu">
-      <li><a href="/">Home</a></li>
-      <li><a href="/services/">Services</a></li>
-      <li><a href="/service-areas/">Service Areas</a></li>
-      <li><a href="/contact/">Contact</a></li>
-    </ul>
-    <div class="nav-cta"><a href="tel:8434677136" class="btn btn-primary btn-sm">📞 (843) 467-7136</a></div>
-    <button class="nav-toggle" aria-label="Open menu" aria-expanded="false"><span></span><span></span><span></span></button>
-  </nav>
-</header>
-<section style="min-height:60vh;display:flex;align-items:center;justify-content:center;text-align:center;padding:80px 20px;">
-  <div>
-    <div style="font-size:5rem;margin-bottom:16px;">🌴</div>
-    <h1 style="font-size:2rem;margin-bottom:12px;">Oops — Page Not Found</h1>
-    <p style="color:var(--grey-mid);font-size:1.05rem;max-width:500px;margin:0 auto 32px;">The page you're looking for doesn't exist or may have moved. Let's get you back on track.</p>
-    <div class="btn-group" style="justify-content:center;flex-wrap:wrap;">
-      <a href="/" class="btn btn-primary btn-lg">Go to Homepage</a>
-      <a href="/services/" class="btn btn-outline btn-lg">View Our Services</a>
-      <a href="/contact/" class="btn btn-dark btn-lg">Contact Us</a>
+<div class="top-bar"><div class="container"><div style="font-size:0.72rem;">🌴 Serving All of Horry County, SC — Residential &amp; Commercial</div><div style="display:flex;gap:22px;align-items:center;"><a href="tel:8434677136">📞 (843) 467-7136</a><a href="mailto:cloyd.raymond@yahoo.com">✉ cloyd.raymond@yahoo.com</a></div></div></div>
+<header class="site-header"><div class="container"><nav class="nav-inner"><a href="/" class="nav-logo">Bakerss<span>.</span></a><div class="main-nav" id="mainNav"><a href="/">Home</a><a href="/services/">Services</a><a href="/service-areas/">Service Areas</a><a href="/learning-center/">Learning Center</a><a href="/reviews/">Reviews</a><a href="/about/">About</a><a href="/contact/" class="nav-cta">Free Estimate</a></div><button class="nav-toggle" id="navToggle" aria-label="Open menu"><span></span><span></span><span></span></button></nav></div></header>
+
+<div class="error-page">
+  <div class="error-wrap">
+    <div class="error-code">404</div>
+    <h1>Page Not Found</h1>
+    <p>Sorry — we couldn't find what you were looking for. The page may have moved or the URL might have a typo. Try one of the links below, or give us a call.</p>
+    <div style="display:flex;gap:14px;justify-content:center;flex-wrap:wrap;">
+      <a href="/" class="btn-primary">Go to Homepage</a>
+      <a href="/contact/" class="btn-outline">Get a Free Estimate</a>
     </div>
-    <p style="margin-top:32px;color:var(--grey-mid);">Or call us directly: <a href="tel:8434677136" style="color:var(--pink);font-weight:700;">(843) 467-7136</a></p>
+    <div class="error-links">
+      <a href="/services/lawn-care/" class="error-link">🌿 Lawn Care</a>
+      <a href="/services/interior-cleaning/" class="error-link">✨ Interior Cleaning</a>
+      <a href="/services/pressure-washing/" class="error-link">💧 Pressure Washing</a>
+      <a href="/services/gutter-cleaning/" class="error-link">🏠 Gutter Cleaning</a>
+      <a href="/services/deck-building/" class="error-link">🪵 Deck Building</a>
+      <a href="/myrtle-beach/" class="error-link">🏖️ Myrtle Beach</a>
+      <a href="/murrells-inlet/" class="error-link">🦞 Murrells Inlet</a>
+      <a href="/learning-center/" class="error-link">📚 Learning Center</a>
+    </div>
+    <p style="margin-top:36px;font-size:0.88rem;">Or call us directly: <a href="tel:8434677136" style="color:var(--pink);font-weight:600;">(843) 467-7136</a> — we answer 24/7</p>
   </div>
-</section>
-<footer class="site-footer" style="padding-top:32px;">
-  <div class="footer-bottom" style="max-width:1200px;margin:0 auto;padding:20px;">
-    <span>© 2025 Bakerss Property Maintenance. Serving Horry County, SC.</span>
-  </div>
-</footer>
-<div class="sticky-cta">
-  <a href="tel:8434677136" class="sticky-cta-btn primary"><span class="icon">📞</span><span>Call Now</span></a>
-  <a href="sms:8434677136" class="sticky-cta-btn"><span class="icon">💬</span><span>Text Us</span></a>
-  <a href="/contact/" class="sticky-cta-btn"><span class="icon">📅</span><span>Free Estimate</span></a>
 </div>
-<script src="/js/main.js" defer></script>
-</body>
-</html>
+
+<footer class="site-footer"><div class="container"><div class="footer-bottom" style="border-top:1px solid rgba(255,255,255,0.08);padding-top:24px;"><span>© 2025 Bakerss Property Maintenance. All rights reserved. Serving Horry County, SC.</span></div></div></footer>
+<script>const t=document.getElementById('navToggle'),n=document.getElementById('mainNav');if(t){t.addEventListener('click',()=>{const o=n.classList.toggle('open');t.setAttribute('aria-expanded',o);document.body.style.overflow=o?'hidden':'';});}</script>
+</body></html>
