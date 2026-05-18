@@ -1,11 +1,4 @@
 User-agent: *
 Allow: /
 
-# Block admin or private directories if added later
-# Disallow: /admin/
-# Disallow: /private/
-
-# Sitemap location
 Sitemap: https://www.bakerss.com/sitemap.xml
-
-# Crawl-delay: none (fast crawl welcome)
