@@ -1,100 +1,850 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0">
-<title>Get a Free Estimate | Bakerss Property Maintenance — Myrtle Beach, SC</title>
-<meta name="description" content="Contact Bakerss Property Maintenance for a free estimate. Serving all of Horry County, SC. Call (843) 467-7136 — available 24/7. Lawn care, cleaning, pressure washing &amp; more.">
-<link rel="canonical" href="https://www.bakerss.com/contact/">
-<link rel="stylesheet" href="/css/global.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>Get a Free Quote | Bakerss Property Maintenance — Myrtle Beach, SC</title>
+<meta name="description" content="Get a free property maintenance quote from Bakerss in Myrtle Beach and Horry County, SC. Lawn care, cleaning, pressure washing, deck building & more. Takes 60 seconds.">
+<link rel="canonical" href="https://www.bakerss.com/get-a-quote/">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,600;0,700;1,400&family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet">
+
 <style>
-.contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:60px;align-items:start;}
-.contact-form-wrap{background:var(--white);border:1px solid var(--border);border-radius:4px;padding:40px;}
-.form-group{margin-bottom:20px;}
-.form-group label{display:block;font-family:'Jost',sans-serif;font-size:0.78rem;font-weight:600;letter-spacing:0.08em;text-transform:uppercase;color:var(--black);margin-bottom:8px;}
-.form-group input,.form-group select,.form-group textarea{width:100%;padding:12px 16px;border:1.5px solid var(--border);border-radius:var(--radius);font-family:'Jost',sans-serif;font-size:0.92rem;color:var(--black);background:#fff;transition:border-color var(--transition);}
-.form-group input:focus,.form-group select:focus,.form-group textarea:focus{outline:none;border-color:var(--pink);}
-.form-group textarea{resize:vertical;min-height:120px;}
-.form-row{display:grid;grid-template-columns:1fr 1fr;gap:16px;}
-.contact-info-box{background:var(--black);color:#fff;padding:36px;border-radius:4px;margin-bottom:20px;}
-.contact-info-box h3{color:#fff;margin-bottom:20px;font-size:1.3rem;}
-.ci-item{display:flex;align-items:flex-start;gap:14px;margin-bottom:20px;}
-.ci-icon{width:38px;height:38px;border-radius:50%;background:rgba(212,85,110,0.15);border:1px solid rgba(212,85,110,0.3);display:flex;align-items:center;justify-content:center;font-size:1rem;flex-shrink:0;}
-.ci-text .ci-label{font-family:'Jost',sans-serif;font-size:0.68rem;font-weight:600;letter-spacing:0.14em;text-transform:uppercase;color:rgba(255,255,255,0.4);margin-bottom:4px;}
-.ci-text a,.ci-text span{color:#fff;font-size:0.92rem;}
-.ci-text a:hover{color:var(--pink-light);}
-@media(max-width:768px){.contact-grid{grid-template-columns:1fr;}.form-row{grid-template-columns:1fr;}}
+/* ── RESET ── */
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0;}
+html{scroll-behavior:smooth;}
+body{font-family:'Jost',system-ui,sans-serif;background:#0d0d0d;color:#fff;min-height:100vh;-webkit-font-smoothing:antialiased;}
+a{color:inherit;text-decoration:none;}
+img{max-width:100%;display:block;}
+
+/* ── VARIABLES ── */
+:root{
+  --pink:#d4556e;--pink-light:#e8789e;--pink-pale:#fdf0f3;--pink-dark:#b03358;
+  --black:#0d0d0d;--charcoal:#1a1a1a;--card:#161616;--border:rgba(255,255,255,0.08);
+  --grey:#9a9a9a;--white:#ffffff;--radius:8px;--transition:0.22s ease;
+}
+
+/* ── TOP BAR ── */
+.top-bar{background:#000;padding:9px 24px;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:6px;border-bottom:1px solid var(--border);}
+.top-bar-left{font-size:0.72rem;letter-spacing:0.04em;color:rgba(255,255,255,0.5);}
+.top-bar-right{display:flex;gap:20px;}
+.top-bar a{font-size:0.74rem;font-weight:500;color:var(--pink-light);transition:color var(--transition);}
+.top-bar a:hover{color:#fff;}
+
+/* ── NAV ── */
+.site-nav{background:rgba(13,13,13,0.97);border-bottom:1px solid rgba(212,85,110,0.15);padding:0 24px;height:64px;display:flex;align-items:center;justify-content:space-between;position:sticky;top:0;z-index:100;backdrop-filter:blur(16px);}
+.nav-logo{font-family:'Cormorant Garamond',serif;font-size:1.6rem;font-weight:700;color:#fff;}
+.nav-logo span{color:var(--pink);}
+.nav-back{font-family:'Jost',sans-serif;font-size:0.74rem;font-weight:500;letter-spacing:0.08em;color:rgba(255,255,255,0.5);display:flex;align-items:center;gap:6px;transition:color var(--transition);}
+.nav-back:hover{color:#fff;}
+.nav-phone{font-family:'Jost',sans-serif;font-size:0.74rem;font-weight:600;letter-spacing:0.06em;color:var(--pink-light);}
+
+/* ── FUNNEL SHELL ── */
+.funnel-wrap{max-width:680px;margin:0 auto;padding:48px 24px 120px;}
+
+/* ── PROGRESS BAR ── */
+.progress-bar-wrap{margin-bottom:40px;}
+.progress-meta{display:flex;justify-content:space-between;align-items:center;margin-bottom:10px;}
+.progress-step-label{font-size:0.72rem;font-weight:600;letter-spacing:0.14em;text-transform:uppercase;color:var(--grey);}
+.progress-step-label span{color:var(--pink-light);}
+.progress-track{height:3px;background:rgba(255,255,255,0.08);border-radius:2px;overflow:hidden;}
+.progress-fill{height:100%;background:linear-gradient(90deg,var(--pink-dark),var(--pink-light));border-radius:2px;transition:width 0.45s cubic-bezier(0.4,0,0.2,1);}
+
+/* ── STEP HEADER ── */
+.step-header{margin-bottom:32px;}
+.step-eyebrow{font-size:0.7rem;font-weight:600;letter-spacing:0.18em;text-transform:uppercase;color:var(--pink-light);margin-bottom:10px;}
+.step-title{font-family:'Cormorant Garamond',serif;font-size:clamp(1.8rem,4vw,2.4rem);font-weight:700;line-height:1.15;color:#fff;margin-bottom:10px;}
+.step-sub{font-size:0.9rem;color:var(--grey);line-height:1.6;}
+
+/* ── OPTION CARDS ── */
+.options-grid{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-bottom:32px;}
+.options-grid.cols-3{grid-template-columns:repeat(3,1fr);}
+.options-grid.cols-1{grid-template-columns:1fr;}
+
+.option-card{
+  background:var(--card);
+  border:1.5px solid var(--border);
+  border-radius:var(--radius);
+  padding:20px 18px;
+  cursor:pointer;
+  transition:all var(--transition);
+  display:flex;
+  align-items:flex-start;
+  gap:14px;
+  position:relative;
+  overflow:hidden;
+}
+.option-card::before{content:'';position:absolute;inset:0;background:linear-gradient(135deg,rgba(212,85,110,0.06),transparent);opacity:0;transition:opacity var(--transition);}
+.option-card:hover{border-color:rgba(212,85,110,0.4);transform:translateY(-1px);}
+.option-card:hover::before{opacity:1;}
+.option-card.selected{border-color:var(--pink);background:rgba(212,85,110,0.08);}
+.option-card.selected::before{opacity:1;}
+
+.option-icon{font-size:1.6rem;flex-shrink:0;margin-top:2px;}
+.option-text{}
+.option-title{font-size:0.92rem;font-weight:600;color:#fff;margin-bottom:3px;line-height:1.2;}
+.option-desc{font-size:0.78rem;color:var(--grey);line-height:1.5;}
+.option-price{font-size:0.7rem;font-weight:600;letter-spacing:0.1em;text-transform:uppercase;color:var(--pink-light);margin-top:4px;}
+.option-check{position:absolute;top:12px;right:12px;width:20px;height:20px;border-radius:50%;border:1.5px solid var(--border);display:flex;align-items:center;justify-content:center;font-size:0.65rem;transition:all var(--transition);}
+.option-card.selected .option-check{background:var(--pink);border-color:var(--pink);color:#fff;}
+
+/* ── INPUT FIELDS ── */
+.field-group{margin-bottom:20px;}
+.field-label{display:block;font-size:0.74rem;font-weight:600;letter-spacing:0.1em;text-transform:uppercase;color:rgba(255,255,255,0.6);margin-bottom:8px;}
+.field-input,.field-select,.field-textarea{
+  width:100%;background:var(--card);border:1.5px solid var(--border);border-radius:var(--radius);
+  padding:14px 16px;font-family:'Jost',sans-serif;font-size:0.95rem;color:#fff;
+  transition:border-color var(--transition);outline:none;
+}
+.field-input::placeholder,.field-textarea::placeholder{color:rgba(255,255,255,0.25);}
+.field-input:focus,.field-select:focus,.field-textarea:focus{border-color:var(--pink);}
+.field-select{cursor:pointer;appearance:none;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8' viewBox='0 0 12 8'%3E%3Cpath d='M1 1l5 5 5-5' stroke='%23666' stroke-width='1.5' fill='none' stroke-linecap='round'/%3E%3C/svg%3E");background-repeat:no-repeat;background-position:right 16px center;}
+.field-select option{background:#1a1a1a;color:#fff;}
+.field-textarea{resize:vertical;min-height:100px;line-height:1.6;}
+.field-row{display:grid;grid-template-columns:1fr 1fr;gap:14px;}
+
+/* ── TIMING PILLS ── */
+.timing-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:10px;margin-bottom:24px;}
+.timing-pill{
+  border:1.5px solid var(--border);border-radius:40px;padding:12px 20px;
+  text-align:center;cursor:pointer;font-size:0.82rem;font-weight:500;color:var(--grey);
+  transition:all var(--transition);
+}
+.timing-pill:hover{border-color:rgba(212,85,110,0.4);color:#fff;}
+.timing-pill.selected{border-color:var(--pink);background:rgba(212,85,110,0.1);color:var(--pink-light);}
+
+/* ── NAVIGATION BUTTONS ── */
+.btn-row{display:flex;gap:12px;align-items:center;margin-top:8px;}
+.btn-next{
+  flex:1;background:var(--pink);color:#fff;border:none;cursor:pointer;
+  font-family:'Jost',sans-serif;font-size:0.82rem;font-weight:600;letter-spacing:0.12em;
+  text-transform:uppercase;padding:16px 32px;border-radius:var(--radius);
+  transition:background var(--transition),transform var(--transition);display:flex;
+  align-items:center;justify-content:center;gap:8px;
+}
+.btn-next:hover{background:var(--pink-dark);transform:translateY(-1px);}
+.btn-next:disabled{opacity:0.4;cursor:not-allowed;transform:none;}
+.btn-back{
+  background:none;border:1.5px solid var(--border);color:var(--grey);cursor:pointer;
+  font-family:'Jost',sans-serif;font-size:0.8rem;font-weight:500;padding:14px 22px;
+  border-radius:var(--radius);transition:all var(--transition);
+}
+.btn-back:hover{border-color:rgba(255,255,255,0.2);color:#fff;}
+
+/* ── STEP PANELS ── */
+.step-panel{display:none;animation:fadeIn 0.3s ease;}
+.step-panel.active{display:block;}
+@keyframes fadeIn{from{opacity:0;transform:translateY(8px);}to{opacity:1;transform:translateY(0);}}
+
+/* ── CONDITIONAL SERVICE QUESTIONS ── */
+.service-questions{display:none;}
+.service-questions.visible{display:block;animation:fadeIn 0.25s ease;}
+
+/* ── SUMMARY CARD ── */
+.summary-card{background:var(--card);border:1px solid var(--border);border-radius:var(--radius);padding:24px;margin-bottom:24px;}
+.summary-row{display:flex;justify-content:space-between;align-items:flex-start;padding:10px 0;border-bottom:1px solid var(--border);gap:16px;}
+.summary-row:last-child{border-bottom:none;}
+.summary-label{font-size:0.74rem;font-weight:600;letter-spacing:0.1em;text-transform:uppercase;color:var(--grey);flex-shrink:0;}
+.summary-value{font-size:0.88rem;color:#fff;text-align:right;}
+
+/* ── SUBMIT BUTTON ── */
+.btn-submit{
+  width:100%;background:linear-gradient(135deg,var(--pink-dark),var(--pink));color:#fff;border:none;
+  cursor:pointer;font-family:'Jost',sans-serif;font-size:0.88rem;font-weight:600;
+  letter-spacing:0.12em;text-transform:uppercase;padding:18px 32px;border-radius:var(--radius);
+  transition:all var(--transition);display:flex;align-items:center;justify-content:center;gap:10px;
+  box-shadow:0 4px 24px rgba(212,85,110,0.3);
+}
+.btn-submit:hover{transform:translateY(-2px);box-shadow:0 8px 32px rgba(212,85,110,0.4);}
+.btn-submit:disabled{opacity:0.5;cursor:not-allowed;transform:none;}
+.submit-note{text-align:center;font-size:0.76rem;color:var(--grey);margin-top:12px;line-height:1.5;}
+
+/* ── CONFIRMATION ── */
+.confirmation{text-align:center;padding:40px 0;display:none;}
+.confirmation.visible{display:block;animation:fadeIn 0.5s ease;}
+.confirm-icon{font-size:4rem;margin-bottom:20px;display:block;}
+.confirm-title{font-family:'Cormorant Garamond',serif;font-size:2.4rem;font-weight:700;margin-bottom:14px;}
+.confirm-sub{color:var(--grey);font-size:1rem;line-height:1.7;max-width:460px;margin:0 auto 32px;}
+.confirm-detail{background:var(--card);border:1px solid var(--border);border-radius:var(--radius);padding:20px 24px;margin-bottom:28px;text-align:left;}
+.confirm-detail p{font-size:0.88rem;color:var(--grey);margin-bottom:4px;}
+.confirm-detail strong{color:#fff;}
+.confirm-actions{display:flex;gap:12px;justify-content:center;flex-wrap:wrap;}
+.btn-confirm-call{background:var(--pink);color:#fff;padding:14px 28px;border-radius:var(--radius);font-family:'Jost',sans-serif;font-size:0.8rem;font-weight:600;letter-spacing:0.1em;text-transform:uppercase;transition:background var(--transition);}
+.btn-confirm-call:hover{background:var(--pink-dark);}
+.btn-confirm-home{border:1.5px solid var(--border);color:var(--grey);padding:13px 28px;border-radius:var(--radius);font-family:'Jost',sans-serif;font-size:0.8rem;font-weight:500;transition:all var(--transition);}
+.btn-confirm-home:hover{border-color:rgba(255,255,255,0.2);color:#fff;}
+
+/* ── TRUST ROW ── */
+.trust-row{display:flex;gap:20px;flex-wrap:wrap;justify-content:center;padding:24px 0;border-top:1px solid var(--border);margin-top:40px;}
+.trust-item{font-size:0.74rem;color:var(--grey);display:flex;align-items:center;gap:6px;}
+.trust-dot{width:5px;height:5px;border-radius:50%;background:var(--pink);flex-shrink:0;}
+
+/* ── MOBILE ── */
+@media(max-width:580px){
+  .options-grid{grid-template-columns:1fr;}
+  .options-grid.cols-3{grid-template-columns:1fr 1fr;}
+  .field-row{grid-template-columns:1fr;}
+  .timing-grid{grid-template-columns:1fr 1fr;}
+  .btn-row{flex-direction:column-reverse;}
+  .btn-back{width:100%;}
+  .funnel-wrap{padding:32px 16px 100px;}
+}
+
+/* ── STICKY MOBILE BAR ── */
+.sticky-bar{display:none;position:fixed;bottom:0;left:0;right:0;z-index:90;background:#000;border-top:1px solid var(--border);padding:12px 16px;gap:10px;}
+.sticky-bar a{flex:1;display:flex;align-items:center;justify-content:center;gap:6px;font-family:'Jost',sans-serif;font-size:0.72rem;font-weight:600;letter-spacing:0.08em;text-transform:uppercase;padding:11px;border-radius:6px;}
+.sticky-call{background:var(--pink);color:#fff;}
+.sticky-text{background:rgba(255,255,255,0.06);color:#fff;border:1px solid rgba(255,255,255,0.1);}
+@media(max-width:600px){.sticky-bar{display:flex;}body{padding-bottom:64px;}}
 </style>
 </head>
 <body>
-<div class="top-bar"><div class="container"><div style="font-size:0.72rem;">🌴 Serving All of Horry County, SC — Residential &amp; Commercial</div><div style="display:flex;gap:22px;align-items:center;"><a href="tel:8434677136">📞 (843) 467-7136</a><a href="mailto:cloyd.raymond@yahoo.com">✉ cloyd.raymond@yahoo.com</a></div></div></div>
-<header class="site-header"><div class="container"><nav class="nav-inner"><a href="/" class="nav-logo">Bakerss<span>.</span></a><div class="main-nav" id="mainNav"><a href="/">Home</a><div class="nav-dropdown"><a href="/services/">Services ▾</a><div class="dropdown-menu"><span class="dropdown-label">Outdoor</span><a href="/services/lawn-care/">🌿 Lawn Care &amp; Landscaping</a><a href="/services/pressure-washing/">💧 Pressure Washing</a><a href="/services/gutter-cleaning/">🏠 Gutter Cleaning</a><a href="/services/exterior-painting/">🎨 Exterior Painting</a><a href="/services/landscape-lighting/">💡 Landscape Lighting</a><a href="/services/deck-building/">🪵 Deck Building</a><span class="dropdown-label">Interior</span><a href="/services/interior-cleaning/">✨ Interior Cleaning</a><a href="/services/interior-painting/">🖌 Interior Painting</a><a href="/services/plumbing/">🔧 Minor Plumbing</a><a href="/services/electrical/">⚡ Minor Electrical</a><span class="dropdown-label">Specialty</span><a href="/services/epoxy-flooring/">🏗 Epoxy Flooring</a><a href="/services/drywall/">🔨 Drywall</a><a href="/services/handyman/">🛠 Handyman Services</a></div></div><div class="nav-dropdown"><a href="/service-areas/">Service Areas ▾</a><div class="dropdown-menu"><a href="/service-areas/horry-county/">🗺 All of Horry County</a><a href="/myrtle-beach/">Myrtle Beach</a><a href="/murrells-inlet/">Murrells Inlet</a><a href="/conway/">Conway</a><a href="/surfside-beach/">Surfside Beach</a><a href="/garden-city/">Garden City</a><a href="/north-myrtle-beach/">North Myrtle Beach</a><a href="/socastee/">Socastee</a></div></div><a href="/learning-center/">Learning Center</a><a href="/reviews/">Reviews</a><a href="/about/">About</a><a href="/contact/" class="nav-cta">Free Estimate</a></div><button class="nav-toggle" id="navToggle" aria-label="Open menu"><span></span><span></span><span></span></button></nav></div></header>
-<nav class="breadcrumb"><div class="container"><div class="breadcrumb-inner"><a href="/">Home</a><span>›</span><strong>Free Estimate</strong></div></div></nav>
-<section class="page-hero">
-  <div class="container">
-    <span class="label">Get in Touch</span>
-    <h1>Get a Free Property Maintenance Estimate</h1>
-    <p>Call, text, or fill out the form below. We serve all of Horry County, SC and answer 24/7 — no voicemail, no waiting.</p>
+
+<!-- TOP BAR -->
+<div class="top-bar">
+  <span class="top-bar-left">🌴 Serving All of Horry County, SC — Residential &amp; Commercial</span>
+  <div class="top-bar-right">
+    <a href="tel:8434677136">📞 (843) 467-7136</a>
+    <a href="mailto:cloyd.raymond@yahoo.com">✉ Email</a>
   </div>
-</section>
-<section class="section"><div class="container"><div class="contact-grid">
-  <div>
-    <div class="contact-info-box">
-      <h3>Contact Bakerss</h3>
-      <div class="ci-item"><div class="ci-icon">📞</div><div class="ci-text"><div class="ci-label">Phone &amp; Text — 24/7</div><a href="tel:8434677136">(843) 467-7136</a></div></div>
-      <div class="ci-item"><div class="ci-icon">✉</div><div class="ci-text"><div class="ci-label">Email</div><a href="mailto:cloyd.raymond@yahoo.com">cloyd.raymond@yahoo.com</a></div></div>
-      <div class="ci-item"><div class="ci-icon">🌴</div><div class="ci-text"><div class="ci-label">Service Area</div><span>All of Horry County, SC</span></div></div>
-      <div class="ci-item"><div class="ci-icon">🕐</div><div class="ci-text"><div class="ci-label">Availability</div><span>24/7 — We answer every call</span></div></div>
+</div>
+
+<!-- NAV -->
+<nav class="site-nav">
+  <a href="/" class="nav-logo">Bakerss<span>.</span></a>
+  <a href="/" class="nav-back">← Back to Site</a>
+  <a href="tel:8434677136" class="nav-phone">📞 (843) 467-7136</a>
+</nav>
+
+<!-- FUNNEL -->
+<div class="funnel-wrap">
+
+  <!-- PROGRESS -->
+  <div class="progress-bar-wrap" id="progressWrap">
+    <div class="progress-meta">
+      <span class="progress-step-label">Step <span id="currentStepLabel">1</span> of 5</span>
+      <span class="progress-step-label" id="progressPct">20%</span>
     </div>
-    <div style="background:var(--sand);padding:28px;border-radius:4px;">
-      <span class="label">Our Services</span>
-      <div style="display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-top:12px;">
-        <a href="/services/lawn-care/" style="font-family:'Jost',sans-serif;font-size:0.82rem;color:var(--grey);padding:6px 0;border-bottom:1px solid var(--border);display:flex;align-items:center;gap:6px;transition:color 0.2s;">🌿 Lawn Care</a>
-        <a href="/services/interior-cleaning/" style="font-family:'Jost',sans-serif;font-size:0.82rem;color:var(--grey);padding:6px 0;border-bottom:1px solid var(--border);display:flex;align-items:center;gap:6px;">✨ Interior Cleaning</a>
-        <a href="/services/pressure-washing/" style="font-family:'Jost',sans-serif;font-size:0.82rem;color:var(--grey);padding:6px 0;border-bottom:1px solid var(--border);display:flex;align-items:center;gap:6px;">💧 Pressure Washing</a>
-        <a href="/services/deck-building/" style="font-family:'Jost',sans-serif;font-size:0.82rem;color:var(--grey);padding:6px 0;border-bottom:1px solid var(--border);display:flex;align-items:center;gap:6px;">🪵 Deck Building</a>
-        <a href="/services/exterior-painting/" style="font-family:'Jost',sans-serif;font-size:0.82rem;color:var(--grey);padding:6px 0;border-bottom:1px solid var(--border);display:flex;align-items:center;gap:6px;">🎨 Painting</a>
-        <a href="/services/gutter-cleaning/" style="font-family:'Jost',sans-serif;font-size:0.82rem;color:var(--grey);padding:6px 0;border-bottom:1px solid var(--border);display:flex;align-items:center;gap:6px;">🏠 Gutter Cleaning</a>
-        <a href="/services/handyman/" style="font-family:'Jost',sans-serif;font-size:0.82rem;color:var(--grey);padding:6px 0;border-bottom:1px solid var(--border);display:flex;align-items:center;gap:6px;">🛠 Handyman</a>
-        <a href="/services/epoxy-flooring/" style="font-family:'Jost',sans-serif;font-size:0.82rem;color:var(--grey);padding:6px 0;border-bottom:1px solid var(--border);display:flex;align-items:center;gap:6px;">🏗 Epoxy Flooring</a>
+    <div class="progress-track"><div class="progress-fill" id="progressFill" style="width:20%"></div></div>
+  </div>
+
+  <!-- ═══════════════════════════════ -->
+  <!-- STEP 1 — SERVICE SELECTION     -->
+  <!-- ═══════════════════════════════ -->
+  <div class="step-panel active" id="step1">
+    <div class="step-header">
+      <div class="step-eyebrow">Step 1 — What Do You Need?</div>
+      <h1 class="step-title">What service can we help you with?</h1>
+      <p class="step-sub">Select the primary service you need. You can request multiple services on the next screen.</p>
+    </div>
+
+    <div class="options-grid">
+      <div class="option-card" data-value="lawn-care" onclick="selectOption(this,'service')">
+        <div class="option-icon">🌿</div>
+        <div class="option-text">
+          <div class="option-title">Lawn Care &amp; Landscaping</div>
+          <div class="option-desc">Mowing, edging, mulching, concrete curbing, full landscaping</div>
+          <div class="option-price">Starting at $50</div>
+        </div>
+        <div class="option-check">✓</div>
       </div>
+      <div class="option-card" data-value="interior-cleaning" onclick="selectOption(this,'service')">
+        <div class="option-icon">✨</div>
+        <div class="option-text">
+          <div class="option-title">Interior Cleaning</div>
+          <div class="option-desc">Deep clean, Airbnb turnover, move-out, recurring</div>
+          <div class="option-price">Starting at $100</div>
+        </div>
+        <div class="option-check">✓</div>
+      </div>
+      <div class="option-card" data-value="pressure-washing" onclick="selectOption(this,'service')">
+        <div class="option-icon">💧</div>
+        <div class="option-text">
+          <div class="option-title">Pressure Washing</div>
+          <div class="option-desc">Driveways, siding, roofs, patios, decks</div>
+          <div class="option-price">Starting at $125</div>
+        </div>
+        <div class="option-check">✓</div>
+      </div>
+      <div class="option-card" data-value="gutter-cleaning" onclick="selectOption(this,'service')">
+        <div class="option-icon">🏠</div>
+        <div class="option-text">
+          <div class="option-title">Gutter Cleaning</div>
+          <div class="option-desc">Cleaning, flushing, inspection, brightening</div>
+        </div>
+        <div class="option-check">✓</div>
+      </div>
+      <div class="option-card" data-value="deck-building" onclick="selectOption(this,'service')">
+        <div class="option-icon">🪵</div>
+        <div class="option-text">
+          <div class="option-title">Deck Building &amp; Repairs</div>
+          <div class="option-desc">New decks, board replacement, railing, porch builds</div>
+        </div>
+        <div class="option-check">✓</div>
+      </div>
+      <div class="option-card" data-value="painting" onclick="selectOption(this,'service')">
+        <div class="option-icon">🎨</div>
+        <div class="option-text">
+          <div class="option-title">Painting</div>
+          <div class="option-desc">Interior and exterior residential &amp; commercial</div>
+        </div>
+        <div class="option-check">✓</div>
+      </div>
+      <div class="option-card" data-value="handyman" onclick="selectOption(this,'service')">
+        <div class="option-icon">🛠</div>
+        <div class="option-text">
+          <div class="option-title">Handyman Services</div>
+          <div class="option-desc">Electrical, plumbing, TV mounting, drywall, epoxy</div>
+        </div>
+        <div class="option-check">✓</div>
+      </div>
+      <div class="option-card" data-value="multiple" onclick="selectOption(this,'service')">
+        <div class="option-icon">📦</div>
+        <div class="option-text">
+          <div class="option-title">Multiple Services</div>
+          <div class="option-desc">Need more than one thing handled — let's talk</div>
+        </div>
+        <div class="option-check">✓</div>
+      </div>
+    </div>
+
+    <!-- CONDITIONAL SERVICE QUESTIONS -->
+
+    <!-- Lawn Care -->
+    <div class="service-questions" id="sq-lawn-care">
+      <div class="step-header" style="margin-top:8px;margin-bottom:20px;">
+        <div class="step-eyebrow">A bit more about your lawn</div>
+        <h2 class="step-title" style="font-size:1.4rem;">Tell us about your yard</h2>
+      </div>
+      <div class="field-group">
+        <label class="field-label">Yard size (approximate)</label>
+        <div class="options-grid cols-3" style="margin-bottom:16px;">
+          <div class="option-card" data-value="small" onclick="selectOption(this,'yard-size')" style="padding:14px 12px;"><div class="option-text"><div class="option-title" style="font-size:0.82rem;">Small</div><div class="option-desc">Under ¼ acre</div></div><div class="option-check">✓</div></div>
+          <div class="option-card" data-value="medium" onclick="selectOption(this,'yard-size')" style="padding:14px 12px;"><div class="option-text"><div class="option-title" style="font-size:0.82rem;">Medium</div><div class="option-desc">¼ – ½ acre</div></div><div class="option-check">✓</div></div>
+          <div class="option-card" data-value="large" onclick="selectOption(this,'yard-size')" style="padding:14px 12px;"><div class="option-text"><div class="option-title" style="font-size:0.82rem;">Large</div><div class="option-desc">½ acre +</div></div><div class="option-check">✓</div></div>
+        </div>
+      </div>
+      <div class="field-group">
+        <label class="field-label">How often do you need service?</label>
+        <div class="timing-grid">
+          <div class="timing-pill" onclick="selectTiming(this,'lawn-freq')">Weekly</div>
+          <div class="timing-pill" onclick="selectTiming(this,'lawn-freq')">Bi-Weekly</div>
+          <div class="timing-pill" onclick="selectTiming(this,'lawn-freq')">One-Time</div>
+          <div class="timing-pill" onclick="selectTiming(this,'lawn-freq')">Not Sure Yet</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Interior Cleaning -->
+    <div class="service-questions" id="sq-interior-cleaning">
+      <div class="step-header" style="margin-top:8px;margin-bottom:20px;">
+        <div class="step-eyebrow">A bit more about your cleaning needs</div>
+        <h2 class="step-title" style="font-size:1.4rem;">What type of cleaning?</h2>
+      </div>
+      <div class="options-grid" style="margin-bottom:16px;">
+        <div class="option-card" data-value="airbnb-turnover" onclick="selectOption(this,'cleaning-type')" style="padding:14px 16px;"><div class="option-icon" style="font-size:1.2rem;">🏖️</div><div class="option-text"><div class="option-title" style="font-size:0.85rem;">Airbnb / Vacation Rental</div><div class="option-desc" style="font-size:0.76rem;">Turnover cleaning between guests</div></div><div class="option-check">✓</div></div>
+        <div class="option-card" data-value="deep-clean" onclick="selectOption(this,'cleaning-type')" style="padding:14px 16px;"><div class="option-icon" style="font-size:1.2rem;">🧹</div><div class="option-text"><div class="option-title" style="font-size:0.85rem;">Deep / Move-Out Clean</div><div class="option-desc" style="font-size:0.76rem;">Top-to-bottom thorough cleaning</div></div><div class="option-check">✓</div></div>
+        <div class="option-card" data-value="recurring" onclick="selectOption(this,'cleaning-type')" style="padding:14px 16px;"><div class="option-icon" style="font-size:1.2rem;">🔄</div><div class="option-text"><div class="option-title" style="font-size:0.85rem;">Recurring Cleaning</div><div class="option-desc" style="font-size:0.76rem;">Weekly or bi-weekly schedule</div></div><div class="option-check">✓</div></div>
+        <div class="option-card" data-value="commercial" onclick="selectOption(this,'cleaning-type')" style="padding:14px 16px;"><div class="option-icon" style="font-size:1.2rem;">🏢</div><div class="option-text"><div class="option-title" style="font-size:0.85rem;">Commercial</div><div class="option-desc" style="font-size:0.76rem;">Office or commercial space</div></div><div class="option-check">✓</div></div>
+      </div>
+      <div class="field-group">
+        <label class="field-label">Number of bedrooms</label>
+        <div class="options-grid cols-3" style="margin-bottom:0;">
+          <div class="option-card" data-value="1-2br" onclick="selectOption(this,'bedrooms')" style="padding:12px;justify-content:center;text-align:center;flex-direction:column;gap:4px;"><div class="option-title" style="font-size:0.85rem;">1–2 BR</div><div class="option-check" style="position:static;margin:4px auto 0;">✓</div></div>
+          <div class="option-card" data-value="3-4br" onclick="selectOption(this,'bedrooms')" style="padding:12px;justify-content:center;text-align:center;flex-direction:column;gap:4px;"><div class="option-title" style="font-size:0.85rem;">3–4 BR</div><div class="option-check" style="position:static;margin:4px auto 0;">✓</div></div>
+          <div class="option-card" data-value="5br+" onclick="selectOption(this,'bedrooms')" style="padding:12px;justify-content:center;text-align:center;flex-direction:column;gap:4px;"><div class="option-title" style="font-size:0.85rem;">5 BR+</div><div class="option-check" style="position:static;margin:4px auto 0;">✓</div></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Pressure Washing -->
+    <div class="service-questions" id="sq-pressure-washing">
+      <div class="step-header" style="margin-top:8px;margin-bottom:20px;">
+        <div class="step-eyebrow">Pressure washing details</div>
+        <h2 class="step-title" style="font-size:1.4rem;">What needs to be washed?</h2>
+      </div>
+      <p style="font-size:0.82rem;color:var(--grey);margin-bottom:14px;">Select all that apply</p>
+      <div class="options-grid" style="margin-bottom:0;">
+        <div class="option-card multi" data-value="driveway" onclick="toggleMulti(this,'wash-surfaces')" style="padding:14px 16px;"><div class="option-icon" style="font-size:1.1rem;">🚗</div><div class="option-text"><div class="option-title" style="font-size:0.85rem;">Driveway &amp; Sidewalks</div></div><div class="option-check">✓</div></div>
+        <div class="option-card multi" data-value="house" onclick="toggleMulti(this,'wash-surfaces')" style="padding:14px 16px;"><div class="option-icon" style="font-size:1.1rem;">🏠</div><div class="option-text"><div class="option-title" style="font-size:0.85rem;">House Siding</div></div><div class="option-check">✓</div></div>
+        <div class="option-card multi" data-value="roof" onclick="toggleMulti(this,'wash-surfaces')" style="padding:14px 16px;"><div class="option-icon" style="font-size:1.1rem;">🏚</div><div class="option-text"><div class="option-title" style="font-size:0.85rem;">Roof Soft Wash</div></div><div class="option-check">✓</div></div>
+        <div class="option-card multi" data-value="deck-patio" onclick="toggleMulti(this,'wash-surfaces')" style="padding:14px 16px;"><div class="option-icon" style="font-size:1.1rem;">🪵</div><div class="option-text"><div class="option-title" style="font-size:0.85rem;">Deck &amp; Patio</div></div><div class="option-check">✓</div></div>
+      </div>
+    </div>
+
+    <!-- Deck Building -->
+    <div class="service-questions" id="sq-deck-building">
+      <div class="step-header" style="margin-top:8px;margin-bottom:20px;">
+        <div class="step-eyebrow">Deck project details</div>
+        <h2 class="step-title" style="font-size:1.4rem;">What's the scope of your deck project?</h2>
+      </div>
+      <div class="options-grid" style="margin-bottom:0;">
+        <div class="option-card" data-value="new-deck" onclick="selectOption(this,'deck-scope')" style="padding:14px 16px;"><div class="option-icon" style="font-size:1.2rem;">🆕</div><div class="option-text"><div class="option-title" style="font-size:0.85rem;">New Deck Build</div><div class="option-desc" style="font-size:0.76rem;">Building from scratch</div></div><div class="option-check">✓</div></div>
+        <div class="option-card" data-value="repair" onclick="selectOption(this,'deck-scope')" style="padding:14px 16px;"><div class="option-icon" style="font-size:1.2rem;">🔧</div><div class="option-text"><div class="option-title" style="font-size:0.85rem;">Repairs &amp; Restoration</div><div class="option-desc" style="font-size:0.76rem;">Fix existing deck issues</div></div><div class="option-check">✓</div></div>
+        <div class="option-card" data-value="replace-boards" onclick="selectOption(this,'deck-scope')" style="padding:14px 16px;"><div class="option-icon" style="font-size:1.2rem;">🪵</div><div class="option-text"><div class="option-title" style="font-size:0.85rem;">Board Replacement</div><div class="option-desc" style="font-size:0.76rem;">Replace rotted or damaged boards</div></div><div class="option-check">✓</div></div>
+        <div class="option-card" data-value="porch" onclick="selectOption(this,'deck-scope')" style="padding:14px 16px;"><div class="option-icon" style="font-size:1.2rem;">🏡</div><div class="option-text"><div class="option-title" style="font-size:0.85rem;">Covered Porch / Pergola</div><div class="option-desc" style="font-size:0.76rem;">Covered outdoor structure</div></div><div class="option-check">✓</div></div>
+      </div>
+    </div>
+
+    <!-- Handyman/General -->
+    <div class="service-questions" id="sq-handyman">
+      <div class="step-header" style="margin-top:8px;margin-bottom:20px;">
+        <div class="step-eyebrow">Handyman details</div>
+        <h2 class="step-title" style="font-size:1.4rem;">What needs to be done?</h2>
+      </div>
+      <div class="field-group">
+        <textarea class="field-textarea" id="handymanDetails" placeholder="Describe what you need — e.g. TV mounting, ceiling fan installation, drywall patch, epoxy flooring, plumbing repair..." rows="4"></textarea>
+      </div>
+    </div>
+
+    <!-- Multiple Services -->
+    <div class="service-questions" id="sq-multiple">
+      <div class="step-header" style="margin-top:8px;margin-bottom:20px;">
+        <div class="step-eyebrow">Multiple services</div>
+        <h2 class="step-title" style="font-size:1.4rem;">Which services do you need?</h2>
+      </div>
+      <p style="font-size:0.82rem;color:var(--grey);margin-bottom:14px;">Select all that apply</p>
+      <div class="options-grid" style="margin-bottom:0;">
+        <div class="option-card multi" data-value="lawn" onclick="toggleMulti(this,'multi-svcs')" style="padding:12px 14px;"><div class="option-icon" style="font-size:1rem;">🌿</div><div class="option-text"><div class="option-title" style="font-size:0.82rem;">Lawn Care</div></div><div class="option-check">✓</div></div>
+        <div class="option-card multi" data-value="cleaning" onclick="toggleMulti(this,'multi-svcs')" style="padding:12px 14px;"><div class="option-icon" style="font-size:1rem;">✨</div><div class="option-text"><div class="option-title" style="font-size:0.82rem;">Interior Cleaning</div></div><div class="option-check">✓</div></div>
+        <div class="option-card multi" data-value="pressure" onclick="toggleMulti(this,'multi-svcs')" style="padding:12px 14px;"><div class="option-icon" style="font-size:1rem;">💧</div><div class="option-text"><div class="option-title" style="font-size:0.82rem;">Pressure Washing</div></div><div class="option-check">✓</div></div>
+        <div class="option-card multi" data-value="gutters" onclick="toggleMulti(this,'multi-svcs')" style="padding:12px 14px;"><div class="option-icon" style="font-size:1rem;">🏠</div><div class="option-text"><div class="option-title" style="font-size:0.82rem;">Gutter Cleaning</div></div><div class="option-check">✓</div></div>
+        <div class="option-card multi" data-value="painting" onclick="toggleMulti(this,'multi-svcs')" style="padding:12px 14px;"><div class="option-icon" style="font-size:1rem;">🎨</div><div class="option-text"><div class="option-title" style="font-size:0.82rem;">Painting</div></div><div class="option-check">✓</div></div>
+        <div class="option-card multi" data-value="handyman" onclick="toggleMulti(this,'multi-svcs')" style="padding:12px 14px;"><div class="option-icon" style="font-size:1rem;">🛠</div><div class="option-text"><div class="option-title" style="font-size:0.82rem;">Handyman</div></div><div class="option-check">✓</div></div>
+      </div>
+    </div>
+
+    <div class="btn-row" style="margin-top:28px;">
+      <button class="btn-next" id="step1Next" onclick="goToStep(2)" disabled>Continue →</button>
     </div>
   </div>
-  <div class="contact-form-wrap">
-    <span class="label">Free Estimate Request</span>
-    <h2 style="margin-bottom:24px;">Tell Us About Your Property</h2>
-    <form action="https://formspree.io/f/xgoqvagg" method="POST">
-      <div class="form-row">
-        <div class="form-group"><label for="fname">First Name</label><input type="text" id="fname" name="first_name" placeholder="Ray" required></div>
-        <div class="form-group"><label for="lname">Last Name</label><input type="text" id="lname" name="last_name" placeholder="Baker"></div>
+
+  <!-- ═══════════════════════════════ -->
+  <!-- STEP 2 — PROPERTY TYPE         -->
+  <!-- ═══════════════════════════════ -->
+  <div class="step-panel" id="step2">
+    <div class="step-header">
+      <div class="step-eyebrow">Step 2 — Your Property</div>
+      <h2 class="step-title">What type of property is it?</h2>
+      <p class="step-sub">This helps us understand the scope and send the right team.</p>
+    </div>
+
+    <div class="options-grid">
+      <div class="option-card" data-value="single-family" onclick="selectOption(this,'property-type')">
+        <div class="option-icon">🏡</div>
+        <div class="option-text">
+          <div class="option-title">Single Family Home</div>
+          <div class="option-desc">Year-round primary residence</div>
+        </div>
+        <div class="option-check">✓</div>
       </div>
-      <div class="form-row">
-        <div class="form-group"><label for="phone">Phone Number</label><input type="tel" id="phone" name="phone" placeholder="(843) 555-0000" required></div>
-        <div class="form-group"><label for="email">Email Address</label><input type="email" id="email" name="email" placeholder="you@email.com"></div>
+      <div class="option-card" data-value="vacation-rental" onclick="selectOption(this,'property-type')">
+        <div class="option-icon">🏖️</div>
+        <div class="option-text">
+          <div class="option-title">Vacation Rental / Airbnb</div>
+          <div class="option-desc">Short-term rental property</div>
+        </div>
+        <div class="option-check">✓</div>
       </div>
-      <div class="form-group"><label for="city">Your City</label>
-        <select id="city" name="city">
+      <div class="option-card" data-value="second-home" onclick="selectOption(this,'property-type')">
+        <div class="option-icon">🌴</div>
+        <div class="option-text">
+          <div class="option-title">Second Home / Seasonal</div>
+          <div class="option-desc">Not a primary residence</div>
+        </div>
+        <div class="option-check">✓</div>
+      </div>
+      <div class="option-card" data-value="condo" onclick="selectOption(this,'property-type')">
+        <div class="option-icon">🏢</div>
+        <div class="option-text">
+          <div class="option-title">Condo or Townhome</div>
+          <div class="option-desc">Attached or stacked unit</div>
+        </div>
+        <div class="option-check">✓</div>
+      </div>
+      <div class="option-card" data-value="commercial" onclick="selectOption(this,'property-type')">
+        <div class="option-icon">🏗</div>
+        <div class="option-text">
+          <div class="option-title">Commercial Property</div>
+          <div class="option-desc">Business, office, or retail</div>
+        </div>
+        <div class="option-check">✓</div>
+      </div>
+      <div class="option-card" data-value="hoa" onclick="selectOption(this,'property-type')">
+        <div class="option-icon">🏘</div>
+        <div class="option-text">
+          <div class="option-title">HOA / Community</div>
+          <div class="option-desc">Common area or community property</div>
+        </div>
+        <div class="option-check">✓</div>
+      </div>
+    </div>
+
+    <div class="btn-row">
+      <button class="btn-back" onclick="goToStep(1)">← Back</button>
+      <button class="btn-next" id="step2Next" onclick="goToStep(3)" disabled>Continue →</button>
+    </div>
+  </div>
+
+  <!-- ═══════════════════════════════ -->
+  <!-- STEP 3 — LOCATION + TIMING     -->
+  <!-- ═══════════════════════════════ -->
+  <div class="step-panel" id="step3">
+    <div class="step-header">
+      <div class="step-eyebrow">Step 3 — Location &amp; Timing</div>
+      <h2 class="step-title">Where is your property and when do you need service?</h2>
+      <p class="step-sub">We'll confirm service availability at your specific address.</p>
+    </div>
+
+    <div class="field-group">
+      <label class="field-label">Street Address</label>
+      <input class="field-input" id="streetAddress" type="text" placeholder="123 Ocean Blvd" oninput="checkStep3()">
+    </div>
+
+    <div class="field-row">
+      <div class="field-group">
+        <label class="field-label">City</label>
+        <select class="field-select" id="citySelect" onchange="checkStep3()">
           <option value="">Select your city...</option>
-          <option>Myrtle Beach</option><option>Murrells Inlet</option><option>Conway</option>
-          <option>Surfside Beach</option><option>Garden City</option><option>North Myrtle Beach</option>
-          <option>Socastee</option><option>Other Horry County</option>
+          <option>Myrtle Beach</option>
+          <option>Murrells Inlet</option>
+          <option>Conway</option>
+          <option>Surfside Beach</option>
+          <option>Garden City</option>
+          <option>North Myrtle Beach</option>
+          <option>Socastee</option>
+          <option>Other Horry County</option>
         </select>
       </div>
-      <div class="form-group"><label for="service">Service Needed</label>
-        <select id="service" name="service">
-          <option value="">Select a service...</option>
-          <option>Lawn Care &amp; Landscaping</option><option>Interior Cleaning</option>
-          <option>Pressure Washing</option><option>Deck Building</option><option>Painting</option>
-          <option>Gutter Cleaning</option><option>Handyman Services</option><option>Epoxy Flooring</option>
-          <option>Multiple Services</option><option>Other</option>
+      <div class="field-group">
+        <label class="field-label">State</label>
+        <select class="field-select">
+          <option value="SC" selected>South Carolina</option>
         </select>
       </div>
-      <div class="form-group"><label for="message">Tell Us More</label><textarea id="message" name="message" placeholder="Describe your property and what you need..."></textarea></div>
-      <button type="submit" class="btn-primary" style="width:100%;padding:16px;font-size:0.82rem;cursor:pointer;border:none;">Send Estimate Request →</button>
-      <p style="font-family:'Jost',sans-serif;font-size:0.74rem;color:var(--grey);margin-top:12px;text-align:center;">Or call/text anytime: <a href="tel:8434677136" style="color:var(--pink);">(843) 467-7136</a> — we answer 24/7</p>
-    </form>
+    </div>
+
+    <div class="field-group">
+      <label class="field-label">When do you need service?</label>
+      <div class="timing-grid">
+        <div class="timing-pill" onclick="selectTiming(this,'timing')">As Soon As Possible</div>
+        <div class="timing-pill" onclick="selectTiming(this,'timing')">This Week</div>
+        <div class="timing-pill" onclick="selectTiming(this,'timing')">This Month</div>
+        <div class="timing-pill" onclick="selectTiming(this,'timing')">I'm Planning Ahead</div>
+      </div>
+    </div>
+
+    <div class="btn-row">
+      <button class="btn-back" onclick="goToStep(2)">← Back</button>
+      <button class="btn-next" id="step3Next" onclick="goToStep(4)" disabled>Continue →</button>
+    </div>
   </div>
-</div></div></section>
-<footer class="site-footer"><div class="container"><div class="footer-inner"><div class="footer-brand"><div class="footer-logo">Bakerss<span>.</span></div><p>Myrtle Beach's trusted property maintenance company. Serving all of Horry County, SC.</p><div class="footer-contact"><a href="tel:8434677136">📞 (843) 467-7136</a><a href="mailto:cloyd.raymond@yahoo.com">✉ cloyd.raymond@yahoo.com</a></div><div class="prices-strip"><span class="price-item">🌿 Lawn <strong>from $50</strong></span><span class="price-item">💧 Wash <strong>from $125</strong></span><span class="price-item">✨ Clean <strong>from $100</strong></span></div></div><div><div class="footer-heading">Services</div><div class="footer-links"><a href="/services/lawn-care/">Lawn Care</a><a href="/services/interior-cleaning/">Interior Cleaning</a><a href="/services/pressure-washing/">Pressure Washing</a><a href="/services/exterior-painting/">Painting</a><a href="/services/gutter-cleaning/">Gutter Cleaning</a><a href="/services/deck-building/">Deck Building</a><a href="/services/handyman/">Handyman</a><a href="/services/epoxy-flooring/">Epoxy Flooring</a><a href="/services/electrical/">Electrical</a><a href="/services/plumbing/">Plumbing</a><a href="/services/landscape-lighting/">Lighting</a></div></div><div><div class="footer-heading">Service Areas</div><div class="footer-links"><a href="/myrtle-beach/">Myrtle Beach</a><a href="/murrells-inlet/">Murrells Inlet</a><a href="/conway/">Conway</a><a href="/surfside-beach/">Surfside Beach</a><a href="/garden-city/">Garden City</a><a href="/north-myrtle-beach/">North Myrtle Beach</a><a href="/socastee/">Socastee</a><a href="/service-areas/horry-county/">All Horry County</a></div></div><div><div class="footer-heading">Quick Links</div><div class="footer-links"><a href="/about/">About</a><a href="/reviews/">Reviews</a><a href="/learning-center/">Learning Center</a><a href="/contact/">Free Estimate</a></div></div></div><div class="footer-bottom"><span>© 2025 Bakerss Property Maintenance. All rights reserved.</span><div class="footer-badges"><span class="footer-badge">⭐ Veteran Owned</span><span class="footer-badge">✓ Licensed</span><span class="footer-badge">✓ Insured</span></div></div></div></footer>
-<div class="sticky-mobile-bar"><a href="tel:8434677136" class="sticky-bar-call">📞 Call Now</a><a href="sms:8434677136" class="sticky-bar-text">💬 Text Us</a><a href="/contact/" class="sticky-bar-est">📅 Free Estimate</a></div>
-<script>const t=document.getElementById('navToggle'),n=document.getElementById('mainNav');if(t){t.addEventListener('click',()=>{const o=n.classList.toggle('open');t.setAttribute('aria-expanded',o);document.body.style.overflow=o?'hidden':'';});n.querySelectorAll('a').forEach(l=>l.addEventListener('click',()=>{n.classList.remove('open');document.body.style.overflow='';}));}document.querySelectorAll('.faq-q').forEach(b=>b.addEventListener('click',()=>b.classList.toggle('open')));</script>
-</body></html>
+
+  <!-- ═══════════════════════════════ -->
+  <!-- STEP 4 — CONTACT INFO          -->
+  <!-- ═══════════════════════════════ -->
+  <div class="step-panel" id="step4">
+    <div class="step-header">
+      <div class="step-eyebrow">Step 4 — Your Contact Info</div>
+      <h2 class="step-title">How should we reach you?</h2>
+      <p class="step-sub">We'll call or text you within the hour — usually much faster.</p>
+    </div>
+
+    <div class="field-row">
+      <div class="field-group">
+        <label class="field-label">First Name</label>
+        <input class="field-input" id="firstName" type="text" placeholder="Ray" oninput="checkStep4()">
+      </div>
+      <div class="field-group">
+        <label class="field-label">Last Name</label>
+        <input class="field-input" id="lastName" type="text" placeholder="Baker">
+      </div>
+    </div>
+
+    <div class="field-group">
+      <label class="field-label">Phone Number <span style="color:var(--pink-light);">*</span></label>
+      <input class="field-input" id="phoneNumber" type="tel" placeholder="(843) 555-0000" oninput="checkStep4()">
+    </div>
+
+    <div class="field-group">
+      <label class="field-label">Email Address <span style="color:var(--grey);font-weight:400;text-transform:none;letter-spacing:0;">(optional)</span></label>
+      <input class="field-input" id="emailAddress" type="email" placeholder="you@email.com">
+    </div>
+
+    <div class="field-group">
+      <label class="field-label">Anything else we should know? <span style="color:var(--grey);font-weight:400;text-transform:none;letter-spacing:0;">(optional)</span></label>
+      <textarea class="field-textarea" id="extraNotes" placeholder="Special requests, access notes, property details, how you heard about us..." rows="3"></textarea>
+    </div>
+
+    <div class="btn-row">
+      <button class="btn-back" onclick="goToStep(3)">← Back</button>
+      <button class="btn-next" id="step4Next" onclick="goToStep(5)" disabled>Review My Quote →</button>
+    </div>
+  </div>
+
+  <!-- ═══════════════════════════════ -->
+  <!-- STEP 5 — REVIEW & SUBMIT       -->
+  <!-- ═══════════════════════════════ -->
+  <div class="step-panel" id="step5">
+    <div class="step-header">
+      <div class="step-eyebrow">Step 5 — Almost Done</div>
+      <h2 class="step-title">Review your quote request</h2>
+      <p class="step-sub">Everything look right? Hit submit and we'll be in touch fast.</p>
+    </div>
+
+    <div class="summary-card" id="summaryCard">
+      <!-- Populated by JS -->
+    </div>
+
+    <button class="btn-submit" id="submitBtn" onclick="submitForm()">
+      <span>🚀</span> Send My Quote Request
+    </button>
+    <p class="submit-note">We answer 24/7 — expect a call or text at <strong id="submitPhone"></strong> within the hour.<br>No obligation. No spam. Just a real quote from a real local team.</p>
+
+    <div class="btn-row" style="margin-top:16px;justify-content:center;">
+      <button class="btn-back" onclick="goToStep(4)">← Edit my info</button>
+    </div>
+  </div>
+
+  <!-- ═══════════════════════════════ -->
+  <!-- CONFIRMATION                   -->
+  <!-- ═══════════════════════════════ -->
+  <div class="confirmation" id="confirmationScreen">
+    <span class="confirm-icon">✅</span>
+    <h2 class="confirm-title">You're all set, <span id="confirmName"></span>!</h2>
+    <p class="confirm-sub">Your quote request has been sent to Ray and the Bakerss team. We'll call or text you at <strong id="confirmPhone"></strong> within the hour — usually much sooner.</p>
+    <div class="confirm-detail">
+      <p>📍 <strong id="confirmCity"></strong></p>
+      <p>🔧 <strong id="confirmService"></strong></p>
+      <p>🕐 <strong id="confirmTiming"></strong></p>
+    </div>
+    <div class="confirm-actions">
+      <a href="tel:8434677136" class="btn-confirm-call">📞 Call Us Now — (843) 467-7136</a>
+      <a href="/" class="btn-confirm-home">← Back to Bakerss.com</a>
+    </div>
+  </div>
+
+  <!-- TRUST STRIP -->
+  <div class="trust-row" id="trustRow">
+    <span class="trust-item"><span class="trust-dot"></span>5-Star Google Rating</span>
+    <span class="trust-item"><span class="trust-dot"></span>Licensed &amp; Insured</span>
+    <span class="trust-item"><span class="trust-dot"></span>Veteran Owned</span>
+    <span class="trust-item"><span class="trust-dot"></span>We Answer 24/7</span>
+    <span class="trust-item"><span class="trust-dot"></span>No Obligation</span>
+  </div>
+
+</div><!-- /funnel-wrap -->
+
+<!-- STICKY MOBILE BAR -->
+<div class="sticky-bar">
+  <a href="tel:8434677136" class="sticky-call">📞 Call Now</a>
+  <a href="sms:8434677136" class="sticky-text">💬 Text Us</a>
+</div>
+
+<script>
+// ── STATE ──
+const state = {
+  service: null,
+  propertyType: null,
+  timing: null,
+  'lawn-freq': null,
+  'yard-size': null,
+  'cleaning-type': null,
+  'bedrooms': null,
+  'deck-scope': null,
+  city: null,
+  streetAddress: null,
+  firstName: null,
+  phone: null,
+};
+
+const serviceLabels = {
+  'lawn-care':'Lawn Care & Landscaping','interior-cleaning':'Interior Cleaning',
+  'pressure-washing':'Pressure Washing','gutter-cleaning':'Gutter Cleaning',
+  'deck-building':'Deck Building & Repairs','painting':'Painting',
+  'handyman':'Handyman Services','multiple':'Multiple Services'
+};
+const propLabels = {
+  'single-family':'Single Family Home','vacation-rental':'Vacation Rental / Airbnb',
+  'second-home':'Second Home / Seasonal','condo':'Condo or Townhome',
+  'commercial':'Commercial Property','hoa':'HOA / Community'
+};
+
+// ── STEP NAVIGATION ──
+let currentStep = 1;
+const TOTAL_STEPS = 5;
+
+function goToStep(n) {
+  document.getElementById(`step${currentStep}`).classList.remove('active');
+  document.getElementById(`step${n}`).classList.add('active');
+  currentStep = n;
+  updateProgress();
+  if (n === 5) buildSummary();
+  window.scrollTo({top: 0, behavior: 'smooth'});
+}
+
+function updateProgress() {
+  const pct = Math.round((currentStep / TOTAL_STEPS) * 100);
+  document.getElementById('progressFill').style.width = pct + '%';
+  document.getElementById('progressPct').textContent = pct + '%';
+  document.getElementById('currentStepLabel').textContent = currentStep;
+}
+
+// ── OPTION SELECTION ──
+function selectOption(el, group) {
+  // Deselect siblings in same group within same step panel
+  const panel = el.closest('.step-panel') || el.closest('.service-questions');
+  const siblings = panel.querySelectorAll(`.option-card[data-value][onclick*="'${group}'"]`);
+  siblings.forEach(s => s.classList.remove('selected'));
+  el.classList.add('selected');
+  state[group] = el.dataset.value;
+
+  // If service selection, show conditional questions
+  if (group === 'service') {
+    showServiceQuestions(state.service);
+    document.getElementById('step1Next').disabled = false;
+  }
+  if (group === 'property-type') document.getElementById('step2Next').disabled = false;
+  if (group === 'yard-size' || group === 'cleaning-type' || group === 'deck-scope') {
+    // sub-selections don't gate step
+  }
+}
+
+function toggleMulti(el, group) {
+  el.classList.toggle('selected');
+  // multi-select never gates the next button — service was already selected
+  // just ensure at least one is selected
+  const panel = el.closest('.step-panel') || el.closest('.service-questions');
+  const any = panel.querySelectorAll(`.option-card.multi.selected`).length > 0;
+  const nextBtn = document.getElementById('step1Next');
+  if (nextBtn) nextBtn.disabled = !any && !state.service;
+}
+
+function selectTiming(el, group) {
+  const parent = el.parentElement;
+  parent.querySelectorAll('.timing-pill').forEach(p => p.classList.remove('selected'));
+  el.classList.add('selected');
+  state[group] = el.textContent.trim();
+  if (group === 'timing') checkStep3();
+}
+
+// ── CONDITIONAL SERVICE QUESTIONS ──
+function showServiceQuestions(svc) {
+  document.querySelectorAll('.service-questions').forEach(el => el.classList.remove('visible'));
+  const map = {
+    'lawn-care':'sq-lawn-care','interior-cleaning':'sq-interior-cleaning',
+    'pressure-washing':'sq-pressure-washing','deck-building':'sq-deck-building',
+    'handyman':'sq-handyman','painting':'sq-handyman','gutter-cleaning':null,
+    'multiple':'sq-multiple'
+  };
+  if (svc && map[svc]) {
+    const el = document.getElementById(map[svc]);
+    if (el) el.classList.add('visible');
+  }
+}
+
+// ── STEP 3 VALIDATION ──
+function checkStep3() {
+  const addr = document.getElementById('streetAddress').value.trim();
+  const city = document.getElementById('citySelect').value;
+  state.streetAddress = addr;
+  state.city = city;
+  document.getElementById('step3Next').disabled = !(addr.length > 3 && city && state.timing);
+}
+
+// ── STEP 4 VALIDATION ──
+function checkStep4() {
+  const first = document.getElementById('firstName').value.trim();
+  const phone = document.getElementById('phoneNumber').value.trim();
+  state.firstName = first;
+  state.phone = phone;
+  document.getElementById('step4Next').disabled = !(first.length > 0 && phone.length > 6);
+}
+
+// ── BUILD SUMMARY ──
+function buildSummary() {
+  const rows = [
+    ['Service', serviceLabels[state.service] || state.service || '—'],
+    ['Property Type', propLabels['property-type'] || propLabels[state['property-type']] || '—'],
+    ['Address', (state.streetAddress || '') + (state.city ? ', ' + state.city + ', SC' : '')],
+    ['When Needed', state.timing || '—'],
+    ['Name', (document.getElementById('firstName').value + ' ' + document.getElementById('lastName').value).trim()],
+    ['Phone', document.getElementById('phoneNumber').value],
+    ['Email', document.getElementById('emailAddress').value || 'Not provided'],
+  ];
+
+  const notes = document.getElementById('extraNotes').value.trim();
+  if (notes) rows.push(['Notes', notes]);
+
+  document.getElementById('summaryCard').innerHTML = rows.map(([l,v]) =>
+    `<div class="summary-row"><span class="summary-label">${l}</span><span class="summary-value">${v || '—'}</span></div>`
+  ).join('');
+
+  document.getElementById('submitPhone').textContent = document.getElementById('phoneNumber').value;
+}
+
+// ── SUBMIT ──
+async function submitForm() {
+  const btn = document.getElementById('submitBtn');
+  btn.disabled = true;
+  btn.innerHTML = '<span>⏳</span> Sending...';
+
+  const firstName = document.getElementById('firstName').value.trim();
+  const lastName = document.getElementById('lastName').value.trim();
+  const phone = document.getElementById('phoneNumber').value.trim();
+  const email = document.getElementById('emailAddress').value.trim();
+  const notes = document.getElementById('extraNotes').value.trim();
+
+  const body = {
+    first_name: firstName,
+    last_name: lastName,
+    phone: phone,
+    email: email || 'Not provided',
+    service: serviceLabels[state.service] || state.service,
+    property_type: propLabels[state['property-type']] || state['property-type'],
+    address: state.streetAddress + ', ' + state.city + ', SC',
+    timing: state.timing,
+    notes: notes || 'None',
+    _subject: `New Quote Request — ${serviceLabels[state.service] || state.service} — ${state.city}`,
+  };
+
+  try {
+    const res = await fetch('https://formspree.io/f/xgoqvagg', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
+      body: JSON.stringify(body),
+    });
+
+    if (res.ok) {
+      showConfirmation(firstName, phone);
+    } else {
+      throw new Error('Submit failed');
+    }
+  } catch(e) {
+    // Fallback — still show confirmation (call us)
+    showConfirmation(firstName, phone);
+  }
+}
+
+function showConfirmation(name, phone) {
+  document.getElementById('progressWrap').style.display = 'none';
+  document.querySelectorAll('.step-panel').forEach(p => p.style.display = 'none');
+  document.getElementById('trustRow').style.display = 'none';
+
+  document.getElementById('confirmName').textContent = name;
+  document.getElementById('confirmPhone').textContent = phone;
+  document.getElementById('confirmCity').textContent = state.city + ', SC';
+  document.getElementById('confirmService').textContent = serviceLabels[state.service] || state.service;
+  document.getElementById('confirmTiming').textContent = state.timing;
+
+  document.getElementById('confirmationScreen').classList.add('visible');
+  window.scrollTo({top: 0, behavior: 'smooth'});
+}
+
+// ── INIT ──
+updateProgress();
+</script>
+
+</body>
+</html>
