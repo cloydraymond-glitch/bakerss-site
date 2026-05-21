@@ -1,135 +1,401 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@graph": [
-    {
-      "@type": "LocalBusiness",
-      "@id": "https://www.bakerss.com/#business",
-      "name": "Bakerss Property Maintenance",
-      "url": "https://www.bakerss.com",
-      "telephone": "+18434677136",
-      "address": { "@type": "PostalAddress", "addressLocality": "Myrtle Beach", "addressRegion": "SC", "addressCountry": "US" },
-      "aggregateRating": { "@type": "AggregateRating", "ratingValue": "5", "reviewCount": "6", "bestRating": "5" }
-    },
-    {
-      "@type": "Service",
-      "@id": "https://www.bakerss.com/services/pressure-washing/#service",
-      "name": "Pressure Washing",
-      "description": "Professional soft wash and high-pressure cleaning for driveways, siding, roofs, patios, decks, and commercial properties in Myrtle Beach and Horry County, SC. Starting at $125.",
-      "provider": { "@id": "https://www.bakerss.com/#business" },
-      "areaServed": { "@type": "County", "name": "Horry County" },
-      "serviceType": "Pressure Washing",
-      "url": "https://www.bakerss.com/services/pressure-washing/",
-      "offers": { "@type": "Offer", "price": "125", "priceCurrency": "USD", "description": "Pressure washing starting at $125" }
-    },
-    {
-      "@type": "BreadcrumbList",
-      "itemListElement": [
-        { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.bakerss.com/" },
-        { "@type": "ListItem", "position": 2, "name": "Services", "item": "https://www.bakerss.com/services/" },
-        { "@type": "ListItem", "position": 3, "name": "Pressure Washing", "item": "https://www.bakerss.com/services/pressure-washing/" }
-      ]
-    },
-    {
-      "@type": "FAQPage",
-      "mainEntity": [
-        {
-          "@type": "Question",
-          "name": "How much does pressure washing cost in Myrtle Beach?",
-          "acceptedAnswer": { "@type": "Answer", "text": "Pressure washing in Myrtle Beach starts at $125. Final pricing depends on the surface type, square footage, and condition. Driveways, house washes, and roofs are all priced differently. We always provide a free estimate." }
-        },
-        {
-          "@type": "Question",
-          "name": "What's the difference between soft washing and pressure washing?",
-          "acceptedAnswer": { "@type": "Answer", "text": "Soft washing uses low pressure and a biodegradable cleaning solution to remove algae, mold, and mildew — it's used on roofs, siding, and delicate surfaces. High-pressure washing uses stronger force for hard surfaces like concrete driveways and stone patios." }
-        },
-        {
-          "@type": "Question",
-          "name": "How often should I pressure wash my home in Myrtle Beach?",
-          "acceptedAnswer": { "@type": "Answer", "text": "In coastal SC, most homeowners benefit from an annual house wash and driveway cleaning. The salt air, humidity, and pollen here accelerate algae and mildew growth compared to inland areas. After storm season is a particularly good time to schedule." }
-        },
-        {
-          "@type": "Question",
-          "name": "Can you pressure wash vinyl siding without damaging it?",
-          "acceptedAnswer": { "@type": "Answer", "text": "Yes. We use soft wash technique on vinyl siding — low pressure with professional-grade cleaning solution that removes buildup safely without risking damage to seams, caulking, or paint." }
-        },
-        {
-          "@type": "Question",
-          "name": "Do you pressure wash vacation rentals and Airbnb properties?",
-          "acceptedAnswer": { "@type": "Answer", "text": "Yes. We work with many vacation rental owners and property managers across Horry County who need reliable exterior cleaning between seasons or after guest stays." }
-        },
-        {
-          "@type": "Question",
-          "name": "Are you insured for pressure washing in South Carolina?",
-          "acceptedAnswer": { "@type": "Answer", "text": "Yes. Bakerss Property Maintenance is fully licensed, bonded, and insured in South Carolina for all pressure washing services." }
-        }
-      ]
-    }
-  ]
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Pressure Washing in Murrells Inlet, SC | Bakerss Property Maintenance</title>
+<meta name="description" content="Professional pressure washing in Murrells Inlet, SC. Prince Creek, Wachesaw Plantation & all communities. Starting at $125. Call 843-467-7136.">
+<link rel="canonical" href="https://www.bakerss.com/service-areas/murrells-inlet/pressure-washing/">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;800&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+:root{
+  --pink:#E91E8C;--pink-dark:#C0157A;--pink-light:#FF4BAB;
+  --black:#0D0D0D;--dark:#1A1A1A;--dark2:#242424;--dark3:#2E2E2E;
+  --white:#FFFFFF;--border:rgba(255,255,255,0.1);
+  --font-display:'Playfair Display',Georgia,serif;--font-body:'DM Sans',sans-serif;
 }
-</script>
+html{scroll-behavior:smooth}
+body{font-family:var(--font-body);background:var(--dark);color:var(--white);line-height:1.6;overflow-x:hidden}
+.topbar{background:var(--pink);text-align:center;padding:9px 1rem;font-size:13px;font-weight:500;color:#fff}
+.topbar a{color:#fff;text-decoration:none;font-weight:700;border-bottom:1px solid rgba(255,255,255,0.5)}
+nav{position:sticky;top:0;z-index:1000;background:rgba(13,13,13,0.97);backdrop-filter:blur(12px);border-bottom:1px solid var(--border)}
+.nav-inner{max-width:1280px;margin:0 auto;display:flex;align-items:center;gap:1rem;padding:0 2rem;height:70px}
+.logo{font-family:var(--font-display);font-size:22px;font-weight:800;color:var(--white);text-decoration:none;letter-spacing:-0.02em}
+.logo span{color:var(--pink)}
+.nav-links{display:flex;align-items:center;margin-left:1.5rem;flex:1}
+.nav-item{position:relative}
+.nav-item>a,.nav-btn{display:flex;align-items:center;gap:4px;padding:0 14px;height:70px;color:rgba(255,255,255,0.7);text-decoration:none;font-size:13.5px;font-weight:500;background:none;border:none;cursor:pointer;font-family:var(--font-body);transition:color 0.2s}
+.nav-item>a:hover,.nav-btn:hover{color:var(--white)}
+.nav-item>a svg,.nav-btn svg{width:11px;height:11px;margin-top:1px}
+.mega-menu{display:none;position:absolute;top:70px;left:50%;transform:translateX(-50%);background:var(--dark2);border:1px solid var(--border);border-radius:12px;padding:2rem;width:860px;box-shadow:0 24px 60px rgba(0,0,0,0.6);z-index:999}
+.nav-item:hover .mega-menu{display:grid;grid-template-columns:repeat(3,1fr);gap:2rem}
+.nav-item:hover .dropdown{display:block}
+.mega-col h4{font-size:10px;font-weight:600;letter-spacing:0.12em;text-transform:uppercase;color:var(--pink);margin-bottom:12px;padding-bottom:8px;border-bottom:1px solid rgba(233,30,140,0.25)}
+.mega-col a{display:flex;align-items:center;gap:8px;padding:7px 0;color:rgba(255,255,255,0.7);text-decoration:none;font-size:13.5px;transition:color 0.15s;border-bottom:1px solid rgba(255,255,255,0.04)}
+.mega-col a:last-child{border-bottom:none}
+.mega-col a:hover{color:var(--pink)}
+.dropdown{display:none;position:absolute;top:70px;left:0;background:var(--dark2);border:1px solid var(--border);border-radius:10px;padding:0.75rem 0;min-width:220px;box-shadow:0 16px 40px rgba(0,0,0,0.5);z-index:999}
+.dropdown a{display:block;padding:9px 20px;color:rgba(255,255,255,0.75);text-decoration:none;font-size:13.5px;transition:all 0.15s}
+.dropdown a:hover{color:var(--white);background:rgba(233,30,140,0.08);padding-left:24px}
+.nav-right{display:flex;align-items:center;gap:12px;margin-left:auto}
+.nav-phone{font-size:14px;font-weight:600;color:rgba(255,255,255,0.85);text-decoration:none}
+.nav-phone:hover{color:var(--pink)}
+.btn-quote-sm{background:var(--pink);color:#fff;padding:9px 20px;border-radius:6px;font-size:13px;font-weight:600;text-decoration:none;transition:background 0.2s}
+.btn-quote-sm:hover{background:var(--pink-dark)}
+/* SERVICE PAGE LAYOUT */
+.svc-hero{position:relative;background:var(--black);padding:4.5rem 2rem 3.5rem;border-bottom:1px solid rgba(255,255,255,0.06);overflow:hidden}
+.svc-hero::after{content:'';position:absolute;top:-100px;right:-100px;width:500px;height:500px;background:radial-gradient(circle,rgba(233,30,140,0.08) 0%,transparent 70%);pointer-events:none}
+.breadcrumb{display:flex;align-items:center;gap:8px;font-size:12px;color:rgba(255,255,255,0.3);margin-bottom:1.25rem}
+.breadcrumb a{color:rgba(255,255,255,0.3);text-decoration:none;transition:color 0.15s}
+.breadcrumb a:hover{color:var(--pink)}
+.breadcrumb span{color:rgba(255,255,255,0.15)}
+.svc-hero-inner{max-width:1100px;margin:0 auto;display:grid;grid-template-columns:1fr 360px;gap:3rem;align-items:start;position:relative}
+.svc-badge{display:inline-flex;align-items:center;gap:8px;background:rgba(233,30,140,0.1);border:1px solid rgba(233,30,140,0.3);border-radius:100px;padding:5px 14px;font-size:11px;font-weight:600;letter-spacing:0.08em;text-transform:uppercase;color:var(--pink-light);margin-bottom:1.25rem}
+.svc-hero h1{font-family:var(--font-display);font-size:clamp(2rem,3.5vw,3rem);font-weight:800;line-height:1.1;letter-spacing:-0.02em;margin-bottom:1rem}
+.svc-hero h1 em{font-style:normal;color:var(--pink)}
+.svc-hero-desc{font-size:16px;color:rgba(255,255,255,0.55);line-height:1.75;margin-bottom:1.75rem;font-weight:300;max-width:560px}
+.svc-ctas{display:flex;gap:10px;flex-wrap:wrap;margin-bottom:1.75rem}
+.btn-primary{display:inline-flex;align-items:center;gap:8px;background:var(--pink);color:#fff;padding:13px 24px;border-radius:8px;font-size:14px;font-weight:600;text-decoration:none;transition:all 0.2s}
+.btn-primary:hover{background:var(--pink-dark);transform:translateY(-1px)}
+.btn-secondary{display:inline-flex;align-items:center;gap:8px;background:transparent;color:rgba(255,255,255,0.8);padding:13px 24px;border-radius:8px;font-size:14px;font-weight:500;text-decoration:none;border:1px solid rgba(255,255,255,0.18);transition:all 0.2s}
+.btn-secondary:hover{border-color:rgba(255,255,255,0.4);color:#fff}
+.svc-trust{display:flex;gap:20px;flex-wrap:wrap}
+.trust-item{display:flex;align-items:center;gap:6px;font-size:12.5px;color:rgba(255,255,255,0.45)}
+.trust-item svg{width:15px;height:15px;color:var(--pink);flex-shrink:0}
+/* Quote side card */
+.quote-card{background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.1);border-radius:14px;padding:1.75rem;position:sticky;top:90px}
+.quote-card h3{font-family:var(--font-display);font-size:1.2rem;font-weight:700;margin-bottom:0.25rem}
+.quote-card .qsub{font-size:12px;color:rgba(255,255,255,0.4);margin-bottom:1.25rem}
+.form-group{margin-bottom:0.85rem}
+.form-group label{display:block;font-size:10px;font-weight:600;letter-spacing:0.08em;text-transform:uppercase;color:rgba(255,255,255,0.35);margin-bottom:5px}
+.form-group input,.form-group select{width:100%;background:rgba(255,255,255,0.05);border:1px solid rgba(255,255,255,0.1);border-radius:7px;padding:10px 13px;color:#fff;font-size:13.5px;font-family:var(--font-body);outline:none;transition:border-color 0.2s;-webkit-appearance:none}
+.form-group input::placeholder{color:rgba(255,255,255,0.25)}
+.form-group input:focus,.form-group select:focus{border-color:var(--pink)}
+.form-group select option{background:var(--dark2)}
+.btn-submit{width:100%;background:var(--pink);color:#fff;border:none;padding:13px;border-radius:7px;font-size:14px;font-weight:600;font-family:var(--font-body);cursor:pointer;margin-top:0.25rem;transition:background 0.2s}
+.btn-submit:hover{background:var(--pink-dark)}
+.q-privacy{text-align:center;font-size:11px;color:rgba(255,255,255,0.2);margin-top:0.6rem}
+.q-phone{display:flex;align-items:center;justify-content:center;gap:7px;margin-top:1rem;padding-top:1rem;border-top:1px solid rgba(255,255,255,0.07);font-size:13px;color:rgba(255,255,255,0.45)}
+.q-phone a{color:var(--pink);text-decoration:none;font-weight:600}
+/* MAIN CONTENT */
+.svc-content{max-width:1100px;margin:0 auto;padding:4rem 2rem;display:grid;grid-template-columns:1fr 360px;gap:3rem;align-items:start}
+.svc-main{}
+section.content-sec{margin-bottom:3.5rem}
+section.content-sec:last-child{margin-bottom:0}
+.sec-label{font-size:10px;font-weight:700;letter-spacing:0.12em;text-transform:uppercase;color:var(--pink);margin-bottom:0.6rem}
+h2.sec-title{font-family:var(--font-display);font-size:1.75rem;font-weight:800;letter-spacing:-0.02em;margin-bottom:1rem;line-height:1.2}
+.prose{font-size:15px;color:rgba(255,255,255,0.6);line-height:1.8;font-weight:300}
+.prose+.prose{margin-top:1rem}
+/* Service sub-cards */
+.sub-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:12px;margin-top:1.5rem}
+.sub-card{background:var(--dark2);border:1px solid rgba(255,255,255,0.07);border-radius:10px;padding:1.25rem}
+.sub-card h4{font-size:14.5px;font-weight:600;margin-bottom:0.4rem}
+.sub-card p{font-size:13px;color:rgba(255,255,255,0.45);line-height:1.6}
+.sub-card .tag{display:inline-block;font-size:11px;font-weight:600;color:var(--pink);background:rgba(233,30,140,0.08);padding:2px 8px;border-radius:4px;margin-bottom:0.5rem}
+/* Who we serve */
+.serve-list{display:grid;grid-template-columns:repeat(2,1fr);gap:10px;margin-top:1.25rem}
+.serve-item{display:flex;align-items:center;gap:10px;background:var(--dark2);border:1px solid rgba(255,255,255,0.06);border-radius:8px;padding:12px}
+.serve-item svg{color:var(--pink);width:16px;height:16px;flex-shrink:0}
+.serve-item span{font-size:13.5px;color:rgba(255,255,255,0.7)}
+/* Process steps */
+.process-steps{display:flex;flex-direction:column;gap:0;margin-top:1.25rem}
+.p-step{display:flex;gap:1.25rem;padding:1.25rem 0;border-bottom:1px solid rgba(255,255,255,0.05)}
+.p-step:last-child{border-bottom:none}
+.p-num{width:36px;height:36px;background:var(--pink);border-radius:8px;display:flex;align-items:center;justify-content:center;font-size:13px;font-weight:700;color:#fff;flex-shrink:0;margin-top:2px}
+.p-step h4{font-size:15px;font-weight:600;margin-bottom:4px}
+.p-step p{font-size:13.5px;color:rgba(255,255,255,0.5);line-height:1.6}
+/* FAQ */
+.faq-list{display:flex;flex-direction:column;gap:0;margin-top:1.25rem;border:1px solid rgba(255,255,255,0.07);border-radius:12px;overflow:hidden}
+.faq-item{border-bottom:1px solid rgba(255,255,255,0.06)}
+.faq-item:last-child{border-bottom:none}
+.faq-q{display:flex;align-items:center;justify-content:space-between;padding:1.1rem 1.25rem;cursor:pointer;font-size:14.5px;font-weight:600;gap:1rem;transition:background 0.15s}
+.faq-q:hover{background:rgba(255,255,255,0.03)}
+.faq-q .icon{font-size:18px;color:var(--pink);flex-shrink:0;transition:transform 0.25s;line-height:1}
+.faq-a{display:none;padding:0 1.25rem 1.1rem;font-size:13.5px;color:rgba(255,255,255,0.55);line-height:1.75}
+.faq-item.open .faq-q .icon{transform:rotate(45deg)}
+.faq-item.open .faq-a{display:block}
+/* Cities grid */
+.cities-row{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;margin-top:1.25rem}
+.city-link{display:flex;align-items:center;gap:7px;background:var(--dark2);border:1px solid rgba(255,255,255,0.07);border-radius:8px;padding:10px 14px;text-decoration:none;color:rgba(255,255,255,0.65);font-size:13px;transition:all 0.2s}
+.city-link:hover{border-color:rgba(233,30,140,0.35);color:var(--white)}
+.city-link::before{content:'';width:5px;height:5px;background:var(--pink);border-radius:50%;flex-shrink:0;opacity:0.6}
+/* Related services */
+.related-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:10px;margin-top:1.25rem}
+.rel-card{background:var(--dark2);border:1px solid rgba(255,255,255,0.07);border-radius:10px;padding:1.1rem 1.25rem;text-decoration:none;color:var(--white);transition:all 0.2s;display:flex;align-items:center;gap:10px}
+.rel-card:hover{border-color:rgba(233,30,140,0.35);transform:translateY(-1px)}
+.rel-card svg{color:var(--pink);width:18px;height:18px;flex-shrink:0}
+.rel-card div h4{font-size:13.5px;font-weight:600;margin-bottom:2px}
+.rel-card div p{font-size:12px;color:rgba(255,255,255,0.4)}
+/* Sidebar sticky */
+.svc-sidebar{position:sticky;top:90px;display:flex;flex-direction:column;gap:1.25rem}
+.side-card{background:var(--dark2);border:1px solid rgba(255,255,255,0.08);border-radius:12px;padding:1.5rem}
+.side-card h3{font-size:14px;font-weight:600;margin-bottom:0.9rem;padding-bottom:0.75rem;border-bottom:1px solid rgba(255,255,255,0.07)}
+.price-box{background:var(--black);border:1px solid rgba(233,30,140,0.25);border-radius:10px;padding:1.25rem;text-align:center;margin-bottom:1.25rem}
+.price-box .from{font-size:11px;color:rgba(255,255,255,0.4);margin-bottom:4px}
+.price-box .amount{font-family:var(--font-display);font-size:2.25rem;font-weight:800;color:var(--pink)}
+.price-box .note{font-size:11px;color:rgba(255,255,255,0.35);margin-top:4px}
+.review-mini{padding:10px 0;border-bottom:1px solid rgba(255,255,255,0.06)}
+.review-mini:last-child{border-bottom:none;padding-bottom:0}
+.stars{color:#FFB800;font-size:12px;margin-bottom:4px}
+.review-mini p{font-size:12.5px;color:rgba(255,255,255,0.55);font-style:italic;line-height:1.5;margin-bottom:4px}
+.review-mini .who{font-size:11px;color:rgba(255,255,255,0.3)}
+.call-side{background:var(--pink);border-radius:10px;padding:1.25rem;text-align:center}
+.call-side p{font-size:12px;color:rgba(255,255,255,0.75);margin-bottom:6px}
+.call-side a{display:block;font-family:var(--font-display);font-size:1.35rem;font-weight:800;color:#fff;text-decoration:none}
+/* CTA BAND */
+.cta-band{background:var(--pink);padding:3.5rem 2rem;text-align:center}
+.cta-band h2{font-family:var(--font-display);font-size:clamp(1.6rem,3vw,2.2rem);font-weight:800;color:#fff;margin-bottom:0.5rem}
+.cta-band p{font-size:15px;color:rgba(255,255,255,0.75);margin-bottom:1.75rem}
+.cta-buttons{display:flex;gap:12px;justify-content:center;flex-wrap:wrap}
+.btn-white{display:inline-flex;align-items:center;gap:8px;background:#fff;color:var(--pink);padding:13px 26px;border-radius:8px;font-size:14px;font-weight:700;text-decoration:none;transition:all 0.2s}
+.btn-white:hover{transform:translateY(-1px)}
+.btn-outline-w{display:inline-flex;align-items:center;gap:8px;background:transparent;color:#fff;padding:13px 26px;border-radius:8px;font-size:14px;font-weight:600;text-decoration:none;border:2px solid rgba(255,255,255,0.5);transition:all 0.2s}
+.btn-outline-w:hover{border-color:#fff;background:rgba(255,255,255,0.1)}
+/* FOOTER */
+footer{background:var(--black);border-top:1px solid rgba(255,255,255,0.07);padding:3rem 2rem 2rem}
+.footer-inner{max-width:1280px;margin:0 auto}
+.footer-top{display:grid;grid-template-columns:260px 1fr 1fr 1fr;gap:2.5rem;padding-bottom:2.5rem;border-bottom:1px solid rgba(255,255,255,0.06);margin-bottom:1.5rem}
+.footer-brand p{font-size:13px;color:rgba(255,255,255,0.35);line-height:1.7;margin:0.75rem 0}
+.footer-contact-links a{display:flex;align-items:center;gap:7px;font-size:13px;color:rgba(255,255,255,0.45);text-decoration:none;margin-bottom:5px;transition:color 0.15s}
+.footer-contact-links a:hover{color:var(--pink)}
+.footer-contact-links svg{width:14px;height:14px;color:var(--pink)}
+.footer-col h4{font-size:10px;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;color:rgba(255,255,255,0.25);margin-bottom:0.9rem}
+.footer-col a{display:block;font-size:12.5px;color:rgba(255,255,255,0.45);text-decoration:none;padding:3px 0;transition:color 0.15s}
+.footer-col a:hover{color:var(--pink)}
+.footer-bottom{display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:1rem;font-size:12px;color:rgba(255,255,255,0.2)}
+.sticky-bar{display:none;position:fixed;bottom:0;left:0;right:0;background:var(--dark2);border-top:1px solid rgba(255,255,255,0.1);z-index:1000;padding:0.5rem;gap:0.5rem}
+.sticky-bar a{flex:1;display:flex;flex-direction:column;align-items:center;gap:3px;padding:8px 4px;text-decoration:none;color:rgba(255,255,255,0.7);font-size:11px;font-weight:600;border-radius:6px}
+.sticky-bar a.primary{background:var(--pink);color:#fff}
+.sticky-bar svg{width:20px;height:20px}
+@media(max-width:1024px){.svc-hero-inner,.svc-content{grid-template-columns:1fr}.quote-card{position:static}.svc-sidebar{position:static;display:grid;grid-template-columns:1fr 1fr}}
+@media(max-width:768px){.nav-links{display:none}.sticky-bar{display:flex}body{padding-bottom:70px}.sub-grid,.serve-list,.related-grid,.cities-row{grid-template-columns:1fr}.footer-top{grid-template-columns:1fr 1fr}}
 
-
-<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0">
-<title>Pressure Washing in Myrtle Beach, SC | Bakerss</title>
-<meta name="description" content="Professional pressure washing in Myrtle Beach, Murrells Inlet &amp; Horry County SC. Driveways, siding, roofs, patios &amp; decks. Starting at $125. Call (843) 467-7136.">
-<link rel="canonical" href="https://www.bakerss.com/services/pressure-washing/">
-<script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"Service","name":"Pressure Washing Myrtle Beach SC","provider":{"@type":"LocalBusiness","name":"Bakerss Property Maintenance","telephone":"+18434677136"},"areaServed":{"@type":"AdministrativeArea","name":"Horry County SC"},"offers":{"@type":"Offer","price":"125","priceCurrency":"USD"}},{"@type":"FAQPage","mainEntity":[{"@type":"Question","name":"How much does pressure washing cost in Myrtle Beach?","acceptedAnswer":{"@type":"Answer","text":"Pressure washing in Myrtle Beach starts at $125. Final pricing depends on surface type, size, and condition."}}]}]}</script>
-<link rel="stylesheet" href="/css/global.css">
+.mhero{background:var(--black);padding:4rem 2rem 3rem;border-bottom:1px solid rgba(255,255,255,0.06);position:relative;overflow:hidden}
+.mhero::after{content:'';position:absolute;top:-150px;right:-100px;width:500px;height:500px;background:radial-gradient(circle,rgba(233,30,140,0.07) 0%,transparent 70%);pointer-events:none}
+.mhero-inner{max-width:1100px;margin:0 auto;display:grid;grid-template-columns:1fr 340px;gap:3rem;align-items:start;position:relative}
+.breadcrumb{display:flex;align-items:center;gap:7px;font-size:12px;color:rgba(255,255,255,0.3);margin-bottom:1.25rem;flex-wrap:wrap}
+.breadcrumb a{color:rgba(255,255,255,0.3);text-decoration:none}
+.breadcrumb a:hover{color:var(--pink)}
+.breadcrumb span{color:rgba(255,255,255,0.15)}
+.mbadge{display:inline-flex;align-items:center;gap:7px;background:rgba(233,30,140,0.1);border:1px solid rgba(233,30,140,0.3);border-radius:100px;padding:5px 14px;font-size:11px;font-weight:600;letter-spacing:0.08em;text-transform:uppercase;color:var(--pink-light);margin-bottom:1.25rem}
+.mhero h1{font-family:var(--font-display);font-size:clamp(1.9rem,3.5vw,2.8rem);font-weight:800;line-height:1.1;letter-spacing:-0.02em;margin-bottom:1rem}
+.mhero h1 em{font-style:normal;color:var(--pink)}
+.mhero-desc{font-size:15.5px;color:rgba(255,255,255,0.55);line-height:1.75;max-width:580px;margin-bottom:1.5rem;font-weight:300}
+.hero-ctas{display:flex;gap:10px;flex-wrap:wrap;margin-bottom:1.5rem}
+.btn-primary{display:inline-flex;align-items:center;gap:8px;background:var(--pink);color:#fff;padding:13px 22px;border-radius:8px;font-size:14px;font-weight:600;text-decoration:none;transition:all 0.2s}
+.btn-primary:hover{background:var(--pink-dark);transform:translateY(-1px)}
+.btn-secondary{display:inline-flex;align-items:center;gap:8px;background:transparent;color:rgba(255,255,255,0.8);padding:13px 22px;border-radius:8px;font-size:14px;font-weight:500;text-decoration:none;border:1px solid rgba(255,255,255,0.18);transition:all 0.2s}
+.btn-secondary:hover{border-color:rgba(255,255,255,0.4);color:#fff}
+.mtrust{display:flex;gap:18px;flex-wrap:wrap}
+.ti{display:flex;align-items:center;gap:6px;font-size:12px;color:rgba(255,255,255,0.4)}
+.ti svg{width:14px;height:14px;color:var(--pink);flex-shrink:0}
+.qcard{background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.1);border-radius:14px;padding:1.75rem;position:sticky;top:90px}
+.qcard h3{font-family:var(--font-display);font-size:1.15rem;font-weight:700;margin-bottom:0.2rem}
+.qcard .qs{font-size:12px;color:rgba(255,255,255,0.4);margin-bottom:1.2rem}
+.fg{margin-bottom:0.8rem}
+.fg label{display:block;font-size:10px;font-weight:600;letter-spacing:0.08em;text-transform:uppercase;color:rgba(255,255,255,0.35);margin-bottom:5px}
+.fg input,.fg select{width:100%;background:rgba(255,255,255,0.05);border:1px solid rgba(255,255,255,0.1);border-radius:7px;padding:10px 12px;color:#fff;font-size:13.5px;font-family:var(--font-body);outline:none;transition:border-color 0.2s;-webkit-appearance:none}
+.fg input::placeholder{color:rgba(255,255,255,0.25)}
+.fg input:focus,.fg select:focus{border-color:var(--pink)}
+.fg select option{background:var(--dark2)}
+.bsub{width:100%;background:var(--pink);color:#fff;border:none;padding:12px;border-radius:7px;font-size:14px;font-weight:600;font-family:var(--font-body);cursor:pointer;margin-top:0.25rem;transition:background 0.2s}
+.bsub:hover{background:var(--pink-dark)}
+.qpriv{text-align:center;font-size:11px;color:rgba(255,255,255,0.2);margin-top:0.5rem}
+.qphone{display:flex;align-items:center;justify-content:center;gap:6px;margin-top:0.9rem;padding-top:0.9rem;border-top:1px solid rgba(255,255,255,0.07);font-size:12.5px;color:rgba(255,255,255,0.4)}
+.qphone a{color:var(--pink);text-decoration:none;font-weight:600}
+.mcontent{max-width:1100px;margin:0 auto;padding:3.5rem 2rem}
+.csec{margin-bottom:3rem}
+.sl{font-size:10px;font-weight:700;letter-spacing:0.12em;text-transform:uppercase;color:var(--pink);margin-bottom:0.5rem;display:block}
+h2.st{font-family:var(--font-display);font-size:1.65rem;font-weight:800;letter-spacing:-0.02em;margin-bottom:0.9rem;line-height:1.2}
+.prose{font-size:15px;color:rgba(255,255,255,0.6);line-height:1.8;font-weight:300}
+.sub-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:10px;margin-top:1.25rem}
+.sub-card{background:var(--dark2);border:1px solid rgba(255,255,255,0.07);border-radius:10px;padding:1.1rem 1.25rem}
+.sub-card .tag{display:inline-block;font-size:10px;font-weight:600;color:var(--pink);background:rgba(233,30,140,0.08);padding:2px 8px;border-radius:4px;margin-bottom:0.4rem}
+.sub-card h4{font-size:14px;font-weight:600;margin-bottom:0.3rem}
+.sub-card p{font-size:12.5px;color:rgba(255,255,255,0.45);line-height:1.6}
+.faq-list{border:1px solid rgba(255,255,255,0.07);border-radius:12px;overflow:hidden;margin-top:1.25rem}
+.faq-item{border-bottom:1px solid rgba(255,255,255,0.06)}
+.faq-item:last-child{border-bottom:none}
+.faq-q{display:flex;align-items:center;justify-content:space-between;padding:1rem 1.25rem;cursor:pointer;font-size:14px;font-weight:600;gap:1rem;transition:background 0.15s}
+.faq-q:hover{background:rgba(255,255,255,0.03)}
+.faq-q .icon{font-size:18px;color:var(--pink);flex-shrink:0;transition:transform 0.25s;line-height:1}
+.faq-a{display:none;padding:0 1.25rem 1rem;font-size:13.5px;color:rgba(255,255,255,0.55);line-height:1.75}
+.faq-item.open .faq-q .icon{transform:rotate(45deg)}
+.faq-item.open .faq-a{display:block}
+.rel-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:10px;margin-top:1.25rem}
+.cta-band{background:var(--pink);padding:3rem 2rem;text-align:center}
+.cta-band h2{font-family:var(--font-display);font-size:clamp(1.5rem,3vw,2rem);font-weight:800;color:#fff;margin-bottom:0.4rem}
+.cta-band p{font-size:15px;color:rgba(255,255,255,0.75);margin-bottom:1.5rem}
+.cta-buttons{display:flex;gap:12px;justify-content:center;flex-wrap:wrap}
+.btn-white{display:inline-flex;align-items:center;gap:8px;background:#fff;color:var(--pink);padding:12px 24px;border-radius:8px;font-size:14px;font-weight:700;text-decoration:none}
+.btn-ow{display:inline-flex;align-items:center;gap:8px;background:transparent;color:#fff;padding:12px 24px;border-radius:8px;font-size:14px;font-weight:600;text-decoration:none;border:2px solid rgba(255,255,255,0.5)}
+.price-pill{display:inline-flex;align-items:center;gap:8px;background:rgba(233,30,140,0.12);border:1px solid rgba(233,30,140,0.3);border-radius:100px;padding:5px 16px;font-size:13px;font-weight:600;color:var(--pink-light);margin-bottom:1.25rem}
+@media(max-width:1024px){.mhero-inner{grid-template-columns:1fr}.qcard{position:static}}
+@media(max-width:768px){.nav-links{display:none}.sticky-bar{display:flex}body{padding-bottom:70px}.sub-grid,.rel-grid{grid-template-columns:1fr}.footer-top{grid-template-columns:1fr 1fr}}
+</style>
 </head>
-<body><div class="top-bar"><div class="container"><div style="font-size:0.72rem;">🌴 Serving All of Horry County, SC — Residential &amp; Commercial</div><div style="display:flex;gap:22px;align-items:center;"><a href="tel:8434677136">📞 (843) 467-7136</a><a href="mailto:cloyd.raymond@yahoo.com">✉ cloyd.raymond@yahoo.com</a></div></div></div>
-<header class="site-header"><div class="container"><nav class="nav-inner"><a href="/" class="nav-logo">Bakerss<span>.</span></a><div class="main-nav" id="mainNav"><a href="/">Home</a><div class="nav-dropdown"><a href="/services/">Services ▾</a><div class="dropdown-menu"><span class="dropdown-label">Outdoor</span><a href="/services/lawn-care/">🌿 Lawn Care &amp; Landscaping</a><a href="/services/pressure-washing/">💧 Pressure Washing</a><a href="/services/gutter-cleaning/">🏠 Gutter Cleaning</a><a href="/services/exterior-painting/">🎨 Exterior Painting</a><a href="/services/landscape-lighting/">💡 Landscape Lighting</a><a href="/services/deck-building/">🪵 Deck Building</a><span class="dropdown-label">Interior</span><a href="/services/interior-cleaning/">✨ Interior Cleaning</a><a href="/services/interior-painting/">🖌 Interior Painting</a><a href="/services/plumbing/">🔧 Minor Plumbing</a><a href="/services/electrical/">⚡ Minor Electrical</a><span class="dropdown-label">Specialty</span><a href="/services/epoxy-flooring/">🏗 Epoxy Flooring</a><a href="/services/drywall/">🔨 Drywall</a><a href="/services/handyman/">🛠 Handyman Services</a></div></div><div class="nav-dropdown"><a href="/service-areas/">Service Areas ▾</a><div class="dropdown-menu"><a href="/service-areas/horry-county/">🗺 All of Horry County</a><a href="/myrtle-beach/">Myrtle Beach</a><a href="/murrells-inlet/">Murrells Inlet</a><a href="/conway/">Conway</a><a href="/surfside-beach/">Surfside Beach</a><a href="/garden-city/">Garden City</a><a href="/north-myrtle-beach/">North Myrtle Beach</a><a href="/socastee/">Socastee</a></div></div><a href="/learning-center/">Learning Center</a><a href="/reviews/">Reviews</a><a href="/about/">About</a><a href="/get-a-quote/" class="nav-cta">Free Estimate</a></div><button class="nav-toggle" id="navToggle" aria-label="Open menu"><span></span><span></span><span></span></button></nav></div></header><nav class="breadcrumb"><div class="container"><div class="breadcrumb-inner"><a href="/">Home</a><span>›</span><a href="/services/">Services</a><span>›</span><strong>Pressure Washing</strong></div></div></nav><section class="page-hero">
-  <div class="container">
-    <span class="label">Outdoor Services · Horry County, SC</span>
-    <h1>Pressure Washing in Myrtle Beach, SC</h1>
-    <p>Professional soft wash and high-pressure cleaning for driveways, siding, roofs, patios, decks, and more. Restore your property's curb appeal fast.</p>
-    <div class="page-hero-ctas"><a href="/contact/" class="btn-primary">Get a Free Estimate</a><a href="tel:8434677136" class="btn-outline" style="border-color:rgba(255,255,255,0.3);color:rgba(255,255,255,0.88);">📞 (843) 467-7136</a></div>
-    <div class="page-hero-badges"><span class="page-hero-badge">✓ Starting at $125</span><span class="page-hero-badge">✓ Licensed &amp; Insured</span><span class="page-hero-badge">✓ 24/7 Availability</span><span class="page-hero-badge">✓ Residential &amp; Commercial</span></div>
+<body>
+<div class="topbar">⭐ 5-Star Rated · Licensed &amp; Insured · <a href="tel:8434677136">843-467-7136</a> — We Answer 24/7</div>
+<nav>
+  <div class="nav-inner">
+    <a href="/" class="logo">Baker<span>ss</span></a>
+    <div class="nav-links">
+      <div class="nav-item">
+        <button class="nav-btn">Services <svg viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2"><path d="M2 4l4 4 4-4"/></svg></button>
+        <div class="mega-menu">
+          <div class="mega-col"><h4>Lawn &amp; Outdoor</h4><a href="/services/lawn-care/">Lawn Care</a><a href="/services/landscaping/">Landscaping &amp; Design</a><a href="/services/concrete-curbing/">Concrete Landscaping Curbing</a><a href="/services/pressure-washing/">Pressure Washing</a><a href="/services/gutter-cleaning/">Gutter Cleaning</a><a href="/services/deck-building-repair/">Deck Building &amp; Repairs</a></div>
+          <div class="mega-col"><h4>Interior &amp; Cleaning</h4><a href="/services/interior-cleaning/">Interior Cleaning — Residential</a><a href="/services/commercial-cleaning/">Interior Cleaning — Commercial</a><a href="/services/airbnb-cleaning/">Airbnb / Vacation Rental Cleaning</a><a href="/services/interior-cleaning/#deep-clean">Deep Cleaning</a><a href="/services/interior-cleaning/#move-in-out">Move-In / Move-Out Cleaning</a></div>
+          <div class="mega-col"><h4>Home Services</h4><a href="/services/painting/">Painting — Interior &amp; Exterior</a><a href="/services/handyman-services/">Handyman Services</a><a href="/services/minor-electric-plumbing/">Minor Electrical &amp; Plumbing</a><a href="/services/flooring/">Flooring</a><a href="/services/junk-removal/">Junk Removal</a><a href="/services/property-maintenance/">Property Maintenance Plans</a></div>
+        </div>
+      </div>
+      <div class="nav-item">
+        <button class="nav-btn">Service Areas <svg viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2"><path d="M2 4l4 4 4-4"/></svg></button>
+        <div class="dropdown"><a href="/service-areas/myrtle-beach/">Myrtle Beach</a><a href="/service-areas/north-myrtle-beach/">North Myrtle Beach</a><a href="/service-areas/conway/">Conway</a><a href="/service-areas/surfside-beach/">Surfside Beach</a><a href="/service-areas/murrells-inlet/">Murrells Inlet</a><a href="/service-areas/garden-city/">Garden City</a><a href="/service-areas/socastee/">Socastee</a><a href="/service-areas/little-river/">Little River</a><a href="/service-areas/horry-county/">All of Horry County →</a></div>
+      </div>
+      <div class="nav-item"><a href="/learning-center/">Learning Center</a></div>
+      <div class="nav-item"><a href="/about/">About Us</a></div>
+      <div class="nav-item"><a href="/reviews/">Reviews</a></div>
+    </div>
+    <div class="nav-right"><a href="tel:8434677136" class="nav-phone">843-467-7136</a><a href="/get-quote/" class="btn-quote-sm">Free Quote</a></div>
   </div>
-</section><section class="section"><div class="container"><div class="two-col">
-  <div class="col-img"><img src="/images/wash1.png" alt="Professional pressure washing service Myrtle Beach SC Bakerss Property Maintenance" loading="lazy"><div class="col-img-tag">Starting at $125</div></div>
-  <div class="col-content">
-    <span class="label">Soft Wash &amp; High-Pressure Experts</span>
-    <h2>Pressure Washing That Restores Coastal Properties</h2>
-    <p>Coastal South Carolina's humidity, salt air, algae, and storm debris take a visible toll on driveways, siding, patios, and decks. Bakerss uses professional-grade equipment and the right technique for every surface — soft wash for delicate areas, high-pressure for concrete and masonry.</p>
-    <p>Whether you need a one-time clean after storm season or recurring maintenance to keep your property looking sharp, we cover it all across Horry County.</p>
-    <ul class="checklist">
-      <li>Driveway and sidewalk pressure washing</li>
-      <li>House siding and exterior soft washing</li>
-      <li>Roof soft washing (no-pressure algae removal)</li>
-      <li>Deck and patio cleaning</li>
-      <li>Fence cleaning and restoration</li>
-      <li>Commercial property and parking lot washing</li>
-      <li>Pre-paint surface preparation</li>
-      <li>Vacation rental and Airbnb exterior cleaning</li>
-    </ul>
-    <div style="display:flex;gap:14px;flex-wrap:wrap;"><a href="/contact/" class="btn-primary">Get a Free Estimate</a><a href="/reviews/" class="btn-outline">Read Our Reviews</a></div>
+</nav>
+
+<div class="mhero">
+  <div class="mhero-inner">
+    <div>
+      <nav class="breadcrumb" aria-label="Breadcrumb">
+        <a href="/">Home</a><span>/</span>
+        <a href="/service-areas/">Service Areas</a><span>/</span>
+        <a href="/service-areas/murrells-inlet/">Murrells Inlet</a><span>/</span>
+        <span style="color:rgba(255,255,255,0.5)">Pressure Washing</span>
+      </nav>
+      <div class="mbadge">📍 Murrells Inlet, SC</div>
+      <div class="price-pill">Starting at $125 · Per service · Based on square footage</div>
+      <h1>Pressure Washing in <em>Murrells Inlet, SC</em></h1>
+      <p class="mhero-desc">Murrells Inlet's beautiful marsh environment, live oak canopy, and coastal position create some of the most demanding exterior surface conditions on the Grand Strand. Tannin staining from live oaks, marsh humidity, and salt air proximity mean driveways, siding, and decks in Murrells Inlet need regular professional washing to maintain their appearance and protect the significant property values in this upscale market.</p>
+      <div class="hero-ctas">
+        <a href="/get-quote/" class="btn-primary">Get a Free Quote →</a>
+        <a href="tel:8434677136" class="btn-secondary">📞 843-467-7136</a>
+      </div>
+      <div class="mtrust">
+        <div class="ti"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>5-Star Rated</div>
+        <div class="ti"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>Licensed &amp; Insured</div>
+        <div class="ti"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>24/7 Answering</div>
+        <div class="ti"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>Locally Owned</div>
+      </div>
+    </div>
+    <div class="qcard">
+      <h3>Free Estimate — Murrells Inlet</h3>
+      <p class="qs">Same-day response · No obligation</p>
+      <div class="fg"><label>Your Name</label><input type="text" placeholder="First name"></div>
+      <div class="fg"><label>Phone Number</label><input type="tel" placeholder="843-000-0000"></div>
+      <div class="fg"><label>Service</label>
+        <select><option selected>Pressure Washing — Murrells Inlet</option></select>
+      </div>
+      <button class="bsub" onclick="window.location='/get-quote/'">Get My Free Quote →</button>
+      <p class="qpriv">🔒 Free · No spam · No obligation</p>
+      <div class="qphone">Or call: <a href="tel:8434677136">843-467-7136</a></div>
+    </div>
   </div>
-</div></div></section><section class="section" style="background:var(--sand);"><div class="container">
-  <div class="section-header center"><span class="label">Our Pressure Washing Services</span><h2>Every Surface Cleaned the Right Way</h2><p>Different surfaces need different techniques. We use the right pressure and cleaners for every job.</p></div>
-  <div class="cards-grid">
-    <div class="card"><div class="card-icon">🚗</div><h3>Driveway &amp; Sidewalk</h3><p>Remove oil stains, algae, mildew, and dirt from concrete, pavers, and asphalt driveways and walkways.</p></div>
-    <div class="card"><div class="card-icon">🏠</div><h3>House Siding &amp; Exterior</h3><p>Low-pressure soft washing removes mold, mildew, and grime from vinyl, stucco, brick, and painted siding without damage.</p></div>
-    <div class="card"><div class="card-icon">🏚</div><h3>Roof Soft Washing</h3><p>Safe, no-pressure roof cleaning eliminates black algae streaks and lichen that shorten roof life and hurt curb appeal.</p></div>
-    <div class="card"><div class="card-icon">🪵</div><h3>Deck &amp; Patio Cleaning</h3><p>Restore wood decks, composite decks, and stone or paver patios to like-new condition before resealing or staining.</p></div>
-    <div class="card"><div class="card-icon">🏢</div><h3>Commercial Properties</h3><p>Storefronts, parking lots, sidewalks, and building exteriors kept clean and presentable for customers and clients.</p></div>
-    <div class="card"><div class="card-icon">🌊</div><h3>Post-Storm Cleaning</h3><p>After hurricane season or heavy storms, we clean algae, sand, debris, and storm staining from all exterior surfaces.</p></div>
+</div>
+
+<div class="mcontent">
+
+  <div class="csec">
+    <span class="sl">About This Service in Murrells Inlet</span>
+    <h2 class="st">Pressure Washing in Murrells Inlet, SC</h2>
+    <p class="prose">Murrells Inlet's upscale communities — particularly Prince Creek, Wachesaw Plantation, and the waterfront inlet properties — have high appearance standards where exterior staining is immediately noticeable. The tannin deposits from live oak leaves create distinctive dark staining on concrete that standard rainfall doesn't remove. The marsh humidity keeps surfaces damp longer than drier inland environments, accelerating mildew growth. Properties along the inlet waterfront also deal with salt air exposure from the tidal creek system.</p>
+    <p class="prose" style="margin-top:1rem">We serve Murrells Inlet homeowners throughout Prince Creek, Wachesaw Plantation, TideWater, Collins Creek Landing, the historic inlet community, and all surrounding residential neighborhoods including Garden City border areas.</p>
   </div>
-</div></section><section class="section" style="background:var(--sand);">
-  <div class="container">
-    <div class="section-header center"><span class="label">Common Questions</span><h2>Pressure Washing FAQ — Myrtle Beach &amp; Horry County</h2></div>
-    <div class="faq-list"><div class="faq-item"><button class="faq-q">How much does pressure washing cost in Myrtle Beach? <span class="arrow">▾</span></button><div class="faq-a"><p>Pressure washing in Myrtle Beach starts at $125. Final pricing depends on the surface type, square footage, and condition. Driveways, house washes, and roofs are all priced differently. We always provide a free estimate.</p></div></div>
-<div class="faq-item"><button class="faq-q">What's the difference between soft washing and pressure washing? <span class="arrow">▾</span></button><div class="faq-a"><p>Soft washing uses low pressure and a biodegradable cleaning solution to remove algae, mold, and mildew — it's used on roofs, siding, and delicate surfaces. High-pressure washing uses stronger force for hard surfaces like concrete driveways and stone patios.</p></div></div>
-<div class="faq-item"><button class="faq-q">How often should I pressure wash my home in Myrtle Beach? <span class="arrow">▾</span></button><div class="faq-a"><p>In coastal SC, most homeowners benefit from an annual house wash and driveway cleaning. The salt air, humidity, and pollen here accelerate algae and mildew growth compared to inland areas. After storm season is a particularly good time to schedule.</p></div></div>
-<div class="faq-item"><button class="faq-q">Can you pressure wash vinyl siding without damaging it? <span class="arrow">▾</span></button><div class="faq-a"><p>Yes. We use soft wash technique on vinyl siding — low pressure with professional-grade cleaning solution that removes buildup safely without risking damage to seams, caulking, or paint.</p></div></div>
-<div class="faq-item"><button class="faq-q">Do you pressure wash vacation rentals and Airbnb properties? <span class="arrow">▾</span></button><div class="faq-a"><p>Yes. We work with many vacation rental owners and property managers across Horry County who need reliable exterior cleaning between seasons or after guest stays.</p></div></div>
-<div class="faq-item"><button class="faq-q">Are you insured for pressure washing in South Carolina? <span class="arrow">▾</span></button><div class="faq-a"><p>Yes. Bakerss Property Maintenance is fully licensed, bonded, and insured in South Carolina for all pressure washing services.</p></div></div>
+
+  <div class="csec">
+    <span class="sl">What's Included</span>
+    <h2 class="st">Services Available in Murrells Inlet</h2>
+    <div class="sub-grid"><div class="sub-card"><span class="tag">Concrete</span><h4>Driveway & Walkway Cleaning</h4><p>Remove tannin staining, algae, and mildew from Murrells Inlet concrete driveways and walkways.</p></div><div class="sub-card"><span class="tag">Exterior</span><h4>Soft Washing / House Washing</h4><p>Low-pressure treatment removes mildew and organic staining from Murrells Inlet siding safely.</p></div><div class="sub-card"><span class="tag">Outdoor</span><h4>Deck & Patio Cleaning</h4><p>Restore wood decks, composite surfaces, and concrete patios throughout Murrells Inlet.</p></div><div class="sub-card"><span class="tag">Inlet</span><h4>Waterfront Property Washing</h4><p>Specialized washing for waterfront Murrells Inlet properties with elevated salt and marsh exposure.</p></div><div class="sub-card"><span class="tag">HOA</span><h4>Prince Creek HOA Standards</h4><p>Washing service calibrated to Prince Creek's HOA appearance standards.</p></div><div class="sub-card"><span class="tag">Full Property</span><h4>Complete Exterior Package</h4><p>Driveway + siding + deck bundled for one Murrells Inlet property visit.</p></div></div>
+  </div>
+
+  <div class="csec">
+    <span class="sl">Customer Reviews</span>
+    <h2 class="st">What Murrells Inlet Customers Say</h2>
+    <div style="background:var(--dark2);border:1px solid rgba(255,255,255,0.07);border-radius:10px;padding:1.25rem;margin-bottom:10px">
+  <div style="display:flex;align-items:center;gap:8px;margin-bottom:8px">
+    <div style="width:34px;height:34px;background:var(--pink);border-radius:50%;display:flex;align-items:center;justify-content:center;font-weight:700;font-size:12px;color:#fff;flex-shrink:0">D</div>
+    <div><div style="font-size:13px;font-weight:600">David R.</div><div style="color:#FFB800;font-size:11px">★★★★★ · Murrells Inlet, SC</div></div>
+  </div>
+  <p style="font-size:13px;color:rgba(255,255,255,0.6);font-style:italic;line-height:1.65;margin-bottom:5px">"My property needed serious attention after storm season and Bakerss had it looking perfect. Very professional, very thorough."</p>
+  <div style="font-size:11px;color:rgba(255,255,255,0.3)">Pressure Washing & Gutter Cleaning</div>
+</div><div style="background:var(--dark2);border:1px solid rgba(255,255,255,0.07);border-radius:10px;padding:1.25rem;margin-bottom:10px">
+  <div style="display:flex;align-items:center;gap:8px;margin-bottom:8px">
+    <div style="width:34px;height:34px;background:var(--pink);border-radius:50%;display:flex;align-items:center;justify-content:center;font-weight:700;font-size:12px;color:#fff;flex-shrink:0">V</div>
+    <div><div style="font-size:13px;font-weight:600">Vannah P.</div><div style="color:#FFB800;font-size:11px">★★★★★ · Horry County, SC</div></div>
+  </div>
+  <p style="font-size:13px;color:rgba(255,255,255,0.6);font-style:italic;line-height:1.65;margin-bottom:5px">"Ray and Courtney's team were always professional, friendly, and willing to do the extras."</p>
+  <div style="font-size:11px;color:rgba(255,255,255,0.3)">Full Property Service</div>
 </div>
   </div>
-</section><section class="cta-band"><div class="container"><span class="label" style="color:var(--pink-light);">Ready to Get Started?</span><h2>Get a Free Pressure Washing Estimate</h2><p>Serving Myrtle Beach, Murrells Inlet, Conway, Surfside Beach &amp; all of Horry County.</p><div class="cta-group"><a href="/contact/" class="btn-primary">Request a Free Estimate</a><a href="tel:8434677136" class="btn-outline" style="border-color:rgba(255,255,255,0.3);color:rgba(255,255,255,0.88);">📞 Call Now</a></div><p class="cta-phone">Call or text anytime: <a href="tel:8434677136">(843) 467-7136</a> — we answer 24/7</p></div></section><footer class="site-footer"><div class="container"><div class="footer-inner"><div class="footer-brand"><div class="footer-logo">Bakerss<span>.</span></div><p>Myrtle Beach's trusted property maintenance company. Serving all of Horry County, SC.</p><div class="footer-contact"><a href="tel:8434677136">📞 (843) 467-7136</a><a href="mailto:cloyd.raymond@yahoo.com">✉ cloyd.raymond@yahoo.com</a></div><div class="prices-strip"><span class="price-item">🌿 Lawn <strong>from $50</strong></span><span class="price-item">💧 Wash <strong>from $125</strong></span><span class="price-item">✨ Clean <strong>from $100</strong></span></div></div><div><div class="footer-heading">Services</div><div class="footer-links"><a href="/services/lawn-care/">Lawn Care</a><a href="/services/interior-cleaning/">Interior Cleaning</a><a href="/services/pressure-washing/">Pressure Washing</a><a href="/services/exterior-painting/">Painting</a><a href="/services/gutter-cleaning/">Gutter Cleaning</a><a href="/services/deck-building/">Deck Building</a><a href="/services/handyman/">Handyman</a><a href="/services/epoxy-flooring/">Epoxy Flooring</a><a href="/services/electrical/">Electrical</a><a href="/services/plumbing/">Plumbing</a><a href="/services/landscape-lighting/">Lighting</a></div></div><div><div class="footer-heading">Service Areas</div><div class="footer-links"><a href="/myrtle-beach/">Myrtle Beach</a><a href="/murrells-inlet/">Murrells Inlet</a><a href="/conway/">Conway</a><a href="/surfside-beach/">Surfside Beach</a><a href="/garden-city/">Garden City</a><a href="/north-myrtle-beach/">North Myrtle Beach</a><a href="/socastee/">Socastee</a><a href="/service-areas/horry-county/">All Horry County</a></div></div><div><div class="footer-heading">Quick Links</div><div class="footer-links"><a href="/about/">About</a><a href="/reviews/">Reviews</a><a href="/learning-center/">Learning Center</a><a href="/get-a-quote/">Free Estimate</a></div></div></div><div class="footer-bottom"><span>© 2025 Bakerss Property Maintenance. All rights reserved.</span><div class="footer-badges"><span class="footer-badge">⭐ Veteran Owned</span><span class="footer-badge">✓ Licensed</span><span class="footer-badge">✓ Insured</span></div></div></div></footer>
-<div class="sticky-mobile-bar"><a href="tel:8434677136" class="sticky-bar-call">📞 Call Now</a><a href="sms:8434677136" class="sticky-bar-text">💬 Text Us</a><a href="/contact/" class="sticky-bar-est">📅 Free Estimate</a></div>
-<script>const t=document.getElementById('navToggle'),n=document.getElementById('mainNav');if(t){t.addEventListener('click',()=>{const o=n.classList.toggle('open');t.setAttribute('aria-expanded',o);document.body.style.overflow=o?'hidden':'';});n.querySelectorAll('a').forEach(l=>l.addEventListener('click',()=>{n.classList.remove('open');document.body.style.overflow='';}));}document.querySelectorAll('.faq-q').forEach(b=>b.addEventListener('click',()=>b.classList.toggle('open')));</script>
-</body></html>
+
+  <div class="csec">
+    <span class="sl">Questions &amp; Answers</span>
+    <h2 class="st">FAQs — Pressure Washing in Murrells Inlet</h2>
+    <div class="faq-list"><div class="faq-item"><div class="faq-q" onclick="toggleFaq(this)">How much does pressure washing cost in Murrells Inlet?<span class="icon">+</span></div><div class="faq-a">Pressure washing in Murrells Inlet starts at $125 for driveways. House washing runs $250–$500 for the larger homes common in Murrells Inlet communities. We provide free estimates.</div></div><div class="faq-item"><div class="faq-q" onclick="toggleFaq(this)">Do you pressure wash Prince Creek homes?<span class="icon">+</span></div><div class="faq-a">Yes. Prince Creek is one of our most active Murrells Inlet pressure washing areas. We serve homes throughout the Prince Creek corridor including TideWater and Wachesaw communities.</div></div><div class="faq-item"><div class="faq-q" onclick="toggleFaq(this)">How does the Murrells Inlet environment affect my driveway?<span class="icon">+</span></div><div class="faq-a">The live oak canopy over many Murrells Inlet driveways deposits tannins — organic compounds that create distinctive dark brown and black staining on concrete. This is very common in Prince Creek and along the inlet. Professional pressure washing removes tannin staining effectively.</div></div><div class="faq-item"><div class="faq-q" onclick="toggleFaq(this)">Do you soft wash Murrells Inlet siding?<span class="icon">+</span></div><div class="faq-a">Yes. All Murrells Inlet siding is soft washed to protect the surface and kill mildew organisms at the root. This is especially important in Murrells Inlet's humid marsh environment where mildew grows aggressively.</div></div><div class="faq-item"><div class="faq-q" onclick="toggleFaq(this)">How often should Murrells Inlet homes be pressure washed?<span class="icon">+</span></div><div class="faq-a">Most Murrells Inlet properties benefit from once-yearly exterior washing minimum. Heavily wooded properties in Prince Creek — particularly those under live oaks — may benefit from twice-yearly service to address the continuous tannin and debris deposits.</div></div></div>
+  </div>
+
+  <div class="csec">
+    <span class="sl">Same Service, Nearby Cities</span>
+    <h2 class="st">Pressure Washing Across the Grand Strand</h2>
+    <p class="prose">We provide pressure washing throughout all of Horry County. Click a city for location-specific information.</p>
+    <div style="margin-top:1.25rem"><a href="/service-areas/myrtle-beach/pressure-washing/" style="background:var(--dark2);border:1px solid rgba(255,255,255,0.07);border-radius:7px;padding:8px 14px;text-decoration:none;color:rgba(255,255,255,0.6);font-size:13px;transition:all 0.2s;display:inline-block;margin:4px">Myrtle Beach</a><a href="/service-areas/north-myrtle-beach/pressure-washing/" style="background:var(--dark2);border:1px solid rgba(255,255,255,0.07);border-radius:7px;padding:8px 14px;text-decoration:none;color:rgba(255,255,255,0.6);font-size:13px;transition:all 0.2s;display:inline-block;margin:4px">North Myrtle Beach</a><a href="/service-areas/conway/pressure-washing/" style="background:var(--dark2);border:1px solid rgba(255,255,255,0.07);border-radius:7px;padding:8px 14px;text-decoration:none;color:rgba(255,255,255,0.6);font-size:13px;transition:all 0.2s;display:inline-block;margin:4px">Conway</a><a href="/service-areas/surfside-beach/pressure-washing/" style="background:var(--dark2);border:1px solid rgba(255,255,255,0.07);border-radius:7px;padding:8px 14px;text-decoration:none;color:rgba(255,255,255,0.6);font-size:13px;transition:all 0.2s;display:inline-block;margin:4px">Surfside Beach</a><a href="/service-areas/garden-city/pressure-washing/" style="background:var(--dark2);border:1px solid rgba(255,255,255,0.07);border-radius:7px;padding:8px 14px;text-decoration:none;color:rgba(255,255,255,0.6);font-size:13px;transition:all 0.2s;display:inline-block;margin:4px">Garden City</a></div>
+  </div>
+
+  <div class="csec">
+    <span class="sl">Related Services in Murrells Inlet</span>
+    <h2 class="st">You Might Also Need</h2>
+    <div class="rel-grid"><a href="/service-areas/murrells-inlet/gutter-cleaning/" style="background:var(--dark2);border:1px solid rgba(255,255,255,0.07);border-radius:10px;padding:1rem 1.25rem;text-decoration:none;color:var(--white);transition:all 0.2s;display:block"><h4 style="font-size:14px;font-weight:600;margin-bottom:3px">Gutter Cleaning in Murrells Inlet</h4><p style="font-size:12px;color:rgba(255,255,255,0.4)">Storm protection</p></a><a href="/service-areas/murrells-inlet/lawn-care/" style="background:var(--dark2);border:1px solid rgba(255,255,255,0.07);border-radius:10px;padding:1rem 1.25rem;text-decoration:none;color:var(--white);transition:all 0.2s;display:block"><h4 style="font-size:14px;font-weight:600;margin-bottom:3px">Lawn Care in Murrells Inlet</h4><p style="font-size:12px;color:rgba(255,255,255,0.4)">Grounds maintenance</p></a><a href="/service-areas/murrells-inlet/painting/" style="background:var(--dark2);border:1px solid rgba(255,255,255,0.07);border-radius:10px;padding:1rem 1.25rem;text-decoration:none;color:var(--white);transition:all 0.2s;display:block"><h4 style="font-size:14px;font-weight:600;margin-bottom:3px">Painting in Murrells Inlet</h4><p style="font-size:12px;color:rgba(255,255,255,0.4)">Exterior painting</p></a><a href="/services/handyman-services/" style="background:var(--dark2);border:1px solid rgba(255,255,255,0.07);border-radius:10px;padding:1rem 1.25rem;text-decoration:none;color:var(--white);transition:all 0.2s;display:block"><h4 style="font-size:14px;font-weight:600;margin-bottom:3px">Handyman Services</h4><p style="font-size:12px;color:rgba(255,255,255,0.4)">Repairs and maintenance</p></a></div>
+  </div>
+
+</div>
+
+<div class="cta-band">
+  <h2>Ready to Get Started in Murrells Inlet?</h2>
+  <p>Free estimates · No obligation · We answer 24/7</p>
+  <div class="cta-buttons">
+    <a href="/get-quote/" class="btn-white">Get a Free Quote →</a>
+    <a href="tel:8434677136" class="btn-ow">📞 843-467-7136</a>
+  </div>
+</div>
+
+<footer>
+  <div class="footer-inner">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <a href="/" style="font-family:var(--font-display);font-size:20px;font-weight:800;color:#fff;text-decoration:none;display:block;margin-bottom:0.5rem">Baker<span style="color:var(--pink)">ss</span></a>
+        <p>Full-service property maintenance for Horry County homeowners, STR owners, HOAs, and property managers.</p>
+        <div class="footer-contact-links">
+          <a href="tel:8434677136"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.81 19.79 19.79 0 01.01 1.13 2 2 0 012 .99h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.09 8.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>843-467-7136</a>
+          <a href="mailto:cloyd.raymond@yahoo.com"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>cloyd.raymond@yahoo.com</a>
+        </div>
+      </div>
+      <div class="footer-col"><h4>Services</h4><a href="/services/lawn-care/">Lawn Care</a><a href="/services/landscaping/">Landscaping</a><a href="/services/pressure-washing/">Pressure Washing</a><a href="/services/airbnb-cleaning/">Airbnb Cleaning</a><a href="/services/interior-cleaning/">Interior Cleaning</a><a href="/services/gutter-cleaning/">Gutter Cleaning</a><a href="/services/painting/">Painting</a><a href="/services/handyman-services/">Handyman</a><a href="/services/junk-removal/">Junk Removal</a></div>
+      <div class="footer-col"><h4>Service Areas</h4><a href="/service-areas/myrtle-beach/">Myrtle Beach</a><a href="/service-areas/north-myrtle-beach/">North Myrtle Beach</a><a href="/service-areas/conway/">Conway</a><a href="/service-areas/surfside-beach/">Surfside Beach</a><a href="/service-areas/murrells-inlet/">Murrells Inlet</a><a href="/service-areas/garden-city/">Garden City</a><a href="/service-areas/socastee/">Socastee</a><a href="/service-areas/little-river/">Little River</a></div>
+      <div class="footer-col"><h4>Company</h4><a href="/about/">About Bakerss</a><a href="/reviews/">Customer Reviews</a><a href="/get-quote/">Get a Free Quote</a><a href="/learning-center/">Learning Center</a></div>
+    </div>
+    <div class="footer-bottom"><span>© 2025 Bakerss Property Maintenance · Horry County, SC</span><span>Licensed &amp; Insured · Locally Owned</span></div>
+  </div>
+</footer>
+<div class="sticky-bar" style="display:flex">
+  <a href="tel:8434677136"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.81 19.79 19.79 0 01.01 1.13 2 2 0 012 .99h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.09 8.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>Call</a>
+  <a href="sms:8434677136"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15a2 2 0 01-2 2H7l-4 4V5a2 2 0 012-2h14a2 2 0 012 2z"/></svg>Text</a>
+  <a href="/get-quote/" class="primary"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/></svg>Free Quote</a>
+</div>
+
+<script>function toggleFaq(el){el.parentElement.classList.toggle('open');}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"How much does pressure washing cost in Murrells Inlet?","acceptedAnswer":{"@type":"Answer","text":"Pressure washing in Murrells Inlet starts at $125 for driveways. House washing runs $250–$500 for the larger homes common in Murrells Inlet communities. We provide free estimates."}},{"@type":"Question","name":"Do you pressure wash Prince Creek homes?","acceptedAnswer":{"@type":"Answer","text":"Yes. Prince Creek is one of our most active Murrells Inlet pressure washing areas. We serve homes throughout the Prince Creek corridor including TideWater and Wachesaw communities."}},{"@type":"Question","name":"How does the Murrells Inlet environment affect my driveway?","acceptedAnswer":{"@type":"Answer","text":"The live oak canopy over many Murrells Inlet driveways deposits tannins — organic compounds that create distinctive dark brown and black staining on concrete. This is very common in Prince Creek and along the inlet. Professional pressure washing removes tannin staining effectively."}},{"@type":"Question","name":"Do you soft wash Murrells Inlet siding?","acceptedAnswer":{"@type":"Answer","text":"Yes. All Murrells Inlet siding is soft washed to protect the surface and kill mildew organisms at the root. This is especially important in Murrells Inlet's humid marsh environment where mildew grows aggressively."}},{"@type":"Question","name":"How often should Murrells Inlet homes be pressure washed?","acceptedAnswer":{"@type":"Answer","text":"Most Murrells Inlet properties benefit from once-yearly exterior washing minimum. Heavily wooded properties in Prince Creek — particularly those under live oaks — may benefit from twice-yearly service to address the continuous tannin and debris deposits."}}]}</script>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"Service","name":"Pressure Washing in Murrells Inlet SC","provider":{"@type":"LocalBusiness","name":"Bakerss Property Maintenance","telephone":"+18434677136"},"areaServed":{"@type":"City","name":"Murrells Inlet","addressRegion":"SC"}}
+</script>
+</body>
+</html>
