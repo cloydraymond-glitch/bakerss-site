@@ -1,0 +1,1761 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Property Maintenance Services in Myrtle Beach, SC | Bakerss Property Maintenance</title>
+<meta name="description" content="Bakerss Property Maintenance serves all of Horry County, SC. Lawn care, pressure washing, interior cleaning, Airbnb cleaning, landscaping, handyman services & more. Call 843-467-7136.">
+
+<!-- Google Fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;800&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  :root {
+    --pink: #E91E8C;
+    --pink-dark: #C0157A;
+    --pink-light: #FF4BAB;
+    --black: #0D0D0D;
+    --dark: #1A1A1A;
+    --dark2: #242424;
+    --gray: #6B6B6B;
+    --gray-light: #AAAAAA;
+    --offwhite: #F7F5F2;
+    --white: #FFFFFF;
+    --border: rgba(255,255,255,0.12);
+    --font-display: 'Playfair Display', Georgia, serif;
+    --font-body: 'DM Sans', sans-serif;
+  }
+
+  html { scroll-behavior: smooth; }
+
+  body {
+    font-family: var(--font-body);
+    background: var(--dark);
+    color: var(--white);
+    line-height: 1.6;
+    overflow-x: hidden;
+  }
+
+  /* ===== ANNOUNCEMENT BAR ===== */
+  .topbar {
+    background: var(--pink);
+    text-align: center;
+    padding: 9px 1rem;
+    font-size: 13px;
+    font-weight: 500;
+    letter-spacing: 0.03em;
+    color: #fff;
+  }
+  .topbar a { color: #fff; text-decoration: none; font-weight: 700; border-bottom: 1px solid rgba(255,255,255,0.5); }
+
+  /* ===== NAVBAR ===== */
+  nav {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background: rgba(13,13,13,0.96);
+    backdrop-filter: blur(12px);
+    border-bottom: 1px solid var(--border);
+  }
+
+  .nav-inner {
+    max-width: 1280px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding: 0 2rem;
+    height: 70px;
+  }
+
+  .logo {
+    font-family: var(--font-display);
+    font-size: 22px;
+    font-weight: 800;
+    color: var(--white);
+    text-decoration: none;
+    letter-spacing: -0.02em;
+    flex-shrink: 0;
+  }
+  .logo span { color: var(--pink); }
+
+  .nav-links {
+    display: flex;
+    align-items: center;
+    gap: 0;
+    margin-left: 1.5rem;
+    flex: 1;
+  }
+
+  .nav-item {
+    position: relative;
+  }
+
+  .nav-item > a, .nav-btn {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    padding: 0 14px;
+    height: 70px;
+    color: rgba(255,255,255,0.75);
+    text-decoration: none;
+    font-size: 13.5px;
+    font-weight: 500;
+    letter-spacing: 0.01em;
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-family: var(--font-body);
+    white-space: nowrap;
+    transition: color 0.2s;
+  }
+  .nav-item > a:hover, .nav-btn:hover { color: var(--white); }
+  .nav-item > a svg, .nav-btn svg { width: 11px; height: 11px; margin-top: 1px; }
+
+  /* Mega Menu */
+  .mega-menu {
+    display: none;
+    position: absolute;
+    top: 70px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: var(--dark2);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    padding: 2rem;
+    width: 860px;
+    box-shadow: 0 24px 60px rgba(0,0,0,0.6);
+    z-index: 999;
+  }
+
+  .nav-item:hover .mega-menu { display: grid; grid-template-columns: repeat(3, 1fr); gap: 2rem; }
+  .nav-item:hover .dropdown { display: block; }
+
+  .mega-col h4 {
+    font-size: 10px;
+    font-weight: 600;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--pink);
+    margin-bottom: 12px;
+    padding-bottom: 8px;
+    border-bottom: 1px solid rgba(233,30,140,0.25);
+  }
+
+  .mega-col a {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 7px 0;
+    color: rgba(255,255,255,0.7);
+    text-decoration: none;
+    font-size: 13.5px;
+    transition: color 0.15s;
+    border-bottom: 1px solid rgba(255,255,255,0.04);
+  }
+  .mega-col a:last-child { border-bottom: none; }
+  .mega-col a:hover { color: var(--pink); }
+  .mega-col a::before {
+    content: '';
+    width: 4px; height: 4px;
+    background: var(--pink);
+    border-radius: 50%;
+    flex-shrink: 0;
+    opacity: 0;
+    transition: opacity 0.15s;
+  }
+  .mega-col a:hover::before { opacity: 1; }
+
+  /* Simple dropdown */
+  .dropdown {
+    display: none;
+    position: absolute;
+    top: 70px;
+    left: 0;
+    background: var(--dark2);
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    padding: 0.75rem 0;
+    min-width: 220px;
+    box-shadow: 0 16px 40px rgba(0,0,0,0.5);
+    z-index: 999;
+  }
+  .dropdown a {
+    display: block;
+    padding: 9px 20px;
+    color: rgba(255,255,255,0.75);
+    text-decoration: none;
+    font-size: 13.5px;
+    transition: all 0.15s;
+  }
+  .dropdown a:hover { color: var(--white); background: rgba(233,30,140,0.08); padding-left: 24px; }
+
+  .nav-right {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-left: auto;
+    flex-shrink: 0;
+  }
+
+  .nav-phone {
+    font-size: 14px;
+    font-weight: 600;
+    color: rgba(255,255,255,0.85);
+    text-decoration: none;
+    letter-spacing: 0.02em;
+  }
+  .nav-phone:hover { color: var(--pink); }
+
+  .btn-quote-sm {
+    background: var(--pink);
+    color: #fff;
+    padding: 9px 20px;
+    border-radius: 6px;
+    font-size: 13px;
+    font-weight: 600;
+    text-decoration: none;
+    transition: background 0.2s;
+    letter-spacing: 0.02em;
+    white-space: nowrap;
+  }
+  .btn-quote-sm:hover { background: var(--pink-dark); }
+
+  /* ===== HERO ===== */
+  .hero {
+    position: relative;
+    min-height: 92vh;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+  }
+
+  .hero-bg {
+    position: absolute;
+    inset: 0;
+    background:
+      linear-gradient(135deg, rgba(13,13,13,0.93) 0%, rgba(13,13,13,0.7) 50%, rgba(13,13,13,0.85) 100%),
+      url('https://images.unsplash.com/photo-1564013799919-ab600027ffc6?w=1800&q=80') center/cover no-repeat;
+  }
+
+  .hero-accent {
+    position: absolute;
+    bottom: -200px;
+    right: -200px;
+    width: 600px;
+    height: 600px;
+    background: radial-gradient(circle, rgba(233,30,140,0.15) 0%, transparent 70%);
+    pointer-events: none;
+  }
+
+  .hero-inner {
+    position: relative;
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 6rem 2rem 4rem;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 420px;
+    gap: 4rem;
+    align-items: center;
+  }
+
+  .hero-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    background: rgba(233,30,140,0.12);
+    border: 1px solid rgba(233,30,140,0.35);
+    border-radius: 100px;
+    padding: 6px 16px;
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--pink-light);
+    margin-bottom: 1.5rem;
+  }
+  .hero-badge .dot { width: 6px; height: 6px; background: var(--pink); border-radius: 50%; animation: pulse 2s infinite; }
+
+  @keyframes pulse {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0.4; }
+  }
+
+  .hero h1 {
+    font-family: var(--font-display);
+    font-size: clamp(2.8rem, 5vw, 4.4rem);
+    font-weight: 800;
+    line-height: 1.07;
+    letter-spacing: -0.03em;
+    color: var(--white);
+    margin-bottom: 1.25rem;
+  }
+
+  .hero h1 em {
+    font-style: normal;
+    color: var(--pink);
+  }
+
+  .hero-sub {
+    font-size: 17px;
+    color: rgba(255,255,255,0.65);
+    line-height: 1.7;
+    max-width: 520px;
+    margin-bottom: 2rem;
+    font-weight: 300;
+  }
+
+  .hero-ctas {
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
+    margin-bottom: 2.5rem;
+  }
+
+  .btn-primary {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    background: var(--pink);
+    color: #fff;
+    padding: 15px 28px;
+    border-radius: 8px;
+    font-size: 15px;
+    font-weight: 600;
+    text-decoration: none;
+    transition: all 0.2s;
+    letter-spacing: 0.01em;
+  }
+  .btn-primary:hover { background: var(--pink-dark); transform: translateY(-1px); }
+
+  .btn-secondary {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    background: transparent;
+    color: rgba(255,255,255,0.85);
+    padding: 15px 28px;
+    border-radius: 8px;
+    font-size: 15px;
+    font-weight: 500;
+    text-decoration: none;
+    border: 1px solid rgba(255,255,255,0.2);
+    transition: all 0.2s;
+  }
+  .btn-secondary:hover { border-color: rgba(255,255,255,0.5); color: #fff; }
+
+  .hero-trust {
+    display: flex;
+    gap: 24px;
+    flex-wrap: wrap;
+  }
+
+  .trust-item {
+    display: flex;
+    align-items: center;
+    gap: 7px;
+    font-size: 13px;
+    color: rgba(255,255,255,0.55);
+  }
+  .trust-icon {
+    width: 18px;
+    height: 18px;
+    color: var(--pink);
+    flex-shrink: 0;
+  }
+
+  /* Hero Quote Card */
+  .hero-card {
+    background: rgba(255,255,255,0.04);
+    border: 1px solid rgba(255,255,255,0.1);
+    border-radius: 16px;
+    padding: 2rem;
+    backdrop-filter: blur(20px);
+  }
+
+  .hero-card h3 {
+    font-family: var(--font-display);
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 0.25rem;
+  }
+  .hero-card p {
+    font-size: 13px;
+    color: rgba(255,255,255,0.5);
+    margin-bottom: 1.5rem;
+  }
+
+  .form-group { margin-bottom: 1rem; }
+  .form-group label {
+    display: block;
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: rgba(255,255,255,0.45);
+    margin-bottom: 6px;
+  }
+  .form-group input,
+  .form-group select {
+    width: 100%;
+    background: rgba(255,255,255,0.06);
+    border: 1px solid rgba(255,255,255,0.12);
+    border-radius: 8px;
+    padding: 11px 14px;
+    color: var(--white);
+    font-size: 14px;
+    font-family: var(--font-body);
+    outline: none;
+    transition: border-color 0.2s;
+    -webkit-appearance: none;
+  }
+  .form-group input::placeholder { color: rgba(255,255,255,0.3); }
+  .form-group input:focus,
+  .form-group select:focus { border-color: var(--pink); }
+  .form-group select { cursor: pointer; }
+  .form-group select option { background: var(--dark2); color: var(--white); }
+
+  .form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
+
+  .btn-submit {
+    width: 100%;
+    background: var(--pink);
+    color: #fff;
+    border: none;
+    padding: 14px;
+    border-radius: 8px;
+    font-size: 15px;
+    font-weight: 600;
+    font-family: var(--font-body);
+    cursor: pointer;
+    margin-top: 0.5rem;
+    transition: background 0.2s;
+    letter-spacing: 0.01em;
+  }
+  .btn-submit:hover { background: var(--pink-dark); }
+
+  .form-privacy {
+    text-align: center;
+    font-size: 11px;
+    color: rgba(255,255,255,0.3);
+    margin-top: 0.75rem;
+  }
+
+  /* Stars */
+  .stars { color: #FFB800; letter-spacing: 1px; font-size: 14px; }
+
+  /* ===== TRUST BAND ===== */
+  .trust-band {
+    background: var(--dark2);
+    border-top: 1px solid rgba(255,255,255,0.06);
+    border-bottom: 1px solid rgba(255,255,255,0.06);
+    padding: 1.25rem 2rem;
+  }
+  .trust-band-inner {
+    max-width: 1280px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 3rem;
+    flex-wrap: wrap;
+  }
+  .trust-pill {
+    display: flex;
+    align-items: center;
+    gap: 9px;
+    font-size: 13.5px;
+    color: rgba(255,255,255,0.65);
+    font-weight: 500;
+  }
+  .trust-pill svg { color: var(--pink); width: 18px; height: 18px; flex-shrink: 0; }
+
+  /* ===== SECTION SHARED ===== */
+  section { padding: 5rem 2rem; }
+  .section-inner { max-width: 1280px; margin: 0 auto; }
+
+  .section-label {
+    display: inline-block;
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: var(--pink);
+    margin-bottom: 0.75rem;
+  }
+
+  .section-title {
+    font-family: var(--font-display);
+    font-size: clamp(2rem, 3.5vw, 2.8rem);
+    font-weight: 800;
+    line-height: 1.1;
+    letter-spacing: -0.02em;
+    color: var(--white);
+    margin-bottom: 1rem;
+  }
+
+  .section-sub {
+    font-size: 16px;
+    color: rgba(255,255,255,0.5);
+    max-width: 580px;
+    line-height: 1.7;
+    font-weight: 300;
+  }
+
+  .section-header { margin-bottom: 3rem; }
+
+  /* ===== SERVICES ===== */
+  .services-section { background: var(--black); }
+
+  .services-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+    gap: 1px;
+    background: rgba(255,255,255,0.07);
+    border: 1px solid rgba(255,255,255,0.07);
+    border-radius: 16px;
+    overflow: hidden;
+  }
+
+  .service-card {
+    background: var(--dark);
+    padding: 2rem;
+    text-decoration: none;
+    color: var(--white);
+    transition: background 0.2s;
+    position: relative;
+    overflow: hidden;
+  }
+  .service-card:hover { background: var(--dark2); }
+  .service-card:hover .service-arrow { transform: translate(4px, -4px); color: var(--pink); }
+
+  .service-icon {
+    width: 44px;
+    height: 44px;
+    background: rgba(233,30,140,0.1);
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1rem;
+    color: var(--pink);
+  }
+  .service-icon svg { width: 22px; height: 22px; }
+
+  .service-card h3 {
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 0.4rem;
+    line-height: 1.3;
+  }
+
+  .service-card p {
+    font-size: 13px;
+    color: rgba(255,255,255,0.45);
+    line-height: 1.6;
+    margin-bottom: 1rem;
+  }
+
+  .service-price {
+    display: inline-block;
+    font-size: 12px;
+    font-weight: 600;
+    color: var(--pink);
+    background: rgba(233,30,140,0.1);
+    padding: 3px 10px;
+    border-radius: 4px;
+    margin-bottom: 0.75rem;
+  }
+
+  .service-arrow {
+    position: absolute;
+    top: 1.5rem;
+    right: 1.5rem;
+    color: rgba(255,255,255,0.2);
+    transition: all 0.2s;
+    font-size: 18px;
+  }
+
+  /* ===== CITIES ===== */
+  .cities-section { background: var(--dark); }
+
+  .cities-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 12px;
+  }
+
+  .city-card {
+    background: var(--dark2);
+    border: 1px solid rgba(255,255,255,0.07);
+    border-radius: 12px;
+    padding: 1.5rem;
+    text-decoration: none;
+    color: var(--white);
+    transition: all 0.2s;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+  }
+  .city-card:hover {
+    border-color: rgba(233,30,140,0.4);
+    background: rgba(233,30,140,0.05);
+    transform: translateY(-2px);
+  }
+  .city-card svg { width: 20px; height: 20px; color: var(--pink); flex-shrink: 0; }
+  .city-card h3 { font-size: 15px; font-weight: 600; margin-bottom: 2px; }
+  .city-card p { font-size: 12px; color: rgba(255,255,255,0.4); }
+
+  /* ===== WHY US ===== */
+  .why-section {
+    background: linear-gradient(135deg, var(--black) 0%, #1a0a12 100%);
+    position: relative;
+    overflow: hidden;
+  }
+
+  .why-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+    align-items: center;
+  }
+
+  .why-list { display: flex; flex-direction: column; gap: 1.5rem; }
+
+  .why-item {
+    display: flex;
+    gap: 1rem;
+    align-items: flex-start;
+  }
+
+  .why-num {
+    width: 38px;
+    height: 38px;
+    background: rgba(233,30,140,0.1);
+    border: 1px solid rgba(233,30,140,0.25);
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 13px;
+    font-weight: 700;
+    color: var(--pink);
+    flex-shrink: 0;
+  }
+
+  .why-item h4 { font-size: 16px; font-weight: 600; margin-bottom: 4px; }
+  .why-item p { font-size: 14px; color: rgba(255,255,255,0.5); line-height: 1.6; }
+
+  .why-stats {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+  }
+
+  .stat-box {
+    background: rgba(255,255,255,0.04);
+    border: 1px solid rgba(255,255,255,0.08);
+    border-radius: 12px;
+    padding: 1.75rem 1.5rem;
+    text-align: center;
+  }
+
+  .stat-num {
+    font-family: var(--font-display);
+    font-size: 3rem;
+    font-weight: 800;
+    color: var(--pink);
+    line-height: 1;
+    margin-bottom: 0.4rem;
+  }
+
+  .stat-label {
+    font-size: 13px;
+    color: rgba(255,255,255,0.45);
+    font-weight: 400;
+    line-height: 1.4;
+  }
+
+  /* ===== REVIEWS ===== */
+  .reviews-section { background: var(--dark2); }
+
+  .reviews-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 1rem;
+  }
+
+  .review-card {
+    background: var(--dark);
+    border: 1px solid rgba(255,255,255,0.07);
+    border-radius: 12px;
+    padding: 1.5rem;
+    transition: border-color 0.2s;
+  }
+  .review-card:hover { border-color: rgba(233,30,140,0.3); }
+
+  .review-header {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    margin-bottom: 1rem;
+  }
+
+  .reviewer-avatar {
+    width: 40px;
+    height: 40px;
+    background: var(--pink);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+    font-size: 15px;
+    color: #fff;
+    flex-shrink: 0;
+  }
+
+  .reviewer-name { font-size: 14px; font-weight: 600; margin-bottom: 2px; }
+  .reviewer-meta { font-size: 12px; color: rgba(255,255,255,0.4); }
+
+  .review-text {
+    font-size: 13.5px;
+    color: rgba(255,255,255,0.65);
+    line-height: 1.7;
+    font-style: italic;
+  }
+
+  .review-service-tag {
+    display: inline-block;
+    margin-top: 1rem;
+    font-size: 11px;
+    font-weight: 600;
+    color: var(--pink);
+    background: rgba(233,30,140,0.08);
+    border: 1px solid rgba(233,30,140,0.2);
+    padding: 3px 10px;
+    border-radius: 4px;
+  }
+
+  /* ===== QUOTE CTA BANNER ===== */
+  .cta-banner {
+    background: var(--pink);
+    padding: 4rem 2rem;
+    position: relative;
+    overflow: hidden;
+  }
+  .cta-banner::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    right: -10%;
+    width: 400px;
+    height: 400px;
+    background: rgba(255,255,255,0.06);
+    border-radius: 50%;
+    pointer-events: none;
+  }
+  .cta-inner {
+    max-width: 1280px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2rem;
+    flex-wrap: wrap;
+    position: relative;
+  }
+  .cta-inner h2 {
+    font-family: var(--font-display);
+    font-size: clamp(1.8rem, 3vw, 2.4rem);
+    font-weight: 800;
+    color: #fff;
+    line-height: 1.15;
+    letter-spacing: -0.02em;
+  }
+  .cta-inner p {
+    font-size: 15px;
+    color: rgba(255,255,255,0.75);
+    margin-top: 0.4rem;
+  }
+  .cta-buttons { display: flex; gap: 12px; flex-wrap: wrap; flex-shrink: 0; }
+
+  .btn-white {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    background: #fff;
+    color: var(--pink);
+    padding: 14px 28px;
+    border-radius: 8px;
+    font-size: 15px;
+    font-weight: 700;
+    text-decoration: none;
+    transition: all 0.2s;
+  }
+  .btn-white:hover { transform: translateY(-1px); background: var(--offwhite); }
+
+  .btn-outline-white {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    background: transparent;
+    color: #fff;
+    padding: 14px 28px;
+    border-radius: 8px;
+    font-size: 15px;
+    font-weight: 600;
+    text-decoration: none;
+    border: 2px solid rgba(255,255,255,0.5);
+    transition: all 0.2s;
+  }
+  .btn-outline-white:hover { border-color: #fff; background: rgba(255,255,255,0.1); }
+
+  /* ===== LEARNING CENTER ===== */
+  .lc-section { background: var(--black); }
+
+  .lc-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 1rem;
+  }
+
+  .lc-card {
+    background: var(--dark);
+    border: 1px solid rgba(255,255,255,0.07);
+    border-radius: 12px;
+    overflow: hidden;
+    text-decoration: none;
+    color: var(--white);
+    transition: all 0.2s;
+  }
+  .lc-card:hover { border-color: rgba(233,30,140,0.3); transform: translateY(-2px); }
+
+  .lc-tag {
+    display: inline-block;
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--pink);
+    background: rgba(233,30,140,0.1);
+    padding: 4px 12px;
+    border-radius: 4px;
+    margin-bottom: 0.75rem;
+  }
+
+  .lc-card-body { padding: 1.5rem; }
+  .lc-card-body h3 { font-size: 15px; font-weight: 600; line-height: 1.4; margin-bottom: 0.5rem; }
+  .lc-card-body p { font-size: 13px; color: rgba(255,255,255,0.45); line-height: 1.6; }
+
+  .lc-card-footer {
+    padding: 0.75rem 1.5rem;
+    border-top: 1px solid rgba(255,255,255,0.06);
+    font-size: 12px;
+    color: rgba(255,255,255,0.3);
+    display: flex;
+    align-items: center;
+    gap: 6px;
+  }
+  .lc-card-footer svg { width: 14px; height: 14px; }
+
+  /* ===== FOOTER ===== */
+  footer {
+    background: var(--black);
+    border-top: 1px solid rgba(255,255,255,0.07);
+    padding: 4rem 2rem 2rem;
+  }
+
+  .footer-inner {
+    max-width: 1280px;
+    margin: 0 auto;
+  }
+
+  .footer-top {
+    display: grid;
+    grid-template-columns: 300px 1fr 1fr 1fr;
+    gap: 3rem;
+    padding-bottom: 3rem;
+    border-bottom: 1px solid rgba(255,255,255,0.07);
+    margin-bottom: 2rem;
+  }
+
+  .footer-brand p {
+    font-size: 13px;
+    color: rgba(255,255,255,0.4);
+    line-height: 1.7;
+    margin: 1rem 0;
+  }
+
+  .footer-contact a {
+    display: flex;
+    align-items: center;
+    gap: 7px;
+    font-size: 13px;
+    color: rgba(255,255,255,0.55);
+    text-decoration: none;
+    margin-bottom: 6px;
+    transition: color 0.15s;
+  }
+  .footer-contact a:hover { color: var(--pink); }
+  .footer-contact svg { width: 15px; height: 15px; color: var(--pink); flex-shrink: 0; }
+
+  .footer-col h4 {
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: rgba(255,255,255,0.3);
+    margin-bottom: 1rem;
+  }
+
+  .footer-col a {
+    display: block;
+    font-size: 13px;
+    color: rgba(255,255,255,0.5);
+    text-decoration: none;
+    padding: 4px 0;
+    transition: color 0.15s;
+  }
+  .footer-col a:hover { color: var(--pink); }
+
+  .footer-bottom {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 1rem;
+    font-size: 12px;
+    color: rgba(255,255,255,0.25);
+  }
+
+  /* ===== MOBILE STICKY BAR ===== */
+  .sticky-mobile-bar {
+    display: none;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: var(--dark2);
+    border-top: 1px solid rgba(255,255,255,0.1);
+    z-index: 1000;
+    padding: 0.5rem;
+    gap: 0.5rem;
+  }
+
+  .sticky-mobile-bar a {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 3px;
+    padding: 8px 4px;
+    text-decoration: none;
+    color: rgba(255,255,255,0.7);
+    font-size: 11px;
+    font-weight: 600;
+    border-radius: 6px;
+    transition: background 0.2s;
+  }
+  .sticky-mobile-bar a:hover { background: rgba(255,255,255,0.05); }
+  .sticky-mobile-bar a.primary { background: var(--pink); color: #fff; }
+  .sticky-mobile-bar a svg { width: 20px; height: 20px; }
+
+  /* ===== SVGS & ICONS (inline) ===== */
+  .icon { display: inline-block; vertical-align: middle; }
+
+  @media (max-width: 1024px) {
+    .hero-inner { grid-template-columns: 1fr; }
+    .hero-card { display: none; }
+    .why-grid { grid-template-columns: 1fr; }
+    .footer-top { grid-template-columns: 1fr 1fr; }
+  }
+  @media (max-width: 768px) {
+    .nav-links { display: none; }
+    .sticky-mobile-bar { display: flex; }
+    body { padding-bottom: 70px; }
+    .footer-top { grid-template-columns: 1fr; }
+    .trust-band-inner { gap: 1.5rem; }
+    section { padding: 3rem 1.25rem; }
+    .why-stats { grid-template-columns: 1fr 1fr; }
+  }
+</style>
+</head>
+<body>
+
+<!-- ANNOUNCEMENT BAR -->
+<div class="topbar">
+  ⭐ Rated 5 Stars on Google &nbsp;|&nbsp; Serving All of Horry County, SC &nbsp;|&nbsp; <a href="tel:8434677136">Call or Text 843-467-7136</a> — We Answer 24/7
+</div>
+
+<!-- NAVBAR -->
+<nav>
+  <div class="nav-inner">
+    <a href="/" class="logo">Baker<span>ss</span></a>
+
+    <div class="nav-links">
+
+      <!-- SERVICES MEGA MENU -->
+      <div class="nav-item">
+        <button class="nav-btn">
+          Services
+          <svg viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2"><path d="M2 4l4 4 4-4"/></svg>
+        </button>
+        <div class="mega-menu">
+          <div class="mega-col">
+            <h4>Lawn &amp; Outdoor</h4>
+            <a href="/services/lawn-care/">Lawn Care</a>
+            <a href="/services/landscaping/">Landscaping &amp; Design</a>
+            <a href="/services/concrete-curbing/">Concrete Landscaping Curbing</a>
+            <a href="/services/pressure-washing/">Pressure Washing</a>
+            <a href="/services/gutter-cleaning/">Gutter Cleaning</a>
+            <a href="/services/deck-building-repair/">Deck Building &amp; Repairs</a>
+          </div>
+          <div class="mega-col">
+            <h4>Interior &amp; Cleaning</h4>
+            <a href="/services/interior-cleaning/">Interior Cleaning — Residential</a>
+            <a href="/services/commercial-cleaning/">Interior Cleaning — Commercial</a>
+            <a href="/services/airbnb-cleaning/">Airbnb / Vacation Rental Cleaning</a>
+            <a href="/services/interior-cleaning/#deep-clean">Deep Cleaning</a>
+            <a href="/services/interior-cleaning/#move-in-out">Move-In / Move-Out Cleaning</a>
+          </div>
+          <div class="mega-col">
+            <h4>Home Services</h4>
+            <a href="/services/painting/">Painting — Interior &amp; Exterior</a>
+            <a href="/services/handyman-services/">Handyman Services</a>
+            <a href="/services/minor-electric-plumbing/">Minor Electrical &amp; Plumbing</a>
+            <a href="/services/flooring/">Flooring</a>
+            <a href="/services/junk-removal/">Junk Removal</a>
+            <a href="/services/property-maintenance/">Property Maintenance Plans</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- SERVICE AREAS DROPDOWN -->
+      <div class="nav-item">
+        <button class="nav-btn">
+          Service Areas
+          <svg viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2"><path d="M2 4l4 4 4-4"/></svg>
+        </button>
+        <div class="dropdown">
+          <a href="/service-areas/myrtle-beach/">Myrtle Beach</a>
+          <a href="/service-areas/north-myrtle-beach/">North Myrtle Beach</a>
+          <a href="/service-areas/conway/">Conway</a>
+          <a href="/service-areas/surfside-beach/">Surfside Beach</a>
+          <a href="/service-areas/murrells-inlet/">Murrells Inlet</a>
+          <a href="/service-areas/garden-city/">Garden City</a>
+          <a href="/service-areas/socastee/">Socastee</a>
+          <a href="/service-areas/little-river/">Little River</a>
+          <a href="/service-areas/horry-county/">All of Horry County →</a>
+        </div>
+      </div>
+
+      <div class="nav-item">
+        <a href="/learning-center/">Learning Center</a>
+      </div>
+
+      <div class="nav-item">
+        <a href="/about/">About Us</a>
+      </div>
+
+      <div class="nav-item">
+        <a href="/reviews/">Reviews</a>
+      </div>
+    </div>
+
+    <div class="nav-right">
+      <a href="tel:8434677136" class="nav-phone">843-467-7136</a>
+      <a href="/get-quote/" class="btn-quote-sm">Free Quote</a>
+    </div>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-bg"></div>
+  <div class="hero-accent"></div>
+  <div class="hero-inner">
+    <div class="hero-content">
+      <div class="hero-badge">
+        <span class="dot"></span>
+        Horry County's #1 Property Maintenance Team
+      </div>
+
+      <h1>
+        Property Maintenance<br>
+        That <em>Protects</em><br>
+        Your Investment
+      </h1>
+
+      <p class="hero-sub">
+        Lawn care, pressure washing, Airbnb cleaning, landscaping, handyman services, and more — serving Myrtle Beach, Conway, North Myrtle Beach, and all of Horry County, SC.
+      </p>
+
+      <div class="hero-ctas">
+        <a href="/get-quote/" class="btn-primary">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/></svg>
+          Get Free Quote
+        </a>
+        <a href="tel:8434677136" class="btn-secondary">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.81a19.79 19.79 0 01-3.07-8.68A2 2 0 012 .99h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.09 8.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
+          Call 843-467-7136
+        </a>
+      </div>
+
+      <div class="hero-trust">
+        <div class="trust-item">
+          <svg class="trust-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+          Licensed &amp; Insured
+        </div>
+        <div class="trust-item">
+          <svg class="trust-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+          24/7 Answering
+        </div>
+        <div class="trust-item">
+          <svg class="trust-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+          5-Star Google Rating
+        </div>
+        <div class="trust-item">
+          <svg class="trust-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+          Locally Owned, Horry County
+        </div>
+      </div>
+    </div>
+
+    <!-- QUOTE CARD -->
+    <div class="hero-card">
+      <h3>Get Your Free Quote</h3>
+      <p>Response within 24 hours — usually same day</p>
+
+      <div class="form-row">
+        <div class="form-group">
+          <label>First Name</label>
+          <input type="text" placeholder="Ray">
+        </div>
+        <div class="form-group">
+          <label>Last Name</label>
+          <input type="text" placeholder="Baker">
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label>Phone Number</label>
+        <input type="tel" placeholder="843-000-0000">
+      </div>
+
+      <div class="form-group">
+        <label>Service Needed</label>
+        <select>
+          <option value="" disabled selected>Select a service...</option>
+          <option>Lawn Care</option>
+          <option>Landscaping &amp; Design</option>
+          <option>Concrete Landscaping Curbing</option>
+          <option>Pressure Washing</option>
+          <option>Interior Cleaning — Residential</option>
+          <option>Interior Cleaning — Commercial</option>
+          <option>Airbnb / Vacation Rental Cleaning</option>
+          <option>Gutter Cleaning</option>
+          <option>Painting</option>
+          <option>Deck Building &amp; Repair</option>
+          <option>Handyman Services</option>
+          <option>Minor Electrical &amp; Plumbing</option>
+          <option>Flooring</option>
+          <option>Junk Removal</option>
+          <option>Property Maintenance Plan</option>
+        </select>
+      </div>
+
+      <div class="form-group">
+        <label>Your City / Zip</label>
+        <input type="text" placeholder="Myrtle Beach, SC">
+      </div>
+
+      <button class="btn-submit">Get My Free Quote →</button>
+      <p class="form-privacy">🔒 No spam. No obligation. We answer 24/7.</p>
+    </div>
+  </div>
+</section>
+
+<!-- TRUST BAND -->
+<div class="trust-band">
+  <div class="trust-band-inner">
+    <div class="trust-pill">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+      5.0 Google Rating
+    </div>
+    <div class="trust-pill">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 00-3-3.87"/><path d="M16 3.13a4 4 0 010 7.75"/></svg>
+      Homeowners, HOAs &amp; STR Owners
+    </div>
+    <div class="trust-pill">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+      Licensed &amp; Fully Insured
+    </div>
+    <div class="trust-pill">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+      24/7 Phone &amp; Text
+    </div>
+    <div class="trust-pill">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+      All of Horry County
+    </div>
+  </div>
+</div>
+
+<!-- SERVICES -->
+<section class="services-section">
+  <div class="section-inner">
+    <div class="section-header">
+      <span class="section-label">What We Do</span>
+      <h2 class="section-title">Full-Service Property Care,<br>All in One Call</h2>
+      <p class="section-sub">From lawn care to Airbnb cleaning, pressure washing to handyman work — Bakerss handles everything your property needs.</p>
+    </div>
+
+    <div class="services-grid">
+
+      <a href="/services/lawn-care/" class="service-card">
+        <span class="service-arrow">↗</span>
+        <div class="service-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75"><path d="M12 22V12M12 12C12 12 9 8 4 7M12 12C12 12 15 8 20 7M4 22h16"/></svg></div>
+        <span class="service-price">Starting at $50</span>
+        <h3>Lawn Care</h3>
+        <p>Mowing, edging, trimming, and cleanup for residential and commercial properties across Horry County.</p>
+      </a>
+
+      <a href="/services/landscaping/" class="service-card">
+        <span class="service-arrow">↗</span>
+        <div class="service-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75"><circle cx="12" cy="8" r="4"/><path d="M6 20v-2a6 6 0 0112 0v2"/><path d="M2 20h20"/></svg></div>
+        <h3>Landscaping &amp; Design</h3>
+        <p>Custom landscape design and installation for curb appeal that stands out in your neighborhood.</p>
+      </a>
+
+      <a href="/services/concrete-curbing/" class="service-card">
+        <span class="service-arrow">↗</span>
+        <div class="service-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75"><rect x="2" y="14" width="20" height="4" rx="2"/><path d="M6 14V9a6 6 0 0112 0v5"/></svg></div>
+        <h3>Concrete Landscaping Curbing</h3>
+        <p>Professional concrete curbing that defines garden beds and adds long-lasting value to your property.</p>
+      </a>
+
+      <a href="/services/pressure-washing/" class="service-card">
+        <span class="service-arrow">↗</span>
+        <div class="service-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75"><path d="M12 2v4M8 4l1.5 3M16 4l-1.5 3M5 9h14M6 9l-2 11h16L18 9M9 13v5M15 13v5"/></svg></div>
+        <span class="service-price">Starting at $125</span>
+        <h3>Pressure Washing</h3>
+        <p>Driveways, siding, decks, patios, and soft washing for homes and vacation rentals throughout Myrtle Beach.</p>
+      </a>
+
+      <a href="/services/airbnb-cleaning/" class="service-card">
+        <span class="service-arrow">↗</span>
+        <div class="service-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75"><path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2V9z"/><polyline points="9,22 9,12 15,12 15,22"/></svg></div>
+        <span class="service-price">Starting at $100</span>
+        <h3>Airbnb &amp; Vacation Rental Cleaning</h3>
+        <p>Reliable turnover cleaning that keeps your short-term rental guest-ready and 5-star rated every time.</p>
+      </a>
+
+      <a href="/services/interior-cleaning/" class="service-card">
+        <span class="service-arrow">↗</span>
+        <div class="service-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75"><path d="M20.84 4.61a5.5 5.5 0 00-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 00-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 000-7.78z"/></svg></div>
+        <span class="service-price">Starting at $100</span>
+        <h3>Interior Cleaning</h3>
+        <p>Residential and commercial deep cleaning, move-in/move-out cleaning, and recurring cleaning services.</p>
+      </a>
+
+      <a href="/services/gutter-cleaning/" class="service-card">
+        <span class="service-arrow">↗</span>
+        <div class="service-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75"><path d="M3 7h18M3 7l3 10h12l3-10M9 7V4M15 7V4"/></svg></div>
+        <h3>Gutter Cleaning</h3>
+        <p>Protect your home from water damage with professional gutter cleaning before and after storm season.</p>
+      </a>
+
+      <a href="/services/painting/" class="service-card">
+        <span class="service-arrow">↗</span>
+        <div class="service-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75"><path d="M12 19l7-7 3 3-7 7-3-3z"/><path d="M18 13l-1.5-7.5L2 2l3.5 14.5L13 18l5-5z"/><path d="M2 2l7.586 7.586"/><circle cx="11" cy="11" r="2"/></svg></div>
+        <h3>Painting</h3>
+        <p>Interior and exterior painting that protects coastal homes from salt air, humidity, and weathering.</p>
+      </a>
+
+      <a href="/services/handyman-services/" class="service-card">
+        <span class="service-arrow">↗</span>
+        <div class="service-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75"><path d="M14.7 6.3a1 1 0 000 1.4l1.6 1.6a1 1 0 001.4 0l3.77-3.77a6 6 0 01-7.94 7.94l-6.91 6.91a2.12 2.12 0 01-3-3l6.91-6.91a6 6 0 017.94-7.94l-3.76 3.76z"/></svg></div>
+        <span class="service-price">Starting at $75/hr</span>
+        <h3>Handyman Services</h3>
+        <p>Reliable repairs, installations, and maintenance for everything your home needs — big or small.</p>
+      </a>
+
+      <a href="/services/deck-building-repair/" class="service-card">
+        <span class="service-arrow">↗</span>
+        <div class="service-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75"><rect x="2" y="3" width="20" height="4"/><path d="M2 7v14M22 7v14M6 11h12M6 15h12M6 19h12"/></svg></div>
+        <h3>Deck Building &amp; Repairs</h3>
+        <p>Custom deck construction and repairs to extend your outdoor living space and protect your investment.</p>
+      </a>
+
+      <a href="/services/flooring/" class="service-card">
+        <span class="service-arrow">↗</span>
+        <div class="service-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75"><rect x="2" y="2" width="9" height="9"/><rect x="13" y="2" width="9" height="9"/><rect x="2" y="13" width="9" height="9"/><rect x="13" y="13" width="9" height="9"/></svg></div>
+        <h3>Flooring</h3>
+        <p>Professional flooring installation and replacement for residential and commercial properties.</p>
+      </a>
+
+      <a href="/services/junk-removal/" class="service-card">
+        <span class="service-arrow">↗</span>
+        <div class="service-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75"><polyline points="3,6 5,6 21,6"/><path d="M19 6l-1 14H6L5 6"/><path d="M10 11v6M14 11v6"/><path d="M9 6V4h6v2"/></svg></div>
+        <span class="service-price">Starting at $99</span>
+        <h3>Junk Removal</h3>
+        <p>Fast, affordable junk removal for homeowners, property managers, and vacation rental owners.</p>
+      </a>
+
+    </div>
+  </div>
+</section>
+
+<!-- SERVICE AREAS -->
+<section class="cities-section">
+  <div class="section-inner">
+    <div class="section-header">
+      <span class="section-label">Where We Work</span>
+      <h2 class="section-title">Serving All of Horry County</h2>
+      <p class="section-sub">From Myrtle Beach to Conway and everywhere in between — we're your local team for property maintenance across the Grand Strand.</p>
+    </div>
+
+    <div class="cities-grid">
+      <a href="/service-areas/myrtle-beach/" class="city-card">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+        <div><h3>Myrtle Beach</h3><p>Carolina Forest, Market Common, Grande Dunes, Arcadian Shores</p></div>
+      </a>
+      <a href="/service-areas/north-myrtle-beach/" class="city-card">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+        <div><h3>North Myrtle Beach</h3><p>Barefoot Resort, Cherry Grove, Tidewater</p></div>
+      </a>
+      <a href="/service-areas/conway/" class="city-card">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+        <div><h3>Conway</h3><p>Wild Wing Plantation, Coastal Heights, Blackwater</p></div>
+      </a>
+      <a href="/service-areas/surfside-beach/" class="city-card">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+        <div><h3>Surfside Beach</h3><p>Vacation rentals, coastal residences</p></div>
+      </a>
+      <a href="/service-areas/murrells-inlet/" class="city-card">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+        <div><h3>Murrells Inlet</h3><p>Prince Creek, Wachesaw, Garden City border</p></div>
+      </a>
+      <a href="/service-areas/garden-city/" class="city-card">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+        <div><h3>Garden City</h3><p>STR-heavy coastal community</p></div>
+      </a>
+      <a href="/service-areas/socastee/" class="city-card">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+        <div><h3>Socastee</h3><p>Residential communities &amp; waterway properties</p></div>
+      </a>
+      <a href="/service-areas/little-river/" class="city-card">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+        <div><h3>Little River</h3><p>Waterfront &amp; residential maintenance</p></div>
+      </a>
+      <a href="/service-areas/horry-county/" class="city-card">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+        <div><h3>All of Horry County →</h3><p>If you're in Horry County, we serve you</p></div>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- WHY BAKERSS -->
+<section class="why-section">
+  <div class="section-inner">
+    <div class="why-grid">
+      <div>
+        <span class="section-label">Why Bakerss</span>
+        <h2 class="section-title">The Coastal Property<br>Maintenance Experts</h2>
+        <p class="section-sub" style="margin-bottom: 2.5rem;">Salt air, humidity, and high-volume STR turnover require a different level of service. We built Bakerss for exactly that.</p>
+
+        <div class="why-list">
+          <div class="why-item">
+            <div class="why-num">01</div>
+            <div>
+              <h4>We Answer 24/7</h4>
+              <p>No voicemail black holes. Call or text any time — a real person picks up. Emergency cleaning? Same-day service? We make it happen.</p>
+            </div>
+          </div>
+          <div class="why-item">
+            <div class="why-num">02</div>
+            <div>
+              <h4>All Services, One Team</h4>
+              <p>Lawn care, cleaning, pressure washing, handyman, painting, flooring — stop managing five different contractors. We handle your whole property.</p>
+            </div>
+          </div>
+          <div class="why-item">
+            <div class="why-num">03</div>
+            <div>
+              <h4>STR & Airbnb Specialists</h4>
+              <p>We've handled hundreds of vacation rental turnovers across the Grand Strand. Your guests get spotless. Your reviews stay 5-star.</p>
+            </div>
+          </div>
+          <div class="why-item">
+            <div class="why-num">04</div>
+            <div>
+              <h4>Locally Owned, Horry County</h4>
+              <p>Ray and Courtney built this company right here. We know the properties, the neighborhoods, and what coastal maintenance actually takes.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="why-stats">
+        <div class="stat-box">
+          <div class="stat-num">5★</div>
+          <div class="stat-label">Average Google<br>Review Rating</div>
+        </div>
+        <div class="stat-box">
+          <div class="stat-num">15+</div>
+          <div class="stat-label">Services Under<br>One Roof</div>
+        </div>
+        <div class="stat-box">
+          <div class="stat-num">24/7</div>
+          <div class="stat-label">Phone &amp; Text<br>Answering</div>
+        </div>
+        <div class="stat-box">
+          <div class="stat-num">8+</div>
+          <div class="stat-label">Cities Served<br>in Horry County</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- REVIEWS -->
+<section class="reviews-section">
+  <div class="section-inner">
+    <div class="section-header" style="display:flex; align-items:flex-end; justify-content:space-between; flex-wrap:wrap; gap:1rem;">
+      <div>
+        <span class="section-label">What Clients Say</span>
+        <h2 class="section-title">Real Reviews from<br>Horry County Homeowners</h2>
+        <div style="display:flex; align-items:center; gap:10px; margin-top:0.75rem;">
+          <div class="stars">★★★★★</div>
+          <span style="font-size:14px; color:rgba(255,255,255,0.5);">5.0 average · Google Reviews</span>
+        </div>
+      </div>
+      <a href="/reviews/" class="btn-secondary" style="flex-shrink:0;">See All Reviews →</a>
+    </div>
+
+    <div class="reviews-grid">
+      <div class="review-card">
+        <div class="review-header">
+          <div class="reviewer-avatar">L</div>
+          <div>
+            <div class="reviewer-name">Lisa Trinemeyer</div>
+            <div class="reviewer-meta"><span class="stars">★★★★★</span> · Google · Myrtle Beach, SC</div>
+          </div>
+        </div>
+        <p class="review-text">"I needed an emergency cleaning service before heart surgery and my usual cleaner canceled. Courtney came within half an hour's notice and did a superb job. I would highly recommend her services whether it's cleaning, landscaping, or home repair."</p>
+        <span class="review-service-tag">Emergency Cleaning</span>
+      </div>
+
+      <div class="review-card">
+        <div class="review-header">
+          <div class="reviewer-avatar">V</div>
+          <div>
+            <div class="reviewer-name">Vannah Patterson</div>
+            <div class="reviewer-meta"><span class="stars">★★★★★</span> · Google · Horry County, SC</div>
+          </div>
+        </div>
+        <p class="review-text">"Highly recommend Bakerss! Results are beyond our expectations. Finished on time and on budget. Ray and Courtney's team were always professional, friendly, and willing to do the extras. Will definitely use again."</p>
+        <span class="review-service-tag">Full Property Service</span>
+      </div>
+
+      <div class="review-card">
+        <div class="review-header">
+          <div class="reviewer-avatar">H</div>
+          <div>
+            <div class="reviewer-name">Hannah DeMarino</div>
+            <div class="reviewer-meta"><span class="stars">★★★★★</span> · Google · Myrtle Beach, SC</div>
+          </div>
+        </div>
+        <p class="review-text">"Bakerss Personal Touch Landscaping truly lives up to its name. They take the time to understand your vision and bring it to life with precision and care. Their reliability and consistency make them easy to trust."</p>
+        <span class="review-service-tag">Landscaping</span>
+      </div>
+
+      <div class="review-card">
+        <div class="review-header">
+          <div class="reviewer-avatar">L</div>
+          <div>
+            <div class="reviewer-name">Leilyn Nguyen</div>
+            <div class="reviewer-meta"><span class="stars">★★★★★</span> · Google · Myrtle Beach, SC</div>
+          </div>
+        </div>
+        <p class="review-text">"Great service for both pressure washing and landscaping. On time, professional, thorough job — driveway looks clean and the yard is neat. Fair pricing. Highly recommend to anyone in the Myrtle Beach area!"</p>
+        <span class="review-service-tag">Pressure Washing &amp; Landscaping</span>
+      </div>
+
+      <div class="review-card">
+        <div class="review-header">
+          <div class="reviewer-avatar">S</div>
+          <div>
+            <div class="reviewer-name">Sandra K.</div>
+            <div class="reviewer-meta"><span class="stars">★★★★★</span> · Google · Surfside Beach, SC</div>
+          </div>
+        </div>
+        <p class="review-text">"As an out-of-state owner I needed someone I could trust completely. Bakerss handles my lawn care and maintenance every month without me having to follow up. Exactly what I needed."</p>
+        <span class="review-service-tag">Lawn Care &amp; Maintenance</span>
+      </div>
+
+      <div class="review-card">
+        <div class="review-header">
+          <div class="reviewer-avatar">K</div>
+          <div>
+            <div class="reviewer-name">King Kado</div>
+            <div class="reviewer-meta"><span class="stars">★★★★★</span> · Google · Myrtle Beach, SC</div>
+          </div>
+        </div>
+        <p class="review-text">"Bakerss did a wonderful job doing landscaping, pressure washing, and repainting my house. They are reasonable with prices — this company is an all-in-one. Highly recommend."</p>
+        <span class="review-service-tag">Landscaping + Pressure Washing + Painting</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA BANNER -->
+<div class="cta-banner">
+  <div class="cta-inner">
+    <div>
+      <h2>Ready to Protect<br>Your Property?</h2>
+      <p>Free estimates · No obligation · We answer 24/7</p>
+    </div>
+    <div class="cta-buttons">
+      <a href="/get-quote/" class="btn-white">Get a Free Quote →</a>
+      <a href="tel:8434677136" class="btn-outline-white">📞 843-467-7136</a>
+    </div>
+  </div>
+</div>
+
+<!-- LEARNING CENTER -->
+<section class="lc-section">
+  <div class="section-inner">
+    <div class="section-header" style="display:flex; align-items:flex-end; justify-content:space-between; flex-wrap:wrap; gap:1rem;">
+      <div>
+        <span class="section-label">Learning Center</span>
+        <h2 class="section-title">Property Maintenance<br>Tips &amp; Guides</h2>
+        <p class="section-sub">Expert advice for Horry County homeowners, STR owners, and property managers.</p>
+      </div>
+      <a href="/learning-center/" class="btn-secondary" style="flex-shrink:0;">View All Articles →</a>
+    </div>
+
+    <div class="lc-grid">
+      <a href="/learning-center/pressure-washing-cost-myrtle-beach/" class="lc-card">
+        <div class="lc-card-body">
+          <span class="lc-tag">Pressure Washing</span>
+          <h3>How Much Does Pressure Washing Cost in Myrtle Beach?</h3>
+          <p>Complete pricing guide for driveways, siding, patios, and decks across Horry County.</p>
+        </div>
+        <div class="lc-card-footer">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+          5 min read
+        </div>
+      </a>
+
+      <a href="/learning-center/vacation-rental-cleaning-checklist/" class="lc-card">
+        <div class="lc-card-body">
+          <span class="lc-tag">Airbnb Cleaning</span>
+          <h3>Airbnb Cleaning Checklist for Myrtle Beach Vacation Rentals</h3>
+          <p>Keep your STR guest-ready and your reviews 5-star with this complete turnover guide.</p>
+        </div>
+        <div class="lc-card-footer">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+          7 min read
+        </div>
+      </a>
+
+      <a href="/learning-center/best-grass-types-myrtle-beach/" class="lc-card">
+        <div class="lc-card-body">
+          <span class="lc-tag">Lawn Care</span>
+          <h3>Best Grass Types for Myrtle Beach Lawns</h3>
+          <p>Which grass performs best in Horry County's heat, humidity, and salt air environment.</p>
+        </div>
+        <div class="lc-card-footer">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+          4 min read
+        </div>
+      </a>
+
+      <a href="/learning-center/hurricane-prep-coastal-homes/" class="lc-card">
+        <div class="lc-card-body">
+          <span class="lc-tag">Property Maintenance</span>
+          <h3>Hurricane Prep for Coastal Homes in Horry County</h3>
+          <p>A practical pre-season checklist to protect your home or rental before a storm hits.</p>
+        </div>
+        <div class="lc-card-footer">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+          6 min read
+        </div>
+      </a>
+
+      <a href="/learning-center/seasonal-home-maintenance-checklist-myrtle-beach/" class="lc-card">
+        <div class="lc-card-body">
+          <span class="lc-tag">Property Maintenance</span>
+          <h3>Seasonal Home Maintenance Checklist for Myrtle Beach</h3>
+          <p>Month-by-month guide to keeping your coastal property in peak condition year-round.</p>
+        </div>
+        <div class="lc-card-footer">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+          8 min read
+        </div>
+      </a>
+
+      <a href="/learning-center/concrete-landscaping-curbing-guide/" class="lc-card">
+        <div class="lc-card-body">
+          <span class="lc-tag">Landscaping</span>
+          <h3>Concrete Landscaping Curbing: Is It Worth It?</h3>
+          <p>Cost, benefits, and design ideas for adding permanent curbing to your Myrtle Beach home.</p>
+        </div>
+        <div class="lc-card-footer">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+          4 min read
+        </div>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-inner">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <a href="/" class="logo" style="margin-bottom: 0.75rem; display:block;">Baker<span>ss</span></a>
+        <p>Horry County's trusted property maintenance team. Lawn care, cleaning, pressure washing, landscaping, handyman services, and more — all under one roof.</p>
+        <div class="footer-contact">
+          <a href="tel:8434677136">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.81a19.79 19.79 0 01-3.07-8.68A2 2 0 012 .99h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.09 8.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
+            843-467-7136
+          </a>
+          <a href="mailto:cloyd.raymond@yahoo.com">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+            cloyd.raymond@yahoo.com
+          </a>
+        </div>
+        <div style="margin-top:1rem; font-size:13px; color:rgba(255,255,255,0.3);">Mon–Sun · 24/7 Phone &amp; Text Answering</div>
+      </div>
+
+      <div class="footer-col">
+        <h4>Services</h4>
+        <a href="/services/lawn-care/">Lawn Care</a>
+        <a href="/services/landscaping/">Landscaping</a>
+        <a href="/services/concrete-curbing/">Concrete Curbing</a>
+        <a href="/services/pressure-washing/">Pressure Washing</a>
+        <a href="/services/airbnb-cleaning/">Airbnb Cleaning</a>
+        <a href="/services/interior-cleaning/">Interior Cleaning</a>
+        <a href="/services/gutter-cleaning/">Gutter Cleaning</a>
+        <a href="/services/painting/">Painting</a>
+        <a href="/services/handyman-services/">Handyman Services</a>
+        <a href="/services/deck-building-repair/">Deck Building &amp; Repair</a>
+        <a href="/services/flooring/">Flooring</a>
+        <a href="/services/junk-removal/">Junk Removal</a>
+        <a href="/services/property-maintenance/">Maintenance Plans</a>
+      </div>
+
+      <div class="footer-col">
+        <h4>Service Areas</h4>
+        <a href="/service-areas/myrtle-beach/">Myrtle Beach</a>
+        <a href="/service-areas/north-myrtle-beach/">North Myrtle Beach</a>
+        <a href="/service-areas/conway/">Conway</a>
+        <a href="/service-areas/surfside-beach/">Surfside Beach</a>
+        <a href="/service-areas/murrells-inlet/">Murrells Inlet</a>
+        <a href="/service-areas/garden-city/">Garden City</a>
+        <a href="/service-areas/socastee/">Socastee</a>
+        <a href="/service-areas/little-river/">Little River</a>
+        <a href="/service-areas/horry-county/">All of Horry County</a>
+        <a href="/service-areas/myrtle-beach/carolina-forest/">Carolina Forest</a>
+        <a href="/service-areas/myrtle-beach/grande-dunes/">Grande Dunes</a>
+        <a href="/service-areas/north-myrtle-beach/barefoot-resort/">Barefoot Resort</a>
+      </div>
+
+      <div class="footer-col">
+        <h4>Company</h4>
+        <a href="/about/">About Bakerss</a>
+        <a href="/reviews/">Customer Reviews</a>
+        <a href="/get-quote/">Get a Free Quote</a>
+        <a href="/learning-center/">Learning Center</a>
+        <h4 style="margin-top:1.5rem;">Learning Center</h4>
+        <a href="/learning-center/pressure-washing-cost-myrtle-beach/">Pressure Washing Cost Guide</a>
+        <a href="/learning-center/vacation-rental-cleaning-checklist/">STR Cleaning Checklist</a>
+        <a href="/learning-center/best-grass-types-myrtle-beach/">Best Grass Types</a>
+        <a href="/learning-center/hurricane-prep-coastal-homes/">Hurricane Prep Guide</a>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <span>© 2025 Bakerss Property Maintenance · Horry County, SC · 843-467-7136</span>
+      <span>Licensed &amp; Insured · Locally Owned &amp; Operated</span>
+    </div>
+  </div>
+</footer>
+
+<!-- MOBILE STICKY BAR -->
+<div class="sticky-mobile-bar" style="display:flex;">
+  <a href="tel:8434677136">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="20" height="20"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.81a19.79 19.79 0 01-3.07-8.68A2 2 0 012 .99h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.09 8.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
+    Call Now
+  </a>
+  <a href="sms:8434677136">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="20" height="20"><path d="M21 15a2 2 0 01-2 2H7l-4 4V5a2 2 0 012-2h14a2 2 0 012 2z"/></svg>
+    Text Us
+  </a>
+  <a href="/get-quote/" class="primary">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="20" height="20"><path d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/></svg>
+    Free Quote
+  </a>
+</div>
+
+<!-- Schema Markup -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "LocalBusiness",
+  "@id": "https://www.bakerss.com",
+  "name": "Bakerss Property Maintenance",
+  "url": "https://www.bakerss.com",
+  "telephone": "+18434677136",
+  "email": "cloyd.raymond@yahoo.com",
+  "priceRange": "$-$$",
+  "openingHours": "Mo-Su 00:00-23:59",
+  "description": "Full-service property maintenance company serving all of Horry County, SC. Lawn care, pressure washing, interior cleaning, Airbnb cleaning, landscaping, handyman services, painting, gutter cleaning, deck building, flooring, junk removal, and property maintenance plans.",
+  "areaServed": [
+    {"@type": "City", "name": "Myrtle Beach", "addressRegion": "SC"},
+    {"@type": "City", "name": "North Myrtle Beach", "addressRegion": "SC"},
+    {"@type": "City", "name": "Conway", "addressRegion": "SC"},
+    {"@type": "City", "name": "Surfside Beach", "addressRegion": "SC"},
+    {"@type": "City", "name": "Murrells Inlet", "addressRegion": "SC"},
+    {"@type": "City", "name": "Garden City", "addressRegion": "SC"},
+    {"@type": "City", "name": "Socastee", "addressRegion": "SC"},
+    {"@type": "City", "name": "Little River", "addressRegion": "SC"}
+  ],
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": "5.0",
+    "reviewCount": "25",
+    "bestRating": "5"
+  },
+  "sameAs": [
+    "https://www.google.com/maps?cid=BAKERSS_GBP_ID"
+  ]
+}
+</script>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "url": "https://www.bakerss.com",
+  "name": "Bakerss Property Maintenance",
+  "potentialAction": {
+    "@type": "SearchAction",
+    "target": "https://www.bakerss.com/search?q={search_term_string}",
+    "query-input": "required name=search_term_string"
+  }
+}
+</script>
+
+</body>
+</html>
