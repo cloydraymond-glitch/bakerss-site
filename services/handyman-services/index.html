@@ -2,14 +2,15 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Handyman Services in Myrtle Beach, SC | Bakerss Property Maintenance</title>
-<meta name="description" content="Reliable handyman services in Myrtle Beach & Horry County, SC. Repairs, installations, maintenance. Starting at $75/hr. Licensed & insured. Call 843-467-7136.">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Handyman Services in Myrtle Beach & Horry County, SC | Bakerss Property Maintenance</title>
+<meta name="description" content="Professional handyman services in Myrtle Beach and Horry County, SC. Repairs, installations, minor electrical and plumbing. 24/7 emergency response. Starting at $75/hr. Call 843-467-7136.">
 <link rel="canonical" href="https://www.bakerss.com/services/handyman-services/">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;800&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
 <style>
+
 *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
 :root{
   --pink:#E91E8C;--pink-dark:#C0157A;--pink-light:#FF4BAB;
@@ -172,6 +173,120 @@ footer{background:var(--black);border-top:1px solid rgba(255,255,255,0.07);paddi
 .sticky-bar svg{width:20px;height:20px}
 @media(max-width:1024px){.svc-hero-inner,.svc-content{grid-template-columns:1fr}.quote-card{position:static}.svc-sidebar{position:static;display:grid;grid-template-columns:1fr 1fr}}
 @media(max-width:768px){.nav-links{display:none}.sticky-bar{display:flex}body{padding-bottom:70px}.sub-grid,.serve-list,.related-grid,.cities-row{grid-template-columns:1fr}.footer-top{grid-template-columns:1fr 1fr}}
+
+/* ── PAGE STYLES ── */
+.hero{background:var(--black);padding:5rem 2rem 3.5rem;position:relative;overflow:hidden}
+.hero::after{content:'';position:absolute;top:-80px;right:-80px;width:520px;height:520px;background:radial-gradient(circle,rgba(233,30,140,0.06) 0%,transparent 70%);pointer-events:none}
+.hero-inner{max-width:1100px;margin:0 auto;position:relative;z-index:2;display:grid;grid-template-columns:1fr 320px;gap:3rem;align-items:start}
+.breadcrumb{display:flex;align-items:center;gap:6px;font-size:12px;color:rgba(255,255,255,0.3);margin-bottom:1.25rem}
+.breadcrumb a{color:rgba(255,255,255,0.3);text-decoration:none}
+.breadcrumb a:hover{color:var(--pink)}
+.breadcrumb span{color:rgba(255,255,255,0.12)}
+.badge{display:inline-flex;align-items:center;gap:6px;background:rgba(233,30,140,0.1);border:1px solid rgba(233,30,140,0.3);border-radius:100px;padding:4px 14px;font-size:10px;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;color:var(--pink);margin-bottom:1.25rem}
+h1.hero-h1{font-family:var(--font-display);font-size:clamp(2.1rem,3.5vw,3.2rem);font-weight:800;line-height:1.08;letter-spacing:-0.025em;margin-bottom:1.1rem}
+h1.hero-h1 em{font-style:normal;color:var(--pink)}
+.hero-desc{font-size:16px;color:rgba(255,255,255,0.55);line-height:1.8;font-weight:300;max-width:600px;margin-bottom:1.75rem}
+.hero-btns{display:flex;gap:10px;flex-wrap:wrap}
+.btn-pink{display:inline-flex;align-items:center;gap:8px;background:var(--pink);color:#fff;padding:14px 26px;border-radius:8px;font-size:14px;font-weight:600;text-decoration:none;transition:all 0.2s;box-shadow:0 4px 18px rgba(233,30,140,0.25)}
+.btn-pink:hover{transform:translateY(-1px);box-shadow:0 6px 24px rgba(233,30,140,0.35)}
+.btn-ghost{display:inline-flex;align-items:center;gap:8px;background:transparent;color:rgba(255,255,255,0.8);padding:14px 24px;border-radius:8px;font-size:14px;font-weight:500;text-decoration:none;border:1px solid rgba(255,255,255,0.18)}
+.hero-trust{display:flex;align-items:center;gap:12px;margin-top:1.5rem;font-size:11px;color:rgba(255,255,255,0.3);flex-wrap:wrap}
+.hero-trust b{color:rgba(255,255,255,0.55)}
+/* Sidebar card */
+.sidebar-card{background:var(--dark2);border:1px solid rgba(255,255,255,0.08);border-radius:14px;padding:1.75rem;position:sticky;top:80px}
+.sidebar-card h3{font-family:var(--font-display);font-size:1.15rem;font-weight:700;margin-bottom:0.25rem}
+.sidebar-phone{font-family:var(--font-display);font-size:1.85rem;font-weight:800;color:var(--pink);text-decoration:none;display:block;margin:0.4rem 0}
+.sidebar-card p{font-size:12.5px;color:rgba(255,255,255,0.4);margin-bottom:1.25rem;line-height:1.5}
+.sidebar-btn{display:block;padding:12px;border-radius:7px;font-size:13.5px;font-weight:600;text-decoration:none;text-align:center;margin-bottom:7px}
+.sidebar-btn.pink{background:var(--pink);color:#fff}
+.sidebar-btn.outline{background:transparent;color:rgba(255,255,255,0.7);border:1px solid rgba(255,255,255,0.15)}
+.sidebar-facts{margin-top:1.25rem;padding-top:1.25rem;border-top:1px solid rgba(255,255,255,0.07)}
+.sidebar-fact{display:flex;align-items:center;gap:10px;font-size:12px;color:rgba(255,255,255,0.5);margin-bottom:7px}
+.sidebar-fact b{color:rgba(255,255,255,0.75)}
+/* Content area */
+.content{max-width:1100px;margin:0 auto;padding:4.5rem 2rem}
+.sec{margin-bottom:4rem}
+.sec-label{font-size:10px;font-weight:700;letter-spacing:0.12em;text-transform:uppercase;color:var(--pink);margin-bottom:0.5rem;display:block}
+h2.sec-h2{font-family:var(--font-display);font-size:clamp(1.6rem,2.5vw,2.1rem);font-weight:800;letter-spacing:-0.02em;margin-bottom:0.9rem;line-height:1.15}
+h2.sec-h2 em{font-style:normal;color:var(--pink)}
+h3.sub-h3{font-size:1.05rem;font-weight:600;margin:1.75rem 0 0.5rem;color:rgba(255,255,255,0.9)}
+.prose{font-size:15px;color:rgba(255,255,255,0.58);line-height:1.85;font-weight:300}
+.prose+.prose{margin-top:0.85rem}
+/* Card grids */
+.card-3{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-top:1.5rem}
+.card-2{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-top:1.5rem}
+.card-4{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin-top:1.5rem}
+.card{background:var(--dark2);border:1px solid rgba(255,255,255,0.07);border-radius:12px;padding:1.4rem}
+.card .tag{font-size:10px;font-weight:700;letter-spacing:0.09em;text-transform:uppercase;color:var(--pink);display:block;margin-bottom:0.5rem}
+.card h4{font-size:15px;font-weight:600;margin-bottom:0.4rem}
+.card p{font-size:13px;color:rgba(255,255,255,0.45);line-height:1.6}
+/* Pricing table */
+.price-table{width:100%;border-collapse:collapse;margin-top:1.25rem;font-size:13.5px}
+.price-table th{padding:10px 14px;text-align:left;background:rgba(233,30,140,0.08);border-bottom:1px solid rgba(255,255,255,0.08);font-size:10px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:rgba(255,255,255,0.4)}
+.price-table td{padding:11px 14px;border-bottom:1px solid rgba(255,255,255,0.05);color:rgba(255,255,255,0.65)}
+.price-table td.price{color:var(--pink);font-weight:700}
+.price-table tr:last-child td{border-bottom:none}
+/* Steps */
+.steps{display:grid;gap:1px;margin-top:1.25rem}
+.step{background:var(--dark2);border:1px solid rgba(255,255,255,0.07);padding:1.25rem 1.5rem;display:flex;gap:1.25rem;align-items:start}
+.step:first-child{border-radius:12px 12px 0 0}
+.step:last-child{border-radius:0 0 12px 12px}
+.step-num{width:32px;height:32px;border-radius:50%;background:var(--pink);display:flex;align-items:center;justify-content:center;font-size:13px;font-weight:700;color:#fff;flex-shrink:0;margin-top:2px}
+.step h4{font-size:14.5px;font-weight:600;margin-bottom:0.3rem}
+.step p{font-size:13px;color:rgba(255,255,255,0.45);line-height:1.6}
+/* FAQ */
+.faq-wrap{border:1px solid rgba(255,255,255,0.07);border-radius:12px;overflow:hidden;margin-top:1.25rem}
+.faq-item{border-bottom:1px solid rgba(255,255,255,0.06)}
+.faq-item:last-child{border:none}
+.faq-q{display:flex;justify-content:space-between;align-items:center;padding:1rem 1.25rem;cursor:pointer;font-size:14.5px;font-weight:600;gap:1rem;transition:background 0.15s}
+.faq-q:hover{background:rgba(255,255,255,0.025)}
+.faq-q .ico{color:var(--pink);font-size:20px;flex-shrink:0;transition:transform 0.25s;line-height:1}
+.faq-a{display:none;padding:0 1.25rem 1rem;font-size:13.5px;color:rgba(255,255,255,0.5);line-height:1.75}
+.faq-item.open .faq-q .ico{transform:rotate(45deg)}
+.faq-item.open .faq-a{display:block}
+/* Reviews */
+.rev-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin-top:1.5rem}
+.rev{background:var(--dark2);border:1px solid rgba(255,255,255,0.07);border-radius:11px;padding:1.4rem}
+.rev-top{display:flex;align-items:center;gap:10px;margin-bottom:9px}
+.av{width:36px;height:36px;background:var(--pink);border-radius:50%;display:flex;align-items:center;justify-content:center;font-weight:700;font-size:13px;color:#fff;flex-shrink:0}
+.rev-name{font-size:13.5px;font-weight:600}
+.rev-meta{font-size:11px;color:rgba(255,255,255,0.3)}
+.stars{color:#FFB800;font-size:12px;letter-spacing:1px}
+.rev-text{font-size:13px;color:rgba(255,255,255,0.6);font-style:italic;line-height:1.7}
+.rev-svc{display:inline-block;font-size:10.5px;font-weight:600;color:var(--pink);background:rgba(233,30,140,0.08);border:1px solid rgba(233,30,140,0.2);padding:2px 9px;border-radius:4px;margin-top:7px}
+/* Stat row */
+.stat-row{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin:1.5rem 0}
+.stat{background:var(--dark2);border:1px solid rgba(255,255,255,0.07);border-radius:11px;padding:1.4rem;text-align:center}
+.stat .num{font-family:var(--font-display);font-size:2.4rem;font-weight:800;color:var(--pink);line-height:1;margin-bottom:0.3rem}
+.stat .lbl{font-size:11.5px;color:rgba(255,255,255,0.4);line-height:1.35}
+/* Svc links */
+.svc-links{display:grid;grid-template-columns:repeat(3,1fr);gap:7px;margin-top:1.25rem}
+.svc-link{background:var(--dark2);border:1px solid rgba(255,255,255,0.07);border-radius:8px;padding:10px 13px;text-decoration:none;color:rgba(255,255,255,0.65);font-size:13px;display:flex;justify-content:space-between;align-items:center;transition:border-color 0.2s}
+.svc-link:hover{border-color:rgba(233,30,140,0.3);color:#fff}
+.svc-link .pr{font-size:10.5px;color:var(--pink);font-weight:600}
+/* CTA band */
+.cta-band{background:var(--pink);padding:3.5rem 2rem;text-align:center}
+.cta-band h2{font-family:var(--font-display);font-size:clamp(1.6rem,3vw,2.2rem);font-weight:800;color:#fff;margin-bottom:0.5rem}
+.cta-band p{font-size:15px;color:rgba(255,255,255,0.75);margin-bottom:1.75rem}
+.cta-buttons{display:flex;gap:12px;justify-content:center;flex-wrap:wrap}
+.btn-white{display:inline-flex;align-items:center;gap:8px;background:#fff;color:var(--pink);padding:13px 26px;border-radius:8px;font-size:14px;font-weight:700;text-decoration:none}
+.btn-ow{display:inline-flex;align-items:center;gap:8px;background:transparent;color:#fff;padding:13px 26px;border-radius:8px;font-size:14px;font-weight:600;text-decoration:none;border:2px solid rgba(255,255,255,0.45)}
+/* Highlight box */
+.callout{background:rgba(233,30,140,0.06);border-left:3px solid var(--pink);padding:1rem 1.25rem;border-radius:0 8px 8px 0;margin:1.5rem 0;font-size:13.5px;color:rgba(255,255,255,0.65);line-height:1.7}
+.callout b{color:rgba(255,255,255,0.9)}
+/* Anchor tab nav */
+.tab-nav{display:flex;gap:4px;border-bottom:1px solid rgba(255,255,255,0.07);margin-bottom:2.5rem;flex-wrap:wrap}
+.tab-link{padding:10px 18px;font-size:13px;font-weight:600;color:rgba(255,255,255,0.45);text-decoration:none;border-bottom:2px solid transparent;margin-bottom:-1px;transition:all 0.15s}
+.tab-link:hover,.tab-link.active{color:var(--pink);border-bottom-color:var(--pink)}
+/* Two col layout */
+.two-col{display:grid;grid-template-columns:1fr 1fr;gap:2.5rem;align-items:start}
+.list-check{margin:0.75rem 0 0 0;padding:0;list-style:none}
+.list-check li{display:flex;align-items:start;gap:9px;font-size:14px;color:rgba(255,255,255,0.6);line-height:1.6;margin-bottom:7px}
+.list-check li::before{content:'✓';color:var(--pink);font-weight:700;flex-shrink:0;margin-top:2px}
+/* Responsive */
+@media(max-width:1024px){.hero-inner{grid-template-columns:1fr}.sidebar-card{display:none}.card-3,.card-4{grid-template-columns:1fr 1fr}.stat-row{grid-template-columns:1fr 1fr}.rev-grid{grid-template-columns:1fr 1fr}.two-col{grid-template-columns:1fr}}
+@media(max-width:768px){.nav-links{display:none}.sticky-bar{display:flex}body{padding-bottom:70px}.card-3,.card-4,.card-2{grid-template-columns:1fr}.svc-links{grid-template-columns:1fr 1fr}.footer-top{grid-template-columns:1fr 1fr}.rev-grid{grid-template-columns:1fr}}
+
 </style>
 </head>
 <body>
@@ -200,151 +315,170 @@ footer{background:var(--black);border-top:1px solid rgba(255,255,255,0.07);paddi
   </div>
 </nav>
 
-<div class="svc-hero">
-  <div class="svc-hero-inner">
+<div class="hero">
+  <div class="hero-inner">
     <div>
-      <nav class="breadcrumb" aria-label="Breadcrumb">
-        <a href="/">Home</a><span>/</span><a href="/services/">Services</a><span>/</span><span style="color:rgba(255,255,255,0.5)">Handyman Services</span>
-      </nav>
-      <div class="svc-badge">Home Repairs &amp; Maintenance · From $75/hr</div>
-      <h1>Handyman Services in <em>Myrtle Beach &amp; Horry County, SC</em></h1>
-      <p class="svc-hero-desc">Stop juggling a dozen different contractors for every small repair. Bakerss is Horry County's go-to handyman team for home repairs, installations, and maintenance tasks — big and small. Licensed, insured, and available 24/7, we handle the repairs that keep your home, rental, or commercial property running right.</p>
-      <div class="svc-ctas">
-        <a href="/get-quote/" class="btn-primary">Get a Free Quote →</a>
-        <a href="tel:8434677136" class="btn-secondary">📞 843-467-7136</a>
+      <nav class="breadcrumb"><a href="/">Home</a><span>/</span><a href="/services/">Services</a><span>/</span><span style="color:rgba(255,255,255,0.5)">Handyman Services</span></nav>
+      <div class="badge">Handyman Services · Home Repairs · Myrtle Beach SC · 24/7</div>
+      <h1 class="hero-h1">Handyman Services in<br><em>Myrtle Beach &amp; Horry County, SC</em></h1>
+      <p class="hero-desc">The door that won't latch. The toilet running since Tuesday. The ceiling fan that wobbles. The TV that needs mounting before guests arrive Saturday. Small things that don't stay small when guests find them first. Bakerss provides fast, professional handyman repairs throughout Horry County — 24/7, flat-rate quoted, no run-around. Starting at $75/hr.</p>
+      <div class="hero-btns">
+        <a href="/get-quote/" class="btn-pink">Get a Free Estimate →</a>
+        <a href="tel:8434677136" class="btn-ghost">📞 843-467-7136</a>
       </div>
-      <div class="svc-trust">
-        <div class="trust-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>5-Star Rated</div>
-        <div class="trust-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>Licensed &amp; Insured</div>
-        <div class="trust-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>24/7 Answering</div>
-        <div class="trust-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>All of Horry County</div>
+      <div class="hero-trust">
+        <span>⭐ <b>5.0</b> Google Rating</span> · <span>✓ <b>Licensed &amp; Insured</b></span> · <span>📞 <b>24/7</b> Emergency Response</span> · <span>💬 <b>Flat-rate</b> most jobs</span>
       </div>
     </div>
-    <div class="quote-card">
-  <h3>Free Estimate</h3>
-  <p class="qsub">Same-day response · No obligation</p>
-  <div class="form-group"><label>Your Name</label><input type="text" placeholder="First name"></div>
-  <div class="form-group"><label>Phone Number</label><input type="tel" placeholder="843-000-0000"></div>
-  <div class="form-group"><label>Service Needed</label>
-    <select>
-      <option value="Handyman Services" selected>Handyman Services</option>
-      <option>Lawn Care</option><option>Landscaping</option><option>Pressure Washing</option>
-      <option>Interior Cleaning</option><option>Airbnb / STR Cleaning</option>
-      <option>Gutter Cleaning</option><option>Painting</option><option>Handyman Services</option>
-      <option>Junk Removal</option><option>Other</option>
-    </select>
-  </div>
-  <div class="form-group"><label>City / Zip</label><input type="text" placeholder="Myrtle Beach, SC"></div>
-  <button class="btn-submit" onclick="window.location='/get-quote/'">Get My Free Quote →</button>
-  <p class="q-privacy">🔒 No spam · Free · No obligation</p>
-  <div class="q-phone">Or call us: <a href="tel:8434677136">843-467-7136</a></div>
-</div>
+    <div class="sidebar-card">
+      <h3>Free Handyman Estimate</h3>
+      <a href="tel:8434677136" class="sidebar-phone">843-467-7136</a>
+      <p>Most jobs quoted flat-rate over the phone. We respond same-day — 24/7 for emergencies.</p>
+      <a href="/get-quote/" class="sidebar-btn pink">Get a Free Quote →</a>
+      <a href="tel:8434677136" class="sidebar-btn outline">📞 Call or Text Now</a>
+      <div class="sidebar-facts">
+        <div class="sidebar-fact">🔧 <span>Starting at <b>$75/hr</b></span></div>
+        <div class="sidebar-fact">💬 <span><b>Flat-rate</b> most common jobs</span></div>
+        <div class="sidebar-fact">📋 <span><b>Punch lists</b> done in one visit</span></div>
+        <div class="sidebar-fact">📞 <span><b>24/7</b> emergency response</span></div>
+      </div>
+    </div>
   </div>
 </div>
 
-<div class="svc-content">
-  <div class="svc-main">
+<div class="content">
 
-    <section class="content-sec">
-      <div class="sec-label">Services Included</div>
-      <h2 class="sec-title">What's Included</h2>
-      <div class="sub-grid"><div class="sub-card"><span class="tag">Repairs</span><h4>General Home Repairs</h4><p>Door hardware, drywall patches, trim repair, weatherstripping, caulking, fixture replacement, and the dozens of small repairs every home needs.</p></div><div class="sub-card"><span class="tag">Installation</span><h4>Fixture &amp; Hardware Installation</h4><p>Ceiling fans, light fixtures, door hardware, cabinet hardware, shelving, TV mounts, blinds, and more — installed correctly the first time.</p></div><div class="sub-card"><span class="tag">Maintenance</span><h4>Preventive Maintenance</h4><p>Seasonal property inspections and maintenance checks to identify and fix small problems before they become expensive ones.</p></div><div class="sub-card"><span class="tag">Rental</span><h4>Vacation Rental Maintenance</h4><p>Between-guest repairs and maintenance to keep your STR property guest-ready. We fix what guests break and maintain what wears out.</p></div><div class="sub-card"><span class="tag">Minor Electrical</span><h4>Minor Electrical Work</h4><p>Outlet and switch replacement, fixture installation, GFCI outlets, and minor electrical repairs by qualified technicians.</p></div><div class="sub-card"><span class="tag">Minor Plumbing</span><h4>Minor Plumbing Work</h4><p>Faucet repair and replacement, toilet running/leaking, showerhead installation, drain clearing, and minor pipe repairs.</p></div></div>
-    </section>
-
-    <section class="content-sec">
-      <div class="sec-label">Who We Help</div>
-      <h2 class="sec-title">Who We Serve</h2>
-      <div class="serve-list"><div class="serve-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20,6 9,17 4,12"/></svg><span>Residential homeowners</span></div><div class="serve-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20,6 9,17 4,12"/></svg><span>Vacation rental owners</span></div><div class="serve-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20,6 9,17 4,12"/></svg><span>Property managers</span></div><div class="serve-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20,6 9,17 4,12"/></svg><span>Out-of-state property owners</span></div><div class="serve-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20,6 9,17 4,12"/></svg><span>HOA communities</span></div><div class="serve-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20,6 9,17 4,12"/></svg><span>Commercial businesses</span></div><div class="serve-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20,6 9,17 4,12"/></svg><span>Real estate investors</span></div><div class="serve-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20,6 9,17 4,12"/></svg><span>Elderly &amp; mobility-limited residents</span></div></div>
-    </section>
-
-    <section class="content-sec">
-      <div class="sec-label">How It Works</div>
-      <h2 class="sec-title">Our Process</h2>
-      <div class="process-steps"><div class="p-step"><div class="p-num">01</div><div><h4>Request &amp; Quote</h4><p>Call, text, or submit a quote. For most standard jobs we can quote over the phone or text. For larger projects, we'll schedule a brief on-site assessment.</p></div></div><div class="p-step"><div class="p-num">02</div><div><h4>Scheduling</h4><p>We work with your schedule. Same-day or next-day availability for most repairs. Emergency response available 24/7.</p></div></div><div class="p-step"><div class="p-num">03</div><div><h4>The Work</h4><p>Our technician arrives on time, with the right tools and materials. We work cleanly, protect your property, and don't leave a mess behind.</p></div></div><div class="p-step"><div class="p-num">04</div><div><h4>Quality Check</h4><p>Before leaving, we test everything — make sure doors open and close correctly, fixtures work, plumbing isn't dripping, and the job is done right.</p></div></div><div class="p-step"><div class="p-num">05</div><div><h4>Invoice &amp; Follow-Up</h4><p>We provide a clear invoice. If you discover anything wasn't right, call us and we come back — no hassle.</p></div></div></div>
-    </section>
-
-    
-
-    <section class="content-sec">
-      <div class="sec-label">Questions &amp; Answers</div>
-      <h2 class="sec-title">Frequently Asked Questions</h2>
-      <div class="faq-list"><div class="faq-item"><div class="faq-q" onclick="toggleFaq(this)">How much do handyman services cost in Myrtle Beach?<span class="icon">+</span></div><div class="faq-a">Our handyman services start at $75/hour, with most standard jobs quoted at a flat rate. Common projects: ceiling fan installation $85–$150, TV mounting $75–$125, door hardware replacement $75–$150, drywall patch $100–$250 depending on size, faucet replacement $125–$200. We provide upfront pricing so you know the cost before we start.</div></div>
-<div class="faq-item"><div class="faq-q" onclick="toggleFaq(this)">Do you handle emergency repairs?<span class="icon">+</span></div><div class="faq-a">Yes. We answer 24/7 and can often dispatch for emergency repairs the same day. Common emergency calls include broken locks, plumbing leaks, storm damage, and issues that make a vacation rental property non-guest-ready. Call or text 843-467-7136.</div></div>
-<div class="faq-item"><div class="faq-q" onclick="toggleFaq(this)">Do you fix things in vacation rental properties?<span class="icon">+</span></div><div class="faq-a">Yes — this is a significant part of our business. We respond quickly to between-guest repair requests to keep STR properties guest-ready. Many property managers in Horry County rely on us as their go-to handyman team because we're reliable, fast, and know what STR properties need.</div></div>
-<div class="faq-item"><div class="faq-q" onclick="toggleFaq(this)">Do you do minor electrical work?<span class="icon">+</span></div><div class="faq-a">Yes. We handle outlet and switch replacement, GFCI installation, light fixture and ceiling fan installation, and minor electrical repairs. For major electrical panel work or rewiring, we refer to a licensed electrician.</div></div>
-<div class="faq-item"><div class="faq-q" onclick="toggleFaq(this)">Do you do minor plumbing repairs?<span class="icon">+</span></div><div class="faq-a">Yes. We handle faucet repair and replacement, running or leaking toilets, showerhead installation, garbage disposal replacement, and minor drain issues. For major plumbing work, we can refer to a licensed plumber.</div></div>
-<div class="faq-item"><div class="faq-q" onclick="toggleFaq(this)">Can you handle a list of repairs in one visit?<span class="icon">+</span></div><div class="faq-a">Absolutely — and that's often the most efficient approach. Many clients give us a punch list of 5–10 small repairs, and we knock them all out in one visit. This saves you scheduling time and often reduces the per-item cost since travel time is shared across multiple tasks.</div></div>
-<div class="faq-item"><div class="faq-q" onclick="toggleFaq(this)">Are your handymen licensed and insured?<span class="icon">+</span></div><div class="faq-a">Yes. Bakerss Property Maintenance is fully licensed and insured throughout Horry County. All team members are vetted and professional.</div></div>
-<div class="faq-item"><div class="faq-q" onclick="toggleFaq(this)">Do you serve the entire Myrtle Beach area?<span class="icon">+</span></div><div class="faq-a">Yes. We serve all of Horry County for handyman services: Myrtle Beach, North Myrtle Beach, Conway, Surfside Beach, Murrells Inlet, Garden City, Socastee, Little River, and all surrounding communities.</div></div>
-</div>
-    </section>
-
-    <section class="content-sec">
-      <div class="sec-label">Related Services</div>
-      <h2 class="sec-title">You Might Also Need</h2>
-      <div class="related-grid"><a href="/services/minor-electric-plumbing/" class="rel-card"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg><div><h4>Minor Electrical &amp; Plumbing</h4><p>Dedicated electrical and plumbing service</p></div></a><a href="/services/painting/" class="rel-card"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75"><path d="M12 19l7-7 3 3-7 7-3-3z"/><path d="M18 13l-1.5-7.5L2 2l3.5 14.5L13 18l5-5z"/></svg><div><h4>Painting</h4><p>Interior and exterior painting</p></div></a><a href="/services/deck-building-repair/" class="rel-card"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75"><rect x="2" y="3" width="20" height="4"/><path d="M2 7v14M22 7v14M6 11h12M6 15h12"/></svg><div><h4>Deck Building &amp; Repair</h4><p>Deck repair and construction</p></div></a><a href="/services/property-maintenance/" class="rel-card"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18M9 21V9"/></svg><div><h4>Property Maintenance Plans</h4><p>Bundle all repairs into one plan</p></div></a></div>
-    </section>
-
-    <section class="content-sec">
-      <div class="sec-label">Cities We Serve</div>
-      <h2 class="sec-title">Handyman Services Across Horry County</h2>
-      <p class="prose">We provide this service in every major city across Horry County. Click your city for location-specific information.</p>
-      <div class="cities-row"><a href="/service-areas/myrtle-beach/" class="city-link">Myrtle Beach</a><a href="/service-areas/north-myrtle-beach/" class="city-link">North Myrtle Beach</a><a href="/service-areas/conway/" class="city-link">Conway</a><a href="/service-areas/surfside-beach/" class="city-link">Surfside Beach</a><a href="/service-areas/murrells-inlet/" class="city-link">Murrells Inlet</a><a href="/service-areas/garden-city/" class="city-link">Garden City</a><a href="/service-areas/socastee/" class="city-link">Socastee</a><a href="/service-areas/little-river/" class="city-link">Little River</a><a href="/service-areas/horry-county/" class="city-link">All of Horry County</a></div>
-    </section>
-
+  <div class="stat-row">
+    <div class="stat"><div class="num">$75</div><div class="lbl">Hourly rate — most jobs flat-rate</div></div>
+    <div class="stat"><div class="num">24/7</div><div class="lbl">Emergency response availability</div></div>
+    <div class="stat"><div class="num">1 Visit</div><div class="lbl">Punch lists with 5-10 items done in one trip</div></div>
+    <div class="stat"><div class="num">Same Day</div><div class="lbl">Response for most Horry County requests</div></div>
   </div>
 
-  <div class="svc-sidebar">
-    <div class="price-box">
-      <div class="from">Starting at</div>
-      <div class="amount">$75/hr</div>
-      <div class="note">Most jobs quoted flat-rate</div>
-    </div>
-    <div class="call-side">
-      <p>Questions? We answer 24/7</p>
-      <a href="tel:8434677136">843-467-7136</a>
-    </div>
-    <div class="side-card">
-      <h3>Customer Reviews</h3>
-      <div class="review-mini">
-  <div style="display:flex;align-items:center;gap:8px;margin-bottom:6px">
-    <div style="width:32px;height:32px;background:var(--pink);border-radius:50%;display:flex;align-items:center;justify-content:center;font-weight:700;font-size:12px;color:#fff;flex-shrink:0">L</div>
-    <div><div style="font-size:13px;font-weight:600">Lilly H.</div><div class="stars">★★★★★</div></div>
-  </div>
-  <p>"From the first consultation to the final installation, everything was handled with professionalism and care. The quality of the work is outstanding."</p>
-  <div class="who">Flooring &amp; Installation · Myrtle Beach, SC</div>
-</div><div class="review-mini">
-  <div style="display:flex;align-items:center;gap:8px;margin-bottom:6px">
-    <div style="width:32px;height:32px;background:var(--pink);border-radius:50%;display:flex;align-items:center;justify-content:center;font-weight:700;font-size:12px;color:#fff;flex-shrink:0">J</div>
-    <div><div style="font-size:13px;font-weight:600">Jimmy B.</div><div class="stars">★★★★★</div></div>
-  </div>
-  <p>"They are very accurate at doing the job they come to do. They go above and beyond."</p>
-  <div class="who">Property Maintenance · Horry County, SC</div>
-</div><div class="review-mini">
-  <div style="display:flex;align-items:center;gap:8px;margin-bottom:6px">
-    <div style="width:32px;height:32px;background:var(--pink);border-radius:50%;display:flex;align-items:center;justify-content:center;font-weight:700;font-size:12px;color:#fff;flex-shrink:0">L</div>
-    <div><div style="font-size:13px;font-weight:600">Lisa T.</div><div class="stars">★★★★★</div></div>
-  </div>
-  <p>"Courtney came within half an hour's notice. Whether it's for cleaning, landscaping, or home repair — I would highly recommend her and her husband's services."</p>
-  <div class="who">Emergency Service · Myrtle Beach, SC</div>
-</div>
-    </div>
-    <div class="side-card">
-      <h3>Service Areas</h3>
-      <a href="/service-areas/myrtle-beach/" class="city-link">Myrtle Beach</a><a href="/service-areas/north-myrtle-beach/" class="city-link">North Myrtle Beach</a><a href="/service-areas/conway/" class="city-link">Conway</a><a href="/service-areas/surfside-beach/" class="city-link">Surfside Beach</a><a href="/service-areas/murrells-inlet/" class="city-link">Murrells Inlet</a><a href="/service-areas/garden-city/" class="city-link">Garden City</a><a href="/service-areas/socastee/" class="city-link">Socastee</a><a href="/service-areas/little-river/" class="city-link">Little River</a><a href="/service-areas/horry-county/" class="city-link">All of Horry County</a>
+  <!-- WHY COASTAL PROPERTIES NEED MORE HANDYMAN -->
+  <div class="sec" style="margin-top:3.5rem">
+    <span class="sec-label">Why Coastal Properties Need More</span>
+    <h2 class="sec-h2">Salt Air, Guest Traffic, and Why Myrtle Beach Properties <em>Break Faster</em></h2>
+    <p class="prose">Myrtle Beach's coastal salt air environment accelerates the wear and corrosion of hardware, fixtures, and components throughout a property faster than any inland market. Door hinges rust. Exterior lock sets corrode. Shower fixtures develop mineral buildup that restricts flow. GFCI outlets near windows lose responsiveness to salt-air humidity cycling. These aren't signs that your property is poorly maintained — they're the physical reality of owning property within the salt-air zone of coastal South Carolina.</p>
+    <p class="prose">Vacation rental properties compound this with high guest volume. A primary residence with one family generates a certain level of wear on door hardware, toilet mechanisms, window latches, and cabinet hinges. A vacation rental with 40–60 guest stays per year generates 40–60× the interactive wear on those same components. Between-stay repairs aren't optional for STR owners who care about review scores — they're part of the operating model.</p>
+    <p class="prose">The property owners who manage this well are the ones who treat handyman maintenance systematically rather than reactively. Annual inspection, proactive hardware replacement, and fast response to anything that breaks between guest stays — that combination keeps properties guest-ready and prevents the small repairs from becoming the large, expensive ones.</p>
+    <div class="card-3" style="margin-top:1.75rem">
+      <div class="card"><span class="tag">Salt Air Corrosion</span><h4>Hardware Replacement Schedule</h4><p>In coastal Myrtle Beach, door hinges, exterior lock hardware, shower fixtures, and metal cabinet hardware need replacement more frequently than inland properties. Annual inspection catches corrosion before it causes failure — and failure at an inconvenient moment.</p></div>
+      <div class="card"><span class="tag">High Guest Volume</span><h4>STR Wear Patterns</h4><p>The mechanical components that take the most abuse in vacation rentals: toilet flush mechanisms, door locks and knobs, window and sliding door latches, garbage disposals, and cabinet hardware. These need proactive replacement cycles in active rentals.</p></div>
+      <div class="card"><span class="tag">Safety &amp; Code</span><h4>GFCI and Safety Compliance</h4><p>Vacation rental platforms increasingly require working GFCI outlets in all bathrooms, kitchens, and outdoor areas — and inspectors spot non-compliance. Smoke and CO detector function is also required. Our handyman visits always check code-compliance items.</p></div>
     </div>
   </div>
+
+  <!-- WHAT WE DO -->
+  <div class="sec">
+    <span class="sec-label">Full Service Range</span>
+    <h2 class="sec-h2">What Bakerss Handyman Handles in Myrtle Beach</h2>
+    <p class="prose">Below is the full range of handyman services available throughout Horry County. For jobs outside our scope — major electrical panel work, HVAC, structural modifications — we refer to trusted licensed specialists and can coordinate the scheduling.</p>
+    <div class="card-3">
+      <div class="card"><span class="tag">General Repairs</span><h4>Doors, Drywall &amp; Trim</h4><p>Door alignment adjustments for doors that stick, drag, or don't latch. Drywall patching for holes and damage. Trim repair and caulking throughout the home. Weatherstripping replacement. These are the most common repair requests after any vacation rental season.</p></div>
+      <div class="card"><span class="tag">Installation</span><h4>Fixtures &amp; Hardware</h4><p>Ceiling fan installation and replacement. Light fixture installation. TV wall mounting — correct location, proper mounting hardware, concealed wiring where possible. Shelving, blinds, curtain rods, cabinet hardware. Everything installed correctly without damaging surrounding surfaces.</p></div>
+      <div class="card"><span class="tag">Electrical (Minor)</span><h4>Outlets, Switches &amp; Fixtures</h4><p>GFCI outlet installation in all required locations. Standard outlet and switch replacement. Fixture-level electrical installation. We do not perform panel work, new circuit installation, or rewiring — those require a licensed master electrician and we refer appropriately.</p></div>
+      <div class="card"><span class="tag">Plumbing (Minor)</span><h4>Fixtures, Faucets &amp; Toilets</h4><p>Faucet repair and full replacement. Running and leaking toilet repair — flapper, fill valve, flush valve. Showerhead replacement. Garbage disposal replacement. Drain clearing. We do not perform new pipe installation, water heater replacement, or sewer work.</p></div>
+      <div class="card"><span class="tag">Safety &amp; Security</span><h4>Locks, Detectors &amp; GFCI</h4><p>Keypad lock installation and programming. Deadbolt and lockset replacement. Smoke detector installation and battery replacement. CO detector installation. GFCI outlet testing and replacement throughout bathrooms, kitchens, garages, and outdoor areas.</p></div>
+      <div class="card"><span class="tag">Outdoor &amp; Seasonal</span><h4>Decks, Screens &amp; Exterior</h4><p>Deck board replacement and minor repairs. Screen door adjustment and screen replacement. Caulking and sealing at all exterior penetrations — a critical maintenance step for preventing water intrusion in Myrtle Beach's heavy-rainfall environment. Gutter hanger re-securing.</p></div>
+    </div>
+  </div>
+
+  <!-- PRICING -->
+  <div class="sec">
+    <span class="sec-label">2025 Pricing</span>
+    <h2 class="sec-h2">Common Handyman Job Pricing — Myrtle Beach 2025</h2>
+    <p class="prose">Most common handyman tasks are quoted flat-rate before work begins — no surprise invoices. For unusual or complex situations, we use an hourly rate starting at $75.</p>
+    <table class="price-table">
+      <thead><tr><th>Job</th><th>Flat Rate</th></tr></thead>
+      <tbody>
+        <tr><td>Ceiling fan installation</td><td class="price">$85–$150</td></tr>
+        <tr><td>TV wall mount installation</td><td class="price">$75–$125</td></tr>
+        <tr><td>Light fixture installation</td><td class="price">$75–$135</td></tr>
+        <tr><td>GFCI outlet installation (per outlet)</td><td class="price">$75–$100</td></tr>
+        <tr><td>Standard outlet or switch replacement</td><td class="price">$65–$100</td></tr>
+        <tr><td>Faucet repair or full replacement</td><td class="price">$125–$225</td></tr>
+        <tr><td>Running toilet repair</td><td class="price">$85–$150</td></tr>
+        <tr><td>Showerhead replacement</td><td class="price">$65–$110</td></tr>
+        <tr><td>Garbage disposal replacement</td><td class="price">$150–$275</td></tr>
+        <tr><td>Drywall patch (per location)</td><td class="price">$65–$150</td></tr>
+        <tr><td>Door hardware replacement</td><td class="price">$65–$125</td></tr>
+        <tr><td>Smoke / CO detector install</td><td class="price">$45–$75 each</td></tr>
+        <tr><td>Punch list — 5 to 8 items</td><td class="price">$275–$550</td></tr>
+      </tbody>
+    </table>
+    <div class="callout" style="margin-top:1.25rem">
+      <b>The punch list approach is your best value.</b> One trip charge covering 5–10 separate repairs is dramatically more cost-effective than scheduling five separate service calls. Build a list, share it when you call, and we handle everything in a single visit.
+    </div>
+  </div>
+
+  <!-- STR FOCUS -->
+  <div class="sec">
+    <span class="sec-label">Vacation Rental Focus</span>
+    <h2 class="sec-h2">Between-Stay Repairs for Myrtle Beach STR Properties</h2>
+    <p class="prose">The best vacation rental operators in Myrtle Beach have one maintenance principle that separates them from the ones who struggle with reviews: they fix things before guests find them. A broken shower fixture, a wobbly toilet seat, a TV that won't turn on — any of these, discovered by a guest, becomes a conversation that affects the review. The same issue identified during a cleaning team's inspection and fixed the same day is invisible to the guest entirely.</p>
+    <div class="two-col">
+      <div>
+        <h3 class="sub-h3">The Annual Inspection Approach</h3>
+        <p class="prose">The most cost-effective way to manage vacation rental maintenance in Myrtle Beach is a single comprehensive annual inspection — typically in late winter before peak season begins — where a handyman works through the entire property systematically. Every outlet tested, every door hardware checked, every toilet flush mechanism inspected, every ceiling fan secured, every safety device verified.</p>
+        <p class="prose">This approach turns deferred maintenance into planned maintenance. Problems are found and fixed at scheduled non-emergency rates instead of being discovered by guests and fixed at emergency rates while affecting reviews.</p>
+      </div>
+      <div>
+        <h3 class="sub-h3">Emergency Response Protocol</h3>
+        <p class="prose">Even with proactive maintenance, things break. A garbage disposal fails the day of a checkout. A toilet starts running the night a guest arrives. These situations need same-day response — not an appointment next week.</p>
+        <p class="prose">We answer 24/7 and respond to STR emergencies as fast as our schedule allows. STR owners in our maintenance plans get priority dispatch because we've built the relationship and understand the timeline pressure. Call 843-467-7136 anytime — we pick up.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- SERVICE AREAS -->
+  <div class="sec">
+    <span class="sec-label">Service Areas</span>
+    <h2 class="sec-h2">Handyman Services Throughout Horry County</h2>
+    <div class="svc-links">
+      <a href="/service-areas/myrtle-beach/handyman-services/" class="svc-link">Myrtle Beach<span class="pr">From $75/hr</span></a>
+      <a href="/service-areas/north-myrtle-beach/handyman-services/" class="svc-link">North Myrtle Beach<span class="pr">From $75/hr</span></a>
+      <a href="/service-areas/conway/handyman-services/" class="svc-link">Conway<span class="pr">From $75/hr</span></a>
+      <a href="/service-areas/surfside-beach/handyman-services/" class="svc-link">Surfside Beach<span class="pr">From $75/hr</span></a>
+      <a href="/service-areas/murrells-inlet/handyman-services/" class="svc-link">Murrells Inlet<span class="pr">From $75/hr</span></a>
+      <a href="/service-areas/socastee/handyman-services/" class="svc-link">Socastee<span class="pr">From $75/hr</span></a>
+      <a href="/service-areas/little-river/handyman-services/" class="svc-link">Little River<span class="pr">From $75/hr</span></a>
+      <a href="/service-areas/garden-city/handyman-services/" class="svc-link">Garden City Beach<span class="pr">From $75/hr</span></a>
+    </div>
+  </div>
+
+  <div class="sec">
+    <span class="sec-label">Reviews</span>
+    <h2 class="sec-h2">What Handyman Clients Say</h2>
+    <div class="rev-grid">
+      <div class="rev"><div class="rev-top"><div class="av">L</div><div><div class="rev-name">Lisa T.</div><div class="rev-meta"><span class="stars">★★★★★</span> · Myrtle Beach, SC</div></div></div><p class="rev-text">"Courtney came within half an hour's notice and did a superb job. Whether it's cleaning, landscaping, or home repair — highly recommend Bakerss for any property service."</p><span class="rev-svc">Emergency Repair</span></div>
+      <div class="rev"><div class="rev-top"><div class="av">J</div><div><div class="rev-name">Jimmy B.</div><div class="rev-meta"><span class="stars">★★★★★</span> · Horry County, SC</div></div></div><p class="rev-text">"They are very accurate at doing the job they come to do. They go above and beyond every time. You ask for something specific and it gets done exactly right."</p><span class="rev-svc">Property Maintenance</span></div>
+      <div class="rev"><div class="rev-top"><div class="av">L</div><div><div class="rev-name">Lilly H.</div><div class="rev-meta"><span class="stars">★★★★★</span> · Myrtle Beach, SC</div></div></div><p class="rev-text">"From the first consultation to the final installation, everything was handled with professionalism and care. The quality is outstanding. They cleaned up thoroughly after the job."</p><span class="rev-svc">Installation Work</span></div>
+    </div>
+  </div>
+
+  <div class="sec">
+    <span class="sec-label">FAQ</span>
+    <h2 class="sec-h2">Handyman Services FAQ</h2>
+    <div class="faq-wrap">
+      <div class="faq-item"><div class="faq-q">How much do handyman services cost in Myrtle Beach?<span class="ico">+</span></div><div class="faq-a">Starting at $75/hour. Most common jobs have flat-rate pricing: ceiling fan installation $85–$150, TV mount $75–$125, faucet replacement $125–$225, running toilet repair $85–$150, GFCI outlet installation $75–$100 per outlet. Multi-item punch lists (5–10 items in one visit) typically run $275–$550. All pricing is quoted before work begins.</div></div>
+      <div class="faq-item"><div class="faq-q">Do you respond to emergencies 24/7?<span class="ico">+</span></div><div class="faq-a">Yes. We answer the phone 24 hours a day, 7 days a week. For STR emergencies — broken locks, plumbing issues, anything blocking a guest arrival — we dispatch as fast as our schedule allows. For vacation rental owners in our maintenance plans, we prioritize emergency dispatch. Call 843-467-7136 any time.</div></div>
+      <div class="faq-item"><div class="faq-q">What's the best way to handle multiple repairs?<span class="ico">+</span></div><div class="faq-a">The punch list approach: make a complete list of everything you want addressed and share it when you call. We review the list, quote the full job, and handle everything in a single visit. One trip charge, everything done. This is significantly more cost-effective than scheduling separate service calls for each item and the approach most of our Myrtle Beach vacation rental clients use for annual inspections.</div></div>
+      <div class="faq-item"><div class="faq-q">What work do you refer out rather than do yourself?<span class="ico">+</span></div><div class="faq-a">We refer major electrical work (panel upgrades, new circuits, rewiring), HVAC installation and major repair, water heater replacement, major plumbing (new pipe installation, sewer work), and anything structural. For these, we maintain relationships with licensed specialists we trust and can coordinate the scheduling if needed.</div></div>
+    </div>
+  </div>
+
 </div>
 
 <div class="cta-band">
-  <h2>Ready to Get Started?</h2>
-  <p>Free estimates · No obligation · We answer 24/7</p>
+  <h2>Fix It Right, Fix It Fast.</h2>
+  <p>Starting at $75/hr · Flat-rate most jobs · Punch lists done in one visit · 24/7 emergency · All of Horry County</p>
   <div class="cta-buttons">
-    <a href="/get-quote/" class="btn-white">Get a Free Quote →</a>
-    <a href="tel:8434677136" class="btn-outline-w">📞 843-467-7136</a>
+    <a href="/get-quote/" class="btn-white">Get a Free Estimate →</a>
+    <a href="tel:8434677136" class="btn-ow">📞 843-467-7136</a>
   </div>
 </div>
-
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"Service","name":"Handyman Services","provider":{"@type":"LocalBusiness","name":"Bakerss Property Maintenance","telephone":"+18434677136"},"areaServed":"Horry County, SC","offers":{"@type":"Offer","priceCurrency":"USD","price":"75"}}</script>
 <footer>
   <div class="footer-inner">
     <div class="footer-top">
@@ -368,16 +502,8 @@ footer{background:var(--black);border-top:1px solid rgba(255,255,255,0.07);paddi
   <a href="sms:8434677136"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15a2 2 0 01-2 2H7l-4 4V5a2 2 0 012-2h14a2 2 0 012 2z"/></svg>Text</a>
   <a href="/get-quote/" class="primary"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/></svg>Free Quote</a>
 </div>
-
 <script>
-function toggleFaq(el){
-  const item = el.parentElement;
-  item.classList.toggle('open');
-}
-</script>
-<script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"How much do handyman services cost in Myrtle Beach?","acceptedAnswer":{"@type":"Answer","text":"Our handyman services start at $75/hour, with most standard jobs quoted at a flat rate. Common projects: ceiling fan installation $85–$150, TV mounting $75–$125, door hardware replacement $75–$150, drywall patch $100–$250 depending on size, faucet replacement $125–$200. We provide upfront pricing so you know the cost before we start."}},{"@type":"Question","name":"Do you handle emergency repairs?","acceptedAnswer":{"@type":"Answer","text":"Yes. We answer 24/7 and can often dispatch for emergency repairs the same day. Common emergency calls include broken locks, plumbing leaks, storm damage, and issues that make a vacation rental property non-guest-ready. Call or text 843-467-7136."}},{"@type":"Question","name":"Do you fix things in vacation rental properties?","acceptedAnswer":{"@type":"Answer","text":"Yes — this is a significant part of our business. We respond quickly to between-guest repair requests to keep STR properties guest-ready. Many property managers in Horry County rely on us as their go-to handyman team because we're reliable, fast, and know what STR properties need."}},{"@type":"Question","name":"Do you do minor electrical work?","acceptedAnswer":{"@type":"Answer","text":"Yes. We handle outlet and switch replacement, GFCI installation, light fixture and ceiling fan installation, and minor electrical repairs. For major electrical panel work or rewiring, we refer to a licensed electrician."}},{"@type":"Question","name":"Do you do minor plumbing repairs?","acceptedAnswer":{"@type":"Answer","text":"Yes. We handle faucet repair and replacement, running or leaking toilets, showerhead installation, garbage disposal replacement, and minor drain issues. For major plumbing work, we can refer to a licensed plumber."}}]}</script>
-<script type="application/ld+json">
-{"@context":"https://schema.org","@type":"Service","name":"Handyman Services","provider":{"@type":"LocalBusiness","name":"Bakerss Property Maintenance","telephone":"+18434677136"},"areaServed":"Horry County, SC","url":"https://www.bakerss.com/services/handyman-services/","priceRange":"$75/hr+"}
+document.querySelectorAll('.faq-q').forEach(q=>q.addEventListener('click',()=>q.parentElement.classList.toggle('open')));
 </script>
 </body>
 </html>
