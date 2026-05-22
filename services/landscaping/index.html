@@ -2,14 +2,15 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Landscaping Services in Myrtle Beach, SC | Bakerss Property Maintenance</title>
-<meta name="description" content="Professional landscaping & design in Myrtle Beach & Horry County, SC. Garden beds, planting, concrete curbing, full landscape transformations. Call 843-467-7136.">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Landscaping Services in Myrtle Beach & Horry County SC | Bakerss Property Maintenance</title>
+<meta name="description" content="Professional landscaping, concrete curbing & plant installation in Myrtle Beach SC. Coastal plant specialists. HOA-compliant designs. Free estimates. Call 843-467-7136.">
 <link rel="canonical" href="https://www.bakerss.com/services/landscaping/">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;800&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
 <style>
+
 *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
 :root{
   --pink:#E91E8C;--pink-dark:#C0157A;--pink-light:#FF4BAB;
@@ -172,6 +173,120 @@ footer{background:var(--black);border-top:1px solid rgba(255,255,255,0.07);paddi
 .sticky-bar svg{width:20px;height:20px}
 @media(max-width:1024px){.svc-hero-inner,.svc-content{grid-template-columns:1fr}.quote-card{position:static}.svc-sidebar{position:static;display:grid;grid-template-columns:1fr 1fr}}
 @media(max-width:768px){.nav-links{display:none}.sticky-bar{display:flex}body{padding-bottom:70px}.sub-grid,.serve-list,.related-grid,.cities-row{grid-template-columns:1fr}.footer-top{grid-template-columns:1fr 1fr}}
+
+/* ── PAGE STYLES ── */
+.hero{background:var(--black);padding:5rem 2rem 3.5rem;position:relative;overflow:hidden}
+.hero::after{content:'';position:absolute;top:-80px;right:-80px;width:520px;height:520px;background:radial-gradient(circle,rgba(233,30,140,0.06) 0%,transparent 70%);pointer-events:none}
+.hero-inner{max-width:1100px;margin:0 auto;position:relative;z-index:2;display:grid;grid-template-columns:1fr 320px;gap:3rem;align-items:start}
+.breadcrumb{display:flex;align-items:center;gap:6px;font-size:12px;color:rgba(255,255,255,0.3);margin-bottom:1.25rem}
+.breadcrumb a{color:rgba(255,255,255,0.3);text-decoration:none}
+.breadcrumb a:hover{color:var(--pink)}
+.breadcrumb span{color:rgba(255,255,255,0.12)}
+.badge{display:inline-flex;align-items:center;gap:6px;background:rgba(233,30,140,0.1);border:1px solid rgba(233,30,140,0.3);border-radius:100px;padding:4px 14px;font-size:10px;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;color:var(--pink);margin-bottom:1.25rem}
+h1.hero-h1{font-family:var(--font-display);font-size:clamp(2.1rem,3.5vw,3.2rem);font-weight:800;line-height:1.08;letter-spacing:-0.025em;margin-bottom:1.1rem}
+h1.hero-h1 em{font-style:normal;color:var(--pink)}
+.hero-desc{font-size:16px;color:rgba(255,255,255,0.55);line-height:1.8;font-weight:300;max-width:600px;margin-bottom:1.75rem}
+.hero-btns{display:flex;gap:10px;flex-wrap:wrap}
+.btn-pink{display:inline-flex;align-items:center;gap:8px;background:var(--pink);color:#fff;padding:14px 26px;border-radius:8px;font-size:14px;font-weight:600;text-decoration:none;transition:all 0.2s;box-shadow:0 4px 18px rgba(233,30,140,0.25)}
+.btn-pink:hover{transform:translateY(-1px);box-shadow:0 6px 24px rgba(233,30,140,0.35)}
+.btn-ghost{display:inline-flex;align-items:center;gap:8px;background:transparent;color:rgba(255,255,255,0.8);padding:14px 24px;border-radius:8px;font-size:14px;font-weight:500;text-decoration:none;border:1px solid rgba(255,255,255,0.18)}
+.hero-trust{display:flex;align-items:center;gap:12px;margin-top:1.5rem;font-size:11px;color:rgba(255,255,255,0.3);flex-wrap:wrap}
+.hero-trust b{color:rgba(255,255,255,0.55)}
+/* Sidebar card */
+.sidebar-card{background:var(--dark2);border:1px solid rgba(255,255,255,0.08);border-radius:14px;padding:1.75rem;position:sticky;top:80px}
+.sidebar-card h3{font-family:var(--font-display);font-size:1.15rem;font-weight:700;margin-bottom:0.25rem}
+.sidebar-phone{font-family:var(--font-display);font-size:1.85rem;font-weight:800;color:var(--pink);text-decoration:none;display:block;margin:0.4rem 0}
+.sidebar-card p{font-size:12.5px;color:rgba(255,255,255,0.4);margin-bottom:1.25rem;line-height:1.5}
+.sidebar-btn{display:block;padding:12px;border-radius:7px;font-size:13.5px;font-weight:600;text-decoration:none;text-align:center;margin-bottom:7px}
+.sidebar-btn.pink{background:var(--pink);color:#fff}
+.sidebar-btn.outline{background:transparent;color:rgba(255,255,255,0.7);border:1px solid rgba(255,255,255,0.15)}
+.sidebar-facts{margin-top:1.25rem;padding-top:1.25rem;border-top:1px solid rgba(255,255,255,0.07)}
+.sidebar-fact{display:flex;align-items:center;gap:10px;font-size:12px;color:rgba(255,255,255,0.5);margin-bottom:7px}
+.sidebar-fact b{color:rgba(255,255,255,0.75)}
+/* Content area */
+.content{max-width:1100px;margin:0 auto;padding:4.5rem 2rem}
+.sec{margin-bottom:4rem}
+.sec-label{font-size:10px;font-weight:700;letter-spacing:0.12em;text-transform:uppercase;color:var(--pink);margin-bottom:0.5rem;display:block}
+h2.sec-h2{font-family:var(--font-display);font-size:clamp(1.6rem,2.5vw,2.1rem);font-weight:800;letter-spacing:-0.02em;margin-bottom:0.9rem;line-height:1.15}
+h2.sec-h2 em{font-style:normal;color:var(--pink)}
+h3.sub-h3{font-size:1.05rem;font-weight:600;margin:1.75rem 0 0.5rem;color:rgba(255,255,255,0.9)}
+.prose{font-size:15px;color:rgba(255,255,255,0.58);line-height:1.85;font-weight:300}
+.prose+.prose{margin-top:0.85rem}
+/* Card grids */
+.card-3{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-top:1.5rem}
+.card-2{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-top:1.5rem}
+.card-4{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin-top:1.5rem}
+.card{background:var(--dark2);border:1px solid rgba(255,255,255,0.07);border-radius:12px;padding:1.4rem}
+.card .tag{font-size:10px;font-weight:700;letter-spacing:0.09em;text-transform:uppercase;color:var(--pink);display:block;margin-bottom:0.5rem}
+.card h4{font-size:15px;font-weight:600;margin-bottom:0.4rem}
+.card p{font-size:13px;color:rgba(255,255,255,0.45);line-height:1.6}
+/* Pricing table */
+.price-table{width:100%;border-collapse:collapse;margin-top:1.25rem;font-size:13.5px}
+.price-table th{padding:10px 14px;text-align:left;background:rgba(233,30,140,0.08);border-bottom:1px solid rgba(255,255,255,0.08);font-size:10px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:rgba(255,255,255,0.4)}
+.price-table td{padding:11px 14px;border-bottom:1px solid rgba(255,255,255,0.05);color:rgba(255,255,255,0.65)}
+.price-table td.price{color:var(--pink);font-weight:700}
+.price-table tr:last-child td{border-bottom:none}
+/* Steps */
+.steps{display:grid;gap:1px;margin-top:1.25rem}
+.step{background:var(--dark2);border:1px solid rgba(255,255,255,0.07);padding:1.25rem 1.5rem;display:flex;gap:1.25rem;align-items:start}
+.step:first-child{border-radius:12px 12px 0 0}
+.step:last-child{border-radius:0 0 12px 12px}
+.step-num{width:32px;height:32px;border-radius:50%;background:var(--pink);display:flex;align-items:center;justify-content:center;font-size:13px;font-weight:700;color:#fff;flex-shrink:0;margin-top:2px}
+.step h4{font-size:14.5px;font-weight:600;margin-bottom:0.3rem}
+.step p{font-size:13px;color:rgba(255,255,255,0.45);line-height:1.6}
+/* FAQ */
+.faq-wrap{border:1px solid rgba(255,255,255,0.07);border-radius:12px;overflow:hidden;margin-top:1.25rem}
+.faq-item{border-bottom:1px solid rgba(255,255,255,0.06)}
+.faq-item:last-child{border:none}
+.faq-q{display:flex;justify-content:space-between;align-items:center;padding:1rem 1.25rem;cursor:pointer;font-size:14.5px;font-weight:600;gap:1rem;transition:background 0.15s}
+.faq-q:hover{background:rgba(255,255,255,0.025)}
+.faq-q .ico{color:var(--pink);font-size:20px;flex-shrink:0;transition:transform 0.25s;line-height:1}
+.faq-a{display:none;padding:0 1.25rem 1rem;font-size:13.5px;color:rgba(255,255,255,0.5);line-height:1.75}
+.faq-item.open .faq-q .ico{transform:rotate(45deg)}
+.faq-item.open .faq-a{display:block}
+/* Reviews */
+.rev-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin-top:1.5rem}
+.rev{background:var(--dark2);border:1px solid rgba(255,255,255,0.07);border-radius:11px;padding:1.4rem}
+.rev-top{display:flex;align-items:center;gap:10px;margin-bottom:9px}
+.av{width:36px;height:36px;background:var(--pink);border-radius:50%;display:flex;align-items:center;justify-content:center;font-weight:700;font-size:13px;color:#fff;flex-shrink:0}
+.rev-name{font-size:13.5px;font-weight:600}
+.rev-meta{font-size:11px;color:rgba(255,255,255,0.3)}
+.stars{color:#FFB800;font-size:12px;letter-spacing:1px}
+.rev-text{font-size:13px;color:rgba(255,255,255,0.6);font-style:italic;line-height:1.7}
+.rev-svc{display:inline-block;font-size:10.5px;font-weight:600;color:var(--pink);background:rgba(233,30,140,0.08);border:1px solid rgba(233,30,140,0.2);padding:2px 9px;border-radius:4px;margin-top:7px}
+/* Stat row */
+.stat-row{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin:1.5rem 0}
+.stat{background:var(--dark2);border:1px solid rgba(255,255,255,0.07);border-radius:11px;padding:1.4rem;text-align:center}
+.stat .num{font-family:var(--font-display);font-size:2.4rem;font-weight:800;color:var(--pink);line-height:1;margin-bottom:0.3rem}
+.stat .lbl{font-size:11.5px;color:rgba(255,255,255,0.4);line-height:1.35}
+/* Svc links */
+.svc-links{display:grid;grid-template-columns:repeat(3,1fr);gap:7px;margin-top:1.25rem}
+.svc-link{background:var(--dark2);border:1px solid rgba(255,255,255,0.07);border-radius:8px;padding:10px 13px;text-decoration:none;color:rgba(255,255,255,0.65);font-size:13px;display:flex;justify-content:space-between;align-items:center;transition:border-color 0.2s}
+.svc-link:hover{border-color:rgba(233,30,140,0.3);color:#fff}
+.svc-link .pr{font-size:10.5px;color:var(--pink);font-weight:600}
+/* CTA band */
+.cta-band{background:var(--pink);padding:3.5rem 2rem;text-align:center}
+.cta-band h2{font-family:var(--font-display);font-size:clamp(1.6rem,3vw,2.2rem);font-weight:800;color:#fff;margin-bottom:0.5rem}
+.cta-band p{font-size:15px;color:rgba(255,255,255,0.75);margin-bottom:1.75rem}
+.cta-buttons{display:flex;gap:12px;justify-content:center;flex-wrap:wrap}
+.btn-white{display:inline-flex;align-items:center;gap:8px;background:#fff;color:var(--pink);padding:13px 26px;border-radius:8px;font-size:14px;font-weight:700;text-decoration:none}
+.btn-ow{display:inline-flex;align-items:center;gap:8px;background:transparent;color:#fff;padding:13px 26px;border-radius:8px;font-size:14px;font-weight:600;text-decoration:none;border:2px solid rgba(255,255,255,0.45)}
+/* Highlight box */
+.callout{background:rgba(233,30,140,0.06);border-left:3px solid var(--pink);padding:1rem 1.25rem;border-radius:0 8px 8px 0;margin:1.5rem 0;font-size:13.5px;color:rgba(255,255,255,0.65);line-height:1.7}
+.callout b{color:rgba(255,255,255,0.9)}
+/* Anchor tab nav */
+.tab-nav{display:flex;gap:4px;border-bottom:1px solid rgba(255,255,255,0.07);margin-bottom:2.5rem;flex-wrap:wrap}
+.tab-link{padding:10px 18px;font-size:13px;font-weight:600;color:rgba(255,255,255,0.45);text-decoration:none;border-bottom:2px solid transparent;margin-bottom:-1px;transition:all 0.15s}
+.tab-link:hover,.tab-link.active{color:var(--pink);border-bottom-color:var(--pink)}
+/* Two col layout */
+.two-col{display:grid;grid-template-columns:1fr 1fr;gap:2.5rem;align-items:start}
+.list-check{margin:0.75rem 0 0 0;padding:0;list-style:none}
+.list-check li{display:flex;align-items:start;gap:9px;font-size:14px;color:rgba(255,255,255,0.6);line-height:1.6;margin-bottom:7px}
+.list-check li::before{content:'✓';color:var(--pink);font-weight:700;flex-shrink:0;margin-top:2px}
+/* Responsive */
+@media(max-width:1024px){.hero-inner{grid-template-columns:1fr}.sidebar-card{display:none}.card-3,.card-4{grid-template-columns:1fr 1fr}.stat-row{grid-template-columns:1fr 1fr}.rev-grid{grid-template-columns:1fr 1fr}.two-col{grid-template-columns:1fr}}
+@media(max-width:768px){.nav-links{display:none}.sticky-bar{display:flex}body{padding-bottom:70px}.card-3,.card-4,.card-2{grid-template-columns:1fr}.svc-links{grid-template-columns:1fr 1fr}.footer-top{grid-template-columns:1fr 1fr}.rev-grid{grid-template-columns:1fr}}
+
 </style>
 </head>
 <body>
@@ -200,151 +315,97 @@ footer{background:var(--black);border-top:1px solid rgba(255,255,255,0.07);paddi
   </div>
 </nav>
 
-<div class="svc-hero">
-  <div class="svc-hero-inner">
+<div class="hero">
+  <div class="hero-inner">
     <div>
-      <nav class="breadcrumb" aria-label="Breadcrumb">
-        <a href="/">Home</a><span>/</span><a href="/services/">Services</a><span>/</span><span style="color:rgba(255,255,255,0.5)">Landscaping</span>
-      </nav>
-      <div class="svc-badge">Outdoor Design · Custom Quotes</div>
-      <h1>Landscaping &amp; Design Services in <em>Myrtle Beach &amp; Horry County, SC</em></h1>
-      <p class="svc-hero-desc">Great landscaping does more than look good — it adds measurable value to your property, improves curb appeal for guests and buyers, and creates outdoor spaces that work for your lifestyle. Bakerss provides custom landscaping and design for residential homes, HOA communities, vacation rentals, and commercial properties across all of Horry County.</p>
-      <div class="svc-ctas">
-        <a href="/get-quote/" class="btn-primary">Get a Free Quote →</a>
-        <a href="tel:8434677136" class="btn-secondary">📞 843-467-7136</a>
+      <nav class="breadcrumb"><a href="/">Home</a><span>/</span><a href="/services/">Services</a><span>/</span><span style="color:rgba(255,255,255,0.5)">Landscaping</span></nav>
+      <div class="badge">Landscaping · Concrete Curbing · Plant Installation · Myrtle Beach SC</div>
+      <h1 class="hero-h1">Landscaping Services in<br><em>Myrtle Beach &amp; Horry County, SC</em></h1>
+      <p class="hero-desc">Most landscaping installed in Myrtle Beach fails within two seasons because it was designed for a different climate. Coastal South Carolina's heat, salt air, sandy soil, and year-round subtropical humidity demand plants proven in this specific environment. Bakerss designs and installs landscapes built for the Grand Strand — beautiful at installation, thriving at year five, and maintained with the concrete curbing that outlasts plastic edging by twenty years. Free estimates.</p>
+      <div class="hero-btns">
+        <a href="/get-quote/" class="btn-pink">Get a Free Estimate →</a>
+        <a href="tel:8434677136" class="btn-ghost">📞 843-467-7136</a>
       </div>
-      <div class="svc-trust">
-        <div class="trust-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>5-Star Rated</div>
-        <div class="trust-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>Licensed &amp; Insured</div>
-        <div class="trust-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>24/7 Answering</div>
-        <div class="trust-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>All of Horry County</div>
+      <div class="hero-trust">
+        <span>⭐ <b>5.0</b> Google Rating</span> · <span>✓ <b>Licensed &amp; Insured</b></span> · <span>📍 <b>Horry County, SC</b></span> · <span>📞 <b>24/7</b></span>
       </div>
     </div>
-    <div class="quote-card">
-  <h3>Free Estimate</h3>
-  <p class="qsub">Same-day response · No obligation</p>
-  <div class="form-group"><label>Your Name</label><input type="text" placeholder="First name"></div>
-  <div class="form-group"><label>Phone Number</label><input type="tel" placeholder="843-000-0000"></div>
-  <div class="form-group"><label>Service Needed</label>
-    <select>
-      <option value="Landscaping" selected>Landscaping</option>
-      <option>Lawn Care</option><option>Landscaping</option><option>Pressure Washing</option>
-      <option>Interior Cleaning</option><option>Airbnb / STR Cleaning</option>
-      <option>Gutter Cleaning</option><option>Painting</option><option>Handyman Services</option>
-      <option>Junk Removal</option><option>Other</option>
-    </select>
-  </div>
-  <div class="form-group"><label>City / Zip</label><input type="text" placeholder="Myrtle Beach, SC"></div>
-  <button class="btn-submit" onclick="window.location='/get-quote/'">Get My Free Quote →</button>
-  <p class="q-privacy">🔒 No spam · Free · No obligation</p>
-  <div class="q-phone">Or call us: <a href="tel:8434677136">843-467-7136</a></div>
-</div>
-  </div>
-</div>
-
-<div class="svc-content">
-  <div class="svc-main">
-
-    <section class="content-sec">
-      <div class="sec-label">Services Included</div>
-      <h2 class="sec-title">What's Included</h2>
-      <div class="sub-grid"><div class="sub-card"><span class="tag">Design</span><h4>Landscape Design &amp; Planning</h4><p>Custom landscape plans tailored to your property's size, soil, sun exposure, and style — from simple cleanups to full yard transformations.</p></div><div class="sub-card"><span class="tag">Installation</span><h4>Garden Bed Installation</h4><p>New planting beds with proper edging, amended soil, and plant selection suited to coastal South Carolina's climate and conditions.</p></div><div class="sub-card"><span class="tag">Specialty</span><h4>Concrete Landscaping Curbing</h4><p>Permanent concrete curbing that defines beds, prevents mulch blowout, and gives your property a clean, professional finish that lasts for years.</p></div><div class="sub-card"><span class="tag">Planting</span><h4>Shrub &amp; Plant Installation</h4><p>Selection and installation of shrubs, ornamental grasses, perennials, and ground covers suited to Horry County's heat, humidity, and salt air.</p></div><div class="sub-card"><span class="tag">Hardscape</span><h4>Mulching &amp; Ground Cover</h4><p>Fresh mulch installation in beds to conserve moisture, suppress weeds, and give your landscape a polished, maintained appearance.</p></div><div class="sub-card"><span class="tag">Seasonal</span><h4>Seasonal Color Planting</h4><p>Rotating seasonal annuals for year-round color — from spring pansies to fall mums — keeping your property looking sharp every season.</p></div></div>
-    </section>
-
-    <section class="content-sec">
-      <div class="sec-label">Who We Help</div>
-      <h2 class="sec-title">Who We Serve</h2>
-      <div class="serve-list"><div class="serve-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20,6 9,17 4,12"/></svg><span>Residential homeowners</span></div><div class="serve-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20,6 9,17 4,12"/></svg><span>HOA communities</span></div><div class="serve-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20,6 9,17 4,12"/></svg><span>Vacation rental owners</span></div><div class="serve-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20,6 9,17 4,12"/></svg><span>New construction properties</span></div><div class="serve-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20,6 9,17 4,12"/></svg><span>Commercial properties</span></div><div class="serve-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20,6 9,17 4,12"/></svg><span>Out-of-state property owners</span></div><div class="serve-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20,6 9,17 4,12"/></svg><span>Pre-sale home prep</span></div><div class="serve-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20,6 9,17 4,12"/></svg><span>Property managers</span></div></div>
-    </section>
-
-    <section class="content-sec">
-      <div class="sec-label">How It Works</div>
-      <h2 class="sec-title">Our Process</h2>
-      <div class="process-steps"><div class="p-step"><div class="p-num">01</div><div><h4>Consultation &amp; Assessment</h4><p>We walk your property with you, understand your vision, assess existing conditions, and discuss budget. No pressure — just honest recommendations.</p></div></div><div class="p-step"><div class="p-num">02</div><div><h4>Design Proposal</h4><p>We provide a written proposal with plant selections, layout, materials, and pricing before any work begins. You approve everything first.</p></div></div><div class="p-step"><div class="p-num">03</div><div><h4>Site Preparation</h4><p>Existing vegetation cleared, soil amended where needed, and beds properly graded for drainage before installation begins.</p></div></div><div class="p-step"><div class="p-num">04</div><div><h4>Installation</h4><p>Plants, curbing, mulch, and hardscape elements installed according to the approved plan. We work cleanly and leave the site tidy.</p></div></div><div class="p-step"><div class="p-num">05</div><div><h4>Final Walkthrough</h4><p>We walk the completed project with you, explain care requirements for new plants, and confirm you're satisfied before we leave.</p></div></div><div class="p-step"><div class="p-num">06</div><div><h4>Ongoing Maintenance</h4><p>Many clients schedule us for recurring landscape maintenance after installation to keep the property looking its best year-round.</p></div></div></div>
-    </section>
-
-    
-
-    <section class="content-sec">
-      <div class="sec-label">Questions &amp; Answers</div>
-      <h2 class="sec-title">Frequently Asked Questions</h2>
-      <div class="faq-list"><div class="faq-item"><div class="faq-q" onclick="toggleFaq(this)">What types of plants work best for Myrtle Beach landscaping?<span class="icon">+</span></div><div class="faq-a">Coastal South Carolina's climate favors heat-tolerant, humidity-resistant plants. Excellent choices include Knock Out roses, Indian hawthorn, loropetalum, ornamental grasses like muhly and maiden grass, Confederate jasmine, crepe myrtles, gardenias, and native plants like beautyberry and muhly grass. We select plants based on your specific sun exposure, soil type, and maintenance preference.</div></div>
-<div class="faq-item"><div class="faq-q" onclick="toggleFaq(this)">What is concrete landscaping curbing?<span class="icon">+</span></div><div class="faq-a">Concrete landscaping curbing is a continuous, poured-in-place concrete border that separates lawn from garden beds. Unlike plastic or metal edging, concrete curbing is permanent, doesn't shift or heave, prevents mulch blowout, and gives your landscape a clean professional finish. It comes in various styles and can be colored to complement your home.</div></div>
-<div class="faq-item"><div class="faq-q" onclick="toggleFaq(this)">How much does landscaping cost in Myrtle Beach?<span class="icon">+</span></div><div class="faq-a">Landscaping costs vary widely based on scope. A single bed refresh with plants and mulch might run $300–$800. A full yard landscape installation with design, plants, curbing, and mulch typically runs $2,500–$8,000+. Concrete curbing alone is typically priced per linear foot. We always provide a free, itemized estimate before any commitment.</div></div>
-<div class="faq-item"><div class="faq-q" onclick="toggleFaq(this)">Do you design landscapes for vacation rental properties?<span class="icon">+</span></div><div class="faq-a">Yes. STR and vacation rental landscaping is one of our most requested services. Curb appeal drives bookings and first impressions. We design low-maintenance landscapes that look great in listing photos and require minimal upkeep between guests.</div></div>
-<div class="faq-item"><div class="faq-q" onclick="toggleFaq(this)">Can you handle landscaping for HOA communities?<span class="icon">+</span></div><div class="faq-a">Yes. We work with HOA communities throughout Horry County and understand the standards these communities require. We can maintain existing landscapes or design new installations that meet your HOA's specifications.</div></div>
-<div class="faq-item"><div class="faq-q" onclick="toggleFaq(this)">How is landscaping different from lawn care?<span class="icon">+</span></div><div class="faq-a">Lawn care focuses on maintaining your existing turf — mowing, edging, and trimming. Landscaping involves design, installation, and transformation of beds, plants, hardscape, and outdoor spaces. Many of our clients use us for both — we handle lawn care maintenance and landscaping improvements as one coordinated service.</div></div>
-<div class="faq-item"><div class="faq-q" onclick="toggleFaq(this)">Do you offer ongoing landscape maintenance after installation?<span class="icon">+</span></div><div class="faq-a">Yes. After completing a landscape project, many clients add recurring maintenance to keep beds weeded, mulch fresh, plants pruned, and seasonal color rotated. We offer flexible maintenance schedules to suit your property and budget.</div></div>
-<div class="faq-item"><div class="faq-q" onclick="toggleFaq(this)">Do you serve Conway and North Myrtle Beach for landscaping?<span class="icon">+</span></div><div class="faq-a">Yes. We provide landscaping and concrete curbing throughout all of Horry County including Myrtle Beach, North Myrtle Beach, Conway, Surfside Beach, Murrells Inlet, Garden City, Socastee, and Little River.</div></div>
-</div>
-    </section>
-
-    <section class="content-sec">
-      <div class="sec-label">Related Services</div>
-      <h2 class="sec-title">You Might Also Need</h2>
-      <div class="related-grid"><a href="/services/lawn-care/" class="rel-card"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75"><path d="M12 22V12M12 12C12 12 9 8 4 7M12 12C12 12 15 8 20 7M4 22h16"/></svg><div><h4>Lawn Care</h4><p>Regular turf maintenance</p></div></a><a href="/services/concrete-curbing/" class="rel-card"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75"><rect x="2" y="14" width="20" height="4" rx="2"/><path d="M6 14V9a6 6 0 0112 0v5"/></svg><div><h4>Concrete Curbing</h4><p>Permanent bed borders</p></div></a><a href="/services/pressure-washing/" class="rel-card"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75"><path d="M12 2v4M8 4l1.5 3M16 4l-1.5 3M5 9h14M6 9l-2 11h16L18 9"/></svg><div><h4>Pressure Washing</h4><p>Clean driveways and hardscape</p></div></a><a href="/services/deck-building-repair/" class="rel-card"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75"><rect x="2" y="3" width="20" height="4"/><path d="M2 7v14M22 7v14M6 11h12M6 15h12"/></svg><div><h4>Deck Building &amp; Repair</h4><p>Extend your outdoor living space</p></div></a></div>
-    </section>
-
-    <section class="content-sec">
-      <div class="sec-label">Cities We Serve</div>
-      <h2 class="sec-title">Landscaping Across Horry County</h2>
-      <p class="prose">We provide this service in every major city across Horry County. Click your city for location-specific information.</p>
-      <div class="cities-row"><a href="/service-areas/myrtle-beach/" class="city-link">Myrtle Beach</a><a href="/service-areas/north-myrtle-beach/" class="city-link">North Myrtle Beach</a><a href="/service-areas/conway/" class="city-link">Conway</a><a href="/service-areas/surfside-beach/" class="city-link">Surfside Beach</a><a href="/service-areas/murrells-inlet/" class="city-link">Murrells Inlet</a><a href="/service-areas/garden-city/" class="city-link">Garden City</a><a href="/service-areas/socastee/" class="city-link">Socastee</a><a href="/service-areas/little-river/" class="city-link">Little River</a><a href="/service-areas/horry-county/" class="city-link">All of Horry County</a></div>
-    </section>
-
-  </div>
-
-  <div class="svc-sidebar">
-    <div class="price-box">
-      <div class="from">Starting at</div>
-      <div class="amount">Free Quote</div>
-      <div class="note">Custom pricing · Project-based</div>
-    </div>
-    <div class="call-side">
-      <p>Questions? We answer 24/7</p>
-      <a href="tel:8434677136">843-467-7136</a>
-    </div>
-    <div class="side-card">
-      <h3>Customer Reviews</h3>
-      <div class="review-mini">
-  <div style="display:flex;align-items:center;gap:8px;margin-bottom:6px">
-    <div style="width:32px;height:32px;background:var(--pink);border-radius:50%;display:flex;align-items:center;justify-content:center;font-weight:700;font-size:12px;color:#fff;flex-shrink:0">H</div>
-    <div><div style="font-size:13px;font-weight:600">Hannah D.</div><div class="stars">★★★★★</div></div>
-  </div>
-  <p>"Bakerss Personal Touch Landscaping truly lives up to its name. They take the time to understand your vision and bring it to life with precision and care. Highly recommended for anyone wanting to elevate their outdoor space."</p>
-  <div class="who">Landscaping · Myrtle Beach, SC</div>
-</div><div class="review-mini">
-  <div style="display:flex;align-items:center;gap:8px;margin-bottom:6px">
-    <div style="width:32px;height:32px;background:var(--pink);border-radius:50%;display:flex;align-items:center;justify-content:center;font-weight:700;font-size:12px;color:#fff;flex-shrink:0">K</div>
-    <div><div style="font-size:13px;font-weight:600">King K.</div><div class="stars">★★★★★</div></div>
-  </div>
-  <p>"Bakerss did a wonderful job doing landscaping, pressure washing, and repainting my house. They are reasonable with prices — this company is an all-in-one."</p>
-  <div class="who">Landscaping + Pressure Washing + Painting · Myrtle Beach, SC</div>
-</div><div class="review-mini">
-  <div style="display:flex;align-items:center;gap:8px;margin-bottom:6px">
-    <div style="width:32px;height:32px;background:var(--pink);border-radius:50%;display:flex;align-items:center;justify-content:center;font-weight:700;font-size:12px;color:#fff;flex-shrink:0">L</div>
-    <div><div style="font-size:13px;font-weight:600">Leilyn N.</div><div class="stars">★★★★★</div></div>
-  </div>
-  <p>"Great service for both pressure washing and landscaping. On time, professional, and did a thorough job. Fair pricing and no issues. Highly recommend."</p>
-  <div class="who">Pressure Washing &amp; Landscaping · Myrtle Beach, SC</div>
-</div>
-    </div>
-    <div class="side-card">
-      <h3>Service Areas</h3>
-      <a href="/service-areas/myrtle-beach/" class="city-link">Myrtle Beach</a><a href="/service-areas/north-myrtle-beach/" class="city-link">North Myrtle Beach</a><a href="/service-areas/conway/" class="city-link">Conway</a><a href="/service-areas/surfside-beach/" class="city-link">Surfside Beach</a><a href="/service-areas/murrells-inlet/" class="city-link">Murrells Inlet</a><a href="/service-areas/garden-city/" class="city-link">Garden City</a><a href="/service-areas/socastee/" class="city-link">Socastee</a><a href="/service-areas/little-river/" class="city-link">Little River</a><a href="/service-areas/horry-county/" class="city-link">All of Horry County</a>
+    <div class="sidebar-card">
+      <h3>Free Landscaping Estimate</h3>
+      <a href="tel:8434677136" class="sidebar-phone">843-467-7136</a>
+      <p>Ray and Courtney respond personally — same day, every time. No call centers, no voicemail loops.</p>
+      <a href="/get-quote/" class="sidebar-btn pink">Get a Free Quote →</a>
+      <a href="tel:8434677136" class="sidebar-btn outline">📞 Call or Text Now</a>
+      <div class="sidebar-facts">
+        <div class="sidebar-fact">🌿 <span><b>Coastal plant</b> selection expertise</span></div><div class="sidebar-fact">📐 <span><b>Concrete curbing</b> from $4/linear ft</span></div><div class="sidebar-fact">🏠 <span><b>HOA-compliant</b> designs available</span></div><div class="sidebar-fact">🔄 <span><b>Ongoing maintenance</b> plans available</span></div>
+        <div class="sidebar-fact">✓ <span><b>Licensed &amp; Insured</b> · Horry County</span></div>
+      </div>
     </div>
   </div>
 </div>
+<div class="content">
+<div class="stat-row"><div class="stat"><div class="num">9+</div><div class="lbl">Months of active growing season in coastal SC</div></div><div class="stat"><div class="num">$4–$7</div><div class="lbl">Per linear ft — concrete curbing installed</div></div><div class="stat"><div class="num">20+</div><div class="lbl">Years concrete curbing lasts vs 2–4 yrs for plastic</div></div><div class="stat"><div class="num">HOA</div><div class="lbl">Compliant designs for all major Horry County communities</div></div></div>
 
-<div class="cta-band">
-  <h2>Ready to Get Started?</h2>
-  <p>Free estimates · No obligation · We answer 24/7</p>
-  <div class="cta-buttons">
-    <a href="/get-quote/" class="btn-white">Get a Free Quote →</a>
-    <a href="tel:8434677136" class="btn-outline-w">📞 843-467-7136</a>
-  </div>
+<div class="sec" style="margin-top:3.5rem">
+<span class="sec-label">Coastal Plant Science</span>
+<h2 class="sec-h2">Plants That <em>Thrive</em> in Myrtle Beach — vs Plants That Just Survive the First Season</h2>
+<p class="prose">Walk through any Myrtle Beach neighborhood three years after a landscaping installation and you'll find a predictable pattern: boxwoods struggling with root rot from excessive rainfall on clay patches, Japanese maples scorched by afternoon sun, lavender long dead in the humid sandy soil, azaleas planted in full sun that have been browning since their first July. These aren't failures of the plants — they're failures of plant selection for this specific environment.</p>
+<p class="prose">Coastal South Carolina's landscape demands are specific: heat that exceeds 95°F for months. Sandy soil that drains quickly and stays nutrient-poor without amendment. Salt air from the Atlantic depositing on all plant surfaces. High humidity that promotes fungal disease in susceptible species. Periodic hurricane wind loading. Nine to ten months of active growing season that simultaneously means nine to ten months of maintenance demand. The plants that perform in this environment are the ones selected for it, not the ones that look good on a tag at a general garden center.</p>
+<div class="card-3"><div class="card"><span class="tag">Top Performer</span><h4>Knock Out Roses</h4><p>Heat-tolerant, drought-tolerant once established, disease-resistant, and blooming spring through first frost. Available in red, pink, white, coral. The most reliable single landscaping plant available for Myrtle Beach properties. Performs with minimal maintenance from oceanfront Garden City Beach to shaded Forestbrook in Socastee.</p></div><div class="card"><span class="tag">Foundation Standard</span><h4>Indian Hawthorn &amp; Loropetalum</h4><p>Indian hawthorn: the classic coastal Carolina foundation plant. Compact, salt-tolerant, evergreen, white or pink spring bloom. Handles Myrtle Beach conditions without complaint. Loropetalum adds dramatic wine-red foliage with fringe bloom in spring — one of the most visually impactful foundation shrubs available for HOA properties.</p></div><div class="card"><span class="tag">Salt Air Specialist</span><h4>Dwarf Yaupon Holly</h4><p>The most salt-tolerant ornamental shrub available for direct coastal planting. Thrives in oceanfront conditions where most shrubs fail within a season. Evergreen, compact, virtually no pest or disease problems. The correct specification for any property within two to three blocks of the ocean.</p></div><div class="card"><span class="tag">Borders &amp; Ground Cover</span><h4>Liriope &amp; Asian Jasmine</h4><p>Liriope: nearly indestructible, evergreen, handles heat, drought, salt air, and poor soil. The most widely used bed border plant in coastal SC for good reason. Asian jasmine: the most effective large-area groundcover — creates a dense weed-suppressing mat without irrigation once established. Both perform for decades without intensive management.</p></div><div class="card"><span class="tag">Signature Ornamental</span><h4>Crepe Myrtles</h4><p>The Grand Strand's signature ornamental tree, and for good reason. Heat-loving, drought-tolerant once established, spectacular summer bloom display, available in every size from 3-foot dwarfs to 25-foot trees. We allow natural form to develop — we do not top crepe myrtles.</p></div><div class="card"><span class="tag">Fall Interest</span><h4>Muhly Grass</h4><p>Spectacular pink-purple plumes in September and October — the most visually dramatic fall-interest plant available for Myrtle Beach landscapes. Full sun, drought-tolerant, salt-tolerant, virtually maintenance-free. Provides movement and texture contrast that no broadleaf shrub can replicate.</p></div></div>
 </div>
 
+<div class="sec">
+<span class="sec-label">Concrete Curbing</span>
+<h2 class="sec-h2">The Most Cost-Effective Landscaping Upgrade Available — <em>and Why Myrtle Beach Specifically</em></h2>
+<p class="prose">Concrete landscaping curbing is the single most undervalued exterior improvement available to Myrtle Beach property owners. One installation permanently defines every bed, eliminates plastic edging replacement cycles, retains mulch through South Carolina's heavy rainfall events, prevents grass encroachment, and gives the entire property a polished finished appearance that listing photos show and HOA inspectors approve.</p>
+<p class="prose">In Myrtle Beach's coastal environment, concrete's advantage over alternative edging materials is decisive. Plastic edging buckles and heaves from South Carolina's thermal cycling within two to three seasons. Metal edging corrodes in the salt air environment, staining adjacent concrete with rust within four to five years. Neither maintains clean bed definition. Concrete is chemically inert to salt air, structurally unaffected by heat cycling, and mechanically stable against the root pressure and soil movement that defeats inserted edging products. Install it once in 2025 and it is still performing in 2045.</p>
+<div class="two-col" style="margin-top:1.5rem">
+<div>
+<h3 class="sub-h3">Why Concrete Wins Every Comparison</h3>
+<ul class="list-check">
+<li>Unaffected by salt air — outlasts metal and plastic in coastal conditions</li>
+<li>Doesn't shift, heave, or buckle from heat cycling or root pressure</li>
+<li>Raised profile retains mulch during heavy coastal rainfall</li>
+<li>Eliminates ongoing re-edging labor at every mowing visit</li>
+<li>Permanent definition visible from the street and in listing photos</li>
+<li>HOA-approved in all major Horry County communities</li>
+<li>Colors available to complement any exterior palette</li>
+<li>One installation — 20+ years of zero maintenance required</li>
+</ul>
+</div>
+<div>
+<table class="price-table"><thead><tr><th>Concrete Curbing</th><th>2025 Price</th></tr></thead><tbody><tr><td>Standard curved border (per linear ft)</td><td class="price">$4–$7</td></tr><tr><td>Mow-over profile (per linear ft)</td><td class="price">$4–$6</td></tr><tr><td>Colored curbing add-on (per linear ft)</td><td class="price">+$0.75–$1.50</td></tr><tr><td>Front yard — 40 to 60 linear feet</td><td class="price">$160–$420</td></tr><tr><td>Full property — 80 to 150 linear feet</td><td class="price">$320–$1,050</td></tr></tbody></table>
+<div class="callout" style="margin-top:0.75rem">The 10-year math: concrete curbing once at $400 vs plastic edging replaced 3 times at $600+. Concrete wins permanently and visually.</div>
+</div>
+</div>
+</div>
+
+<div class="sec">
+<span class="sec-label">Full Service Menu</span>
+<h2 class="sec-h2">All Landscaping Services</h2>
+<div class="card-3"><div class="card"><span class="tag">Design</span><h4>Custom Landscape Design</h4><p>On-site consultation and custom design using plants proven for your specific site's sun exposure, salt air level, and HOA requirements. We do not install plants we know won't succeed in a given site's conditions.</p></div><div class="card"><span class="tag">Installation</span><h4>New Garden Bed Installation</h4><p>Bed creation with proper concrete curbing, soil amendment for coastal sandy soils, and plant installation with correct spacing for mature size. Every installation designed for both immediate visual impact and low maintenance at year five.</p></div><div class="card"><span class="tag">Refresh</span><h4>Bed Refresh &amp; Mulching</h4><p>Fresh mulch, plant replacement for failed specimens, weed clearing, and bed cleanup. One of the highest-impact lowest-cost visual improvements available — significant listing photo improvement for a fraction of full installation cost.</p></div><div class="card"><span class="tag">Ongoing</span><h4>Landscape Maintenance</h4><p>Monthly or quarterly maintenance visits including shrub trimming, weed control, mulch replenishment, and plant health monitoring. Available standalone or as part of a property maintenance plan.</p></div><div class="card"><span class="tag">Specialty</span><h4>Concrete Curbing</h4><p>Continuous poured-in-place concrete bed borders — the most durable and cost-effective bed definition in coastal SC. Curved or straight profiles, standard gray or colored options. Most residential installations complete in one to two days.</p></div><div class="card"><span class="tag">Trees &amp; Shrubs</span><h4>Plant Sourcing &amp; Installation</h4><p>We source and install proven coastal performers in sizes appropriate for both immediate and long-term impact. Plant guarantees available on properly maintained installations.</p></div></div>
+</div>
+
+<div class="sec">
+<span class="sec-label">Service Areas</span>
+<h2 class="sec-h2">Landscaping Across Horry County</h2>
+<div class="svc-links"><a href="/service-areas/myrtle-beach/landscaping/" class="svc-link">Myrtle Beach<span class="pr">Free quote</span></a><a href="/service-areas//service-areas/north-myrtle-beach//landscaping/" class="svc-link">North Myrtle Beach<span class="pr">Free quote</span></a><a href="/service-areas//service-areas/conway//landscaping/" class="svc-link">Conway<span class="pr">Free quote</span></a><a href="/service-areas//service-areas/surfside-beach//landscaping/" class="svc-link">Surfside Beach<span class="pr">Free quote</span></a><a href="/service-areas//service-areas/murrells-inlet//landscaping/" class="svc-link">Murrells Inlet<span class="pr">Free quote</span></a><a href="/service-areas//service-areas/garden-city//landscaping/" class="svc-link">Garden City Beach<span class="pr">Free quote</span></a><a href="/service-areas//service-areas/socastee//landscaping/" class="svc-link">Socastee<span class="pr">Free quote</span></a><a href="/service-areas//service-areas/little-river//landscaping/" class="svc-link">Little River<span class="pr">Free quote</span></a></div>
+</div>
+
+<div class="sec">
+<span class="sec-label">Reviews</span>
+<h2 class="sec-h2">What Landscaping Clients Say</h2>
+<div class="rev-grid"><div class="rev"><div class="rev-top"><div class="av">H</div><div><div class="rev-name">Hannah D.</div><div class="rev-meta"><span class="stars">★★★★★</span> · Myrtle Beach, SC</div></div></div><p class="rev-text">"From start to finish: professionalism, attention to detail, and genuine passion for creating beautiful outdoor spaces. They take the time to understand your vision and bring it to life with precision."</p><span class="rev-svc">Full Landscaping Install</span></div><div class="rev"><div class="rev-top"><div class="av">L</div><div><div class="rev-name">Leilyn N.</div><div class="rev-meta"><span class="stars">★★★★★</span> · Myrtle Beach, SC</div></div></div><p class="rev-text">"Great service for both landscaping and pressure washing. On time, professional, thorough. Fair pricing and no issues at all. Highly recommend."</p><span class="rev-svc">Landscaping &amp; Pressure Washing</span></div><div class="rev"><div class="rev-top"><div class="av">K</div><div><div class="rev-name">King K.</div><div class="rev-meta"><span class="stars">★★★★★</span> · Myrtle Beach, SC</div></div></div><p class="rev-text">"Wonderful job doing landscaping, pressure washing, and repainting. Reasonable prices. All-in-one — wouldn't use anyone else."</p><span class="rev-svc">Landscaping + Full Property</span></div></div>
+</div>
+
+<div class="sec">
+<span class="sec-label">FAQ</span>
+<h2 class="sec-h2">Landscaping FAQ</h2>
+<div class="faq-wrap"><div class="faq-item"><div class="faq-q">What plants work best in Myrtle Beach?<span class="ico">+</span></div><div class="faq-a">Plants proven in coastal South Carolina's conditions: Knock Out roses (heat/drought tolerant, salt tolerant, long bloom), Indian hawthorn (foundation, salt tolerant), loropetalum (dramatic foliage), dwarf yaupon holly (maximum salt tolerance for oceanfront), liriope (bed borders, nearly indestructible), muhly grass (fall interest), Asian jasmine (large groundcover), crepe myrtles (ornamental trees). We match plant selection to each site's specific sun, salt, and HOA requirements.</div></div><div class="faq-item"><div class="faq-q">How much does landscaping cost in Myrtle Beach?<span class="ico">+</span></div><div class="faq-a">Bed refresh with mulch and minor plant replacement: $300–$800 for most standard properties. Full front yard installation: $1,500–$4,500. Complete property installation: $3,500–$9,000+. Concrete curbing: $4–$7 per linear foot installed. All estimates are free and provided after an on-site walk.</div></div><div class="faq-item"><div class="faq-q">Why is concrete curbing better than plastic edging in Myrtle Beach?<span class="ico">+</span></div><div class="faq-a">Plastic edging buckles from South Carolina's heat cycling within 2–3 years. Metal edging corrodes in the coastal salt air environment within 4–5 years. Concrete is chemically inert to salt air and structurally unaffected by heat or root pressure. One installation lasts 20+ years in coastal South Carolina with zero maintenance required — making it far more cost-effective than the 3-replacement cycle plastic requires over the same period.</div></div><div class="faq-item"><div class="faq-q">Do you design HOA-compliant landscapes?<span class="ico">+</span></div><div class="faq-a">Yes. We design to the specific standards of all major Horry County HOA communities including Grande Dunes, Carolina Forest, Barefoot Resort, Tidewater Plantation, Wild Wing Plantation, Prince Creek, and others. We review architectural guidelines before designing and confirm compliance before installation.</div></div></div>
+</div>
+</div>
+<div class="cta-band"><h2>Landscapes Built for the Grand Strand. Not Just for Opening Day.</h2><p>Proven coastal plants · Concrete curbing · HOA-compliant designs · All of Horry County</p><div class="cta-buttons"><a href="/get-quote/" class="btn-white">Get a Free Estimate →</a><a href="tel:8434677136" class="btn-ow">📞 843-467-7136</a></div></div>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"Service","name":"Landscaping and Concrete Curbing","provider":{"@type":"LocalBusiness","name":"Bakerss Property Maintenance","telephone":"+18434677136","url":"https://www.bakerss.com"},"areaServed":"Horry County, SC","description":"Professional landscaping and concrete curbing in Myrtle Beach and Horry County SC. Coastal plant specialists. HOA-compliant designs. Free estimates."}</script>
 <footer>
   <div class="footer-inner">
     <div class="footer-top">
@@ -368,16 +429,8 @@ footer{background:var(--black);border-top:1px solid rgba(255,255,255,0.07);paddi
   <a href="sms:8434677136"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15a2 2 0 01-2 2H7l-4 4V5a2 2 0 012-2h14a2 2 0 012 2z"/></svg>Text</a>
   <a href="/get-quote/" class="primary"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/></svg>Free Quote</a>
 </div>
-
 <script>
-function toggleFaq(el){
-  const item = el.parentElement;
-  item.classList.toggle('open');
-}
-</script>
-<script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"What types of plants work best for Myrtle Beach landscaping?","acceptedAnswer":{"@type":"Answer","text":"Coastal South Carolina's climate favors heat-tolerant, humidity-resistant plants. Excellent choices include Knock Out roses, Indian hawthorn, loropetalum, ornamental grasses like muhly and maiden grass, Confederate jasmine, crepe myrtles, gardenias, and native plants like beautyberry and muhly grass. We select plants based on your specific sun exposure, soil type, and maintenance preference."}},{"@type":"Question","name":"What is concrete landscaping curbing?","acceptedAnswer":{"@type":"Answer","text":"Concrete landscaping curbing is a continuous, poured-in-place concrete border that separates lawn from garden beds. Unlike plastic or metal edging, concrete curbing is permanent, doesn't shift or heave, prevents mulch blowout, and gives your landscape a clean professional finish. It comes in various styles and can be colored to complement your home."}},{"@type":"Question","name":"How much does landscaping cost in Myrtle Beach?","acceptedAnswer":{"@type":"Answer","text":"Landscaping costs vary widely based on scope. A single bed refresh with plants and mulch might run $300–$800. A full yard landscape installation with design, plants, curbing, and mulch typically runs $2,500–$8,000+. Concrete curbing alone is typically priced per linear foot. We always provide a free, itemized estimate before any commitment."}},{"@type":"Question","name":"Do you design landscapes for vacation rental properties?","acceptedAnswer":{"@type":"Answer","text":"Yes. STR and vacation rental landscaping is one of our most requested services. Curb appeal drives bookings and first impressions. We design low-maintenance landscapes that look great in listing photos and require minimal upkeep between guests."}},{"@type":"Question","name":"Can you handle landscaping for HOA communities?","acceptedAnswer":{"@type":"Answer","text":"Yes. We work with HOA communities throughout Horry County and understand the standards these communities require. We can maintain existing landscapes or design new installations that meet your HOA's specifications."}}]}</script>
-<script type="application/ld+json">
-{"@context":"https://schema.org","@type":"Service","name":"Landscaping","provider":{"@type":"LocalBusiness","name":"Bakerss Property Maintenance","telephone":"+18434677136"},"areaServed":"Horry County, SC","url":"https://www.bakerss.com/services/landscaping/","priceRange":"Free Quote+"}
+document.querySelectorAll('.faq-q').forEach(q=>q.addEventListener('click',()=>q.parentElement.classList.toggle('open')));
 </script>
 </body>
 </html>
