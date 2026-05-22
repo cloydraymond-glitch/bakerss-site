@@ -2,9 +2,9 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="viewport" content="width=device-width,initial-scale=1">
 <title>Property Maintenance Services in Socastee, SC | Bakerss</title>
-<meta name="description" content="Bakerss Property Maintenance serves Socastee, SC with lawn care, pressure washing, cleaning, landscaping & handyman services. Call 843-467-7136.">
+<meta name="description" content="Professional lawn care, cleaning, pressure washing, gutter cleaning & more in Socastee, SC. Licensed & insured. 5-star rated. Call 843-467-7136.">
 <link rel="canonical" href="https://www.bakerss.com/service-areas/socastee/">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -174,75 +174,119 @@ footer{background:var(--black);border-top:1px solid rgba(255,255,255,0.07);paddi
 @media(max-width:1024px){.svc-hero-inner,.svc-content{grid-template-columns:1fr}.quote-card{position:static}.svc-sidebar{position:static;display:grid;grid-template-columns:1fr 1fr}}
 @media(max-width:768px){.nav-links{display:none}.sticky-bar{display:flex}body{padding-bottom:70px}.sub-grid,.serve-list,.related-grid,.cities-row{grid-template-columns:1fr}.footer-top{grid-template-columns:1fr 1fr}}
 
-/* CITY PAGE SPECIFIC */
-.city-hero{background:var(--black);padding:4.5rem 2rem 3rem;border-bottom:1px solid rgba(255,255,255,0.06);position:relative;overflow:hidden}
-.city-hero::after{content:'';position:absolute;top:-150px;right:-150px;width:500px;height:500px;background:radial-gradient(circle,rgba(233,30,140,0.07) 0%,transparent 70%);pointer-events:none}
-.city-hero-inner{max-width:1100px;margin:0 auto;position:relative}
-.breadcrumb{display:flex;align-items:center;gap:8px;font-size:12px;color:rgba(255,255,255,0.3);margin-bottom:1.25rem}
-.breadcrumb a{color:rgba(255,255,255,0.3);text-decoration:none;transition:color 0.15s}
+/* ── PAGE STYLES ── */
+.hero{background:var(--black);padding:5rem 2rem 3.5rem;position:relative;overflow:hidden}
+.hero::after{content:'';position:absolute;top:-80px;right:-80px;width:520px;height:520px;background:radial-gradient(circle,rgba(233,30,140,0.06) 0%,transparent 70%);pointer-events:none}
+.hero-inner{max-width:1100px;margin:0 auto;position:relative;z-index:2;display:grid;grid-template-columns:1fr 320px;gap:3rem;align-items:start}
+.breadcrumb{display:flex;align-items:center;gap:6px;font-size:12px;color:rgba(255,255,255,0.3);margin-bottom:1.25rem}
+.breadcrumb a{color:rgba(255,255,255,0.3);text-decoration:none}
 .breadcrumb a:hover{color:var(--pink)}
-.breadcrumb span{color:rgba(255,255,255,0.15)}
-.city-badge{display:inline-flex;align-items:center;gap:8px;background:rgba(233,30,140,0.1);border:1px solid rgba(233,30,140,0.3);border-radius:100px;padding:5px 14px;font-size:11px;font-weight:600;letter-spacing:0.08em;text-transform:uppercase;color:var(--pink-light);margin-bottom:1.25rem}
-.city-hero h1{font-family:var(--font-display);font-size:clamp(2rem,3.5vw,3rem);font-weight:800;line-height:1.1;letter-spacing:-0.02em;margin-bottom:1rem}
-.city-hero h1 em{font-style:normal;color:var(--pink)}
-.city-hero-desc{font-size:16px;color:rgba(255,255,255,0.55);line-height:1.75;max-width:700px;margin-bottom:1.75rem;font-weight:300}
-.hero-ctas{display:flex;gap:10px;flex-wrap:wrap;margin-bottom:1.75rem}
-.btn-primary{display:inline-flex;align-items:center;gap:8px;background:var(--pink);color:#fff;padding:13px 24px;border-radius:8px;font-size:14px;font-weight:600;text-decoration:none;transition:all 0.2s}
-.btn-primary:hover{background:var(--pink-dark);transform:translateY(-1px)}
-.btn-secondary{display:inline-flex;align-items:center;gap:8px;background:transparent;color:rgba(255,255,255,0.8);padding:13px 24px;border-radius:8px;font-size:14px;font-weight:500;text-decoration:none;border:1px solid rgba(255,255,255,0.18);transition:all 0.2s}
-.btn-secondary:hover{border-color:rgba(255,255,255,0.4);color:#fff}
-.city-trust{display:flex;gap:20px;flex-wrap:wrap}
-.trust-item{display:flex;align-items:center;gap:6px;font-size:12.5px;color:rgba(255,255,255,0.4)}
-.trust-item svg{width:15px;height:15px;color:var(--pink);flex-shrink:0}
-/* CONTENT LAYOUT */
-.city-content{max-width:1100px;margin:0 auto;padding:4rem 2rem}
-.content-sec{margin-bottom:3.5rem}
-.sec-label{font-size:10px;font-weight:700;letter-spacing:0.12em;text-transform:uppercase;color:var(--pink);margin-bottom:0.6rem;display:block}
-h2.sec-title{font-family:var(--font-display);font-size:1.75rem;font-weight:800;letter-spacing:-0.02em;margin-bottom:1rem;line-height:1.2}
-.prose{font-size:15px;color:rgba(255,255,255,0.6);line-height:1.8;font-weight:300}
-.prose+.prose{margin-top:1rem}
-/* Services grid */
-.city-svc-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin-top:1.5rem}
-.city-svc-card{background:var(--dark2);border:1px solid rgba(255,255,255,0.07);border-radius:10px;padding:1.1rem 1.25rem;text-decoration:none;color:var(--white);transition:all 0.2s;display:flex;align-items:center;justify-content:space-between}
-.city-svc-card:hover{border-color:rgba(233,30,140,0.35);transform:translateY(-1px)}
-.csvc-top h3{font-size:13.5px;font-weight:600;margin-bottom:3px}
-.price-tag{font-size:11px;color:var(--pink);font-weight:600}
-.csvc-arrow{font-size:16px;color:rgba(255,255,255,0.2);transition:all 0.2s}
-.city-svc-card:hover .csvc-arrow{color:var(--pink);transform:translateX(3px)}
-/* Neighborhoods */
-.nbhd-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:12px;margin-top:1.5rem}
-.nbhd-card{background:var(--dark2);border:1px solid rgba(255,255,255,0.07);border-left:3px solid var(--pink);border-radius:10px;padding:1.25rem}
-.nbhd-card h4{font-size:14.5px;font-weight:600;margin-bottom:0.4rem}
-.nbhd-card p{font-size:13px;color:rgba(255,255,255,0.45);line-height:1.6}
-/* Reviews */
-.reviews-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:12px;margin-top:1.5rem}
-.review-card{background:var(--dark2);border:1px solid rgba(255,255,255,0.07);border-radius:10px;padding:1.25rem;transition:border-color 0.2s}
-.review-card:hover{border-color:rgba(233,30,140,0.25)}
+.breadcrumb span{color:rgba(255,255,255,0.12)}
+.badge{display:inline-flex;align-items:center;gap:6px;background:rgba(233,30,140,0.1);border:1px solid rgba(233,30,140,0.3);border-radius:100px;padding:4px 14px;font-size:10px;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;color:var(--pink);margin-bottom:1.25rem}
+h1.hero-h1{font-family:var(--font-display);font-size:clamp(2.1rem,3.5vw,3.2rem);font-weight:800;line-height:1.08;letter-spacing:-0.025em;margin-bottom:1.1rem}
+h1.hero-h1 em{font-style:normal;color:var(--pink)}
+.hero-desc{font-size:16px;color:rgba(255,255,255,0.55);line-height:1.8;font-weight:300;max-width:600px;margin-bottom:1.75rem}
+.hero-btns{display:flex;gap:10px;flex-wrap:wrap}
+.btn-pink{display:inline-flex;align-items:center;gap:8px;background:var(--pink);color:#fff;padding:14px 26px;border-radius:8px;font-size:14px;font-weight:600;text-decoration:none;transition:all 0.2s;box-shadow:0 4px 18px rgba(233,30,140,0.25)}
+.btn-pink:hover{transform:translateY(-1px);box-shadow:0 6px 24px rgba(233,30,140,0.35)}
+.btn-ghost{display:inline-flex;align-items:center;gap:8px;background:transparent;color:rgba(255,255,255,0.8);padding:14px 24px;border-radius:8px;font-size:14px;font-weight:500;text-decoration:none;border:1px solid rgba(255,255,255,0.18)}
+.hero-trust{display:flex;align-items:center;gap:12px;margin-top:1.5rem;font-size:11px;color:rgba(255,255,255,0.3);flex-wrap:wrap}
+.hero-trust b{color:rgba(255,255,255,0.55)}
+/* Sidebar card */
+.sidebar-card{background:var(--dark2);border:1px solid rgba(255,255,255,0.08);border-radius:14px;padding:1.75rem;position:sticky;top:80px}
+.sidebar-card h3{font-family:var(--font-display);font-size:1.15rem;font-weight:700;margin-bottom:0.25rem}
+.sidebar-phone{font-family:var(--font-display);font-size:1.85rem;font-weight:800;color:var(--pink);text-decoration:none;display:block;margin:0.4rem 0}
+.sidebar-card p{font-size:12.5px;color:rgba(255,255,255,0.4);margin-bottom:1.25rem;line-height:1.5}
+.sidebar-btn{display:block;padding:12px;border-radius:7px;font-size:13.5px;font-weight:600;text-decoration:none;text-align:center;margin-bottom:7px}
+.sidebar-btn.pink{background:var(--pink);color:#fff}
+.sidebar-btn.outline{background:transparent;color:rgba(255,255,255,0.7);border:1px solid rgba(255,255,255,0.15)}
+.sidebar-facts{margin-top:1.25rem;padding-top:1.25rem;border-top:1px solid rgba(255,255,255,0.07)}
+.sidebar-fact{display:flex;align-items:center;gap:10px;font-size:12px;color:rgba(255,255,255,0.5);margin-bottom:7px}
+.sidebar-fact b{color:rgba(255,255,255,0.75)}
+/* Content area */
+.content{max-width:1100px;margin:0 auto;padding:4.5rem 2rem}
+.sec{margin-bottom:4rem}
+.sec-label{font-size:10px;font-weight:700;letter-spacing:0.12em;text-transform:uppercase;color:var(--pink);margin-bottom:0.5rem;display:block}
+h2.sec-h2{font-family:var(--font-display);font-size:clamp(1.6rem,2.5vw,2.1rem);font-weight:800;letter-spacing:-0.02em;margin-bottom:0.9rem;line-height:1.15}
+h2.sec-h2 em{font-style:normal;color:var(--pink)}
+h3.sub-h3{font-size:1.05rem;font-weight:600;margin:1.75rem 0 0.5rem;color:rgba(255,255,255,0.9)}
+.prose{font-size:15px;color:rgba(255,255,255,0.58);line-height:1.85;font-weight:300}
+.prose+.prose{margin-top:0.85rem}
+/* Card grids */
+.card-3{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-top:1.5rem}
+.card-2{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-top:1.5rem}
+.card-4{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin-top:1.5rem}
+.card{background:var(--dark2);border:1px solid rgba(255,255,255,0.07);border-radius:12px;padding:1.4rem}
+.card .tag{font-size:10px;font-weight:700;letter-spacing:0.09em;text-transform:uppercase;color:var(--pink);display:block;margin-bottom:0.5rem}
+.card h4{font-size:15px;font-weight:600;margin-bottom:0.4rem}
+.card p{font-size:13px;color:rgba(255,255,255,0.45);line-height:1.6}
+/* Pricing table */
+.price-table{width:100%;border-collapse:collapse;margin-top:1.25rem;font-size:13.5px}
+.price-table th{padding:10px 14px;text-align:left;background:rgba(233,30,140,0.08);border-bottom:1px solid rgba(255,255,255,0.08);font-size:10px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:rgba(255,255,255,0.4)}
+.price-table td{padding:11px 14px;border-bottom:1px solid rgba(255,255,255,0.05);color:rgba(255,255,255,0.65)}
+.price-table td.price{color:var(--pink);font-weight:700}
+.price-table tr:last-child td{border-bottom:none}
+/* Steps */
+.steps{display:grid;gap:1px;margin-top:1.25rem}
+.step{background:var(--dark2);border:1px solid rgba(255,255,255,0.07);padding:1.25rem 1.5rem;display:flex;gap:1.25rem;align-items:start}
+.step:first-child{border-radius:12px 12px 0 0}
+.step:last-child{border-radius:0 0 12px 12px}
+.step-num{width:32px;height:32px;border-radius:50%;background:var(--pink);display:flex;align-items:center;justify-content:center;font-size:13px;font-weight:700;color:#fff;flex-shrink:0;margin-top:2px}
+.step h4{font-size:14.5px;font-weight:600;margin-bottom:0.3rem}
+.step p{font-size:13px;color:rgba(255,255,255,0.45);line-height:1.6}
 /* FAQ */
-.faq-list{border:1px solid rgba(255,255,255,0.07);border-radius:12px;overflow:hidden;margin-top:1.5rem}
+.faq-wrap{border:1px solid rgba(255,255,255,0.07);border-radius:12px;overflow:hidden;margin-top:1.25rem}
 .faq-item{border-bottom:1px solid rgba(255,255,255,0.06)}
-.faq-item:last-child{border-bottom:none}
-.faq-q{display:flex;align-items:center;justify-content:space-between;padding:1.1rem 1.25rem;cursor:pointer;font-size:14.5px;font-weight:600;gap:1rem;transition:background 0.15s}
-.faq-q:hover{background:rgba(255,255,255,0.03)}
-.faq-q .icon{font-size:18px;color:var(--pink);flex-shrink:0;transition:transform 0.25s;line-height:1}
-.faq-a{display:none;padding:0 1.25rem 1.1rem;font-size:13.5px;color:rgba(255,255,255,0.55);line-height:1.75}
-.faq-item.open .faq-q .icon{transform:rotate(45deg)}
+.faq-item:last-child{border:none}
+.faq-q{display:flex;justify-content:space-between;align-items:center;padding:1rem 1.25rem;cursor:pointer;font-size:14.5px;font-weight:600;gap:1rem;transition:background 0.15s}
+.faq-q:hover{background:rgba(255,255,255,0.025)}
+.faq-q .ico{color:var(--pink);font-size:20px;flex-shrink:0;transition:transform 0.25s;line-height:1}
+.faq-a{display:none;padding:0 1.25rem 1rem;font-size:13.5px;color:rgba(255,255,255,0.5);line-height:1.75}
+.faq-item.open .faq-q .ico{transform:rotate(45deg)}
 .faq-item.open .faq-a{display:block}
-/* Other cities */
-.other-cities{display:flex;flex-wrap:wrap;gap:8px;margin-top:1.25rem}
-.other-city{background:var(--dark2);border:1px solid rgba(255,255,255,0.07);border-radius:7px;padding:8px 16px;text-decoration:none;color:rgba(255,255,255,0.6);font-size:13px;transition:all 0.2s}
-.other-city:hover{border-color:rgba(233,30,140,0.3);color:#fff}
+/* Reviews */
+.rev-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin-top:1.5rem}
+.rev{background:var(--dark2);border:1px solid rgba(255,255,255,0.07);border-radius:11px;padding:1.4rem}
+.rev-top{display:flex;align-items:center;gap:10px;margin-bottom:9px}
+.av{width:36px;height:36px;background:var(--pink);border-radius:50%;display:flex;align-items:center;justify-content:center;font-weight:700;font-size:13px;color:#fff;flex-shrink:0}
+.rev-name{font-size:13.5px;font-weight:600}
+.rev-meta{font-size:11px;color:rgba(255,255,255,0.3)}
+.stars{color:#FFB800;font-size:12px;letter-spacing:1px}
+.rev-text{font-size:13px;color:rgba(255,255,255,0.6);font-style:italic;line-height:1.7}
+.rev-svc{display:inline-block;font-size:10.5px;font-weight:600;color:var(--pink);background:rgba(233,30,140,0.08);border:1px solid rgba(233,30,140,0.2);padding:2px 9px;border-radius:4px;margin-top:7px}
+/* Stat row */
+.stat-row{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin:1.5rem 0}
+.stat{background:var(--dark2);border:1px solid rgba(255,255,255,0.07);border-radius:11px;padding:1.4rem;text-align:center}
+.stat .num{font-family:var(--font-display);font-size:2.4rem;font-weight:800;color:var(--pink);line-height:1;margin-bottom:0.3rem}
+.stat .lbl{font-size:11.5px;color:rgba(255,255,255,0.4);line-height:1.35}
+/* Svc links */
+.svc-links{display:grid;grid-template-columns:repeat(3,1fr);gap:7px;margin-top:1.25rem}
+.svc-link{background:var(--dark2);border:1px solid rgba(255,255,255,0.07);border-radius:8px;padding:10px 13px;text-decoration:none;color:rgba(255,255,255,0.65);font-size:13px;display:flex;justify-content:space-between;align-items:center;transition:border-color 0.2s}
+.svc-link:hover{border-color:rgba(233,30,140,0.3);color:#fff}
+.svc-link .pr{font-size:10.5px;color:var(--pink);font-weight:600}
 /* CTA band */
 .cta-band{background:var(--pink);padding:3.5rem 2rem;text-align:center}
 .cta-band h2{font-family:var(--font-display);font-size:clamp(1.6rem,3vw,2.2rem);font-weight:800;color:#fff;margin-bottom:0.5rem}
 .cta-band p{font-size:15px;color:rgba(255,255,255,0.75);margin-bottom:1.75rem}
 .cta-buttons{display:flex;gap:12px;justify-content:center;flex-wrap:wrap}
-.btn-white{display:inline-flex;align-items:center;gap:8px;background:#fff;color:var(--pink);padding:13px 26px;border-radius:8px;font-size:14px;font-weight:700;text-decoration:none;transition:all 0.2s}
-.btn-white:hover{transform:translateY(-1px)}
-.btn-outline-w{display:inline-flex;align-items:center;gap:8px;background:transparent;color:#fff;padding:13px 26px;border-radius:8px;font-size:14px;font-weight:600;text-decoration:none;border:2px solid rgba(255,255,255,0.5);transition:all 0.2s}
-.btn-outline-w:hover{border-color:#fff;background:rgba(255,255,255,0.1)}
-@media(max-width:1024px){.city-svc-grid{grid-template-columns:repeat(2,1fr)}}
-@media(max-width:768px){.nav-links{display:none}.sticky-bar{display:flex}body{padding-bottom:70px}.city-svc-grid,.nbhd-grid,.reviews-grid{grid-template-columns:1fr}.footer-top{grid-template-columns:1fr 1fr}}
+.btn-white{display:inline-flex;align-items:center;gap:8px;background:#fff;color:var(--pink);padding:13px 26px;border-radius:8px;font-size:14px;font-weight:700;text-decoration:none}
+.btn-ow{display:inline-flex;align-items:center;gap:8px;background:transparent;color:#fff;padding:13px 26px;border-radius:8px;font-size:14px;font-weight:600;text-decoration:none;border:2px solid rgba(255,255,255,0.45)}
+/* Highlight box */
+.callout{background:rgba(233,30,140,0.06);border-left:3px solid var(--pink);padding:1rem 1.25rem;border-radius:0 8px 8px 0;margin:1.5rem 0;font-size:13.5px;color:rgba(255,255,255,0.65);line-height:1.7}
+.callout b{color:rgba(255,255,255,0.9)}
+/* Anchor tab nav */
+.tab-nav{display:flex;gap:4px;border-bottom:1px solid rgba(255,255,255,0.07);margin-bottom:2.5rem;flex-wrap:wrap}
+.tab-link{padding:10px 18px;font-size:13px;font-weight:600;color:rgba(255,255,255,0.45);text-decoration:none;border-bottom:2px solid transparent;margin-bottom:-1px;transition:all 0.15s}
+.tab-link:hover,.tab-link.active{color:var(--pink);border-bottom-color:var(--pink)}
+/* Two col layout */
+.two-col{display:grid;grid-template-columns:1fr 1fr;gap:2.5rem;align-items:start}
+.list-check{margin:0.75rem 0 0 0;padding:0;list-style:none}
+.list-check li{display:flex;align-items:start;gap:9px;font-size:14px;color:rgba(255,255,255,0.6);line-height:1.6;margin-bottom:7px}
+.list-check li::before{content:'✓';color:var(--pink);font-weight:700;flex-shrink:0;margin-top:2px}
+/* Responsive */
+@media(max-width:1024px){.hero-inner{grid-template-columns:1fr}.sidebar-card{display:none}.card-3,.card-4{grid-template-columns:1fr 1fr}.stat-row{grid-template-columns:1fr 1fr}.rev-grid{grid-template-columns:1fr 1fr}.two-col{grid-template-columns:1fr}}
+@media(max-width:768px){.nav-links{display:none}.sticky-bar{display:flex}body{padding-bottom:70px}.card-3,.card-4,.card-2{grid-template-columns:1fr}.svc-links{grid-template-columns:1fr 1fr}.footer-top{grid-template-columns:1fr 1fr}.rev-grid{grid-template-columns:1fr}}
+
 </style>
 </head>
 <body>
@@ -271,130 +315,94 @@ h2.sec-title{font-family:var(--font-display);font-size:1.75rem;font-weight:800;l
   </div>
 </nav>
 
-<div class="city-hero">
-  <div class="city-hero-inner">
-    <nav class="breadcrumb" aria-label="Breadcrumb">
-      <a href="/">Home</a><span>/</span><a href="/service-areas/">Service Areas</a><span>/</span><span style="color:rgba(255,255,255,0.55)">Socastee</span>
-    </nav>
-    <div class="city-badge">📍 Serving Socastee, SC</div>
-    <h1>Property Maintenance Services in<br><em>Socastee, SC</em></h1>
-    <p class="city-hero-desc">Socastee is one of the most established and steadily growing residential communities in Horry County — a suburban area that blends the convenience of proximity to Myrtle Beach with a quieter, more residential character. Bakerss serves Socastee homeowners and property owners with the full range of property maintenance services they need to keep their properties in top condition.</p>
-    <div class="hero-ctas">
-      <a href="/get-quote/" class="btn-primary">Get a Free Quote →</a>
-      <a href="tel:8434677136" class="btn-secondary">📞 843-467-7136</a>
+<div class="hero">
+  <div class="hero-inner">
+    <div>
+      <nav class="breadcrumb"><a href="/">Home</a> <span>/</span> <a href="/service-areas/">Service Areas</a> <span>/</span> <span style="color:rgba(255,255,255,0.5)">Socastee</span></nav>
+      <div class="badge">📍 Socastee, SC · Horry County's Established Residential Core</div>
+      <h1 class="hero-h1">Property Maintenance in<br><em>Socastee, SC</em></h1>
+      <p class="hero-desc">Socastee is where Horry County's permanent residents live. Fifteen minutes from the beach in either direction. Close enough to Myrtle Beach's employment centers to be convenient, far enough from the tourist strip to feel like a real neighborhood. Socastee's tree-dense residential communities — Forestbrook in particular — have a character that newer developments can't replicate, built over decades of stable homeownership. Bakerss maintains these properties with the depth of service they deserve.</p>
+      <div class="hero-btns">
+        <a href="/get-quote/" class="btn-pink">Get a Free Estimate →</a>
+        <a href="tel:8434677136" class="btn-ghost">📞 843-467-7136</a>
+      </div>
+      <div class="hero-trust">
+        <span>⭐ <b>5.0</b> Google Rating</span> · <span>✓ <b>Licensed &amp; Insured</b></span> · <span>📍 <b>Locally Owned</b></span>
+      </div>
     </div>
-    <div class="city-trust">
-      <div class="trust-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>5-Star Rated</div>
-      <div class="trust-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>Licensed &amp; Insured</div>
-      <div class="trust-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>24/7 Phone &amp; Text</div>
-      <div class="trust-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>Locally Owned</div>
+    <div class="sidebar-card">
+      <h3>Free Socastee Estimate</h3>
+      <a href="tel:8434677136" class="sidebar-phone">843-467-7136</a>
+      <p>Call or text — Ray and Courtney respond personally to every Socastee inquiry. Same day, always.</p>
+      <a href="/get-quote/" class="sidebar-btn pink">Get a Free Quote →</a>
+      <a href="tel:8434677136" class="sidebar-btn outline">📞 Call or Text Now</a>
+      <div class="sidebar-facts">
+        <div class="sidebar-fact">⭐ <span><b>5.0-Star</b> Google Rating</span></div>
+        <div class="sidebar-fact">✓ <span><b>Licensed &amp; Insured</b> in SC</span></div>
+        <div class="sidebar-fact">📞 <span><b>24/7</b> Phone &amp; Text</span></div>
+        <div class="sidebar-fact">🏠 <span><b>15+ Services</b> available</span></div>
+      </div>
     </div>
   </div>
 </div>
 
-<div class="city-content">
+<div class="content">
 
-  <div class="content-sec">
-    <span class="sec-label">About Socastee</span>
-    <h2 class="sec-title">Serving the Socastee Community</h2>
-    <p class="prose">Socastee is an unincorporated community in Horry County located along the Intracoastal Waterway, roughly 6 miles southwest of downtown Myrtle Beach. The name comes from the Waccamaw language and refers to the area's long history as a crossroads community. Socastee has maintained its residential character even as Myrtle Beach development has expanded outward in all directions. The area is home to Socastee High School and a mix of established older neighborhoods and newer residential developments. The Intracoastal Waterway defines the eastern edge of Socastee, and many properties along the waterway have docks, boat access, and the elevated maintenance demands that come with waterfront living.</p>
-    <p class="prose">Socastee's position adjacent to the Intracoastal Waterway creates specific maintenance challenges for waterfront and near-waterway properties. High humidity, drainage issues in the low-lying areas near the water, and the fast-growing subtropical vegetation mean lawns and landscaping require consistent attention. The community's mix of older and newer construction means a wide range of maintenance needs — from aging homes that need ongoing repair attention to newer homes that need proper establishment of lawns and landscaping.</p>
-    <p class="prose">Socastee's housing is primarily residential single-family homes — a mix of established neighborhoods with mature trees and newer subdivisions with larger lots. Many Socastee properties are primary residences for Horry County families and workers who commute to Myrtle Beach. The community also has waterfront properties along the Intracoastal with higher maintenance demands and values.</p>
-  </div>
-
-  <div class="content-sec">
-    <span class="sec-label">Services in Socastee</span>
-    <h2 class="sec-title">All Services Available in Socastee</h2>
-    <p class="prose">Click any service below for Socastee-specific information, pricing, and local examples.</p>
-    <div class="city-svc-grid"><a href="/service-areas/socastee/lawn-care/" class="city-svc-card">
-  <div class="csvc-top"><h3>Lawn Care</h3><span class="price-tag">Starting at $50</span></div>
-  <div class="csvc-arrow">→</div>
-</a><a href="/service-areas/socastee/pressure-washing/" class="city-svc-card">
-  <div class="csvc-top"><h3>Pressure Washing</h3><span class="price-tag">Starting at $125</span></div>
-  <div class="csvc-arrow">→</div>
-</a><a href="/service-areas/socastee/interior-cleaning/" class="city-svc-card">
-  <div class="csvc-top"><h3>Interior Cleaning</h3><span class="price-tag">Starting at $100</span></div>
-  <div class="csvc-arrow">→</div>
-</a><a href="/service-areas/socastee/airbnb-cleaning/" class="city-svc-card">
-  <div class="csvc-top"><h3>Airbnb / STR Cleaning</h3><span class="price-tag">Starting at $100</span></div>
-  <div class="csvc-arrow">→</div>
-</a><a href="/service-areas/socastee/landscaping/" class="city-svc-card">
-  <div class="csvc-top"><h3>Landscaping</h3><span class="price-tag">Free quote</span></div>
-  <div class="csvc-arrow">→</div>
-</a><a href="/service-areas/socastee/gutter-cleaning/" class="city-svc-card">
-  <div class="csvc-top"><h3>Gutter Cleaning</h3><span class="price-tag">Starting at $99</span></div>
-  <div class="csvc-arrow">→</div>
-</a><a href="/service-areas/socastee/painting/" class="city-svc-card">
-  <div class="csvc-top"><h3>Painting</h3><span class="price-tag">Free quote</span></div>
-  <div class="csvc-arrow">→</div>
-</a><a href="/service-areas/socastee/handyman-services/" class="city-svc-card">
-  <div class="csvc-top"><h3>Handyman Services</h3><span class="price-tag">Starting at $75/hr</span></div>
-  <div class="csvc-arrow">→</div>
-</a><a href="/service-areas/socastee/concrete-curbing/" class="city-svc-card">
-  <div class="csvc-top"><h3>Concrete Curbing</h3><span class="price-tag">Free quote</span></div>
-  <div class="csvc-arrow">→</div>
-</a><a href="/service-areas/socastee/junk-removal/" class="city-svc-card">
-  <div class="csvc-top"><h3>Junk Removal</h3><span class="price-tag">Starting at $99</span></div>
-  <div class="csvc-arrow">→</div>
-</a><a href="/service-areas/socastee/deck-building-repair/" class="city-svc-card">
-  <div class="csvc-top"><h3>Deck Building &amp; Repair</h3><span class="price-tag">Free quote</span></div>
-  <div class="csvc-arrow">→</div>
-</a><a href="/service-areas/socastee/property-maintenance/" class="city-svc-card">
-  <div class="csvc-top"><h3>Property Maintenance Plans</h3><span class="price-tag">Monthly plans</span></div>
-  <div class="csvc-arrow">→</div>
-</a></div>
+  <div class="sec">
+    <span class="sec-label">About the Market</span>
+    <h2 class="sec-h2">Property Maintenance in Socastee, SC</h2>
+    <p class="prose">Socastee's property maintenance market is shaped more than anything else by its trees. The dense longleaf pine and oak canopy that defines Forestbrook, Myrtle Trace, Quail Creek, and the ICW-adjacent neighborhoods is one of Horry County's most beautiful features — and one of its most demanding maintenance environments. Pine needles fall continuously, not seasonally. Gutters fill in six to eight weeks under heavy canopy. Driveways develop tannin staining from oak leaf deposits that standard rainfall doesn't lift. Shaded turf requires different management than open-sun coastal lawns. Understanding and managing these specific conditions is what makes professional property maintenance in Socastee genuinely different from anywhere else in Horry County.</p>
+    <div class="card-2" style="margin-top:1.5rem"><div class="card"><span class="tag">Forestbrook</span><h4>The Tree-Canopy Community</h4><p>Socastee's most distinctive neighborhood — dense pine and oak coverage giving the community its forested character. Property maintenance here means gutter cleaning 3-4 times annually, annual pressure washing for driveway tannin staining, and shade-adapted lawn management.</p></div><div class="card"><span class="tag">Myrtle Trace</span><h4>Established Residential</h4><p>1980s–90s construction with long-term owner base. Mature landscaping. Consistent demand for professional recurring maintenance from residents who value the community's character and their own properties.</p></div><div class="card"><span class="tag">ICW-Adjacent Properties</span><h4>Intracoastal Waterway</h4><p>Properties along and near the Intracoastal Waterway experience elevated humidity from the waterway environment, creating more aggressive mildew growth conditions on exterior surfaces than even more distant Socastee neighborhoods.</p></div><div class="card"><span class="tag">Growing STR Market</span><h4>Proximity to Beach Drives Investment</h4><p>Socastee's proximity to Myrtle Beach at accessible price points compared to beachside communities has attracted growing STR investor activity. Vacation rental maintenance — cleaning, lawn care, ongoing upkeep — is an expanding service demand in the community.</p></div></div>
   </div>
 
-  <div class="content-sec">
-    <span class="sec-label">Neighborhoods We Serve</span>
-    <h2 class="sec-title">Communities in Socastee We Know Well</h2>
-    <p class="prose">We serve every corner of Socastee and know the unique property maintenance needs of each community.</p>
-    <div class="nbhd-grid"><div class="nbhd-card"><h4>Intracoastal Waterway Properties</h4><p>Waterfront homes and lots along the ICW. Dock maintenance, landscaping, and full property care in demand.</p></div><div class="nbhd-card"><h4>Socastee Village Area</h4><p>Historic core of the community near Socastee High School. Established neighborhoods with mature trees. Demand: lawn care, gutter cleaning, pressure washing.</p></div><div class="nbhd-card"><h4>Forestbrook</h4><p>Large established residential community with dense tree coverage. Very high gutter cleaning demand due to heavy pine and oak canopy. Lawn care, pressure washing also active.</p></div><div class="nbhd-card"><h4>Myrtle Trace / Quail Creek</h4><p>Established HOA communities with strong maintenance standards. Demand: consistent lawn care, landscaping, pressure washing.</p></div><div class="nbhd-card"><h4>Commercial Corridor</h4><p>Business district along Highway 544 and SC-707. Commercial cleaning, exterior maintenance available.</p></div><div class="nbhd-card"><h4>New Subdivisions</h4><p>Growing residential developments in western Socastee. New construction lawn establishment, landscaping, and full maintenance in demand.</p></div></div>
+  <div class="sec">
+    <span class="sec-label">All Services</span>
+    <h2 class="sec-h2">Every Service We Offer in Socastee</h2>
+    <div class="svc-links"><a href="/service-areas/socastee/lawn-care/" class="svc-link">Lawn Care<span class="pr">From $50</span></a><a href="/service-areas/socastee/gutter-cleaning/" class="svc-link">Gutter Cleaning<span class="pr">From $99</span></a><a href="/service-areas/socastee/pressure-washing/" class="svc-link">Pressure Washing<span class="pr">From $125</span></a><a href="/service-areas/socastee/interior-cleaning/" class="svc-link">Interior Cleaning<span class="pr">From $100</span></a><a href="/service-areas/socastee/airbnb-cleaning/" class="svc-link">Airbnb Cleaning<span class="pr">From $100</span></a><a href="/service-areas/socastee/landscaping/" class="svc-link">Landscaping<span class="pr">Free quote</span></a><a href="/service-areas/socastee/painting/" class="svc-link">Painting<span class="pr">Free quote</span></a><a href="/service-areas/socastee/handyman-services/" class="svc-link">Handyman Services<span class="pr">From $75/hr</span></a><a href="/service-areas/socastee/flooring/" class="svc-link">Flooring<span class="pr">Free quote</span></a><a href="/service-areas/socastee/junk-removal/" class="svc-link">Junk Removal<span class="pr">From $99</span></a><a href="/service-areas/socastee/concrete-curbing/" class="svc-link">Concrete Curbing<span class="pr">From $4/ft</span></a><a href="/service-areas/socastee/property-maintenance/" class="svc-link">Property Plans<span class="pr">Monthly</span></a></div>
   </div>
 
-  <div class="content-sec">
-    <span class="sec-label">What Clients Say</span>
-    <h2 class="sec-title">Reviews from Socastee Customers</h2>
-    <div class="reviews-grid"><div class="review-card">
-  <div style="display:flex;align-items:center;gap:10px;margin-bottom:10px">
-    <div style="width:38px;height:38px;background:var(--pink);border-radius:50%;display:flex;align-items:center;justify-content:center;font-weight:700;font-size:13px;color:#fff;flex-shrink:0">S</div>
-    <div><div style="font-size:14px;font-weight:600">Sheila C.</div><div style="color:#FFB800;font-size:12px">★★★★★</div></div>
-  </div>
-  <p style="font-size:13.5px;color:rgba(255,255,255,0.6);font-style:italic;line-height:1.7;margin-bottom:8px">"Ray does a great job on yard work. He listens and makes sure you are pleased before he is finished."</p>
-  <div style="font-size:11px;color:rgba(255,255,255,0.3)">Lawn Care · Horry County, SC</div>
-</div><div class="review-card">
-  <div style="display:flex;align-items:center;gap:10px;margin-bottom:10px">
-    <div style="width:38px;height:38px;background:var(--pink);border-radius:50%;display:flex;align-items:center;justify-content:center;font-weight:700;font-size:13px;color:#fff;flex-shrink:0">V</div>
-    <div><div style="font-size:14px;font-weight:600">Vannah P.</div><div style="color:#FFB800;font-size:12px">★★★★★</div></div>
-  </div>
-  <p style="font-size:13.5px;color:rgba(255,255,255,0.6);font-style:italic;line-height:1.7;margin-bottom:8px">"Ray and Courtney's team were always professional, friendly, and willing to do the extras."</p>
-  <div style="font-size:11px;color:rgba(255,255,255,0.3)">Full Property Service · Horry County, SC</div>
-</div></div>
+  <div class="sec">
+    <span class="sec-label">Neighborhoods &amp; Communities</span>
+    <h2 class="sec-h2">Socastee Communities We Serve</h2>
+    <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:7px;margin-top:1rem"><a href="/service-areas/socastee/forestbrook/" class="svc-link" style="flex-direction:column;align-items:start;gap:4px;height:auto;padding:12px 14px"><span style="font-size:13.5px;font-weight:600;color:rgba(255,255,255,0.85)">Forestbrook</span><span style="font-size:11.5px;color:rgba(255,255,255,0.35)">Dense tree coverage · Gutter demand</span></a><a href="/service-areas/socastee/myrtle-trace/" class="svc-link" style="flex-direction:column;align-items:start;gap:4px;height:auto;padding:12px 14px"><span style="font-size:13.5px;font-weight:600;color:rgba(255,255,255,0.85)">Myrtle Trace</span><span style="font-size:11.5px;color:rgba(255,255,255,0.35)">Established 1980s-90s community</span></a><a href="/service-areas/socastee/quail-creek/" class="svc-link" style="flex-direction:column;align-items:start;gap:4px;height:auto;padding:12px 14px"><span style="font-size:13.5px;font-weight:600;color:rgba(255,255,255,0.85)">Quail Creek</span><span style="font-size:11.5px;color:rgba(255,255,255,0.35)">Established residential community</span></a></div>
   </div>
 
-  <div class="content-sec">
-    <span class="sec-label">Questions &amp; Answers</span>
-    <h2 class="sec-title">Frequently Asked Questions — Socastee</h2>
-    <div class="faq-list"><div class="faq-item"><div class="faq-q" onclick="toggleFaq(this)">What services does Bakerss offer in Socastee?<span class="icon">+</span></div><div class="faq-a">In Socastee we provide lawn care, landscaping, concrete curbing, pressure washing, interior cleaning, gutter cleaning, painting, handyman services, deck building and repair, and junk removal. We serve all Socastee neighborhoods including Forestbrook and waterway properties.</div></div><div class="faq-item"><div class="faq-q" onclick="toggleFaq(this)">How much does lawn care cost in Socastee?<span class="icon">+</span></div><div class="faq-a">Lawn care in Socastee starts at $50 per visit. Most standard Socastee residential lots run $55–$90 per visit. We provide free estimates for your specific property.</div></div><div class="faq-item"><div class="faq-q" onclick="toggleFaq(this)">Do you serve Forestbrook for gutter cleaning?<span class="icon">+</span></div><div class="faq-a">Yes. Forestbrook is one of our busiest gutter cleaning areas — the dense pine and oak tree coverage means gutters fill fast and need regular attention. We recommend twice-yearly cleaning for most Forestbrook properties, with additional cleanings for homes under very heavy coverage.</div></div><div class="faq-item"><div class="faq-q" onclick="toggleFaq(this)">Do you clean homes near the Intracoastal Waterway in Socastee?<span class="icon">+</span></div><div class="faq-a">Yes. ICW-adjacent properties in Socastee have specific maintenance needs including pressure washing for algae and salt residue, deck and dock-area maintenance, and landscaping that works with the waterway environment.</div></div><div class="faq-item"><div class="faq-q" onclick="toggleFaq(this)">How close is Socastee to your Myrtle Beach service area?<span class="icon">+</span></div><div class="faq-a">Socastee borders Myrtle Beach directly and is part of our core Horry County service area. No extra travel fees apply.</div></div><div class="faq-item"><div class="faq-q" onclick="toggleFaq(this)">Do you offer recurring lawn care in Socastee?<span class="icon">+</span></div><div class="faq-a">Yes. Most of our Socastee clients are on weekly or biweekly recurring lawn care schedules. We handle scheduling so you don't have to call each time.</div></div></div>
+  <div class="sec">
+    <span class="sec-label">Customer Reviews</span>
+    <h2 class="sec-h2">What Socastee Customers Say</h2>
+    <div class="rev-grid"><div class="rev"><div class="rev-top"><div class="av">S</div><div><div class="rev-name">Sheila C.</div><div class="rev-meta"><span class="stars">★★★★★</span> · Horry County, SC</div></div></div><p class="rev-text">"Ray does a great job on yard work. He listens and makes sure you are pleased before he is finished. Consistently reliable, never an issue."</p><span class="rev-svc">Lawn Care</span></div><div class="rev"><div class="rev-top"><div class="av">J</div><div><div class="rev-name">Jimmy B.</div><div class="rev-meta"><span class="stars">★★★★★</span> · Horry County, SC</div></div></div><p class="rev-text">"Very accurate at doing the job they come to do. They go above and beyond every single time. Exactly what you want from a local maintenance company."</p><span class="rev-svc">Property Maintenance</span></div><div class="rev"><div class="rev-top"><div class="av">V</div><div><div class="rev-name">Vannah P.</div><div class="rev-meta"><span class="stars">★★★★★</span> · Horry County, SC</div></div></div><p class="rev-text">"Professional, friendly, and willing to do the extras. Results beyond expectations, on time and on budget."</p><span class="rev-svc">Full Property Service</span></div></div>
   </div>
 
-  <div class="content-sec">
-    <span class="sec-label">Also Serving</span>
-    <h2 class="sec-title">Other Cities We Serve in Horry County</h2>
-    <div class="other-cities"><a href="/service-areas/myrtle-beach/" class="other-city">Myrtle Beach</a><a href="/service-areas/north-myrtle-beach/" class="other-city">North Myrtle Beach</a><a href="/service-areas/conway/" class="other-city">Conway</a><a href="/service-areas/surfside-beach/" class="other-city">Surfside Beach</a><a href="/service-areas/murrells-inlet/" class="other-city">Murrells Inlet</a><a href="/service-areas/garden-city/" class="other-city">Garden City</a><a href="/service-areas/socastee/" class="other-city">Socastee</a><a href="/service-areas/little-river/" class="other-city">Little River</a></div>
+  <div class="sec">
+    <span class="sec-label">FAQ</span>
+    <h2 class="sec-h2">Questions About Socastee Property Maintenance</h2>
+    <div class="faq-wrap"><div class="faq-item"><div class="faq-q">How often should Socastee gutters be cleaned?<span class="ico">+</span></div><div class="faq-a">Most Socastee properties benefit from twice-yearly gutter cleaning. Homes under heavy pine or oak coverage — particularly in Forestbrook — often need 3–4 cleanings annually because the needles and leaves deposit continuously rather than seasonally.</div></div><div class="faq-item"><div class="faq-q">How much does lawn care cost in Socastee?<span class="ico">+</span></div><div class="faq-a">Lawn care in Socastee starts at $50 per visit. Most standard Socastee residential lots run $55–$90 per visit. Free estimates for your specific property.</div></div><div class="faq-item"><div class="faq-q">Do you serve Forestbrook?<span class="ico">+</span></div><div class="faq-a">Yes. Forestbrook is one of our most active Socastee service areas for gutter cleaning, lawn care, pressure washing, and landscaping.</div></div><div class="faq-item"><div class="faq-q">What causes the dark staining on my Socastee driveway?<span class="ico">+</span></div><div class="faq-a">Tannin compounds from pine and oak debris deposit on concrete and react with moisture to create the characteristic dark brown staining common throughout Socastee. Annual pressure washing removes it effectively.</div></div><div class="faq-item"><div class="faq-q">Is there a travel fee for Socastee?<span class="ico">+</span></div><div class="faq-a">No. Socastee borders Myrtle Beach and is within our standard Horry County service area.</div></div></div>
+  </div>
+
+  <div class="sec">
+    <span class="sec-label">Nearby Areas</span>
+    <h2 class="sec-h2">Other Communities We Serve</h2>
+    <div class="svc-links">
+      <a href="/service-areas/north-myrtle-beach/" class="svc-link">North Myrtle Beach<span class="pr">All services</span></a>
+      <a href="/service-areas/conway/" class="svc-link">Conway<span class="pr">All services</span></a>
+      <a href="/service-areas/surfside-beach/" class="svc-link">Surfside Beach<span class="pr">All services</span></a>
+      <a href="/service-areas/murrells-inlet/" class="svc-link">Murrells Inlet<span class="pr">All services</span></a>
+      <a href="/service-areas/garden-city/" class="svc-link">Garden City Beach<span class="pr">All services</span></a>
+      <a href="/service-areas/horry-county/" class="svc-link">All of Horry County<span class="pr">Overview</span></a>
+    </div>
   </div>
 
 </div>
 
 <div class="cta-band">
-  <h2>Ready for a Free Estimate in Socastee?</h2>
+  <h2>Ready to Get Started in Socastee?</h2>
   <p>Free estimates · No obligation · We answer 24/7</p>
   <div class="cta-buttons">
     <a href="/get-quote/" class="btn-white">Get a Free Quote →</a>
-    <a href="tel:8434677136" class="btn-outline-w">📞 843-467-7136</a>
+    <a href="tel:8434677136" class="btn-ow">📞 843-467-7136</a>
   </div>
 </div>
-
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"LocalBusiness","name":"Bakerss Property Maintenance","telephone":"+18434677136","areaServed":{"@type":"City","name":"Socastee","addressRegion":"SC"}}</script>
 <footer>
   <div class="footer-inner">
     <div class="footer-top">
@@ -418,13 +426,8 @@ h2.sec-title{font-family:var(--font-display);font-size:1.75rem;font-weight:800;l
   <a href="sms:8434677136"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15a2 2 0 01-2 2H7l-4 4V5a2 2 0 012-2h14a2 2 0 012 2z"/></svg>Text</a>
   <a href="/get-quote/" class="primary"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/></svg>Free Quote</a>
 </div>
-
 <script>
-function toggleFaq(el){var item=el.parentElement;item.classList.toggle('open');}
-</script>
-<script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"What services does Bakerss offer in Socastee?","acceptedAnswer":{"@type":"Answer","text":"In Socastee we provide lawn care, landscaping, concrete curbing, pressure washing, interior cleaning, gutter cleaning, painting, handyman services, deck building and repair, and junk removal. We serve all Socastee neighborhoods including Forestbrook and waterway properties."}},{"@type":"Question","name":"How much does lawn care cost in Socastee?","acceptedAnswer":{"@type":"Answer","text":"Lawn care in Socastee starts at $50 per visit. Most standard Socastee residential lots run $55–$90 per visit. We provide free estimates for your specific property."}},{"@type":"Question","name":"Do you serve Forestbrook for gutter cleaning?","acceptedAnswer":{"@type":"Answer","text":"Yes. Forestbrook is one of our busiest gutter cleaning areas — the dense pine and oak tree coverage means gutters fill fast and need regular attention. We recommend twice-yearly cleaning for most Forestbrook properties, with additional cleanings for homes under very heavy coverage."}},{"@type":"Question","name":"Do you clean homes near the Intracoastal Waterway in Socastee?","acceptedAnswer":{"@type":"Answer","text":"Yes. ICW-adjacent properties in Socastee have specific maintenance needs including pressure washing for algae and salt residue, deck and dock-area maintenance, and landscaping that works with the waterway environment."}},{"@type":"Question","name":"How close is Socastee to your Myrtle Beach service area?","acceptedAnswer":{"@type":"Answer","text":"Socastee borders Myrtle Beach directly and is part of our core Horry County service area. No extra travel fees apply."}}]}</script>
-<script type="application/ld+json">
-{"@context":"https://schema.org","@type":"LocalBusiness","name":"Bakerss Property Maintenance","telephone":"+18434677136","url":"https://www.bakerss.com","areaServed":{"@type":"City","name":"Socastee","addressRegion":"SC"}}
+document.querySelectorAll('.faq-q').forEach(q=>q.addEventListener('click',()=>q.parentElement.classList.toggle('open')));
 </script>
 </body>
 </html>
