@@ -2,14 +2,15 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Painting Services in Myrtle Beach, SC | Bakerss Property Maintenance</title>
-<meta name="description" content="Professional interior & exterior painting in Myrtle Beach & Horry County, SC. Homes, vacation rentals & commercial. Licensed & insured. Call 843-467-7136.">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Painting Services in Myrtle Beach & Horry County SC | Bakerss Property Maintenance</title>
+<meta name="description" content="Professional interior and exterior painting in Myrtle Beach SC. Coastal-grade products, proper prep included. Vacation rental refresh specialists. Free estimates. 843-467-7136.">
 <link rel="canonical" href="https://www.bakerss.com/services/painting/">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;800&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
 <style>
+
 *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
 :root{
   --pink:#E91E8C;--pink-dark:#C0157A;--pink-light:#FF4BAB;
@@ -172,6 +173,120 @@ footer{background:var(--black);border-top:1px solid rgba(255,255,255,0.07);paddi
 .sticky-bar svg{width:20px;height:20px}
 @media(max-width:1024px){.svc-hero-inner,.svc-content{grid-template-columns:1fr}.quote-card{position:static}.svc-sidebar{position:static;display:grid;grid-template-columns:1fr 1fr}}
 @media(max-width:768px){.nav-links{display:none}.sticky-bar{display:flex}body{padding-bottom:70px}.sub-grid,.serve-list,.related-grid,.cities-row{grid-template-columns:1fr}.footer-top{grid-template-columns:1fr 1fr}}
+
+/* ── PAGE STYLES ── */
+.hero{background:var(--black);padding:5rem 2rem 3.5rem;position:relative;overflow:hidden}
+.hero::after{content:'';position:absolute;top:-80px;right:-80px;width:520px;height:520px;background:radial-gradient(circle,rgba(233,30,140,0.06) 0%,transparent 70%);pointer-events:none}
+.hero-inner{max-width:1100px;margin:0 auto;position:relative;z-index:2;display:grid;grid-template-columns:1fr 320px;gap:3rem;align-items:start}
+.breadcrumb{display:flex;align-items:center;gap:6px;font-size:12px;color:rgba(255,255,255,0.3);margin-bottom:1.25rem}
+.breadcrumb a{color:rgba(255,255,255,0.3);text-decoration:none}
+.breadcrumb a:hover{color:var(--pink)}
+.breadcrumb span{color:rgba(255,255,255,0.12)}
+.badge{display:inline-flex;align-items:center;gap:6px;background:rgba(233,30,140,0.1);border:1px solid rgba(233,30,140,0.3);border-radius:100px;padding:4px 14px;font-size:10px;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;color:var(--pink);margin-bottom:1.25rem}
+h1.hero-h1{font-family:var(--font-display);font-size:clamp(2.1rem,3.5vw,3.2rem);font-weight:800;line-height:1.08;letter-spacing:-0.025em;margin-bottom:1.1rem}
+h1.hero-h1 em{font-style:normal;color:var(--pink)}
+.hero-desc{font-size:16px;color:rgba(255,255,255,0.55);line-height:1.8;font-weight:300;max-width:600px;margin-bottom:1.75rem}
+.hero-btns{display:flex;gap:10px;flex-wrap:wrap}
+.btn-pink{display:inline-flex;align-items:center;gap:8px;background:var(--pink);color:#fff;padding:14px 26px;border-radius:8px;font-size:14px;font-weight:600;text-decoration:none;transition:all 0.2s;box-shadow:0 4px 18px rgba(233,30,140,0.25)}
+.btn-pink:hover{transform:translateY(-1px);box-shadow:0 6px 24px rgba(233,30,140,0.35)}
+.btn-ghost{display:inline-flex;align-items:center;gap:8px;background:transparent;color:rgba(255,255,255,0.8);padding:14px 24px;border-radius:8px;font-size:14px;font-weight:500;text-decoration:none;border:1px solid rgba(255,255,255,0.18)}
+.hero-trust{display:flex;align-items:center;gap:12px;margin-top:1.5rem;font-size:11px;color:rgba(255,255,255,0.3);flex-wrap:wrap}
+.hero-trust b{color:rgba(255,255,255,0.55)}
+/* Sidebar card */
+.sidebar-card{background:var(--dark2);border:1px solid rgba(255,255,255,0.08);border-radius:14px;padding:1.75rem;position:sticky;top:80px}
+.sidebar-card h3{font-family:var(--font-display);font-size:1.15rem;font-weight:700;margin-bottom:0.25rem}
+.sidebar-phone{font-family:var(--font-display);font-size:1.85rem;font-weight:800;color:var(--pink);text-decoration:none;display:block;margin:0.4rem 0}
+.sidebar-card p{font-size:12.5px;color:rgba(255,255,255,0.4);margin-bottom:1.25rem;line-height:1.5}
+.sidebar-btn{display:block;padding:12px;border-radius:7px;font-size:13.5px;font-weight:600;text-decoration:none;text-align:center;margin-bottom:7px}
+.sidebar-btn.pink{background:var(--pink);color:#fff}
+.sidebar-btn.outline{background:transparent;color:rgba(255,255,255,0.7);border:1px solid rgba(255,255,255,0.15)}
+.sidebar-facts{margin-top:1.25rem;padding-top:1.25rem;border-top:1px solid rgba(255,255,255,0.07)}
+.sidebar-fact{display:flex;align-items:center;gap:10px;font-size:12px;color:rgba(255,255,255,0.5);margin-bottom:7px}
+.sidebar-fact b{color:rgba(255,255,255,0.75)}
+/* Content area */
+.content{max-width:1100px;margin:0 auto;padding:4.5rem 2rem}
+.sec{margin-bottom:4rem}
+.sec-label{font-size:10px;font-weight:700;letter-spacing:0.12em;text-transform:uppercase;color:var(--pink);margin-bottom:0.5rem;display:block}
+h2.sec-h2{font-family:var(--font-display);font-size:clamp(1.6rem,2.5vw,2.1rem);font-weight:800;letter-spacing:-0.02em;margin-bottom:0.9rem;line-height:1.15}
+h2.sec-h2 em{font-style:normal;color:var(--pink)}
+h3.sub-h3{font-size:1.05rem;font-weight:600;margin:1.75rem 0 0.5rem;color:rgba(255,255,255,0.9)}
+.prose{font-size:15px;color:rgba(255,255,255,0.58);line-height:1.85;font-weight:300}
+.prose+.prose{margin-top:0.85rem}
+/* Card grids */
+.card-3{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-top:1.5rem}
+.card-2{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-top:1.5rem}
+.card-4{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin-top:1.5rem}
+.card{background:var(--dark2);border:1px solid rgba(255,255,255,0.07);border-radius:12px;padding:1.4rem}
+.card .tag{font-size:10px;font-weight:700;letter-spacing:0.09em;text-transform:uppercase;color:var(--pink);display:block;margin-bottom:0.5rem}
+.card h4{font-size:15px;font-weight:600;margin-bottom:0.4rem}
+.card p{font-size:13px;color:rgba(255,255,255,0.45);line-height:1.6}
+/* Pricing table */
+.price-table{width:100%;border-collapse:collapse;margin-top:1.25rem;font-size:13.5px}
+.price-table th{padding:10px 14px;text-align:left;background:rgba(233,30,140,0.08);border-bottom:1px solid rgba(255,255,255,0.08);font-size:10px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:rgba(255,255,255,0.4)}
+.price-table td{padding:11px 14px;border-bottom:1px solid rgba(255,255,255,0.05);color:rgba(255,255,255,0.65)}
+.price-table td.price{color:var(--pink);font-weight:700}
+.price-table tr:last-child td{border-bottom:none}
+/* Steps */
+.steps{display:grid;gap:1px;margin-top:1.25rem}
+.step{background:var(--dark2);border:1px solid rgba(255,255,255,0.07);padding:1.25rem 1.5rem;display:flex;gap:1.25rem;align-items:start}
+.step:first-child{border-radius:12px 12px 0 0}
+.step:last-child{border-radius:0 0 12px 12px}
+.step-num{width:32px;height:32px;border-radius:50%;background:var(--pink);display:flex;align-items:center;justify-content:center;font-size:13px;font-weight:700;color:#fff;flex-shrink:0;margin-top:2px}
+.step h4{font-size:14.5px;font-weight:600;margin-bottom:0.3rem}
+.step p{font-size:13px;color:rgba(255,255,255,0.45);line-height:1.6}
+/* FAQ */
+.faq-wrap{border:1px solid rgba(255,255,255,0.07);border-radius:12px;overflow:hidden;margin-top:1.25rem}
+.faq-item{border-bottom:1px solid rgba(255,255,255,0.06)}
+.faq-item:last-child{border:none}
+.faq-q{display:flex;justify-content:space-between;align-items:center;padding:1rem 1.25rem;cursor:pointer;font-size:14.5px;font-weight:600;gap:1rem;transition:background 0.15s}
+.faq-q:hover{background:rgba(255,255,255,0.025)}
+.faq-q .ico{color:var(--pink);font-size:20px;flex-shrink:0;transition:transform 0.25s;line-height:1}
+.faq-a{display:none;padding:0 1.25rem 1rem;font-size:13.5px;color:rgba(255,255,255,0.5);line-height:1.75}
+.faq-item.open .faq-q .ico{transform:rotate(45deg)}
+.faq-item.open .faq-a{display:block}
+/* Reviews */
+.rev-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin-top:1.5rem}
+.rev{background:var(--dark2);border:1px solid rgba(255,255,255,0.07);border-radius:11px;padding:1.4rem}
+.rev-top{display:flex;align-items:center;gap:10px;margin-bottom:9px}
+.av{width:36px;height:36px;background:var(--pink);border-radius:50%;display:flex;align-items:center;justify-content:center;font-weight:700;font-size:13px;color:#fff;flex-shrink:0}
+.rev-name{font-size:13.5px;font-weight:600}
+.rev-meta{font-size:11px;color:rgba(255,255,255,0.3)}
+.stars{color:#FFB800;font-size:12px;letter-spacing:1px}
+.rev-text{font-size:13px;color:rgba(255,255,255,0.6);font-style:italic;line-height:1.7}
+.rev-svc{display:inline-block;font-size:10.5px;font-weight:600;color:var(--pink);background:rgba(233,30,140,0.08);border:1px solid rgba(233,30,140,0.2);padding:2px 9px;border-radius:4px;margin-top:7px}
+/* Stat row */
+.stat-row{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin:1.5rem 0}
+.stat{background:var(--dark2);border:1px solid rgba(255,255,255,0.07);border-radius:11px;padding:1.4rem;text-align:center}
+.stat .num{font-family:var(--font-display);font-size:2.4rem;font-weight:800;color:var(--pink);line-height:1;margin-bottom:0.3rem}
+.stat .lbl{font-size:11.5px;color:rgba(255,255,255,0.4);line-height:1.35}
+/* Svc links */
+.svc-links{display:grid;grid-template-columns:repeat(3,1fr);gap:7px;margin-top:1.25rem}
+.svc-link{background:var(--dark2);border:1px solid rgba(255,255,255,0.07);border-radius:8px;padding:10px 13px;text-decoration:none;color:rgba(255,255,255,0.65);font-size:13px;display:flex;justify-content:space-between;align-items:center;transition:border-color 0.2s}
+.svc-link:hover{border-color:rgba(233,30,140,0.3);color:#fff}
+.svc-link .pr{font-size:10.5px;color:var(--pink);font-weight:600}
+/* CTA band */
+.cta-band{background:var(--pink);padding:3.5rem 2rem;text-align:center}
+.cta-band h2{font-family:var(--font-display);font-size:clamp(1.6rem,3vw,2.2rem);font-weight:800;color:#fff;margin-bottom:0.5rem}
+.cta-band p{font-size:15px;color:rgba(255,255,255,0.75);margin-bottom:1.75rem}
+.cta-buttons{display:flex;gap:12px;justify-content:center;flex-wrap:wrap}
+.btn-white{display:inline-flex;align-items:center;gap:8px;background:#fff;color:var(--pink);padding:13px 26px;border-radius:8px;font-size:14px;font-weight:700;text-decoration:none}
+.btn-ow{display:inline-flex;align-items:center;gap:8px;background:transparent;color:#fff;padding:13px 26px;border-radius:8px;font-size:14px;font-weight:600;text-decoration:none;border:2px solid rgba(255,255,255,0.45)}
+/* Highlight box */
+.callout{background:rgba(233,30,140,0.06);border-left:3px solid var(--pink);padding:1rem 1.25rem;border-radius:0 8px 8px 0;margin:1.5rem 0;font-size:13.5px;color:rgba(255,255,255,0.65);line-height:1.7}
+.callout b{color:rgba(255,255,255,0.9)}
+/* Anchor tab nav */
+.tab-nav{display:flex;gap:4px;border-bottom:1px solid rgba(255,255,255,0.07);margin-bottom:2.5rem;flex-wrap:wrap}
+.tab-link{padding:10px 18px;font-size:13px;font-weight:600;color:rgba(255,255,255,0.45);text-decoration:none;border-bottom:2px solid transparent;margin-bottom:-1px;transition:all 0.15s}
+.tab-link:hover,.tab-link.active{color:var(--pink);border-bottom-color:var(--pink)}
+/* Two col layout */
+.two-col{display:grid;grid-template-columns:1fr 1fr;gap:2.5rem;align-items:start}
+.list-check{margin:0.75rem 0 0 0;padding:0;list-style:none}
+.list-check li{display:flex;align-items:start;gap:9px;font-size:14px;color:rgba(255,255,255,0.6);line-height:1.6;margin-bottom:7px}
+.list-check li::before{content:'✓';color:var(--pink);font-weight:700;flex-shrink:0;margin-top:2px}
+/* Responsive */
+@media(max-width:1024px){.hero-inner{grid-template-columns:1fr}.sidebar-card{display:none}.card-3,.card-4{grid-template-columns:1fr 1fr}.stat-row{grid-template-columns:1fr 1fr}.rev-grid{grid-template-columns:1fr 1fr}.two-col{grid-template-columns:1fr}}
+@media(max-width:768px){.nav-links{display:none}.sticky-bar{display:flex}body{padding-bottom:70px}.card-3,.card-4,.card-2{grid-template-columns:1fr}.svc-links{grid-template-columns:1fr 1fr}.footer-top{grid-template-columns:1fr 1fr}.rev-grid{grid-template-columns:1fr}}
+
 </style>
 </head>
 <body>
@@ -200,151 +315,85 @@ footer{background:var(--black);border-top:1px solid rgba(255,255,255,0.07);paddi
   </div>
 </nav>
 
-<div class="svc-hero">
-  <div class="svc-hero-inner">
+<div class="hero">
+  <div class="hero-inner">
     <div>
-      <nav class="breadcrumb" aria-label="Breadcrumb">
-        <a href="/">Home</a><span>/</span><a href="/services/">Services</a><span>/</span><span style="color:rgba(255,255,255,0.5)">Painting</span>
-      </nav>
-      <div class="svc-badge">Interior &amp; Exterior · Custom Quotes</div>
-      <h1>Interior &amp; Exterior Painting in <em>Myrtle Beach &amp; Horry County, SC</em></h1>
-      <p class="svc-hero-desc">Salt air, humidity, and relentless UV exposure degrade paint faster in coastal South Carolina than almost anywhere else in the country. Bakerss provides professional interior and exterior painting services for homes, vacation rentals, and commercial properties across Horry County — using premium materials rated for coastal environments and delivering finishes that last.</p>
-      <div class="svc-ctas">
-        <a href="/get-quote/" class="btn-primary">Get a Free Quote →</a>
-        <a href="tel:8434677136" class="btn-secondary">📞 843-467-7136</a>
+      <nav class="breadcrumb"><a href="/">Home</a><span>/</span><a href="/services/">Services</a><span>/</span><span style="color:rgba(255,255,255,0.5)">Painting</span></nav>
+      <div class="badge">Interior &amp; Exterior Painting · Coastal-Grade Products · Myrtle Beach SC</div>
+      <h1 class="hero-h1">Painting Services in<br><em>Myrtle Beach &amp; Horry County, SC</em></h1>
+      <p class="hero-desc">Standard exterior paint fails in three to four years in Myrtle Beach. Salt air etches the film, subtropical UV bleaches the color, humidity feeds the mildew that pries the binder apart. Bakerss uses premium coastal-grade products with proper preparation — washing, caulking, priming before a single topcoat. The result is a paint job that lasts eight to twelve years instead of four. Interior and exterior. Free estimates throughout Horry County.</p>
+      <div class="hero-btns">
+        <a href="/get-quote/" class="btn-pink">Get a Free Estimate →</a>
+        <a href="tel:8434677136" class="btn-ghost">📞 843-467-7136</a>
       </div>
-      <div class="svc-trust">
-        <div class="trust-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>5-Star Rated</div>
-        <div class="trust-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>Licensed &amp; Insured</div>
-        <div class="trust-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>24/7 Answering</div>
-        <div class="trust-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>All of Horry County</div>
+      <div class="hero-trust">
+        <span>⭐ <b>5.0</b> Google Rating</span> · <span>✓ <b>Licensed &amp; Insured</b></span> · <span>📍 <b>Horry County, SC</b></span> · <span>📞 <b>24/7</b></span>
       </div>
     </div>
-    <div class="quote-card">
-  <h3>Free Estimate</h3>
-  <p class="qsub">Same-day response · No obligation</p>
-  <div class="form-group"><label>Your Name</label><input type="text" placeholder="First name"></div>
-  <div class="form-group"><label>Phone Number</label><input type="tel" placeholder="843-000-0000"></div>
-  <div class="form-group"><label>Service Needed</label>
-    <select>
-      <option value="Painting" selected>Painting</option>
-      <option>Lawn Care</option><option>Landscaping</option><option>Pressure Washing</option>
-      <option>Interior Cleaning</option><option>Airbnb / STR Cleaning</option>
-      <option>Gutter Cleaning</option><option>Painting</option><option>Handyman Services</option>
-      <option>Junk Removal</option><option>Other</option>
-    </select>
-  </div>
-  <div class="form-group"><label>City / Zip</label><input type="text" placeholder="Myrtle Beach, SC"></div>
-  <button class="btn-submit" onclick="window.location='/get-quote/'">Get My Free Quote →</button>
-  <p class="q-privacy">🔒 No spam · Free · No obligation</p>
-  <div class="q-phone">Or call us: <a href="tel:8434677136">843-467-7136</a></div>
-</div>
-  </div>
-</div>
-
-<div class="svc-content">
-  <div class="svc-main">
-
-    <section class="content-sec">
-      <div class="sec-label">Services Included</div>
-      <h2 class="sec-title">What's Included</h2>
-      <div class="sub-grid"><div class="sub-card"><span class="tag">Most Popular</span><h4>Exterior House Painting</h4><p>Full exterior painting including siding, trim, shutters, doors, and garage doors. We use premium exterior paints formulated for coastal humidity and salt air exposure.</p></div><div class="sub-card"><span class="tag">Interior</span><h4>Interior House Painting</h4><p>Walls, ceilings, trim, doors, and cabinetry painted cleanly and precisely. We protect your furniture, floors, and fixtures throughout the process.</p></div><div class="sub-card"><span class="tag">Specialty</span><h4>Deck &amp; Fence Staining</h4><p>Staining and sealing of wood decks, fences, and pergolas to protect against moisture, UV damage, and the coastal elements.</p></div><div class="sub-card"><span class="tag">Rental Ready</span><h4>Vacation Rental Refresh</h4><p>Quick-turnaround interior painting to refresh rental properties between seasons or before listing on short-term rental platforms.</p></div><div class="sub-card"><span class="tag">Commercial</span><h4>Commercial Painting</h4><p>Interior and exterior painting for offices, retail spaces, restaurants, and commercial buildings on a schedule that minimizes business disruption.</p></div><div class="sub-card"><span class="tag">Add-On</span><h4>Drywall Repair &amp; Prep</h4><p>We handle minor drywall repairs, caulking, and surface prep before painting to ensure a professional, long-lasting finish.</p></div></div>
-    </section>
-
-    <section class="content-sec">
-      <div class="sec-label">Who We Help</div>
-      <h2 class="sec-title">Who We Serve</h2>
-      <div class="serve-list"><div class="serve-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20,6 9,17 4,12"/></svg><span>Residential homeowners</span></div><div class="serve-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20,6 9,17 4,12"/></svg><span>Vacation rental property owners</span></div><div class="serve-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20,6 9,17 4,12"/></svg><span>Commercial property owners</span></div><div class="serve-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20,6 9,17 4,12"/></svg><span>HOA communities</span></div><div class="serve-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20,6 9,17 4,12"/></svg><span>Pre-sale home prep</span></div><div class="serve-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20,6 9,17 4,12"/></svg><span>Property managers</span></div><div class="serve-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20,6 9,17 4,12"/></svg><span>New construction finishing</span></div><div class="serve-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20,6 9,17 4,12"/></svg><span>Post-water-damage restoration</span></div></div>
-    </section>
-
-    <section class="content-sec">
-      <div class="sec-label">How It Works</div>
-      <h2 class="sec-title">Our Process</h2>
-      <div class="process-steps"><div class="p-step"><div class="p-num">01</div><div><h4>Free Estimate</h4><p>We assess your project, identify surface conditions, and recommend the right products and approach. Written estimate provided before any commitment.</p></div></div><div class="p-step"><div class="p-num">02</div><div><h4>Surface Prep</h4><p>Proper prep is what separates a lasting paint job from one that peels in a year. We clean, sand, caulk, patch, and prime all surfaces before paint touches the wall.</p></div></div><div class="p-step"><div class="p-num">03</div><div><h4>Protection &amp; Masking</h4><p>Floors, furniture, fixtures, and landscaping are protected. Clean lines are taped before painting begins. No shortcuts.</p></div></div><div class="p-step"><div class="p-num">04</div><div><h4>Paint Application</h4><p>We apply premium-grade paint in the correct number of coats for your surface and environment — typically two coats minimum on exterior coastal applications.</p></div></div><div class="p-step"><div class="p-num">05</div><div><h4>Cleanup &amp; Inspection</h4><p>We remove all masking, clean up completely, and walk the project with you. Touch-ups handled on the spot before we consider the job done.</p></div></div></div>
-    </section>
-
-    
-
-    <section class="content-sec">
-      <div class="sec-label">Questions &amp; Answers</div>
-      <h2 class="sec-title">Frequently Asked Questions</h2>
-      <div class="faq-list"><div class="faq-item"><div class="faq-q" onclick="toggleFaq(this)">How much does exterior painting cost in Myrtle Beach?<span class="icon">+</span></div><div class="faq-a">Exterior painting in Myrtle Beach varies based on home size, number of stories, surface condition, and materials. A standard single-story home typically runs $2,500–$5,000. Two-story homes run $4,000–$9,000+. We provide free, detailed estimates based on your specific property. We also factor in the coastal-grade materials needed to withstand Myrtle Beach's salt air and humidity.</div></div>
-<div class="faq-item"><div class="faq-q" onclick="toggleFaq(this)">What kind of paint do you use for coastal homes?<span class="icon">+</span></div><div class="faq-a">For coastal South Carolina properties, we use premium exterior paints with mildewcide additives and high humidity and UV resistance ratings. Sherwin-Williams Emerald or Duration lines are among our go-to exterior products for coastal applications. These cost more upfront but deliver significantly longer life between repaint cycles.</div></div>
-<div class="faq-item"><div class="faq-q" onclick="toggleFaq(this)">How often does a coastal home need to be repainted?<span class="icon">+</span></div><div class="faq-a">In Myrtle Beach's coastal environment, exterior paint typically needs refreshing every 5–8 years, though oceanfront or direct salt-air-exposure properties may need attention sooner. Using the right primer and premium paint products, and applying them correctly, significantly extends the repaint cycle.</div></div>
-<div class="faq-item"><div class="faq-q" onclick="toggleFaq(this)">Do you paint vacation rental properties?<span class="icon">+</span></div><div class="faq-a">Yes. Vacation rental painting is a specialty — we understand the turnaround pressures and can schedule paint jobs between rental seasons or in tight windows between bookings. A fresh interior paint job can materially improve your listing photos and guest reviews.</div></div>
-<div class="faq-item"><div class="faq-q" onclick="toggleFaq(this)">Can you match existing paint colors?<span class="icon">+</span></div><div class="faq-a">Yes. We can color-match existing paint using spectrophotometer matching at the paint store. If you have the original paint brand and color name, matching is straightforward. We can also help you select new colors if you're ready for an update.</div></div>
-<div class="faq-item"><div class="faq-q" onclick="toggleFaq(this)">Do you handle drywall repair before painting?<span class="icon">+</span></div><div class="faq-a">Yes. Minor drywall repair, caulking, filling nail holes, and surface prep are included in our painting process. If you have significant drywall damage, we can assess and quote the repair work as part of the overall painting project.</div></div>
-<div class="faq-item"><div class="faq-q" onclick="toggleFaq(this)">Can you paint commercial buildings in Myrtle Beach?<span class="icon">+</span></div><div class="faq-a">Yes. We paint commercial interiors and exteriors including offices, retail spaces, restaurants, and warehouses. We schedule commercial painting work around your business hours to minimize disruption.</div></div>
-<div class="faq-item"><div class="faq-q" onclick="toggleFaq(this)">Do you offer deck and fence staining?<span class="icon">+</span></div><div class="faq-a">Yes. Staining and sealing wood decks, fences, and pergolas is a common add-on to exterior painting projects. Proper staining protects coastal wood from moisture intrusion, UV damage, and the accelerated weathering that comes with salt air exposure.</div></div>
-</div>
-    </section>
-
-    <section class="content-sec">
-      <div class="sec-label">Related Services</div>
-      <h2 class="sec-title">You Might Also Need</h2>
-      <div class="related-grid"><a href="/services/pressure-washing/" class="rel-card"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75"><path d="M12 2v4M8 4l1.5 3M16 4l-1.5 3M5 9h14M6 9l-2 11h16L18 9"/></svg><div><h4>Pressure Washing</h4><p>Prep surfaces before painting</p></div></a><a href="/services/handyman-services/" class="rel-card"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75"><path d="M14.7 6.3a1 1 0 000 1.4l1.6 1.6a1 1 0 001.4 0l3.77-3.77a6 6 0 01-7.94 7.94l-6.91 6.91a2.12 2.12 0 01-3-3l6.91-6.91a6 6 0 017.94-7.94l-3.76 3.76z"/></svg><div><h4>Handyman Services</h4><p>Repairs before the paint goes on</p></div></a><a href="/services/deck-building-repair/" class="rel-card"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75"><rect x="2" y="3" width="20" height="4"/><path d="M2 7v14M22 7v14M6 11h12M6 15h12"/></svg><div><h4>Deck Building &amp; Repair</h4><p>Build or repair before we stain</p></div></a><a href="/services/gutter-cleaning/" class="rel-card"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75"><path d="M3 7h18M3 7l3 10h12l3-10M9 7V4M15 7V4"/></svg><div><h4>Gutter Cleaning</h4><p>Protect your fresh paint from water damage</p></div></a></div>
-    </section>
-
-    <section class="content-sec">
-      <div class="sec-label">Cities We Serve</div>
-      <h2 class="sec-title">Painting Across Horry County</h2>
-      <p class="prose">We provide this service in every major city across Horry County. Click your city for location-specific information.</p>
-      <div class="cities-row"><a href="/service-areas/myrtle-beach/" class="city-link">Myrtle Beach</a><a href="/service-areas/north-myrtle-beach/" class="city-link">North Myrtle Beach</a><a href="/service-areas/conway/" class="city-link">Conway</a><a href="/service-areas/surfside-beach/" class="city-link">Surfside Beach</a><a href="/service-areas/murrells-inlet/" class="city-link">Murrells Inlet</a><a href="/service-areas/garden-city/" class="city-link">Garden City</a><a href="/service-areas/socastee/" class="city-link">Socastee</a><a href="/service-areas/little-river/" class="city-link">Little River</a><a href="/service-areas/horry-county/" class="city-link">All of Horry County</a></div>
-    </section>
-
-  </div>
-
-  <div class="svc-sidebar">
-    <div class="price-box">
-      <div class="from">Starting at</div>
-      <div class="amount">Free Quote</div>
-      <div class="note">Custom pricing · Based on scope</div>
-    </div>
-    <div class="call-side">
-      <p>Questions? We answer 24/7</p>
-      <a href="tel:8434677136">843-467-7136</a>
-    </div>
-    <div class="side-card">
-      <h3>Customer Reviews</h3>
-      <div class="review-mini">
-  <div style="display:flex;align-items:center;gap:8px;margin-bottom:6px">
-    <div style="width:32px;height:32px;background:var(--pink);border-radius:50%;display:flex;align-items:center;justify-content:center;font-weight:700;font-size:12px;color:#fff;flex-shrink:0">K</div>
-    <div><div style="font-size:13px;font-weight:600">King K.</div><div class="stars">★★★★★</div></div>
-  </div>
-  <p>"Bakerss did a wonderful job doing landscaping, pressure washing, and repainting my house. They are reasonable with prices — this company is an all-in-one."</p>
-  <div class="who">Landscaping + Pressure Washing + Painting · Myrtle Beach, SC</div>
-</div><div class="review-mini">
-  <div style="display:flex;align-items:center;gap:8px;margin-bottom:6px">
-    <div style="width:32px;height:32px;background:var(--pink);border-radius:50%;display:flex;align-items:center;justify-content:center;font-weight:700;font-size:12px;color:#fff;flex-shrink:0">V</div>
-    <div><div style="font-size:13px;font-weight:600">Vannah P.</div><div class="stars">★★★★★</div></div>
-  </div>
-  <p>"Ray and Courtney's team were always professional, friendly, and willing to do the extras. Results are beyond our expectations. Finished on time and on budget."</p>
-  <div class="who">Full Property Service · Horry County, SC</div>
-</div><div class="review-mini">
-  <div style="display:flex;align-items:center;gap:8px;margin-bottom:6px">
-    <div style="width:32px;height:32px;background:var(--pink);border-radius:50%;display:flex;align-items:center;justify-content:center;font-weight:700;font-size:12px;color:#fff;flex-shrink:0">J</div>
-    <div><div style="font-size:13px;font-weight:600">Jimmy B.</div><div class="stars">★★★★★</div></div>
-  </div>
-  <p>"They are very accurate at doing the job they come to do. They go above and beyond."</p>
-  <div class="who">Property Service · Horry County, SC</div>
-</div>
-    </div>
-    <div class="side-card">
-      <h3>Service Areas</h3>
-      <a href="/service-areas/myrtle-beach/" class="city-link">Myrtle Beach</a><a href="/service-areas/north-myrtle-beach/" class="city-link">North Myrtle Beach</a><a href="/service-areas/conway/" class="city-link">Conway</a><a href="/service-areas/surfside-beach/" class="city-link">Surfside Beach</a><a href="/service-areas/murrells-inlet/" class="city-link">Murrells Inlet</a><a href="/service-areas/garden-city/" class="city-link">Garden City</a><a href="/service-areas/socastee/" class="city-link">Socastee</a><a href="/service-areas/little-river/" class="city-link">Little River</a><a href="/service-areas/horry-county/" class="city-link">All of Horry County</a>
+    <div class="sidebar-card">
+      <h3>Free Painting Estimate</h3>
+      <a href="tel:8434677136" class="sidebar-phone">843-467-7136</a>
+      <p>Ray and Courtney respond personally — same day, every time. No call centers, no voicemail loops.</p>
+      <a href="/get-quote/" class="sidebar-btn pink">Get a Free Quote →</a>
+      <a href="tel:8434677136" class="sidebar-btn outline">📞 Call or Text Now</a>
+      <div class="sidebar-facts">
+        <div class="sidebar-fact">🎨 <span>Exterior from <b>$2,500</b></span></div><div class="sidebar-fact">🧪 <span><b>Sherwin-Williams Emerald</b> standard</span></div><div class="sidebar-fact">✓ <span><b>Prep included</b> — wash, caulk, prime</span></div><div class="sidebar-fact">📋 <span>Interior painting <b>from $1,800</b></span></div>
+        <div class="sidebar-fact">✓ <span><b>Licensed &amp; Insured</b> · Horry County</span></div>
+      </div>
     </div>
   </div>
 </div>
+<div class="content">
+<div class="stat-row"><div class="stat"><div class="num">5–8</div><div class="lbl">Years standard paint lasts on Myrtle Beach exteriors</div></div><div class="stat"><div class="num">8–12</div><div class="lbl">Years coastal-grade product lasts with correct prep</div></div><div class="stat"><div class="num">3</div><div class="lbl">Steps of prep before any topcoat goes on — always</div></div><div class="stat"><div class="num">Free</div><div class="lbl">Estimates — all Horry County properties</div></div></div>
 
-<div class="cta-band">
-  <h2>Ready to Get Started?</h2>
-  <p>Free estimates · No obligation · We answer 24/7</p>
-  <div class="cta-buttons">
-    <a href="/get-quote/" class="btn-white">Get a Free Quote →</a>
-    <a href="tel:8434677136" class="btn-outline-w">📞 843-467-7136</a>
-  </div>
+<div class="sec" style="margin-top:3.5rem">
+<span class="sec-label">Why Coastal SC Is Hard on Paint</span>
+<h2 class="sec-h2">Three Forces That Destroy Paint in Myrtle Beach — <em>and How We Fight All Three</em></h2>
+<p class="prose">Homeowners relocating to Myrtle Beach from inland markets are routinely surprised when their exterior paint fails within four or five years of a fresh job. In their previous climate, the same product lasted twelve or fifteen. The difference isn't the paint company or the applicator — it's the environment. Coastal South Carolina operates three simultaneous attack vectors on exterior paint that no inland market replicates.</p>
+<p class="prose"><strong style="color:rgba(255,255,255,0.85)">Salt air.</strong> The Atlantic drives salt particles inland on Myrtle Beach's prevailing easterly winds. These hygroscopic particles land on paint film, absorb moisture from the humid air, and hold it against the paint surface continuously — breaking down binder adhesion and creating the microscopic channels through which water eventually penetrates to the substrate.</p>
+<p class="prose"><strong style="color:rgba(255,255,255,0.85)">UV intensity.</strong> South Carolina's lower latitude means higher annual UV dosage than northern markets, and the UV continues operating meaningfully even in winter. UV breaks down the polymer chains in paint film, creating the chalking and color loss that makes coastal homes look weathered within a few seasons of standard product application.</p>
+<p class="prose"><strong style="color:rgba(255,255,255,0.85)">Humidity and mildew.</strong> Myrtle Beach's year-round subtropical humidity creates ideal conditions for mildew and algae to colonize exterior paint surfaces. These organisms grow beneath the paint film, pushing it away from the substrate and accelerating failure at the site of colonization. Without mildewcide additives in the topcoat, mildew recurrence within two seasons is essentially guaranteed in coastal South Carolina.</p>
+<div class="card-3"><div class="card"><span class="tag">The Solution</span><h4>Premium Product Selection</h4><p>Sherwin-Williams Emerald exterior — our standard specification for Myrtle Beach coastal homes. Built-in mildewcide protection, advanced UV resistance, 100% acrylic flexibility for coastal temperature cycling. Significantly outperforms standard exterior paints in all three attack vectors.</p></div><div class="card"><span class="tag">The Foundation</span><h4>Prep That Enables Performance</h4><p>Premium paint on inadequate preparation fails as fast as budget paint. Our prep sequence — professional soft wash, full drying time, caulking all gaps, spot priming all bare wood — is the foundation that enables an eight to twelve year paint job in this environment.</p></div><div class="card"><span class="tag">The Investment</span><h4>Lifecycle Cost Comparison</h4><p>$4,000 paint job with premium product lasting 10 years: $400/year. Same job with standard product failing at 4 years: $1,000/year. The premium product costs more today and significantly less over any reasonable planning horizon.</p></div></div>
 </div>
 
+<div class="sec">
+<span class="sec-label">The Process</span>
+<h2 class="sec-h2">Every Exterior Paint Job — <em>Six Steps That Can't Be Skipped</em></h2>
+<div class="steps"><div class="step"><div class="step-num">1</div><div><h4>Soft Wash — Remove All Surface Contamination</h4><p>Every exterior paint project begins with professional soft washing to remove mildew, salt deposits, algae, and chalk from any existing degraded paint. Painting over surface contamination is the leading cause of premature paint failure in coastal South Carolina. This step is never negotiable.</p></div></div><div class="step"><div class="step-num">2</div><div><h4>Full Drying Time — 24 to 48 Hours</h4><p>In Myrtle Beach's humidity, surfaces require extended drying after washing before any paint product is applied. Moisture trapped beneath paint film causes blistering and adhesion failure within the first season. We schedule around proper drying time regardless of scheduling pressure.</p></div></div><div class="step"><div class="step-num">3</div><div><h4>Caulk All Gaps and Seams</h4><p>Every window frame, door frame, corner board joint, and exterior penetration inspected and re-caulked where gaps or sealant failures exist. Water infiltration behind cladding causes both paint failure and structural damage. Thorough caulking is essential prep, not an optional upgrade.</p></div></div><div class="step"><div class="step-num">4</div><div><h4>Spot Prime All Bare Wood and Repairs</h4><p>Any area where sanding, scraping, or repairs have exposed bare wood receives primer before topcoat. Premium topcoat applied directly to bare wood without primer will fail at that location within one to two seasons regardless of product quality. We prime correctly every time.</p></div></div><div class="step"><div class="step-num">5</div><div><h4>Two Finish Coats at Correct Spread Rate</h4><p>Two full coats of the specified premium product applied at the label's specified coverage rate. Single-coat shortcuts cut lifespan proportionally — we do not use single-coat applications for exterior work in coastal South Carolina.</p></div></div><div class="step"><div class="step-num">6</div><div><h4>Walk-Through and Touch-Up</h4><p>Final inspection of every surface with the client before the job is considered complete. Any touch-up addressed before we leave. You inspect the result before we receive final payment.</p></div></div></div>
+</div>
+
+<div class="sec">
+<span class="sec-label">All Services</span>
+<h2 class="sec-h2">Painting Services Available Throughout Horry County</h2>
+<div class="card-3"><div class="card"><span class="tag">Exterior</span><h4>Full Exterior House Painting</h4><p>Siding, trim, shutters, soffit, and fascia. All preparation included. Two coats premium product. Available for all siding types — vinyl, wood, fiber cement, stucco, and brick. Horry County properties from oceanfront Myrtle Beach to shaded Conway neighborhoods.</p></div><div class="card"><span class="tag">Interior</span><h4>Interior Painting</h4><p>Walls, ceilings, trim, and doors. All surfaces protected. Minor drywall repairs included. Color consultation available. Popular for vacation rental seasonal refreshes, pre-sale preparation, and new homeowner restyling throughout Horry County.</p></div><div class="card"><span class="tag">STR Focused</span><h4>Vacation Rental Refresh</h4><p>Quick-turnaround interior painting scheduled during rental vacancy windows. Fresh interior paint dramatically improves listing photo quality — important since January and February are when most Myrtle Beach summer bookings are made. One of the highest-ROI offseason investments available.</p></div><div class="card"><span class="tag">Outdoor</span><h4>Deck &amp; Fence Staining</h4><p>Penetrating stain and UV sealer for wood decks, fences, and pergolas. Product matched to wood species and sun exposure. Staining cycle of 2–3 years appropriate for most Myrtle Beach wood outdoor surfaces. Protects against the UV intensity and moisture that the coastal climate generates.</p></div><div class="card"><span class="tag">Commercial</span><h4>Commercial Painting</h4><p>Office buildings, retail, restaurants, and commercial properties throughout Horry County. Scheduled around your operating hours — before opening, after closing, or weekends. Commercial-grade products for high-traffic surfaces.</p></div><div class="card"><span class="tag">Specialty</span><h4>Drywall Repair &amp; Prep</h4><p>Minor drywall patches, caulking, sanding, and surface preparation. Available standalone or integrated into full painting projects. Often the most important step in achieving a professional final appearance.</p></div></div>
+</div>
+
+<div class="sec">
+<span class="sec-label">2025 Pricing</span>
+<h2 class="sec-h2">Painting Pricing in Myrtle Beach — 2025</h2>
+<table class="price-table"><thead><tr><th>Home Size / Service</th><th>Single-Story</th><th>Two-Story</th></tr></thead><tbody><tr><td>Small (under 1,200 sq ft)</td><td class="price">$2,200–$3,800</td><td>$3,200–$5,500</td></tr><tr><td>Standard (1,200–2,000 sq ft)</td><td class="price">$2,800–$4,800</td><td>$4,200–$7,500</td></tr><tr><td>Large (2,000–3,000 sq ft)</td><td class="price">$3,800–$6,500</td><td>$5,500–$9,000</td></tr><tr><td>Estate (3,000+ sq ft)</td><td class="price">$5,000–$9,000+</td><td>$7,500–$15,000+</td></tr><tr><td>Interior — standard 3BR home</td><td class="price">$1,800–$3,500</td><td>—</td></tr><tr><td>Deck staining — standard deck</td><td class="price">$350–$750</td><td>—</td></tr></tbody></table>
+</div>
+
+<div class="sec">
+<span class="sec-label">Service Areas</span>
+<h2 class="sec-h2">Painting Services Across Horry County</h2>
+<div class="svc-links"><a href="/service-areas/myrtle-beach/painting/" class="svc-link">Myrtle Beach<span class="pr">Free quote</span></a><a href="/service-areas//service-areas/north-myrtle-beach//painting/" class="svc-link">North Myrtle Beach<span class="pr">Free quote</span></a><a href="/service-areas//service-areas/conway//painting/" class="svc-link">Conway<span class="pr">Free quote</span></a><a href="/service-areas//service-areas/surfside-beach//painting/" class="svc-link">Surfside Beach<span class="pr">Free quote</span></a><a href="/service-areas//service-areas/murrells-inlet//painting/" class="svc-link">Murrells Inlet<span class="pr">Free quote</span></a><a href="/service-areas//service-areas/garden-city//painting/" class="svc-link">Garden City Beach<span class="pr">Free quote</span></a><a href="/service-areas//service-areas/socastee//painting/" class="svc-link">Socastee<span class="pr">Free quote</span></a><a href="/service-areas//service-areas/little-river//painting/" class="svc-link">Little River<span class="pr">Free quote</span></a></div>
+</div>
+
+<div class="sec">
+<span class="sec-label">Reviews</span>
+<h2 class="sec-h2">What Painting Clients Say</h2>
+<div class="rev-grid"><div class="rev"><div class="rev-top"><div class="av">K</div><div><div class="rev-name">King K.</div><div class="rev-meta"><span class="stars">★★★★★</span> · Myrtle Beach, SC</div></div></div><p class="rev-text">"Wonderful job doing landscaping, pressure washing, and repainting. Reasonable prices. This company is an all-in-one — the exterior looks incredible."</p><span class="rev-svc">Exterior Painting</span></div><div class="rev"><div class="rev-top"><div class="av">V</div><div><div class="rev-name">Vannah P.</div><div class="rev-meta"><span class="stars">★★★★★</span> · Horry County, SC</div></div></div><p class="rev-text">"Results beyond our expectations. On time and on budget. Professional, friendly, and willing to do the extras. Will use again without question."</p><span class="rev-svc">Full Property Service</span></div><div class="rev"><div class="rev-top"><div class="av">L</div><div><div class="rev-name">Lilly H.</div><div class="rev-meta"><span class="stars">★★★★★</span> · Myrtle Beach, SC</div></div></div><p class="rev-text">"From the first consultation to the final walk-through, everything handled with professionalism and care. Quality is outstanding."</p><span class="rev-svc">Interior &amp; Exterior</span></div></div>
+</div>
+
+<div class="sec">
+<span class="sec-label">FAQ</span>
+<h2 class="sec-h2">Painting FAQ</h2>
+<div class="faq-wrap"><div class="faq-item"><div class="faq-q">How much does exterior painting cost in Myrtle Beach?<span class="ico">+</span></div><div class="faq-a">A standard single-story Myrtle Beach home (1,200–2,000 square feet) runs $2,800–$4,800 for a full exterior including preparation, caulking, priming, and two finish coats of premium product. Two-story homes of the same footprint run $4,200–$7,500. Free on-site estimates for all Horry County properties.</div></div><div class="faq-item"><div class="faq-q">How long does exterior paint last in Myrtle Beach?<span class="ico">+</span></div><div class="faq-a">With premium coastal-grade products and proper preparation: 8–12 years for most Myrtle Beach homes, 6–9 years for direct oceanfront properties. Standard-grade products without mildewcide additives typically fail at 3–5 years in coastal South Carolina — making premium product clearly cost-effective over the full lifecycle.</div></div><div class="faq-item"><div class="faq-q">What exterior paint product do you use?<span class="ico">+</span></div><div class="faq-a">Sherwin-Williams Emerald is our standard specification for Myrtle Beach coastal properties — built-in mildewcide protection, advanced UV resistance, flexible acrylic formula. Sherwin-Williams Duration and Benjamin Moore Aura Exterior are also used depending on project requirements. We never substitute lower-tier products without explicit discussion.</div></div><div class="faq-item"><div class="faq-q">Do you need to pressure wash before painting?<span class="ico">+</span></div><div class="faq-a">Yes — always, no exceptions. Soft washing before exterior painting removes salt deposits, mildew organisms, and chalk from degraded existing paint. Painting over any surface contamination results in adhesion failure within seasons. We include pre-paint washing and require adequate drying time before any product is applied.</div></div><div class="faq-item"><div class="faq-q">Do you paint vacation rental interiors in Myrtle Beach?<span class="ico">+</span></div><div class="faq-a">Yes. Interior refresh painting for STRs is typically scheduled during the November–February offseason. Fresh paint improves listing photo quality — which matters most in January and February when peak summer booking decisions are being made. We work around your rental calendar to avoid any impact on bookings.</div></div></div>
+</div>
+</div>
+<div class="cta-band"><h2>Paint That Lasts in Myrtle Beach. Not Just on Installation Day.</h2><p>Premium products · Proper prep · Free estimates · All of Horry County</p><div class="cta-buttons"><a href="/get-quote/" class="btn-white">Get a Free Estimate →</a><a href="tel:8434677136" class="btn-ow">📞 843-467-7136</a></div></div>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"Service","name":"Interior and Exterior Painting","provider":{"@type":"LocalBusiness","name":"Bakerss Property Maintenance","telephone":"+18434677136","url":"https://www.bakerss.com"},"areaServed":"Horry County, SC","description":"Professional painting in Myrtle Beach and Horry County SC. Coastal-grade products. Prep included. Vacation rental refresh specialists. Free estimates."}</script>
 <footer>
   <div class="footer-inner">
     <div class="footer-top">
@@ -368,16 +417,8 @@ footer{background:var(--black);border-top:1px solid rgba(255,255,255,0.07);paddi
   <a href="sms:8434677136"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15a2 2 0 01-2 2H7l-4 4V5a2 2 0 012-2h14a2 2 0 012 2z"/></svg>Text</a>
   <a href="/get-quote/" class="primary"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/></svg>Free Quote</a>
 </div>
-
 <script>
-function toggleFaq(el){
-  const item = el.parentElement;
-  item.classList.toggle('open');
-}
-</script>
-<script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"How much does exterior painting cost in Myrtle Beach?","acceptedAnswer":{"@type":"Answer","text":"Exterior painting in Myrtle Beach varies based on home size, number of stories, surface condition, and materials. A standard single-story home typically runs $2,500–$5,000. Two-story homes run $4,000–$9,000+. We provide free, detailed estimates based on your specific property. We also factor in the coastal-grade materials needed to withstand Myrtle Beach's salt air and humidity."}},{"@type":"Question","name":"What kind of paint do you use for coastal homes?","acceptedAnswer":{"@type":"Answer","text":"For coastal South Carolina properties, we use premium exterior paints with mildewcide additives and high humidity and UV resistance ratings. Sherwin-Williams Emerald or Duration lines are among our go-to exterior products for coastal applications. These cost more upfront but deliver significantly longer life between repaint cycles."}},{"@type":"Question","name":"How often does a coastal home need to be repainted?","acceptedAnswer":{"@type":"Answer","text":"In Myrtle Beach's coastal environment, exterior paint typically needs refreshing every 5–8 years, though oceanfront or direct salt-air-exposure properties may need attention sooner. Using the right primer and premium paint products, and applying them correctly, significantly extends the repaint cycle."}},{"@type":"Question","name":"Do you paint vacation rental properties?","acceptedAnswer":{"@type":"Answer","text":"Yes. Vacation rental painting is a specialty — we understand the turnaround pressures and can schedule paint jobs between rental seasons or in tight windows between bookings. A fresh interior paint job can materially improve your listing photos and guest reviews."}},{"@type":"Question","name":"Can you match existing paint colors?","acceptedAnswer":{"@type":"Answer","text":"Yes. We can color-match existing paint using spectrophotometer matching at the paint store. If you have the original paint brand and color name, matching is straightforward. We can also help you select new colors if you're ready for an update."}}]}</script>
-<script type="application/ld+json">
-{"@context":"https://schema.org","@type":"Service","name":"Painting","provider":{"@type":"LocalBusiness","name":"Bakerss Property Maintenance","telephone":"+18434677136"},"areaServed":"Horry County, SC","url":"https://www.bakerss.com/services/painting/","priceRange":"Free Quote+"}
+document.querySelectorAll('.faq-q').forEach(q=>q.addEventListener('click',()=>q.parentElement.classList.toggle('open')));
 </script>
 </body>
 </html>
