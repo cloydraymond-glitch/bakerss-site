@@ -2,9 +2,9 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="viewport" content="width=device-width,initial-scale=1">
 <title>Property Maintenance Services in Garden City Beach, SC | Bakerss</title>
-<meta name="description" content="Bakerss Property Maintenance serves Garden City Beach, SC with Airbnb cleaning, lawn care, pressure washing & more. Call 843-467-7136.">
+<meta name="description" content="Professional lawn care, cleaning, pressure washing, gutter cleaning & more in Garden City Beach, SC. Licensed & insured. 5-star rated. Call 843-467-7136.">
 <link rel="canonical" href="https://www.bakerss.com/service-areas/garden-city/">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -174,75 +174,119 @@ footer{background:var(--black);border-top:1px solid rgba(255,255,255,0.07);paddi
 @media(max-width:1024px){.svc-hero-inner,.svc-content{grid-template-columns:1fr}.quote-card{position:static}.svc-sidebar{position:static;display:grid;grid-template-columns:1fr 1fr}}
 @media(max-width:768px){.nav-links{display:none}.sticky-bar{display:flex}body{padding-bottom:70px}.sub-grid,.serve-list,.related-grid,.cities-row{grid-template-columns:1fr}.footer-top{grid-template-columns:1fr 1fr}}
 
-/* CITY PAGE SPECIFIC */
-.city-hero{background:var(--black);padding:4.5rem 2rem 3rem;border-bottom:1px solid rgba(255,255,255,0.06);position:relative;overflow:hidden}
-.city-hero::after{content:'';position:absolute;top:-150px;right:-150px;width:500px;height:500px;background:radial-gradient(circle,rgba(233,30,140,0.07) 0%,transparent 70%);pointer-events:none}
-.city-hero-inner{max-width:1100px;margin:0 auto;position:relative}
-.breadcrumb{display:flex;align-items:center;gap:8px;font-size:12px;color:rgba(255,255,255,0.3);margin-bottom:1.25rem}
-.breadcrumb a{color:rgba(255,255,255,0.3);text-decoration:none;transition:color 0.15s}
+/* ── PAGE STYLES ── */
+.hero{background:var(--black);padding:5rem 2rem 3.5rem;position:relative;overflow:hidden}
+.hero::after{content:'';position:absolute;top:-80px;right:-80px;width:520px;height:520px;background:radial-gradient(circle,rgba(233,30,140,0.06) 0%,transparent 70%);pointer-events:none}
+.hero-inner{max-width:1100px;margin:0 auto;position:relative;z-index:2;display:grid;grid-template-columns:1fr 320px;gap:3rem;align-items:start}
+.breadcrumb{display:flex;align-items:center;gap:6px;font-size:12px;color:rgba(255,255,255,0.3);margin-bottom:1.25rem}
+.breadcrumb a{color:rgba(255,255,255,0.3);text-decoration:none}
 .breadcrumb a:hover{color:var(--pink)}
-.breadcrumb span{color:rgba(255,255,255,0.15)}
-.city-badge{display:inline-flex;align-items:center;gap:8px;background:rgba(233,30,140,0.1);border:1px solid rgba(233,30,140,0.3);border-radius:100px;padding:5px 14px;font-size:11px;font-weight:600;letter-spacing:0.08em;text-transform:uppercase;color:var(--pink-light);margin-bottom:1.25rem}
-.city-hero h1{font-family:var(--font-display);font-size:clamp(2rem,3.5vw,3rem);font-weight:800;line-height:1.1;letter-spacing:-0.02em;margin-bottom:1rem}
-.city-hero h1 em{font-style:normal;color:var(--pink)}
-.city-hero-desc{font-size:16px;color:rgba(255,255,255,0.55);line-height:1.75;max-width:700px;margin-bottom:1.75rem;font-weight:300}
-.hero-ctas{display:flex;gap:10px;flex-wrap:wrap;margin-bottom:1.75rem}
-.btn-primary{display:inline-flex;align-items:center;gap:8px;background:var(--pink);color:#fff;padding:13px 24px;border-radius:8px;font-size:14px;font-weight:600;text-decoration:none;transition:all 0.2s}
-.btn-primary:hover{background:var(--pink-dark);transform:translateY(-1px)}
-.btn-secondary{display:inline-flex;align-items:center;gap:8px;background:transparent;color:rgba(255,255,255,0.8);padding:13px 24px;border-radius:8px;font-size:14px;font-weight:500;text-decoration:none;border:1px solid rgba(255,255,255,0.18);transition:all 0.2s}
-.btn-secondary:hover{border-color:rgba(255,255,255,0.4);color:#fff}
-.city-trust{display:flex;gap:20px;flex-wrap:wrap}
-.trust-item{display:flex;align-items:center;gap:6px;font-size:12.5px;color:rgba(255,255,255,0.4)}
-.trust-item svg{width:15px;height:15px;color:var(--pink);flex-shrink:0}
-/* CONTENT LAYOUT */
-.city-content{max-width:1100px;margin:0 auto;padding:4rem 2rem}
-.content-sec{margin-bottom:3.5rem}
-.sec-label{font-size:10px;font-weight:700;letter-spacing:0.12em;text-transform:uppercase;color:var(--pink);margin-bottom:0.6rem;display:block}
-h2.sec-title{font-family:var(--font-display);font-size:1.75rem;font-weight:800;letter-spacing:-0.02em;margin-bottom:1rem;line-height:1.2}
-.prose{font-size:15px;color:rgba(255,255,255,0.6);line-height:1.8;font-weight:300}
-.prose+.prose{margin-top:1rem}
-/* Services grid */
-.city-svc-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin-top:1.5rem}
-.city-svc-card{background:var(--dark2);border:1px solid rgba(255,255,255,0.07);border-radius:10px;padding:1.1rem 1.25rem;text-decoration:none;color:var(--white);transition:all 0.2s;display:flex;align-items:center;justify-content:space-between}
-.city-svc-card:hover{border-color:rgba(233,30,140,0.35);transform:translateY(-1px)}
-.csvc-top h3{font-size:13.5px;font-weight:600;margin-bottom:3px}
-.price-tag{font-size:11px;color:var(--pink);font-weight:600}
-.csvc-arrow{font-size:16px;color:rgba(255,255,255,0.2);transition:all 0.2s}
-.city-svc-card:hover .csvc-arrow{color:var(--pink);transform:translateX(3px)}
-/* Neighborhoods */
-.nbhd-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:12px;margin-top:1.5rem}
-.nbhd-card{background:var(--dark2);border:1px solid rgba(255,255,255,0.07);border-left:3px solid var(--pink);border-radius:10px;padding:1.25rem}
-.nbhd-card h4{font-size:14.5px;font-weight:600;margin-bottom:0.4rem}
-.nbhd-card p{font-size:13px;color:rgba(255,255,255,0.45);line-height:1.6}
-/* Reviews */
-.reviews-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:12px;margin-top:1.5rem}
-.review-card{background:var(--dark2);border:1px solid rgba(255,255,255,0.07);border-radius:10px;padding:1.25rem;transition:border-color 0.2s}
-.review-card:hover{border-color:rgba(233,30,140,0.25)}
+.breadcrumb span{color:rgba(255,255,255,0.12)}
+.badge{display:inline-flex;align-items:center;gap:6px;background:rgba(233,30,140,0.1);border:1px solid rgba(233,30,140,0.3);border-radius:100px;padding:4px 14px;font-size:10px;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;color:var(--pink);margin-bottom:1.25rem}
+h1.hero-h1{font-family:var(--font-display);font-size:clamp(2.1rem,3.5vw,3.2rem);font-weight:800;line-height:1.08;letter-spacing:-0.025em;margin-bottom:1.1rem}
+h1.hero-h1 em{font-style:normal;color:var(--pink)}
+.hero-desc{font-size:16px;color:rgba(255,255,255,0.55);line-height:1.8;font-weight:300;max-width:600px;margin-bottom:1.75rem}
+.hero-btns{display:flex;gap:10px;flex-wrap:wrap}
+.btn-pink{display:inline-flex;align-items:center;gap:8px;background:var(--pink);color:#fff;padding:14px 26px;border-radius:8px;font-size:14px;font-weight:600;text-decoration:none;transition:all 0.2s;box-shadow:0 4px 18px rgba(233,30,140,0.25)}
+.btn-pink:hover{transform:translateY(-1px);box-shadow:0 6px 24px rgba(233,30,140,0.35)}
+.btn-ghost{display:inline-flex;align-items:center;gap:8px;background:transparent;color:rgba(255,255,255,0.8);padding:14px 24px;border-radius:8px;font-size:14px;font-weight:500;text-decoration:none;border:1px solid rgba(255,255,255,0.18)}
+.hero-trust{display:flex;align-items:center;gap:12px;margin-top:1.5rem;font-size:11px;color:rgba(255,255,255,0.3);flex-wrap:wrap}
+.hero-trust b{color:rgba(255,255,255,0.55)}
+/* Sidebar card */
+.sidebar-card{background:var(--dark2);border:1px solid rgba(255,255,255,0.08);border-radius:14px;padding:1.75rem;position:sticky;top:80px}
+.sidebar-card h3{font-family:var(--font-display);font-size:1.15rem;font-weight:700;margin-bottom:0.25rem}
+.sidebar-phone{font-family:var(--font-display);font-size:1.85rem;font-weight:800;color:var(--pink);text-decoration:none;display:block;margin:0.4rem 0}
+.sidebar-card p{font-size:12.5px;color:rgba(255,255,255,0.4);margin-bottom:1.25rem;line-height:1.5}
+.sidebar-btn{display:block;padding:12px;border-radius:7px;font-size:13.5px;font-weight:600;text-decoration:none;text-align:center;margin-bottom:7px}
+.sidebar-btn.pink{background:var(--pink);color:#fff}
+.sidebar-btn.outline{background:transparent;color:rgba(255,255,255,0.7);border:1px solid rgba(255,255,255,0.15)}
+.sidebar-facts{margin-top:1.25rem;padding-top:1.25rem;border-top:1px solid rgba(255,255,255,0.07)}
+.sidebar-fact{display:flex;align-items:center;gap:10px;font-size:12px;color:rgba(255,255,255,0.5);margin-bottom:7px}
+.sidebar-fact b{color:rgba(255,255,255,0.75)}
+/* Content area */
+.content{max-width:1100px;margin:0 auto;padding:4.5rem 2rem}
+.sec{margin-bottom:4rem}
+.sec-label{font-size:10px;font-weight:700;letter-spacing:0.12em;text-transform:uppercase;color:var(--pink);margin-bottom:0.5rem;display:block}
+h2.sec-h2{font-family:var(--font-display);font-size:clamp(1.6rem,2.5vw,2.1rem);font-weight:800;letter-spacing:-0.02em;margin-bottom:0.9rem;line-height:1.15}
+h2.sec-h2 em{font-style:normal;color:var(--pink)}
+h3.sub-h3{font-size:1.05rem;font-weight:600;margin:1.75rem 0 0.5rem;color:rgba(255,255,255,0.9)}
+.prose{font-size:15px;color:rgba(255,255,255,0.58);line-height:1.85;font-weight:300}
+.prose+.prose{margin-top:0.85rem}
+/* Card grids */
+.card-3{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-top:1.5rem}
+.card-2{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-top:1.5rem}
+.card-4{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin-top:1.5rem}
+.card{background:var(--dark2);border:1px solid rgba(255,255,255,0.07);border-radius:12px;padding:1.4rem}
+.card .tag{font-size:10px;font-weight:700;letter-spacing:0.09em;text-transform:uppercase;color:var(--pink);display:block;margin-bottom:0.5rem}
+.card h4{font-size:15px;font-weight:600;margin-bottom:0.4rem}
+.card p{font-size:13px;color:rgba(255,255,255,0.45);line-height:1.6}
+/* Pricing table */
+.price-table{width:100%;border-collapse:collapse;margin-top:1.25rem;font-size:13.5px}
+.price-table th{padding:10px 14px;text-align:left;background:rgba(233,30,140,0.08);border-bottom:1px solid rgba(255,255,255,0.08);font-size:10px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:rgba(255,255,255,0.4)}
+.price-table td{padding:11px 14px;border-bottom:1px solid rgba(255,255,255,0.05);color:rgba(255,255,255,0.65)}
+.price-table td.price{color:var(--pink);font-weight:700}
+.price-table tr:last-child td{border-bottom:none}
+/* Steps */
+.steps{display:grid;gap:1px;margin-top:1.25rem}
+.step{background:var(--dark2);border:1px solid rgba(255,255,255,0.07);padding:1.25rem 1.5rem;display:flex;gap:1.25rem;align-items:start}
+.step:first-child{border-radius:12px 12px 0 0}
+.step:last-child{border-radius:0 0 12px 12px}
+.step-num{width:32px;height:32px;border-radius:50%;background:var(--pink);display:flex;align-items:center;justify-content:center;font-size:13px;font-weight:700;color:#fff;flex-shrink:0;margin-top:2px}
+.step h4{font-size:14.5px;font-weight:600;margin-bottom:0.3rem}
+.step p{font-size:13px;color:rgba(255,255,255,0.45);line-height:1.6}
 /* FAQ */
-.faq-list{border:1px solid rgba(255,255,255,0.07);border-radius:12px;overflow:hidden;margin-top:1.5rem}
+.faq-wrap{border:1px solid rgba(255,255,255,0.07);border-radius:12px;overflow:hidden;margin-top:1.25rem}
 .faq-item{border-bottom:1px solid rgba(255,255,255,0.06)}
-.faq-item:last-child{border-bottom:none}
-.faq-q{display:flex;align-items:center;justify-content:space-between;padding:1.1rem 1.25rem;cursor:pointer;font-size:14.5px;font-weight:600;gap:1rem;transition:background 0.15s}
-.faq-q:hover{background:rgba(255,255,255,0.03)}
-.faq-q .icon{font-size:18px;color:var(--pink);flex-shrink:0;transition:transform 0.25s;line-height:1}
-.faq-a{display:none;padding:0 1.25rem 1.1rem;font-size:13.5px;color:rgba(255,255,255,0.55);line-height:1.75}
-.faq-item.open .faq-q .icon{transform:rotate(45deg)}
+.faq-item:last-child{border:none}
+.faq-q{display:flex;justify-content:space-between;align-items:center;padding:1rem 1.25rem;cursor:pointer;font-size:14.5px;font-weight:600;gap:1rem;transition:background 0.15s}
+.faq-q:hover{background:rgba(255,255,255,0.025)}
+.faq-q .ico{color:var(--pink);font-size:20px;flex-shrink:0;transition:transform 0.25s;line-height:1}
+.faq-a{display:none;padding:0 1.25rem 1rem;font-size:13.5px;color:rgba(255,255,255,0.5);line-height:1.75}
+.faq-item.open .faq-q .ico{transform:rotate(45deg)}
 .faq-item.open .faq-a{display:block}
-/* Other cities */
-.other-cities{display:flex;flex-wrap:wrap;gap:8px;margin-top:1.25rem}
-.other-city{background:var(--dark2);border:1px solid rgba(255,255,255,0.07);border-radius:7px;padding:8px 16px;text-decoration:none;color:rgba(255,255,255,0.6);font-size:13px;transition:all 0.2s}
-.other-city:hover{border-color:rgba(233,30,140,0.3);color:#fff}
+/* Reviews */
+.rev-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin-top:1.5rem}
+.rev{background:var(--dark2);border:1px solid rgba(255,255,255,0.07);border-radius:11px;padding:1.4rem}
+.rev-top{display:flex;align-items:center;gap:10px;margin-bottom:9px}
+.av{width:36px;height:36px;background:var(--pink);border-radius:50%;display:flex;align-items:center;justify-content:center;font-weight:700;font-size:13px;color:#fff;flex-shrink:0}
+.rev-name{font-size:13.5px;font-weight:600}
+.rev-meta{font-size:11px;color:rgba(255,255,255,0.3)}
+.stars{color:#FFB800;font-size:12px;letter-spacing:1px}
+.rev-text{font-size:13px;color:rgba(255,255,255,0.6);font-style:italic;line-height:1.7}
+.rev-svc{display:inline-block;font-size:10.5px;font-weight:600;color:var(--pink);background:rgba(233,30,140,0.08);border:1px solid rgba(233,30,140,0.2);padding:2px 9px;border-radius:4px;margin-top:7px}
+/* Stat row */
+.stat-row{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin:1.5rem 0}
+.stat{background:var(--dark2);border:1px solid rgba(255,255,255,0.07);border-radius:11px;padding:1.4rem;text-align:center}
+.stat .num{font-family:var(--font-display);font-size:2.4rem;font-weight:800;color:var(--pink);line-height:1;margin-bottom:0.3rem}
+.stat .lbl{font-size:11.5px;color:rgba(255,255,255,0.4);line-height:1.35}
+/* Svc links */
+.svc-links{display:grid;grid-template-columns:repeat(3,1fr);gap:7px;margin-top:1.25rem}
+.svc-link{background:var(--dark2);border:1px solid rgba(255,255,255,0.07);border-radius:8px;padding:10px 13px;text-decoration:none;color:rgba(255,255,255,0.65);font-size:13px;display:flex;justify-content:space-between;align-items:center;transition:border-color 0.2s}
+.svc-link:hover{border-color:rgba(233,30,140,0.3);color:#fff}
+.svc-link .pr{font-size:10.5px;color:var(--pink);font-weight:600}
 /* CTA band */
 .cta-band{background:var(--pink);padding:3.5rem 2rem;text-align:center}
 .cta-band h2{font-family:var(--font-display);font-size:clamp(1.6rem,3vw,2.2rem);font-weight:800;color:#fff;margin-bottom:0.5rem}
 .cta-band p{font-size:15px;color:rgba(255,255,255,0.75);margin-bottom:1.75rem}
 .cta-buttons{display:flex;gap:12px;justify-content:center;flex-wrap:wrap}
-.btn-white{display:inline-flex;align-items:center;gap:8px;background:#fff;color:var(--pink);padding:13px 26px;border-radius:8px;font-size:14px;font-weight:700;text-decoration:none;transition:all 0.2s}
-.btn-white:hover{transform:translateY(-1px)}
-.btn-outline-w{display:inline-flex;align-items:center;gap:8px;background:transparent;color:#fff;padding:13px 26px;border-radius:8px;font-size:14px;font-weight:600;text-decoration:none;border:2px solid rgba(255,255,255,0.5);transition:all 0.2s}
-.btn-outline-w:hover{border-color:#fff;background:rgba(255,255,255,0.1)}
-@media(max-width:1024px){.city-svc-grid{grid-template-columns:repeat(2,1fr)}}
-@media(max-width:768px){.nav-links{display:none}.sticky-bar{display:flex}body{padding-bottom:70px}.city-svc-grid,.nbhd-grid,.reviews-grid{grid-template-columns:1fr}.footer-top{grid-template-columns:1fr 1fr}}
+.btn-white{display:inline-flex;align-items:center;gap:8px;background:#fff;color:var(--pink);padding:13px 26px;border-radius:8px;font-size:14px;font-weight:700;text-decoration:none}
+.btn-ow{display:inline-flex;align-items:center;gap:8px;background:transparent;color:#fff;padding:13px 26px;border-radius:8px;font-size:14px;font-weight:600;text-decoration:none;border:2px solid rgba(255,255,255,0.45)}
+/* Highlight box */
+.callout{background:rgba(233,30,140,0.06);border-left:3px solid var(--pink);padding:1rem 1.25rem;border-radius:0 8px 8px 0;margin:1.5rem 0;font-size:13.5px;color:rgba(255,255,255,0.65);line-height:1.7}
+.callout b{color:rgba(255,255,255,0.9)}
+/* Anchor tab nav */
+.tab-nav{display:flex;gap:4px;border-bottom:1px solid rgba(255,255,255,0.07);margin-bottom:2.5rem;flex-wrap:wrap}
+.tab-link{padding:10px 18px;font-size:13px;font-weight:600;color:rgba(255,255,255,0.45);text-decoration:none;border-bottom:2px solid transparent;margin-bottom:-1px;transition:all 0.15s}
+.tab-link:hover,.tab-link.active{color:var(--pink);border-bottom-color:var(--pink)}
+/* Two col layout */
+.two-col{display:grid;grid-template-columns:1fr 1fr;gap:2.5rem;align-items:start}
+.list-check{margin:0.75rem 0 0 0;padding:0;list-style:none}
+.list-check li{display:flex;align-items:start;gap:9px;font-size:14px;color:rgba(255,255,255,0.6);line-height:1.6;margin-bottom:7px}
+.list-check li::before{content:'✓';color:var(--pink);font-weight:700;flex-shrink:0;margin-top:2px}
+/* Responsive */
+@media(max-width:1024px){.hero-inner{grid-template-columns:1fr}.sidebar-card{display:none}.card-3,.card-4{grid-template-columns:1fr 1fr}.stat-row{grid-template-columns:1fr 1fr}.rev-grid{grid-template-columns:1fr 1fr}.two-col{grid-template-columns:1fr}}
+@media(max-width:768px){.nav-links{display:none}.sticky-bar{display:flex}body{padding-bottom:70px}.card-3,.card-4,.card-2{grid-template-columns:1fr}.svc-links{grid-template-columns:1fr 1fr}.footer-top{grid-template-columns:1fr 1fr}.rev-grid{grid-template-columns:1fr}}
+
 </style>
 </head>
 <body>
@@ -271,137 +315,94 @@ h2.sec-title{font-family:var(--font-display);font-size:1.75rem;font-weight:800;l
   </div>
 </nav>
 
-<div class="city-hero">
-  <div class="city-hero-inner">
-    <nav class="breadcrumb" aria-label="Breadcrumb">
-      <a href="/">Home</a><span>/</span><a href="/service-areas/">Service Areas</a><span>/</span><span style="color:rgba(255,255,255,0.55)">Garden City Beach</span>
-    </nav>
-    <div class="city-badge">📍 Serving Garden City Beach, SC</div>
-    <h1>Property Maintenance Services in<br><em>Garden City Beach, SC</em></h1>
-    <p class="city-hero-desc">Garden City Beach is a tight-knit oceanfront community that sits between Surfside Beach and Murrells Inlet — and it punches well above its size when it comes to vacation rental activity. The famous Garden City Pier, dense oceanfront rental inventory, and strong repeat visitor base make this one of the Grand Strand's most active STR markets. Bakerss serves Garden City Beach property owners and investors with specialized vacation rental cleaning and full-service property maintenance.</p>
-    <div class="hero-ctas">
-      <a href="/get-quote/" class="btn-primary">Get a Free Quote →</a>
-      <a href="tel:8434677136" class="btn-secondary">📞 843-467-7136</a>
+<div class="hero">
+  <div class="hero-inner">
+    <div>
+      <nav class="breadcrumb"><a href="/">Home</a> <span>/</span> <a href="/service-areas/">Service Areas</a> <span>/</span> <span style="color:rgba(255,255,255,0.5)">Garden City Beach</span></nav>
+      <div class="badge">📍 Garden City Beach, SC · The Authentic Grand Strand</div>
+      <h1 class="hero-h1">Property Maintenance in<br><em>Garden City Beach, SC</em></h1>
+      <p class="hero-desc">Garden City Beach has resisted the impulse to become what it's surrounded by. While development pressed north from Murrells Inlet and south from Surfside Beach, Garden City held its character — the pier, the compact oceanfront streets, the beach cottages that tell the story of decades of summer use. That authenticity is exactly what its guests come for. Bakerss keeps those properties maintained to the standard that authentic beach towns deserve.</p>
+      <div class="hero-btns">
+        <a href="/get-quote/" class="btn-pink">Get a Free Estimate →</a>
+        <a href="tel:8434677136" class="btn-ghost">📞 843-467-7136</a>
+      </div>
+      <div class="hero-trust">
+        <span>⭐ <b>5.0</b> Google Rating</span> · <span>✓ <b>Licensed &amp; Insured</b></span> · <span>📍 <b>Locally Owned</b></span>
+      </div>
     </div>
-    <div class="city-trust">
-      <div class="trust-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>5-Star Rated</div>
-      <div class="trust-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>Licensed &amp; Insured</div>
-      <div class="trust-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>24/7 Phone &amp; Text</div>
-      <div class="trust-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>Locally Owned</div>
+    <div class="sidebar-card">
+      <h3>Free Garden City Beach Estimate</h3>
+      <a href="tel:8434677136" class="sidebar-phone">843-467-7136</a>
+      <p>Call or text — Ray and Courtney respond personally to every Garden City Beach inquiry. Same day, always.</p>
+      <a href="/get-quote/" class="sidebar-btn pink">Get a Free Quote →</a>
+      <a href="tel:8434677136" class="sidebar-btn outline">📞 Call or Text Now</a>
+      <div class="sidebar-facts">
+        <div class="sidebar-fact">⭐ <span><b>5.0-Star</b> Google Rating</span></div>
+        <div class="sidebar-fact">✓ <span><b>Licensed &amp; Insured</b> in SC</span></div>
+        <div class="sidebar-fact">📞 <span><b>24/7</b> Phone &amp; Text</span></div>
+        <div class="sidebar-fact">🏠 <span><b>15+ Services</b> available</span></div>
+      </div>
     </div>
   </div>
 </div>
 
-<div class="city-content">
+<div class="content">
 
-  <div class="content-sec">
-    <span class="sec-label">About Garden City Beach</span>
-    <h2 class="sec-title">Serving the Garden City Beach Community</h2>
-    <p class="prose">Garden City Beach's character was shaped by its pier — the Garden City Pier, originally built in 1945 and rebuilt after Hurricane Hugo in 1989 — which has been the community's social and commercial anchor for generations. The community incorporated as a town in 1981 after years as an unincorporated beach community. Garden City Beach has maintained a more intimate, authentic beach town character than the developed resort strips to the north, attracting a loyal base of repeat visitors who return year after year to the same rental cottages and condominiums. This loyalty makes STR reputation — and the cleanliness and condition of rental properties — especially important in Garden City Beach's competitive vacation rental market.</p>
-    <p class="prose">Garden City Beach's compact oceanfront layout and dense vacation rental inventory create a unique combination of maintenance challenges. The high STR concentration means turnover cleaning demand is intense during peak season — sometimes with same-day checkout-to-checkin requirements. Oceanfront salt air exposure is among the most severe on the Grand Strand, accelerating exterior paint degradation, metal corrosion, and surface mildew growth. The community's older housing stock — many properties were built in the 1960s through 1980s — requires more frequent repairs and updates than newer developments further inland.</p>
-    <p class="prose">Garden City Beach's property mix is heavily weighted toward vacation rental cottages, older oceanfront homes, and condominiums in smaller beachside buildings. Few high-rise towers exist here — the character is beach cottage, not resort tower. This creates strong demand for single-family rental cleaning, exterior maintenance, and ongoing repair services. Many owners are multi-generational families who've owned their Garden City property for decades and want a maintenance team that treats it with the care it deserves.</p>
-  </div>
-
-  <div class="content-sec">
-    <span class="sec-label">Services in Garden City Beach</span>
-    <h2 class="sec-title">All Services Available in Garden City Beach</h2>
-    <p class="prose">Click any service below for Garden City Beach-specific information, pricing, and local examples.</p>
-    <div class="city-svc-grid"><a href="/service-areas/garden-city/lawn-care/" class="city-svc-card">
-  <div class="csvc-top"><h3>Lawn Care</h3><span class="price-tag">Starting at $50</span></div>
-  <div class="csvc-arrow">→</div>
-</a><a href="/service-areas/garden-city/pressure-washing/" class="city-svc-card">
-  <div class="csvc-top"><h3>Pressure Washing</h3><span class="price-tag">Starting at $125</span></div>
-  <div class="csvc-arrow">→</div>
-</a><a href="/service-areas/garden-city/interior-cleaning/" class="city-svc-card">
-  <div class="csvc-top"><h3>Interior Cleaning</h3><span class="price-tag">Starting at $100</span></div>
-  <div class="csvc-arrow">→</div>
-</a><a href="/service-areas/garden-city/airbnb-cleaning/" class="city-svc-card">
-  <div class="csvc-top"><h3>Airbnb / STR Cleaning</h3><span class="price-tag">Starting at $100</span></div>
-  <div class="csvc-arrow">→</div>
-</a><a href="/service-areas/garden-city/landscaping/" class="city-svc-card">
-  <div class="csvc-top"><h3>Landscaping</h3><span class="price-tag">Free quote</span></div>
-  <div class="csvc-arrow">→</div>
-</a><a href="/service-areas/garden-city/gutter-cleaning/" class="city-svc-card">
-  <div class="csvc-top"><h3>Gutter Cleaning</h3><span class="price-tag">Starting at $99</span></div>
-  <div class="csvc-arrow">→</div>
-</a><a href="/service-areas/garden-city/painting/" class="city-svc-card">
-  <div class="csvc-top"><h3>Painting</h3><span class="price-tag">Free quote</span></div>
-  <div class="csvc-arrow">→</div>
-</a><a href="/service-areas/garden-city/handyman-services/" class="city-svc-card">
-  <div class="csvc-top"><h3>Handyman Services</h3><span class="price-tag">Starting at $75/hr</span></div>
-  <div class="csvc-arrow">→</div>
-</a><a href="/service-areas/garden-city/concrete-curbing/" class="city-svc-card">
-  <div class="csvc-top"><h3>Concrete Curbing</h3><span class="price-tag">Free quote</span></div>
-  <div class="csvc-arrow">→</div>
-</a><a href="/service-areas/garden-city/junk-removal/" class="city-svc-card">
-  <div class="csvc-top"><h3>Junk Removal</h3><span class="price-tag">Starting at $99</span></div>
-  <div class="csvc-arrow">→</div>
-</a><a href="/service-areas/garden-city/deck-building-repair/" class="city-svc-card">
-  <div class="csvc-top"><h3>Deck Building &amp; Repair</h3><span class="price-tag">Free quote</span></div>
-  <div class="csvc-arrow">→</div>
-</a><a href="/service-areas/garden-city/property-maintenance/" class="city-svc-card">
-  <div class="csvc-top"><h3>Property Maintenance Plans</h3><span class="price-tag">Monthly plans</span></div>
-  <div class="csvc-arrow">→</div>
-</a></div>
+  <div class="sec">
+    <span class="sec-label">About the Market</span>
+    <h2 class="sec-h2">Property Maintenance in Garden City Beach, SC</h2>
+    <p class="prose">Garden City Beach's property maintenance market is defined by two characteristics. First, the housing stock: a significant portion of Garden City's vacation rental inventory consists of homes built between the 1960s and 1990s — properties with real character and real ongoing maintenance demands. Older construction near the ocean in South Carolina requires consistent attention that newer construction doesn't. Second, the intensity of STR use: Garden City's compact community has one of the higher STR densities on the South Strand, with back-to-back summer bookings that accumulate wear faster than comparable markets. The combination of older homes and high guest volume makes professional maintenance not just beneficial but essential for property owners who want to protect their investment and their reviews.</p>
+    <div class="card-2" style="margin-top:1.5rem"><div class="card"><span class="tag">Older Housing Stock</span><h4>Character and Maintenance</h4><p>Garden City's 1960s–1990s beach cottages have charm that newer construction can't replicate — and maintenance demands that can't be deferred. Salt air on aging materials, paint cycles, hardware corrosion, and structural wear all require consistent professional attention.</p></div><div class="card"><span class="tag">Garden City Pier</span><h4>Anchor and Identity</h4><p>The Garden City Pier is the community's defining landmark — rebuilt after Hurricane Hugo and drawing visitors to this stretch of the beach specifically. The pier's draw is part of what fills rental calendars and maintains property values throughout the community.</p></div><div class="card"><span class="tag">Dense STR Market</span><h4>Back-to-Back Summer Season</h4><p>Garden City's vacation rental concentration and peak season intensity mean properties see high guest volumes — 30–50+ stays annually for the most active rentals. That volume accelerates wear on everything from door hardware to flooring to exterior surfaces.</p></div><div class="card"><span class="tag">South Strand Position</span><h4>Accessible Location</h4><p>Garden City's position between Surfside Beach and Murrells Inlet provides convenient access to the dining of the Marshwalk, the retail of Myrtle Beach, and the quiet authenticity of the inlet without being in the middle of the resort corridor.</p></div></div>
   </div>
 
-  <div class="content-sec">
-    <span class="sec-label">Neighborhoods We Serve</span>
-    <h2 class="sec-title">Communities in Garden City Beach We Know Well</h2>
-    <p class="prose">We serve every corner of Garden City Beach and know the unique property maintenance needs of each community.</p>
-    <div class="nbhd-grid"><div class="nbhd-card"><h4>Oceanfront Blocks</h4><p>The dense vacation rental core of Garden City Beach. Beach cottages, condos, and duplex rentals with very high seasonal turnover. Key service: STR turnover cleaning.</p></div><div class="nbhd-card"><h4>Garden City Pier Area</h4><p>The commercial and social heart of Garden City. Mix of retail, restaurants, and residential. Demand: commercial cleaning, pressure washing, exterior maintenance.</p></div><div class="nbhd-card"><h4>South Murrells Inlet Border</h4><p>Transitional properties between Garden City and Murrells Inlet. Growing mix of primary and vacation properties. Demand: full property maintenance.</p></div><div class="nbhd-card"><h4>Surfside Beach Border</h4><p>North end of Garden City bordering Surfside. Residential neighborhoods with mix of vacation and primary residences. Demand: lawn care, gutter cleaning.</p></div><div class="nbhd-card"><h4>Atlantic Avenue Corridor</h4><p>Main commercial and residential artery through Garden City. Demand: commercial and residential property maintenance.</p></div><div class="nbhd-card"><h4>Intracoastal Side</h4><p>Properties on the Intracoastal Waterway side with boat access and marsh views. Demand: dock maintenance, landscaping, exterior cleaning.</p></div></div>
+  <div class="sec">
+    <span class="sec-label">All Services</span>
+    <h2 class="sec-h2">Every Service We Offer in Garden City Beach</h2>
+    <div class="svc-links"><a href="/service-areas/garden-city/airbnb-cleaning/" class="svc-link">Airbnb Cleaning<span class="pr">From $100</span></a><a href="/service-areas/garden-city/lawn-care/" class="svc-link">Lawn Care<span class="pr">From $50</span></a><a href="/service-areas/garden-city/pressure-washing/" class="svc-link">Pressure Washing<span class="pr">From $125</span></a><a href="/service-areas/garden-city/gutter-cleaning/" class="svc-link">Gutter Cleaning<span class="pr">From $99</span></a><a href="/service-areas/garden-city/interior-cleaning/" class="svc-link">Interior Cleaning<span class="pr">From $100</span></a><a href="/service-areas/garden-city/landscaping/" class="svc-link">Landscaping<span class="pr">Free quote</span></a><a href="/service-areas/garden-city/painting/" class="svc-link">Painting<span class="pr">Free quote</span></a><a href="/service-areas/garden-city/handyman-services/" class="svc-link">Handyman Services<span class="pr">From $75/hr</span></a><a href="/service-areas/garden-city/flooring/" class="svc-link">Flooring<span class="pr">Free quote</span></a><a href="/service-areas/garden-city/junk-removal/" class="svc-link">Junk Removal<span class="pr">From $99</span></a><a href="/service-areas/garden-city/deck-building-repair/" class="svc-link">Deck Building<span class="pr">Free quote</span></a><a href="/service-areas/garden-city/property-maintenance/" class="svc-link">Property Plans<span class="pr">Monthly</span></a></div>
   </div>
 
-  <div class="content-sec">
-    <span class="sec-label">What Clients Say</span>
-    <h2 class="sec-title">Reviews from Garden City Beach Customers</h2>
-    <div class="reviews-grid"><div class="review-card">
-  <div style="display:flex;align-items:center;gap:10px;margin-bottom:10px">
-    <div style="width:38px;height:38px;background:var(--pink);border-radius:50%;display:flex;align-items:center;justify-content:center;font-weight:700;font-size:13px;color:#fff;flex-shrink:0">M</div>
-    <div><div style="font-size:14px;font-weight:600">Michael T.</div><div style="color:#FFB800;font-size:12px">★★★★★</div></div>
-  </div>
-  <p style="font-size:13.5px;color:rgba(255,255,255,0.6);font-style:italic;line-height:1.7;margin-bottom:8px">"Ray and his team handled our vacation rental turnover cleanings all season. Every single time, the property was spotless and guest-ready. Couldn't ask for more reliable service."</p>
-  <div style="font-size:11px;color:rgba(255,255,255,0.3)">Airbnb Cleaning · Myrtle Beach, SC</div>
-</div><div class="review-card">
-  <div style="display:flex;align-items:center;gap:10px;margin-bottom:10px">
-    <div style="width:38px;height:38px;background:var(--pink);border-radius:50%;display:flex;align-items:center;justify-content:center;font-weight:700;font-size:13px;color:#fff;flex-shrink:0">S</div>
-    <div><div style="font-size:14px;font-weight:600">Sandra K.</div><div style="color:#FFB800;font-size:12px">★★★★★</div></div>
-  </div>
-  <p style="font-size:13.5px;color:rgba(255,255,255,0.6);font-style:italic;line-height:1.7;margin-bottom:8px">"As an out-of-state owner I needed someone I could trust completely. Bakerss handles everything without me having to follow up. Exactly what I needed."</p>
-  <div style="font-size:11px;color:rgba(255,255,255,0.3)">Property Maintenance · Surfside Beach, SC</div>
-</div><div class="review-card">
-  <div style="display:flex;align-items:center;gap:10px;margin-bottom:10px">
-    <div style="width:38px;height:38px;background:var(--pink);border-radius:50%;display:flex;align-items:center;justify-content:center;font-weight:700;font-size:13px;color:#fff;flex-shrink:0">L</div>
-    <div><div style="font-size:14px;font-weight:600">Leilyn N.</div><div style="color:#FFB800;font-size:12px">★★★★★</div></div>
-  </div>
-  <p style="font-size:13.5px;color:rgba(255,255,255,0.6);font-style:italic;line-height:1.7;margin-bottom:8px">"Great service. On time, professional, thorough — fair pricing. Highly recommend to anyone in the Myrtle Beach area."</p>
-  <div style="font-size:11px;color:rgba(255,255,255,0.3)">Pressure Washing · Myrtle Beach, SC</div>
-</div></div>
+  <div class="sec">
+    <span class="sec-label">Neighborhoods &amp; Communities</span>
+    <h2 class="sec-h2">Garden City Beach Communities We Serve</h2>
+    <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:7px;margin-top:1rem"></div>
   </div>
 
-  <div class="content-sec">
-    <span class="sec-label">Questions &amp; Answers</span>
-    <h2 class="sec-title">Frequently Asked Questions — Garden City Beach</h2>
-    <div class="faq-list"><div class="faq-item"><div class="faq-q" onclick="toggleFaq(this)">Do you clean Airbnb and vacation rentals in Garden City Beach?<span class="icon">+</span></div><div class="faq-a">Yes — vacation rental cleaning is our highest-volume service in Garden City Beach. The dense STR market here creates constant demand for professional turnover cleaning. We coordinate with your rental calendar and can handle same-day turnovers during peak summer season.</div></div><div class="faq-item"><div class="faq-q" onclick="toggleFaq(this)">How much does vacation rental cleaning cost in Garden City Beach?<span class="icon">+</span></div><div class="faq-a">Vacation rental cleaning in Garden City Beach starts at $100 for smaller cottages and condos. Most standard beach cottages and homes run $125–$275 depending on size and number of bedrooms. We provide free estimates based on your specific property.</div></div><div class="faq-item"><div class="faq-q" onclick="toggleFaq(this)">Do you handle the same-day turnovers common in Garden City Beach?<span class="icon">+</span></div><div class="faq-a">Yes. Same-day turnovers — where a guest checks out in the morning and a new guest arrives that afternoon — are a daily reality during Garden City Beach's peak season. We're experienced at working efficiently in tight windows without cutting corners.</div></div><div class="faq-item"><div class="faq-q" onclick="toggleFaq(this)">Do you pressure wash older beach homes in Garden City?<span class="icon">+</span></div><div class="faq-a">Yes. Garden City Beach has a significant inventory of older coastal homes that require regular pressure washing to combat heavy salt air mildew and algae growth. We use appropriate pressure levels for each surface type — soft washing on older siding, higher pressure on concrete.</div></div><div class="faq-item"><div class="faq-q" onclick="toggleFaq(this)">What other services do you offer Garden City Beach property owners?<span class="icon">+</span></div><div class="faq-a">Beyond vacation rental cleaning, we provide lawn care, landscaping, gutter cleaning, painting, handyman services, deck repair, junk removal, and full property maintenance. Many Garden City owners use us as their single-source property maintenance team.</div></div><div class="faq-item"><div class="faq-q" onclick="toggleFaq(this)">Can you maintain my Garden City Beach property year-round while I'm out of state?<span class="icon">+</span></div><div class="faq-a">Yes. Many Garden City Beach property owners live out of state and rely on Bakerss entirely for property maintenance. We handle lawn care, cleaning, repairs, and seasonal preparation without you needing to be present or follow up.</div></div><div class="faq-item"><div class="faq-q" onclick="toggleFaq(this)">How close is Garden City Beach to your other service areas?<span class="icon">+</span></div><div class="faq-a">Garden City Beach is immediately adjacent to Surfside Beach to the north and Murrells Inlet to the south. We serve all three communities as part of our regular South Strand service area.</div></div><div class="faq-item"><div class="faq-q" onclick="toggleFaq(this)">Do you offer recurring maintenance plans for Garden City Beach vacation rentals?<span class="icon">+</span></div><div class="faq-a">Yes. Our property maintenance plans bundle cleaning, lawn care, and seasonal maintenance into a predictable monthly service package. Ideal for absentee STR owners who want everything handled reliably.</div></div></div>
+  <div class="sec">
+    <span class="sec-label">Customer Reviews</span>
+    <h2 class="sec-h2">What Garden City Beach Customers Say</h2>
+    <div class="rev-grid"><div class="rev"><div class="rev-top"><div class="av">M</div><div><div class="rev-name">Michael T.</div><div class="rev-meta"><span class="stars">★★★★★</span> · Myrtle Beach, SC</div></div></div><p class="rev-text">"Every single time the property was spotless and guest-ready. Reliable service throughout the entire busy season on the Grand Strand."</p><span class="rev-svc">Airbnb Cleaning</span></div><div class="rev"><div class="rev-top"><div class="av">L</div><div><div class="rev-name">Lisa T.</div><div class="rev-meta"><span class="stars">★★★★★</span> · Myrtle Beach, SC</div></div></div><p class="rev-text">"Came within half an hour's notice and did a superb job. Whether it's cleaning, landscaping, or home repair — highly recommend for any property service."</p><span class="rev-svc">Emergency Cleaning</span></div><div class="rev"><div class="rev-top"><div class="av">S</div><div><div class="rev-name">Sandra K.</div><div class="rev-meta"><span class="stars">★★★★★</span> · Surfside Beach, SC</div></div></div><p class="rev-text">"Handles my maintenance without me having to follow up. As an out-of-state owner that peace of mind is everything."</p><span class="rev-svc">Property Maintenance</span></div></div>
   </div>
 
-  <div class="content-sec">
-    <span class="sec-label">Also Serving</span>
-    <h2 class="sec-title">Other Cities We Serve in Horry County</h2>
-    <div class="other-cities"><a href="/service-areas/myrtle-beach/" class="other-city">Myrtle Beach</a><a href="/service-areas/north-myrtle-beach/" class="other-city">North Myrtle Beach</a><a href="/service-areas/conway/" class="other-city">Conway</a><a href="/service-areas/surfside-beach/" class="other-city">Surfside Beach</a><a href="/service-areas/murrells-inlet/" class="other-city">Murrells Inlet</a><a href="/service-areas/garden-city/" class="other-city">Garden City</a><a href="/service-areas/socastee/" class="other-city">Socastee</a><a href="/service-areas/little-river/" class="other-city">Little River</a></div>
+  <div class="sec">
+    <span class="sec-label">FAQ</span>
+    <h2 class="sec-h2">Questions About Garden City Beach Property Maintenance</h2>
+    <div class="faq-wrap"><div class="faq-item"><div class="faq-q">How much does vacation rental cleaning cost in Garden City Beach?<span class="ico">+</span></div><div class="faq-a">Vacation rental turnover cleaning in Garden City Beach starts at $100. Most Garden City Beach homes run $125–$250 per turnover. Larger properties quoted on-site. Free estimates always.</div></div><div class="faq-item"><div class="faq-q">Do you handle same-day turnovers in Garden City?<span class="ico">+</span></div><div class="faq-a">Yes. Garden City's back-to-back summer schedule is something we plan for specifically. We work within your checkout-to-checkin window reliably throughout peak season.</div></div><div class="faq-item"><div class="faq-q">How often should Garden City homes be pressure washed?<span class="ico">+</span></div><div class="faq-a">Oceanfront and near-ocean Garden City properties benefit from pre-season pressure washing at minimum. Twice-yearly washing for very close-to-ocean properties is recommended given the direct salt air exposure.</div></div><div class="faq-item"><div class="faq-q">Is there a travel fee for Garden City Beach?<span class="ico">+</span></div><div class="faq-a">No. Garden City Beach is within our South Strand service area with no extra fees.</div></div></div>
+  </div>
+
+  <div class="sec">
+    <span class="sec-label">Nearby Areas</span>
+    <h2 class="sec-h2">Other Communities We Serve</h2>
+    <div class="svc-links">
+      <a href="/service-areas/north-myrtle-beach/" class="svc-link">North Myrtle Beach<span class="pr">All services</span></a>
+      <a href="/service-areas/conway/" class="svc-link">Conway<span class="pr">All services</span></a>
+      <a href="/service-areas/surfside-beach/" class="svc-link">Surfside Beach<span class="pr">All services</span></a>
+      <a href="/service-areas/murrells-inlet/" class="svc-link">Murrells Inlet<span class="pr">All services</span></a>
+      <a href="/service-areas/garden-city/" class="svc-link">Garden City Beach<span class="pr">All services</span></a>
+      <a href="/service-areas/horry-county/" class="svc-link">All of Horry County<span class="pr">Overview</span></a>
+    </div>
   </div>
 
 </div>
 
 <div class="cta-band">
-  <h2>Ready for a Free Estimate in Garden City Beach?</h2>
+  <h2>Ready to Get Started in Garden City Beach?</h2>
   <p>Free estimates · No obligation · We answer 24/7</p>
   <div class="cta-buttons">
     <a href="/get-quote/" class="btn-white">Get a Free Quote →</a>
-    <a href="tel:8434677136" class="btn-outline-w">📞 843-467-7136</a>
+    <a href="tel:8434677136" class="btn-ow">📞 843-467-7136</a>
   </div>
 </div>
-
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"LocalBusiness","name":"Bakerss Property Maintenance","telephone":"+18434677136","areaServed":{"@type":"City","name":"Garden City Beach","addressRegion":"SC"}}</script>
 <footer>
   <div class="footer-inner">
     <div class="footer-top">
@@ -425,13 +426,8 @@ h2.sec-title{font-family:var(--font-display);font-size:1.75rem;font-weight:800;l
   <a href="sms:8434677136"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15a2 2 0 01-2 2H7l-4 4V5a2 2 0 012-2h14a2 2 0 012 2z"/></svg>Text</a>
   <a href="/get-quote/" class="primary"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/></svg>Free Quote</a>
 </div>
-
 <script>
-function toggleFaq(el){var item=el.parentElement;item.classList.toggle('open');}
-</script>
-<script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Do you clean Airbnb and vacation rentals in Garden City Beach?","acceptedAnswer":{"@type":"Answer","text":"Yes — vacation rental cleaning is our highest-volume service in Garden City Beach. The dense STR market here creates constant demand for professional turnover cleaning. We coordinate with your rental calendar and can handle same-day turnovers during peak summer season."}},{"@type":"Question","name":"How much does vacation rental cleaning cost in Garden City Beach?","acceptedAnswer":{"@type":"Answer","text":"Vacation rental cleaning in Garden City Beach starts at $100 for smaller cottages and condos. Most standard beach cottages and homes run $125–$275 depending on size and number of bedrooms. We provide free estimates based on your specific property."}},{"@type":"Question","name":"Do you handle the same-day turnovers common in Garden City Beach?","acceptedAnswer":{"@type":"Answer","text":"Yes. Same-day turnovers — where a guest checks out in the morning and a new guest arrives that afternoon — are a daily reality during Garden City Beach's peak season. We're experienced at working efficiently in tight windows without cutting corners."}},{"@type":"Question","name":"Do you pressure wash older beach homes in Garden City?","acceptedAnswer":{"@type":"Answer","text":"Yes. Garden City Beach has a significant inventory of older coastal homes that require regular pressure washing to combat heavy salt air mildew and algae growth. We use appropriate pressure levels for each surface type — soft washing on older siding, higher pressure on concrete."}},{"@type":"Question","name":"What other services do you offer Garden City Beach property owners?","acceptedAnswer":{"@type":"Answer","text":"Beyond vacation rental cleaning, we provide lawn care, landscaping, gutter cleaning, painting, handyman services, deck repair, junk removal, and full property maintenance. Many Garden City owners use us as their single-source property maintenance team."}}]}</script>
-<script type="application/ld+json">
-{"@context":"https://schema.org","@type":"LocalBusiness","name":"Bakerss Property Maintenance","telephone":"+18434677136","url":"https://www.bakerss.com","areaServed":{"@type":"City","name":"Garden City Beach","addressRegion":"SC"}}
+document.querySelectorAll('.faq-q').forEach(q=>q.addEventListener('click',()=>q.parentElement.classList.toggle('open')));
 </script>
 </body>
 </html>
