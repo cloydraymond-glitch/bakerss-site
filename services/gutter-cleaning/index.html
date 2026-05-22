@@ -1,135 +1,509 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@graph": [
-    {
-      "@type": "LocalBusiness",
-      "@id": "https://www.bakerss.com/#business",
-      "name": "Bakerss Property Maintenance",
-      "url": "https://www.bakerss.com",
-      "telephone": "+18434677136",
-      "address": { "@type": "PostalAddress", "addressLocality": "Myrtle Beach", "addressRegion": "SC", "addressCountry": "US" },
-      "aggregateRating": { "@type": "AggregateRating", "ratingValue": "5", "reviewCount": "6", "bestRating": "5" }
-    },
-    {
-      "@type": "Service",
-      "@id": "https://www.bakerss.com/services/gutter-cleaning/#service",
-      "name": "Gutter Cleaning",
-      "description": "Complete gutter cleaning, downspout flushing, and inspection for homes and commercial properties across Myrtle Beach and Horry County, SC. Protects against water damage, foundation erosion, and fascia rot.",
-      "provider": { "@id": "https://www.bakerss.com/#business" },
-      "areaServed": { "@type": "County", "name": "Horry County" },
-      "serviceType": "Gutter Cleaning",
-      "url": "https://www.bakerss.com/services/gutter-cleaning/"
-    },
-    {
-      "@type": "BreadcrumbList",
-      "itemListElement": [
-        { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.bakerss.com/" },
-        { "@type": "ListItem", "position": 2, "name": "Services", "item": "https://www.bakerss.com/services/" },
-        { "@type": "ListItem", "position": 3, "name": "Gutter Cleaning", "item": "https://www.bakerss.com/services/gutter-cleaning/" }
-      ]
-    },
-    {
-      "@type": "FAQPage",
-      "mainEntity": [
-        {
-          "@type": "Question",
-          "name": "How often should gutters be cleaned in Myrtle Beach?",
-          "acceptedAnswer": { "@type": "Answer", "text": "Most Horry County homes benefit from gutter cleaning twice a year — once in late spring after pollen season and again in late fall after leaves drop. Homes near pine trees or under heavy oak canopy may need quarterly service." }
-        },
-        {
-          "@type": "Question",
-          "name": "Do hurricanes affect gutter maintenance?",
-          "acceptedAnswer": { "@type": "Answer", "text": "Yes. Hurricanes and tropical storms deposit heavy debris including leaves, sticks, Spanish moss, and roof granules directly into gutters. We recommend scheduling a post-storm gutter cleaning after any significant weather event." }
-        },
-        {
-          "@type": "Question",
-          "name": "How much does gutter cleaning cost in Myrtle Beach?",
-          "acceptedAnswer": { "@type": "Answer", "text": "Pricing depends on the size and height of the home, the number of linear feet of gutter, and how clogged they are. We always provide a free on-site estimate. Most residential homes are very affordable." }
-        },
-        {
-          "@type": "Question",
-          "name": "Do you flush the downspouts too?",
-          "acceptedAnswer": { "@type": "Answer", "text": "Yes. Every gutter cleaning includes downspout flushing to ensure water flows freely all the way to the ground — not just from the gutter troughs themselves." }
-        },
-        {
-          "@type": "Question",
-          "name": "Can you clean gutters on multi-story homes?",
-          "acceptedAnswer": { "@type": "Answer", "text": "Yes. We clean gutters on single and multi-story homes throughout Horry County. Our team has the equipment and safety training to work at height safely." }
-        },
-        {
-          "@type": "Question",
-          "name": "Do you also clean the outside of gutters?",
-          "acceptedAnswer": { "@type": "Answer", "text": "Yes. We offer gutter brightening — cleaning the exterior face of gutters to remove black streaks, algae, and oxidation that make gutters look dirty from the street." }
-        }
-      ]
-    }
-  ]
-}
-</script>
-
-
-
-
-<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0">
-<title>Gutter Cleaning in Myrtle Beach, SC | Bakerss</title>
-<meta name="description" content="Professional gutter cleaning in Myrtle Beach, Murrells Inlet &amp; Horry County SC. Full gutter cleaning, flushing &amp; inspection. Protect your home from water damage. Call (843) 467-7136.">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Gutter Cleaning in Myrtle Beach & Horry County, SC | Bakerss</title>
+<meta name="description" content="Professional gutter cleaning in Myrtle Beach and Horry County, SC. Debris removal, downspout flushing, inspection report. Starting at $99. Storm emergency response. Call 843-467-7136.">
 <link rel="canonical" href="https://www.bakerss.com/services/gutter-cleaning/">
-<script type="application/ld+json">{"@context":"https://schema.org","@type":"Service","name":"Gutter Cleaning Myrtle Beach SC","provider":{"@type":"LocalBusiness","name":"Bakerss Property Maintenance","telephone":"+18434677136"},"areaServed":{"@type":"AdministrativeArea","name":"Horry County SC"}}</script>
-<link rel="stylesheet" href="/css/global.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;800&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+:root{
+  --pink:#E91E8C;--pink-dark:#C0157A;--pink-light:#FF4BAB;
+  --black:#0D0D0D;--dark:#1A1A1A;--dark2:#242424;--dark3:#2E2E2E;
+  --white:#FFFFFF;--border:rgba(255,255,255,0.1);
+  --font-display:'Playfair Display',Georgia,serif;--font-body:'DM Sans',sans-serif;
+}
+html{scroll-behavior:smooth}
+body{font-family:var(--font-body);background:var(--dark);color:var(--white);line-height:1.6;overflow-x:hidden}
+.topbar{background:var(--pink);text-align:center;padding:9px 1rem;font-size:13px;font-weight:500;color:#fff}
+.topbar a{color:#fff;text-decoration:none;font-weight:700;border-bottom:1px solid rgba(255,255,255,0.5)}
+nav{position:sticky;top:0;z-index:1000;background:rgba(13,13,13,0.97);backdrop-filter:blur(12px);border-bottom:1px solid var(--border)}
+.nav-inner{max-width:1280px;margin:0 auto;display:flex;align-items:center;gap:1rem;padding:0 2rem;height:70px}
+.logo{font-family:var(--font-display);font-size:22px;font-weight:800;color:var(--white);text-decoration:none;letter-spacing:-0.02em}
+.logo span{color:var(--pink)}
+.nav-links{display:flex;align-items:center;margin-left:1.5rem;flex:1}
+.nav-item{position:relative}
+.nav-item>a,.nav-btn{display:flex;align-items:center;gap:4px;padding:0 14px;height:70px;color:rgba(255,255,255,0.7);text-decoration:none;font-size:13.5px;font-weight:500;background:none;border:none;cursor:pointer;font-family:var(--font-body);transition:color 0.2s}
+.nav-item>a:hover,.nav-btn:hover{color:var(--white)}
+.nav-item>a svg,.nav-btn svg{width:11px;height:11px;margin-top:1px}
+.mega-menu{display:none;position:absolute;top:70px;left:50%;transform:translateX(-50%);background:var(--dark2);border:1px solid var(--border);border-radius:12px;padding:2rem;width:860px;box-shadow:0 24px 60px rgba(0,0,0,0.6);z-index:999}
+.nav-item:hover .mega-menu{display:grid;grid-template-columns:repeat(3,1fr);gap:2rem}
+.nav-item:hover .dropdown{display:block}
+.mega-col h4{font-size:10px;font-weight:600;letter-spacing:0.12em;text-transform:uppercase;color:var(--pink);margin-bottom:12px;padding-bottom:8px;border-bottom:1px solid rgba(233,30,140,0.25)}
+.mega-col a{display:flex;align-items:center;gap:8px;padding:7px 0;color:rgba(255,255,255,0.7);text-decoration:none;font-size:13.5px;transition:color 0.15s;border-bottom:1px solid rgba(255,255,255,0.04)}
+.mega-col a:last-child{border-bottom:none}
+.mega-col a:hover{color:var(--pink)}
+.dropdown{display:none;position:absolute;top:70px;left:0;background:var(--dark2);border:1px solid var(--border);border-radius:10px;padding:0.75rem 0;min-width:220px;box-shadow:0 16px 40px rgba(0,0,0,0.5);z-index:999}
+.dropdown a{display:block;padding:9px 20px;color:rgba(255,255,255,0.75);text-decoration:none;font-size:13.5px;transition:all 0.15s}
+.dropdown a:hover{color:var(--white);background:rgba(233,30,140,0.08);padding-left:24px}
+.nav-right{display:flex;align-items:center;gap:12px;margin-left:auto}
+.nav-phone{font-size:14px;font-weight:600;color:rgba(255,255,255,0.85);text-decoration:none}
+.nav-phone:hover{color:var(--pink)}
+.btn-quote-sm{background:var(--pink);color:#fff;padding:9px 20px;border-radius:6px;font-size:13px;font-weight:600;text-decoration:none;transition:background 0.2s}
+.btn-quote-sm:hover{background:var(--pink-dark)}
+/* SERVICE PAGE LAYOUT */
+.svc-hero{position:relative;background:var(--black);padding:4.5rem 2rem 3.5rem;border-bottom:1px solid rgba(255,255,255,0.06);overflow:hidden}
+.svc-hero::after{content:'';position:absolute;top:-100px;right:-100px;width:500px;height:500px;background:radial-gradient(circle,rgba(233,30,140,0.08) 0%,transparent 70%);pointer-events:none}
+.breadcrumb{display:flex;align-items:center;gap:8px;font-size:12px;color:rgba(255,255,255,0.3);margin-bottom:1.25rem}
+.breadcrumb a{color:rgba(255,255,255,0.3);text-decoration:none;transition:color 0.15s}
+.breadcrumb a:hover{color:var(--pink)}
+.breadcrumb span{color:rgba(255,255,255,0.15)}
+.svc-hero-inner{max-width:1100px;margin:0 auto;display:grid;grid-template-columns:1fr 360px;gap:3rem;align-items:start;position:relative}
+.svc-badge{display:inline-flex;align-items:center;gap:8px;background:rgba(233,30,140,0.1);border:1px solid rgba(233,30,140,0.3);border-radius:100px;padding:5px 14px;font-size:11px;font-weight:600;letter-spacing:0.08em;text-transform:uppercase;color:var(--pink-light);margin-bottom:1.25rem}
+.svc-hero h1{font-family:var(--font-display);font-size:clamp(2rem,3.5vw,3rem);font-weight:800;line-height:1.1;letter-spacing:-0.02em;margin-bottom:1rem}
+.svc-hero h1 em{font-style:normal;color:var(--pink)}
+.svc-hero-desc{font-size:16px;color:rgba(255,255,255,0.55);line-height:1.75;margin-bottom:1.75rem;font-weight:300;max-width:560px}
+.svc-ctas{display:flex;gap:10px;flex-wrap:wrap;margin-bottom:1.75rem}
+.btn-primary{display:inline-flex;align-items:center;gap:8px;background:var(--pink);color:#fff;padding:13px 24px;border-radius:8px;font-size:14px;font-weight:600;text-decoration:none;transition:all 0.2s}
+.btn-primary:hover{background:var(--pink-dark);transform:translateY(-1px)}
+.btn-secondary{display:inline-flex;align-items:center;gap:8px;background:transparent;color:rgba(255,255,255,0.8);padding:13px 24px;border-radius:8px;font-size:14px;font-weight:500;text-decoration:none;border:1px solid rgba(255,255,255,0.18);transition:all 0.2s}
+.btn-secondary:hover{border-color:rgba(255,255,255,0.4);color:#fff}
+.svc-trust{display:flex;gap:20px;flex-wrap:wrap}
+.trust-item{display:flex;align-items:center;gap:6px;font-size:12.5px;color:rgba(255,255,255,0.45)}
+.trust-item svg{width:15px;height:15px;color:var(--pink);flex-shrink:0}
+/* Quote side card */
+.quote-card{background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.1);border-radius:14px;padding:1.75rem;position:sticky;top:90px}
+.quote-card h3{font-family:var(--font-display);font-size:1.2rem;font-weight:700;margin-bottom:0.25rem}
+.quote-card .qsub{font-size:12px;color:rgba(255,255,255,0.4);margin-bottom:1.25rem}
+.form-group{margin-bottom:0.85rem}
+.form-group label{display:block;font-size:10px;font-weight:600;letter-spacing:0.08em;text-transform:uppercase;color:rgba(255,255,255,0.35);margin-bottom:5px}
+.form-group input,.form-group select{width:100%;background:rgba(255,255,255,0.05);border:1px solid rgba(255,255,255,0.1);border-radius:7px;padding:10px 13px;color:#fff;font-size:13.5px;font-family:var(--font-body);outline:none;transition:border-color 0.2s;-webkit-appearance:none}
+.form-group input::placeholder{color:rgba(255,255,255,0.25)}
+.form-group input:focus,.form-group select:focus{border-color:var(--pink)}
+.form-group select option{background:var(--dark2)}
+.btn-submit{width:100%;background:var(--pink);color:#fff;border:none;padding:13px;border-radius:7px;font-size:14px;font-weight:600;font-family:var(--font-body);cursor:pointer;margin-top:0.25rem;transition:background 0.2s}
+.btn-submit:hover{background:var(--pink-dark)}
+.q-privacy{text-align:center;font-size:11px;color:rgba(255,255,255,0.2);margin-top:0.6rem}
+.q-phone{display:flex;align-items:center;justify-content:center;gap:7px;margin-top:1rem;padding-top:1rem;border-top:1px solid rgba(255,255,255,0.07);font-size:13px;color:rgba(255,255,255,0.45)}
+.q-phone a{color:var(--pink);text-decoration:none;font-weight:600}
+/* MAIN CONTENT */
+.svc-content{max-width:1100px;margin:0 auto;padding:4rem 2rem;display:grid;grid-template-columns:1fr 360px;gap:3rem;align-items:start}
+.svc-main{}
+section.content-sec{margin-bottom:3.5rem}
+section.content-sec:last-child{margin-bottom:0}
+.sec-label{font-size:10px;font-weight:700;letter-spacing:0.12em;text-transform:uppercase;color:var(--pink);margin-bottom:0.6rem}
+h2.sec-title{font-family:var(--font-display);font-size:1.75rem;font-weight:800;letter-spacing:-0.02em;margin-bottom:1rem;line-height:1.2}
+.prose{font-size:15px;color:rgba(255,255,255,0.6);line-height:1.8;font-weight:300}
+.prose+.prose{margin-top:1rem}
+/* Service sub-cards */
+.sub-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:12px;margin-top:1.5rem}
+.sub-card{background:var(--dark2);border:1px solid rgba(255,255,255,0.07);border-radius:10px;padding:1.25rem}
+.sub-card h4{font-size:14.5px;font-weight:600;margin-bottom:0.4rem}
+.sub-card p{font-size:13px;color:rgba(255,255,255,0.45);line-height:1.6}
+.sub-card .tag{display:inline-block;font-size:11px;font-weight:600;color:var(--pink);background:rgba(233,30,140,0.08);padding:2px 8px;border-radius:4px;margin-bottom:0.5rem}
+/* Who we serve */
+.serve-list{display:grid;grid-template-columns:repeat(2,1fr);gap:10px;margin-top:1.25rem}
+.serve-item{display:flex;align-items:center;gap:10px;background:var(--dark2);border:1px solid rgba(255,255,255,0.06);border-radius:8px;padding:12px}
+.serve-item svg{color:var(--pink);width:16px;height:16px;flex-shrink:0}
+.serve-item span{font-size:13.5px;color:rgba(255,255,255,0.7)}
+/* Process steps */
+.process-steps{display:flex;flex-direction:column;gap:0;margin-top:1.25rem}
+.p-step{display:flex;gap:1.25rem;padding:1.25rem 0;border-bottom:1px solid rgba(255,255,255,0.05)}
+.p-step:last-child{border-bottom:none}
+.p-num{width:36px;height:36px;background:var(--pink);border-radius:8px;display:flex;align-items:center;justify-content:center;font-size:13px;font-weight:700;color:#fff;flex-shrink:0;margin-top:2px}
+.p-step h4{font-size:15px;font-weight:600;margin-bottom:4px}
+.p-step p{font-size:13.5px;color:rgba(255,255,255,0.5);line-height:1.6}
+/* FAQ */
+.faq-list{display:flex;flex-direction:column;gap:0;margin-top:1.25rem;border:1px solid rgba(255,255,255,0.07);border-radius:12px;overflow:hidden}
+.faq-item{border-bottom:1px solid rgba(255,255,255,0.06)}
+.faq-item:last-child{border-bottom:none}
+.faq-q{display:flex;align-items:center;justify-content:space-between;padding:1.1rem 1.25rem;cursor:pointer;font-size:14.5px;font-weight:600;gap:1rem;transition:background 0.15s}
+.faq-q:hover{background:rgba(255,255,255,0.03)}
+.faq-q .icon{font-size:18px;color:var(--pink);flex-shrink:0;transition:transform 0.25s;line-height:1}
+.faq-a{display:none;padding:0 1.25rem 1.1rem;font-size:13.5px;color:rgba(255,255,255,0.55);line-height:1.75}
+.faq-item.open .faq-q .icon{transform:rotate(45deg)}
+.faq-item.open .faq-a{display:block}
+/* Cities grid */
+.cities-row{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;margin-top:1.25rem}
+.city-link{display:flex;align-items:center;gap:7px;background:var(--dark2);border:1px solid rgba(255,255,255,0.07);border-radius:8px;padding:10px 14px;text-decoration:none;color:rgba(255,255,255,0.65);font-size:13px;transition:all 0.2s}
+.city-link:hover{border-color:rgba(233,30,140,0.35);color:var(--white)}
+.city-link::before{content:'';width:5px;height:5px;background:var(--pink);border-radius:50%;flex-shrink:0;opacity:0.6}
+/* Related services */
+.related-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:10px;margin-top:1.25rem}
+.rel-card{background:var(--dark2);border:1px solid rgba(255,255,255,0.07);border-radius:10px;padding:1.1rem 1.25rem;text-decoration:none;color:var(--white);transition:all 0.2s;display:flex;align-items:center;gap:10px}
+.rel-card:hover{border-color:rgba(233,30,140,0.35);transform:translateY(-1px)}
+.rel-card svg{color:var(--pink);width:18px;height:18px;flex-shrink:0}
+.rel-card div h4{font-size:13.5px;font-weight:600;margin-bottom:2px}
+.rel-card div p{font-size:12px;color:rgba(255,255,255,0.4)}
+/* Sidebar sticky */
+.svc-sidebar{position:sticky;top:90px;display:flex;flex-direction:column;gap:1.25rem}
+.side-card{background:var(--dark2);border:1px solid rgba(255,255,255,0.08);border-radius:12px;padding:1.5rem}
+.side-card h3{font-size:14px;font-weight:600;margin-bottom:0.9rem;padding-bottom:0.75rem;border-bottom:1px solid rgba(255,255,255,0.07)}
+.price-box{background:var(--black);border:1px solid rgba(233,30,140,0.25);border-radius:10px;padding:1.25rem;text-align:center;margin-bottom:1.25rem}
+.price-box .from{font-size:11px;color:rgba(255,255,255,0.4);margin-bottom:4px}
+.price-box .amount{font-family:var(--font-display);font-size:2.25rem;font-weight:800;color:var(--pink)}
+.price-box .note{font-size:11px;color:rgba(255,255,255,0.35);margin-top:4px}
+.review-mini{padding:10px 0;border-bottom:1px solid rgba(255,255,255,0.06)}
+.review-mini:last-child{border-bottom:none;padding-bottom:0}
+.stars{color:#FFB800;font-size:12px;margin-bottom:4px}
+.review-mini p{font-size:12.5px;color:rgba(255,255,255,0.55);font-style:italic;line-height:1.5;margin-bottom:4px}
+.review-mini .who{font-size:11px;color:rgba(255,255,255,0.3)}
+.call-side{background:var(--pink);border-radius:10px;padding:1.25rem;text-align:center}
+.call-side p{font-size:12px;color:rgba(255,255,255,0.75);margin-bottom:6px}
+.call-side a{display:block;font-family:var(--font-display);font-size:1.35rem;font-weight:800;color:#fff;text-decoration:none}
+/* CTA BAND */
+.cta-band{background:var(--pink);padding:3.5rem 2rem;text-align:center}
+.cta-band h2{font-family:var(--font-display);font-size:clamp(1.6rem,3vw,2.2rem);font-weight:800;color:#fff;margin-bottom:0.5rem}
+.cta-band p{font-size:15px;color:rgba(255,255,255,0.75);margin-bottom:1.75rem}
+.cta-buttons{display:flex;gap:12px;justify-content:center;flex-wrap:wrap}
+.btn-white{display:inline-flex;align-items:center;gap:8px;background:#fff;color:var(--pink);padding:13px 26px;border-radius:8px;font-size:14px;font-weight:700;text-decoration:none;transition:all 0.2s}
+.btn-white:hover{transform:translateY(-1px)}
+.btn-outline-w{display:inline-flex;align-items:center;gap:8px;background:transparent;color:#fff;padding:13px 26px;border-radius:8px;font-size:14px;font-weight:600;text-decoration:none;border:2px solid rgba(255,255,255,0.5);transition:all 0.2s}
+.btn-outline-w:hover{border-color:#fff;background:rgba(255,255,255,0.1)}
+/* FOOTER */
+footer{background:var(--black);border-top:1px solid rgba(255,255,255,0.07);padding:3rem 2rem 2rem}
+.footer-inner{max-width:1280px;margin:0 auto}
+.footer-top{display:grid;grid-template-columns:260px 1fr 1fr 1fr;gap:2.5rem;padding-bottom:2.5rem;border-bottom:1px solid rgba(255,255,255,0.06);margin-bottom:1.5rem}
+.footer-brand p{font-size:13px;color:rgba(255,255,255,0.35);line-height:1.7;margin:0.75rem 0}
+.footer-contact-links a{display:flex;align-items:center;gap:7px;font-size:13px;color:rgba(255,255,255,0.45);text-decoration:none;margin-bottom:5px;transition:color 0.15s}
+.footer-contact-links a:hover{color:var(--pink)}
+.footer-contact-links svg{width:14px;height:14px;color:var(--pink)}
+.footer-col h4{font-size:10px;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;color:rgba(255,255,255,0.25);margin-bottom:0.9rem}
+.footer-col a{display:block;font-size:12.5px;color:rgba(255,255,255,0.45);text-decoration:none;padding:3px 0;transition:color 0.15s}
+.footer-col a:hover{color:var(--pink)}
+.footer-bottom{display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:1rem;font-size:12px;color:rgba(255,255,255,0.2)}
+.sticky-bar{display:none;position:fixed;bottom:0;left:0;right:0;background:var(--dark2);border-top:1px solid rgba(255,255,255,0.1);z-index:1000;padding:0.5rem;gap:0.5rem}
+.sticky-bar a{flex:1;display:flex;flex-direction:column;align-items:center;gap:3px;padding:8px 4px;text-decoration:none;color:rgba(255,255,255,0.7);font-size:11px;font-weight:600;border-radius:6px}
+.sticky-bar a.primary{background:var(--pink);color:#fff}
+.sticky-bar svg{width:20px;height:20px}
+@media(max-width:1024px){.svc-hero-inner,.svc-content{grid-template-columns:1fr}.quote-card{position:static}.svc-sidebar{position:static;display:grid;grid-template-columns:1fr 1fr}}
+@media(max-width:768px){.nav-links{display:none}.sticky-bar{display:flex}body{padding-bottom:70px}.sub-grid,.serve-list,.related-grid,.cities-row{grid-template-columns:1fr}.footer-top{grid-template-columns:1fr 1fr}}
+
+/* ── PAGE STYLES ── */
+.hero{background:var(--black);padding:5rem 2rem 3.5rem;position:relative;overflow:hidden}
+.hero::after{content:'';position:absolute;top:-80px;right:-80px;width:520px;height:520px;background:radial-gradient(circle,rgba(233,30,140,0.06) 0%,transparent 70%);pointer-events:none}
+.hero-inner{max-width:1100px;margin:0 auto;position:relative;z-index:2;display:grid;grid-template-columns:1fr 320px;gap:3rem;align-items:start}
+.breadcrumb{display:flex;align-items:center;gap:6px;font-size:12px;color:rgba(255,255,255,0.3);margin-bottom:1.25rem}
+.breadcrumb a{color:rgba(255,255,255,0.3);text-decoration:none}
+.breadcrumb a:hover{color:var(--pink)}
+.breadcrumb span{color:rgba(255,255,255,0.12)}
+.badge{display:inline-flex;align-items:center;gap:6px;background:rgba(233,30,140,0.1);border:1px solid rgba(233,30,140,0.3);border-radius:100px;padding:4px 14px;font-size:10px;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;color:var(--pink);margin-bottom:1.25rem}
+h1.hero-h1{font-family:var(--font-display);font-size:clamp(2.1rem,3.5vw,3.2rem);font-weight:800;line-height:1.08;letter-spacing:-0.025em;margin-bottom:1.1rem}
+h1.hero-h1 em{font-style:normal;color:var(--pink)}
+.hero-desc{font-size:16px;color:rgba(255,255,255,0.55);line-height:1.8;font-weight:300;max-width:600px;margin-bottom:1.75rem}
+.hero-btns{display:flex;gap:10px;flex-wrap:wrap}
+.btn-pink{display:inline-flex;align-items:center;gap:8px;background:var(--pink);color:#fff;padding:14px 26px;border-radius:8px;font-size:14px;font-weight:600;text-decoration:none;transition:all 0.2s;box-shadow:0 4px 18px rgba(233,30,140,0.25)}
+.btn-pink:hover{transform:translateY(-1px);box-shadow:0 6px 24px rgba(233,30,140,0.35)}
+.btn-ghost{display:inline-flex;align-items:center;gap:8px;background:transparent;color:rgba(255,255,255,0.8);padding:14px 24px;border-radius:8px;font-size:14px;font-weight:500;text-decoration:none;border:1px solid rgba(255,255,255,0.18)}
+.hero-trust{display:flex;align-items:center;gap:12px;margin-top:1.5rem;font-size:11px;color:rgba(255,255,255,0.3);flex-wrap:wrap}
+.hero-trust b{color:rgba(255,255,255,0.55)}
+/* Sidebar card */
+.sidebar-card{background:var(--dark2);border:1px solid rgba(255,255,255,0.08);border-radius:14px;padding:1.75rem;position:sticky;top:80px}
+.sidebar-card h3{font-family:var(--font-display);font-size:1.15rem;font-weight:700;margin-bottom:0.25rem}
+.sidebar-phone{font-family:var(--font-display);font-size:1.85rem;font-weight:800;color:var(--pink);text-decoration:none;display:block;margin:0.4rem 0}
+.sidebar-card p{font-size:12.5px;color:rgba(255,255,255,0.4);margin-bottom:1.25rem;line-height:1.5}
+.sidebar-btn{display:block;padding:12px;border-radius:7px;font-size:13.5px;font-weight:600;text-decoration:none;text-align:center;margin-bottom:7px}
+.sidebar-btn.pink{background:var(--pink);color:#fff}
+.sidebar-btn.outline{background:transparent;color:rgba(255,255,255,0.7);border:1px solid rgba(255,255,255,0.15)}
+.sidebar-facts{margin-top:1.25rem;padding-top:1.25rem;border-top:1px solid rgba(255,255,255,0.07)}
+.sidebar-fact{display:flex;align-items:center;gap:10px;font-size:12px;color:rgba(255,255,255,0.5);margin-bottom:7px}
+.sidebar-fact b{color:rgba(255,255,255,0.75)}
+/* Content area */
+.content{max-width:1100px;margin:0 auto;padding:4.5rem 2rem}
+.sec{margin-bottom:4rem}
+.sec-label{font-size:10px;font-weight:700;letter-spacing:0.12em;text-transform:uppercase;color:var(--pink);margin-bottom:0.5rem;display:block}
+h2.sec-h2{font-family:var(--font-display);font-size:clamp(1.6rem,2.5vw,2.1rem);font-weight:800;letter-spacing:-0.02em;margin-bottom:0.9rem;line-height:1.15}
+h2.sec-h2 em{font-style:normal;color:var(--pink)}
+h3.sub-h3{font-size:1.05rem;font-weight:600;margin:1.75rem 0 0.5rem;color:rgba(255,255,255,0.9)}
+.prose{font-size:15px;color:rgba(255,255,255,0.58);line-height:1.85;font-weight:300}
+.prose+.prose{margin-top:0.85rem}
+/* Card grids */
+.card-3{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-top:1.5rem}
+.card-2{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-top:1.5rem}
+.card-4{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin-top:1.5rem}
+.card{background:var(--dark2);border:1px solid rgba(255,255,255,0.07);border-radius:12px;padding:1.4rem}
+.card .tag{font-size:10px;font-weight:700;letter-spacing:0.09em;text-transform:uppercase;color:var(--pink);display:block;margin-bottom:0.5rem}
+.card h4{font-size:15px;font-weight:600;margin-bottom:0.4rem}
+.card p{font-size:13px;color:rgba(255,255,255,0.45);line-height:1.6}
+/* Pricing table */
+.price-table{width:100%;border-collapse:collapse;margin-top:1.25rem;font-size:13.5px}
+.price-table th{padding:10px 14px;text-align:left;background:rgba(233,30,140,0.08);border-bottom:1px solid rgba(255,255,255,0.08);font-size:10px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:rgba(255,255,255,0.4)}
+.price-table td{padding:11px 14px;border-bottom:1px solid rgba(255,255,255,0.05);color:rgba(255,255,255,0.65)}
+.price-table td.price{color:var(--pink);font-weight:700}
+.price-table tr:last-child td{border-bottom:none}
+/* Steps */
+.steps{display:grid;gap:1px;margin-top:1.25rem}
+.step{background:var(--dark2);border:1px solid rgba(255,255,255,0.07);padding:1.25rem 1.5rem;display:flex;gap:1.25rem;align-items:start}
+.step:first-child{border-radius:12px 12px 0 0}
+.step:last-child{border-radius:0 0 12px 12px}
+.step-num{width:32px;height:32px;border-radius:50%;background:var(--pink);display:flex;align-items:center;justify-content:center;font-size:13px;font-weight:700;color:#fff;flex-shrink:0;margin-top:2px}
+.step h4{font-size:14.5px;font-weight:600;margin-bottom:0.3rem}
+.step p{font-size:13px;color:rgba(255,255,255,0.45);line-height:1.6}
+/* FAQ */
+.faq-wrap{border:1px solid rgba(255,255,255,0.07);border-radius:12px;overflow:hidden;margin-top:1.25rem}
+.faq-item{border-bottom:1px solid rgba(255,255,255,0.06)}
+.faq-item:last-child{border:none}
+.faq-q{display:flex;justify-content:space-between;align-items:center;padding:1rem 1.25rem;cursor:pointer;font-size:14.5px;font-weight:600;gap:1rem;transition:background 0.15s}
+.faq-q:hover{background:rgba(255,255,255,0.025)}
+.faq-q .ico{color:var(--pink);font-size:20px;flex-shrink:0;transition:transform 0.25s;line-height:1}
+.faq-a{display:none;padding:0 1.25rem 1rem;font-size:13.5px;color:rgba(255,255,255,0.5);line-height:1.75}
+.faq-item.open .faq-q .ico{transform:rotate(45deg)}
+.faq-item.open .faq-a{display:block}
+/* Reviews */
+.rev-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin-top:1.5rem}
+.rev{background:var(--dark2);border:1px solid rgba(255,255,255,0.07);border-radius:11px;padding:1.4rem}
+.rev-top{display:flex;align-items:center;gap:10px;margin-bottom:9px}
+.av{width:36px;height:36px;background:var(--pink);border-radius:50%;display:flex;align-items:center;justify-content:center;font-weight:700;font-size:13px;color:#fff;flex-shrink:0}
+.rev-name{font-size:13.5px;font-weight:600}
+.rev-meta{font-size:11px;color:rgba(255,255,255,0.3)}
+.stars{color:#FFB800;font-size:12px;letter-spacing:1px}
+.rev-text{font-size:13px;color:rgba(255,255,255,0.6);font-style:italic;line-height:1.7}
+.rev-svc{display:inline-block;font-size:10.5px;font-weight:600;color:var(--pink);background:rgba(233,30,140,0.08);border:1px solid rgba(233,30,140,0.2);padding:2px 9px;border-radius:4px;margin-top:7px}
+/* Stat row */
+.stat-row{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin:1.5rem 0}
+.stat{background:var(--dark2);border:1px solid rgba(255,255,255,0.07);border-radius:11px;padding:1.4rem;text-align:center}
+.stat .num{font-family:var(--font-display);font-size:2.4rem;font-weight:800;color:var(--pink);line-height:1;margin-bottom:0.3rem}
+.stat .lbl{font-size:11.5px;color:rgba(255,255,255,0.4);line-height:1.35}
+/* Svc links */
+.svc-links{display:grid;grid-template-columns:repeat(3,1fr);gap:7px;margin-top:1.25rem}
+.svc-link{background:var(--dark2);border:1px solid rgba(255,255,255,0.07);border-radius:8px;padding:10px 13px;text-decoration:none;color:rgba(255,255,255,0.65);font-size:13px;display:flex;justify-content:space-between;align-items:center;transition:border-color 0.2s}
+.svc-link:hover{border-color:rgba(233,30,140,0.3);color:#fff}
+.svc-link .pr{font-size:10.5px;color:var(--pink);font-weight:600}
+/* CTA band */
+.cta-band{background:var(--pink);padding:3.5rem 2rem;text-align:center}
+.cta-band h2{font-family:var(--font-display);font-size:clamp(1.6rem,3vw,2.2rem);font-weight:800;color:#fff;margin-bottom:0.5rem}
+.cta-band p{font-size:15px;color:rgba(255,255,255,0.75);margin-bottom:1.75rem}
+.cta-buttons{display:flex;gap:12px;justify-content:center;flex-wrap:wrap}
+.btn-white{display:inline-flex;align-items:center;gap:8px;background:#fff;color:var(--pink);padding:13px 26px;border-radius:8px;font-size:14px;font-weight:700;text-decoration:none}
+.btn-ow{display:inline-flex;align-items:center;gap:8px;background:transparent;color:#fff;padding:13px 26px;border-radius:8px;font-size:14px;font-weight:600;text-decoration:none;border:2px solid rgba(255,255,255,0.45)}
+/* Highlight box */
+.callout{background:rgba(233,30,140,0.06);border-left:3px solid var(--pink);padding:1rem 1.25rem;border-radius:0 8px 8px 0;margin:1.5rem 0;font-size:13.5px;color:rgba(255,255,255,0.65);line-height:1.7}
+.callout b{color:rgba(255,255,255,0.9)}
+/* Anchor tab nav */
+.tab-nav{display:flex;gap:4px;border-bottom:1px solid rgba(255,255,255,0.07);margin-bottom:2.5rem;flex-wrap:wrap}
+.tab-link{padding:10px 18px;font-size:13px;font-weight:600;color:rgba(255,255,255,0.45);text-decoration:none;border-bottom:2px solid transparent;margin-bottom:-1px;transition:all 0.15s}
+.tab-link:hover,.tab-link.active{color:var(--pink);border-bottom-color:var(--pink)}
+/* Two col layout */
+.two-col{display:grid;grid-template-columns:1fr 1fr;gap:2.5rem;align-items:start}
+.list-check{margin:0.75rem 0 0 0;padding:0;list-style:none}
+.list-check li{display:flex;align-items:start;gap:9px;font-size:14px;color:rgba(255,255,255,0.6);line-height:1.6;margin-bottom:7px}
+.list-check li::before{content:'✓';color:var(--pink);font-weight:700;flex-shrink:0;margin-top:2px}
+/* Responsive */
+@media(max-width:1024px){.hero-inner{grid-template-columns:1fr}.sidebar-card{display:none}.card-3,.card-4{grid-template-columns:1fr 1fr}.stat-row{grid-template-columns:1fr 1fr}.rev-grid{grid-template-columns:1fr 1fr}.two-col{grid-template-columns:1fr}}
+@media(max-width:768px){.nav-links{display:none}.sticky-bar{display:flex}body{padding-bottom:70px}.card-3,.card-4,.card-2{grid-template-columns:1fr}.svc-links{grid-template-columns:1fr 1fr}.footer-top{grid-template-columns:1fr 1fr}.rev-grid{grid-template-columns:1fr}}
+
+</style>
 </head>
-<body><div class="top-bar"><div class="container"><div style="font-size:0.72rem;">🌴 Serving All of Horry County, SC — Residential &amp; Commercial</div><div style="display:flex;gap:22px;align-items:center;"><a href="tel:8434677136">📞 (843) 467-7136</a><a href="mailto:cloyd.raymond@yahoo.com">✉ cloyd.raymond@yahoo.com</a></div></div></div>
-<header class="site-header"><div class="container"><nav class="nav-inner"><a href="/" class="nav-logo">Bakerss<span>.</span></a><div class="main-nav" id="mainNav"><a href="/">Home</a><div class="nav-dropdown"><a href="/services/">Services ▾</a><div class="dropdown-menu"><span class="dropdown-label">Outdoor</span><a href="/services/lawn-care/">🌿 Lawn Care &amp; Landscaping</a><a href="/services/pressure-washing/">💧 Pressure Washing</a><a href="/services/gutter-cleaning/">🏠 Gutter Cleaning</a><a href="/services/exterior-painting/">🎨 Exterior Painting</a><a href="/services/landscape-lighting/">💡 Landscape Lighting</a><a href="/services/deck-building/">🪵 Deck Building</a><span class="dropdown-label">Interior</span><a href="/services/interior-cleaning/">✨ Interior Cleaning</a><a href="/services/interior-painting/">🖌 Interior Painting</a><a href="/services/plumbing/">🔧 Minor Plumbing</a><a href="/services/electrical/">⚡ Minor Electrical</a><span class="dropdown-label">Specialty</span><a href="/services/epoxy-flooring/">🏗 Epoxy Flooring</a><a href="/services/drywall/">🔨 Drywall</a><a href="/services/handyman/">🛠 Handyman Services</a></div></div><div class="nav-dropdown"><a href="/service-areas/">Service Areas ▾</a><div class="dropdown-menu"><a href="/service-areas/horry-county/">🗺 All of Horry County</a><a href="/myrtle-beach/">Myrtle Beach</a><a href="/murrells-inlet/">Murrells Inlet</a><a href="/conway/">Conway</a><a href="/surfside-beach/">Surfside Beach</a><a href="/garden-city/">Garden City</a><a href="/north-myrtle-beach/">North Myrtle Beach</a><a href="/socastee/">Socastee</a></div></div><a href="/learning-center/">Learning Center</a><a href="/reviews/">Reviews</a><a href="/about/">About</a><a href="/get-a-quote/" class="nav-cta">Free Estimate</a></div><button class="nav-toggle" id="navToggle" aria-label="Open menu"><span></span><span></span><span></span></button></nav></div></header><nav class="breadcrumb"><div class="container"><div class="breadcrumb-inner"><a href="/">Home</a><span>›</span><a href="/services/">Services</a><span>›</span><strong>Gutter Cleaning</strong></div></div></nav><section class="page-hero">
-  <div class="container">
-    <span class="label">Outdoor Services · Horry County, SC</span>
-    <h1>Gutter Cleaning in Myrtle Beach, SC</h1>
-    <p>Complete gutter cleaning, flushing, and inspection to protect your home from water damage, foundation issues, and structural problems caused by clogged gutters.</p>
-    <div class="page-hero-ctas"><a href="/contact/" class="btn-primary">Get a Free Estimate</a><a href="tel:8434677136" class="btn-outline" style="border-color:rgba(255,255,255,0.3);color:rgba(255,255,255,0.88);">📞 (843) 467-7136</a></div>
-    <div class="page-hero-badges"><span class="page-hero-badge">✓ Licensed &amp; Insured</span><span class="page-hero-badge">✓ 24/7 Availability</span><span class="page-hero-badge">✓ Residential &amp; Commercial</span></div>
+<body>
+<div class="topbar">⭐ 5-Star Rated · Licensed &amp; Insured · <a href="tel:8434677136">843-467-7136</a> — We Answer 24/7</div>
+<nav>
+  <div class="nav-inner">
+    <a href="/" class="logo">Baker<span>ss</span></a>
+    <div class="nav-links">
+      <div class="nav-item">
+        <button class="nav-btn">Services <svg viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2"><path d="M2 4l4 4 4-4"/></svg></button>
+        <div class="mega-menu">
+          <div class="mega-col"><h4>Lawn &amp; Outdoor</h4><a href="/services/lawn-care/">Lawn Care</a><a href="/services/landscaping/">Landscaping &amp; Design</a><a href="/services/concrete-curbing/">Concrete Landscaping Curbing</a><a href="/services/pressure-washing/">Pressure Washing</a><a href="/services/gutter-cleaning/">Gutter Cleaning</a><a href="/services/deck-building-repair/">Deck Building &amp; Repairs</a></div>
+          <div class="mega-col"><h4>Interior &amp; Cleaning</h4><a href="/services/interior-cleaning/">Interior Cleaning — Residential</a><a href="/services/commercial-cleaning/">Interior Cleaning — Commercial</a><a href="/services/airbnb-cleaning/">Airbnb / Vacation Rental Cleaning</a><a href="/services/interior-cleaning/#deep-clean">Deep Cleaning</a><a href="/services/interior-cleaning/#move-in-out">Move-In / Move-Out Cleaning</a></div>
+          <div class="mega-col"><h4>Home Services</h4><a href="/services/painting/">Painting — Interior &amp; Exterior</a><a href="/services/handyman-services/">Handyman Services</a><a href="/services/minor-electric-plumbing/">Minor Electrical &amp; Plumbing</a><a href="/services/flooring/">Flooring</a><a href="/services/junk-removal/">Junk Removal</a><a href="/services/property-maintenance/">Property Maintenance Plans</a></div>
+        </div>
+      </div>
+      <div class="nav-item">
+        <button class="nav-btn">Service Areas <svg viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2"><path d="M2 4l4 4 4-4"/></svg></button>
+        <div class="dropdown"><a href="/service-areas/myrtle-beach/">Myrtle Beach</a><a href="/service-areas/north-myrtle-beach/">North Myrtle Beach</a><a href="/service-areas/conway/">Conway</a><a href="/service-areas/surfside-beach/">Surfside Beach</a><a href="/service-areas/murrells-inlet/">Murrells Inlet</a><a href="/service-areas/garden-city/">Garden City</a><a href="/service-areas/socastee/">Socastee</a><a href="/service-areas/little-river/">Little River</a><a href="/service-areas/horry-county/">All of Horry County →</a></div>
+      </div>
+      <div class="nav-item"><a href="/learning-center/">Learning Center</a></div>
+      <div class="nav-item"><a href="/about/">About Us</a></div>
+      <div class="nav-item"><a href="/reviews/">Reviews</a></div>
+    </div>
+    <div class="nav-right"><a href="tel:8434677136" class="nav-phone">843-467-7136</a><a href="/get-quote/" class="btn-quote-sm">Free Quote</a></div>
   </div>
-</section><section class="section"><div class="container"><div class="two-col">
-  <div class="col-img"><img src="/images/gutter1.png" alt="Professional gutter cleaning service Myrtle Beach SC by Bakerss Property Maintenance" loading="lazy"></div>
-  <div class="col-content">
-    <span class="label">Gutter Protection Experts</span>
-    <h2>Gutter Cleaning Built for Coastal SC Homes</h2>
-    <p>Myrtle Beach and Horry County's heavy pine pollen, storm debris, Spanish moss, and leaf accumulation clog gutters faster than most parts of the country. Clogged gutters lead to water damage, foundation erosion, fascia rot, and basement flooding — problems that are far more expensive than regular cleaning.</p>
-    <p>Bakerss provides complete gutter cleaning, downspout flushing, and inspection for homes and commercial properties across Horry County — keeping your drainage system working the way it should.</p>
-    <ul class="checklist">
-      <li>Full gutter cleaning and debris removal</li>
-      <li>Downspout flushing and flow testing</li>
-      <li>Visual inspection for damage or sag</li>
-      <li>Gutter brightening (exterior cleaning)</li>
-      <li>Residential and commercial properties</li>
-      <li>Single and multi-story homes</li>
-      <li>Vacation rental and Airbnb properties</li>
-      <li>Pre- and post-storm cleaning</li>
-    </ul>
-    <div style="display:flex;gap:14px;flex-wrap:wrap;"><a href="/contact/" class="btn-primary">Get a Free Estimate</a><a href="/learning-center/why-gutters-fail-coastal-sc/" class="btn-outline">Why Gutters Fail in SC →</a></div>
+</nav>
+
+<div class="hero">
+  <div class="hero-inner">
+    <div>
+      <nav class="breadcrumb"><a href="/">Home</a> <span>/</span> <a href="/services/">Services</a> <span>/</span> <span style="color:rgba(255,255,255,0.5)">Gutter Cleaning</span></nav>
+      <div class="badge">Gutter Cleaning · Inspection · Repair</div>
+      <h1 class="hero-h1">Gutter Cleaning in<br><em>Myrtle Beach &amp; Horry County</em></h1>
+      <p class="hero-desc">Clogged gutters in Myrtle Beach's 50-inch annual rainfall environment cause real damage fast — fascia rot, foundation moisture, landscape erosion. We clear them completely, flush every downspout, and inspect for damage. Starting at $99.</p>
+      <div class="hero-btns">
+        <a href="/get-quote/" class="btn-pink">Get a Free Estimate →</a>
+        <a href="tel:8434677136" class="btn-ghost">📞 843-467-7136</a>
+      </div>
+      <div class="hero-trust">
+        <span>⭐ <b>5.0</b> Google Rating</span> · <span>✓ <b>Licensed &amp; Insured</b></span> · <span>📞 <b>24/7</b> Availability</span>
+      </div>
+    </div>
+    <div class="sidebar-card">
+      <h3>Free Gutter Cleaning Quote</h3>
+      <a href="tel:8434677136" class="sidebar-phone">843-467-7136</a>
+      <p>Call or text any time. We respond same day for all Horry County gutter cleaning requests.</p>
+      <a href="/get-quote/" class="sidebar-btn pink">Get a Free Quote →</a>
+      <a href="tel:8434677136" class="sidebar-btn outline">📞 Call or Text Now</a>
+      <div class="sidebar-facts">
+        <div class="sidebar-fact">💧 <span>Starting at <b>$99</b></span></div>
+        <div class="sidebar-fact">✓ <span><b>Downspouts flushed</b> every visit</span></div>
+        <div class="sidebar-fact">📋 <span><b>Inspection report</b> included</span></div>
+        <div class="sidebar-fact">⚡ <span><b>Post-storm</b> emergency response</span></div>
+      </div>
+    </div>
   </div>
-</div></div></section><section class="section" style="background:var(--sand);"><div class="container">
-  <div class="section-header center"><span class="label">Why It Matters</span><h2>What Happens When Gutters Clog</h2><p>Gutters protect your home's foundation, siding, and landscaping. When they fail, the damage is costly.</p></div>
-  <div class="why-grid">
-    <div class="why-item"><div class="why-num">01</div><h3>Foundation Damage</h3><p>Overflow water pools at your foundation and causes erosion, cracking, and basement water intrusion over time.</p></div>
-    <div class="why-item"><div class="why-num">02</div><h3>Fascia &amp; Soffit Rot</h3><p>Standing water in gutters saturates wood fascia boards and soffits, leading to rot that spreads to roof decking.</p></div>
-    <div class="why-item"><div class="why-num">03</div><h3>Landscape Erosion</h3><p>Uncontrolled overflow dumps concentrated water onto landscaping beds, washing out mulch and plant material.</p></div>
-    <div class="why-item"><div class="why-num">04</div><h3>Pest Infestation</h3><p>Standing water and decomposing debris in gutters attract mosquitoes, carpenter ants, and other pests to your roofline.</p></div>
-  </div>
-</div></section><section class="section" style="background:var(--sand);">
-  <div class="container">
-    <div class="section-header center"><span class="label">Common Questions</span><h2>Gutter Cleaning FAQ — Myrtle Beach &amp; Horry County</h2></div>
-    <div class="faq-list"><div class="faq-item"><button class="faq-q">How often should gutters be cleaned in Myrtle Beach? <span class="arrow">▾</span></button><div class="faq-a"><p>Most Horry County homes benefit from gutter cleaning twice a year — once in late spring after pollen season and again in late fall after leaves drop. Homes near pine trees or under heavy oak canopy may need quarterly service.</p></div></div>
-<div class="faq-item"><button class="faq-q">Do hurricanes affect gutter maintenance? <span class="arrow">▾</span></button><div class="faq-a"><p>Yes. Hurricanes and tropical storms deposit heavy debris including leaves, sticks, Spanish moss, and roof granules directly into gutters. We recommend scheduling a post-storm gutter cleaning after any significant weather event.</p></div></div>
-<div class="faq-item"><button class="faq-q">How much does gutter cleaning cost in Myrtle Beach? <span class="arrow">▾</span></button><div class="faq-a"><p>Pricing depends on the size and height of the home, the number of linear feet of gutter, and how clogged they are. We always provide a free on-site estimate. Most residential homes are very affordable.</p></div></div>
-<div class="faq-item"><button class="faq-q">Do you flush the downspouts too? <span class="arrow">▾</span></button><div class="faq-a"><p>Yes. Every gutter cleaning includes downspout flushing to ensure water flows freely all the way to the ground — not just from the gutter troughs themselves.</p></div></div>
-<div class="faq-item"><button class="faq-q">Can you clean gutters on multi-story homes? <span class="arrow">▾</span></button><div class="faq-a"><p>Yes. We clean gutters on single and multi-story homes throughout Horry County. Our team has the equipment and safety training to work at height safely.</p></div></div>
-<div class="faq-item"><button class="faq-q">Do you also clean the outside of gutters? <span class="arrow">▾</span></button><div class="faq-a"><p>Yes. We offer gutter brightening — cleaning the exterior face of gutters to remove black streaks, algae, and oxidation that make gutters look dirty from the street.</p></div></div>
 </div>
+
+<div class="content">
+
+  <div class="stat-row">
+    <div class="stat"><div class="num">$99</div><div class="lbl">Starting price — single story</div></div>
+    <div class="stat"><div class="num">50"</div><div class="lbl">Annual rainfall in Myrtle Beach — above US average</div></div>
+    <div class="stat"><div class="num">3–4×</div><div class="lbl">Per year for Forestbrook & heavy-canopy properties</div></div>
+    <div class="stat"><div class="num">24/7</div><div class="lbl">Storm emergency response</div></div>
   </div>
-</section><section class="cta-band"><div class="container"><span class="label" style="color:var(--pink-light);">Ready to Get Started?</span><h2>Get a Free Gutter Cleaning Estimate</h2><p>Protecting homes across Myrtle Beach, Murrells Inlet, Conway &amp; all of Horry County.</p><div class="cta-group"><a href="/contact/" class="btn-primary">Request a Free Estimate</a><a href="tel:8434677136" class="btn-outline" style="border-color:rgba(255,255,255,0.3);color:rgba(255,255,255,0.88);">📞 Call Now</a></div><p class="cta-phone">Call or text anytime: <a href="tel:8434677136">(843) 467-7136</a> — we answer 24/7</p></div></section><footer class="site-footer"><div class="container"><div class="footer-inner"><div class="footer-brand"><div class="footer-logo">Bakerss<span>.</span></div><p>Myrtle Beach's trusted property maintenance company. Serving all of Horry County, SC.</p><div class="footer-contact"><a href="tel:8434677136">📞 (843) 467-7136</a><a href="mailto:cloyd.raymond@yahoo.com">✉ cloyd.raymond@yahoo.com</a></div><div class="prices-strip"><span class="price-item">🌿 Lawn <strong>from $50</strong></span><span class="price-item">💧 Wash <strong>from $125</strong></span><span class="price-item">✨ Clean <strong>from $100</strong></span></div></div><div><div class="footer-heading">Services</div><div class="footer-links"><a href="/services/lawn-care/">Lawn Care</a><a href="/services/interior-cleaning/">Interior Cleaning</a><a href="/services/pressure-washing/">Pressure Washing</a><a href="/services/exterior-painting/">Painting</a><a href="/services/gutter-cleaning/">Gutter Cleaning</a><a href="/services/deck-building/">Deck Building</a><a href="/services/handyman/">Handyman</a><a href="/services/epoxy-flooring/">Epoxy Flooring</a><a href="/services/electrical/">Electrical</a><a href="/services/plumbing/">Plumbing</a><a href="/services/landscape-lighting/">Lighting</a></div></div><div><div class="footer-heading">Service Areas</div><div class="footer-links"><a href="/myrtle-beach/">Myrtle Beach</a><a href="/murrells-inlet/">Murrells Inlet</a><a href="/conway/">Conway</a><a href="/surfside-beach/">Surfside Beach</a><a href="/garden-city/">Garden City</a><a href="/north-myrtle-beach/">North Myrtle Beach</a><a href="/socastee/">Socastee</a><a href="/service-areas/horry-county/">All Horry County</a></div></div><div><div class="footer-heading">Quick Links</div><div class="footer-links"><a href="/about/">About</a><a href="/reviews/">Reviews</a><a href="/learning-center/">Learning Center</a><a href="/get-a-quote/">Free Estimate</a></div></div></div><div class="footer-bottom"><span>© 2025 Bakerss Property Maintenance. All rights reserved.</span><div class="footer-badges"><span class="footer-badge">⭐ Veteran Owned</span><span class="footer-badge">✓ Licensed</span><span class="footer-badge">✓ Insured</span></div></div></div></footer>
-<div class="sticky-mobile-bar"><a href="tel:8434677136" class="sticky-bar-call">📞 Call Now</a><a href="sms:8434677136" class="sticky-bar-text">💬 Text Us</a><a href="/contact/" class="sticky-bar-est">📅 Free Estimate</a></div>
-<script>const t=document.getElementById('navToggle'),n=document.getElementById('mainNav');if(t){t.addEventListener('click',()=>{const o=n.classList.toggle('open');t.setAttribute('aria-expanded',o);document.body.style.overflow=o?'hidden':'';});n.querySelectorAll('a').forEach(l=>l.addEventListener('click',()=>{n.classList.remove('open');document.body.style.overflow='';}));}document.querySelectorAll('.faq-q').forEach(b=>b.addEventListener('click',()=>b.classList.toggle('open')));</script>
-</body></html>
+
+  <div class="sec" style="margin-top:3.5rem">
+    <span class="sec-label">The Service</span>
+    <h2 class="sec-h2">What Every Gutter Cleaning Includes</h2>
+    <p class="prose">Gutter cleaning in Myrtle Beach isn't optional maintenance — it's structural protection. The Grand Strand's subtropical climate produces over 50 inches of rainfall annually. When that rain hits a clogged gutter, the water has nowhere to go except over the edge and directly against your home's structure. Fascia rot, foundation water pooling, and landscape erosion are the entirely preventable results.</p>
+    <div class="steps" style="margin-top:1.75rem">
+      <div class="step">
+        <div class="step-num">1</div>
+        <div><h4>Complete Debris Removal</h4><p>All pine needles, oak leaves, seed pods, Spanish moss, and organic material removed from gutters by hand and blower. We don't just flush — we remove debris first so it doesn't block downspouts on the way out.</p></div>
+      </div>
+      <div class="step">
+        <div class="step-num">2</div>
+        <div><h4>Downspout Flushing — Every Single One</h4><p>Every downspout is flushed with water to confirm it's fully clear and draining correctly. A gutter with clean troughs but a blocked downspout still causes water damage. We verify complete drainage before we leave.</p></div>
+      </div>
+      <div class="step">
+        <div class="step-num">3</div>
+        <div><h4>Inspection — While We're Up There</h4><p>We inspect gutter condition during every cleaning — checking for sagging sections, improper pitch, separated joints, holes, and fascia board damage. We note anything found and report it to you in writing on request.</p></div>
+      </div>
+      <div class="step">
+        <div class="step-num">4</div>
+        <div><h4>Minor Repairs (If Needed)</h4><p>Many minor gutter issues — loose hangers, open end caps, separated seams — can be addressed during the same visit. We quote any repair work before doing it. No surprise charges.</p></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="sec">
+    <span class="sec-label">Why More Often Here</span>
+    <h2 class="sec-h2">Why Myrtle Beach Gutters Need Cleaning More Frequently</h2>
+    <p class="prose">The national recommendation of twice-yearly gutter cleaning assumes a moderate climate with one heavy leaf-drop season. Myrtle Beach's environment is fundamentally different — and many Horry County properties need more frequent service than the national standard suggests.</p>
+    <div class="card-3">
+      <div class="card">
+        <span class="tag">Pine Trees</span>
+        <h4>Year-Round Needle Fall</h4>
+        <p>Longleaf and loblolly pines dominate Horry County's tree canopy. Unlike deciduous trees, they drop needles continuously — not seasonally. Properties in Carolina Forest, Forestbrook, and Conway under heavy pine coverage can fill gutters in 6–8 weeks.</p>
+      </div>
+      <div class="card">
+        <span class="tag">Live Oaks</span>
+        <h4>Near-Continuous Debris</h4>
+        <p>Live oaks shed leaves, twigs, acorns, and Spanish moss almost year-round. Murrells Inlet's Prince Creek corridor and Wachesaw Plantation are particularly affected — we recommend 3–4 cleanings annually for these properties.</p>
+      </div>
+      <div class="card">
+        <span class="tag">Hurricane Season</span>
+        <h4>June 1 – November 30</h4>
+        <p>A single tropical storm deposits months of debris in hours. Pre-hurricane season cleaning (May) ensures gutters function correctly when a major rain event arrives. Post-storm cleaning should be immediate.</p>
+      </div>
+    </div>
+    <div class="callout" style="margin-top:1.5rem">
+      <b>The Forestbrook rule:</b> Homes in Forestbrook (Socastee) under the densest pine and oak coverage need gutter cleaning 3–4 times annually. Quarterly service prevents the continuous pine needle accumulation from ever creating dangerous blockages.
+    </div>
+  </div>
+
+  <div class="sec">
+    <span class="sec-label">Pricing</span>
+    <h2 class="sec-h2">Gutter Cleaning Pricing — 2025</h2>
+    <table class="price-table">
+      <thead><tr><th>Home Size / Type</th><th>Price Range</th><th>Notes</th></tr></thead>
+      <tbody>
+        <tr><td>Small single-story (under 1,500 sq ft)</td><td class="price">$99–$135</td><td>Cottages, condos, small homes</td></tr>
+        <tr><td>Standard single-story (1,500–2,500 sq ft)</td><td class="price">$115–$165</td><td>Most Myrtle Beach residential homes</td></tr>
+        <tr><td>Large single-story (2,500–4,000 sq ft)</td><td class="price">$155–$225</td><td>Larger homes, HOA communities</td></tr>
+        <tr><td>Standard two-story</td><td class="price">$149–$225</td><td>Additional equipment and access time</td></tr>
+        <tr><td>Large two-story / complex roofline</td><td class="price">$195–$325</td><td>Multi-level, difficult access</td></tr>
+        <tr><td>Minor repairs (re-sealing, hangers)</td><td class="price">$45–$150</td><td>Quoted on-site before work</td></tr>
+      </tbody>
+    </table>
+    <p class="prose" style="margin-top:1rem">All gutter cleaning includes complete debris removal, downspout flushing, and basic condition inspection. Downspouts are never skipped — a blocked downspout with clean gutters above still causes water damage.</p>
+  </div>
+
+  <div class="sec">
+    <span class="sec-label">Warning Signs</span>
+    <h2 class="sec-h2">Signs Your Gutters Need Immediate Attention</h2>
+    <div class="card-2">
+      <ul class="list-check">
+        <li>Water overflowing over the front lip during rain</li>
+        <li>Plants or moss visibly growing from gutter troughs</li>
+        <li>Gutters sagging or pulling away from fascia</li>
+        <li>Black or brown streaking on siding below gutters</li>
+      </ul>
+      <ul class="list-check">
+        <li>Water pooling at the foundation after rain</li>
+        <li>Soft or discolored fascia boards (early rot)</li>
+        <li>Last cleaning was more than 6 months ago</li>
+        <li>Visible debris load from the ground</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="sec">
+    <span class="sec-label">Service Areas</span>
+    <h2 class="sec-h2">Gutter Cleaning Service Areas</h2>
+    <div class="svc-links">
+      <a href="/service-areas/myrtle-beach/gutter-cleaning/" class="svc-link">Myrtle Beach<span class="pr">From $99</span></a>
+      <a href="/service-areas/north-myrtle-beach/gutter-cleaning/" class="svc-link">North Myrtle Beach<span class="pr">From $99</span></a>
+      <a href="/service-areas/conway/gutter-cleaning/" class="svc-link">Conway<span class="pr">From $99</span></a>
+      <a href="/service-areas/surfside-beach/gutter-cleaning/" class="svc-link">Surfside Beach<span class="pr">From $99</span></a>
+      <a href="/service-areas/murrells-inlet/gutter-cleaning/" class="svc-link">Murrells Inlet<span class="pr">From $99</span></a>
+      <a href="/service-areas/garden-city/gutter-cleaning/" class="svc-link">Garden City Beach<span class="pr">From $99</span></a>
+      <a href="/service-areas/socastee/gutter-cleaning/" class="svc-link">Socastee / Forestbrook<span class="pr">From $99</span></a>
+      <a href="/service-areas/little-river/gutter-cleaning/" class="svc-link">Little River<span class="pr">From $99</span></a>
+    </div>
+  </div>
+
+  <div class="sec">
+    <span class="sec-label">FAQ</span>
+    <h2 class="sec-h2">Gutter Cleaning Questions</h2>
+    <div class="faq-wrap">
+      <div class="faq-item"><div class="faq-q">How often should Myrtle Beach gutters be cleaned?<span class="ico">+</span></div><div class="faq-a">Twice yearly (spring and fall) is the minimum for most Horry County properties. Homes under heavy pine or live oak coverage — particularly in Forestbrook, Carolina Forest, and Murrells Inlet — benefit from 3–4 cleanings annually due to continuous debris fall. Post-storm cleaning is recommended after any significant tropical weather event.</div></div>
+      <div class="faq-item"><div class="faq-q">Does the service include downspout cleaning?<span class="ico">+</span></div><div class="faq-a">Yes, always. Every gutter cleaning visit includes flushing every downspout and confirming it drains completely. A gutter with clear troughs but a blocked downspout still causes water damage — flushing is not optional in our service.</div></div>
+      <div class="faq-item"><div class="faq-q">Can you respond after a storm?<span class="ico">+</span></div><div class="faq-a">Yes. Post-storm gutter cleaning is an emergency service we provide throughout Horry County. Call or text 843-467-7136 any time — we answer 24/7 and respond as quickly as possible to storm-related requests.</div></div>
+      <div class="faq-item"><div class="faq-q">Do gutter guards eliminate the need for cleaning?<span class="ico">+</span></div><div class="faq-a">No. The best gutter guard products (micro-mesh systems) can reduce cleaning frequency from 3–4 times per year to 1–2 times per year in Myrtle Beach. They don't eliminate it. Pine needles and granules from aging shingles pass through most guard systems. Foam and brush inserts typically make the situation worse in our subtropical climate.</div></div>
+    </div>
+  </div>
+
+</div>
+
+<div class="cta-band">
+  <h2>Protect Your Property — Schedule Gutter Cleaning Today</h2>
+  <p>Starting at $99 · Downspouts included · We answer 24/7 · All of Horry County</p>
+  <div class="cta-buttons">
+    <a href="/get-quote/" class="btn-white">Get a Free Estimate →</a>
+    <a href="tel:8434677136" class="btn-ow">📞 843-467-7136</a>
+  </div>
+</div>
+
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"Service","name":"Gutter Cleaning","provider":{"@type":"LocalBusiness","name":"Bakerss Property Maintenance","telephone":"+18434677136"},"areaServed":"Horry County, SC","offers":{"@type":"Offer","priceCurrency":"USD","price":"99"}}</script>
+<footer>
+  <div class="footer-inner">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <a href="/" style="font-family:var(--font-display);font-size:20px;font-weight:800;color:#fff;text-decoration:none;display:block;margin-bottom:0.5rem">Baker<span style="color:var(--pink)">ss</span></a>
+        <p>Full-service property maintenance for Horry County homeowners, STR owners, HOAs, and property managers.</p>
+        <div class="footer-contact-links">
+          <a href="tel:8434677136"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.81 19.79 19.79 0 01.01 1.13 2 2 0 012 .99h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.09 8.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>843-467-7136</a>
+          <a href="mailto:cloyd.raymond@yahoo.com"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>cloyd.raymond@yahoo.com</a>
+        </div>
+      </div>
+      <div class="footer-col"><h4>Services</h4><a href="/services/lawn-care/">Lawn Care</a><a href="/services/landscaping/">Landscaping</a><a href="/services/pressure-washing/">Pressure Washing</a><a href="/services/airbnb-cleaning/">Airbnb Cleaning</a><a href="/services/interior-cleaning/">Interior Cleaning</a><a href="/services/gutter-cleaning/">Gutter Cleaning</a><a href="/services/painting/">Painting</a><a href="/services/handyman-services/">Handyman</a><a href="/services/junk-removal/">Junk Removal</a></div>
+      <div class="footer-col"><h4>Service Areas</h4><a href="/service-areas/myrtle-beach/">Myrtle Beach</a><a href="/service-areas/north-myrtle-beach/">North Myrtle Beach</a><a href="/service-areas/conway/">Conway</a><a href="/service-areas/surfside-beach/">Surfside Beach</a><a href="/service-areas/murrells-inlet/">Murrells Inlet</a><a href="/service-areas/garden-city/">Garden City</a><a href="/service-areas/socastee/">Socastee</a><a href="/service-areas/little-river/">Little River</a></div>
+      <div class="footer-col"><h4>Company</h4><a href="/about/">About Bakerss</a><a href="/reviews/">Customer Reviews</a><a href="/get-quote/">Get a Free Quote</a><a href="/learning-center/">Learning Center</a></div>
+    </div>
+    <div class="footer-bottom"><span>© 2025 Bakerss Property Maintenance · Horry County, SC</span><span>Licensed &amp; Insured · Locally Owned</span></div>
+  </div>
+</footer>
+<div class="sticky-bar" style="display:flex">
+  <a href="tel:8434677136"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.81 19.79 19.79 0 01.01 1.13 2 2 0 012 .99h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.09 8.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>Call</a>
+  <a href="sms:8434677136"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15a2 2 0 01-2 2H7l-4 4V5a2 2 0 012-2h14a2 2 0 012 2z"/></svg>Text</a>
+  <a href="/get-quote/" class="primary"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/></svg>Free Quote</a>
+</div>
+<script>
+document.querySelectorAll('.faq-q').forEach(q=>q.addEventListener('click',()=>q.parentElement.classList.toggle('open')));
+</script>
+</body>
+</html>
