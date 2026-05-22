@@ -2,14 +2,15 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Minor Electrical & Plumbing Services in Myrtle Beach, SC | Bakerss</title>
-<meta name="description" content="Minor electrical and plumbing repairs in Myrtle Beach & Horry County, SC. Outlets, fixtures, faucets, toilets. Starting at $75/hr. Licensed & insured. Call 843-467-7136.">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Minor Electrical & Plumbing in Myrtle Beach & Horry County, SC | Bakerss</title>
+<meta name="description" content="Licensed minor electrical and plumbing repairs in Myrtle Beach, SC. GFCI, outlets, faucets, toilets. Starting at $75/hr. 24/7 emergency response. Call 843-467-7136.">
 <link rel="canonical" href="https://www.bakerss.com/services/minor-electric-plumbing/">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;800&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
 <style>
+
 *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
 :root{
   --pink:#E91E8C;--pink-dark:#C0157A;--pink-light:#FF4BAB;
@@ -172,6 +173,120 @@ footer{background:var(--black);border-top:1px solid rgba(255,255,255,0.07);paddi
 .sticky-bar svg{width:20px;height:20px}
 @media(max-width:1024px){.svc-hero-inner,.svc-content{grid-template-columns:1fr}.quote-card{position:static}.svc-sidebar{position:static;display:grid;grid-template-columns:1fr 1fr}}
 @media(max-width:768px){.nav-links{display:none}.sticky-bar{display:flex}body{padding-bottom:70px}.sub-grid,.serve-list,.related-grid,.cities-row{grid-template-columns:1fr}.footer-top{grid-template-columns:1fr 1fr}}
+
+/* ── PAGE STYLES ── */
+.hero{background:var(--black);padding:5rem 2rem 3.5rem;position:relative;overflow:hidden}
+.hero::after{content:'';position:absolute;top:-80px;right:-80px;width:520px;height:520px;background:radial-gradient(circle,rgba(233,30,140,0.06) 0%,transparent 70%);pointer-events:none}
+.hero-inner{max-width:1100px;margin:0 auto;position:relative;z-index:2;display:grid;grid-template-columns:1fr 320px;gap:3rem;align-items:start}
+.breadcrumb{display:flex;align-items:center;gap:6px;font-size:12px;color:rgba(255,255,255,0.3);margin-bottom:1.25rem}
+.breadcrumb a{color:rgba(255,255,255,0.3);text-decoration:none}
+.breadcrumb a:hover{color:var(--pink)}
+.breadcrumb span{color:rgba(255,255,255,0.12)}
+.badge{display:inline-flex;align-items:center;gap:6px;background:rgba(233,30,140,0.1);border:1px solid rgba(233,30,140,0.3);border-radius:100px;padding:4px 14px;font-size:10px;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;color:var(--pink);margin-bottom:1.25rem}
+h1.hero-h1{font-family:var(--font-display);font-size:clamp(2.1rem,3.5vw,3.2rem);font-weight:800;line-height:1.08;letter-spacing:-0.025em;margin-bottom:1.1rem}
+h1.hero-h1 em{font-style:normal;color:var(--pink)}
+.hero-desc{font-size:16px;color:rgba(255,255,255,0.55);line-height:1.8;font-weight:300;max-width:600px;margin-bottom:1.75rem}
+.hero-btns{display:flex;gap:10px;flex-wrap:wrap}
+.btn-pink{display:inline-flex;align-items:center;gap:8px;background:var(--pink);color:#fff;padding:14px 26px;border-radius:8px;font-size:14px;font-weight:600;text-decoration:none;transition:all 0.2s;box-shadow:0 4px 18px rgba(233,30,140,0.25)}
+.btn-pink:hover{transform:translateY(-1px);box-shadow:0 6px 24px rgba(233,30,140,0.35)}
+.btn-ghost{display:inline-flex;align-items:center;gap:8px;background:transparent;color:rgba(255,255,255,0.8);padding:14px 24px;border-radius:8px;font-size:14px;font-weight:500;text-decoration:none;border:1px solid rgba(255,255,255,0.18)}
+.hero-trust{display:flex;align-items:center;gap:12px;margin-top:1.5rem;font-size:11px;color:rgba(255,255,255,0.3);flex-wrap:wrap}
+.hero-trust b{color:rgba(255,255,255,0.55)}
+/* Sidebar card */
+.sidebar-card{background:var(--dark2);border:1px solid rgba(255,255,255,0.08);border-radius:14px;padding:1.75rem;position:sticky;top:80px}
+.sidebar-card h3{font-family:var(--font-display);font-size:1.15rem;font-weight:700;margin-bottom:0.25rem}
+.sidebar-phone{font-family:var(--font-display);font-size:1.85rem;font-weight:800;color:var(--pink);text-decoration:none;display:block;margin:0.4rem 0}
+.sidebar-card p{font-size:12.5px;color:rgba(255,255,255,0.4);margin-bottom:1.25rem;line-height:1.5}
+.sidebar-btn{display:block;padding:12px;border-radius:7px;font-size:13.5px;font-weight:600;text-decoration:none;text-align:center;margin-bottom:7px}
+.sidebar-btn.pink{background:var(--pink);color:#fff}
+.sidebar-btn.outline{background:transparent;color:rgba(255,255,255,0.7);border:1px solid rgba(255,255,255,0.15)}
+.sidebar-facts{margin-top:1.25rem;padding-top:1.25rem;border-top:1px solid rgba(255,255,255,0.07)}
+.sidebar-fact{display:flex;align-items:center;gap:10px;font-size:12px;color:rgba(255,255,255,0.5);margin-bottom:7px}
+.sidebar-fact b{color:rgba(255,255,255,0.75)}
+/* Content area */
+.content{max-width:1100px;margin:0 auto;padding:4.5rem 2rem}
+.sec{margin-bottom:4rem}
+.sec-label{font-size:10px;font-weight:700;letter-spacing:0.12em;text-transform:uppercase;color:var(--pink);margin-bottom:0.5rem;display:block}
+h2.sec-h2{font-family:var(--font-display);font-size:clamp(1.6rem,2.5vw,2.1rem);font-weight:800;letter-spacing:-0.02em;margin-bottom:0.9rem;line-height:1.15}
+h2.sec-h2 em{font-style:normal;color:var(--pink)}
+h3.sub-h3{font-size:1.05rem;font-weight:600;margin:1.75rem 0 0.5rem;color:rgba(255,255,255,0.9)}
+.prose{font-size:15px;color:rgba(255,255,255,0.58);line-height:1.85;font-weight:300}
+.prose+.prose{margin-top:0.85rem}
+/* Card grids */
+.card-3{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-top:1.5rem}
+.card-2{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-top:1.5rem}
+.card-4{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin-top:1.5rem}
+.card{background:var(--dark2);border:1px solid rgba(255,255,255,0.07);border-radius:12px;padding:1.4rem}
+.card .tag{font-size:10px;font-weight:700;letter-spacing:0.09em;text-transform:uppercase;color:var(--pink);display:block;margin-bottom:0.5rem}
+.card h4{font-size:15px;font-weight:600;margin-bottom:0.4rem}
+.card p{font-size:13px;color:rgba(255,255,255,0.45);line-height:1.6}
+/* Pricing table */
+.price-table{width:100%;border-collapse:collapse;margin-top:1.25rem;font-size:13.5px}
+.price-table th{padding:10px 14px;text-align:left;background:rgba(233,30,140,0.08);border-bottom:1px solid rgba(255,255,255,0.08);font-size:10px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:rgba(255,255,255,0.4)}
+.price-table td{padding:11px 14px;border-bottom:1px solid rgba(255,255,255,0.05);color:rgba(255,255,255,0.65)}
+.price-table td.price{color:var(--pink);font-weight:700}
+.price-table tr:last-child td{border-bottom:none}
+/* Steps */
+.steps{display:grid;gap:1px;margin-top:1.25rem}
+.step{background:var(--dark2);border:1px solid rgba(255,255,255,0.07);padding:1.25rem 1.5rem;display:flex;gap:1.25rem;align-items:start}
+.step:first-child{border-radius:12px 12px 0 0}
+.step:last-child{border-radius:0 0 12px 12px}
+.step-num{width:32px;height:32px;border-radius:50%;background:var(--pink);display:flex;align-items:center;justify-content:center;font-size:13px;font-weight:700;color:#fff;flex-shrink:0;margin-top:2px}
+.step h4{font-size:14.5px;font-weight:600;margin-bottom:0.3rem}
+.step p{font-size:13px;color:rgba(255,255,255,0.45);line-height:1.6}
+/* FAQ */
+.faq-wrap{border:1px solid rgba(255,255,255,0.07);border-radius:12px;overflow:hidden;margin-top:1.25rem}
+.faq-item{border-bottom:1px solid rgba(255,255,255,0.06)}
+.faq-item:last-child{border:none}
+.faq-q{display:flex;justify-content:space-between;align-items:center;padding:1rem 1.25rem;cursor:pointer;font-size:14.5px;font-weight:600;gap:1rem;transition:background 0.15s}
+.faq-q:hover{background:rgba(255,255,255,0.025)}
+.faq-q .ico{color:var(--pink);font-size:20px;flex-shrink:0;transition:transform 0.25s;line-height:1}
+.faq-a{display:none;padding:0 1.25rem 1rem;font-size:13.5px;color:rgba(255,255,255,0.5);line-height:1.75}
+.faq-item.open .faq-q .ico{transform:rotate(45deg)}
+.faq-item.open .faq-a{display:block}
+/* Reviews */
+.rev-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin-top:1.5rem}
+.rev{background:var(--dark2);border:1px solid rgba(255,255,255,0.07);border-radius:11px;padding:1.4rem}
+.rev-top{display:flex;align-items:center;gap:10px;margin-bottom:9px}
+.av{width:36px;height:36px;background:var(--pink);border-radius:50%;display:flex;align-items:center;justify-content:center;font-weight:700;font-size:13px;color:#fff;flex-shrink:0}
+.rev-name{font-size:13.5px;font-weight:600}
+.rev-meta{font-size:11px;color:rgba(255,255,255,0.3)}
+.stars{color:#FFB800;font-size:12px;letter-spacing:1px}
+.rev-text{font-size:13px;color:rgba(255,255,255,0.6);font-style:italic;line-height:1.7}
+.rev-svc{display:inline-block;font-size:10.5px;font-weight:600;color:var(--pink);background:rgba(233,30,140,0.08);border:1px solid rgba(233,30,140,0.2);padding:2px 9px;border-radius:4px;margin-top:7px}
+/* Stat row */
+.stat-row{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin:1.5rem 0}
+.stat{background:var(--dark2);border:1px solid rgba(255,255,255,0.07);border-radius:11px;padding:1.4rem;text-align:center}
+.stat .num{font-family:var(--font-display);font-size:2.4rem;font-weight:800;color:var(--pink);line-height:1;margin-bottom:0.3rem}
+.stat .lbl{font-size:11.5px;color:rgba(255,255,255,0.4);line-height:1.35}
+/* Svc links */
+.svc-links{display:grid;grid-template-columns:repeat(3,1fr);gap:7px;margin-top:1.25rem}
+.svc-link{background:var(--dark2);border:1px solid rgba(255,255,255,0.07);border-radius:8px;padding:10px 13px;text-decoration:none;color:rgba(255,255,255,0.65);font-size:13px;display:flex;justify-content:space-between;align-items:center;transition:border-color 0.2s}
+.svc-link:hover{border-color:rgba(233,30,140,0.3);color:#fff}
+.svc-link .pr{font-size:10.5px;color:var(--pink);font-weight:600}
+/* CTA band */
+.cta-band{background:var(--pink);padding:3.5rem 2rem;text-align:center}
+.cta-band h2{font-family:var(--font-display);font-size:clamp(1.6rem,3vw,2.2rem);font-weight:800;color:#fff;margin-bottom:0.5rem}
+.cta-band p{font-size:15px;color:rgba(255,255,255,0.75);margin-bottom:1.75rem}
+.cta-buttons{display:flex;gap:12px;justify-content:center;flex-wrap:wrap}
+.btn-white{display:inline-flex;align-items:center;gap:8px;background:#fff;color:var(--pink);padding:13px 26px;border-radius:8px;font-size:14px;font-weight:700;text-decoration:none}
+.btn-ow{display:inline-flex;align-items:center;gap:8px;background:transparent;color:#fff;padding:13px 26px;border-radius:8px;font-size:14px;font-weight:600;text-decoration:none;border:2px solid rgba(255,255,255,0.45)}
+/* Highlight box */
+.callout{background:rgba(233,30,140,0.06);border-left:3px solid var(--pink);padding:1rem 1.25rem;border-radius:0 8px 8px 0;margin:1.5rem 0;font-size:13.5px;color:rgba(255,255,255,0.65);line-height:1.7}
+.callout b{color:rgba(255,255,255,0.9)}
+/* Anchor tab nav */
+.tab-nav{display:flex;gap:4px;border-bottom:1px solid rgba(255,255,255,0.07);margin-bottom:2.5rem;flex-wrap:wrap}
+.tab-link{padding:10px 18px;font-size:13px;font-weight:600;color:rgba(255,255,255,0.45);text-decoration:none;border-bottom:2px solid transparent;margin-bottom:-1px;transition:all 0.15s}
+.tab-link:hover,.tab-link.active{color:var(--pink);border-bottom-color:var(--pink)}
+/* Two col layout */
+.two-col{display:grid;grid-template-columns:1fr 1fr;gap:2.5rem;align-items:start}
+.list-check{margin:0.75rem 0 0 0;padding:0;list-style:none}
+.list-check li{display:flex;align-items:start;gap:9px;font-size:14px;color:rgba(255,255,255,0.6);line-height:1.6;margin-bottom:7px}
+.list-check li::before{content:'✓';color:var(--pink);font-weight:700;flex-shrink:0;margin-top:2px}
+/* Responsive */
+@media(max-width:1024px){.hero-inner{grid-template-columns:1fr}.sidebar-card{display:none}.card-3,.card-4{grid-template-columns:1fr 1fr}.stat-row{grid-template-columns:1fr 1fr}.rev-grid{grid-template-columns:1fr 1fr}.two-col{grid-template-columns:1fr}}
+@media(max-width:768px){.nav-links{display:none}.sticky-bar{display:flex}body{padding-bottom:70px}.card-3,.card-4,.card-2{grid-template-columns:1fr}.svc-links{grid-template-columns:1fr 1fr}.footer-top{grid-template-columns:1fr 1fr}.rev-grid{grid-template-columns:1fr}}
+
 </style>
 </head>
 <body>
@@ -200,151 +315,201 @@ footer{background:var(--black);border-top:1px solid rgba(255,255,255,0.07);paddi
   </div>
 </nav>
 
-<div class="svc-hero">
-  <div class="svc-hero-inner">
+<div class="hero">
+  <div class="hero-inner">
     <div>
-      <nav class="breadcrumb" aria-label="Breadcrumb">
-        <a href="/">Home</a><span>/</span><a href="/services/">Services</a><span>/</span><span style="color:rgba(255,255,255,0.5)">Minor Electrical &amp; Plumbing</span>
-      </nav>
-      <div class="svc-badge">Electrical &amp; Plumbing Repairs · From $75/hr</div>
-      <h1>Minor Electrical &amp; Plumbing Services in <em>Myrtle Beach &amp; Horry County, SC</em></h1>
-      <p class="svc-hero-desc">From a dripping faucet to a tripped outlet, minor electrical and plumbing issues are inevitable in any property — and in Myrtle Beach's coastal environment, they happen faster due to salt air corrosion and humidity effects on fixtures and hardware. Bakerss handles the minor electrical and plumbing repairs that keep your home or rental functioning properly, without the wait or the cost of a specialist for every small job.</p>
-      <div class="svc-ctas">
-        <a href="/get-quote/" class="btn-primary">Get a Free Quote →</a>
-        <a href="tel:8434677136" class="btn-secondary">📞 843-467-7136</a>
+      <nav class="breadcrumb"><a href="/">Home</a> <span>/</span> <a href="/services/">Services</a> <span>/</span> <span style="color:rgba(255,255,255,0.5)">Minor Electrical &amp; Plumbing</span></nav>
+      <div class="badge">Electrical · Plumbing · Licensed &amp; Insured</div>
+      <h1 class="hero-h1">Minor Electrical &amp; Plumbing in<br><em>Myrtle Beach &amp; Horry County</em></h1>
+      <p class="hero-desc">From GFCI installation and outlet replacement to faucet repairs and running toilets — the small electrical and plumbing issues that need fast, professional resolution. No waiting days for a specialist. Starting at $75/hr. We answer 24/7.</p>
+      <div class="hero-btns">
+        <a href="/get-quote/" class="btn-pink">Get a Free Estimate →</a>
+        <a href="tel:8434677136" class="btn-ghost">📞 843-467-7136</a>
       </div>
-      <div class="svc-trust">
-        <div class="trust-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>5-Star Rated</div>
-        <div class="trust-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>Licensed &amp; Insured</div>
-        <div class="trust-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>24/7 Answering</div>
-        <div class="trust-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>All of Horry County</div>
+      <div class="hero-trust">
+        <span>✓ <b>Licensed &amp; Insured</b></span> · <span>📞 <b>24/7</b> Emergency Response</span> · <span>💬 <b>Flat-rate</b> most jobs</span>
       </div>
     </div>
-    <div class="quote-card">
-  <h3>Free Estimate</h3>
-  <p class="qsub">Same-day response · No obligation</p>
-  <div class="form-group"><label>Your Name</label><input type="text" placeholder="First name"></div>
-  <div class="form-group"><label>Phone Number</label><input type="tel" placeholder="843-000-0000"></div>
-  <div class="form-group"><label>Service Needed</label>
-    <select>
-      <option value="Minor Electrical and Plumbing" selected>Minor Electrical and Plumbing</option>
-      <option>Lawn Care</option><option>Landscaping</option><option>Pressure Washing</option>
-      <option>Interior Cleaning</option><option>Airbnb / STR Cleaning</option>
-      <option>Gutter Cleaning</option><option>Painting</option><option>Handyman Services</option>
-      <option>Junk Removal</option><option>Other</option>
-    </select>
-  </div>
-  <div class="form-group"><label>City / Zip</label><input type="text" placeholder="Myrtle Beach, SC"></div>
-  <button class="btn-submit" onclick="window.location='/get-quote/'">Get My Free Quote →</button>
-  <p class="q-privacy">🔒 No spam · Free · No obligation</p>
-  <div class="q-phone">Or call us: <a href="tel:8434677136">843-467-7136</a></div>
-</div>
+    <div class="sidebar-card">
+      <h3>Free Repair Estimate</h3>
+      <a href="tel:8434677136" class="sidebar-phone">843-467-7136</a>
+      <p>Call or text — we respond same day. Most minor electrical and plumbing work can be quoted over the phone.</p>
+      <a href="/get-quote/" class="sidebar-btn pink">Get a Free Quote →</a>
+      <a href="tel:8434677136" class="sidebar-btn outline">📞 Call or Text Now</a>
+      <div class="sidebar-facts">
+        <div class="sidebar-fact">⚡ <span>Starting at <b>$75/hr</b></span></div>
+        <div class="sidebar-fact">💬 <span><b>Flat-rate</b> most common jobs</span></div>
+        <div class="sidebar-fact">📞 <span><b>24/7</b> emergency response</span></div>
+        <div class="sidebar-fact">✓ <span><b>Licensed &amp; insured</b> Horry County</span></div>
+      </div>
+    </div>
   </div>
 </div>
 
-<div class="svc-content">
-  <div class="svc-main">
+<div class="content">
 
-    <section class="content-sec">
-      <div class="sec-label">Services Included</div>
-      <h2 class="sec-title">What's Included</h2>
-      <div class="sub-grid"><div class="sub-card"><span class="tag">Electrical</span><h4>Outlet & Switch Replacement</h4><p>Replace worn, damaged, or non-functioning outlets and switches throughout your property.</p></div><div class="sub-card"><span class="tag">Safety</span><h4>GFCI Outlet Installation</h4><p>Install code-required GFCI (ground fault circuit interrupter) outlets in bathrooms, kitchens, and outdoor areas.</p></div><div class="sub-card"><span class="tag">Fixtures</span><h4>Light Fixture & Ceiling Fan Installation</h4><p>Install ceiling fans, light fixtures, and pendant lights throughout your home or rental.</p></div><div class="sub-card"><span class="tag">Plumbing</span><h4>Faucet Repair & Replacement</h4><p>Repair dripping faucets or replace worn fixtures in kitchens and bathrooms.</p></div><div class="sub-card"><span class="tag">Plumbing</span><h4>Toilet Repair</h4><p>Fix running or leaking toilets — flapper replacement, fill valve, flush valve, and related issues.</p></div><div class="sub-card"><span class="tag">Plumbing</span><h4>Showerhead & Fixture Install</h4><p>Replace showerheads, towel bars, toilet paper holders, and bathroom fixtures.</p></div></div>
-    </section>
-
-    <section class="content-sec">
-      <div class="sec-label">Who We Help</div>
-      <h2 class="sec-title">Who We Serve</h2>
-      <div class="serve-list"><div class="serve-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20,6 9,17 4,12"/></svg><span>Residential homeowners</span></div><div class="serve-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20,6 9,17 4,12"/></svg><span>Vacation rental property owners</span></div><div class="serve-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20,6 9,17 4,12"/></svg><span>Out-of-state property owners</span></div><div class="serve-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20,6 9,17 4,12"/></svg><span>Property managers</span></div><div class="serve-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20,6 9,17 4,12"/></svg><span>Commercial businesses</span></div><div class="serve-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20,6 9,17 4,12"/></svg><span>Elderly & mobility-limited residents</span></div><div class="serve-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20,6 9,17 4,12"/></svg><span>New construction owners</span></div><div class="serve-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20,6 9,17 4,12"/></svg><span>HOA communities</span></div></div>
-    </section>
-
-    <section class="content-sec">
-      <div class="sec-label">How It Works</div>
-      <h2 class="sec-title">Our Process</h2>
-      <div class="process-steps"><div class="p-step"><div class="p-num">01</div><div><h4>Request & Quote</h4><p>Call, text, or submit a quote. Most minor electrical and plumbing jobs can be quoted over the phone or during the same visit.</p></div></div><div class="p-step"><div class="p-num">02</div><div><h4>Same-Day or Next-Day Service</h4><p>We schedule quickly — same-day for emergencies, next-day for standard requests throughout Horry County.</p></div></div><div class="p-step"><div class="p-num">03</div><div><h4>Professional Repair</h4><p>Our technician arrives with the right tools and replacement parts. Work is done cleanly without damaging surrounding surfaces.</p></div></div><div class="p-step"><div class="p-num">04</div><div><h4>Testing & Confirmation</h4><p>Every repair is tested before we leave — outlets verified, faucets checked for drips, toilets confirmed not running.</p></div></div><div class="p-step"><div class="p-num">05</div><div><h4>Clear Invoice</h4><p>Simple, upfront invoice with no surprise add-ons. If anything additional is needed, we quote before proceeding.</p></div></div></div>
-    </section>
-
-    
-
-    <section class="content-sec">
-      <div class="sec-label">Questions &amp; Answers</div>
-      <h2 class="sec-title">Frequently Asked Questions</h2>
-      <div class="faq-list"><div class="faq-item"><div class="faq-q" onclick="toggleFaq(this)">What electrical work can you do in Myrtle Beach?<span class="icon">+</span></div><div class="faq-a">We handle outlet and switch replacement, GFCI outlet installation, light fixture and ceiling fan installation, and minor electrical repairs. For major panel work, rewiring, or new circuits, we refer to a licensed master electrician.</div></div>
-<div class="faq-item"><div class="faq-q" onclick="toggleFaq(this)">What plumbing work can you do?<span class="icon">+</span></div><div class="faq-a">We handle faucet repair and replacement, running or leaking toilets, showerhead installation, garbage disposal replacement, drain clearing, and minor fixture installation. For major pipe work, sewer issues, or water heater replacement, we refer to a licensed plumber.</div></div>
-<div class="faq-item"><div class="faq-q" onclick="toggleFaq(this)">How much does minor electrical work cost in Myrtle Beach?<span class="icon">+</span></div><div class="faq-a">Starting at $75/hour. Flat-rate quotes for standard jobs: outlet replacement $75–$125, ceiling fan installation $85–$150, GFCI installation $95–$150 for 2–3 outlets. Always quoted before work begins.</div></div>
-<div class="faq-item"><div class="faq-q" onclick="toggleFaq(this)">Do you handle electrical and plumbing for vacation rentals?<span class="icon">+</span></div><div class="faq-a">Yes. Between-stay electrical and plumbing repairs for Myrtle Beach vacation rentals are among our most common requests. We respond quickly because we understand the deadline pressure of guest-ready timelines.</div></div>
-<div class="faq-item"><div class="faq-q" onclick="toggleFaq(this)">Do you install GFCI outlets in bathrooms?<span class="icon">+</span></div><div class="faq-a">Yes. GFCI installation is one of the most common requests from homeowners and vacation rental owners — required by code in bathrooms, kitchens, garages, and outdoor areas.</div></div>
-<div class="faq-item"><div class="faq-q" onclick="toggleFaq(this)">Are you licensed and insured for electrical and plumbing work?<span class="icon">+</span></div><div class="faq-a">Yes. Bakerss Property Maintenance is fully licensed and insured for the minor electrical and plumbing work we perform throughout Horry County.</div></div>
-<div class="faq-item"><div class="faq-q" onclick="toggleFaq(this)">Can you do a list of electrical and plumbing items in one visit?<span class="icon">+</span></div><div class="faq-a">Yes. We regularly handle 3–8 items in a single visit — the most efficient approach. Give us your complete list and we'll knock it all out.</div></div>
-<div class="faq-item"><div class="faq-q" onclick="toggleFaq(this)">Do you serve all of Horry County for electrical and plumbing?<span class="icon">+</span></div><div class="faq-a">Yes. Minor electrical and plumbing service is available throughout Myrtle Beach, Conway, North Myrtle Beach, Surfside Beach, Murrells Inlet, Garden City, Socastee, Little River, and all of Horry County.</div></div>
-</div>
-    </section>
-
-    <section class="content-sec">
-      <div class="sec-label">Related Services</div>
-      <h2 class="sec-title">You Might Also Need</h2>
-      <div class="related-grid"><a href="/services/handyman-services/" class="rel-card"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75"><path d="M14.7 6.3a1 1 0 000 1.4l1.6 1.6a1 1 0 001.4 0l3.77-3.77a6 6 0 01-7.94 7.94l-6.91 6.91a2.12 2.12 0 01-3-3l6.91-6.91a6 6 0 017.94-7.94l-3.76 3.76z"/></svg><div><h4>Handyman Services</h4><p>General repairs and installations</p></div></a><a href="/services/painting/" class="rel-card"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75"><path d="M12 19l7-7 3 3-7 7-3-3z"/></svg><div><h4>Painting</h4><p>Touch up after repairs</p></div></a><a href="/services/property-maintenance/" class="rel-card"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75"><rect x="3" y="3" width="18" height="18" rx="2"/></svg><div><h4>Property Maintenance Plans</h4><p>Bundle all repair services</p></div></a><a href="/services/flooring/" class="rel-card"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75"><rect x="2" y="2" width="9" height="9"/><rect x="13" y="2" width="9" height="9"/></svg><div><h4>Flooring</h4><p>Full property upgrades</p></div></a></div>
-    </section>
-
-    <section class="content-sec">
-      <div class="sec-label">Cities We Serve</div>
-      <h2 class="sec-title">Minor Electrical and Plumbing Across Horry County</h2>
-      <p class="prose">We provide this service in every major city across Horry County. Click your city for location-specific information.</p>
-      <div class="cities-row"><a href="/service-areas/myrtle-beach/" class="city-link">Myrtle Beach</a><a href="/service-areas/north-myrtle-beach/" class="city-link">North Myrtle Beach</a><a href="/service-areas/conway/" class="city-link">Conway</a><a href="/service-areas/surfside-beach/" class="city-link">Surfside Beach</a><a href="/service-areas/murrells-inlet/" class="city-link">Murrells Inlet</a><a href="/service-areas/garden-city/" class="city-link">Garden City</a><a href="/service-areas/socastee/" class="city-link">Socastee</a><a href="/service-areas/little-river/" class="city-link">Little River</a><a href="/service-areas/horry-county/" class="city-link">All of Horry County</a></div>
-    </section>
-
+  <div class="stat-row">
+    <div class="stat"><div class="num">$75</div><div class="lbl">Hourly rate — most jobs flat-rate</div></div>
+    <div class="stat"><div class="num">24/7</div><div class="lbl">Emergency response</div></div>
+    <div class="stat"><div class="num">1 Visit</div><div class="lbl">Punch lists done in one trip</div></div>
+    <div class="stat"><div class="num">8+</div><div class="lbl">Horry County cities served</div></div>
   </div>
 
-  <div class="svc-sidebar">
-    <div class="price-box">
-      <div class="from">Starting at</div>
-      <div class="amount">$75/hr</div>
-      <div class="note">Most jobs quoted flat-rate</div>
-    </div>
-    <div class="call-side">
-      <p>Questions? We answer 24/7</p>
-      <a href="tel:8434677136">843-467-7136</a>
-    </div>
-    <div class="side-card">
-      <h3>Customer Reviews</h3>
-      <div class="review-mini">
-  <div style="display:flex;align-items:center;gap:8px;margin-bottom:6px">
-    <div style="width:32px;height:32px;background:var(--pink);border-radius:50%;display:flex;align-items:center;justify-content:center;font-weight:700;font-size:12px;color:#fff;flex-shrink:0">L</div>
-    <div><div style="font-size:13px;font-weight:600">Lisa T.</div><div class="stars">★★★★★</div></div>
-  </div>
-  <p>"Came within half an hour's notice. Whether it's cleaning, landscaping, or home repair — highly recommend."</p>
-  <div class="who">Emergency Service · Myrtle Beach, SC</div>
-</div><div class="review-mini">
-  <div style="display:flex;align-items:center;gap:8px;margin-bottom:6px">
-    <div style="width:32px;height:32px;background:var(--pink);border-radius:50%;display:flex;align-items:center;justify-content:center;font-weight:700;font-size:12px;color:#fff;flex-shrink:0">J</div>
-    <div><div style="font-size:13px;font-weight:600">Jimmy B.</div><div class="stars">★★★★★</div></div>
-  </div>
-  <p>"Very accurate. They go above and beyond."</p>
-  <div class="who">Property Maintenance · Horry County, SC</div>
-</div><div class="review-mini">
-  <div style="display:flex;align-items:center;gap:8px;margin-bottom:6px">
-    <div style="width:32px;height:32px;background:var(--pink);border-radius:50%;display:flex;align-items:center;justify-content:center;font-weight:700;font-size:12px;color:#fff;flex-shrink:0">L</div>
-    <div><div style="font-size:13px;font-weight:600">Lilly H.</div><div class="stars">★★★★★</div></div>
-  </div>
-  <p>"Professional, punctual, detail-oriented. Outstanding quality."</p>
-  <div class="who">Installation · Myrtle Beach, SC</div>
-</div>
-    </div>
-    <div class="side-card">
-      <h3>Service Areas</h3>
-      <a href="/service-areas/myrtle-beach/" class="city-link">Myrtle Beach</a><a href="/service-areas/north-myrtle-beach/" class="city-link">North Myrtle Beach</a><a href="/service-areas/conway/" class="city-link">Conway</a><a href="/service-areas/surfside-beach/" class="city-link">Surfside Beach</a><a href="/service-areas/murrells-inlet/" class="city-link">Murrells Inlet</a><a href="/service-areas/garden-city/" class="city-link">Garden City</a><a href="/service-areas/socastee/" class="city-link">Socastee</a><a href="/service-areas/little-river/" class="city-link">Little River</a><a href="/service-areas/horry-county/" class="city-link">All of Horry County</a>
+  <div class="sec" style="margin-top:3.5rem">
+    <span class="sec-label">What We Do</span>
+    <h2 class="sec-h2">Minor Electrical Services</h2>
+    <p class="prose">Salt air in Myrtle Beach accelerates corrosion of electrical fixtures, outlets, and hardware faster than inland markets. Vacation rental properties experience higher failure rates from constant guest use. Both situations create the kind of minor electrical issues that don't require a master electrician — but do require someone competent, licensed, and available when you need them.</p>
+    <div class="card-3" style="margin-top:1.5rem">
+      <div class="card">
+        <span class="tag">Safety</span>
+        <h4>GFCI Outlet Installation</h4>
+        <p>Code-required in all bathrooms, kitchens, garages, and outdoor areas. Most frequently requested minor electrical service for Myrtle Beach vacation rentals. $95–$175 for 1–2 outlets.</p>
+      </div>
+      <div class="card">
+        <span class="tag">Common Repair</span>
+        <h4>Outlet &amp; Switch Replacement</h4>
+        <p>Worn, loose, or non-functioning outlets and switches replaced. Commonly needed in older Horry County homes and vacation rentals with heavy guest use. $75–$125 per outlet.</p>
+      </div>
+      <div class="card">
+        <span class="tag">Installation</span>
+        <h4>Ceiling Fan &amp; Fixture Install</h4>
+        <p>Ceiling fans, pendant lights, bathroom fixtures — installed correctly without damaging surrounding finishes. $85–$150 per fixture.</p>
+      </div>
+      <div class="card">
+        <span class="tag">Installation</span>
+        <h4>Light Fixture Replacement</h4>
+        <p>Dated or failed light fixtures replaced with your chosen replacements. We handle the wiring, mounting, and cleanup.</p>
+      </div>
+      <div class="card">
+        <span class="tag">Safety</span>
+        <h4>Smoke &amp; CO Detector Install</h4>
+        <p>Required in vacation rentals throughout Horry County. We install to code specifications and test before leaving.</p>
+      </div>
+      <div class="card">
+        <span class="tag">Not Available</span>
+        <h4>Panel &amp; New Circuit Work</h4>
+        <p>Panel upgrades, new circuit installation, and rewiring require a licensed master electrician. We refer to trusted specialists and can coordinate if needed.</p>
+      </div>
     </div>
   </div>
+
+  <div class="sec">
+    <span class="sec-label">Plumbing Services</span>
+    <h2 class="sec-h2">Minor Plumbing Services</h2>
+    <p class="prose">Myrtle Beach's coastal humidity accelerates plumbing fixture corrosion and mineral buildup faster than dry inland climates. Running toilets, dripping faucets, and degraded showerheads are among the most common maintenance requests for Horry County vacation rentals and residential properties — and all of them are straightforward repairs that don't require a licensed plumber.</p>
+    <div class="card-3">
+      <div class="card">
+        <span class="tag">Most Common</span>
+        <h4>Faucet Repair &amp; Replacement</h4>
+        <p>Dripping faucets, corroded fixtures, or just an upgrade — all kitchen and bathroom faucets repaired or replaced. $125–$225 per faucet including labor.</p>
+      </div>
+      <div class="card">
+        <span class="tag">Common Repair</span>
+        <h4>Running Toilet Repair</h4>
+        <p>Flapper, fill valve, and flush valve replacement for running or leaking toilets. The #1 guest complaint in vacation rentals — the sound of a running toilet all night is guaranteed to affect reviews. $95–$150.</p>
+      </div>
+      <div class="card">
+        <span class="tag">Installation</span>
+        <h4>Showerhead Replacement</h4>
+        <p>Old, corroded, or low-pressure showerheads replaced with quality fixtures. Common replacement in coastal properties where mineral buildup and salt air degrade showerheads faster. $75–$125.</p>
+      </div>
+      <div class="card">
+        <span class="tag">Installation</span>
+        <h4>Garbage Disposal Replacement</h4>
+        <p>Failed disposals replaced with your chosen unit or our recommendation. Includes electrical connection and plumbing hookup. $150–$275 including labor.</p>
+      </div>
+      <div class="card">
+        <span class="tag">Common Repair</span>
+        <h4>Drain Clearing</h4>
+        <p>Slow or blocked bathroom drains — hair clogs, mineral buildup. Available for kitchen and bathroom drains throughout the home.</p>
+      </div>
+      <div class="card">
+        <span class="tag">Not Available</span>
+        <h4>Major Plumbing Work</h4>
+        <p>New pipe installation, sewer work, water heater replacement require a licensed plumber. We refer and can coordinate with trusted specialists.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="sec">
+    <span class="sec-label">Pricing</span>
+    <h2 class="sec-h2">Common Job Pricing — 2025</h2>
+    <p class="prose">Most jobs are quoted flat-rate before work begins — you know what you're paying before we start.</p>
+    <table class="price-table">
+      <thead><tr><th>Job</th><th>Flat Rate</th></tr></thead>
+      <tbody>
+        <tr><td>GFCI outlet installation (1–2 outlets)</td><td class="price">$95–$175</td></tr>
+        <tr><td>Standard outlet / switch replacement</td><td class="price">$75–$125</td></tr>
+        <tr><td>Ceiling fan installation</td><td class="price">$85–$150</td></tr>
+        <tr><td>Light fixture installation</td><td class="price">$75–$135</td></tr>
+        <tr><td>Faucet repair or replacement</td><td class="price">$125–$225</td></tr>
+        <tr><td>Running toilet repair</td><td class="price">$95–$150</td></tr>
+        <tr><td>Showerhead replacement</td><td class="price">$75–$125</td></tr>
+        <tr><td>Garbage disposal replacement</td><td class="price">$150–$275</td></tr>
+        <tr><td>Punch list (5–8 items, one visit)</td><td class="price">$275–$550</td></tr>
+      </tbody>
+    </table>
+    <div class="callout" style="margin-top:1.25rem">
+      <b>The punch list approach:</b> The most cost-effective way to use minor electrical and plumbing service is to compile a list of 5–10 items and have everything handled in a single visit. One trip charge, multiple items resolved, and you're not scheduling around a contractor's schedule multiple times.
+    </div>
+  </div>
+
+  <div class="sec">
+    <span class="sec-label">Vacation Rental Focus</span>
+    <h2 class="sec-h2">Why Myrtle Beach STR Owners Call Us</h2>
+    <p class="prose">A running toilet or non-functioning outlet in a vacation rental isn't just a maintenance issue — it's a potential 3-star review waiting to happen. Between-stay repairs need to happen quickly, in the window between guest checkout and the next guest arrival. That urgency requires a maintenance team that actually answers 24/7 and can dispatch same-day.</p>
+    <div class="card-2">
+      <div class="card">
+        <span class="tag">Emergency Response</span>
+        <h4>24/7 Availability</h4>
+        <p>We answer the phone at 2 AM when a guest reports a plumbing issue. We dispatch as fast as we can. No voicemail, no callback queue — an actual human who can help.</p>
+      </div>
+      <div class="card">
+        <span class="tag">Proactive</span>
+        <h4>Annual Inspection Approach</h4>
+        <p>The best vacation rental operators schedule an annual punch-list visit — working through the full property's electrical and plumbing items systematically before anything becomes a guest complaint. Preventive beats reactive every time.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="sec">
+    <span class="sec-label">Service Areas</span>
+    <h2 class="sec-h2">Minor Electrical &amp; Plumbing — All of Horry County</h2>
+    <div class="svc-links">
+      <a href="/service-areas/myrtle-beach/minor-electric-plumbing/" class="svc-link">Myrtle Beach<span class="pr">From $75/hr</span></a>
+      <a href="/service-areas/north-myrtle-beach/minor-electric-plumbing/" class="svc-link">North Myrtle Beach<span class="pr">From $75/hr</span></a>
+      <a href="/service-areas/conway/minor-electric-plumbing/" class="svc-link">Conway<span class="pr">From $75/hr</span></a>
+      <a href="/service-areas/surfside-beach/minor-electric-plumbing/" class="svc-link">Surfside Beach<span class="pr">From $75/hr</span></a>
+      <a href="/service-areas/murrells-inlet/minor-electric-plumbing/" class="svc-link">Murrells Inlet<span class="pr">From $75/hr</span></a>
+      <a href="/service-areas/socastee/minor-electric-plumbing/" class="svc-link">Socastee<span class="pr">From $75/hr</span></a>
+      <a href="/service-areas/little-river/minor-electric-plumbing/" class="svc-link">Little River<span class="pr">From $75/hr</span></a>
+      <a href="/service-areas/garden-city/minor-electric-plumbing/" class="svc-link">Garden City Beach<span class="pr">From $75/hr</span></a>
+    </div>
+  </div>
+
+  <div class="sec">
+    <span class="sec-label">FAQ</span>
+    <h2 class="sec-h2">Minor Electrical &amp; Plumbing FAQ</h2>
+    <div class="faq-wrap">
+      <div class="faq-item"><div class="faq-q">How do I know if I need a handyman or a licensed electrician/plumber?<span class="ico">+</span></div><div class="faq-a">The rule of thumb: outlet and switch replacement, GFCI installation, fixture installation, faucet replacement, toilet repairs, and showerhead installation are all handyman-appropriate in South Carolina. New circuit installation, panel work, rewiring, sewer work, water heater replacement, and new pipe installation require licensed contractors. If you're unsure, describe the job when you call — we'll tell you honestly whether it's in our scope or needs a specialist.</div></div>
+      <div class="faq-item"><div class="faq-q">How fast can you respond for an emergency in Myrtle Beach?<span class="ico">+</span></div><div class="faq-a">We answer 24/7. Response time for emergencies depends on current schedule, but we work to dispatch same-day for issues that are blocking guest arrivals or creating active water damage risk. Call 843-467-7136 and describe the situation — we'll give you an honest answer on timing.</div></div>
+      <div class="faq-item"><div class="faq-q">Do I need to supply the replacement parts?<span class="ico">+</span></div><div class="faq-a">If you know what you want (specific faucet brand, fixture style), having the replacement ready when we arrive saves time and a hardware store trip. If you don't have the part, we can source common items or recommend what to order. For standard repairs like toilet internals or outlet replacements, we typically carry common replacement parts.</div></div>
+      <div class="faq-item"><div class="faq-q">Are you licensed for electrical and plumbing work in South Carolina?<span class="ico">+</span></div><div class="faq-a">Yes. Bakerss Property Maintenance is fully licensed and insured throughout Horry County for the minor electrical and plumbing work we perform. We operate within our scope of work and refer to licensed specialists when jobs require permits or master-level licensing.</div></div>
+    </div>
+  </div>
+
 </div>
 
 <div class="cta-band">
-  <h2>Ready to Get Started?</h2>
-  <p>Free estimates · No obligation · We answer 24/7</p>
+  <h2>Need Electrical or Plumbing Fixed Fast?</h2>
+  <p>Starting at $75/hr · Flat-rate most jobs · 24/7 emergency response · All of Horry County</p>
   <div class="cta-buttons">
-    <a href="/get-quote/" class="btn-white">Get a Free Quote →</a>
-    <a href="tel:8434677136" class="btn-outline-w">📞 843-467-7136</a>
+    <a href="/get-quote/" class="btn-white">Get a Free Estimate →</a>
+    <a href="tel:8434677136" class="btn-ow">📞 843-467-7136</a>
   </div>
 </div>
 
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"Service","name":"Minor Electrical and Plumbing","provider":{"@type":"LocalBusiness","name":"Bakerss Property Maintenance","telephone":"+18434677136"},"areaServed":"Horry County, SC","offers":{"@type":"Offer","priceCurrency":"USD","price":"75"}}</script>
 <footer>
   <div class="footer-inner">
     <div class="footer-top">
@@ -368,16 +533,8 @@ footer{background:var(--black);border-top:1px solid rgba(255,255,255,0.07);paddi
   <a href="sms:8434677136"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15a2 2 0 01-2 2H7l-4 4V5a2 2 0 012-2h14a2 2 0 012 2z"/></svg>Text</a>
   <a href="/get-quote/" class="primary"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/></svg>Free Quote</a>
 </div>
-
 <script>
-function toggleFaq(el){
-  const item = el.parentElement;
-  item.classList.toggle('open');
-}
-</script>
-<script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"What electrical work can you do in Myrtle Beach?","acceptedAnswer":{"@type":"Answer","text":"We handle outlet and switch replacement, GFCI outlet installation, light fixture and ceiling fan installation, and minor electrical repairs. For major panel work, rewiring, or new circuits, we refer to a licensed master electrician."}},{"@type":"Question","name":"What plumbing work can you do?","acceptedAnswer":{"@type":"Answer","text":"We handle faucet repair and replacement, running or leaking toilets, showerhead installation, garbage disposal replacement, drain clearing, and minor fixture installation. For major pipe work, sewer issues, or water heater replacement, we refer to a licensed plumber."}},{"@type":"Question","name":"How much does minor electrical work cost in Myrtle Beach?","acceptedAnswer":{"@type":"Answer","text":"Starting at $75/hour. Flat-rate quotes for standard jobs: outlet replacement $75–$125, ceiling fan installation $85–$150, GFCI installation $95–$150 for 2–3 outlets. Always quoted before work begins."}},{"@type":"Question","name":"Do you handle electrical and plumbing for vacation rentals?","acceptedAnswer":{"@type":"Answer","text":"Yes. Between-stay electrical and plumbing repairs for Myrtle Beach vacation rentals are among our most common requests. We respond quickly because we understand the deadline pressure of guest-ready timelines."}},{"@type":"Question","name":"Do you install GFCI outlets in bathrooms?","acceptedAnswer":{"@type":"Answer","text":"Yes. GFCI installation is one of the most common requests from homeowners and vacation rental owners — required by code in bathrooms, kitchens, garages, and outdoor areas."}}]}</script>
-<script type="application/ld+json">
-{"@context":"https://schema.org","@type":"Service","name":"Minor Electrical and Plumbing","provider":{"@type":"LocalBusiness","name":"Bakerss Property Maintenance","telephone":"+18434677136"},"areaServed":"Horry County, SC","url":"https://www.bakerss.com/services/minor-electric-plumbing/","priceRange":"$75/hr+"}
+document.querySelectorAll('.faq-q').forEach(q=>q.addEventListener('click',()=>q.parentElement.classList.toggle('open')));
 </script>
 </body>
 </html>
