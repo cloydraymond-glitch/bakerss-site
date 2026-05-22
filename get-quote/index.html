@@ -4,1256 +4,860 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>Get a Free Quote | Bakerss Property Maintenance — Myrtle Beach SC</title>
-<meta name="description" content="Get a personalized property maintenance estimate in seconds. Lawn care, cleaning, pressure washing, landscaping and more in Myrtle Beach and Horry County SC. Call 843-467-7136.">
+<meta name="description" content="Get a personalized property maintenance estimate in 60 seconds. Myrtle Beach and Horry County SC. Lawn care, cleaning, pressure washing, landscaping and more.">
 <link rel="canonical" href="https://www.bakerss.com/get-quote/">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;800&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@800&family=DM+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 <style>
-
 *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
 :root{
-  --pink:#E91E8C;--pink-dark:#C0157A;--pink-light:#FF4BAB;
-  --black:#0D0D0D;--dark:#1A1A1A;--dark2:#242424;--dark3:#2E2E2E;
-  --white:#FFFFFF;--border:rgba(255,255,255,0.1);
-  --font-display:'Playfair Display',Georgia,serif;--font-body:'DM Sans',sans-serif;
+  --pink:#E91E8C;
+  --black:#0D0D0D;
+  --dark:#1A1A1A;
+  --dark2:#222222;
+  --white:#FFFFFF;
 }
 html{scroll-behavior:smooth}
-body{font-family:var(--font-body);background:var(--dark);color:var(--white);line-height:1.6;overflow-x:hidden}
-.topbar{background:var(--pink);text-align:center;padding:9px 1rem;font-size:13px;font-weight:500;color:#fff}
-.topbar a{color:#fff;text-decoration:none;font-weight:700;border-bottom:1px solid rgba(255,255,255,0.5)}
-nav{position:sticky;top:0;z-index:1000;background:rgba(13,13,13,0.97);backdrop-filter:blur(12px);border-bottom:1px solid var(--border)}
-.nav-inner{max-width:1280px;margin:0 auto;display:flex;align-items:center;gap:1rem;padding:0 2rem;height:70px}
-.logo{font-family:var(--font-display);font-size:22px;font-weight:800;color:var(--white);text-decoration:none;letter-spacing:-0.02em}
+body{
+  font-family:'DM Sans',sans-serif;
+  background:var(--black);
+  color:var(--white);
+  line-height:1.6;
+  min-height:100vh;
+}
+
+/* ── TOP BAR ── */
+.topbar{
+  background:var(--dark2);
+  border-bottom:1px solid rgba(255,255,255,0.07);
+  padding:0.75rem 1.5rem;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  position:sticky;
+  top:0;
+  z-index:100;
+}
+.logo{
+  font-family:'Playfair Display',Georgia,serif;
+  font-size:1.25rem;
+  font-weight:800;
+  color:#fff;
+  text-decoration:none;
+  letter-spacing:-0.02em;
+}
 .logo span{color:var(--pink)}
-.nav-links{display:flex;align-items:center;margin-left:1.5rem;flex:1}
-.nav-item{position:relative}
-.nav-item>a,.nav-btn{display:flex;align-items:center;gap:4px;padding:0 14px;height:70px;color:rgba(255,255,255,0.7);text-decoration:none;font-size:13.5px;font-weight:500;background:none;border:none;cursor:pointer;font-family:var(--font-body);transition:color 0.2s}
-.nav-item>a:hover,.nav-btn:hover{color:var(--white)}
-.nav-item>a svg,.nav-btn svg{width:11px;height:11px;margin-top:1px}
-.mega-menu{display:none;position:absolute;top:70px;left:50%;transform:translateX(-50%);background:var(--dark2);border:1px solid var(--border);border-radius:12px;padding:2rem;width:860px;box-shadow:0 24px 60px rgba(0,0,0,0.6);z-index:999}
-.nav-item:hover .mega-menu{display:grid;grid-template-columns:repeat(3,1fr);gap:2rem}
-.nav-item:hover .dropdown{display:block}
-.mega-col h4{font-size:10px;font-weight:600;letter-spacing:0.12em;text-transform:uppercase;color:var(--pink);margin-bottom:12px;padding-bottom:8px;border-bottom:1px solid rgba(233,30,140,0.25)}
-.mega-col a{display:flex;align-items:center;gap:8px;padding:7px 0;color:rgba(255,255,255,0.7);text-decoration:none;font-size:13.5px;transition:color 0.15s;border-bottom:1px solid rgba(255,255,255,0.04)}
-.mega-col a:last-child{border-bottom:none}
-.mega-col a:hover{color:var(--pink)}
-.dropdown{display:none;position:absolute;top:70px;left:0;background:var(--dark2);border:1px solid var(--border);border-radius:10px;padding:0.75rem 0;min-width:220px;box-shadow:0 16px 40px rgba(0,0,0,0.5);z-index:999}
-.dropdown a{display:block;padding:9px 20px;color:rgba(255,255,255,0.75);text-decoration:none;font-size:13.5px;transition:all 0.15s}
-.dropdown a:hover{color:var(--white);background:rgba(233,30,140,0.08);padding-left:24px}
-.nav-right{display:flex;align-items:center;gap:12px;margin-left:auto}
-.nav-phone{font-size:14px;font-weight:600;color:rgba(255,255,255,0.85);text-decoration:none}
-.nav-phone:hover{color:var(--pink)}
-.btn-quote-sm{background:var(--pink);color:#fff;padding:9px 20px;border-radius:6px;font-size:13px;font-weight:600;text-decoration:none;transition:background 0.2s}
-.btn-quote-sm:hover{background:var(--pink-dark)}
-/* SERVICE PAGE LAYOUT */
-.svc-hero{position:relative;background:var(--black);padding:4.5rem 2rem 3.5rem;border-bottom:1px solid rgba(255,255,255,0.06);overflow:hidden}
-.svc-hero::after{content:'';position:absolute;top:-100px;right:-100px;width:500px;height:500px;background:radial-gradient(circle,rgba(233,30,140,0.08) 0%,transparent 70%);pointer-events:none}
-.breadcrumb{display:flex;align-items:center;gap:8px;font-size:12px;color:rgba(255,255,255,0.3);margin-bottom:1.25rem}
-.breadcrumb a{color:rgba(255,255,255,0.3);text-decoration:none;transition:color 0.15s}
-.breadcrumb a:hover{color:var(--pink)}
-.breadcrumb span{color:rgba(255,255,255,0.15)}
-.svc-hero-inner{max-width:1100px;margin:0 auto;display:grid;grid-template-columns:1fr 360px;gap:3rem;align-items:start;position:relative}
-.svc-badge{display:inline-flex;align-items:center;gap:8px;background:rgba(233,30,140,0.1);border:1px solid rgba(233,30,140,0.3);border-radius:100px;padding:5px 14px;font-size:11px;font-weight:600;letter-spacing:0.08em;text-transform:uppercase;color:var(--pink-light);margin-bottom:1.25rem}
-.svc-hero h1{font-family:var(--font-display);font-size:clamp(2rem,3.5vw,3rem);font-weight:800;line-height:1.1;letter-spacing:-0.02em;margin-bottom:1rem}
-.svc-hero h1 em{font-style:normal;color:var(--pink)}
-.svc-hero-desc{font-size:16px;color:rgba(255,255,255,0.55);line-height:1.75;margin-bottom:1.75rem;font-weight:300;max-width:560px}
-.svc-ctas{display:flex;gap:10px;flex-wrap:wrap;margin-bottom:1.75rem}
-.btn-primary{display:inline-flex;align-items:center;gap:8px;background:var(--pink);color:#fff;padding:13px 24px;border-radius:8px;font-size:14px;font-weight:600;text-decoration:none;transition:all 0.2s}
-.btn-primary:hover{background:var(--pink-dark);transform:translateY(-1px)}
-.btn-secondary{display:inline-flex;align-items:center;gap:8px;background:transparent;color:rgba(255,255,255,0.8);padding:13px 24px;border-radius:8px;font-size:14px;font-weight:500;text-decoration:none;border:1px solid rgba(255,255,255,0.18);transition:all 0.2s}
-.btn-secondary:hover{border-color:rgba(255,255,255,0.4);color:#fff}
-.svc-trust{display:flex;gap:20px;flex-wrap:wrap}
-.trust-item{display:flex;align-items:center;gap:6px;font-size:12.5px;color:rgba(255,255,255,0.45)}
-.trust-item svg{width:15px;height:15px;color:var(--pink);flex-shrink:0}
-/* Quote side card */
-.quote-card{background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.1);border-radius:14px;padding:1.75rem;position:sticky;top:90px}
-.quote-card h3{font-family:var(--font-display);font-size:1.2rem;font-weight:700;margin-bottom:0.25rem}
-.quote-card .qsub{font-size:12px;color:rgba(255,255,255,0.4);margin-bottom:1.25rem}
-.form-group{margin-bottom:0.85rem}
-.form-group label{display:block;font-size:10px;font-weight:600;letter-spacing:0.08em;text-transform:uppercase;color:rgba(255,255,255,0.35);margin-bottom:5px}
-.form-group input,.form-group select{width:100%;background:rgba(255,255,255,0.05);border:1px solid rgba(255,255,255,0.1);border-radius:7px;padding:10px 13px;color:#fff;font-size:13.5px;font-family:var(--font-body);outline:none;transition:border-color 0.2s;-webkit-appearance:none}
-.form-group input::placeholder{color:rgba(255,255,255,0.25)}
-.form-group input:focus,.form-group select:focus{border-color:var(--pink)}
-.form-group select option{background:var(--dark2)}
-.btn-submit{width:100%;background:var(--pink);color:#fff;border:none;padding:13px;border-radius:7px;font-size:14px;font-weight:600;font-family:var(--font-body);cursor:pointer;margin-top:0.25rem;transition:background 0.2s}
-.btn-submit:hover{background:var(--pink-dark)}
-.q-privacy{text-align:center;font-size:11px;color:rgba(255,255,255,0.2);margin-top:0.6rem}
-.q-phone{display:flex;align-items:center;justify-content:center;gap:7px;margin-top:1rem;padding-top:1rem;border-top:1px solid rgba(255,255,255,0.07);font-size:13px;color:rgba(255,255,255,0.45)}
-.q-phone a{color:var(--pink);text-decoration:none;font-weight:600}
-/* MAIN CONTENT */
-.svc-content{max-width:1100px;margin:0 auto;padding:4rem 2rem;display:grid;grid-template-columns:1fr 360px;gap:3rem;align-items:start}
-.svc-main{}
-section.content-sec{margin-bottom:3.5rem}
-section.content-sec:last-child{margin-bottom:0}
-.sec-label{font-size:10px;font-weight:700;letter-spacing:0.12em;text-transform:uppercase;color:var(--pink);margin-bottom:0.6rem}
-h2.sec-title{font-family:var(--font-display);font-size:1.75rem;font-weight:800;letter-spacing:-0.02em;margin-bottom:1rem;line-height:1.2}
-.prose{font-size:15px;color:rgba(255,255,255,0.6);line-height:1.8;font-weight:300}
-.prose+.prose{margin-top:1rem}
-/* Service sub-cards */
-.sub-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:12px;margin-top:1.5rem}
-.sub-card{background:var(--dark2);border:1px solid rgba(255,255,255,0.07);border-radius:10px;padding:1.25rem}
-.sub-card h4{font-size:14.5px;font-weight:600;margin-bottom:0.4rem}
-.sub-card p{font-size:13px;color:rgba(255,255,255,0.45);line-height:1.6}
-.sub-card .tag{display:inline-block;font-size:11px;font-weight:600;color:var(--pink);background:rgba(233,30,140,0.08);padding:2px 8px;border-radius:4px;margin-bottom:0.5rem}
-/* Who we serve */
-.serve-list{display:grid;grid-template-columns:repeat(2,1fr);gap:10px;margin-top:1.25rem}
-.serve-item{display:flex;align-items:center;gap:10px;background:var(--dark2);border:1px solid rgba(255,255,255,0.06);border-radius:8px;padding:12px}
-.serve-item svg{color:var(--pink);width:16px;height:16px;flex-shrink:0}
-.serve-item span{font-size:13.5px;color:rgba(255,255,255,0.7)}
-/* Process steps */
-.process-steps{display:flex;flex-direction:column;gap:0;margin-top:1.25rem}
-.p-step{display:flex;gap:1.25rem;padding:1.25rem 0;border-bottom:1px solid rgba(255,255,255,0.05)}
-.p-step:last-child{border-bottom:none}
-.p-num{width:36px;height:36px;background:var(--pink);border-radius:8px;display:flex;align-items:center;justify-content:center;font-size:13px;font-weight:700;color:#fff;flex-shrink:0;margin-top:2px}
-.p-step h4{font-size:15px;font-weight:600;margin-bottom:4px}
-.p-step p{font-size:13.5px;color:rgba(255,255,255,0.5);line-height:1.6}
-/* FAQ */
-.faq-list{display:flex;flex-direction:column;gap:0;margin-top:1.25rem;border:1px solid rgba(255,255,255,0.07);border-radius:12px;overflow:hidden}
-.faq-item{border-bottom:1px solid rgba(255,255,255,0.06)}
-.faq-item:last-child{border-bottom:none}
-.faq-q{display:flex;align-items:center;justify-content:space-between;padding:1.1rem 1.25rem;cursor:pointer;font-size:14.5px;font-weight:600;gap:1rem;transition:background 0.15s}
-.faq-q:hover{background:rgba(255,255,255,0.03)}
-.faq-q .icon{font-size:18px;color:var(--pink);flex-shrink:0;transition:transform 0.25s;line-height:1}
-.faq-a{display:none;padding:0 1.25rem 1.1rem;font-size:13.5px;color:rgba(255,255,255,0.55);line-height:1.75}
-.faq-item.open .faq-q .icon{transform:rotate(45deg)}
-.faq-item.open .faq-a{display:block}
-/* Cities grid */
-.cities-row{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;margin-top:1.25rem}
-.city-link{display:flex;align-items:center;gap:7px;background:var(--dark2);border:1px solid rgba(255,255,255,0.07);border-radius:8px;padding:10px 14px;text-decoration:none;color:rgba(255,255,255,0.65);font-size:13px;transition:all 0.2s}
-.city-link:hover{border-color:rgba(233,30,140,0.35);color:var(--white)}
-.city-link::before{content:'';width:5px;height:5px;background:var(--pink);border-radius:50%;flex-shrink:0;opacity:0.6}
-/* Related services */
-.related-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:10px;margin-top:1.25rem}
-.rel-card{background:var(--dark2);border:1px solid rgba(255,255,255,0.07);border-radius:10px;padding:1.1rem 1.25rem;text-decoration:none;color:var(--white);transition:all 0.2s;display:flex;align-items:center;gap:10px}
-.rel-card:hover{border-color:rgba(233,30,140,0.35);transform:translateY(-1px)}
-.rel-card svg{color:var(--pink);width:18px;height:18px;flex-shrink:0}
-.rel-card div h4{font-size:13.5px;font-weight:600;margin-bottom:2px}
-.rel-card div p{font-size:12px;color:rgba(255,255,255,0.4)}
-/* Sidebar sticky */
-.svc-sidebar{position:sticky;top:90px;display:flex;flex-direction:column;gap:1.25rem}
-.side-card{background:var(--dark2);border:1px solid rgba(255,255,255,0.08);border-radius:12px;padding:1.5rem}
-.side-card h3{font-size:14px;font-weight:600;margin-bottom:0.9rem;padding-bottom:0.75rem;border-bottom:1px solid rgba(255,255,255,0.07)}
-.price-box{background:var(--black);border:1px solid rgba(233,30,140,0.25);border-radius:10px;padding:1.25rem;text-align:center;margin-bottom:1.25rem}
-.price-box .from{font-size:11px;color:rgba(255,255,255,0.4);margin-bottom:4px}
-.price-box .amount{font-family:var(--font-display);font-size:2.25rem;font-weight:800;color:var(--pink)}
-.price-box .note{font-size:11px;color:rgba(255,255,255,0.35);margin-top:4px}
-.review-mini{padding:10px 0;border-bottom:1px solid rgba(255,255,255,0.06)}
-.review-mini:last-child{border-bottom:none;padding-bottom:0}
-.stars{color:#FFB800;font-size:12px;margin-bottom:4px}
-.review-mini p{font-size:12.5px;color:rgba(255,255,255,0.55);font-style:italic;line-height:1.5;margin-bottom:4px}
-.review-mini .who{font-size:11px;color:rgba(255,255,255,0.3)}
-.call-side{background:var(--pink);border-radius:10px;padding:1.25rem;text-align:center}
-.call-side p{font-size:12px;color:rgba(255,255,255,0.75);margin-bottom:6px}
-.call-side a{display:block;font-family:var(--font-display);font-size:1.35rem;font-weight:800;color:#fff;text-decoration:none}
-/* CTA BAND */
-.cta-band{background:var(--pink);padding:3.5rem 2rem;text-align:center}
-.cta-band h2{font-family:var(--font-display);font-size:clamp(1.6rem,3vw,2.2rem);font-weight:800;color:#fff;margin-bottom:0.5rem}
-.cta-band p{font-size:15px;color:rgba(255,255,255,0.75);margin-bottom:1.75rem}
-.cta-buttons{display:flex;gap:12px;justify-content:center;flex-wrap:wrap}
-.btn-white{display:inline-flex;align-items:center;gap:8px;background:#fff;color:var(--pink);padding:13px 26px;border-radius:8px;font-size:14px;font-weight:700;text-decoration:none;transition:all 0.2s}
-.btn-white:hover{transform:translateY(-1px)}
-.btn-outline-w{display:inline-flex;align-items:center;gap:8px;background:transparent;color:#fff;padding:13px 26px;border-radius:8px;font-size:14px;font-weight:600;text-decoration:none;border:2px solid rgba(255,255,255,0.5);transition:all 0.2s}
-.btn-outline-w:hover{border-color:#fff;background:rgba(255,255,255,0.1)}
-/* FOOTER */
-footer{background:var(--black);border-top:1px solid rgba(255,255,255,0.07);padding:3rem 2rem 2rem}
-.footer-inner{max-width:1280px;margin:0 auto}
-.footer-top{display:grid;grid-template-columns:260px 1fr 1fr 1fr;gap:2.5rem;padding-bottom:2.5rem;border-bottom:1px solid rgba(255,255,255,0.06);margin-bottom:1.5rem}
-.footer-brand p{font-size:13px;color:rgba(255,255,255,0.35);line-height:1.7;margin:0.75rem 0}
-.footer-contact-links a{display:flex;align-items:center;gap:7px;font-size:13px;color:rgba(255,255,255,0.45);text-decoration:none;margin-bottom:5px;transition:color 0.15s}
-.footer-contact-links a:hover{color:var(--pink)}
-.footer-contact-links svg{width:14px;height:14px;color:var(--pink)}
-.footer-col h4{font-size:10px;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;color:rgba(255,255,255,0.25);margin-bottom:0.9rem}
-.footer-col a{display:block;font-size:12.5px;color:rgba(255,255,255,0.45);text-decoration:none;padding:3px 0;transition:color 0.15s}
-.footer-col a:hover{color:var(--pink)}
-.footer-bottom{display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:1rem;font-size:12px;color:rgba(255,255,255,0.2)}
-.sticky-bar{display:none;position:fixed;bottom:0;left:0;right:0;background:var(--dark2);border-top:1px solid rgba(255,255,255,0.1);z-index:1000;padding:0.5rem;gap:0.5rem}
-.sticky-bar a{flex:1;display:flex;flex-direction:column;align-items:center;gap:3px;padding:8px 4px;text-decoration:none;color:rgba(255,255,255,0.7);font-size:11px;font-weight:600;border-radius:6px}
-.sticky-bar a.primary{background:var(--pink);color:#fff}
-.sticky-bar svg{width:20px;height:20px}
-@media(max-width:1024px){.svc-hero-inner,.svc-content{grid-template-columns:1fr}.quote-card{position:static}.svc-sidebar{position:static;display:grid;grid-template-columns:1fr 1fr}}
-@media(max-width:768px){.nav-links{display:none}.sticky-bar{display:flex}body{padding-bottom:70px}.sub-grid,.serve-list,.related-grid,.cities-row{grid-template-columns:1fr}.footer-top{grid-template-columns:1fr 1fr}}
+.topbar-phone{
+  display:flex;
+  align-items:center;
+  gap:8px;
+  font-size:13px;
+  font-weight:600;
+  color:var(--pink);
+  text-decoration:none;
+  background:rgba(233,30,140,0.1);
+  border:1px solid rgba(233,30,140,0.25);
+  padding:6px 14px;
+  border-radius:20px;
+  transition:background 0.2s;
+}
+.topbar-phone:hover{background:rgba(233,30,140,0.18)}
 
-/* ── PAGE STYLES ── */
-.hero{background:var(--black);padding:5rem 2rem 3.5rem;position:relative;overflow:hidden}
-.hero::after{content:'';position:absolute;top:-80px;right:-80px;width:520px;height:520px;background:radial-gradient(circle,rgba(233,30,140,0.06) 0%,transparent 70%);pointer-events:none}
-.hero-inner{max-width:1100px;margin:0 auto;position:relative;z-index:2;display:grid;grid-template-columns:1fr 320px;gap:3rem;align-items:start}
-.breadcrumb{display:flex;align-items:center;gap:6px;font-size:12px;color:rgba(255,255,255,0.3);margin-bottom:1.25rem}
-.breadcrumb a{color:rgba(255,255,255,0.3);text-decoration:none}
-.breadcrumb a:hover{color:var(--pink)}
-.breadcrumb span{color:rgba(255,255,255,0.12)}
-.badge{display:inline-flex;align-items:center;gap:6px;background:rgba(233,30,140,0.1);border:1px solid rgba(233,30,140,0.3);border-radius:100px;padding:4px 14px;font-size:10px;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;color:var(--pink);margin-bottom:1.25rem}
-h1.hero-h1{font-family:var(--font-display);font-size:clamp(2.1rem,3.5vw,3.2rem);font-weight:800;line-height:1.08;letter-spacing:-0.025em;margin-bottom:1.1rem}
-h1.hero-h1 em{font-style:normal;color:var(--pink)}
-.hero-desc{font-size:16px;color:rgba(255,255,255,0.55);line-height:1.8;font-weight:300;max-width:600px;margin-bottom:1.75rem}
-.hero-btns{display:flex;gap:10px;flex-wrap:wrap}
-.btn-pink{display:inline-flex;align-items:center;gap:8px;background:var(--pink);color:#fff;padding:14px 26px;border-radius:8px;font-size:14px;font-weight:600;text-decoration:none;transition:all 0.2s;box-shadow:0 4px 18px rgba(233,30,140,0.25)}
-.btn-pink:hover{transform:translateY(-1px);box-shadow:0 6px 24px rgba(233,30,140,0.35)}
-.btn-ghost{display:inline-flex;align-items:center;gap:8px;background:transparent;color:rgba(255,255,255,0.8);padding:14px 24px;border-radius:8px;font-size:14px;font-weight:500;text-decoration:none;border:1px solid rgba(255,255,255,0.18)}
-.hero-trust{display:flex;align-items:center;gap:12px;margin-top:1.5rem;font-size:11px;color:rgba(255,255,255,0.3);flex-wrap:wrap}
-.hero-trust b{color:rgba(255,255,255,0.55)}
-/* Sidebar card */
-.sidebar-card{background:var(--dark2);border:1px solid rgba(255,255,255,0.08);border-radius:14px;padding:1.75rem;position:sticky;top:80px}
-.sidebar-card h3{font-family:var(--font-display);font-size:1.15rem;font-weight:700;margin-bottom:0.25rem}
-.sidebar-phone{font-family:var(--font-display);font-size:1.85rem;font-weight:800;color:var(--pink);text-decoration:none;display:block;margin:0.4rem 0}
-.sidebar-card p{font-size:12.5px;color:rgba(255,255,255,0.4);margin-bottom:1.25rem;line-height:1.5}
-.sidebar-btn{display:block;padding:12px;border-radius:7px;font-size:13.5px;font-weight:600;text-decoration:none;text-align:center;margin-bottom:7px}
-.sidebar-btn.pink{background:var(--pink);color:#fff}
-.sidebar-btn.outline{background:transparent;color:rgba(255,255,255,0.7);border:1px solid rgba(255,255,255,0.15)}
-.sidebar-facts{margin-top:1.25rem;padding-top:1.25rem;border-top:1px solid rgba(255,255,255,0.07)}
-.sidebar-fact{display:flex;align-items:center;gap:10px;font-size:12px;color:rgba(255,255,255,0.5);margin-bottom:7px}
-.sidebar-fact b{color:rgba(255,255,255,0.75)}
-/* Content area */
-.content{max-width:1100px;margin:0 auto;padding:4.5rem 2rem}
-.sec{margin-bottom:4rem}
-.sec-label{font-size:10px;font-weight:700;letter-spacing:0.12em;text-transform:uppercase;color:var(--pink);margin-bottom:0.5rem;display:block}
-h2.sec-h2{font-family:var(--font-display);font-size:clamp(1.6rem,2.5vw,2.1rem);font-weight:800;letter-spacing:-0.02em;margin-bottom:0.9rem;line-height:1.15}
-h2.sec-h2 em{font-style:normal;color:var(--pink)}
-h3.sub-h3{font-size:1.05rem;font-weight:600;margin:1.75rem 0 0.5rem;color:rgba(255,255,255,0.9)}
-.prose{font-size:15px;color:rgba(255,255,255,0.58);line-height:1.85;font-weight:300}
-.prose+.prose{margin-top:0.85rem}
-/* Card grids */
-.card-3{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-top:1.5rem}
-.card-2{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-top:1.5rem}
-.card-4{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin-top:1.5rem}
-.card{background:var(--dark2);border:1px solid rgba(255,255,255,0.07);border-radius:12px;padding:1.4rem}
-.card .tag{font-size:10px;font-weight:700;letter-spacing:0.09em;text-transform:uppercase;color:var(--pink);display:block;margin-bottom:0.5rem}
-.card h4{font-size:15px;font-weight:600;margin-bottom:0.4rem}
-.card p{font-size:13px;color:rgba(255,255,255,0.45);line-height:1.6}
-/* Pricing table */
-.price-table{width:100%;border-collapse:collapse;margin-top:1.25rem;font-size:13.5px}
-.price-table th{padding:10px 14px;text-align:left;background:rgba(233,30,140,0.08);border-bottom:1px solid rgba(255,255,255,0.08);font-size:10px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:rgba(255,255,255,0.4)}
-.price-table td{padding:11px 14px;border-bottom:1px solid rgba(255,255,255,0.05);color:rgba(255,255,255,0.65)}
-.price-table td.price{color:var(--pink);font-weight:700}
-.price-table tr:last-child td{border-bottom:none}
-/* Steps */
-.steps{display:grid;gap:1px;margin-top:1.25rem}
-.step{background:var(--dark2);border:1px solid rgba(255,255,255,0.07);padding:1.25rem 1.5rem;display:flex;gap:1.25rem;align-items:start}
-.step:first-child{border-radius:12px 12px 0 0}
-.step:last-child{border-radius:0 0 12px 12px}
-.step-num{width:32px;height:32px;border-radius:50%;background:var(--pink);display:flex;align-items:center;justify-content:center;font-size:13px;font-weight:700;color:#fff;flex-shrink:0;margin-top:2px}
-.step h4{font-size:14.5px;font-weight:600;margin-bottom:0.3rem}
-.step p{font-size:13px;color:rgba(255,255,255,0.45);line-height:1.6}
-/* FAQ */
-.faq-wrap{border:1px solid rgba(255,255,255,0.07);border-radius:12px;overflow:hidden;margin-top:1.25rem}
-.faq-item{border-bottom:1px solid rgba(255,255,255,0.06)}
-.faq-item:last-child{border:none}
-.faq-q{display:flex;justify-content:space-between;align-items:center;padding:1rem 1.25rem;cursor:pointer;font-size:14.5px;font-weight:600;gap:1rem;transition:background 0.15s}
-.faq-q:hover{background:rgba(255,255,255,0.025)}
-.faq-q .ico{color:var(--pink);font-size:20px;flex-shrink:0;transition:transform 0.25s;line-height:1}
-.faq-a{display:none;padding:0 1.25rem 1rem;font-size:13.5px;color:rgba(255,255,255,0.5);line-height:1.75}
-.faq-item.open .faq-q .ico{transform:rotate(45deg)}
-.faq-item.open .faq-a{display:block}
-/* Reviews */
-.rev-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin-top:1.5rem}
-.rev{background:var(--dark2);border:1px solid rgba(255,255,255,0.07);border-radius:11px;padding:1.4rem}
-.rev-top{display:flex;align-items:center;gap:10px;margin-bottom:9px}
-.av{width:36px;height:36px;background:var(--pink);border-radius:50%;display:flex;align-items:center;justify-content:center;font-weight:700;font-size:13px;color:#fff;flex-shrink:0}
-.rev-name{font-size:13.5px;font-weight:600}
-.rev-meta{font-size:11px;color:rgba(255,255,255,0.3)}
-.stars{color:#FFB800;font-size:12px;letter-spacing:1px}
-.rev-text{font-size:13px;color:rgba(255,255,255,0.6);font-style:italic;line-height:1.7}
-.rev-svc{display:inline-block;font-size:10.5px;font-weight:600;color:var(--pink);background:rgba(233,30,140,0.08);border:1px solid rgba(233,30,140,0.2);padding:2px 9px;border-radius:4px;margin-top:7px}
-/* Stat row */
-.stat-row{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin:1.5rem 0}
-.stat{background:var(--dark2);border:1px solid rgba(255,255,255,0.07);border-radius:11px;padding:1.4rem;text-align:center}
-.stat .num{font-family:var(--font-display);font-size:2.4rem;font-weight:800;color:var(--pink);line-height:1;margin-bottom:0.3rem}
-.stat .lbl{font-size:11.5px;color:rgba(255,255,255,0.4);line-height:1.35}
-/* Svc links */
-.svc-links{display:grid;grid-template-columns:repeat(3,1fr);gap:7px;margin-top:1.25rem}
-.svc-link{background:var(--dark2);border:1px solid rgba(255,255,255,0.07);border-radius:8px;padding:10px 13px;text-decoration:none;color:rgba(255,255,255,0.65);font-size:13px;display:flex;justify-content:space-between;align-items:center;transition:border-color 0.2s}
-.svc-link:hover{border-color:rgba(233,30,140,0.3);color:#fff}
-.svc-link .pr{font-size:10.5px;color:var(--pink);font-weight:600}
-/* CTA band */
-.cta-band{background:var(--pink);padding:3.5rem 2rem;text-align:center}
-.cta-band h2{font-family:var(--font-display);font-size:clamp(1.6rem,3vw,2.2rem);font-weight:800;color:#fff;margin-bottom:0.5rem}
-.cta-band p{font-size:15px;color:rgba(255,255,255,0.75);margin-bottom:1.75rem}
-.cta-buttons{display:flex;gap:12px;justify-content:center;flex-wrap:wrap}
-.btn-white{display:inline-flex;align-items:center;gap:8px;background:#fff;color:var(--pink);padding:13px 26px;border-radius:8px;font-size:14px;font-weight:700;text-decoration:none}
-.btn-ow{display:inline-flex;align-items:center;gap:8px;background:transparent;color:#fff;padding:13px 26px;border-radius:8px;font-size:14px;font-weight:600;text-decoration:none;border:2px solid rgba(255,255,255,0.45)}
-/* Highlight box */
-.callout{background:rgba(233,30,140,0.06);border-left:3px solid var(--pink);padding:1rem 1.25rem;border-radius:0 8px 8px 0;margin:1.5rem 0;font-size:13.5px;color:rgba(255,255,255,0.65);line-height:1.7}
-.callout b{color:rgba(255,255,255,0.9)}
-/* Anchor tab nav */
-.tab-nav{display:flex;gap:4px;border-bottom:1px solid rgba(255,255,255,0.07);margin-bottom:2.5rem;flex-wrap:wrap}
-.tab-link{padding:10px 18px;font-size:13px;font-weight:600;color:rgba(255,255,255,0.45);text-decoration:none;border-bottom:2px solid transparent;margin-bottom:-1px;transition:all 0.15s}
-.tab-link:hover,.tab-link.active{color:var(--pink);border-bottom-color:var(--pink)}
-/* Two col layout */
-.two-col{display:grid;grid-template-columns:1fr 1fr;gap:2.5rem;align-items:start}
-.list-check{margin:0.75rem 0 0 0;padding:0;list-style:none}
-.list-check li{display:flex;align-items:start;gap:9px;font-size:14px;color:rgba(255,255,255,0.6);line-height:1.6;margin-bottom:7px}
-.list-check li::before{content:'✓';color:var(--pink);font-weight:700;flex-shrink:0;margin-top:2px}
-/* Responsive */
-@media(max-width:1024px){.hero-inner{grid-template-columns:1fr}.sidebar-card{display:none}.card-3,.card-4{grid-template-columns:1fr 1fr}.stat-row{grid-template-columns:1fr 1fr}.rev-grid{grid-template-columns:1fr 1fr}.two-col{grid-template-columns:1fr}}
-@media(max-width:768px){.nav-links{display:none}.sticky-bar{display:flex}body{padding-bottom:70px}.card-3,.card-4,.card-2{grid-template-columns:1fr}.svc-links{grid-template-columns:1fr 1fr}.footer-top{grid-template-columns:1fr 1fr}.rev-grid{grid-template-columns:1fr}}
+/* ── PAGE LAYOUT ── */
+.page{
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  padding:2.5rem 1.25rem 6rem;
+  min-height:calc(100vh - 56px);
+}
 
+/* ── PROGRESS ── */
+.progress-wrap{
+  width:100%;
+  max-width:560px;
+  margin-bottom:2rem;
+}
+.progress-meta{
+  display:flex;
+  justify-content:space-between;
+  font-size:11px;
+  font-weight:600;
+  letter-spacing:0.06em;
+  text-transform:uppercase;
+  color:rgba(255,255,255,0.3);
+  margin-bottom:7px;
+}
+.progress-track{
+  height:3px;
+  background:rgba(255,255,255,0.07);
+  border-radius:3px;
+}
+.progress-fill{
+  height:100%;
+  background:var(--pink);
+  border-radius:3px;
+  transition:width 0.4s ease;
+  width:20%;
+}
+.dots{
+  display:flex;
+  justify-content:center;
+  gap:5px;
+  margin-top:9px;
+}
+.dot{
+  width:7px;height:7px;
+  border-radius:50%;
+  background:rgba(255,255,255,0.1);
+  transition:all 0.3s;
+}
+.dot.done{background:rgba(233,30,140,0.35)}
+.dot.active{background:var(--pink);width:20px;border-radius:4px}
+
+/* ── CARD ── */
+.card{
+  background:var(--dark2);
+  border:1px solid rgba(255,255,255,0.08);
+  border-radius:18px;
+  padding:2rem;
+  width:100%;
+  max-width:560px;
+  box-shadow:0 20px 60px rgba(0,0,0,0.5);
+  animation:fadeUp 0.3s ease;
+}
+@keyframes fadeUp{from{opacity:0;transform:translateY(14px)}to{opacity:1;transform:translateY(0)}}
+
+.step-label{
+  font-size:10px;
+  font-weight:700;
+  letter-spacing:0.12em;
+  text-transform:uppercase;
+  color:var(--pink);
+  display:block;
+  margin-bottom:0.5rem;
+}
+.card h2{
+  font-family:'Playfair Display',Georgia,serif;
+  font-size:clamp(1.35rem,3vw,1.75rem);
+  font-weight:800;
+  line-height:1.15;
+  letter-spacing:-0.02em;
+  color:#fff;
+  margin-bottom:0.35rem;
+}
+.card h2 em{font-style:normal;color:var(--pink)}
+.card .sub{
+  font-size:13px;
+  color:rgba(255,255,255,0.42);
+  line-height:1.65;
+  margin-bottom:1.5rem;
+  font-weight:300;
+}
+
+/* ── OPTIONS ── */
+.opts{
+  display:grid;
+  gap:9px;
+  margin-bottom:1.25rem;
+}
+.opts.g2{grid-template-columns:1fr 1fr}
+.opts.g1{grid-template-columns:1fr}
+
+.opt{
+  display:flex;
+  align-items:center;
+  gap:11px;
+  background:rgba(255,255,255,0.03);
+  border:1.5px solid rgba(255,255,255,0.08);
+  border-radius:10px;
+  padding:13px 14px;
+  cursor:pointer;
+  text-align:left;
+  width:100%;
+  color:inherit;
+  font-family:inherit;
+  transition:border-color 0.15s, background 0.15s;
+}
+.opt:hover{
+  border-color:rgba(233,30,140,0.4);
+  background:rgba(233,30,140,0.05);
+}
+.opt.sel{
+  border-color:var(--pink);
+  background:rgba(233,30,140,0.09);
+}
+.opt .ico{font-size:1.35rem;width:32px;text-align:center;flex-shrink:0}
+.opt .txt{flex:1;min-width:0}
+.opt .t1{
+  display:block;
+  font-size:13.5px;
+  font-weight:600;
+  color:rgba(255,255,255,0.88);
+  margin-bottom:1px;
+  white-space:nowrap;
+  overflow:hidden;
+  text-overflow:ellipsis;
+}
+.opt .t2{
+  display:block;
+  font-size:11.5px;
+  color:rgba(255,255,255,0.35);
+  line-height:1.35;
+}
+.opt .ck{
+  width:18px;height:18px;
+  border-radius:50%;
+  border:1.5px solid rgba(255,255,255,0.18);
+  flex-shrink:0;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  font-size:10px;
+  color:transparent;
+  transition:all 0.15s;
+}
+.opt.sel .ck{
+  background:var(--pink);
+  border-color:var(--pink);
+  color:#fff;
+}
+
+/* ── NAV BUTTONS ── */
+.nav-row{
+  display:flex;
+  gap:9px;
+  align-items:center;
+  padding-top:1.1rem;
+  border-top:1px solid rgba(255,255,255,0.05);
+  margin-top:0.5rem;
+}
+.btn-back{
+  background:transparent;
+  border:1px solid rgba(255,255,255,0.12);
+  color:rgba(255,255,255,0.45);
+  padding:10px 20px;
+  border-radius:7px;
+  font-size:13px;
+  font-weight:500;
+  cursor:pointer;
+  font-family:inherit;
+  transition:all 0.15s;
+  flex-shrink:0;
+}
+.btn-back:hover{border-color:rgba(255,255,255,0.3);color:rgba(255,255,255,0.8)}
+.btn-next{
+  flex:1;
+  background:var(--pink);
+  color:#fff;
+  border:none;
+  padding:12px 20px;
+  border-radius:7px;
+  font-size:14px;
+  font-weight:700;
+  cursor:pointer;
+  font-family:inherit;
+  transition:all 0.18s;
+  box-shadow:0 4px 16px rgba(233,30,140,0.28);
+}
+.btn-next:disabled{opacity:0.3;cursor:not-allowed;box-shadow:none}
+.btn-next:not(:disabled):hover{box-shadow:0 6px 22px rgba(233,30,140,0.4);transform:translateY(-1px)}
+
+/* ── FIELDS ── */
+.field{margin-bottom:0.95rem}
+.field label{
+  display:block;
+  font-size:10.5px;
+  font-weight:700;
+  letter-spacing:0.08em;
+  text-transform:uppercase;
+  color:rgba(255,255,255,0.32);
+  margin-bottom:5px;
+}
+.field label span{color:var(--pink)}
+.field input,.field textarea,.field select{
+  width:100%;
+  background:rgba(255,255,255,0.04);
+  border:1.5px solid rgba(255,255,255,0.09);
+  border-radius:8px;
+  padding:11px 13px;
+  color:#fff;
+  font-size:14px;
+  font-family:inherit;
+  outline:none;
+  transition:border-color 0.18s;
+}
+.field input:focus,.field textarea:focus,.field select:focus{
+  border-color:rgba(233,30,140,0.5);
+}
+.field input::placeholder,.field textarea::placeholder{color:rgba(255,255,255,0.18)}
+.field select{cursor:pointer;-webkit-appearance:none}
+.field textarea{resize:vertical;min-height:75px}
+
+/* ── SKIP ── */
+.skip{
+  font-size:12px;
+  color:rgba(255,255,255,0.22);
+  text-align:center;
+  margin-top:0.85rem;
+  cursor:pointer;
+  text-decoration:underline;
+  display:block;
+}
+.skip:hover{color:rgba(255,255,255,0.5)}
+
+/* ── URGENCY ── */
+.urgency{
+  width:100%;
+  max-width:560px;
+  margin-top:1rem;
+  background:rgba(233,30,140,0.05);
+  border:1px solid rgba(233,30,140,0.15);
+  border-radius:10px;
+  padding:0.8rem 1.1rem;
+  display:flex;
+  align-items:center;
+  gap:9px;
+  font-size:12px;
+  color:rgba(255,255,255,0.45);
+}
+.urgency .pulse{
+  color:var(--pink);
+  font-size:14px;
+  animation:pulse 2s infinite;
+  flex-shrink:0;
+}
+@keyframes pulse{0%,100%{opacity:1}50%{opacity:0.3}}
+
+/* ── RESULT ── */
+.result-badge{
+  display:inline-flex;
+  align-items:center;
+  gap:5px;
+  background:rgba(233,30,140,0.1);
+  border:1px solid rgba(233,30,140,0.28);
+  border-radius:100px;
+  padding:3px 12px;
+  font-size:10px;
+  font-weight:700;
+  letter-spacing:0.1em;
+  text-transform:uppercase;
+  color:var(--pink);
+  margin-bottom:0.85rem;
+}
+.est-range{
+  font-family:'Playfair Display',Georgia,serif;
+  font-size:clamp(2.2rem,6vw,3.2rem);
+  font-weight:800;
+  color:var(--pink);
+  letter-spacing:-0.03em;
+  line-height:1;
+}
+.est-unit{
+  font-size:13px;
+  color:rgba(255,255,255,0.35);
+  margin:0.25rem 0 1.25rem;
+}
+.est-table{
+  background:rgba(255,255,255,0.03);
+  border:1px solid rgba(255,255,255,0.06);
+  border-radius:9px;
+  padding:0.85rem 1rem;
+  margin-bottom:1.1rem;
+}
+.est-row{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  padding:5px 0;
+  font-size:12.5px;
+  border-bottom:1px solid rgba(255,255,255,0.04);
+}
+.est-row:last-child{border:none}
+.est-row .ek{color:rgba(255,255,255,0.4)}
+.est-row .ev{color:rgba(255,255,255,0.78);font-weight:600}
+.est-row .ev.pink{color:var(--pink)}
+
+.cta-row{
+  display:flex;
+  gap:9px;
+}
+.big-call{
+  flex:1;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  gap:7px;
+  background:var(--pink);
+  color:#fff;
+  padding:14px;
+  border-radius:9px;
+  font-size:15px;
+  font-weight:700;
+  text-decoration:none;
+  box-shadow:0 4px 18px rgba(233,30,140,0.3);
+  transition:all 0.2s;
+}
+.big-call:hover{transform:translateY(-1px);box-shadow:0 6px 24px rgba(233,30,140,0.4)}
+.big-text{
+  flex:1;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  gap:7px;
+  background:transparent;
+  color:rgba(255,255,255,0.75);
+  padding:14px;
+  border-radius:9px;
+  font-size:14px;
+  font-weight:600;
+  text-decoration:none;
+  border:1.5px solid rgba(255,255,255,0.18);
+  transition:all 0.2s;
+}
+.big-text:hover{border-color:rgba(255,255,255,0.4);color:#fff}
+
+.confirm-box{
+  margin-top:1rem;
+  padding:0.8rem 1rem;
+  background:rgba(255,255,255,0.03);
+  border-radius:8px;
+  font-size:12px;
+  color:rgba(255,255,255,0.32);
+  line-height:1.6;
+}
+.tag-row{
+  display:flex;
+  flex-wrap:wrap;
+  gap:7px;
+  justify-content:center;
+  margin-top:1.25rem;
+  padding-top:1.1rem;
+  border-top:1px solid rgba(255,255,255,0.06);
+}
+.tag-link{
+  font-size:12px;
+  color:rgba(255,255,255,0.45);
+  text-decoration:none;
+  background:rgba(255,255,255,0.04);
+  border:1px solid rgba(255,255,255,0.09);
+  padding:5px 12px;
+  border-radius:16px;
+  transition:all 0.15s;
+}
+.tag-link:hover{border-color:rgba(233,30,140,0.3);color:var(--pink)}
+.tag-link.pink-tag{
+  color:var(--pink);
+  background:rgba(233,30,140,0.07);
+  border-color:rgba(233,30,140,0.2);
+}
+
+/* Mobile */
+@media(max-width:520px){
+  .page{padding:1.75rem 1rem 5rem}
+  .card{padding:1.5rem 1.1rem}
+  .opts.g2{grid-template-columns:1fr}
+  .cta-row{flex-direction:column}
+}
 </style>
 </head>
 <body>
-<div class="topbar">⭐ 5-Star Rated · Licensed &amp; Insured · <a href="tel:8434677136">843-467-7136</a> — We Answer 24/7</div>
-<nav>
-  <div class="nav-inner">
-    <a href="/" class="logo">Baker<span>ss</span></a>
-    <div class="nav-links">
-      <div class="nav-item">
-        <button class="nav-btn">Services <svg viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2"><path d="M2 4l4 4 4-4"/></svg></button>
-        <div class="mega-menu">
-          <div class="mega-col"><h4>Lawn &amp; Outdoor</h4><a href="/services/lawn-care/">Lawn Care</a><a href="/services/landscaping/">Landscaping &amp; Design</a><a href="/services/concrete-curbing/">Concrete Landscaping Curbing</a><a href="/services/pressure-washing/">Pressure Washing</a><a href="/services/gutter-cleaning/">Gutter Cleaning</a><a href="/services/deck-building-repair/">Deck Building &amp; Repairs</a></div>
-          <div class="mega-col"><h4>Interior &amp; Cleaning</h4><a href="/services/interior-cleaning/">Interior Cleaning — Residential</a><a href="/services/commercial-cleaning/">Interior Cleaning — Commercial</a><a href="/services/airbnb-cleaning/">Airbnb / Vacation Rental Cleaning</a><a href="/services/interior-cleaning/#deep-clean">Deep Cleaning</a><a href="/services/interior-cleaning/#move-in-out">Move-In / Move-Out Cleaning</a></div>
-          <div class="mega-col"><h4>Home Services</h4><a href="/services/painting/">Painting — Interior &amp; Exterior</a><a href="/services/handyman-services/">Handyman Services</a><a href="/services/minor-electric-plumbing/">Minor Electrical &amp; Plumbing</a><a href="/services/flooring/">Flooring</a><a href="/services/junk-removal/">Junk Removal</a><a href="/services/property-maintenance/">Property Maintenance Plans</a></div>
-        </div>
-      </div>
-      <div class="nav-item">
-        <button class="nav-btn">Service Areas <svg viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2"><path d="M2 4l4 4 4-4"/></svg></button>
-        <div class="dropdown"><a href="/service-areas/myrtle-beach/">Myrtle Beach</a><a href="/service-areas/north-myrtle-beach/">North Myrtle Beach</a><a href="/service-areas/conway/">Conway</a><a href="/service-areas/surfside-beach/">Surfside Beach</a><a href="/service-areas/murrells-inlet/">Murrells Inlet</a><a href="/service-areas/garden-city/">Garden City</a><a href="/service-areas/socastee/">Socastee</a><a href="/service-areas/little-river/">Little River</a><a href="/service-areas/horry-county/">All of Horry County →</a></div>
-      </div>
-      <div class="nav-item"><a href="/learning-center/">Learning Center</a></div>
-      <div class="nav-item"><a href="/about/">About Us</a></div>
-      <div class="nav-item"><a href="/reviews/">Reviews</a></div>
-    </div>
-    <div class="nav-right"><a href="tel:8434677136" class="nav-phone">843-467-7136</a><a href="/get-quote/" class="btn-quote-sm">Free Quote</a></div>
-  </div>
-</nav>
 
-<style>
-/* ─── Funnel Page Overrides ─── */
-body { background: var(--black); }
-
-.funnel-wrap {
-  min-height: 100vh;
-  padding: 3rem 1.5rem 5rem;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-/* Progress bar */
-.progress-bar {
-  width: 100%;
-  max-width: 620px;
-  margin-bottom: 2.5rem;
-}
-.progress-label {
-  display: flex;
-  justify-content: space-between;
-  font-size: 11px;
-  color: rgba(255,255,255,0.3);
-  margin-bottom: 8px;
-  font-weight: 600;
-  letter-spacing: 0.05em;
-  text-transform: uppercase;
-}
-.progress-track {
-  height: 4px;
-  background: rgba(255,255,255,0.07);
-  border-radius: 4px;
-  overflow: hidden;
-}
-.progress-fill {
-  height: 100%;
-  background: var(--pink);
-  border-radius: 4px;
-  transition: width 0.45s ease;
-}
-.step-dots {
-  display: flex;
-  gap: 6px;
-  margin-top: 10px;
-  justify-content: center;
-}
-.step-dot {
-  width: 8px; height: 8px;
-  border-radius: 50%;
-  background: rgba(255,255,255,0.12);
-  transition: background 0.3s;
-}
-.step-dot.active { background: var(--pink); }
-.step-dot.done { background: rgba(233,30,140,0.4); }
-
-/* Card */
-.funnel-card {
-  background: var(--dark2);
-  border: 1px solid rgba(255,255,255,0.08);
-  border-radius: 20px;
-  padding: 2.5rem 2.5rem 2rem;
-  width: 100%;
-  max-width: 620px;
-  box-shadow: 0 24px 80px rgba(0,0,0,0.5);
-}
-
-.step-tag {
-  font-size: 10px;
-  font-weight: 700;
-  letter-spacing: 0.12em;
-  text-transform: uppercase;
-  color: var(--pink);
-  margin-bottom: 0.5rem;
-  display: block;
-}
-.funnel-card h2 {
-  font-family: var(--font-display);
-  font-size: clamp(1.4rem, 3vw, 1.9rem);
-  font-weight: 800;
-  line-height: 1.15;
-  letter-spacing: -0.02em;
-  margin-bottom: 0.4rem;
-  color: #fff;
-}
-.funnel-card h2 em { font-style: normal; color: var(--pink); }
-.funnel-card .sub {
-  font-size: 13.5px;
-  color: rgba(255,255,255,0.45);
-  line-height: 1.6;
-  margin-bottom: 1.75rem;
-  font-weight: 300;
-}
-
-/* Option buttons */
-.options-grid {
-  display: grid;
-  gap: 10px;
-  margin-bottom: 1.5rem;
-}
-.options-grid.cols-2 { grid-template-columns: 1fr 1fr; }
-.options-grid.cols-3 { grid-template-columns: 1fr 1fr 1fr; }
-.options-grid.cols-1 { grid-template-columns: 1fr; }
-
-.opt-btn {
-  display: flex;
-  align-items: center;
-  gap: 13px;
-  background: rgba(255,255,255,0.04);
-  border: 1.5px solid rgba(255,255,255,0.09);
-  border-radius: 12px;
-  padding: 14px 16px;
-  cursor: pointer;
-  transition: all 0.18s;
-  text-align: left;
-  width: 100%;
-  color: inherit;
-  font-family: inherit;
-}
-.opt-btn:hover {
-  border-color: rgba(233,30,140,0.45);
-  background: rgba(233,30,140,0.06);
-}
-.opt-btn.selected {
-  border-color: var(--pink);
-  background: rgba(233,30,140,0.1);
-}
-.opt-btn .icon {
-  font-size: 1.5rem;
-  flex-shrink: 0;
-  width: 36px;
-  text-align: center;
-}
-.opt-btn .opt-text { flex: 1; }
-.opt-btn .opt-title {
-  font-size: 14px;
-  font-weight: 600;
-  color: rgba(255,255,255,0.9);
-  display: block;
-  margin-bottom: 2px;
-}
-.opt-btn .opt-sub {
-  font-size: 12px;
-  color: rgba(255,255,255,0.38);
-  line-height: 1.4;
-}
-.opt-btn .check {
-  width: 20px; height: 20px;
-  border-radius: 50%;
-  border: 1.5px solid rgba(255,255,255,0.2);
-  flex-shrink: 0;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 11px;
-  color: transparent;
-  transition: all 0.18s;
-}
-.opt-btn.selected .check {
-  background: var(--pink);
-  border-color: var(--pink);
-  color: #fff;
-}
-
-/* Multi-select note */
-.multi-note {
-  font-size: 11.5px;
-  color: rgba(255,255,255,0.3);
-  margin-bottom: 1rem;
-  text-align: center;
-}
-
-/* Navigation */
-.funnel-nav {
-  display: flex;
-  gap: 10px;
-  justify-content: space-between;
-  align-items: center;
-  margin-top: 1.25rem;
-  padding-top: 1.25rem;
-  border-top: 1px solid rgba(255,255,255,0.06);
-}
-.btn-back {
-  background: transparent;
-  border: 1px solid rgba(255,255,255,0.14);
-  color: rgba(255,255,255,0.5);
-  padding: 11px 22px;
-  border-radius: 8px;
-  font-size: 13.5px;
-  font-weight: 500;
-  cursor: pointer;
-  font-family: inherit;
-  transition: all 0.18s;
-}
-.btn-back:hover { border-color: rgba(255,255,255,0.3); color: rgba(255,255,255,0.8); }
-.btn-next {
-  background: var(--pink);
-  color: #fff;
-  border: none;
-  padding: 13px 30px;
-  border-radius: 8px;
-  font-size: 14.5px;
-  font-weight: 700;
-  cursor: pointer;
-  font-family: inherit;
-  transition: all 0.18s;
-  box-shadow: 0 4px 18px rgba(233,30,140,0.3);
-  flex: 1;
-  max-width: 260px;
-}
-.btn-next:disabled {
-  opacity: 0.35;
-  cursor: not-allowed;
-  box-shadow: none;
-}
-.btn-next:not(:disabled):hover {
-  transform: translateY(-1px);
-  box-shadow: 0 6px 24px rgba(233,30,140,0.4);
-}
-
-/* Input fields */
-.field-group { margin-bottom: 1rem; }
-.field-label {
-  display: block;
-  font-size: 10.5px;
-  font-weight: 700;
-  letter-spacing: 0.08em;
-  text-transform: uppercase;
-  color: rgba(255,255,255,0.35);
-  margin-bottom: 6px;
-}
-.field-input {
-  width: 100%;
-  background: rgba(255,255,255,0.05);
-  border: 1.5px solid rgba(255,255,255,0.1);
-  border-radius: 8px;
-  padding: 12px 14px;
-  color: #fff;
-  font-size: 14px;
-  font-family: inherit;
-  outline: none;
-  box-sizing: border-box;
-  transition: border-color 0.2s;
-}
-.field-input:focus { border-color: rgba(233,30,140,0.5); }
-.field-input::placeholder { color: rgba(255,255,255,0.2); }
-select.field-input { cursor: pointer; -webkit-appearance: none; }
-
-/* Estimate result screen */
-.estimate-badge {
-  display: inline-flex;
-  align-items: center;
-  gap: 6px;
-  background: rgba(233,30,140,0.1);
-  border: 1px solid rgba(233,30,140,0.3);
-  border-radius: 100px;
-  padding: 4px 14px;
-  font-size: 10px;
-  font-weight: 700;
-  letter-spacing: 0.1em;
-  text-transform: uppercase;
-  color: var(--pink);
-  margin-bottom: 1rem;
-}
-.estimate-range {
-  font-family: var(--font-display);
-  font-size: clamp(2rem, 5vw, 3.5rem);
-  font-weight: 800;
-  color: var(--pink);
-  letter-spacing: -0.03em;
-  line-height: 1;
-  margin: 0.5rem 0;
-}
-.estimate-label {
-  font-size: 13px;
-  color: rgba(255,255,255,0.4);
-  margin-bottom: 1.5rem;
-}
-.estimate-details {
-  background: rgba(255,255,255,0.03);
-  border: 1px solid rgba(255,255,255,0.07);
-  border-radius: 10px;
-  padding: 1rem 1.25rem;
-  margin-bottom: 1.25rem;
-}
-.estimate-row {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 6px 0;
-  border-bottom: 1px solid rgba(255,255,255,0.05);
-  font-size: 13px;
-}
-.estimate-row:last-child { border-bottom: none; }
-.estimate-row .ekey { color: rgba(255,255,255,0.45); }
-.estimate-row .eval { color: rgba(255,255,255,0.8); font-weight: 600; }
-
-.final-cta-row {
-  display: flex;
-  gap: 10px;
-  margin-top: 1rem;
-}
-.btn-call-big {
-  flex: 1;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 8px;
-  background: var(--pink);
-  color: #fff;
-  padding: 14px;
-  border-radius: 9px;
-  font-size: 15px;
-  font-weight: 700;
-  text-decoration: none;
-  box-shadow: 0 4px 20px rgba(233,30,140,0.3);
-  transition: all 0.2s;
-}
-.btn-call-big:hover { transform: translateY(-1px); }
-.btn-text-big {
-  flex: 1;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 8px;
-  background: transparent;
-  color: rgba(255,255,255,0.75);
-  padding: 14px;
-  border-radius: 9px;
-  font-size: 14px;
-  font-weight: 600;
-  text-decoration: none;
-  border: 1.5px solid rgba(255,255,255,0.2);
-  transition: all 0.2s;
-}
-.btn-text-big:hover { border-color: rgba(255,255,255,0.45); color: #fff; }
-
-/* Urgency strip */
-.urgency-strip {
-  width: 100%;
-  max-width: 620px;
-  margin-top: 1.25rem;
-  background: rgba(233,30,140,0.06);
-  border: 1px solid rgba(233,30,140,0.2);
-  border-radius: 10px;
-  padding: 0.85rem 1.25rem;
-  display: flex;
-  align-items: center;
-  gap: 10px;
-  font-size: 12.5px;
-  color: rgba(255,255,255,0.55);
-}
-.urgency-strip .dot { color: var(--pink); font-size: 16px; animation: pulse 2s infinite; }
-@keyframes pulse { 0%,100%{opacity:1} 50%{opacity:0.4} }
-
-/* Skip link */
-.skip-link {
-  font-size: 12px;
-  color: rgba(255,255,255,0.25);
-  text-align: center;
-  margin-top: 1rem;
-  cursor: pointer;
-  text-decoration: underline;
-}
-.skip-link:hover { color: rgba(255,255,255,0.5); }
-
-/* Animation */
-.funnel-card { animation: cardIn 0.35s ease; }
-@keyframes cardIn { from { opacity:0; transform:translateY(16px); } to { opacity:1; transform:translateY(0); } }
-
-/* Mobile */
-@media(max-width:600px) {
-  .funnel-card { padding: 1.75rem 1.25rem 1.5rem; border-radius: 16px; }
-  .options-grid.cols-2 { grid-template-columns: 1fr; }
-  .options-grid.cols-3 { grid-template-columns: 1fr 1fr; }
-  .final-cta-row { flex-direction: column; }
-}
-</style>
-
-<!-- Hide default nav padding, show minimal nav -->
-<div style="background:var(--black);border-bottom:1px solid rgba(255,255,255,0.06);padding:0.85rem 1.5rem;display:flex;align-items:center;justify-content:space-between;position:sticky;top:0;z-index:100">
-  <a href="/" style="font-family:var(--font-display);font-size:1.1rem;font-weight:800;color:#fff;text-decoration:none">Bakerss<span style="color:var(--pink)">.</span></a>
-  <a href="tel:8434677136" style="font-size:13px;font-weight:600;color:var(--pink);text-decoration:none;background:rgba(233,30,140,0.1);border:1px solid rgba(233,30,140,0.25);padding:6px 14px;border-radius:20px">📞 843-467-7136</a>
+<!-- TOP BAR -->
+<div class="topbar">
+  <a href="/" class="logo">Bakerss<span>.</span></a>
+  <a href="tel:8434677136" class="topbar-phone">📞 843-467-7136</a>
 </div>
 
-<div class="funnel-wrap" id="funnelWrap">
+<!-- MAIN CONTAINER -->
+<div class="page" id="page">
 
-  <!-- Progress -->
-  <div class="progress-bar" id="progressBar">
-    <div class="progress-label">
-      <span id="stepLabel">Step 1 of 5</span>
-      <span id="stepPercent">20%</span>
+  <!-- Progress bar (hidden on result) -->
+  <div class="progress-wrap" id="progressWrap">
+    <div class="progress-meta">
+      <span id="stepLbl">Step 1 of 5</span>
+      <span id="pct">20%</span>
     </div>
-    <div class="progress-track"><div class="progress-fill" id="progressFill" style="width:20%"></div></div>
-    <div class="step-dots" id="stepDots"></div>
+    <div class="progress-track">
+      <div class="progress-fill" id="pFill"></div>
+    </div>
+    <div class="dots" id="dots"></div>
   </div>
 
-  <!-- Card container -->
-  <div class="funnel-card" id="funnelCard"></div>
+  <!-- Card -->
+  <div class="card" id="card"></div>
 
   <!-- Urgency strip -->
-  <div class="urgency-strip" id="urgencyStrip">
-    <span class="dot">●</span>
-    <span><b style="color:rgba(255,255,255,0.75)">Ray is available now.</b> Most Myrtle Beach requests get a same-day estimate. Call or text <a href="tel:8434677136" style="color:var(--pink);text-decoration:none;font-weight:600">843-467-7136</a> for the fastest response.</span>
+  <div class="urgency" id="urgency">
+    <span class="pulse">●</span>
+    <span><b style="color:rgba(255,255,255,0.7)">Ray is available now.</b>
+    Most Myrtle Beach requests get a same-day estimate.
+    Prefer to call? <a href="tel:8434677136" style="color:var(--pink);font-weight:600;text-decoration:none">843-467-7136</a></span>
   </div>
 
 </div>
 
 <script>
-// ─── FUNNEL DATA ───────────────────────────────────────────────
+// ── STATE ──────────────────────────────────────────────────────
+var S = { step: 0, sel: {}, contact: {} };
+var TOTAL = 5;
 
-const PRICING = {
-  'lawn-care':           { base:[50,90],   unit:'per visit',     name:'Lawn Care' },
-  'pressure-washing':    { base:[125,500],  unit:'per service',   name:'Pressure Washing' },
-  'gutter-cleaning':     { base:[99,225],   unit:'per cleaning',  name:'Gutter Cleaning' },
-  'airbnb-cleaning':     { base:[100,350],  unit:'per turnover',  name:'Airbnb / STR Cleaning' },
-  'interior-cleaning':   { base:[100,295],  unit:'per visit',     name:'Interior Cleaning' },
-  'painting':            { base:[1800,9000],unit:'project',       name:'Painting' },
-  'landscaping':         { base:[300,4500], unit:'project',       name:'Landscaping' },
-  'concrete-curbing':    { base:[160,1050], unit:'project',       name:'Concrete Curbing' },
-  'deck-building':       { base:[4000,15000],unit:'project',      name:'Deck Building & Repair' },
-  'flooring':            { base:[1200,9000],unit:'project',       name:'Flooring Installation' },
-  'handyman':            { base:[75,550],   unit:'per visit',     name:'Handyman Services' },
-  'minor-electric':      { base:[75,275],   unit:'per repair',    name:'Minor Electrical & Plumbing' },
-  'junk-removal':        { base:[99,650],   unit:'per load',      name:'Junk Removal' },
-  'property-plan':       { base:[150,900],  unit:'per month',     name:'Property Maintenance Plan' },
-  'commercial-cleaning': { base:[200,800],  unit:'per month',     name:'Commercial Cleaning' },
+// ── PRICING ────────────────────────────────────────────────────
+var P = {
+  'lawn-care':            { lo:50,   hi:90,   unit:'per visit',    name:'Lawn Care' },
+  'pressure-washing':     { lo:125,  hi:500,  unit:'per service',  name:'Pressure Washing' },
+  'gutter-cleaning':      { lo:99,   hi:225,  unit:'per cleaning', name:'Gutter Cleaning' },
+  'airbnb-cleaning':      { lo:100,  hi:350,  unit:'per turnover', name:'Airbnb / STR Cleaning' },
+  'interior-cleaning':    { lo:100,  hi:295,  unit:'per visit',    name:'Interior Cleaning' },
+  'painting':             { lo:1800, hi:9000, unit:'project',      name:'Painting' },
+  'landscaping':          { lo:300,  hi:4500, unit:'project',      name:'Landscaping' },
+  'concrete-curbing':     { lo:160,  hi:1050, unit:'project',      name:'Concrete Curbing' },
+  'deck-building':        { lo:4000, hi:15000,unit:'project',      name:'Deck Building & Repair' },
+  'flooring':             { lo:1200, hi:9000, unit:'project',      name:'Flooring Installation' },
+  'handyman':             { lo:75,   hi:550,  unit:'per visit',    name:'Handyman Services' },
+  'minor-electric':       { lo:75,   hi:275,  unit:'per repair',   name:'Minor Electrical & Plumbing' },
+  'junk-removal':         { lo:99,   hi:650,  unit:'per load',     name:'Junk Removal' },
+  'property-plan':        { lo:150,  hi:900,  unit:'per month',    name:'Property Maintenance Plan' },
+  'commercial-cleaning':  { lo:200,  hi:800,  unit:'per month',    name:'Commercial Cleaning' }
 };
 
-// Multipliers applied on top of base pricing
-const MULTIPLIERS = {
-  // property size
-  'small':    0.8,
-  'standard': 1.0,
-  'large':    1.3,
-  'estate':   1.7,
-  // property type adjustments
-  'str':      1.15,   // STR gets slight premium (more thorough)
-  'commercial': 1.25,
-  'hoa':      1.1,
-  // frequency
-  'weekly':   0.9,    // discount for commitment
-  'biweekly': 0.95,
-  'monthly':  1.0,
-  'onetime':  1.1,
-  // urgency
-  'asap':     1.1,
-  'thisweek': 1.0,
-  'thismonth':1.0,
-  'planning': 1.0,
-};
+// Size multipliers
+var SM = { small:0.8, standard:1.0, large:1.3, estate:1.7 };
 
-// ─── STATE ─────────────────────────────────────────────────────
-const state = {
-  currentStep: 0,
-  selections: {},
-  contactInfo: {}
-};
-
-// ─── STEPS DEFINITION ─────────────────────────────────────────
-
-const STEPS = [
-
-  // STEP 1: Which service?
+// ── STEPS ─────────────────────────────────────────────────────
+var STEPS = [
   {
-    id: 'service',
-    tag: 'Step 1 of 5 — Get Your Free Estimate',
-    title: 'Which service do you need?',
-    titleEm: '',
-    sub: 'Select your primary service. You can mention additional services at the end.',
-    type: 'single',
-    options: [
-      { value:'lawn-care',        icon:'🌿', title:'Lawn Care',              sub:'Mowing, edging, trimming' },
-      { value:'pressure-washing', icon:'💧', title:'Pressure Washing',       sub:'Driveway, siding, deck' },
-      { value:'gutter-cleaning',  icon:'🍂', title:'Gutter Cleaning',        sub:'Remove debris, flush downspouts' },
-      { value:'airbnb-cleaning',  icon:'🏖️', title:'Airbnb / STR Cleaning',  sub:'Vacation rental turnover' },
-      { value:'interior-cleaning',icon:'🏠', title:'Interior Cleaning',      sub:'Recurring, deep clean, move-in/out' },
-      { value:'painting',         icon:'🎨', title:'Painting',               sub:'Interior or exterior' },
-      { value:'landscaping',      icon:'🌺', title:'Landscaping',            sub:'Design, install, concrete curbing' },
-      { value:'flooring',         icon:'🪵', title:'Flooring',               sub:'LVP, tile, hardwood, carpet' },
-      { value:'handyman',         icon:'🔧', title:'Handyman Services',      sub:'Repairs & installations' },
-      { value:'deck-building',    icon:'🏗️', title:'Deck Building & Repair', sub:'New build or restoration' },
-      { value:'junk-removal',     icon:'🚛', title:'Junk Removal',           sub:'Estate cleanouts, furniture, debris' },
-      { value:'property-plan',    icon:'📋', title:'Property Maintenance Plan', sub:'All services bundled monthly' },
-      { value:'minor-electric',   icon:'⚡', title:'Electrical & Plumbing',  sub:'Minor repairs & installs' },
-      { value:'commercial-cleaning',icon:'🏢',title:'Commercial Cleaning',   sub:'Restaurants, offices, retail' },
-    ],
-    cols: 2,
-    key: 'service'
+    id:'service', key:'service', type:'opts',
+    tag:'Step 1 of 5',
+    h:'Which service do you need?',
+    sub:'Select your primary service. You can mention others at the end.',
+    cols:2,
+    opts:[
+      {v:'lawn-care',           i:'🌿', t:'Lawn Care',              s:'Mowing, edging, trimming'},
+      {v:'pressure-washing',    i:'💧', t:'Pressure Washing',        s:'Driveway, siding, deck'},
+      {v:'gutter-cleaning',     i:'🍂', t:'Gutter Cleaning',         s:'Debris removal & flush'},
+      {v:'airbnb-cleaning',     i:'🏖️', t:'Airbnb / STR Cleaning',   s:'Vacation rental turnover'},
+      {v:'interior-cleaning',   i:'🏠', t:'Interior Cleaning',       s:'Recurring, deep, move-in/out'},
+      {v:'painting',            i:'🎨', t:'Painting',                s:'Interior or exterior'},
+      {v:'landscaping',         i:'🌺', t:'Landscaping',             s:'Design, plants, curbing'},
+      {v:'flooring',            i:'🪵', t:'Flooring',                s:'LVP, tile, hardwood'},
+      {v:'handyman',            i:'🔧', t:'Handyman Services',       s:'Repairs & installations'},
+      {v:'deck-building',       i:'🏗️', t:'Deck Building & Repair',  s:'New build or restoration'},
+      {v:'junk-removal',        i:'🚛', t:'Junk Removal',            s:'Estate cleanouts & debris'},
+      {v:'property-plan',       i:'📋', t:'Maintenance Plan',        s:'All services bundled monthly'},
+      {v:'minor-electric',      i:'⚡', t:'Electrical & Plumbing',   s:'Minor repairs & installs'},
+      {v:'commercial-cleaning', i:'🏢', t:'Commercial Cleaning',     s:'Restaurants, offices, retail'}
+    ]
   },
-
-  // STEP 2: Property type
   {
-    id: 'propertyType',
-    tag: 'Step 2 of 5 — Tell Us About Your Property',
-    title: 'What type of property is this for?',
-    titleEm: '',
-    sub: 'This helps us tailor your estimate to the right scope and schedule.',
-    type: 'single',
-    options: [
-      { value:'primary',    icon:'🏡', title:'Primary Residence',      sub:'My main home in Horry County' },
-      { value:'str',        icon:'🏖️', title:'Vacation Rental / Airbnb', sub:'STR property on the Grand Strand' },
-      { value:'second',     icon:'✈️', title:'Second Home / Snowbird',  sub:'Part-time or seasonal property' },
-      { value:'hoa',        icon:'🏘️', title:'HOA Community Home',      sub:'Governed community — compliance matters' },
-      { value:'investment', icon:'💰', title:'Investment Property',     sub:'Rental or rehab project' },
-      { value:'commercial', icon:'🏢', title:'Commercial Property',     sub:'Business, office, restaurant, retail' },
-    ],
-    cols: 2,
-    key: 'propertyType'
+    id:'propType', key:'propType', type:'opts',
+    tag:'Step 2 of 5',
+    h:'What type of property?',
+    sub:'Helps us tailor your estimate to the right scope and schedule.',
+    cols:2,
+    opts:[
+      {v:'primary',    i:'🏡', t:'Primary Residence',       s:'My main home'},
+      {v:'str',        i:'🏖️', t:'Vacation Rental / Airbnb', s:'STR on the Grand Strand'},
+      {v:'second',     i:'✈️', t:'Second Home / Snowbird',   s:'Part-time or seasonal'},
+      {v:'hoa',        i:'🏘️', t:'HOA Community Home',       s:'Governed community'},
+      {v:'investment', i:'💰', t:'Investment Property',      s:'Rental or rehab project'},
+      {v:'commercial', i:'🏢', t:'Commercial Property',      s:'Business or office'}
+    ]
   },
-
-  // STEP 3: Property size
   {
-    id: 'propertySize',
-    tag: 'Step 3 of 5 — Size & Scope',
-    title: 'How would you describe your property size?',
-    titleEm: '',
-    sub: 'This directly affects the estimate. Give us your best guess — we'll confirm on-site.',
-    type: 'single',
-    options: [
-      { value:'small',    icon:'🏠', title:'Small',    sub:'Condo, cottage, or under 1,200 sq ft' },
-      { value:'standard', icon:'🏡', title:'Standard', sub:'3–4 bedroom home, typical residential lot' },
-      { value:'large',    icon:'🏘️', title:'Large',    sub:'5+ bedrooms, larger lot, or estate property' },
-      { value:'estate',   icon:'🏰', title:'Estate / Commercial', sub:'Large acreage, commercial scale' },
-    ],
-    cols: 2,
-    key: 'propertySize'
+    id:'propSize', key:'propSize', type:'opts',
+    tag:'Step 3 of 5',
+    h:'How large is the property?',
+    sub:"This directly affects pricing. Give us your best guess — we'll confirm on-site.",
+    cols:2,
+    opts:[
+      {v:'small',    i:'🏠', t:'Small',    s:'Condo, cottage, or under 1,200 sq ft'},
+      {v:'standard', i:'🏡', t:'Standard', s:'3–4 bed home, typical residential lot'},
+      {v:'large',    i:'🏘️', t:'Large',    s:'5+ bed or larger lot'},
+      {v:'estate',   i:'🏰', t:'Estate / Commercial', s:'Large acreage or commercial scale'}
+    ]
   },
-
-  // STEP 4: Timing & frequency
   {
-    id: 'timing',
-    tag: 'Step 4 of 5 — Timeline',
-    title: 'When do you need this service?',
-    titleEm: '',
-    sub: 'Helps us schedule correctly and flag any availability considerations.',
-    type: 'single',
-    dynamicOptions: true,  // options change based on service selection
-    key: 'timing'
+    id:'timing', key:'timing', type:'opts',
+    tag:'Step 4 of 5',
+    h:'When do you need this?',
+    sub:'Helps us plan availability and flag any timing considerations.',
+    cols:2,
+    dynamic:true
   },
-
-  // STEP 5: Contact info
   {
-    id: 'contact',
-    tag: 'Step 5 of 5 — Get Your Estimate',
-    title: 'Where should we send your estimate?',
-    titleEm: '',
-    sub: 'Ray or Courtney will respond personally — usually within the hour. No spam, no sales scripts.',
-    type: 'contact',
-    key: 'contact'
+    id:'contact', key:'contact', type:'contact',
+    tag:'Step 5 of 5',
+    h:'Where should we send your estimate?',
+    sub:'Ray or Courtney will respond personally — usually within the hour. No spam, no sales calls.'
   }
 ];
 
-// ─── DYNAMIC TIMING OPTIONS ────────────────────────────────────
-
-function getTimingOptions(service) {
-  const recurring = ['lawn-care','gutter-cleaning','interior-cleaning','airbnb-cleaning','property-plan','commercial-cleaning'];
-  const project =   ['painting','landscaping','concrete-curbing','deck-building','flooring'];
-
-  if (recurring.includes(service)) {
+// ── TIMING OPTIONS (dynamic by service) ───────────────────────
+function timingOpts() {
+  var recurring = ['lawn-care','gutter-cleaning','interior-cleaning','airbnb-cleaning','property-plan','commercial-cleaning'];
+  if (recurring.indexOf(S.sel.service) >= 0) {
     return [
-      { value:'weekly',    icon:'📅', title:'Weekly',         sub:'Ongoing weekly service' },
-      { value:'biweekly',  icon:'📅', title:'Biweekly',       sub:'Every two weeks' },
-      { value:'monthly',   icon:'📅', title:'Monthly',        sub:'Once a month or as needed' },
-      { value:'onetime',   icon:'🎯', title:'One-Time',       sub:'Just this one visit' },
-    ];
-  } else if (project.includes(service)) {
-    return [
-      { value:'asap',      icon:'⚡', title:'As Soon as Possible', sub:'I need this done quickly' },
-      { value:'thisweek',  icon:'📅', title:'This Week',       sub:'In the next 7 days' },
-      { value:'thismonth', icon:'📆', title:'This Month',      sub:'Within the next 30 days' },
-      { value:'planning',  icon:'🗓️', title:'Planning Ahead',  sub:'2+ months out, gathering estimates' },
-    ];
-  } else {
-    return [
-      { value:'asap',      icon:'⚡', title:'As Soon as Possible', sub:'I need this done quickly' },
-      { value:'thisweek',  icon:'📅', title:'This Week',       sub:'Within 7 days' },
-      { value:'thismonth', icon:'📆', title:'This Month',      sub:'Within 30 days' },
-      { value:'planning',  icon:'🗓️', title:'No Rush',         sub:'Just getting estimates' },
+      {v:'weekly',    i:'📅', t:'Weekly',         s:'Ongoing weekly service'},
+      {v:'biweekly',  i:'📅', t:'Biweekly',       s:'Every two weeks'},
+      {v:'monthly',   i:'📅', t:'Monthly',        s:'Once a month'},
+      {v:'onetime',   i:'🎯', t:'One-Time',       s:'Just this visit'}
     ];
   }
+  return [
+    {v:'asap',      i:'⚡', t:'As Soon as Possible', s:'I need this done quickly'},
+    {v:'thisweek',  i:'📅', t:'This Week',           s:'Within 7 days'},
+    {v:'thismonth', i:'📆', t:'This Month',          s:'Within 30 days'},
+    {v:'planning',  i:'🗓️', t:'Planning Ahead',      s:'Gathering estimates'}
+  ];
 }
 
-// ─── ESTIMATE CALCULATOR ───────────────────────────────────────
-
-function calculateEstimate() {
-  const { service, propertySize, propertyType, timing } = state.selections;
-  if (!service || !PRICING[service]) return { low: 0, high: 0, unit: '' };
-
-  const { base, unit, name } = PRICING[service];
-  let low = base[0], high = base[1];
-
-  // Apply size multiplier
-  const sizeMult = MULTIPLIERS[propertySize] || 1.0;
-  low  = Math.round(low  * sizeMult);
-  high = Math.round(high * sizeMult);
-
-  // Apply property type nudge
-  if (propertyType === 'str' && ['airbnb-cleaning','interior-cleaning','lawn-care','pressure-washing'].includes(service)) {
-    low  = Math.round(low  * 1.05);
-    high = Math.round(high * 1.1);
+// ── ESTIMATE CALC ──────────────────────────────────────────────
+function calc() {
+  var svc = S.sel.service;
+  if (!svc || !P[svc]) return { lo:'$?', hi:'$?', unit:'', name:'Your Service' };
+  var pr = P[svc];
+  var m  = SM[S.sel.propSize] || 1.0;
+  var lo = Math.round(pr.lo * m);
+  var hi = Math.round(pr.hi * m);
+  // Property type nudge
+  if (S.sel.propType === 'commercial') { lo = Math.round(lo*1.2); hi = Math.round(hi*1.3); }
+  if (S.sel.propType === 'str' && ['airbnb-cleaning','interior-cleaning','lawn-care','pressure-washing'].indexOf(svc) >= 0) {
+    lo = Math.round(lo*1.05); hi = Math.round(hi*1.1);
   }
-  if (propertyType === 'commercial') {
-    low  = Math.round(low  * 1.2);
-    high = Math.round(high * 1.3);
-  }
-  if (propertyType === 'hoa') {
-    low  = Math.round(low  * 1.05);
-    high = Math.round(high * 1.1);
-  }
-
-  // Round to friendly numbers
-  low  = Math.ceil(low  / 5) * 5;
-  high = Math.ceil(high / 10) * 10;
-
-  // Format
-  const fmt = n => n >= 1000 ? '$' + (n/1000).toFixed(1).replace('.0','') + 'K' : '$' + n;
-
-  return { low: fmt(low), high: fmt(high), unit, name };
+  // Round friendly
+  lo = Math.ceil(lo/5)*5;
+  hi = Math.ceil(hi/10)*10;
+  function fmt(n){ return n>=1000 ? '$'+(n/1000).toFixed(1).replace('.0','')+'K' : '$'+n; }
+  return { lo:fmt(lo), hi:fmt(hi), unit:pr.unit, name:pr.name };
 }
 
-// ─── RENDER FUNCTIONS ──────────────────────────────────────────
-
+// ── RENDER PROGRESS ────────────────────────────────────────────
 function renderProgress() {
-  const total = STEPS.length;
-  const current = state.currentStep;
-  const pct = Math.round(((current + 1) / total) * 100);
-
-  document.getElementById('stepLabel').textContent = `Step ${current + 1} of ${total}`;
-  document.getElementById('stepPercent').textContent = pct + '%';
-  document.getElementById('progressFill').style.width = pct + '%';
-
-  // Dots
-  let dots = '';
-  for (let i = 0; i < total; i++) {
-    let cls = 'step-dot';
-    if (i < current) cls += ' done';
-    else if (i === current) cls += ' active';
-    dots += `<div class="${cls}"></div>`;
+  var pct = Math.round(((S.step+1)/TOTAL)*100);
+  document.getElementById('stepLbl').textContent = 'Step '+(S.step+1)+' of '+TOTAL;
+  document.getElementById('pct').textContent = pct+'%';
+  document.getElementById('pFill').style.width = pct+'%';
+  var d = '';
+  for (var i=0;i<TOTAL;i++) {
+    var cls = 'dot';
+    if (i<S.step) cls+=' done';
+    else if (i===S.step) cls+=' active';
+    d += '<div class="'+cls+'"></div>';
   }
-  document.getElementById('stepDots').innerHTML = dots;
+  document.getElementById('dots').innerHTML = d;
 }
 
+// ── RENDER STEP ────────────────────────────────────────────────
 function renderStep() {
-  const step = STEPS[state.currentStep];
-  const card = document.getElementById('funnelCard');
-
-  // Handle dynamic timing options
-  if (step.dynamicOptions && step.id === 'timing') {
-    step.options = getTimingOptions(state.selections.service || '');
-    step.cols = 2;
-  }
-
-  let html = '';
+  renderProgress();
+  var step = STEPS[S.step];
+  if (step.dynamic) step.opts = timingOpts();
+  var card = document.getElementById('card');
+  var html = '';
 
   if (step.type === 'contact') {
-    html = renderContactStep(step);
+    html = buildContact(step);
   } else {
-    html = renderOptionsStep(step);
+    html = buildOpts(step);
   }
 
   card.innerHTML = html;
   card.style.animation = 'none';
-  card.offsetHeight; // reflow
-  card.style.animation = '';
-
-  // Re-attach listeners
-  attachListeners();
-  renderProgress();
-  updateNextBtn();
+  void card.offsetWidth; // reflow
+  card.style.animation = 'fadeUp 0.3s ease';
 }
 
-function renderOptionsStep(step) {
-  const cols = step.cols || 2;
-  const colClass = cols === 1 ? 'cols-1' : cols === 3 ? 'cols-3' : 'cols-2';
-  const current = state.selections[step.key];
-
-  let opts = '';
-  (step.options || []).forEach(opt => {
-    const sel = current === opt.value ? 'selected' : '';
-    opts += `
-      <button class="opt-btn ${sel}" data-key="${step.key}" data-value="${opt.value}" onclick="selectOption(this)">
-        <span class="icon">${opt.icon}</span>
-        <span class="opt-text">
-          <span class="opt-title">${opt.title}</span>
-          <span class="opt-sub">${opt.sub}</span>
-        </span>
-        <span class="check">✓</span>
-      </button>`;
+function buildOpts(step) {
+  var cols = step.cols === 1 ? 'g1' : 'g2';
+  var cur  = S.sel[step.key] || '';
+  var items = '';
+  step.opts.forEach(function(o) {
+    var sel = cur === o.v ? 'sel' : '';
+    items += '<button class="opt '+sel+'" onclick="pick(''+step.key+'',''+o.v+'',this)">'
+      + '<span class="ico">'+o.i+'</span>'
+      + '<span class="txt"><span class="t1">'+o.t+'</span><span class="t2">'+o.s+'</span></span>'
+      + '<span class="ck">✓</span>'
+      + '</button>';
   });
-
-  const isBack = state.currentStep > 0;
-  return `
-    <span class="step-tag">${step.tag}</span>
-    <h2>${step.title}${step.titleEm ? ' <em>' + step.titleEm + '</em>' : ''}</h2>
-    <p class="sub">${step.sub}</p>
-    <div class="options-grid ${colClass}">${opts}</div>
-    <div class="funnel-nav">
-      ${isBack ? `<button class="btn-back" onclick="prevStep()">← Back</button>` : '<div></div>'}
-      <button class="btn-next" id="nextBtn" onclick="nextStep()" ${!current ? 'disabled' : ''}>
-        ${state.currentStep < STEPS.length - 1 ? 'Continue →' : 'Get My Estimate →'}
-      </button>
-    </div>
-    <p class="skip-link" onclick="skipToContact()">Skip — just connect me with Ray</p>`;
+  var backBtn = S.step > 0 ? '<button class="btn-back" onclick="go(-1)">← Back</button>' : '<span></span>';
+  var label   = S.step < TOTAL-1 ? 'Continue →' : 'Get My Estimate →';
+  var dis     = cur ? '' : 'disabled';
+  return '<span class="step-label">'+step.tag+'</span>'
+    + '<h2>'+step.h+'</h2>'
+    + '<p class="sub">'+step.sub+'</p>'
+    + '<div class="opts '+cols+'">'+items+'</div>'
+    + '<div class="nav-row">'+backBtn
+    + '<button class="btn-next" id="nBtn" '+dis+' onclick="go(1)">'+label+'</button>'
+    + '</div>'
+    + '<span class="skip" onclick="jumpToContact()">Skip — just connect me with Ray</span>';
 }
 
-function renderContactStep(step) {
-  return `
-    <span class="step-tag">${step.tag}</span>
-    <h2>${step.title}</h2>
-    <p class="sub">${step.sub}</p>
+function buildContact(step) {
+  var c = S.contact;
+  return '<span class="step-label">'+step.tag+'</span>'
+    + '<h2>'+step.h+'</h2>'
+    + '<p class="sub">'+step.sub+'</p>'
 
-    <div class="field-group">
-      <label class="field-label">Your Name <span style="color:var(--pink)">*</span></label>
-      <input class="field-input" type="text" id="ci-name" placeholder="First and last name" value="${state.contactInfo.name||''}" oninput="saveContact()">
-    </div>
-    <div class="field-group">
-      <label class="field-label">Phone Number <span style="color:var(--pink)">*</span></label>
-      <input class="field-input" type="tel" id="ci-phone" placeholder="(843) 000-0000" value="${state.contactInfo.phone||''}" oninput="saveContact()">
-    </div>
-    <div class="field-group">
-      <label class="field-label">Email Address</label>
-      <input class="field-input" type="email" id="ci-email" placeholder="your@email.com" value="${state.contactInfo.email||''}" oninput="saveContact()">
-    </div>
-    <div class="field-group">
-      <label class="field-label">Property Address or City</label>
-      <input class="field-input" type="text" id="ci-address" placeholder="e.g. Myrtle Beach SC or 123 Ocean Blvd" value="${state.contactInfo.address||''}" oninput="saveContact()">
-    </div>
-    <div class="field-group">
-      <label class="field-label">Anything else we should know?</label>
-      <textarea class="field-input" id="ci-notes" rows="3" placeholder="Extra details, questions, or specific requests..." style="resize:vertical;min-height:80px" oninput="saveContact()">${state.contactInfo.notes||''}</textarea>
-    </div>
+    + '<div class="field"><label>Your Name <span>*</span></label>'
+    + '<input type="text" id="fn" placeholder="First and last name" value="'+(c.name||'')+'" oninput="sc()"></div>'
 
-    <div class="funnel-nav">
-      <button class="btn-back" onclick="prevStep()">← Back</button>
-      <button class="btn-next" id="nextBtn" onclick="submitForm()">Get My Free Estimate →</button>
-    </div>`;
+    + '<div class="field"><label>Phone Number <span>*</span></label>'
+    + '<input type="tel" id="fp" placeholder="(843) 000-0000" value="'+(c.phone||'')+'" oninput="sc()"></div>'
+
+    + '<div class="field"><label>Email Address</label>'
+    + '<input type="email" id="fe" placeholder="your@email.com" value="'+(c.email||'')+'" oninput="sc()"></div>'
+
+    + '<div class="field"><label>Property Address or City</label>'
+    + '<input type="text" id="fa" placeholder="e.g. Myrtle Beach SC or 123 Ocean Blvd" value="'+(c.address||'')+'" oninput="sc()"></div>'
+
+    + '<div class="field"><label>Anything else we should know?</label>'
+    + '<textarea id="fnotes" placeholder="Extra details, questions, or timing..." oninput="sc()">'+(c.notes||'')+'</textarea></div>'
+
+    + '<div class="nav-row">'
+    + '<button class="btn-back" onclick="go(-1)">← Back</button>'
+    + '<button class="btn-next" id="nBtn" disabled onclick="submit()">Get My Free Estimate →</button>'
+    + '</div>';
 }
 
-function renderEstimate() {
-  const card = document.getElementById('funnelCard');
-  document.getElementById('progressBar').style.display = 'none';
-  document.getElementById('urgencyStrip').style.display = 'none';
+// ── INTERACTIONS ────────────────────────────────────────────────
+function pick(key, val, btn) {
+  document.querySelectorAll('.opt').forEach(function(b){ b.classList.remove('sel'); });
+  btn.classList.add('sel');
+  S.sel[key] = val;
+  var nb = document.getElementById('nBtn');
+  if (nb) nb.disabled = false;
+}
 
-  const est = calculateEstimate();
-  const svc  = state.selections.service   ? PRICING[state.selections.service]?.name   : 'Selected Service';
-  const size = state.selections.propertySize;
-  const type = state.selections.propertyType;
-  const time = state.selections.timing;
-  const name = state.contactInfo.name ? state.contactInfo.name.split(' ')[0] : 'there';
+function go(dir) {
+  if (dir === 1) {
+    if (S.step < TOTAL-1) { S.step++; renderStep(); }
+  } else {
+    if (S.step > 0) { S.step--; renderStep(); }
+  }
+  window.scrollTo({top:0,behavior:'smooth'});
+}
 
-  const sizeLabel = {small:'Small',standard:'Standard',large:'Large',estate:'Estate / Commercial'}[size] || size;
-  const typeLabel = {primary:'Primary Residence',str:'Vacation Rental / STR',second:'Second Home',hoa:'HOA Community',investment:'Investment Property',commercial:'Commercial Property'}[type] || type;
-  const timeLabel = {weekly:'Weekly',biweekly:'Biweekly',monthly:'Monthly',onetime:'One-Time',asap:'ASAP',thisweek:'This Week',thismonth:'This Month',planning:'Planning Ahead'}[time] || time;
+function jumpToContact() {
+  S.step = TOTAL-1;
+  renderStep();
+  window.scrollTo({top:0,behavior:'smooth'});
+}
 
-  // Sumbit to Netlify in background
-  submitToNetlify();
+function sc() {
+  S.contact.name    = (document.getElementById('fn')    ||{}).value||'';
+  S.contact.phone   = (document.getElementById('fp')    ||{}).value||'';
+  S.contact.email   = (document.getElementById('fe')    ||{}).value||'';
+  S.contact.address = (document.getElementById('fa')    ||{}).value||'';
+  S.contact.notes   = (document.getElementById('fnotes')||{}).value||'';
+  var nb = document.getElementById('nBtn');
+  if (nb) nb.disabled = !(S.contact.name.trim() && S.contact.phone.trim());
+}
 
-  card.innerHTML = `
-    <div style="text-align:center;padding:0.5rem 0 1.5rem">
-      <div class="estimate-badge">✓ Your Personalized Estimate</div>
-      <p style="font-size:14px;color:rgba(255,255,255,0.5);margin-bottom:0.25rem">Hey ${name}! Based on what you told us:</p>
-      <div class="estimate-range">${est.low} – ${est.high}</div>
-      <div class="estimate-label">${est.unit} · ${est.name}</div>
+function submit() {
+  sc();
+  showResult();
+  bgSubmit();
+  window.scrollTo({top:0,behavior:'smooth'});
+}
 
-      <div class="estimate-details" style="text-align:left">
-        <div class="estimate-row"><span class="ekey">Service</span><span class="eval">${svc}</span></div>
-        <div class="estimate-row"><span class="ekey">Property Type</span><span class="eval">${typeLabel}</span></div>
-        <div class="estimate-row"><span class="ekey">Property Size</span><span class="eval">${sizeLabel}</span></div>
-        <div class="estimate-row"><span class="ekey">Schedule / Timing</span><span class="eval">${timeLabel}</span></div>
-        <div class="estimate-row"><span class="ekey">Exact Quote</span><span class="eval" style="color:var(--pink)">Free on-site confirmation</span></div>
-      </div>
+// ── RESULT ──────────────────────────────────────────────────────
+function showResult() {
+  document.getElementById('progressWrap').style.display = 'none';
+  document.getElementById('urgency').style.display      = 'none';
 
-      <p style="font-size:13px;color:rgba(255,255,255,0.4);margin-bottom:1.25rem;line-height:1.6">
-        This estimate is based on your answers. Ray will confirm the exact price after a quick property walkthrough — <b style="color:rgba(255,255,255,0.7)">always free, always no obligation.</b>
-      </p>
+  var est  = calc();
+  var svc  = STEPS[0].opts.find(function(o){return o.v===S.sel.service;});
+  var svcN = svc ? svc.t : (P[S.sel.service]||{}).name || 'Your Service';
+  var nm   = (S.contact.name||'there').split(' ')[0];
+  var cnt  = S.contact.phone || S.contact.email || 'your contact info';
 
-      <div class="final-cta-row">
-        <a href="tel:8434677136" class="btn-call-big">📞 Call Ray Now</a>
-        <a href="sms:8434677136" class="btn-text-big">💬 Text Us</a>
-      </div>
+  var typeL = {primary:'Primary Residence',str:'Vacation Rental / Airbnb',second:'Second Home',hoa:'HOA Community',investment:'Investment Property',commercial:'Commercial Property'}[S.sel.propType]||'—';
+  var sizeL = {small:'Small',standard:'Standard',large:'Large',estate:'Estate / Commercial'}[S.sel.propSize]||'—';
+  var timeL = {weekly:'Weekly',biweekly:'Biweekly',monthly:'Monthly',onetime:'One-Time',asap:'ASAP',thisweek:'This Week',thismonth:'This Month',planning:'Planning Ahead'}[S.sel.timing]||'—';
 
-      <div style="margin-top:1rem;padding:0.85rem;background:rgba(255,255,255,0.03);border-radius:8px;font-size:12px;color:rgba(255,255,255,0.35);text-align:left">
-        ✅ <b style="color:rgba(255,255,255,0.55)">Your request has been received.</b> Ray or Courtney will contact you at ${state.contactInfo.phone || state.contactInfo.email || 'the number you provided'} — usually within the hour during the day, within a few hours any other time.
-      </div>
+  var svcSlug = {
+    'lawn-care':'lawn-care','pressure-washing':'pressure-washing','gutter-cleaning':'gutter-cleaning',
+    'airbnb-cleaning':'airbnb-cleaning','interior-cleaning':'interior-cleaning','painting':'painting',
+    'landscaping':'landscaping','concrete-curbing':'concrete-curbing','deck-building':'deck-building-repair',
+    'flooring':'flooring','handyman':'handyman-services','minor-electric':'minor-electric-plumbing',
+    'junk-removal':'junk-removal','property-plan':'property-maintenance','commercial-cleaning':'commercial-cleaning'
+  }[S.sel.service] || '';
 
-      <div style="margin-top:1.5rem;padding-top:1.25rem;border-top:1px solid rgba(255,255,255,0.07)">
-        <p style="font-size:12px;color:rgba(255,255,255,0.3);margin-bottom:0.75rem">Explore our services while you wait:</p>
-        <div style="display:flex;gap:8px;flex-wrap:wrap;justify-content:center">
-          <a href="/services/${state.selections.service || 'lawn-care'}/" style="font-size:12px;color:var(--pink);text-decoration:none;background:rgba(233,30,140,0.08);border:1px solid rgba(233,30,140,0.2);padding:5px 12px;border-radius:20px">${svc} →</a>
-          <a href="/service-areas/" style="font-size:12px;color:rgba(255,255,255,0.5);text-decoration:none;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.1);padding:5px 12px;border-radius:20px">Service Areas →</a>
-          <a href="/" style="font-size:12px;color:rgba(255,255,255,0.5);text-decoration:none;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.1);padding:5px 12px;border-radius:20px">Homepage →</a>
-        </div>
-      </div>
-    </div>`;
+  var card = document.getElementById('card');
+  card.innerHTML =
+    '<div style="text-align:center">'
+    + '<div class="result-badge">✓ Your Personalized Estimate</div>'
+    + '<p style="font-size:13.5px;color:rgba(255,255,255,0.45);margin-bottom:0.3rem">Hey '+nm+'! Based on what you told us:</p>'
+    + '<div class="est-range">'+est.lo+' – '+est.hi+'</div>'
+    + '<p class="est-unit">'+est.unit+' · '+svcN+'</p>'
+    + '</div>'
+
+    + '<div class="est-table">'
+    + '<div class="est-row"><span class="ek">Service</span><span class="ev">'+svcN+'</span></div>'
+    + '<div class="est-row"><span class="ek">Property Type</span><span class="ev">'+typeL+'</span></div>'
+    + '<div class="est-row"><span class="ek">Property Size</span><span class="ev">'+sizeL+'</span></div>'
+    + '<div class="est-row"><span class="ek">Schedule / Timing</span><span class="ev">'+timeL+'</span></div>'
+    + '<div class="est-row"><span class="ek">Exact Price</span><span class="ev pink">Free on-site confirmation →</span></div>'
+    + '</div>'
+
+    + '<p style="font-size:12.5px;color:rgba(255,255,255,0.38);text-align:center;line-height:1.6;margin-bottom:1.1rem">'
+    + 'This range is based on your answers. Ray confirms the exact price after a quick property walkthrough — '
+    + '<b style="color:rgba(255,255,255,0.6)">always free, always no obligation.</b></p>'
+
+    + '<div class="cta-row">'
+    + '<a href="tel:8434677136" class="big-call">📞 Call Ray Now</a>'
+    + '<a href="sms:8434677136" class="big-text">💬 Text Us</a>'
+    + '</div>'
+
+    + '<div class="confirm-box">✅ <b style="color:rgba(255,255,255,0.6)">Request received.</b> '
+    + 'Ray or Courtney will contact you at '+cnt+' — usually within the hour during the day.</div>'
+
+    + '<div class="tag-row">'
+    + (svcSlug ? '<a href="/services/'+svcSlug+'/" class="tag-link pink-tag">'+svcN+' →</a>' : '')
+    + '<a href="/service-areas/myrtle-beach/" class="tag-link">Myrtle Beach</a>'
+    + '<a href="/reviews/" class="tag-link">5★ Reviews</a>'
+    + '<a href="/" class="tag-link">Homepage</a>'
+    + '</div>';
 
   card.style.animation = 'none';
-  card.offsetHeight;
-  card.style.animation = '';
+  void card.offsetWidth;
+  card.style.animation = 'fadeUp 0.3s ease';
 }
 
-// ─── INTERACTIONS ──────────────────────────────────────────────
-
-function selectOption(btn) {
-  const key = btn.dataset.key;
-  const val = btn.dataset.value;
-
-  // Remove selected from siblings
-  document.querySelectorAll(`[data-key="${key}"]`).forEach(b => b.classList.remove('selected'));
-  btn.classList.add('selected');
-
-  state.selections[key] = val;
-  updateNextBtn();
-}
-
-function updateNextBtn() {
-  const step = STEPS[state.currentStep];
-  const btn = document.getElementById('nextBtn');
-  if (!btn) return;
-
-  if (step.type === 'contact') {
-    const name  = document.getElementById('ci-name')?.value.trim();
-    const phone = document.getElementById('ci-phone')?.value.trim();
-    btn.disabled = !name || !phone;
-  } else {
-    btn.disabled = !state.selections[step.key];
-  }
-}
-
-function saveContact() {
-  state.contactInfo.name    = document.getElementById('ci-name')?.value || '';
-  state.contactInfo.phone   = document.getElementById('ci-phone')?.value || '';
-  state.contactInfo.email   = document.getElementById('ci-email')?.value || '';
-  state.contactInfo.address = document.getElementById('ci-address')?.value || '';
-  state.contactInfo.notes   = document.getElementById('ci-notes')?.value || '';
-  updateNextBtn();
-}
-
-function nextStep() {
-  if (state.currentStep < STEPS.length - 1) {
-    state.currentStep++;
-    renderStep();
-    window.scrollTo({ top: 0, behavior: 'smooth' });
-  }
-}
-
-function prevStep() {
-  if (state.currentStep > 0) {
-    state.currentStep--;
-    renderStep();
-    window.scrollTo({ top: 0, behavior: 'smooth' });
-  }
-}
-
-function skipToContact() {
-  state.currentStep = STEPS.length - 1;
-  renderStep();
-  window.scrollTo({ top: 0, behavior: 'smooth' });
-}
-
-function submitForm() {
-  saveContact();
-  renderEstimate();
-  window.scrollTo({ top: 0, behavior: 'smooth' });
-}
-
-function attachListeners() {
-  // Input watchers for contact step
-  const fields = ['ci-name','ci-phone','ci-email','ci-address','ci-notes'];
-  fields.forEach(id => {
-    const el = document.getElementById(id);
-    if (el) el.addEventListener('input', () => { saveContact(); updateNextBtn(); });
-  });
-}
-
-// ─── NETLIFY BACKGROUND SUBMIT ─────────────────────────────────
-function submitToNetlify() {
-  const body = new URLSearchParams({
-    'form-name':    'funnel-quote',
-    'name':         state.contactInfo.name || '',
-    'phone':        state.contactInfo.phone || '',
-    'email':        state.contactInfo.email || '',
-    'address':      state.contactInfo.address || '',
-    'service':      state.selections.service || '',
-    'property_type':state.selections.propertyType || '',
-    'property_size':state.selections.propertySize || '',
-    'timing':       state.selections.timing || '',
-    'notes':        state.contactInfo.notes || '',
-  });
-
+// ── BACKGROUND NETLIFY SUBMIT ──────────────────────────────────
+function bgSubmit() {
+  var data = 'form-name=funnel-quote'
+    + '&name='    + encodeURIComponent(S.contact.name||'')
+    + '&phone='   + encodeURIComponent(S.contact.phone||'')
+    + '&email='   + encodeURIComponent(S.contact.email||'')
+    + '&address=' + encodeURIComponent(S.contact.address||'')
+    + '&service=' + encodeURIComponent(S.sel.service||'')
+    + '&proptype='+ encodeURIComponent(S.sel.propType||'')
+    + '&propsize='+ encodeURIComponent(S.sel.propSize||'')
+    + '&timing='  + encodeURIComponent(S.sel.timing||'')
+    + '&notes='   + encodeURIComponent(S.contact.notes||'');
   fetch('/', {
-    method: 'POST',
-    headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
-    body: body.toString()
-  }).catch(() => {
-    // Silent fail — Netlify form may not be configured, contact info still sent
-    console.log('Form submission note: configure Netlify Forms or replace with your form handler endpoint');
-  });
+    method:'POST',
+    headers:{'Content-Type':'application/x-www-form-urlencoded'},
+    body:data
+  }).catch(function(){});
 }
 
-// ─── INIT ──────────────────────────────────────────────────────
+// ── INIT ───────────────────────────────────────────────────────
 renderStep();
 </script>
 
-<!-- Hidden Netlify form detector -->
+<!-- Netlify form bot detect -->
 <form name="funnel-quote" data-netlify="true" netlify-honeypot="bot-field" style="display:none">
   <input type="hidden" name="form-name" value="funnel-quote">
   <input name="bot-field">
   <input name="name"><input name="phone"><input name="email">
-  <input name="address"><input name="service"><input name="property_type">
-  <input name="property_size"><input name="timing"><input name="notes">
+  <input name="address"><input name="service"><input name="proptype">
+  <input name="propsize"><input name="timing"><input name="notes">
 </form>
 
-<script type="application/ld+json">{"@context":"https://schema.org","@type":"WebPage","name":"Free Quote — Bakerss Property Maintenance","description":"Get a personalized property maintenance estimate in seconds. Myrtle Beach and Horry County, SC.","url":"https://www.bakerss.com/get-quote/"}</script>
-
-<footer>
-  <div class="footer-inner">
-    <div class="footer-top">
-      <div class="footer-brand">
-        <a href="/" style="font-family:var(--font-display);font-size:20px;font-weight:800;color:#fff;text-decoration:none;display:block;margin-bottom:0.5rem">Baker<span style="color:var(--pink)">ss</span></a>
-        <p>Full-service property maintenance for Horry County homeowners, STR owners, HOAs, and property managers.</p>
-        <div class="footer-contact-links">
-          <a href="tel:8434677136"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.81 19.79 19.79 0 01.01 1.13 2 2 0 012 .99h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.09 8.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>843-467-7136</a>
-          <a href="mailto:cloyd.raymond@yahoo.com"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>cloyd.raymond@yahoo.com</a>
-        </div>
-      </div>
-      <div class="footer-col"><h4>Services</h4><a href="/services/lawn-care/">Lawn Care</a><a href="/services/landscaping/">Landscaping</a><a href="/services/pressure-washing/">Pressure Washing</a><a href="/services/airbnb-cleaning/">Airbnb Cleaning</a><a href="/services/interior-cleaning/">Interior Cleaning</a><a href="/services/gutter-cleaning/">Gutter Cleaning</a><a href="/services/painting/">Painting</a><a href="/services/handyman-services/">Handyman</a><a href="/services/junk-removal/">Junk Removal</a></div>
-      <div class="footer-col"><h4>Service Areas</h4><a href="/service-areas/myrtle-beach/">Myrtle Beach</a><a href="/service-areas/north-myrtle-beach/">North Myrtle Beach</a><a href="/service-areas/conway/">Conway</a><a href="/service-areas/surfside-beach/">Surfside Beach</a><a href="/service-areas/murrells-inlet/">Murrells Inlet</a><a href="/service-areas/garden-city/">Garden City</a><a href="/service-areas/socastee/">Socastee</a><a href="/service-areas/little-river/">Little River</a></div>
-      <div class="footer-col"><h4>Company</h4><a href="/about/">About Bakerss</a><a href="/reviews/">Customer Reviews</a><a href="/get-quote/">Get a Free Quote</a><a href="/learning-center/">Learning Center</a></div>
-    </div>
-    <div class="footer-bottom"><span>© 2025 Bakerss Property Maintenance · Horry County, SC</span><span>Licensed &amp; Insured · Locally Owned</span></div>
-  </div>
-</footer>
-<div class="sticky-bar" style="display:flex">
-  <a href="tel:8434677136"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.81 19.79 19.79 0 01.01 1.13 2 2 0 012 .99h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.09 8.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>Call</a>
-  <a href="sms:8434677136"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15a2 2 0 01-2 2H7l-4 4V5a2 2 0 012-2h14a2 2 0 012 2z"/></svg>Text</a>
-  <a href="/get-quote/" class="primary"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/></svg>Free Quote</a>
-</div>
-<script>
-document.querySelectorAll('.faq-q').forEach(q=>q.addEventListener('click',()=>q.parentElement.classList.toggle('open')));
-</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"WebPage","name":"Free Quote Estimator — Bakerss Property Maintenance","description":"Get a personalized property maintenance estimate in 60 seconds. Myrtle Beach and Horry County SC.","url":"https://www.bakerss.com/get-quote/"}</script>
 </body>
 </html>
