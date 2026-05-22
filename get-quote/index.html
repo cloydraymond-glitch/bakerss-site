@@ -4,860 +4,350 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>Get a Free Quote | Bakerss Property Maintenance — Myrtle Beach SC</title>
-<meta name="description" content="Get a personalized property maintenance estimate in 60 seconds. Myrtle Beach and Horry County SC. Lawn care, cleaning, pressure washing, landscaping and more.">
+<meta name="description" content="Get a personalized property maintenance estimate in 60 seconds. Myrtle Beach and Horry County SC.">
 <link rel="canonical" href="https://www.bakerss.com/get-quote/">
 <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@800&family=DM+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
 <style>
 *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
-:root{
-  --pink:#E91E8C;
-  --black:#0D0D0D;
-  --dark:#1A1A1A;
-  --dark2:#222222;
-  --white:#FFFFFF;
-}
+:root{--pink:#E91E8C;--black:#0D0D0D;--dark:#1A1A1A;--d2:#222;--d3:#2a2a2a;--border:rgba(255,255,255,0.09);--text:rgba(255,255,255,0.88);--muted:rgba(255,255,255,0.42);--radius:10px}
 html{scroll-behavior:smooth}
-body{
-  font-family:'DM Sans',sans-serif;
-  background:var(--black);
-  color:var(--white);
-  line-height:1.6;
-  min-height:100vh;
-}
+body{font-family:'DM Sans',sans-serif;background:var(--black);color:var(--text);min-height:100vh;line-height:1.6}
 
-/* ── TOP BAR ── */
-.topbar{
-  background:var(--dark2);
-  border-bottom:1px solid rgba(255,255,255,0.07);
-  padding:0.75rem 1.5rem;
-  display:flex;
-  align-items:center;
-  justify-content:space-between;
-  position:sticky;
-  top:0;
-  z-index:100;
-}
-.logo{
-  font-family:'Playfair Display',Georgia,serif;
-  font-size:1.25rem;
-  font-weight:800;
-  color:#fff;
-  text-decoration:none;
-  letter-spacing:-0.02em;
-}
-.logo span{color:var(--pink)}
-.topbar-phone{
-  display:flex;
-  align-items:center;
-  gap:8px;
-  font-size:13px;
-  font-weight:600;
-  color:var(--pink);
-  text-decoration:none;
-  background:rgba(233,30,140,0.1);
-  border:1px solid rgba(233,30,140,0.25);
-  padding:6px 14px;
-  border-radius:20px;
-  transition:background 0.2s;
-}
-.topbar-phone:hover{background:rgba(233,30,140,0.18)}
+/* TOP BAR */
+.topbar{background:var(--dark);border-bottom:1px solid var(--border);padding:13px 20px;display:flex;align-items:center;justify-content:space-between;position:sticky;top:0;z-index:100}
+.logo{font-size:18px;font-weight:600;color:var(--text);text-decoration:none}
+.logo em{font-style:normal;color:var(--pink)}
+.call-btn{font-size:13px;font-weight:500;color:var(--pink);text-decoration:none;border:1px solid rgba(233,30,140,0.3);padding:7px 15px;border-radius:20px;background:rgba(233,30,140,0.07);transition:background .2s}
+.call-btn:hover{background:rgba(233,30,140,0.14)}
 
-/* ── PAGE LAYOUT ── */
-.page{
-  display:flex;
-  flex-direction:column;
-  align-items:center;
-  padding:2.5rem 1.25rem 6rem;
-  min-height:calc(100vh - 56px);
-}
+/* LAYOUT */
+.page{padding:28px 16px 64px;display:flex;flex-direction:column;align-items:center}
 
-/* ── PROGRESS ── */
-.progress-wrap{
-  width:100%;
-  max-width:560px;
-  margin-bottom:2rem;
-}
-.progress-meta{
-  display:flex;
-  justify-content:space-between;
-  font-size:11px;
-  font-weight:600;
-  letter-spacing:0.06em;
-  text-transform:uppercase;
-  color:rgba(255,255,255,0.3);
-  margin-bottom:7px;
-}
-.progress-track{
-  height:3px;
-  background:rgba(255,255,255,0.07);
-  border-radius:3px;
-}
-.progress-fill{
-  height:100%;
-  background:var(--pink);
-  border-radius:3px;
-  transition:width 0.4s ease;
-  width:20%;
-}
-.dots{
-  display:flex;
-  justify-content:center;
-  gap:5px;
-  margin-top:9px;
-}
-.dot{
-  width:7px;height:7px;
-  border-radius:50%;
-  background:rgba(255,255,255,0.1);
-  transition:all 0.3s;
-}
-.dot.done{background:rgba(233,30,140,0.35)}
-.dot.active{background:var(--pink);width:20px;border-radius:4px}
+/* PROGRESS */
+.prog-wrap{width:100%;max-width:560px;margin-bottom:24px}
+.prog-meta{display:flex;justify-content:space-between;font-size:11px;color:var(--muted);margin-bottom:7px;font-weight:500;letter-spacing:.05em;text-transform:uppercase}
+.prog-track{height:3px;background:rgba(255,255,255,0.08);border-radius:3px;overflow:hidden}
+.prog-fill{height:100%;background:var(--pink);border-radius:3px;transition:width .4s ease}
+.dots{display:flex;gap:5px;justify-content:center;margin-top:9px}
+.dot{width:7px;height:7px;border-radius:50%;background:rgba(255,255,255,0.1);transition:all .3s}
+.dot.done{background:rgba(233,30,140,0.32)}
+.dot.active{background:var(--pink);width:18px;border-radius:4px}
 
-/* ── CARD ── */
-.card{
-  background:var(--dark2);
-  border:1px solid rgba(255,255,255,0.08);
-  border-radius:18px;
-  padding:2rem;
-  width:100%;
-  max-width:560px;
-  box-shadow:0 20px 60px rgba(0,0,0,0.5);
-  animation:fadeUp 0.3s ease;
-}
-@keyframes fadeUp{from{opacity:0;transform:translateY(14px)}to{opacity:1;transform:translateY(0)}}
+/* CARD */
+.card{background:var(--d2);border:1px solid var(--border);border-radius:16px;padding:26px 22px 20px;width:100%;max-width:560px;transition:opacity .22s}
 
-.step-label{
-  font-size:10px;
-  font-weight:700;
-  letter-spacing:0.12em;
-  text-transform:uppercase;
-  color:var(--pink);
-  display:block;
-  margin-bottom:0.5rem;
-}
-.card h2{
-  font-family:'Playfair Display',Georgia,serif;
-  font-size:clamp(1.35rem,3vw,1.75rem);
-  font-weight:800;
-  line-height:1.15;
-  letter-spacing:-0.02em;
-  color:#fff;
-  margin-bottom:0.35rem;
-}
-.card h2 em{font-style:normal;color:var(--pink)}
-.card .sub{
-  font-size:13px;
-  color:rgba(255,255,255,0.42);
-  line-height:1.65;
-  margin-bottom:1.5rem;
-  font-weight:300;
-}
+.step-lbl{font-size:10px;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:var(--pink);display:block;margin-bottom:6px}
+.card h2{font-size:19px;font-weight:600;color:var(--text);margin-bottom:5px;line-height:1.2}
+.card .sub{font-size:13px;color:var(--muted);margin-bottom:18px;line-height:1.55;font-weight:300}
 
-/* ── OPTIONS ── */
-.opts{
-  display:grid;
-  gap:9px;
-  margin-bottom:1.25rem;
-}
-.opts.g2{grid-template-columns:1fr 1fr}
-.opts.g1{grid-template-columns:1fr}
+/* OPTIONS */
+.opts{display:grid;gap:8px;margin-bottom:16px}
+.g2{grid-template-columns:1fr 1fr}
+.g1{grid-template-columns:1fr}
 
-.opt{
-  display:flex;
-  align-items:center;
-  gap:11px;
-  background:rgba(255,255,255,0.03);
-  border:1.5px solid rgba(255,255,255,0.08);
-  border-radius:10px;
-  padding:13px 14px;
-  cursor:pointer;
-  text-align:left;
-  width:100%;
-  color:inherit;
-  font-family:inherit;
-  transition:border-color 0.15s, background 0.15s;
-}
-.opt:hover{
-  border-color:rgba(233,30,140,0.4);
-  background:rgba(233,30,140,0.05);
-}
-.opt.sel{
-  border-color:var(--pink);
-  background:rgba(233,30,140,0.09);
-}
-.opt .ico{font-size:1.35rem;width:32px;text-align:center;flex-shrink:0}
-.opt .txt{flex:1;min-width:0}
-.opt .t1{
-  display:block;
-  font-size:13.5px;
-  font-weight:600;
-  color:rgba(255,255,255,0.88);
-  margin-bottom:1px;
-  white-space:nowrap;
-  overflow:hidden;
-  text-overflow:ellipsis;
-}
-.opt .t2{
-  display:block;
-  font-size:11.5px;
-  color:rgba(255,255,255,0.35);
-  line-height:1.35;
-}
-.opt .ck{
-  width:18px;height:18px;
-  border-radius:50%;
-  border:1.5px solid rgba(255,255,255,0.18);
-  flex-shrink:0;
-  display:flex;
-  align-items:center;
-  justify-content:center;
-  font-size:10px;
-  color:transparent;
-  transition:all 0.15s;
-}
-.opt.sel .ck{
-  background:var(--pink);
-  border-color:var(--pink);
-  color:#fff;
-}
+.opt{display:flex;align-items:center;gap:10px;background:rgba(255,255,255,0.03);border:1px solid var(--border);border-radius:var(--radius);padding:11px 13px;cursor:pointer;text-align:left;width:100%;color:inherit;font-family:inherit;transition:border-color .15s,background .15s}
+.opt:hover{border-color:rgba(233,30,140,.4);background:rgba(233,30,140,.05)}
+.opt.sel{border-color:var(--pink);background:rgba(233,30,140,.09)}
+.ico{font-size:19px;width:28px;text-align:center;flex-shrink:0}
+.txt{flex:1;min-width:0}
+.t1{display:block;font-size:13.5px;font-weight:500;color:var(--text);margin-bottom:1px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.t2{display:block;font-size:11px;color:var(--muted);line-height:1.3}
+.ck{width:17px;height:17px;border-radius:50%;border:1px solid rgba(255,255,255,0.2);flex-shrink:0;display:flex;align-items:center;justify-content:center;font-size:10px;color:transparent;transition:all .15s}
+.opt.sel .ck{background:var(--pink);border-color:var(--pink);color:#fff}
 
-/* ── NAV BUTTONS ── */
-.nav-row{
-  display:flex;
-  gap:9px;
-  align-items:center;
-  padding-top:1.1rem;
-  border-top:1px solid rgba(255,255,255,0.05);
-  margin-top:0.5rem;
-}
-.btn-back{
-  background:transparent;
-  border:1px solid rgba(255,255,255,0.12);
-  color:rgba(255,255,255,0.45);
-  padding:10px 20px;
-  border-radius:7px;
-  font-size:13px;
-  font-weight:500;
-  cursor:pointer;
-  font-family:inherit;
-  transition:all 0.15s;
-  flex-shrink:0;
-}
-.btn-back:hover{border-color:rgba(255,255,255,0.3);color:rgba(255,255,255,0.8)}
-.btn-next{
-  flex:1;
-  background:var(--pink);
-  color:#fff;
-  border:none;
-  padding:12px 20px;
-  border-radius:7px;
-  font-size:14px;
-  font-weight:700;
-  cursor:pointer;
-  font-family:inherit;
-  transition:all 0.18s;
-  box-shadow:0 4px 16px rgba(233,30,140,0.28);
-}
-.btn-next:disabled{opacity:0.3;cursor:not-allowed;box-shadow:none}
-.btn-next:not(:disabled):hover{box-shadow:0 6px 22px rgba(233,30,140,0.4);transform:translateY(-1px)}
+/* NAV */
+.nav-row{display:flex;gap:9px;align-items:center;padding-top:14px;border-top:1px solid rgba(255,255,255,0.06);margin-top:6px}
+.btn-back{background:transparent;border:1px solid var(--border);color:var(--muted);padding:9px 18px;border-radius:var(--radius);font-size:13px;font-weight:500;cursor:pointer;font-family:inherit;transition:all .15s;flex-shrink:0}
+.btn-back:hover{border-color:rgba(255,255,255,0.25);color:var(--text)}
+.btn-next{flex:1;background:var(--pink);color:#fff;border:none;padding:11px 20px;border-radius:var(--radius);font-size:14px;font-weight:600;cursor:pointer;font-family:inherit;transition:opacity .15s;box-shadow:0 4px 16px rgba(233,30,140,.25)}
+.btn-next:disabled{opacity:.28;cursor:not-allowed;box-shadow:none}
+.btn-next:not(:disabled):hover{opacity:.86}
 
-/* ── FIELDS ── */
-.field{margin-bottom:0.95rem}
-.field label{
-  display:block;
-  font-size:10.5px;
-  font-weight:700;
-  letter-spacing:0.08em;
-  text-transform:uppercase;
-  color:rgba(255,255,255,0.32);
-  margin-bottom:5px;
-}
+.skip{font-size:12px;color:rgba(255,255,255,0.22);text-align:center;margin-top:10px;cursor:pointer;text-decoration:underline;display:block}
+.skip:hover{color:var(--muted)}
+
+/* FIELDS */
+.field{margin-bottom:11px}
+.field label{display:block;font-size:10.5px;font-weight:600;letter-spacing:.07em;text-transform:uppercase;color:var(--muted);margin-bottom:5px}
 .field label span{color:var(--pink)}
-.field input,.field textarea,.field select{
-  width:100%;
-  background:rgba(255,255,255,0.04);
-  border:1.5px solid rgba(255,255,255,0.09);
-  border-radius:8px;
-  padding:11px 13px;
-  color:#fff;
-  font-size:14px;
-  font-family:inherit;
-  outline:none;
-  transition:border-color 0.18s;
-}
-.field input:focus,.field textarea:focus,.field select:focus{
-  border-color:rgba(233,30,140,0.5);
-}
+.field input,.field textarea,.field select{width:100%;padding:10px 12px;font-size:14px;font-family:inherit;color:var(--text);background:rgba(255,255,255,0.04);border:1px solid var(--border);border-radius:var(--radius);outline:none;transition:border-color .18s}
+.field input:focus,.field textarea:focus{border-color:rgba(233,30,140,.5)}
 .field input::placeholder,.field textarea::placeholder{color:rgba(255,255,255,0.18)}
 .field select{cursor:pointer;-webkit-appearance:none}
-.field textarea{resize:vertical;min-height:75px}
+.field textarea{resize:vertical;min-height:70px}
 
-/* ── SKIP ── */
-.skip{
-  font-size:12px;
-  color:rgba(255,255,255,0.22);
-  text-align:center;
-  margin-top:0.85rem;
-  cursor:pointer;
-  text-decoration:underline;
-  display:block;
-}
-.skip:hover{color:rgba(255,255,255,0.5)}
+/* URGENCY */
+.urgency{width:100%;max-width:560px;margin-top:12px;background:rgba(233,30,140,.04);border:1px solid rgba(233,30,140,.14);border-radius:var(--radius);padding:11px 14px;display:flex;align-items:flex-start;gap:9px;font-size:12px;color:var(--muted)}
+.pulse{color:var(--pink);animation:pulse 2s infinite;flex-shrink:0;margin-top:1px}
+@keyframes pulse{0%,100%{opacity:1}50%{opacity:.3}}
 
-/* ── URGENCY ── */
-.urgency{
-  width:100%;
-  max-width:560px;
-  margin-top:1rem;
-  background:rgba(233,30,140,0.05);
-  border:1px solid rgba(233,30,140,0.15);
-  border-radius:10px;
-  padding:0.8rem 1.1rem;
-  display:flex;
-  align-items:center;
-  gap:9px;
-  font-size:12px;
-  color:rgba(255,255,255,0.45);
-}
-.urgency .pulse{
-  color:var(--pink);
-  font-size:14px;
-  animation:pulse 2s infinite;
-  flex-shrink:0;
-}
-@keyframes pulse{0%,100%{opacity:1}50%{opacity:0.3}}
-
-/* ── RESULT ── */
-.result-badge{
-  display:inline-flex;
-  align-items:center;
-  gap:5px;
-  background:rgba(233,30,140,0.1);
-  border:1px solid rgba(233,30,140,0.28);
-  border-radius:100px;
-  padding:3px 12px;
-  font-size:10px;
-  font-weight:700;
-  letter-spacing:0.1em;
-  text-transform:uppercase;
-  color:var(--pink);
-  margin-bottom:0.85rem;
-}
-.est-range{
-  font-family:'Playfair Display',Georgia,serif;
-  font-size:clamp(2.2rem,6vw,3.2rem);
-  font-weight:800;
-  color:var(--pink);
-  letter-spacing:-0.03em;
-  line-height:1;
-}
-.est-unit{
-  font-size:13px;
-  color:rgba(255,255,255,0.35);
-  margin:0.25rem 0 1.25rem;
-}
-.est-table{
-  background:rgba(255,255,255,0.03);
-  border:1px solid rgba(255,255,255,0.06);
-  border-radius:9px;
-  padding:0.85rem 1rem;
-  margin-bottom:1.1rem;
-}
-.est-row{
-  display:flex;
-  justify-content:space-between;
-  align-items:center;
-  padding:5px 0;
-  font-size:12.5px;
-  border-bottom:1px solid rgba(255,255,255,0.04);
-}
+/* RESULT */
+.result-badge{display:inline-flex;align-items:center;gap:5px;background:rgba(233,30,140,.09);border:1px solid rgba(233,30,140,.25);border-radius:100px;padding:3px 12px;font-size:10px;font-weight:600;letter-spacing:.09em;text-transform:uppercase;color:var(--pink);margin-bottom:12px}
+.est-range{font-size:40px;font-weight:700;color:var(--pink);letter-spacing:-.02em;line-height:1}
+.est-unit{font-size:13px;color:var(--muted);margin:4px 0 18px}
+.est-table{background:rgba(255,255,255,0.03);border:1px solid rgba(255,255,255,0.06);border-radius:var(--radius);padding:10px 14px;margin-bottom:16px}
+.est-row{display:flex;justify-content:space-between;padding:5px 0;font-size:12.5px;border-bottom:1px solid rgba(255,255,255,0.05)}
 .est-row:last-child{border:none}
-.est-row .ek{color:rgba(255,255,255,0.4)}
-.est-row .ev{color:rgba(255,255,255,0.78);font-weight:600}
-.est-row .ev.pink{color:var(--pink)}
+.est-row .ek{color:var(--muted)}
+.est-row .ev{color:var(--text);font-weight:500}
+.est-row .ev.pk{color:var(--pink)}
+.cta-row{display:flex;gap:9px;margin-top:4px}
+.big-call{flex:1;display:flex;align-items:center;justify-content:center;gap:7px;background:var(--pink);color:#fff;padding:13px;border-radius:var(--radius);font-size:14px;font-weight:600;text-decoration:none;transition:opacity .15s}
+.big-call:hover{opacity:.86}
+.big-sms{flex:1;display:flex;align-items:center;justify-content:center;gap:7px;background:transparent;color:var(--text);border:1px solid var(--border);padding:13px;border-radius:var(--radius);font-size:14px;font-weight:500;text-decoration:none;transition:border-color .15s}
+.big-sms:hover{border-color:rgba(255,255,255,0.3)}
+.confirm{margin-top:12px;padding:10px 13px;background:rgba(255,255,255,0.03);border-radius:var(--radius);font-size:12px;color:var(--muted);line-height:1.55}
+.tags{display:flex;flex-wrap:wrap;gap:7px;justify-content:center;margin-top:16px;padding-top:14px;border-top:1px solid rgba(255,255,255,0.06)}
+.tag{font-size:12px;color:var(--muted);text-decoration:none;background:rgba(255,255,255,0.04);border:1px solid var(--border);padding:4px 11px;border-radius:100px;transition:color .15s}
+.tag:hover{color:var(--text)}
+.tag.pk{color:var(--pink);background:rgba(233,30,140,.07);border-color:rgba(233,30,140,.2)}
 
-.cta-row{
-  display:flex;
-  gap:9px;
-}
-.big-call{
-  flex:1;
-  display:flex;
-  align-items:center;
-  justify-content:center;
-  gap:7px;
-  background:var(--pink);
-  color:#fff;
-  padding:14px;
-  border-radius:9px;
-  font-size:15px;
-  font-weight:700;
-  text-decoration:none;
-  box-shadow:0 4px 18px rgba(233,30,140,0.3);
-  transition:all 0.2s;
-}
-.big-call:hover{transform:translateY(-1px);box-shadow:0 6px 24px rgba(233,30,140,0.4)}
-.big-text{
-  flex:1;
-  display:flex;
-  align-items:center;
-  justify-content:center;
-  gap:7px;
-  background:transparent;
-  color:rgba(255,255,255,0.75);
-  padding:14px;
-  border-radius:9px;
-  font-size:14px;
-  font-weight:600;
-  text-decoration:none;
-  border:1.5px solid rgba(255,255,255,0.18);
-  transition:all 0.2s;
-}
-.big-text:hover{border-color:rgba(255,255,255,0.4);color:#fff}
-
-.confirm-box{
-  margin-top:1rem;
-  padding:0.8rem 1rem;
-  background:rgba(255,255,255,0.03);
-  border-radius:8px;
-  font-size:12px;
-  color:rgba(255,255,255,0.32);
-  line-height:1.6;
-}
-.tag-row{
-  display:flex;
-  flex-wrap:wrap;
-  gap:7px;
-  justify-content:center;
-  margin-top:1.25rem;
-  padding-top:1.1rem;
-  border-top:1px solid rgba(255,255,255,0.06);
-}
-.tag-link{
-  font-size:12px;
-  color:rgba(255,255,255,0.45);
-  text-decoration:none;
-  background:rgba(255,255,255,0.04);
-  border:1px solid rgba(255,255,255,0.09);
-  padding:5px 12px;
-  border-radius:16px;
-  transition:all 0.15s;
-}
-.tag-link:hover{border-color:rgba(233,30,140,0.3);color:var(--pink)}
-.tag-link.pink-tag{
-  color:var(--pink);
-  background:rgba(233,30,140,0.07);
-  border-color:rgba(233,30,140,0.2);
-}
-
-/* Mobile */
-@media(max-width:520px){
-  .page{padding:1.75rem 1rem 5rem}
-  .card{padding:1.5rem 1.1rem}
-  .opts.g2{grid-template-columns:1fr}
-  .cta-row{flex-direction:column}
-}
+@media(max-width:480px){.g2{grid-template-columns:1fr}.cta-row{flex-direction:column}}
 </style>
 </head>
 <body>
 
-<!-- TOP BAR -->
 <div class="topbar">
-  <a href="/" class="logo">Bakerss<span>.</span></a>
-  <a href="tel:8434677136" class="topbar-phone">📞 843-467-7136</a>
+  <a href="/" class="logo">Bakerss<em>.</em></a>
+  <a href="tel:8434677136" class="call-btn">&#128222; 843-467-7136</a>
 </div>
 
-<!-- MAIN CONTAINER -->
-<div class="page" id="page">
-
-  <!-- Progress bar (hidden on result) -->
-  <div class="progress-wrap" id="progressWrap">
-    <div class="progress-meta">
-      <span id="stepLbl">Step 1 of 5</span>
-      <span id="pct">20%</span>
-    </div>
-    <div class="progress-track">
-      <div class="progress-fill" id="pFill"></div>
-    </div>
+<div class="page">
+  <div class="prog-wrap" id="prog">
+    <div class="prog-meta"><span id="slbl">Step 1 of 5</span><span id="spct">20%</span></div>
+    <div class="prog-track"><div class="prog-fill" id="pfill" style="width:20%"></div></div>
     <div class="dots" id="dots"></div>
   </div>
-
-  <!-- Card -->
   <div class="card" id="card"></div>
-
-  <!-- Urgency strip -->
   <div class="urgency" id="urgency">
-    <span class="pulse">●</span>
-    <span><b style="color:rgba(255,255,255,0.7)">Ray is available now.</b>
-    Most Myrtle Beach requests get a same-day estimate.
-    Prefer to call? <a href="tel:8434677136" style="color:var(--pink);font-weight:600;text-decoration:none">843-467-7136</a></span>
+    <span class="pulse">&#9679;</span>
+    <span>Ray is available now. Most requests get a same-day estimate &#8212; call <a href="tel:8434677136" style="color:var(--pink);font-weight:600;text-decoration:none">843-467-7136</a> for the fastest response.</span>
   </div>
-
 </div>
 
-<script>
-// ── STATE ──────────────────────────────────────────────────────
-var S = { step: 0, sel: {}, contact: {} };
-var TOTAL = 5;
-
-// ── PRICING ────────────────────────────────────────────────────
-var P = {
-  'lawn-care':            { lo:50,   hi:90,   unit:'per visit',    name:'Lawn Care' },
-  'pressure-washing':     { lo:125,  hi:500,  unit:'per service',  name:'Pressure Washing' },
-  'gutter-cleaning':      { lo:99,   hi:225,  unit:'per cleaning', name:'Gutter Cleaning' },
-  'airbnb-cleaning':      { lo:100,  hi:350,  unit:'per turnover', name:'Airbnb / STR Cleaning' },
-  'interior-cleaning':    { lo:100,  hi:295,  unit:'per visit',    name:'Interior Cleaning' },
-  'painting':             { lo:1800, hi:9000, unit:'project',      name:'Painting' },
-  'landscaping':          { lo:300,  hi:4500, unit:'project',      name:'Landscaping' },
-  'concrete-curbing':     { lo:160,  hi:1050, unit:'project',      name:'Concrete Curbing' },
-  'deck-building':        { lo:4000, hi:15000,unit:'project',      name:'Deck Building & Repair' },
-  'flooring':             { lo:1200, hi:9000, unit:'project',      name:'Flooring Installation' },
-  'handyman':             { lo:75,   hi:550,  unit:'per visit',    name:'Handyman Services' },
-  'minor-electric':       { lo:75,   hi:275,  unit:'per repair',   name:'Minor Electrical & Plumbing' },
-  'junk-removal':         { lo:99,   hi:650,  unit:'per load',     name:'Junk Removal' },
-  'property-plan':        { lo:150,  hi:900,  unit:'per month',    name:'Property Maintenance Plan' },
-  'commercial-cleaning':  { lo:200,  hi:800,  unit:'per month',    name:'Commercial Cleaning' }
-};
-
-// Size multipliers
-var SM = { small:0.8, standard:1.0, large:1.3, estate:1.7 };
-
-// ── STEPS ─────────────────────────────────────────────────────
-var STEPS = [
-  {
-    id:'service', key:'service', type:'opts',
-    tag:'Step 1 of 5',
-    h:'Which service do you need?',
-    sub:'Select your primary service. You can mention others at the end.',
-    cols:2,
-    opts:[
-      {v:'lawn-care',           i:'🌿', t:'Lawn Care',              s:'Mowing, edging, trimming'},
-      {v:'pressure-washing',    i:'💧', t:'Pressure Washing',        s:'Driveway, siding, deck'},
-      {v:'gutter-cleaning',     i:'🍂', t:'Gutter Cleaning',         s:'Debris removal & flush'},
-      {v:'airbnb-cleaning',     i:'🏖️', t:'Airbnb / STR Cleaning',   s:'Vacation rental turnover'},
-      {v:'interior-cleaning',   i:'🏠', t:'Interior Cleaning',       s:'Recurring, deep, move-in/out'},
-      {v:'painting',            i:'🎨', t:'Painting',                s:'Interior or exterior'},
-      {v:'landscaping',         i:'🌺', t:'Landscaping',             s:'Design, plants, curbing'},
-      {v:'flooring',            i:'🪵', t:'Flooring',                s:'LVP, tile, hardwood'},
-      {v:'handyman',            i:'🔧', t:'Handyman Services',       s:'Repairs & installations'},
-      {v:'deck-building',       i:'🏗️', t:'Deck Building & Repair',  s:'New build or restoration'},
-      {v:'junk-removal',        i:'🚛', t:'Junk Removal',            s:'Estate cleanouts & debris'},
-      {v:'property-plan',       i:'📋', t:'Maintenance Plan',        s:'All services bundled monthly'},
-      {v:'minor-electric',      i:'⚡', t:'Electrical & Plumbing',   s:'Minor repairs & installs'},
-      {v:'commercial-cleaning', i:'🏢', t:'Commercial Cleaning',     s:'Restaurants, offices, retail'}
-    ]
-  },
-  {
-    id:'propType', key:'propType', type:'opts',
-    tag:'Step 2 of 5',
-    h:'What type of property?',
-    sub:'Helps us tailor your estimate to the right scope and schedule.',
-    cols:2,
-    opts:[
-      {v:'primary',    i:'🏡', t:'Primary Residence',       s:'My main home'},
-      {v:'str',        i:'🏖️', t:'Vacation Rental / Airbnb', s:'STR on the Grand Strand'},
-      {v:'second',     i:'✈️', t:'Second Home / Snowbird',   s:'Part-time or seasonal'},
-      {v:'hoa',        i:'🏘️', t:'HOA Community Home',       s:'Governed community'},
-      {v:'investment', i:'💰', t:'Investment Property',      s:'Rental or rehab project'},
-      {v:'commercial', i:'🏢', t:'Commercial Property',      s:'Business or office'}
-    ]
-  },
-  {
-    id:'propSize', key:'propSize', type:'opts',
-    tag:'Step 3 of 5',
-    h:'How large is the property?',
-    sub:"This directly affects pricing. Give us your best guess — we'll confirm on-site.",
-    cols:2,
-    opts:[
-      {v:'small',    i:'🏠', t:'Small',    s:'Condo, cottage, or under 1,200 sq ft'},
-      {v:'standard', i:'🏡', t:'Standard', s:'3–4 bed home, typical residential lot'},
-      {v:'large',    i:'🏘️', t:'Large',    s:'5+ bed or larger lot'},
-      {v:'estate',   i:'🏰', t:'Estate / Commercial', s:'Large acreage or commercial scale'}
-    ]
-  },
-  {
-    id:'timing', key:'timing', type:'opts',
-    tag:'Step 4 of 5',
-    h:'When do you need this?',
-    sub:'Helps us plan availability and flag any timing considerations.',
-    cols:2,
-    dynamic:true
-  },
-  {
-    id:'contact', key:'contact', type:'contact',
-    tag:'Step 5 of 5',
-    h:'Where should we send your estimate?',
-    sub:'Ray or Courtney will respond personally — usually within the hour. No spam, no sales calls.'
-  }
-];
-
-// ── TIMING OPTIONS (dynamic by service) ───────────────────────
-function timingOpts() {
-  var recurring = ['lawn-care','gutter-cleaning','interior-cleaning','airbnb-cleaning','property-plan','commercial-cleaning'];
-  if (recurring.indexOf(S.sel.service) >= 0) {
-    return [
-      {v:'weekly',    i:'📅', t:'Weekly',         s:'Ongoing weekly service'},
-      {v:'biweekly',  i:'📅', t:'Biweekly',       s:'Every two weeks'},
-      {v:'monthly',   i:'📅', t:'Monthly',        s:'Once a month'},
-      {v:'onetime',   i:'🎯', t:'One-Time',       s:'Just this visit'}
-    ];
-  }
-  return [
-    {v:'asap',      i:'⚡', t:'As Soon as Possible', s:'I need this done quickly'},
-    {v:'thisweek',  i:'📅', t:'This Week',           s:'Within 7 days'},
-    {v:'thismonth', i:'📆', t:'This Month',          s:'Within 30 days'},
-    {v:'planning',  i:'🗓️', t:'Planning Ahead',      s:'Gathering estimates'}
-  ];
-}
-
-// ── ESTIMATE CALC ──────────────────────────────────────────────
-function calc() {
-  var svc = S.sel.service;
-  if (!svc || !P[svc]) return { lo:'$?', hi:'$?', unit:'', name:'Your Service' };
-  var pr = P[svc];
-  var m  = SM[S.sel.propSize] || 1.0;
-  var lo = Math.round(pr.lo * m);
-  var hi = Math.round(pr.hi * m);
-  // Property type nudge
-  if (S.sel.propType === 'commercial') { lo = Math.round(lo*1.2); hi = Math.round(hi*1.3); }
-  if (S.sel.propType === 'str' && ['airbnb-cleaning','interior-cleaning','lawn-care','pressure-washing'].indexOf(svc) >= 0) {
-    lo = Math.round(lo*1.05); hi = Math.round(hi*1.1);
-  }
-  // Round friendly
-  lo = Math.ceil(lo/5)*5;
-  hi = Math.ceil(hi/10)*10;
-  function fmt(n){ return n>=1000 ? '$'+(n/1000).toFixed(1).replace('.0','')+'K' : '$'+n; }
-  return { lo:fmt(lo), hi:fmt(hi), unit:pr.unit, name:pr.name };
-}
-
-// ── RENDER PROGRESS ────────────────────────────────────────────
-function renderProgress() {
-  var pct = Math.round(((S.step+1)/TOTAL)*100);
-  document.getElementById('stepLbl').textContent = 'Step '+(S.step+1)+' of '+TOTAL;
-  document.getElementById('pct').textContent = pct+'%';
-  document.getElementById('pFill').style.width = pct+'%';
-  var d = '';
-  for (var i=0;i<TOTAL;i++) {
-    var cls = 'dot';
-    if (i<S.step) cls+=' done';
-    else if (i===S.step) cls+=' active';
-    d += '<div class="'+cls+'"></div>';
-  }
-  document.getElementById('dots').innerHTML = d;
-}
-
-// ── RENDER STEP ────────────────────────────────────────────────
-function renderStep() {
-  renderProgress();
-  var step = STEPS[S.step];
-  if (step.dynamic) step.opts = timingOpts();
-  var card = document.getElementById('card');
-  var html = '';
-
-  if (step.type === 'contact') {
-    html = buildContact(step);
-  } else {
-    html = buildOpts(step);
-  }
-
-  card.innerHTML = html;
-  card.style.animation = 'none';
-  void card.offsetWidth; // reflow
-  card.style.animation = 'fadeUp 0.3s ease';
-}
-
-function buildOpts(step) {
-  var cols = step.cols === 1 ? 'g1' : 'g2';
-  var cur  = S.sel[step.key] || '';
-  var items = '';
-  step.opts.forEach(function(o) {
-    var sel = cur === o.v ? 'sel' : '';
-    items += '<button class="opt '+sel+'" onclick="pick(''+step.key+'',''+o.v+'',this)">'
-      + '<span class="ico">'+o.i+'</span>'
-      + '<span class="txt"><span class="t1">'+o.t+'</span><span class="t2">'+o.s+'</span></span>'
-      + '<span class="ck">✓</span>'
-      + '</button>';
-  });
-  var backBtn = S.step > 0 ? '<button class="btn-back" onclick="go(-1)">← Back</button>' : '<span></span>';
-  var label   = S.step < TOTAL-1 ? 'Continue →' : 'Get My Estimate →';
-  var dis     = cur ? '' : 'disabled';
-  return '<span class="step-label">'+step.tag+'</span>'
-    + '<h2>'+step.h+'</h2>'
-    + '<p class="sub">'+step.sub+'</p>'
-    + '<div class="opts '+cols+'">'+items+'</div>'
-    + '<div class="nav-row">'+backBtn
-    + '<button class="btn-next" id="nBtn" '+dis+' onclick="go(1)">'+label+'</button>'
-    + '</div>'
-    + '<span class="skip" onclick="jumpToContact()">Skip — just connect me with Ray</span>';
-}
-
-function buildContact(step) {
-  var c = S.contact;
-  return '<span class="step-label">'+step.tag+'</span>'
-    + '<h2>'+step.h+'</h2>'
-    + '<p class="sub">'+step.sub+'</p>'
-
-    + '<div class="field"><label>Your Name <span>*</span></label>'
-    + '<input type="text" id="fn" placeholder="First and last name" value="'+(c.name||'')+'" oninput="sc()"></div>'
-
-    + '<div class="field"><label>Phone Number <span>*</span></label>'
-    + '<input type="tel" id="fp" placeholder="(843) 000-0000" value="'+(c.phone||'')+'" oninput="sc()"></div>'
-
-    + '<div class="field"><label>Email Address</label>'
-    + '<input type="email" id="fe" placeholder="your@email.com" value="'+(c.email||'')+'" oninput="sc()"></div>'
-
-    + '<div class="field"><label>Property Address or City</label>'
-    + '<input type="text" id="fa" placeholder="e.g. Myrtle Beach SC or 123 Ocean Blvd" value="'+(c.address||'')+'" oninput="sc()"></div>'
-
-    + '<div class="field"><label>Anything else we should know?</label>'
-    + '<textarea id="fnotes" placeholder="Extra details, questions, or timing..." oninput="sc()">'+(c.notes||'')+'</textarea></div>'
-
-    + '<div class="nav-row">'
-    + '<button class="btn-back" onclick="go(-1)">← Back</button>'
-    + '<button class="btn-next" id="nBtn" disabled onclick="submit()">Get My Free Estimate →</button>'
-    + '</div>';
-}
-
-// ── INTERACTIONS ────────────────────────────────────────────────
-function pick(key, val, btn) {
-  document.querySelectorAll('.opt').forEach(function(b){ b.classList.remove('sel'); });
-  btn.classList.add('sel');
-  S.sel[key] = val;
-  var nb = document.getElementById('nBtn');
-  if (nb) nb.disabled = false;
-}
-
-function go(dir) {
-  if (dir === 1) {
-    if (S.step < TOTAL-1) { S.step++; renderStep(); }
-  } else {
-    if (S.step > 0) { S.step--; renderStep(); }
-  }
-  window.scrollTo({top:0,behavior:'smooth'});
-}
-
-function jumpToContact() {
-  S.step = TOTAL-1;
-  renderStep();
-  window.scrollTo({top:0,behavior:'smooth'});
-}
-
-function sc() {
-  S.contact.name    = (document.getElementById('fn')    ||{}).value||'';
-  S.contact.phone   = (document.getElementById('fp')    ||{}).value||'';
-  S.contact.email   = (document.getElementById('fe')    ||{}).value||'';
-  S.contact.address = (document.getElementById('fa')    ||{}).value||'';
-  S.contact.notes   = (document.getElementById('fnotes')||{}).value||'';
-  var nb = document.getElementById('nBtn');
-  if (nb) nb.disabled = !(S.contact.name.trim() && S.contact.phone.trim());
-}
-
-function submit() {
-  sc();
-  showResult();
-  bgSubmit();
-  window.scrollTo({top:0,behavior:'smooth'});
-}
-
-// ── RESULT ──────────────────────────────────────────────────────
-function showResult() {
-  document.getElementById('progressWrap').style.display = 'none';
-  document.getElementById('urgency').style.display      = 'none';
-
-  var est  = calc();
-  var svc  = STEPS[0].opts.find(function(o){return o.v===S.sel.service;});
-  var svcN = svc ? svc.t : (P[S.sel.service]||{}).name || 'Your Service';
-  var nm   = (S.contact.name||'there').split(' ')[0];
-  var cnt  = S.contact.phone || S.contact.email || 'your contact info';
-
-  var typeL = {primary:'Primary Residence',str:'Vacation Rental / Airbnb',second:'Second Home',hoa:'HOA Community',investment:'Investment Property',commercial:'Commercial Property'}[S.sel.propType]||'—';
-  var sizeL = {small:'Small',standard:'Standard',large:'Large',estate:'Estate / Commercial'}[S.sel.propSize]||'—';
-  var timeL = {weekly:'Weekly',biweekly:'Biweekly',monthly:'Monthly',onetime:'One-Time',asap:'ASAP',thisweek:'This Week',thismonth:'This Month',planning:'Planning Ahead'}[S.sel.timing]||'—';
-
-  var svcSlug = {
-    'lawn-care':'lawn-care','pressure-washing':'pressure-washing','gutter-cleaning':'gutter-cleaning',
-    'airbnb-cleaning':'airbnb-cleaning','interior-cleaning':'interior-cleaning','painting':'painting',
-    'landscaping':'landscaping','concrete-curbing':'concrete-curbing','deck-building':'deck-building-repair',
-    'flooring':'flooring','handyman':'handyman-services','minor-electric':'minor-electric-plumbing',
-    'junk-removal':'junk-removal','property-plan':'property-maintenance','commercial-cleaning':'commercial-cleaning'
-  }[S.sel.service] || '';
-
-  var card = document.getElementById('card');
-  card.innerHTML =
-    '<div style="text-align:center">'
-    + '<div class="result-badge">✓ Your Personalized Estimate</div>'
-    + '<p style="font-size:13.5px;color:rgba(255,255,255,0.45);margin-bottom:0.3rem">Hey '+nm+'! Based on what you told us:</p>'
-    + '<div class="est-range">'+est.lo+' – '+est.hi+'</div>'
-    + '<p class="est-unit">'+est.unit+' · '+svcN+'</p>'
-    + '</div>'
-
-    + '<div class="est-table">'
-    + '<div class="est-row"><span class="ek">Service</span><span class="ev">'+svcN+'</span></div>'
-    + '<div class="est-row"><span class="ek">Property Type</span><span class="ev">'+typeL+'</span></div>'
-    + '<div class="est-row"><span class="ek">Property Size</span><span class="ev">'+sizeL+'</span></div>'
-    + '<div class="est-row"><span class="ek">Schedule / Timing</span><span class="ev">'+timeL+'</span></div>'
-    + '<div class="est-row"><span class="ek">Exact Price</span><span class="ev pink">Free on-site confirmation →</span></div>'
-    + '</div>'
-
-    + '<p style="font-size:12.5px;color:rgba(255,255,255,0.38);text-align:center;line-height:1.6;margin-bottom:1.1rem">'
-    + 'This range is based on your answers. Ray confirms the exact price after a quick property walkthrough — '
-    + '<b style="color:rgba(255,255,255,0.6)">always free, always no obligation.</b></p>'
-
-    + '<div class="cta-row">'
-    + '<a href="tel:8434677136" class="big-call">📞 Call Ray Now</a>'
-    + '<a href="sms:8434677136" class="big-text">💬 Text Us</a>'
-    + '</div>'
-
-    + '<div class="confirm-box">✅ <b style="color:rgba(255,255,255,0.6)">Request received.</b> '
-    + 'Ray or Courtney will contact you at '+cnt+' — usually within the hour during the day.</div>'
-
-    + '<div class="tag-row">'
-    + (svcSlug ? '<a href="/services/'+svcSlug+'/" class="tag-link pink-tag">'+svcN+' →</a>' : '')
-    + '<a href="/service-areas/myrtle-beach/" class="tag-link">Myrtle Beach</a>'
-    + '<a href="/reviews/" class="tag-link">5★ Reviews</a>'
-    + '<a href="/" class="tag-link">Homepage</a>'
-    + '</div>';
-
-  card.style.animation = 'none';
-  void card.offsetWidth;
-  card.style.animation = 'fadeUp 0.3s ease';
-}
-
-// ── BACKGROUND NETLIFY SUBMIT ──────────────────────────────────
-function bgSubmit() {
-  var data = 'form-name=funnel-quote'
-    + '&name='    + encodeURIComponent(S.contact.name||'')
-    + '&phone='   + encodeURIComponent(S.contact.phone||'')
-    + '&email='   + encodeURIComponent(S.contact.email||'')
-    + '&address=' + encodeURIComponent(S.contact.address||'')
-    + '&service=' + encodeURIComponent(S.sel.service||'')
-    + '&proptype='+ encodeURIComponent(S.sel.propType||'')
-    + '&propsize='+ encodeURIComponent(S.sel.propSize||'')
-    + '&timing='  + encodeURIComponent(S.sel.timing||'')
-    + '&notes='   + encodeURIComponent(S.contact.notes||'');
-  fetch('/', {
-    method:'POST',
-    headers:{'Content-Type':'application/x-www-form-urlencoded'},
-    body:data
-  }).catch(function(){});
-}
-
-// ── INIT ───────────────────────────────────────────────────────
-renderStep();
-</script>
-
-<!-- Netlify form bot detect -->
-<form name="funnel-quote" data-netlify="true" netlify-honeypot="bot-field" style="display:none">
-  <input type="hidden" name="form-name" value="funnel-quote">
-  <input name="bot-field">
+<form name="funnel-quote" netlify style="display:none">
   <input name="name"><input name="phone"><input name="email">
   <input name="address"><input name="service"><input name="proptype">
   <input name="propsize"><input name="timing"><input name="notes">
 </form>
 
-<script type="application/ld+json">{"@context":"https://schema.org","@type":"WebPage","name":"Free Quote Estimator — Bakerss Property Maintenance","description":"Get a personalized property maintenance estimate in 60 seconds. Myrtle Beach and Horry County SC.","url":"https://www.bakerss.com/get-quote/"}</script>
+<script>
+var T=5,S={step:0,sel:{},c:{}};
+var PR={
+  'lawn-care':{lo:50,hi:90,u:'per visit',n:'Lawn Care'},
+  'pressure-washing':{lo:125,hi:500,u:'per service',n:'Pressure Washing'},
+  'gutter-cleaning':{lo:99,hi:225,u:'per cleaning',n:'Gutter Cleaning'},
+  'airbnb-cleaning':{lo:100,hi:350,u:'per turnover',n:'Airbnb / STR Cleaning'},
+  'interior-cleaning':{lo:100,hi:295,u:'per visit',n:'Interior Cleaning'},
+  'painting':{lo:1800,hi:9000,u:'project',n:'Painting'},
+  'landscaping':{lo:300,hi:4500,u:'project',n:'Landscaping'},
+  'concrete-curbing':{lo:160,hi:1050,u:'project',n:'Concrete Curbing'},
+  'deck-building':{lo:4000,hi:15000,u:'project',n:'Deck Building & Repair'},
+  'flooring':{lo:1200,hi:9000,u:'project',n:'Flooring'},
+  'handyman':{lo:75,hi:550,u:'per visit',n:'Handyman Services'},
+  'minor-electric':{lo:75,hi:275,u:'per repair',n:'Minor Electrical & Plumbing'},
+  'junk-removal':{lo:99,hi:650,u:'per load',n:'Junk Removal'},
+  'property-plan':{lo:150,hi:900,u:'per month',n:'Property Maintenance Plan'},
+  'commercial-cleaning':{lo:200,hi:800,u:'per month',n:'Commercial Cleaning'}
+};
+var SM={small:.8,standard:1,large:1.3,estate:1.7};
+var STEPS=[
+  {key:'service',tag:'Step 1 of 5',h:'Which service do you need?',sub:'Select your primary service. You can mention others at the end.',cols:2,
+   opts:[
+    {v:'lawn-care',i:'&#127807;',t:'Lawn Care',s:'Mowing, edging, trimming'},
+    {v:'pressure-washing',i:'&#128167;',t:'Pressure Washing',s:'Driveway, siding, decks'},
+    {v:'gutter-cleaning',i:'&#127810;',t:'Gutter Cleaning',s:'Remove debris & flush'},
+    {v:'airbnb-cleaning',i:'&#127958;',t:'Airbnb / STR Cleaning',s:'Vacation rental turnover'},
+    {v:'interior-cleaning',i:'&#127968;',t:'Interior Cleaning',s:'Recurring, deep, move-in/out'},
+    {v:'painting',i:'&#127912;',t:'Painting',s:'Interior or exterior'},
+    {v:'landscaping',i:'&#127802;',t:'Landscaping',s:'Design, plants, curbing'},
+    {v:'flooring',i:'&#129717;',t:'Flooring',s:'LVP, tile, hardwood'},
+    {v:'handyman',i:'&#128295;',t:'Handyman Services',s:'Repairs & installations'},
+    {v:'deck-building',i:'&#127959;',t:'Deck Building & Repair',s:'New build or restoration'},
+    {v:'junk-removal',i:'&#128666;',t:'Junk Removal',s:'Estate cleanouts & debris'},
+    {v:'property-plan',i:'&#128203;',t:'Maintenance Plan',s:'All services bundled monthly'},
+    {v:'minor-electric',i:'&#9889;',t:'Electrical & Plumbing',s:'Minor repairs & installs'},
+    {v:'commercial-cleaning',i:'&#127970;',t:'Commercial Cleaning',s:'Restaurants, offices, retail'}
+   ]},
+  {key:'propType',tag:'Step 2 of 5',h:'What type of property?',sub:'Helps us tailor the estimate to the right scope and schedule.',cols:2,
+   opts:[
+    {v:'primary',i:'&#127969;',t:'Primary Residence',s:'My main home'},
+    {v:'str',i:'&#127958;',t:'Vacation Rental / Airbnb',s:'STR on the Grand Strand'},
+    {v:'second',i:'&#9992;&#65039;',t:'Second Home / Snowbird',s:'Part-time or seasonal'},
+    {v:'hoa',i:'&#127960;',t:'HOA Community Home',s:'Governed community'},
+    {v:'investment',i:'&#128176;',t:'Investment Property',s:'Rental or rehab project'},
+    {v:'commercial',i:'&#127970;',t:'Commercial Property',s:'Business or office'}
+   ]},
+  {key:'propSize',tag:'Step 3 of 5',h:'How large is the property?',sub:"Directly affects pricing. Best guess is fine \u2014 we confirm on-site.",cols:2,
+   opts:[
+    {v:'small',i:'&#127968;',t:'Small',s:'Condo, cottage, under 1,200 sq ft'},
+    {v:'standard',i:'&#127969;',t:'Standard',s:'3\u20134 bed home, typical lot'},
+    {v:'large',i:'&#127960;',t:'Large',s:'5+ bedrooms or larger lot'},
+    {v:'estate',i:'&#127968;',t:'Estate / Commercial',s:'Large acreage or commercial scale'}
+   ]},
+  {key:'timing',tag:'Step 4 of 5',h:'When do you need this?',sub:'Helps us plan availability and check our schedule.',cols:2,dynamic:true},
+  {key:'contact',tag:'Step 5 of 5',h:'Where should we send your estimate?',sub:'Ray or Courtney respond personally \u2014 usually within the hour. No spam, no scripts.',type:'contact'}
+];
+
+function tOpts(){
+  var r=['lawn-care','gutter-cleaning','interior-cleaning','airbnb-cleaning','property-plan','commercial-cleaning'];
+  if(r.indexOf(S.sel.service)>=0)return[
+    {v:'weekly',i:'&#128197;',t:'Weekly',s:'Ongoing weekly service'},
+    {v:'biweekly',i:'&#128197;',t:'Biweekly',s:'Every two weeks'},
+    {v:'monthly',i:'&#128197;',t:'Monthly',s:'Once a month'},
+    {v:'onetime',i:'&#127919;',t:'One-Time',s:'Just this visit'}
+  ];
+  return[
+    {v:'asap',i:'&#9889;',t:'As Soon as Possible',s:'Need this done quickly'},
+    {v:'thisweek',i:'&#128197;',t:'This Week',s:'Within 7 days'},
+    {v:'thismonth',i:'&#128198;',t:'This Month',s:'Within 30 days'},
+    {v:'planning',i:'&#128199;',t:'Planning Ahead',s:'Gathering estimates'}
+  ];
+}
+
+function calc(){
+  var svc=S.sel.service;
+  if(!svc||!PR[svc])return{lo:'$?',hi:'$?',u:'',n:'Your Service'};
+  var p=PR[svc],m=SM[S.sel.propSize]||1;
+  var lo=Math.round(p.lo*m),hi=Math.round(p.hi*m);
+  if(S.sel.propType==='commercial'){lo=Math.round(lo*1.2);hi=Math.round(hi*1.3);}
+  if(S.sel.propType==='str'&&['airbnb-cleaning','interior-cleaning','lawn-care','pressure-washing'].indexOf(svc)>=0){lo=Math.round(lo*1.05);hi=Math.round(hi*1.1);}
+  lo=Math.ceil(lo/5)*5;hi=Math.ceil(hi/10)*10;
+  function f(n){return n>=1000?'$'+(n/1000).toFixed(1).replace('.0','')+'K':'$'+n;}
+  return{lo:f(lo),hi:f(hi),u:p.u,n:p.n};
+}
+
+function rp(){
+  var pct=Math.round(((S.step+1)/T)*100);
+  document.getElementById('slbl').textContent='Step '+(S.step+1)+' of '+T;
+  document.getElementById('spct').textContent=pct+'%';
+  document.getElementById('pfill').style.width=pct+'%';
+  var d='';for(var i=0;i<T;i++){var c='dot';if(i<S.step)c+=' done';else if(i===S.step)c+=' active';d+='<div class="'+c+'"></div>';}
+  document.getElementById('dots').innerHTML=d;
+}
+
+function render(){
+  rp();
+  var step=STEPS[S.step];
+  if(step.dynamic)step.opts=tOpts();
+  var card=document.getElementById('card');
+  card.style.opacity='0';
+  setTimeout(function(){
+    card.innerHTML=step.type==='contact'?bC(step):bO(step);
+    card.style.opacity='1';
+  },75);
+}
+
+function bO(step){
+  var cols=step.cols===1?'g1':'g2',cur=S.sel[step.key]||'',items='';
+  step.opts.forEach(function(o){
+    var s=cur===o.v?'sel':'';
+    items+='<button class="opt '+s+'" onclick="pick(\''+step.key+'\',\''+o.v+'\',this)">'
+      +'<span class="ico">'+o.i+'</span>'
+      +'<span class="txt"><span class="t1">'+o.t+'</span><span class="t2">'+o.s+'</span></span>'
+      +'<span class="ck">&#10003;</span></button>';
+  });
+  var back=S.step>0?'<button class="btn-back" onclick="go(-1)">&#8592; Back</button>':'<span></span>';
+  var lbl=S.step<T-1?'Continue &#8594;':'Get My Estimate &#8594;';
+  var dis=cur?'':'disabled';
+  return'<span class="step-lbl">'+step.tag+'</span>'
+    +'<h2>'+step.h+'</h2><p class="sub">'+step.sub+'</p>'
+    +'<div class="opts '+cols+'">'+items+'</div>'
+    +'<div class="nav-row">'+back
+    +'<button class="btn-next" id="nb" '+dis+' onclick="go(1)">'+lbl+'</button>'
+    +'</div>'
+    +'<span class="skip" onclick="skipTo()">Skip &#8212; just connect me with Ray</span>';
+}
+
+function bC(step){
+  var c=S.c;
+  return'<span class="step-lbl">'+step.tag+'</span>'
+    +'<h2>'+step.h+'</h2><p class="sub">'+step.sub+'</p>'
+    +'<div class="field"><label>Your Name <span>*</span></label><input type="text" id="fn" placeholder="First and last name" value="'+(c.name||'')+'" oninput="sc()"></div>'
+    +'<div class="field"><label>Phone Number <span>*</span></label><input type="tel" id="fp" placeholder="(843) 000-0000" value="'+(c.phone||'')+'" oninput="sc()"></div>'
+    +'<div class="field"><label>Email Address</label><input type="email" id="fe" placeholder="your@email.com" value="'+(c.email||'')+'" oninput="sc()"></div>'
+    +'<div class="field"><label>Property Address or City</label><input type="text" id="fa" placeholder="e.g. Myrtle Beach SC" value="'+(c.address||'')+'" oninput="sc()"></div>'
+    +'<div class="field"><label>Anything else we should know?</label><textarea id="fnotes" placeholder="Details, questions, timing..." oninput="sc()">'+(c.notes||'')+'</textarea></div>'
+    +'<div class="nav-row"><button class="btn-back" onclick="go(-1)">&#8592; Back</button>'
+    +'<button class="btn-next" id="nb" disabled onclick="showResult()">Get My Free Estimate &#8594;</button></div>';
+}
+
+function pick(key,val,btn){
+  document.querySelectorAll('.opt').forEach(function(b){b.classList.remove('sel');});
+  btn.classList.add('sel');S.sel[key]=val;
+  var nb=document.getElementById('nb');if(nb)nb.disabled=false;
+}
+
+function go(dir){
+  if(dir===1&&S.step<T-1){S.step++;render();}
+  else if(dir===-1&&S.step>0){S.step--;render();}
+  window.scrollTo({top:0,behavior:'smooth'});
+}
+
+function skipTo(){S.step=T-1;render();window.scrollTo({top:0,behavior:'smooth'});}
+
+function sc(){
+  S.c.name=(document.getElementById('fn')||{}).value||'';
+  S.c.phone=(document.getElementById('fp')||{}).value||'';
+  S.c.email=(document.getElementById('fe')||{}).value||'';
+  S.c.address=(document.getElementById('fa')||{}).value||'';
+  S.c.notes=(document.getElementById('fnotes')||{}).value||'';
+  var nb=document.getElementById('nb');
+  if(nb)nb.disabled=!(S.c.name.trim()&&S.c.phone.trim());
+}
+
+function showResult(){
+  sc();
+  document.getElementById('prog').style.display='none';
+  document.getElementById('urgency').style.display='none';
+  var est=calc();
+  var so=STEPS[0].opts.find(function(o){return o.v===S.sel.service;});
+  var svcN=so?so.t:est.n;
+  var nm=(S.c.name||'there').split(' ')[0];
+  var cnt=S.c.phone||S.c.email||'your contact info';
+  var TL={primary:'Primary Residence',str:'Vacation Rental / Airbnb',second:'Second Home',hoa:'HOA Community',investment:'Investment Property',commercial:'Commercial Property'};
+  var SL={small:'Small',standard:'Standard',large:'Large',estate:'Estate / Commercial'};
+  var TM={weekly:'Weekly',biweekly:'Biweekly',monthly:'Monthly',onetime:'One-Time',asap:'ASAP',thisweek:'This Week',thismonth:'This Month',planning:'Planning Ahead'};
+  var SL2={'lawn-care':'lawn-care','pressure-washing':'pressure-washing','gutter-cleaning':'gutter-cleaning','airbnb-cleaning':'airbnb-cleaning','interior-cleaning':'interior-cleaning','painting':'painting','landscaping':'landscaping','concrete-curbing':'concrete-curbing','deck-building':'deck-building-repair','flooring':'flooring','handyman':'handyman-services','minor-electric':'minor-electric-plumbing','junk-removal':'junk-removal','property-plan':'property-maintenance','commercial-cleaning':'commercial-cleaning'};
+  var slug=SL2[S.sel.service]||'';
+  var card=document.getElementById('card');
+  card.style.opacity='0';
+  setTimeout(function(){
+    card.innerHTML='<div style="text-align:center">'
+      +'<div class="result-badge">&#10003; Your Personalized Estimate</div>'
+      +'<p style="font-size:13.5px;color:var(--muted);margin-bottom:5px">Hey '+nm+'! Based on your answers:</p>'
+      +'<div class="est-range">'+est.lo+' &#8211; '+est.hi+'</div>'
+      +'<p class="est-unit">'+est.u+' &middot; '+svcN+'</p>'
+      +'</div>'
+      +'<div class="est-table">'
+      +'<div class="est-row"><span class="ek">Service</span><span class="ev">'+svcN+'</span></div>'
+      +'<div class="est-row"><span class="ek">Property type</span><span class="ev">'+(TL[S.sel.propType]||'&mdash;')+'</span></div>'
+      +'<div class="est-row"><span class="ek">Property size</span><span class="ev">'+(SL[S.sel.propSize]||'&mdash;')+'</span></div>'
+      +'<div class="est-row"><span class="ek">Timing</span><span class="ev">'+(TM[S.sel.timing]||'&mdash;')+'</span></div>'
+      +'<div class="est-row"><span class="ek">Exact price</span><span class="ev pk">Free on-site confirmation &rarr;</span></div>'
+      +'</div>'
+      +'<p style="font-size:12.5px;color:var(--muted);text-align:center;line-height:1.6;margin-bottom:14px">Based on your answers. Ray confirms the exact price after a quick property walkthrough &mdash; <b style="color:var(--text);font-weight:500">always free, always no obligation.</b></p>'
+      +'<div class="cta-row">'
+      +'<a href="tel:8434677136" class="big-call">&#128222; Call Ray Now</a>'
+      +'<a href="sms:8434677136" class="big-sms">&#128172; Text Us</a>'
+      +'</div>'
+      +'<div class="confirm">&#10003; <b style="color:var(--text);font-weight:500">Request received.</b> Ray or Courtney will contact you at '+cnt+' &mdash; usually within the hour during the day.</div>'
+      +'<div class="tags">'
+      +(slug?'<a href="/services/'+slug+'/" class="tag pk">'+svcN+' &rarr;</a>':'')
+      +'<a href="/reviews/" class="tag">5&#8209;star reviews</a>'
+      +'<a href="/service-areas/" class="tag">Service areas</a>'
+      +'<a href="/" class="tag">Homepage</a>'
+      +'</div>';
+    card.style.opacity='1';
+  },75);
+  try{
+    var d='form-name=funnel-quote&name='+encodeURIComponent(S.c.name||'')+'&phone='+encodeURIComponent(S.c.phone||'')+'&email='+encodeURIComponent(S.c.email||'')+'&address='+encodeURIComponent(S.c.address||'')+'&service='+encodeURIComponent(S.sel.service||'')+'&proptype='+encodeURIComponent(S.sel.propType||'')+'&propsize='+encodeURIComponent(S.sel.propSize||'')+'&timing='+encodeURIComponent(S.sel.timing||'')+'&notes='+encodeURIComponent(S.c.notes||'');
+    fetch('/',{method:'POST',headers:{'Content-Type':'application/x-www-form-urlencoded'},body:d});
+  }catch(e){}
+}
+
+render();
+</script>
 </body>
 </html>
