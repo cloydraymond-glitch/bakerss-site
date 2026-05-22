@@ -2,14 +2,15 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Airbnb & Vacation Rental Cleaning in Myrtle Beach, SC | Bakerss</title>
-<meta name="description" content="Professional Airbnb and vacation rental turnover cleaning in Myrtle Beach & Horry County, SC. Guest-ready every time. Starting at $100. Call 843-467-7136.">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Airbnb & Vacation Rental Cleaning in Myrtle Beach, SC | Bakerss Property Maintenance</title>
+<meta name="description" content="Professional Airbnb and vacation rental turnover cleaning in Myrtle Beach and Horry County, SC. Calendar sync, same-day turnovers, sand removal protocol. Starting at $100. Call 843-467-7136.">
 <link rel="canonical" href="https://www.bakerss.com/services/airbnb-cleaning/">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;800&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
 <style>
+
 *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
 :root{
   --pink:#E91E8C;--pink-dark:#C0157A;--pink-light:#FF4BAB;
@@ -172,6 +173,120 @@ footer{background:var(--black);border-top:1px solid rgba(255,255,255,0.07);paddi
 .sticky-bar svg{width:20px;height:20px}
 @media(max-width:1024px){.svc-hero-inner,.svc-content{grid-template-columns:1fr}.quote-card{position:static}.svc-sidebar{position:static;display:grid;grid-template-columns:1fr 1fr}}
 @media(max-width:768px){.nav-links{display:none}.sticky-bar{display:flex}body{padding-bottom:70px}.sub-grid,.serve-list,.related-grid,.cities-row{grid-template-columns:1fr}.footer-top{grid-template-columns:1fr 1fr}}
+
+/* ── PAGE STYLES ── */
+.hero{background:var(--black);padding:5rem 2rem 3.5rem;position:relative;overflow:hidden}
+.hero::after{content:'';position:absolute;top:-80px;right:-80px;width:520px;height:520px;background:radial-gradient(circle,rgba(233,30,140,0.06) 0%,transparent 70%);pointer-events:none}
+.hero-inner{max-width:1100px;margin:0 auto;position:relative;z-index:2;display:grid;grid-template-columns:1fr 320px;gap:3rem;align-items:start}
+.breadcrumb{display:flex;align-items:center;gap:6px;font-size:12px;color:rgba(255,255,255,0.3);margin-bottom:1.25rem}
+.breadcrumb a{color:rgba(255,255,255,0.3);text-decoration:none}
+.breadcrumb a:hover{color:var(--pink)}
+.breadcrumb span{color:rgba(255,255,255,0.12)}
+.badge{display:inline-flex;align-items:center;gap:6px;background:rgba(233,30,140,0.1);border:1px solid rgba(233,30,140,0.3);border-radius:100px;padding:4px 14px;font-size:10px;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;color:var(--pink);margin-bottom:1.25rem}
+h1.hero-h1{font-family:var(--font-display);font-size:clamp(2.1rem,3.5vw,3.2rem);font-weight:800;line-height:1.08;letter-spacing:-0.025em;margin-bottom:1.1rem}
+h1.hero-h1 em{font-style:normal;color:var(--pink)}
+.hero-desc{font-size:16px;color:rgba(255,255,255,0.55);line-height:1.8;font-weight:300;max-width:600px;margin-bottom:1.75rem}
+.hero-btns{display:flex;gap:10px;flex-wrap:wrap}
+.btn-pink{display:inline-flex;align-items:center;gap:8px;background:var(--pink);color:#fff;padding:14px 26px;border-radius:8px;font-size:14px;font-weight:600;text-decoration:none;transition:all 0.2s;box-shadow:0 4px 18px rgba(233,30,140,0.25)}
+.btn-pink:hover{transform:translateY(-1px);box-shadow:0 6px 24px rgba(233,30,140,0.35)}
+.btn-ghost{display:inline-flex;align-items:center;gap:8px;background:transparent;color:rgba(255,255,255,0.8);padding:14px 24px;border-radius:8px;font-size:14px;font-weight:500;text-decoration:none;border:1px solid rgba(255,255,255,0.18)}
+.hero-trust{display:flex;align-items:center;gap:12px;margin-top:1.5rem;font-size:11px;color:rgba(255,255,255,0.3);flex-wrap:wrap}
+.hero-trust b{color:rgba(255,255,255,0.55)}
+/* Sidebar card */
+.sidebar-card{background:var(--dark2);border:1px solid rgba(255,255,255,0.08);border-radius:14px;padding:1.75rem;position:sticky;top:80px}
+.sidebar-card h3{font-family:var(--font-display);font-size:1.15rem;font-weight:700;margin-bottom:0.25rem}
+.sidebar-phone{font-family:var(--font-display);font-size:1.85rem;font-weight:800;color:var(--pink);text-decoration:none;display:block;margin:0.4rem 0}
+.sidebar-card p{font-size:12.5px;color:rgba(255,255,255,0.4);margin-bottom:1.25rem;line-height:1.5}
+.sidebar-btn{display:block;padding:12px;border-radius:7px;font-size:13.5px;font-weight:600;text-decoration:none;text-align:center;margin-bottom:7px}
+.sidebar-btn.pink{background:var(--pink);color:#fff}
+.sidebar-btn.outline{background:transparent;color:rgba(255,255,255,0.7);border:1px solid rgba(255,255,255,0.15)}
+.sidebar-facts{margin-top:1.25rem;padding-top:1.25rem;border-top:1px solid rgba(255,255,255,0.07)}
+.sidebar-fact{display:flex;align-items:center;gap:10px;font-size:12px;color:rgba(255,255,255,0.5);margin-bottom:7px}
+.sidebar-fact b{color:rgba(255,255,255,0.75)}
+/* Content area */
+.content{max-width:1100px;margin:0 auto;padding:4.5rem 2rem}
+.sec{margin-bottom:4rem}
+.sec-label{font-size:10px;font-weight:700;letter-spacing:0.12em;text-transform:uppercase;color:var(--pink);margin-bottom:0.5rem;display:block}
+h2.sec-h2{font-family:var(--font-display);font-size:clamp(1.6rem,2.5vw,2.1rem);font-weight:800;letter-spacing:-0.02em;margin-bottom:0.9rem;line-height:1.15}
+h2.sec-h2 em{font-style:normal;color:var(--pink)}
+h3.sub-h3{font-size:1.05rem;font-weight:600;margin:1.75rem 0 0.5rem;color:rgba(255,255,255,0.9)}
+.prose{font-size:15px;color:rgba(255,255,255,0.58);line-height:1.85;font-weight:300}
+.prose+.prose{margin-top:0.85rem}
+/* Card grids */
+.card-3{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-top:1.5rem}
+.card-2{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-top:1.5rem}
+.card-4{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin-top:1.5rem}
+.card{background:var(--dark2);border:1px solid rgba(255,255,255,0.07);border-radius:12px;padding:1.4rem}
+.card .tag{font-size:10px;font-weight:700;letter-spacing:0.09em;text-transform:uppercase;color:var(--pink);display:block;margin-bottom:0.5rem}
+.card h4{font-size:15px;font-weight:600;margin-bottom:0.4rem}
+.card p{font-size:13px;color:rgba(255,255,255,0.45);line-height:1.6}
+/* Pricing table */
+.price-table{width:100%;border-collapse:collapse;margin-top:1.25rem;font-size:13.5px}
+.price-table th{padding:10px 14px;text-align:left;background:rgba(233,30,140,0.08);border-bottom:1px solid rgba(255,255,255,0.08);font-size:10px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:rgba(255,255,255,0.4)}
+.price-table td{padding:11px 14px;border-bottom:1px solid rgba(255,255,255,0.05);color:rgba(255,255,255,0.65)}
+.price-table td.price{color:var(--pink);font-weight:700}
+.price-table tr:last-child td{border-bottom:none}
+/* Steps */
+.steps{display:grid;gap:1px;margin-top:1.25rem}
+.step{background:var(--dark2);border:1px solid rgba(255,255,255,0.07);padding:1.25rem 1.5rem;display:flex;gap:1.25rem;align-items:start}
+.step:first-child{border-radius:12px 12px 0 0}
+.step:last-child{border-radius:0 0 12px 12px}
+.step-num{width:32px;height:32px;border-radius:50%;background:var(--pink);display:flex;align-items:center;justify-content:center;font-size:13px;font-weight:700;color:#fff;flex-shrink:0;margin-top:2px}
+.step h4{font-size:14.5px;font-weight:600;margin-bottom:0.3rem}
+.step p{font-size:13px;color:rgba(255,255,255,0.45);line-height:1.6}
+/* FAQ */
+.faq-wrap{border:1px solid rgba(255,255,255,0.07);border-radius:12px;overflow:hidden;margin-top:1.25rem}
+.faq-item{border-bottom:1px solid rgba(255,255,255,0.06)}
+.faq-item:last-child{border:none}
+.faq-q{display:flex;justify-content:space-between;align-items:center;padding:1rem 1.25rem;cursor:pointer;font-size:14.5px;font-weight:600;gap:1rem;transition:background 0.15s}
+.faq-q:hover{background:rgba(255,255,255,0.025)}
+.faq-q .ico{color:var(--pink);font-size:20px;flex-shrink:0;transition:transform 0.25s;line-height:1}
+.faq-a{display:none;padding:0 1.25rem 1rem;font-size:13.5px;color:rgba(255,255,255,0.5);line-height:1.75}
+.faq-item.open .faq-q .ico{transform:rotate(45deg)}
+.faq-item.open .faq-a{display:block}
+/* Reviews */
+.rev-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin-top:1.5rem}
+.rev{background:var(--dark2);border:1px solid rgba(255,255,255,0.07);border-radius:11px;padding:1.4rem}
+.rev-top{display:flex;align-items:center;gap:10px;margin-bottom:9px}
+.av{width:36px;height:36px;background:var(--pink);border-radius:50%;display:flex;align-items:center;justify-content:center;font-weight:700;font-size:13px;color:#fff;flex-shrink:0}
+.rev-name{font-size:13.5px;font-weight:600}
+.rev-meta{font-size:11px;color:rgba(255,255,255,0.3)}
+.stars{color:#FFB800;font-size:12px;letter-spacing:1px}
+.rev-text{font-size:13px;color:rgba(255,255,255,0.6);font-style:italic;line-height:1.7}
+.rev-svc{display:inline-block;font-size:10.5px;font-weight:600;color:var(--pink);background:rgba(233,30,140,0.08);border:1px solid rgba(233,30,140,0.2);padding:2px 9px;border-radius:4px;margin-top:7px}
+/* Stat row */
+.stat-row{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin:1.5rem 0}
+.stat{background:var(--dark2);border:1px solid rgba(255,255,255,0.07);border-radius:11px;padding:1.4rem;text-align:center}
+.stat .num{font-family:var(--font-display);font-size:2.4rem;font-weight:800;color:var(--pink);line-height:1;margin-bottom:0.3rem}
+.stat .lbl{font-size:11.5px;color:rgba(255,255,255,0.4);line-height:1.35}
+/* Svc links */
+.svc-links{display:grid;grid-template-columns:repeat(3,1fr);gap:7px;margin-top:1.25rem}
+.svc-link{background:var(--dark2);border:1px solid rgba(255,255,255,0.07);border-radius:8px;padding:10px 13px;text-decoration:none;color:rgba(255,255,255,0.65);font-size:13px;display:flex;justify-content:space-between;align-items:center;transition:border-color 0.2s}
+.svc-link:hover{border-color:rgba(233,30,140,0.3);color:#fff}
+.svc-link .pr{font-size:10.5px;color:var(--pink);font-weight:600}
+/* CTA band */
+.cta-band{background:var(--pink);padding:3.5rem 2rem;text-align:center}
+.cta-band h2{font-family:var(--font-display);font-size:clamp(1.6rem,3vw,2.2rem);font-weight:800;color:#fff;margin-bottom:0.5rem}
+.cta-band p{font-size:15px;color:rgba(255,255,255,0.75);margin-bottom:1.75rem}
+.cta-buttons{display:flex;gap:12px;justify-content:center;flex-wrap:wrap}
+.btn-white{display:inline-flex;align-items:center;gap:8px;background:#fff;color:var(--pink);padding:13px 26px;border-radius:8px;font-size:14px;font-weight:700;text-decoration:none}
+.btn-ow{display:inline-flex;align-items:center;gap:8px;background:transparent;color:#fff;padding:13px 26px;border-radius:8px;font-size:14px;font-weight:600;text-decoration:none;border:2px solid rgba(255,255,255,0.45)}
+/* Highlight box */
+.callout{background:rgba(233,30,140,0.06);border-left:3px solid var(--pink);padding:1rem 1.25rem;border-radius:0 8px 8px 0;margin:1.5rem 0;font-size:13.5px;color:rgba(255,255,255,0.65);line-height:1.7}
+.callout b{color:rgba(255,255,255,0.9)}
+/* Anchor tab nav */
+.tab-nav{display:flex;gap:4px;border-bottom:1px solid rgba(255,255,255,0.07);margin-bottom:2.5rem;flex-wrap:wrap}
+.tab-link{padding:10px 18px;font-size:13px;font-weight:600;color:rgba(255,255,255,0.45);text-decoration:none;border-bottom:2px solid transparent;margin-bottom:-1px;transition:all 0.15s}
+.tab-link:hover,.tab-link.active{color:var(--pink);border-bottom-color:var(--pink)}
+/* Two col layout */
+.two-col{display:grid;grid-template-columns:1fr 1fr;gap:2.5rem;align-items:start}
+.list-check{margin:0.75rem 0 0 0;padding:0;list-style:none}
+.list-check li{display:flex;align-items:start;gap:9px;font-size:14px;color:rgba(255,255,255,0.6);line-height:1.6;margin-bottom:7px}
+.list-check li::before{content:'✓';color:var(--pink);font-weight:700;flex-shrink:0;margin-top:2px}
+/* Responsive */
+@media(max-width:1024px){.hero-inner{grid-template-columns:1fr}.sidebar-card{display:none}.card-3,.card-4{grid-template-columns:1fr 1fr}.stat-row{grid-template-columns:1fr 1fr}.rev-grid{grid-template-columns:1fr 1fr}.two-col{grid-template-columns:1fr}}
+@media(max-width:768px){.nav-links{display:none}.sticky-bar{display:flex}body{padding-bottom:70px}.card-3,.card-4,.card-2{grid-template-columns:1fr}.svc-links{grid-template-columns:1fr 1fr}.footer-top{grid-template-columns:1fr 1fr}.rev-grid{grid-template-columns:1fr}}
+
 </style>
 </head>
 <body>
@@ -200,151 +315,180 @@ footer{background:var(--black);border-top:1px solid rgba(255,255,255,0.07);paddi
   </div>
 </nav>
 
-<div class="svc-hero">
-  <div class="svc-hero-inner">
+<div class="hero">
+  <div class="hero-inner">
     <div>
-      <nav class="breadcrumb" aria-label="Breadcrumb">
-        <a href="/">Home</a><span>/</span><a href="/services/">Services</a><span>/</span><span style="color:rgba(255,255,255,0.5)">Airbnb &amp; STR Cleaning</span>
-      </nav>
-      <div class="svc-badge">Short-Term Rental · Turnover Specialists</div>
-      <h1>Airbnb &amp; Vacation Rental Cleaning in <em>Myrtle Beach, SC</em></h1>
-      <p class="svc-hero-desc">Your guests expect a spotless property. One negative review about cleanliness can haunt your listing for months. Bakerss specializes in professional vacation rental turnover cleaning across Myrtle Beach, North Myrtle Beach, Surfside, Murrells Inlet, and all of Horry County — keeping your property guest-ready and your reviews 5-star.</p>
-      <div class="svc-ctas">
-        <a href="/get-quote/" class="btn-primary">Get a Free Quote →</a>
-        <a href="tel:8434677136" class="btn-secondary">📞 843-467-7136</a>
+      <nav class="breadcrumb"><a href="/">Home</a><span>/</span><a href="/services/">Services</a><span>/</span><span style="color:rgba(255,255,255,0.5)">Airbnb Cleaning</span></nav>
+      <div class="badge">Airbnb Cleaning · Vacation Rental Turnover · STR Specialists · Myrtle Beach SC</div>
+      <h1 class="hero-h1">Airbnb &amp; Vacation Rental Cleaning in<br><em>Myrtle Beach &amp; Horry County, SC</em></h1>
+      <p class="hero-desc">Every checkout is a performance review. Guests walk into your Myrtle Beach vacation rental and form their cleanliness impression within seconds — and that impression ends up in a review that either builds or burns your ranking. Bakerss provides professional STR turnover cleaning that consistently earns 5-star cleanliness mentions. Starting at $100.</p>
+      <div class="hero-btns">
+        <a href="/get-quote/" class="btn-pink">Get a Free Quote →</a>
+        <a href="tel:8434677136" class="btn-ghost">📞 843-467-7136</a>
       </div>
-      <div class="svc-trust">
-        <div class="trust-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>5-Star Rated</div>
-        <div class="trust-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>Licensed &amp; Insured</div>
-        <div class="trust-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>24/7 Answering</div>
-        <div class="trust-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>All of Horry County</div>
+      <div class="hero-trust">
+        <span>⭐ <b>5.0</b> Google Rating</span> · <span>📅 <b>Calendar sync</b> available</span> · <span>📞 <b>24/7</b> Response</span> · <span>🏖️ <b>Sand removal protocol</b></span>
       </div>
     </div>
-    <div class="quote-card">
-  <h3>Free Estimate</h3>
-  <p class="qsub">Same-day response · No obligation</p>
-  <div class="form-group"><label>Your Name</label><input type="text" placeholder="First name"></div>
-  <div class="form-group"><label>Phone Number</label><input type="tel" placeholder="843-000-0000"></div>
-  <div class="form-group"><label>Service Needed</label>
-    <select>
-      <option value="Airbnb Cleaning" selected>Airbnb Cleaning</option>
-      <option>Lawn Care</option><option>Landscaping</option><option>Pressure Washing</option>
-      <option>Interior Cleaning</option><option>Airbnb / STR Cleaning</option>
-      <option>Gutter Cleaning</option><option>Painting</option><option>Handyman Services</option>
-      <option>Junk Removal</option><option>Other</option>
-    </select>
-  </div>
-  <div class="form-group"><label>City / Zip</label><input type="text" placeholder="Myrtle Beach, SC"></div>
-  <button class="btn-submit" onclick="window.location='/get-quote/'">Get My Free Quote →</button>
-  <p class="q-privacy">🔒 No spam · Free · No obligation</p>
-  <div class="q-phone">Or call us: <a href="tel:8434677136">843-467-7136</a></div>
-</div>
+    <div class="sidebar-card">
+      <h3>Free STR Cleaning Quote</h3>
+      <a href="tel:8434677136" class="sidebar-phone">843-467-7136</a>
+      <p>Call or text — we sync with your rental calendar and dispatch automatically on checkout day.</p>
+      <a href="/get-quote/" class="sidebar-btn pink">Get a Free Quote →</a>
+      <a href="tel:8434677136" class="sidebar-btn outline">📞 Call or Text Now</a>
+      <div class="sidebar-facts">
+        <div class="sidebar-fact">🏠 <span>Starting at <b>$100 / turnover</b></span></div>
+        <div class="sidebar-fact">📅 <span><b>Calendar sync</b> — auto-dispatch</span></div>
+        <div class="sidebar-fact">⚡ <span><b>Same-day</b> turnovers available</span></div>
+        <div class="sidebar-fact">🏖️ <span><b>Sand removal</b> protocol included</span></div>
+      </div>
+    </div>
   </div>
 </div>
 
-<div class="svc-content">
-  <div class="svc-main">
+<div class="content">
 
-    <section class="content-sec">
-      <div class="sec-label">Services Included</div>
-      <h2 class="sec-title">What's Included</h2>
-      <div class="sub-grid"><div class="sub-card"><span class="tag">Core Service</span><h4>Turnover Cleaning</h4><p>Complete cleaning between guest stays — kitchen, bathrooms, bedrooms, living areas, and all high-touch surfaces disinfected.</p></div><div class="sub-card"><span class="tag">Pre-Season</span><h4>Deep Cleaning</h4><p>Thorough top-to-bottom cleaning at the start of rental season or after extended vacancy. Includes inside appliances, windows, and detailed fixtures.</p></div><div class="sub-card"><span class="tag">Add-On</span><h4>Linen &amp; Towel Management</h4><p>Strip, wash, dry, fold, and reset linens and towels to hotel standard. Staging for guest arrival included.</p></div><div class="sub-card"><span class="tag">Add-On</span><h4>Restocking &amp; Checklist</h4><p>We restock supplies (paper products, soaps) and complete a property checklist report after each turnover.</p></div><div class="sub-card"><span class="tag">Add-On</span><h4>Guest Arrival Staging</h4><p>Fresh flowers, staged towels, and presentation details that earn 5-star first-impression reviews.</p></div><div class="sub-card"><span class="tag">Available</span><h4>Same-Day Turnovers</h4><p>Same-day checkout-to-checkin turnovers when your calendar is back-to-back. We know the importance of your guest timeline.</p></div></div>
-    </section>
-
-    <section class="content-sec">
-      <div class="sec-label">Who We Help</div>
-      <h2 class="sec-title">Who We Serve</h2>
-      <div class="serve-list"><div class="serve-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20,6 9,17 4,12"/></svg><span>Airbnb hosts</span></div><div class="serve-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20,6 9,17 4,12"/></svg><span>VRBO property owners</span></div><div class="serve-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20,6 9,17 4,12"/></svg><span>Out-of-state STR investors</span></div><div class="serve-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20,6 9,17 4,12"/></svg><span>Property management companies</span></div><div class="serve-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20,6 9,17 4,12"/></svg><span>Condo owners in resort communities</span></div><div class="serve-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20,6 9,17 4,12"/></svg><span>Beach house owners</span></div><div class="serve-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20,6 9,17 4,12"/></svg><span>Golf community rentals</span></div><div class="serve-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20,6 9,17 4,12"/></svg><span>Oceanfront property owners</span></div></div>
-    </section>
-
-    <section class="content-sec">
-      <div class="sec-label">How It Works</div>
-      <h2 class="sec-title">Our Process</h2>
-      <div class="process-steps"><div class="p-step"><div class="p-num">01</div><div><h4>Coordinate Your Calendar</h4><p>Share your rental calendar with us. We sync with your checkout and checkin times so you never have to manage the schedule.</p></div></div><div class="p-step"><div class="p-num">02</div><div><h4>Checkout Inspection</h4><p>After guests leave, we inspect the property for any damage or missing items and photograph the condition before cleaning begins.</p></div></div><div class="p-step"><div class="p-num">03</div><div><h4>Full Turnover Clean</h4><p>Every room cleaned top-to-bottom. Bathrooms sanitized. Kitchen scrubbed. All surfaces wiped. Floors vacuumed and mopped.</p></div></div><div class="p-step"><div class="p-num">04</div><div><h4>Linen Reset</h4><p>Fresh linens on every bed, folded to hotel standard. Clean towels staged in bathrooms. Replenish paper goods and amenities.</p></div></div><div class="p-step"><div class="p-num">05</div><div><h4>Final Check &amp; Report</h4><p>We verify the property meets your standards before leaving. You receive a completion notification with photos.</p></div></div></div>
-    </section>
-
-    
-
-    <section class="content-sec">
-      <div class="sec-label">Questions &amp; Answers</div>
-      <h2 class="sec-title">Frequently Asked Questions</h2>
-      <div class="faq-list"><div class="faq-item"><div class="faq-q" onclick="toggleFaq(this)">How much does Airbnb cleaning cost in Myrtle Beach?<span class="icon">+</span></div><div class="faq-a">Airbnb and vacation rental turnover cleaning in Myrtle Beach starts at $100 for smaller units. Larger beach houses and multi-bedroom properties typically range from $150–$350 per turnover depending on size, number of bedrooms and bathrooms, and scope of service (linen management, restocking, etc.).</div></div>
-<div class="faq-item"><div class="faq-q" onclick="toggleFaq(this)">Can you handle same-day turnovers?<span class="icon">+</span></div><div class="faq-a">Yes. Same-day turnovers — where a guest checks out in the morning and a new guest arrives the same afternoon — are something we specialize in. We work efficiently to hit tight windows without cutting corners.</div></div>
-<div class="faq-item"><div class="faq-q" onclick="toggleFaq(this)">Do you work with property management companies?<span class="icon">+</span></div><div class="faq-a">Yes. We partner with multiple property management companies in Horry County. We're reliable, responsive, and understand the accountability standards professional managers require.</div></div>
-<div class="faq-item"><div class="faq-q" onclick="toggleFaq(this)">Can you manage our rental calendar?<span class="icon">+</span></div><div class="faq-a">We can sync with your rental platform or work off a shared schedule. Once we're set up, you don't need to contact us for each booking — we show up automatically on turnover days.</div></div>
-<div class="faq-item"><div class="faq-q" onclick="toggleFaq(this)">What areas do you cover for vacation rental cleaning?<span class="icon">+</span></div><div class="faq-a">We cover all STR-heavy areas in Horry County: Myrtle Beach, North Myrtle Beach, Surfside Beach, Garden City, Murrells Inlet, Cherry Grove, Barefoot Resort, Ocean Lakes, Market Common, and all surrounding communities.</div></div>
-<div class="faq-item"><div class="faq-q" onclick="toggleFaq(this)">Do you clean condos and resort units?<span class="icon">+</span></div><div class="faq-a">Yes. We regularly service condos, resort units, and condo-hotel properties throughout the Grand Strand, including high-rise and garden-style units in oceanfront buildings.</div></div>
-<div class="faq-item"><div class="faq-q" onclick="toggleFaq(this)">Can you restock supplies between turnovers?<span class="icon">+</span></div><div class="faq-a">Yes. We can restock paper goods, soaps, and other consumables as an add-on service. Provide us with a shopping list and we'll handle it before the next guest arrives.</div></div>
-<div class="faq-item"><div class="faq-q" onclick="toggleFaq(this)">What if a guest leaves the property in very bad condition?<span class="icon">+</span></div><div class="faq-a">We assess the condition upon arrival and notify you immediately with photos. Heavily soiled properties may require additional time and a corresponding fee — we'll quote this before proceeding and won't surprise you.</div></div>
-</div>
-    </section>
-
-    <section class="content-sec">
-      <div class="sec-label">Related Services</div>
-      <h2 class="sec-title">You Might Also Need</h2>
-      <div class="related-grid"><a href="/services/interior-cleaning/" class="rel-card"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75"><path d="M20.84 4.61a5.5 5.5 0 00-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 00-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 000-7.78z"/></svg><div><h4>Interior Cleaning</h4><p>Deep cleaning for residential properties</p></div></a><a href="/services/pressure-washing/" class="rel-card"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75"><path d="M12 2v4M8 4l1.5 3M16 4l-1.5 3M5 9h14M6 9l-2 11h16L18 9"/></svg><div><h4>Pressure Washing</h4><p>Exterior cleaning for curb appeal</p></div></a><a href="/services/property-maintenance/" class="rel-card"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18M9 21V9"/></svg><div><h4>Property Maintenance Plans</h4><p>Bundle all services for one monthly price</p></div></a><a href="/services/handyman-services/" class="rel-card"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75"><path d="M14.7 6.3a1 1 0 000 1.4l1.6 1.6a1 1 0 001.4 0l3.77-3.77a6 6 0 01-7.94 7.94l-6.91 6.91a2.12 2.12 0 01-3-3l6.91-6.91a6 6 0 017.94-7.94l-3.76 3.76z"/></svg><div><h4>Handyman Services</h4><p>Repairs and maintenance between guest stays</p></div></a></div>
-    </section>
-
-    <section class="content-sec">
-      <div class="sec-label">Cities We Serve</div>
-      <h2 class="sec-title">Airbnb Cleaning Across Horry County</h2>
-      <p class="prose">We provide this service in every major city across Horry County. Click your city for location-specific information.</p>
-      <div class="cities-row"><a href="/service-areas/myrtle-beach/" class="city-link">Myrtle Beach</a><a href="/service-areas/north-myrtle-beach/" class="city-link">North Myrtle Beach</a><a href="/service-areas/conway/" class="city-link">Conway</a><a href="/service-areas/surfside-beach/" class="city-link">Surfside Beach</a><a href="/service-areas/murrells-inlet/" class="city-link">Murrells Inlet</a><a href="/service-areas/garden-city/" class="city-link">Garden City</a><a href="/service-areas/socastee/" class="city-link">Socastee</a><a href="/service-areas/little-river/" class="city-link">Little River</a><a href="/service-areas/horry-county/" class="city-link">All of Horry County</a></div>
-    </section>
-
+  <div class="stat-row">
+    <div class="stat"><div class="num">$100</div><div class="lbl">Starting price per turnover</div></div>
+    <div class="stat"><div class="num">30,000+</div><div class="lbl">Active STR listings in Myrtle Beach market</div></div>
+    <div class="stat"><div class="num">4.8★</div><div class="lbl">The threshold for Airbnb algorithm advantage</div></div>
+    <div class="stat"><div class="num">24/7</div><div class="lbl">Emergency response for STR owners</div></div>
   </div>
 
-  <div class="svc-sidebar">
-    <div class="price-box">
-      <div class="from">Starting at</div>
-      <div class="amount">$100</div>
-      <div class="note">Per turnover · Based on size &amp; scope</div>
-    </div>
-    <div class="call-side">
-      <p>Questions? We answer 24/7</p>
-      <a href="tel:8434677136">843-467-7136</a>
-    </div>
-    <div class="side-card">
-      <h3>Customer Reviews</h3>
-      <div class="review-mini">
-  <div style="display:flex;align-items:center;gap:8px;margin-bottom:6px">
-    <div style="width:32px;height:32px;background:var(--pink);border-radius:50%;display:flex;align-items:center;justify-content:center;font-weight:700;font-size:12px;color:#fff;flex-shrink:0">M</div>
-    <div><div style="font-size:13px;font-weight:600">Michael T.</div><div class="stars">★★★★★</div></div>
-  </div>
-  <p>"Ray and his team handled our vacation rental turnover cleanings all season. Every single time, the property was spotless and guest-ready."</p>
-  <div class="who">Airbnb Cleaning · Myrtle Beach</div>
-</div><div class="review-mini">
-  <div style="display:flex;align-items:center;gap:8px;margin-bottom:6px">
-    <div style="width:32px;height:32px;background:var(--pink);border-radius:50%;display:flex;align-items:center;justify-content:center;font-weight:700;font-size:12px;color:#fff;flex-shrink:0">S</div>
-    <div><div style="font-size:13px;font-weight:600">Sandra K.</div><div class="stars">★★★★★</div></div>
-  </div>
-  <p>"As an out-of-state owner I needed someone I could trust completely. Bakerss handles everything without me having to follow up."</p>
-  <div class="who">STR Maintenance · Surfside Beach</div>
-</div><div class="review-mini">
-  <div style="display:flex;align-items:center;gap:8px;margin-bottom:6px">
-    <div style="width:32px;height:32px;background:var(--pink);border-radius:50%;display:flex;align-items:center;justify-content:center;font-weight:700;font-size:12px;color:#fff;flex-shrink:0">L</div>
-    <div><div style="font-size:13px;font-weight:600">Lisa T.</div><div class="stars">★★★★★</div></div>
-  </div>
-  <p>"Courtney came within half an hour's notice and did a superb job. Highly recommend whether it's cleaning, landscaping, or home repair."</p>
-  <div class="who">Emergency Cleaning · Myrtle Beach</div>
-</div>
-    </div>
-    <div class="side-card">
-      <h3>Service Areas</h3>
-      <a href="/service-areas/myrtle-beach/" class="city-link">Myrtle Beach</a><a href="/service-areas/north-myrtle-beach/" class="city-link">North Myrtle Beach</a><a href="/service-areas/conway/" class="city-link">Conway</a><a href="/service-areas/surfside-beach/" class="city-link">Surfside Beach</a><a href="/service-areas/murrells-inlet/" class="city-link">Murrells Inlet</a><a href="/service-areas/garden-city/" class="city-link">Garden City</a><a href="/service-areas/socastee/" class="city-link">Socastee</a><a href="/service-areas/little-river/" class="city-link">Little River</a><a href="/service-areas/horry-county/" class="city-link">All of Horry County</a>
+  <!-- THE MYRTLE BEACH STR CLEANING CHALLENGE -->
+  <div class="sec" style="margin-top:3.5rem">
+    <span class="sec-label">The Market Reality</span>
+    <h2 class="sec-h2">Why Vacation Rental Cleaning in Myrtle Beach Is <em>Different</em></h2>
+    <p class="prose">The Myrtle Beach vacation rental market is one of the most competitive short-term rental environments in the eastern United States. With over 30,000 active listings on Airbnb and VRBO across the Grand Strand, the difference between a property that fills its calendar and one that struggles to convert browsers isn't usually the amenities or the location — it's the review score. And the review score lives and dies on the guest's cleanliness experience in the first five minutes after checkout.</p>
+    <p class="prose">Beach properties compound the standard cleaning challenge. Myrtle Beach guests bring sand into every surface of the property — it's in the bedding, inside the couch cushion covers, in the kitchen drawers, under the beds, in bathroom drains. Standard hotel-style cleaning doesn't address sand the way beach property cleaning must. Our cleaning protocol includes systematic sand removal at every step, because sand left behind is the #1 complaint in Myrtle Beach vacation rental reviews.</p>
+    <p class="prose">Then there's the scheduling reality. Peak summer season in Myrtle Beach often means back-to-back Saturday-to-Saturday bookings, same-day checkouts and check-ins, and no margin for error in the turnover window. A cleaning team that doesn't show up on time — or shows up but misses the microwave — doesn't just create a bad guest review. It creates a review that suppresses your listing's search visibility for months and costs you bookings worth multiples of what the cleaning fee saves.</p>
+    <div class="callout">
+      <b>The 4.8-star threshold:</b> Airbnb's algorithm rewards properties with consistently high ratings with significantly more search visibility. The difference in impressions between a 4.6 and a 4.9 property in Myrtle Beach's competitive market can mean 25–40% more bookings at equivalent pricing. Professional, consistent cleaning is the single most reliable path to 4.9 cleanliness scores.
     </div>
   </div>
+
+  <!-- WHAT'S INCLUDED -->
+  <div class="sec">
+    <span class="sec-label">What's Included</span>
+    <h2 class="sec-h2">The Bakerss Vacation Rental Turnover — <em>Every Room, Every Time</em></h2>
+    <p class="prose">Our vacation rental turnover cleaning covers every room systematically — not a speed-clean designed to look done before it's finished. Below is what guests find when they walk into a Bakerss-cleaned property.</p>
+    <div class="card-3">
+      <div class="card">
+        <span class="tag">Kitchen — Zero Tolerance</span>
+        <h4>The Room Reviews Are Written About</h4>
+        <p>Microwave interior cleaned completely — the single most-cited item in Myrtle Beach STR cleanliness reviews. Stovetop and burners, refrigerator interior cleared and wiped, all dishes washed and properly stored, counters cleared and sanitized, sink shined. Nothing left from previous guests, nothing sticky, nothing with a smell.</p>
+      </div>
+      <div class="card">
+        <span class="tag">Bathrooms — Sanitized</span>
+        <h4>Hotel Standard Every Turnover</h4>
+        <p>Toilets scrubbed inside and out including base and behind. Shower and tub scrubbed including grout lines. Sink, faucet, and fixtures wiped and dried. Mirror streak-free. All towels replaced with fresh folded sets. Paper goods checked and restocked. Floor mopped. Nothing left from previous guests.</p>
+      </div>
+      <div class="card">
+        <span class="tag">Bedrooms — Guest-Ready</span>
+        <h4>Fresh Linens, Made Properly</h4>
+        <p>All bedding stripped and replaced with fresh linens — properly made, tight corners, smooth presentation. Mattress checked for any damage or staining. All surfaces dusted including lamps, nightstands, and ceiling fans. Closets checked and cleared of any guest items left behind. Floors vacuumed thoroughly.</p>
+      </div>
+      <div class="card">
+        <span class="tag">🏖️ Sand Protocol</span>
+        <h4>Beach-Specific — Standard Everywhere</h4>
+        <p>Couch cushions removed and vacuumed on all sides. Decorative pillows shaken out. Under furniture vacuumed (sand settles to floor edges). Bedroom floors vacuumed before mopping — sand scratches if mopped first. Drawer and storage areas checked. Entry and patio swept completely. This step doesn't exist in most non-beach cleaning protocols — it's essential in ours.</p>
+      </div>
+      <div class="card">
+        <span class="tag">Living Areas</span>
+        <h4>Thoroughly Cleaned &amp; Staged</h4>
+        <p>All surfaces dusted including remotes and high-touch items. Entertainment area cleaned. Floors vacuumed and mopped throughout. Trash emptied in all rooms. Paper goods checked — toilet paper, paper towels, trash bags. Final staging so the property looks welcoming and photographable when the next guest arrives.</p>
+      </div>
+      <div class="card">
+        <span class="tag">Pre-Departure Check</span>
+        <h4>Walk-Through Before We Leave</h4>
+        <p>Every turnover ends with a walk-through to confirm every room meets the standard before we lock up. We also note and photograph any damage or issues for owner documentation — so you know about problems before your guest discovers them. Nothing is assumed, everything is verified.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- CALENDAR SYNC -->
+  <div class="sec">
+    <span class="sec-label">How It Works</span>
+    <h2 class="sec-h2">Set It Up Once — <em>Never Think About It Again</em></h2>
+    <p class="prose">The best vacation rental operators in Myrtle Beach have one thing in common: they've built systems that run without them. Cleaning should be one of those systems. You shouldn't be coordinating with your cleaner before every checkout, confirming availability, sending check-in information, or worrying about whether the property will be ready in time.</p>
+    <div class="steps">
+      <div class="step"><div class="step-num">1</div><div><h4>Share Your Calendar</h4><p>Connect us to your Airbnb or VRBO calendar, a shared Google Calendar, or your property management platform. We receive checkout notifications automatically — no manual scheduling from you after initial setup.</p></div></div>
+      <div class="step"><div class="step-num">2</div><div><h4>We Dispatch on Checkout Day</h4><p>When a guest checks out, our team arrives at the agreed access time and begins the turnover. We work within your checkout-to-checkin window reliably. If there's a same-day back-to-back booking, we plan for it specifically — not as an afterthought.</p></div></div>
+      <div class="step"><div class="step-num">3</div><div><h4>Property Reported Complete</h4><p>When the turnover is finished, we notify you — with photos on request. Any damage we find is documented and reported immediately. You know your property's status without being there.</p></div></div>
+      <div class="step"><div class="step-num">4</div><div><h4>Guest Arrives to 5-Star Conditions</h4><p>Your next guest walks into a spotless, guest-ready property. Their review reflects the cleanliness they found — consistently, stay after stay, season after season.</p></div></div>
+    </div>
+  </div>
+
+  <!-- PRICING -->
+  <div class="sec">
+    <span class="sec-label">2025 Pricing</span>
+    <h2 class="sec-h2">Vacation Rental Cleaning Pricing — Myrtle Beach 2025</h2>
+    <table class="price-table">
+      <thead><tr><th>Property Size</th><th>Turnover Clean</th><th>Seasonal Deep Clean</th></tr></thead>
+      <tbody>
+        <tr><td>Studio / 1BR condo</td><td class="price">$100–$145</td><td>$155–$225</td></tr>
+        <tr><td>2BR / 2BA</td><td class="price">$145–$210</td><td>$210–$330</td></tr>
+        <tr><td>3BR / 2BA</td><td class="price">$185–$275</td><td>$280–$430</td></tr>
+        <tr><td>4BR / 3BA</td><td class="price">$240–$350</td><td>$375–$555</td></tr>
+        <tr><td>5BR+</td><td class="price">$325–$500+</td><td>Free quote</td></tr>
+        <tr><td>Linen management (add-on)</td><td class="price">+$40–$80</td><td>Included</td></tr>
+        <tr><td>Restocking (add-on)</td><td class="price">+$25–$50</td><td>+cost of supplies</td></tr>
+      </tbody>
+    </table>
+    <p class="prose" style="margin-top:1rem">All turnover cleaning includes the full sand removal protocol, all surfaces, and a final walk-through verification. Seasonal deep cleans add inside appliances, baseboards, window tracks, ceiling fans, and detailed grout cleaning.</p>
+  </div>
+
+  <!-- SERVICE AREAS -->
+  <div class="sec">
+    <span class="sec-label">STR Markets We Serve</span>
+    <h2 class="sec-h2">Vacation Rental Cleaning Across the Grand Strand</h2>
+    <div class="svc-links">
+      <a href="/service-areas/myrtle-beach/airbnb-cleaning/" class="svc-link">Myrtle Beach<span class="pr">From $100</span></a>
+      <a href="/service-areas/north-myrtle-beach/airbnb-cleaning/" class="svc-link">North Myrtle Beach<span class="pr">From $100</span></a>
+      <a href="/service-areas/surfside-beach/airbnb-cleaning/" class="svc-link">Surfside Beach<span class="pr">From $100</span></a>
+      <a href="/service-areas/garden-city/airbnb-cleaning/" class="svc-link">Garden City Beach<span class="pr">From $100</span></a>
+      <a href="/service-areas/murrells-inlet/airbnb-cleaning/" class="svc-link">Murrells Inlet<span class="pr">From $100</span></a>
+      <a href="/service-areas/socastee/airbnb-cleaning/" class="svc-link">Socastee<span class="pr">From $100</span></a>
+      <a href="/service-areas/little-river/airbnb-cleaning/" class="svc-link">Little River<span class="pr">From $100</span></a>
+      <a href="/vacation-rental-services/" class="svc-link">All STR Services<span class="pr">Complete overview</span></a>
+    </div>
+  </div>
+
+  <!-- REVIEWS -->
+  <div class="sec">
+    <span class="sec-label">What STR Owners Say</span>
+    <h2 class="sec-h2">Vacation Rental Cleaning Reviews</h2>
+    <div class="rev-grid">
+      <div class="rev"><div class="rev-top"><div class="av">M</div><div><div class="rev-name">Michael T.</div><div class="rev-meta"><span class="stars">★★★★★</span> · Myrtle Beach, SC</div></div></div><p class="rev-text">"Ray and his team handled our vacation rental turnover cleanings all season. Every single time, the property was spotless and guest-ready. Couldn't ask for more reliable service in Myrtle Beach."</p><span class="rev-svc">Full Season STR Cleaning</span></div>
+      <div class="rev"><div class="rev-top"><div class="av">S</div><div><div class="rev-name">Sandra K.</div><div class="rev-meta"><span class="stars">★★★★★</span> · Surfside Beach, SC</div></div></div><p class="rev-text">"As an out-of-state owner I needed someone I could trust completely. Bakerss handles everything without me having to follow up. My rental is always ready. Exactly what I needed."</p><span class="rev-svc">Out-of-State STR Owner</span></div>
+      <div class="rev"><div class="rev-top"><div class="av">L</div><div><div class="rev-name">Lisa T.</div><div class="rev-meta"><span class="stars">★★★★★</span> · Myrtle Beach, SC</div></div></div><p class="rev-text">"Courtney came within half an hour's notice and did a superb job. Whether it's cleaning, landscaping, or home repair — I highly recommend Bakerss for any property service."</p><span class="rev-svc">Emergency STR Cleaning</span></div>
+    </div>
+  </div>
+
+  <!-- FAQ -->
+  <div class="sec">
+    <span class="sec-label">FAQ</span>
+    <h2 class="sec-h2">Vacation Rental Cleaning FAQ</h2>
+    <div class="faq-wrap">
+      <div class="faq-item"><div class="faq-q">How much does Airbnb cleaning cost in Myrtle Beach?<span class="ico">+</span></div><div class="faq-a">Vacation rental turnover cleaning in Myrtle Beach starts at $100 for studio and 1BR units. Standard 3BR beach homes run $185–$275. Larger 4BR+ homes run $240–$500+. All pricing includes the full turnover — kitchen, bathrooms, bedrooms, living areas, and the beach-specific sand removal protocol. Free estimates for your specific property.</div></div>
+      <div class="faq-item"><div class="faq-q">Can you sync with my Airbnb or VRBO calendar?<span class="ico">+</span></div><div class="faq-a">Yes. We can receive calendar access directly or work from any shared calendar format. After initial setup, cleaning is dispatched automatically on every checkout day — you don't coordinate with us for each booking. This is how the best Myrtle Beach STR operators manage their cleaning: set it up once, let it run.</div></div>
+      <div class="faq-item"><div class="faq-q">Do you handle same-day turnovers during busy beach season?<span class="ico">+</span></div><div class="faq-a">Yes. Same-day turnovers — when a guest checks out at 10 AM and another arrives at 4 PM — are our norm during Myrtle Beach's peak summer season, not the exception. We plan our crew scheduling specifically for the back-to-back patterns that peak season creates. We never treat a same-day turnaround as a problem — it's just the standard beach season schedule.</div></div>
+      <div class="faq-item"><div class="faq-q">What's different about beach property cleaning?<span class="ico">+</span></div><div class="faq-a">Sand. Myrtle Beach guests bring it into every room, every piece of furniture, every storage space. A cleaning team that doesn't specifically address sand — vacuuming cushions, checking drawers, sweeping entries, vacuuming floors before mopping so the mop doesn't push sand across the surface — leaves a beach property that smells clean but still has grit in the sheets. Our beach property protocol is built specifically around the sand reality.</div></div>
+      <div class="faq-item"><div class="faq-q">Do you provide deep cleaning for vacation rentals?<span class="ico">+</span></div><div class="faq-a">Yes. In addition to regular turnovers, we provide seasonal deep cleaning 3–4 times annually — before peak season (April/May), mid-season (July), end of season (September/October), and offseason (December/January). Deep cleans add inside appliances, baseboards, window tracks, ceiling fans, and grout work that standard turnovers don't include.</div></div>
+    </div>
+  </div>
+
 </div>
 
 <div class="cta-band">
-  <h2>Ready to Get Started?</h2>
-  <p>Free estimates · No obligation · We answer 24/7</p>
+  <h2>Your Guests Deserve a 5-Star Property. Let's Build It.</h2>
+  <p>Starting at $100 · Calendar sync · Same-day turnovers · All Horry County STR markets</p>
   <div class="cta-buttons">
     <a href="/get-quote/" class="btn-white">Get a Free Quote →</a>
-    <a href="tel:8434677136" class="btn-outline-w">📞 843-467-7136</a>
+    <a href="tel:8434677136" class="btn-ow">📞 843-467-7136</a>
   </div>
 </div>
-
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"Service","name":"Vacation Rental and Airbnb Cleaning","provider":{"@type":"LocalBusiness","name":"Bakerss Property Maintenance","telephone":"+18434677136"},"areaServed":"Horry County, SC","offers":{"@type":"Offer","priceCurrency":"USD","price":"100"}}</script>
 <footer>
   <div class="footer-inner">
     <div class="footer-top">
@@ -368,16 +512,8 @@ footer{background:var(--black);border-top:1px solid rgba(255,255,255,0.07);paddi
   <a href="sms:8434677136"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15a2 2 0 01-2 2H7l-4 4V5a2 2 0 012-2h14a2 2 0 012 2z"/></svg>Text</a>
   <a href="/get-quote/" class="primary"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/></svg>Free Quote</a>
 </div>
-
 <script>
-function toggleFaq(el){
-  const item = el.parentElement;
-  item.classList.toggle('open');
-}
-</script>
-<script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"How much does Airbnb cleaning cost in Myrtle Beach?","acceptedAnswer":{"@type":"Answer","text":"Airbnb and vacation rental turnover cleaning in Myrtle Beach starts at $100 for smaller units. Larger beach houses and multi-bedroom properties typically range from $150–$350 per turnover depending on size, number of bedrooms and bathrooms, and scope of service (linen management, restocking, etc.)."}},{"@type":"Question","name":"Can you handle same-day turnovers?","acceptedAnswer":{"@type":"Answer","text":"Yes. Same-day turnovers — where a guest checks out in the morning and a new guest arrives the same afternoon — are something we specialize in. We work efficiently to hit tight windows without cutting corners."}},{"@type":"Question","name":"Do you work with property management companies?","acceptedAnswer":{"@type":"Answer","text":"Yes. We partner with multiple property management companies in Horry County. We're reliable, responsive, and understand the accountability standards professional managers require."}},{"@type":"Question","name":"Can you manage our rental calendar?","acceptedAnswer":{"@type":"Answer","text":"We can sync with your rental platform or work off a shared schedule. Once we're set up, you don't need to contact us for each booking — we show up automatically on turnover days."}},{"@type":"Question","name":"What areas do you cover for vacation rental cleaning?","acceptedAnswer":{"@type":"Answer","text":"We cover all STR-heavy areas in Horry County: Myrtle Beach, North Myrtle Beach, Surfside Beach, Garden City, Murrells Inlet, Cherry Grove, Barefoot Resort, Ocean Lakes, Market Common, and all surrounding communities."}}]}</script>
-<script type="application/ld+json">
-{"@context":"https://schema.org","@type":"Service","name":"Airbnb Cleaning","provider":{"@type":"LocalBusiness","name":"Bakerss Property Maintenance","telephone":"+18434677136"},"areaServed":"Horry County, SC","url":"https://www.bakerss.com/services/airbnb-cleaning/","priceRange":"$100+"}
+document.querySelectorAll('.faq-q').forEach(q=>q.addEventListener('click',()=>q.parentElement.classList.toggle('open')));
 </script>
 </body>
 </html>
