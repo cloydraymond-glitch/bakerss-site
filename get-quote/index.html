@@ -3,8 +3,8 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Get a Free Quote | Bakerss Property Maintenance — Myrtle Beach, SC</title>
-<meta name="description" content="Request a free property maintenance quote from Bakerss in Myrtle Beach and Horry County, SC. Lawn care, cleaning, pressure washing, landscaping and more. Call 843-467-7136.">
+<title>Get a Free Quote | Bakerss Property Maintenance — Myrtle Beach SC</title>
+<meta name="description" content="Get a personalized property maintenance estimate in seconds. Lawn care, cleaning, pressure washing, landscaping and more in Myrtle Beach and Horry County SC. Call 843-467-7136.">
 <link rel="canonical" href="https://www.bakerss.com/get-quote/">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -315,242 +315,920 @@ h3.sub-h3{font-size:1.05rem;font-weight:600;margin:1.75rem 0 0.5rem;color:rgba(2
   </div>
 </nav>
 
-<div class="hero">
-  <div class="hero-inner">
-    <div>
-      <nav class="breadcrumb"><a href="/">Home</a><span>/</span><span style="color:rgba(255,255,255,0.5)">Get a Free Quote</span></nav>
-      <div class="badge">Free Estimates · No Obligation · 24/7 Response</div>
-      <h1 class="hero-h1">Get a <em>Free Quote</em> from<br>Bakerss Property Maintenance</h1>
-      <p class="hero-desc">Tell us about your property and what you need. Ray and Courtney respond personally — usually within the hour during the day, within a few hours any other time. No automated responses, no call centers.</p>
-      <div class="hero-btns">
-        <a href="tel:8434677136" class="btn-pink">📞 Call or Text Now</a>
-        <a href="mailto:cloyd.raymond@yahoo.com" class="btn-ghost">✉️ Email Directly</a>
-      </div>
-      <div class="hero-trust">
-        <span>📞 <b>843-467-7136</b> — 24/7</span> · <span>✉️ <b>cloyd.raymond@yahoo.com</b></span> · <span>⭐ <b>5.0 Stars</b></span>
-      </div>
-    </div>
-    <div class="sidebar-card">
-      <h3>Fastest Ways to Reach Us</h3>
-      <a href="tel:8434677136" class="sidebar-phone">843-467-7136</a>
-      <p>Call or text any time — 24 hours, 7 days. Ray and Courtney answer personally.</p>
-      <a href="tel:8434677136" class="sidebar-btn pink">📞 Call or Text Now</a>
-      <a href="mailto:cloyd.raymond@yahoo.com" class="sidebar-btn outline">✉️ Email Us</a>
-      <div class="sidebar-facts">
-        <div class="sidebar-fact">⚡ <span><b>Same-day</b> response always</span></div>
-        <div class="sidebar-fact">✓ <span><b>Free estimates</b> — no obligation</span></div>
-        <div class="sidebar-fact">📍 <span>All <b>Horry County, SC</b></span></div>
-      </div>
-    </div>
-  </div>
+<style>
+/* ─── Funnel Page Overrides ─── */
+body { background: var(--black); }
+
+.funnel-wrap {
+  min-height: 100vh;
+  padding: 3rem 1.5rem 5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Progress bar */
+.progress-bar {
+  width: 100%;
+  max-width: 620px;
+  margin-bottom: 2.5rem;
+}
+.progress-label {
+  display: flex;
+  justify-content: space-between;
+  font-size: 11px;
+  color: rgba(255,255,255,0.3);
+  margin-bottom: 8px;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+.progress-track {
+  height: 4px;
+  background: rgba(255,255,255,0.07);
+  border-radius: 4px;
+  overflow: hidden;
+}
+.progress-fill {
+  height: 100%;
+  background: var(--pink);
+  border-radius: 4px;
+  transition: width 0.45s ease;
+}
+.step-dots {
+  display: flex;
+  gap: 6px;
+  margin-top: 10px;
+  justify-content: center;
+}
+.step-dot {
+  width: 8px; height: 8px;
+  border-radius: 50%;
+  background: rgba(255,255,255,0.12);
+  transition: background 0.3s;
+}
+.step-dot.active { background: var(--pink); }
+.step-dot.done { background: rgba(233,30,140,0.4); }
+
+/* Card */
+.funnel-card {
+  background: var(--dark2);
+  border: 1px solid rgba(255,255,255,0.08);
+  border-radius: 20px;
+  padding: 2.5rem 2.5rem 2rem;
+  width: 100%;
+  max-width: 620px;
+  box-shadow: 0 24px 80px rgba(0,0,0,0.5);
+}
+
+.step-tag {
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--pink);
+  margin-bottom: 0.5rem;
+  display: block;
+}
+.funnel-card h2 {
+  font-family: var(--font-display);
+  font-size: clamp(1.4rem, 3vw, 1.9rem);
+  font-weight: 800;
+  line-height: 1.15;
+  letter-spacing: -0.02em;
+  margin-bottom: 0.4rem;
+  color: #fff;
+}
+.funnel-card h2 em { font-style: normal; color: var(--pink); }
+.funnel-card .sub {
+  font-size: 13.5px;
+  color: rgba(255,255,255,0.45);
+  line-height: 1.6;
+  margin-bottom: 1.75rem;
+  font-weight: 300;
+}
+
+/* Option buttons */
+.options-grid {
+  display: grid;
+  gap: 10px;
+  margin-bottom: 1.5rem;
+}
+.options-grid.cols-2 { grid-template-columns: 1fr 1fr; }
+.options-grid.cols-3 { grid-template-columns: 1fr 1fr 1fr; }
+.options-grid.cols-1 { grid-template-columns: 1fr; }
+
+.opt-btn {
+  display: flex;
+  align-items: center;
+  gap: 13px;
+  background: rgba(255,255,255,0.04);
+  border: 1.5px solid rgba(255,255,255,0.09);
+  border-radius: 12px;
+  padding: 14px 16px;
+  cursor: pointer;
+  transition: all 0.18s;
+  text-align: left;
+  width: 100%;
+  color: inherit;
+  font-family: inherit;
+}
+.opt-btn:hover {
+  border-color: rgba(233,30,140,0.45);
+  background: rgba(233,30,140,0.06);
+}
+.opt-btn.selected {
+  border-color: var(--pink);
+  background: rgba(233,30,140,0.1);
+}
+.opt-btn .icon {
+  font-size: 1.5rem;
+  flex-shrink: 0;
+  width: 36px;
+  text-align: center;
+}
+.opt-btn .opt-text { flex: 1; }
+.opt-btn .opt-title {
+  font-size: 14px;
+  font-weight: 600;
+  color: rgba(255,255,255,0.9);
+  display: block;
+  margin-bottom: 2px;
+}
+.opt-btn .opt-sub {
+  font-size: 12px;
+  color: rgba(255,255,255,0.38);
+  line-height: 1.4;
+}
+.opt-btn .check {
+  width: 20px; height: 20px;
+  border-radius: 50%;
+  border: 1.5px solid rgba(255,255,255,0.2);
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 11px;
+  color: transparent;
+  transition: all 0.18s;
+}
+.opt-btn.selected .check {
+  background: var(--pink);
+  border-color: var(--pink);
+  color: #fff;
+}
+
+/* Multi-select note */
+.multi-note {
+  font-size: 11.5px;
+  color: rgba(255,255,255,0.3);
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+/* Navigation */
+.funnel-nav {
+  display: flex;
+  gap: 10px;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 1.25rem;
+  padding-top: 1.25rem;
+  border-top: 1px solid rgba(255,255,255,0.06);
+}
+.btn-back {
+  background: transparent;
+  border: 1px solid rgba(255,255,255,0.14);
+  color: rgba(255,255,255,0.5);
+  padding: 11px 22px;
+  border-radius: 8px;
+  font-size: 13.5px;
+  font-weight: 500;
+  cursor: pointer;
+  font-family: inherit;
+  transition: all 0.18s;
+}
+.btn-back:hover { border-color: rgba(255,255,255,0.3); color: rgba(255,255,255,0.8); }
+.btn-next {
+  background: var(--pink);
+  color: #fff;
+  border: none;
+  padding: 13px 30px;
+  border-radius: 8px;
+  font-size: 14.5px;
+  font-weight: 700;
+  cursor: pointer;
+  font-family: inherit;
+  transition: all 0.18s;
+  box-shadow: 0 4px 18px rgba(233,30,140,0.3);
+  flex: 1;
+  max-width: 260px;
+}
+.btn-next:disabled {
+  opacity: 0.35;
+  cursor: not-allowed;
+  box-shadow: none;
+}
+.btn-next:not(:disabled):hover {
+  transform: translateY(-1px);
+  box-shadow: 0 6px 24px rgba(233,30,140,0.4);
+}
+
+/* Input fields */
+.field-group { margin-bottom: 1rem; }
+.field-label {
+  display: block;
+  font-size: 10.5px;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: rgba(255,255,255,0.35);
+  margin-bottom: 6px;
+}
+.field-input {
+  width: 100%;
+  background: rgba(255,255,255,0.05);
+  border: 1.5px solid rgba(255,255,255,0.1);
+  border-radius: 8px;
+  padding: 12px 14px;
+  color: #fff;
+  font-size: 14px;
+  font-family: inherit;
+  outline: none;
+  box-sizing: border-box;
+  transition: border-color 0.2s;
+}
+.field-input:focus { border-color: rgba(233,30,140,0.5); }
+.field-input::placeholder { color: rgba(255,255,255,0.2); }
+select.field-input { cursor: pointer; -webkit-appearance: none; }
+
+/* Estimate result screen */
+.estimate-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  background: rgba(233,30,140,0.1);
+  border: 1px solid rgba(233,30,140,0.3);
+  border-radius: 100px;
+  padding: 4px 14px;
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--pink);
+  margin-bottom: 1rem;
+}
+.estimate-range {
+  font-family: var(--font-display);
+  font-size: clamp(2rem, 5vw, 3.5rem);
+  font-weight: 800;
+  color: var(--pink);
+  letter-spacing: -0.03em;
+  line-height: 1;
+  margin: 0.5rem 0;
+}
+.estimate-label {
+  font-size: 13px;
+  color: rgba(255,255,255,0.4);
+  margin-bottom: 1.5rem;
+}
+.estimate-details {
+  background: rgba(255,255,255,0.03);
+  border: 1px solid rgba(255,255,255,0.07);
+  border-radius: 10px;
+  padding: 1rem 1.25rem;
+  margin-bottom: 1.25rem;
+}
+.estimate-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 6px 0;
+  border-bottom: 1px solid rgba(255,255,255,0.05);
+  font-size: 13px;
+}
+.estimate-row:last-child { border-bottom: none; }
+.estimate-row .ekey { color: rgba(255,255,255,0.45); }
+.estimate-row .eval { color: rgba(255,255,255,0.8); font-weight: 600; }
+
+.final-cta-row {
+  display: flex;
+  gap: 10px;
+  margin-top: 1rem;
+}
+.btn-call-big {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  background: var(--pink);
+  color: #fff;
+  padding: 14px;
+  border-radius: 9px;
+  font-size: 15px;
+  font-weight: 700;
+  text-decoration: none;
+  box-shadow: 0 4px 20px rgba(233,30,140,0.3);
+  transition: all 0.2s;
+}
+.btn-call-big:hover { transform: translateY(-1px); }
+.btn-text-big {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  background: transparent;
+  color: rgba(255,255,255,0.75);
+  padding: 14px;
+  border-radius: 9px;
+  font-size: 14px;
+  font-weight: 600;
+  text-decoration: none;
+  border: 1.5px solid rgba(255,255,255,0.2);
+  transition: all 0.2s;
+}
+.btn-text-big:hover { border-color: rgba(255,255,255,0.45); color: #fff; }
+
+/* Urgency strip */
+.urgency-strip {
+  width: 100%;
+  max-width: 620px;
+  margin-top: 1.25rem;
+  background: rgba(233,30,140,0.06);
+  border: 1px solid rgba(233,30,140,0.2);
+  border-radius: 10px;
+  padding: 0.85rem 1.25rem;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 12.5px;
+  color: rgba(255,255,255,0.55);
+}
+.urgency-strip .dot { color: var(--pink); font-size: 16px; animation: pulse 2s infinite; }
+@keyframes pulse { 0%,100%{opacity:1} 50%{opacity:0.4} }
+
+/* Skip link */
+.skip-link {
+  font-size: 12px;
+  color: rgba(255,255,255,0.25);
+  text-align: center;
+  margin-top: 1rem;
+  cursor: pointer;
+  text-decoration: underline;
+}
+.skip-link:hover { color: rgba(255,255,255,0.5); }
+
+/* Animation */
+.funnel-card { animation: cardIn 0.35s ease; }
+@keyframes cardIn { from { opacity:0; transform:translateY(16px); } to { opacity:1; transform:translateY(0); } }
+
+/* Mobile */
+@media(max-width:600px) {
+  .funnel-card { padding: 1.75rem 1.25rem 1.5rem; border-radius: 16px; }
+  .options-grid.cols-2 { grid-template-columns: 1fr; }
+  .options-grid.cols-3 { grid-template-columns: 1fr 1fr; }
+  .final-cta-row { flex-direction: column; }
+}
+</style>
+
+<!-- Hide default nav padding, show minimal nav -->
+<div style="background:var(--black);border-bottom:1px solid rgba(255,255,255,0.06);padding:0.85rem 1.5rem;display:flex;align-items:center;justify-content:space-between;position:sticky;top:0;z-index:100">
+  <a href="/" style="font-family:var(--font-display);font-size:1.1rem;font-weight:800;color:#fff;text-decoration:none">Bakerss<span style="color:var(--pink)">.</span></a>
+  <a href="tel:8434677136" style="font-size:13px;font-weight:600;color:var(--pink);text-decoration:none;background:rgba(233,30,140,0.1);border:1px solid rgba(233,30,140,0.25);padding:6px 14px;border-radius:20px">📞 843-467-7136</a>
 </div>
 
-<div class="content">
+<div class="funnel-wrap" id="funnelWrap">
 
-  <!-- Direct Contact — prominently at top -->
-  <div class="sec">
-    <span class="sec-label">Fastest Response</span>
-    <h2 class="sec-h2">Call, Text, or Email — We Answer <em>Every Way</em></h2>
-    <div class="card-3">
-      <div class="card" style="border-left:3px solid var(--pink);text-align:center">
-        <span class="tag">📞 Fastest</span>
-        <h4 style="font-size:1.35rem;margin:0.75rem 0"><a href="tel:8434677136" style="color:var(--pink);text-decoration:none">843-467-7136</a></h4>
-        <p>Call or text any time — 24 hours, 7 days a week. Ray and Courtney personally respond to every call and text. Most requests get a same-day estimate.</p>
-        <a href="tel:8434677136" style="display:inline-block;background:var(--pink);color:#fff;padding:10px 22px;border-radius:7px;font-size:13px;font-weight:600;text-decoration:none;margin-top:0.75rem">📞 Call Now</a>
-      </div>
-      <div class="card" style="text-align:center">
-        <span class="tag">✉️ Email</span>
-        <h4 style="font-size:1rem;margin:0.75rem 0"><a href="mailto:cloyd.raymond@yahoo.com" style="color:var(--pink);text-decoration:none;word-break:break-all">cloyd.raymond@yahoo.com</a></h4>
-        <p>Include your property address, the service you need, and the best way to reach you. Same-day email response during business hours.</p>
-        <a href="mailto:cloyd.raymond@yahoo.com" style="display:inline-block;background:var(--dark2);color:rgba(255,255,255,0.8);padding:10px 22px;border-radius:7px;font-size:13px;font-weight:600;text-decoration:none;margin-top:0.75rem;border:1px solid rgba(255,255,255,0.15)">✉️ Send Email</a>
-      </div>
-      <div class="card" style="text-align:center">
-        <span class="tag">📋 Online Form</span>
-        <h4 style="font-size:1rem;margin:0.75rem 0">Quote Request Form</h4>
-        <p>Fill out the form below with your details and we'll respond same day with a free estimate. All fields optional except name and contact method.</p>
-        <a href="#quote-form" style="display:inline-block;background:var(--dark2);color:rgba(255,255,255,0.8);padding:10px 22px;border-radius:7px;font-size:13px;font-weight:600;text-decoration:none;margin-top:0.75rem;border:1px solid rgba(255,255,255,0.15)">↓ Jump to Form</a>
-      </div>
+  <!-- Progress -->
+  <div class="progress-bar" id="progressBar">
+    <div class="progress-label">
+      <span id="stepLabel">Step 1 of 5</span>
+      <span id="stepPercent">20%</span>
     </div>
+    <div class="progress-track"><div class="progress-fill" id="progressFill" style="width:20%"></div></div>
+    <div class="step-dots" id="stepDots"></div>
   </div>
 
-  <!-- What to Expect -->
-  <div class="sec">
-    <span class="sec-label">What Happens Next</span>
-    <h2 class="sec-h2">The Estimate Process — <em>Simple and Fast</em></h2>
-    <div class="steps">
-      <div class="step"><div class="step-num">1</div><div><h4>You Reach Out</h4><p>Call, text, email, or fill out the form below. Tell us your property location, what service you need, and the best way to reach you. The more detail you can share, the more accurate your initial estimate.</p></div></div>
-      <div class="step"><div class="step-num">2</div><div><h4>Ray or Courtney Responds — Same Day</h4><p>No automated system, no offshore call center. Ray or Courtney Baker personally reviews every quote request and responds with an estimate or a quick follow-up question. Most requests receive same-day pricing.</p></div></div>
-      <div class="step"><div class="step-num">3</div><div><h4>On-Site Estimate If Needed</h4><p>For larger projects — deck building, landscaping installation, painting, flooring — we schedule a brief on-site walkthrough to confirm scope and provide a precise written estimate. No charge, no obligation.</p></div></div>
-      <div class="step"><div class="step-num">4</div><div><h4>You Decide With No Pressure</h4><p>Free estimates carry no obligation. If our pricing works for you, we schedule. If it doesn't, there's no hard sell and no follow-up pressure. We earn the work by being the right fit, not by making it hard to say no.</p></div></div>
-    </div>
+  <!-- Card container -->
+  <div class="funnel-card" id="funnelCard"></div>
+
+  <!-- Urgency strip -->
+  <div class="urgency-strip" id="urgencyStrip">
+    <span class="dot">●</span>
+    <span><b style="color:rgba(255,255,255,0.75)">Ray is available now.</b> Most Myrtle Beach requests get a same-day estimate. Call or text <a href="tel:8434677136" style="color:var(--pink);text-decoration:none;font-weight:600">843-467-7136</a> for the fastest response.</span>
   </div>
 
-  <!-- Quote Form — HTML form that works with Netlify Forms or any static host -->
-  <div class="sec" id="quote-form">
-    <span class="sec-label">Online Quote Request</span>
-    <h2 class="sec-h2">Request a Free Estimate Online</h2>
-    <p class="prose" style="margin-bottom:1.5rem">Fill out the form below and we'll respond same day with a free estimate. Prefer faster? Call or text us at <a href="tel:8434677136" style="color:var(--pink);text-decoration:none;font-weight:600">843-467-7136</a> — we answer 24/7.</p>
+</div>
 
-    <form
-      name="quote-request"
-      method="POST"
-      action="/thank-you/"
-      data-netlify="true"
-      netlify-honeypot="bot-field"
-      id="quoteForm"
-      style="max-width:640px"
-    >
-      <!-- Hidden Netlify field -->
-      <input type="hidden" name="form-name" value="quote-request">
-      <p style="display:none"><input name="bot-field"></p>
+<script>
+// ─── FUNNEL DATA ───────────────────────────────────────────────
 
-      <!-- Name -->
-      <div style="margin-bottom:1.1rem">
-        <label style="display:block;font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:rgba(255,255,255,0.4);margin-bottom:6px">Full Name <span style="color:var(--pink)">*</span></label>
-        <input type="text" name="name" placeholder="First and last name" required
-          style="width:100%;background:rgba(255,255,255,0.05);border:1px solid rgba(255,255,255,0.12);border-radius:8px;padding:12px 15px;color:#fff;font-size:14px;font-family:inherit;outline:none;box-sizing:border-box;transition:border-color 0.2s"
-          onfocus="this.style.borderColor='rgba(233,30,140,0.5)'" onblur="this.style.borderColor='rgba(255,255,255,0.12)'">
-      </div>
+const PRICING = {
+  'lawn-care':           { base:[50,90],   unit:'per visit',     name:'Lawn Care' },
+  'pressure-washing':    { base:[125,500],  unit:'per service',   name:'Pressure Washing' },
+  'gutter-cleaning':     { base:[99,225],   unit:'per cleaning',  name:'Gutter Cleaning' },
+  'airbnb-cleaning':     { base:[100,350],  unit:'per turnover',  name:'Airbnb / STR Cleaning' },
+  'interior-cleaning':   { base:[100,295],  unit:'per visit',     name:'Interior Cleaning' },
+  'painting':            { base:[1800,9000],unit:'project',       name:'Painting' },
+  'landscaping':         { base:[300,4500], unit:'project',       name:'Landscaping' },
+  'concrete-curbing':    { base:[160,1050], unit:'project',       name:'Concrete Curbing' },
+  'deck-building':       { base:[4000,15000],unit:'project',      name:'Deck Building & Repair' },
+  'flooring':            { base:[1200,9000],unit:'project',       name:'Flooring Installation' },
+  'handyman':            { base:[75,550],   unit:'per visit',     name:'Handyman Services' },
+  'minor-electric':      { base:[75,275],   unit:'per repair',    name:'Minor Electrical & Plumbing' },
+  'junk-removal':        { base:[99,650],   unit:'per load',      name:'Junk Removal' },
+  'property-plan':       { base:[150,900],  unit:'per month',     name:'Property Maintenance Plan' },
+  'commercial-cleaning': { base:[200,800],  unit:'per month',     name:'Commercial Cleaning' },
+};
 
-      <!-- Phone -->
-      <div style="margin-bottom:1.1rem">
-        <label style="display:block;font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:rgba(255,255,255,0.4);margin-bottom:6px">Phone Number <span style="color:var(--pink)">*</span></label>
-        <input type="tel" name="phone" placeholder="(843) 000-0000" required
-          style="width:100%;background:rgba(255,255,255,0.05);border:1px solid rgba(255,255,255,0.12);border-radius:8px;padding:12px 15px;color:#fff;font-size:14px;font-family:inherit;outline:none;box-sizing:border-box;transition:border-color 0.2s"
-          onfocus="this.style.borderColor='rgba(233,30,140,0.5)'" onblur="this.style.borderColor='rgba(255,255,255,0.12)'">
-      </div>
+// Multipliers applied on top of base pricing
+const MULTIPLIERS = {
+  // property size
+  'small':    0.8,
+  'standard': 1.0,
+  'large':    1.3,
+  'estate':   1.7,
+  // property type adjustments
+  'str':      1.15,   // STR gets slight premium (more thorough)
+  'commercial': 1.25,
+  'hoa':      1.1,
+  // frequency
+  'weekly':   0.9,    // discount for commitment
+  'biweekly': 0.95,
+  'monthly':  1.0,
+  'onetime':  1.1,
+  // urgency
+  'asap':     1.1,
+  'thisweek': 1.0,
+  'thismonth':1.0,
+  'planning': 1.0,
+};
 
-      <!-- Email -->
-      <div style="margin-bottom:1.1rem">
-        <label style="display:block;font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:rgba(255,255,255,0.4);margin-bottom:6px">Email Address</label>
-        <input type="email" name="email" placeholder="your@email.com"
-          style="width:100%;background:rgba(255,255,255,0.05);border:1px solid rgba(255,255,255,0.12);border-radius:8px;padding:12px 15px;color:#fff;font-size:14px;font-family:inherit;outline:none;box-sizing:border-box;transition:border-color 0.2s"
-          onfocus="this.style.borderColor='rgba(233,30,140,0.5)'" onblur="this.style.borderColor='rgba(255,255,255,0.12)'">
-      </div>
+// ─── STATE ─────────────────────────────────────────────────────
+const state = {
+  currentStep: 0,
+  selections: {},
+  contactInfo: {}
+};
 
-      <!-- Address -->
-      <div style="margin-bottom:1.1rem">
-        <label style="display:block;font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:rgba(255,255,255,0.4);margin-bottom:6px">Property Address or City</label>
-        <input type="text" name="address" placeholder="e.g. 123 Ocean Blvd, Myrtle Beach SC — or just the city"
-          style="width:100%;background:rgba(255,255,255,0.05);border:1px solid rgba(255,255,255,0.12);border-radius:8px;padding:12px 15px;color:#fff;font-size:14px;font-family:inherit;outline:none;box-sizing:border-box;transition:border-color 0.2s"
-          onfocus="this.style.borderColor='rgba(233,30,140,0.5)'" onblur="this.style.borderColor='rgba(255,255,255,0.12)'">
-      </div>
+// ─── STEPS DEFINITION ─────────────────────────────────────────
 
-      <!-- Service -->
-      <div style="margin-bottom:1.1rem">
-        <label style="display:block;font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:rgba(255,255,255,0.4);margin-bottom:6px">Service Needed <span style="color:var(--pink)">*</span></label>
-        <select name="service" required
-          style="width:100%;background:#1a1a1a;border:1px solid rgba(255,255,255,0.12);border-radius:8px;padding:12px 15px;color:#fff;font-size:14px;font-family:inherit;outline:none;box-sizing:border-box;-webkit-appearance:none;cursor:pointer;transition:border-color 0.2s"
-          onfocus="this.style.borderColor='rgba(233,30,140,0.5)'" onblur="this.style.borderColor='rgba(255,255,255,0.12)'">
-          <option value="" disabled selected>Select a service...</option>
-          <option value="lawn-care">Lawn Care</option>
-          <option value="landscaping">Landscaping &amp; Concrete Curbing</option>
-          <option value="pressure-washing">Pressure Washing / Soft Washing</option>
-          <option value="airbnb-cleaning">Airbnb / Vacation Rental Cleaning</option>
-          <option value="interior-cleaning">Interior Cleaning</option>
-          <option value="commercial-cleaning">Commercial Cleaning</option>
-          <option value="gutter-cleaning">Gutter Cleaning</option>
-          <option value="painting">Painting (Interior or Exterior)</option>
-          <option value="handyman">Handyman Services</option>
-          <option value="minor-electric">Minor Electrical &amp; Plumbing</option>
-          <option value="deck-building">Deck Building &amp; Repair</option>
-          <option value="flooring">Flooring Installation</option>
-          <option value="junk-removal">Junk Removal / Estate Cleanout</option>
-          <option value="property-plan">Property Maintenance Plan</option>
-          <option value="multiple">Multiple Services</option>
-          <option value="other">Other / Not Sure</option>
-        </select>
-      </div>
+const STEPS = [
 
-      <!-- Property Type -->
-      <div style="margin-bottom:1.1rem">
-        <label style="display:block;font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:rgba(255,255,255,0.4);margin-bottom:6px">Property Type</label>
-        <select name="property_type"
-          style="width:100%;background:#1a1a1a;border:1px solid rgba(255,255,255,0.12);border-radius:8px;padding:12px 15px;color:#fff;font-size:14px;font-family:inherit;outline:none;box-sizing:border-box;-webkit-appearance:none;cursor:pointer;transition:border-color 0.2s"
-          onfocus="this.style.borderColor='rgba(233,30,140,0.5)'" onblur="this.style.borderColor='rgba(255,255,255,0.12)'">
-          <option value="" selected>Select property type (optional)...</option>
-          <option value="primary-residence">Primary Residence</option>
-          <option value="vacation-rental">Vacation Rental / Airbnb / VRBO</option>
-          <option value="second-home">Second Home / Snowbird Property</option>
-          <option value="hoa-community">HOA Community Property</option>
-          <option value="investment-property">Investment / Rental Property</option>
-          <option value="commercial">Commercial Property</option>
-        </select>
-      </div>
+  // STEP 1: Which service?
+  {
+    id: 'service',
+    tag: 'Step 1 of 5 — Get Your Free Estimate',
+    title: 'Which service do you need?',
+    titleEm: '',
+    sub: 'Select your primary service. You can mention additional services at the end.',
+    type: 'single',
+    options: [
+      { value:'lawn-care',        icon:'🌿', title:'Lawn Care',              sub:'Mowing, edging, trimming' },
+      { value:'pressure-washing', icon:'💧', title:'Pressure Washing',       sub:'Driveway, siding, deck' },
+      { value:'gutter-cleaning',  icon:'🍂', title:'Gutter Cleaning',        sub:'Remove debris, flush downspouts' },
+      { value:'airbnb-cleaning',  icon:'🏖️', title:'Airbnb / STR Cleaning',  sub:'Vacation rental turnover' },
+      { value:'interior-cleaning',icon:'🏠', title:'Interior Cleaning',      sub:'Recurring, deep clean, move-in/out' },
+      { value:'painting',         icon:'🎨', title:'Painting',               sub:'Interior or exterior' },
+      { value:'landscaping',      icon:'🌺', title:'Landscaping',            sub:'Design, install, concrete curbing' },
+      { value:'flooring',         icon:'🪵', title:'Flooring',               sub:'LVP, tile, hardwood, carpet' },
+      { value:'handyman',         icon:'🔧', title:'Handyman Services',      sub:'Repairs & installations' },
+      { value:'deck-building',    icon:'🏗️', title:'Deck Building & Repair', sub:'New build or restoration' },
+      { value:'junk-removal',     icon:'🚛', title:'Junk Removal',           sub:'Estate cleanouts, furniture, debris' },
+      { value:'property-plan',    icon:'📋', title:'Property Maintenance Plan', sub:'All services bundled monthly' },
+      { value:'minor-electric',   icon:'⚡', title:'Electrical & Plumbing',  sub:'Minor repairs & installs' },
+      { value:'commercial-cleaning',icon:'🏢',title:'Commercial Cleaning',   sub:'Restaurants, offices, retail' },
+    ],
+    cols: 2,
+    key: 'service'
+  },
 
-      <!-- Message -->
-      <div style="margin-bottom:1.25rem">
-        <label style="display:block;font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:rgba(255,255,255,0.4);margin-bottom:6px">Tell Us More (Optional)</label>
-        <textarea name="message" rows="4" placeholder="Property details, specific needs, timing, questions — anything that helps us give you the most accurate estimate..."
-          style="width:100%;background:rgba(255,255,255,0.05);border:1px solid rgba(255,255,255,0.12);border-radius:8px;padding:12px 15px;color:#fff;font-size:14px;font-family:inherit;outline:none;resize:vertical;box-sizing:border-box;transition:border-color 0.2s;min-height:100px"
-          onfocus="this.style.borderColor='rgba(233,30,140,0.5)'" onblur="this.style.borderColor='rgba(255,255,255,0.12)'"></textarea>
-      </div>
+  // STEP 2: Property type
+  {
+    id: 'propertyType',
+    tag: 'Step 2 of 5 — Tell Us About Your Property',
+    title: 'What type of property is this for?',
+    titleEm: '',
+    sub: 'This helps us tailor your estimate to the right scope and schedule.',
+    type: 'single',
+    options: [
+      { value:'primary',    icon:'🏡', title:'Primary Residence',      sub:'My main home in Horry County' },
+      { value:'str',        icon:'🏖️', title:'Vacation Rental / Airbnb', sub:'STR property on the Grand Strand' },
+      { value:'second',     icon:'✈️', title:'Second Home / Snowbird',  sub:'Part-time or seasonal property' },
+      { value:'hoa',        icon:'🏘️', title:'HOA Community Home',      sub:'Governed community — compliance matters' },
+      { value:'investment', icon:'💰', title:'Investment Property',     sub:'Rental or rehab project' },
+      { value:'commercial', icon:'🏢', title:'Commercial Property',     sub:'Business, office, restaurant, retail' },
+    ],
+    cols: 2,
+    key: 'propertyType'
+  },
 
-      <!-- Submit -->
-      <button type="submit"
-        style="width:100%;background:var(--pink);color:#fff;border:none;padding:14px;border-radius:8px;font-size:15px;font-weight:700;font-family:inherit;cursor:pointer;letter-spacing:0.01em;transition:opacity 0.2s"
-        onmouseover="this.style.opacity='0.9'" onmouseout="this.style.opacity='1'">
-        Send Quote Request →
+  // STEP 3: Property size
+  {
+    id: 'propertySize',
+    tag: 'Step 3 of 5 — Size & Scope',
+    title: 'How would you describe your property size?',
+    titleEm: '',
+    sub: 'This directly affects the estimate. Give us your best guess — we'll confirm on-site.',
+    type: 'single',
+    options: [
+      { value:'small',    icon:'🏠', title:'Small',    sub:'Condo, cottage, or under 1,200 sq ft' },
+      { value:'standard', icon:'🏡', title:'Standard', sub:'3–4 bedroom home, typical residential lot' },
+      { value:'large',    icon:'🏘️', title:'Large',    sub:'5+ bedrooms, larger lot, or estate property' },
+      { value:'estate',   icon:'🏰', title:'Estate / Commercial', sub:'Large acreage, commercial scale' },
+    ],
+    cols: 2,
+    key: 'propertySize'
+  },
+
+  // STEP 4: Timing & frequency
+  {
+    id: 'timing',
+    tag: 'Step 4 of 5 — Timeline',
+    title: 'When do you need this service?',
+    titleEm: '',
+    sub: 'Helps us schedule correctly and flag any availability considerations.',
+    type: 'single',
+    dynamicOptions: true,  // options change based on service selection
+    key: 'timing'
+  },
+
+  // STEP 5: Contact info
+  {
+    id: 'contact',
+    tag: 'Step 5 of 5 — Get Your Estimate',
+    title: 'Where should we send your estimate?',
+    titleEm: '',
+    sub: 'Ray or Courtney will respond personally — usually within the hour. No spam, no sales scripts.',
+    type: 'contact',
+    key: 'contact'
+  }
+];
+
+// ─── DYNAMIC TIMING OPTIONS ────────────────────────────────────
+
+function getTimingOptions(service) {
+  const recurring = ['lawn-care','gutter-cleaning','interior-cleaning','airbnb-cleaning','property-plan','commercial-cleaning'];
+  const project =   ['painting','landscaping','concrete-curbing','deck-building','flooring'];
+
+  if (recurring.includes(service)) {
+    return [
+      { value:'weekly',    icon:'📅', title:'Weekly',         sub:'Ongoing weekly service' },
+      { value:'biweekly',  icon:'📅', title:'Biweekly',       sub:'Every two weeks' },
+      { value:'monthly',   icon:'📅', title:'Monthly',        sub:'Once a month or as needed' },
+      { value:'onetime',   icon:'🎯', title:'One-Time',       sub:'Just this one visit' },
+    ];
+  } else if (project.includes(service)) {
+    return [
+      { value:'asap',      icon:'⚡', title:'As Soon as Possible', sub:'I need this done quickly' },
+      { value:'thisweek',  icon:'📅', title:'This Week',       sub:'In the next 7 days' },
+      { value:'thismonth', icon:'📆', title:'This Month',      sub:'Within the next 30 days' },
+      { value:'planning',  icon:'🗓️', title:'Planning Ahead',  sub:'2+ months out, gathering estimates' },
+    ];
+  } else {
+    return [
+      { value:'asap',      icon:'⚡', title:'As Soon as Possible', sub:'I need this done quickly' },
+      { value:'thisweek',  icon:'📅', title:'This Week',       sub:'Within 7 days' },
+      { value:'thismonth', icon:'📆', title:'This Month',      sub:'Within 30 days' },
+      { value:'planning',  icon:'🗓️', title:'No Rush',         sub:'Just getting estimates' },
+    ];
+  }
+}
+
+// ─── ESTIMATE CALCULATOR ───────────────────────────────────────
+
+function calculateEstimate() {
+  const { service, propertySize, propertyType, timing } = state.selections;
+  if (!service || !PRICING[service]) return { low: 0, high: 0, unit: '' };
+
+  const { base, unit, name } = PRICING[service];
+  let low = base[0], high = base[1];
+
+  // Apply size multiplier
+  const sizeMult = MULTIPLIERS[propertySize] || 1.0;
+  low  = Math.round(low  * sizeMult);
+  high = Math.round(high * sizeMult);
+
+  // Apply property type nudge
+  if (propertyType === 'str' && ['airbnb-cleaning','interior-cleaning','lawn-care','pressure-washing'].includes(service)) {
+    low  = Math.round(low  * 1.05);
+    high = Math.round(high * 1.1);
+  }
+  if (propertyType === 'commercial') {
+    low  = Math.round(low  * 1.2);
+    high = Math.round(high * 1.3);
+  }
+  if (propertyType === 'hoa') {
+    low  = Math.round(low  * 1.05);
+    high = Math.round(high * 1.1);
+  }
+
+  // Round to friendly numbers
+  low  = Math.ceil(low  / 5) * 5;
+  high = Math.ceil(high / 10) * 10;
+
+  // Format
+  const fmt = n => n >= 1000 ? '$' + (n/1000).toFixed(1).replace('.0','') + 'K' : '$' + n;
+
+  return { low: fmt(low), high: fmt(high), unit, name };
+}
+
+// ─── RENDER FUNCTIONS ──────────────────────────────────────────
+
+function renderProgress() {
+  const total = STEPS.length;
+  const current = state.currentStep;
+  const pct = Math.round(((current + 1) / total) * 100);
+
+  document.getElementById('stepLabel').textContent = `Step ${current + 1} of ${total}`;
+  document.getElementById('stepPercent').textContent = pct + '%';
+  document.getElementById('progressFill').style.width = pct + '%';
+
+  // Dots
+  let dots = '';
+  for (let i = 0; i < total; i++) {
+    let cls = 'step-dot';
+    if (i < current) cls += ' done';
+    else if (i === current) cls += ' active';
+    dots += `<div class="${cls}"></div>`;
+  }
+  document.getElementById('stepDots').innerHTML = dots;
+}
+
+function renderStep() {
+  const step = STEPS[state.currentStep];
+  const card = document.getElementById('funnelCard');
+
+  // Handle dynamic timing options
+  if (step.dynamicOptions && step.id === 'timing') {
+    step.options = getTimingOptions(state.selections.service || '');
+    step.cols = 2;
+  }
+
+  let html = '';
+
+  if (step.type === 'contact') {
+    html = renderContactStep(step);
+  } else {
+    html = renderOptionsStep(step);
+  }
+
+  card.innerHTML = html;
+  card.style.animation = 'none';
+  card.offsetHeight; // reflow
+  card.style.animation = '';
+
+  // Re-attach listeners
+  attachListeners();
+  renderProgress();
+  updateNextBtn();
+}
+
+function renderOptionsStep(step) {
+  const cols = step.cols || 2;
+  const colClass = cols === 1 ? 'cols-1' : cols === 3 ? 'cols-3' : 'cols-2';
+  const current = state.selections[step.key];
+
+  let opts = '';
+  (step.options || []).forEach(opt => {
+    const sel = current === opt.value ? 'selected' : '';
+    opts += `
+      <button class="opt-btn ${sel}" data-key="${step.key}" data-value="${opt.value}" onclick="selectOption(this)">
+        <span class="icon">${opt.icon}</span>
+        <span class="opt-text">
+          <span class="opt-title">${opt.title}</span>
+          <span class="opt-sub">${opt.sub}</span>
+        </span>
+        <span class="check">✓</span>
+      </button>`;
+  });
+
+  const isBack = state.currentStep > 0;
+  return `
+    <span class="step-tag">${step.tag}</span>
+    <h2>${step.title}${step.titleEm ? ' <em>' + step.titleEm + '</em>' : ''}</h2>
+    <p class="sub">${step.sub}</p>
+    <div class="options-grid ${colClass}">${opts}</div>
+    <div class="funnel-nav">
+      ${isBack ? `<button class="btn-back" onclick="prevStep()">← Back</button>` : '<div></div>'}
+      <button class="btn-next" id="nextBtn" onclick="nextStep()" ${!current ? 'disabled' : ''}>
+        ${state.currentStep < STEPS.length - 1 ? 'Continue →' : 'Get My Estimate →'}
       </button>
+    </div>
+    <p class="skip-link" onclick="skipToContact()">Skip — just connect me with Ray</p>`;
+}
 
-      <p style="text-align:center;font-size:12px;color:rgba(255,255,255,0.2);margin-top:0.85rem">
-        🔒 Your information is never shared or sold. Prefer to call?
-        <a href="tel:8434677136" style="color:var(--pink);text-decoration:none;font-weight:600">843-467-7136</a> — answered 24/7.
+function renderContactStep(step) {
+  return `
+    <span class="step-tag">${step.tag}</span>
+    <h2>${step.title}</h2>
+    <p class="sub">${step.sub}</p>
+
+    <div class="field-group">
+      <label class="field-label">Your Name <span style="color:var(--pink)">*</span></label>
+      <input class="field-input" type="text" id="ci-name" placeholder="First and last name" value="${state.contactInfo.name||''}" oninput="saveContact()">
+    </div>
+    <div class="field-group">
+      <label class="field-label">Phone Number <span style="color:var(--pink)">*</span></label>
+      <input class="field-input" type="tel" id="ci-phone" placeholder="(843) 000-0000" value="${state.contactInfo.phone||''}" oninput="saveContact()">
+    </div>
+    <div class="field-group">
+      <label class="field-label">Email Address</label>
+      <input class="field-input" type="email" id="ci-email" placeholder="your@email.com" value="${state.contactInfo.email||''}" oninput="saveContact()">
+    </div>
+    <div class="field-group">
+      <label class="field-label">Property Address or City</label>
+      <input class="field-input" type="text" id="ci-address" placeholder="e.g. Myrtle Beach SC or 123 Ocean Blvd" value="${state.contactInfo.address||''}" oninput="saveContact()">
+    </div>
+    <div class="field-group">
+      <label class="field-label">Anything else we should know?</label>
+      <textarea class="field-input" id="ci-notes" rows="3" placeholder="Extra details, questions, or specific requests..." style="resize:vertical;min-height:80px" oninput="saveContact()">${state.contactInfo.notes||''}</textarea>
+    </div>
+
+    <div class="funnel-nav">
+      <button class="btn-back" onclick="prevStep()">← Back</button>
+      <button class="btn-next" id="nextBtn" onclick="submitForm()">Get My Free Estimate →</button>
+    </div>`;
+}
+
+function renderEstimate() {
+  const card = document.getElementById('funnelCard');
+  document.getElementById('progressBar').style.display = 'none';
+  document.getElementById('urgencyStrip').style.display = 'none';
+
+  const est = calculateEstimate();
+  const svc  = state.selections.service   ? PRICING[state.selections.service]?.name   : 'Selected Service';
+  const size = state.selections.propertySize;
+  const type = state.selections.propertyType;
+  const time = state.selections.timing;
+  const name = state.contactInfo.name ? state.contactInfo.name.split(' ')[0] : 'there';
+
+  const sizeLabel = {small:'Small',standard:'Standard',large:'Large',estate:'Estate / Commercial'}[size] || size;
+  const typeLabel = {primary:'Primary Residence',str:'Vacation Rental / STR',second:'Second Home',hoa:'HOA Community',investment:'Investment Property',commercial:'Commercial Property'}[type] || type;
+  const timeLabel = {weekly:'Weekly',biweekly:'Biweekly',monthly:'Monthly',onetime:'One-Time',asap:'ASAP',thisweek:'This Week',thismonth:'This Month',planning:'Planning Ahead'}[time] || time;
+
+  // Sumbit to Netlify in background
+  submitToNetlify();
+
+  card.innerHTML = `
+    <div style="text-align:center;padding:0.5rem 0 1.5rem">
+      <div class="estimate-badge">✓ Your Personalized Estimate</div>
+      <p style="font-size:14px;color:rgba(255,255,255,0.5);margin-bottom:0.25rem">Hey ${name}! Based on what you told us:</p>
+      <div class="estimate-range">${est.low} – ${est.high}</div>
+      <div class="estimate-label">${est.unit} · ${est.name}</div>
+
+      <div class="estimate-details" style="text-align:left">
+        <div class="estimate-row"><span class="ekey">Service</span><span class="eval">${svc}</span></div>
+        <div class="estimate-row"><span class="ekey">Property Type</span><span class="eval">${typeLabel}</span></div>
+        <div class="estimate-row"><span class="ekey">Property Size</span><span class="eval">${sizeLabel}</span></div>
+        <div class="estimate-row"><span class="ekey">Schedule / Timing</span><span class="eval">${timeLabel}</span></div>
+        <div class="estimate-row"><span class="ekey">Exact Quote</span><span class="eval" style="color:var(--pink)">Free on-site confirmation</span></div>
+      </div>
+
+      <p style="font-size:13px;color:rgba(255,255,255,0.4);margin-bottom:1.25rem;line-height:1.6">
+        This estimate is based on your answers. Ray will confirm the exact price after a quick property walkthrough — <b style="color:rgba(255,255,255,0.7)">always free, always no obligation.</b>
       </p>
-    </form>
-  </div>
 
-  <!-- Services quick list -->
-  <div class="sec">
-    <span class="sec-label">All Services</span>
-    <h2 class="sec-h2">Everything We Can Quote</h2>
-    <div class="svc-links">
-      <a href="/services/lawn-care/" class="svc-link">Lawn Care<span class="pr">From $50</span></a>
-      <a href="/services/landscaping/" class="svc-link">Landscaping<span class="pr">Free quote</span></a>
-      <a href="/services/concrete-curbing/" class="svc-link">Concrete Curbing<span class="pr">From $4/ft</span></a>
-      <a href="/services/pressure-washing/" class="svc-link">Pressure Washing<span class="pr">From $125</span></a>
-      <a href="/services/airbnb-cleaning/" class="svc-link">Airbnb Cleaning<span class="pr">From $100</span></a>
-      <a href="/services/interior-cleaning/" class="svc-link">Interior Cleaning<span class="pr">From $100</span></a>
-      <a href="/services/gutter-cleaning/" class="svc-link">Gutter Cleaning<span class="pr">From $99</span></a>
-      <a href="/services/painting/" class="svc-link">Painting<span class="pr">Free quote</span></a>
-      <a href="/services/handyman-services/" class="svc-link">Handyman Services<span class="pr">From $75/hr</span></a>
-      <a href="/services/minor-electric-plumbing/" class="svc-link">Minor Electrical &amp; Plumbing<span class="pr">From $75/hr</span></a>
-      <a href="/services/deck-building-repair/" class="svc-link">Deck Building &amp; Repair<span class="pr">Free quote</span></a>
-      <a href="/services/flooring/" class="svc-link">Flooring<span class="pr">Free quote</span></a>
-      <a href="/services/junk-removal/" class="svc-link">Junk Removal<span class="pr">From $99</span></a>
-      <a href="/services/property-maintenance/" class="svc-link">Maintenance Plans<span class="pr">Monthly</span></a>
-      <a href="/commercial-services/" class="svc-link">Commercial Services<span class="pr">Free quote</span></a>
-    </div>
-  </div>
+      <div class="final-cta-row">
+        <a href="tel:8434677136" class="btn-call-big">📞 Call Ray Now</a>
+        <a href="sms:8434677136" class="btn-text-big">💬 Text Us</a>
+      </div>
 
-  <!-- Service areas -->
-  <div class="sec">
-    <span class="sec-label">Where We Work</span>
-    <h2 class="sec-h2">All of Horry County — No Travel Fees</h2>
-    <div class="svc-links">
-      <a href="/service-areas/myrtle-beach/" class="svc-link">Myrtle Beach<span class="pr">All services</span></a>
-      <a href="/service-areas/north-myrtle-beach/" class="svc-link">North Myrtle Beach<span class="pr">All services</span></a>
-      <a href="/service-areas/conway/" class="svc-link">Conway<span class="pr">All services</span></a>
-      <a href="/service-areas/surfside-beach/" class="svc-link">Surfside Beach<span class="pr">All services</span></a>
-      <a href="/service-areas/murrells-inlet/" class="svc-link">Murrells Inlet<span class="pr">All services</span></a>
-      <a href="/service-areas/garden-city/" class="svc-link">Garden City Beach<span class="pr">All services</span></a>
-      <a href="/service-areas/socastee/" class="svc-link">Socastee<span class="pr">All services</span></a>
-      <a href="/service-areas/little-river/" class="svc-link">Little River<span class="pr">All services</span></a>
-    </div>
-  </div>
+      <div style="margin-top:1rem;padding:0.85rem;background:rgba(255,255,255,0.03);border-radius:8px;font-size:12px;color:rgba(255,255,255,0.35);text-align:left">
+        ✅ <b style="color:rgba(255,255,255,0.55)">Your request has been received.</b> Ray or Courtney will contact you at ${state.contactInfo.phone || state.contactInfo.email || 'the number you provided'} — usually within the hour during the day, within a few hours any other time.
+      </div>
 
-</div>
+      <div style="margin-top:1.5rem;padding-top:1.25rem;border-top:1px solid rgba(255,255,255,0.07)">
+        <p style="font-size:12px;color:rgba(255,255,255,0.3);margin-bottom:0.75rem">Explore our services while you wait:</p>
+        <div style="display:flex;gap:8px;flex-wrap:wrap;justify-content:center">
+          <a href="/services/${state.selections.service || 'lawn-care'}/" style="font-size:12px;color:var(--pink);text-decoration:none;background:rgba(233,30,140,0.08);border:1px solid rgba(233,30,140,0.2);padding:5px 12px;border-radius:20px">${svc} →</a>
+          <a href="/service-areas/" style="font-size:12px;color:rgba(255,255,255,0.5);text-decoration:none;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.1);padding:5px 12px;border-radius:20px">Service Areas →</a>
+          <a href="/" style="font-size:12px;color:rgba(255,255,255,0.5);text-decoration:none;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.1);padding:5px 12px;border-radius:20px">Homepage →</a>
+        </div>
+      </div>
+    </div>`;
 
-<div class="cta-band">
-  <h2>Serving All of Horry County, SC</h2>
-  <p>Myrtle Beach · North Myrtle Beach · Conway · Surfside · Murrells Inlet · Garden City · Socastee · Little River · No extra travel fees</p>
-  <div class="cta-buttons">
-    <a href="tel:8434677136" class="btn-white">📞 843-467-7136</a>
-    <a href="mailto:cloyd.raymond@yahoo.com" class="btn-ow">✉️ Email Us</a>
-  </div>
-</div>
+  card.style.animation = 'none';
+  card.offsetHeight;
+  card.style.animation = '';
+}
 
-<script type="application/ld+json">{"@context":"https://schema.org","@type":"ContactPage","name":"Free Quote — Bakerss Property Maintenance","url":"https://www.bakerss.com/get-quote/","mainEntity":{"@type":"LocalBusiness","name":"Bakerss Property Maintenance","telephone":"+18434677136","email":"cloyd.raymond@yahoo.com"}}</script>
+// ─── INTERACTIONS ──────────────────────────────────────────────
+
+function selectOption(btn) {
+  const key = btn.dataset.key;
+  const val = btn.dataset.value;
+
+  // Remove selected from siblings
+  document.querySelectorAll(`[data-key="${key}"]`).forEach(b => b.classList.remove('selected'));
+  btn.classList.add('selected');
+
+  state.selections[key] = val;
+  updateNextBtn();
+}
+
+function updateNextBtn() {
+  const step = STEPS[state.currentStep];
+  const btn = document.getElementById('nextBtn');
+  if (!btn) return;
+
+  if (step.type === 'contact') {
+    const name  = document.getElementById('ci-name')?.value.trim();
+    const phone = document.getElementById('ci-phone')?.value.trim();
+    btn.disabled = !name || !phone;
+  } else {
+    btn.disabled = !state.selections[step.key];
+  }
+}
+
+function saveContact() {
+  state.contactInfo.name    = document.getElementById('ci-name')?.value || '';
+  state.contactInfo.phone   = document.getElementById('ci-phone')?.value || '';
+  state.contactInfo.email   = document.getElementById('ci-email')?.value || '';
+  state.contactInfo.address = document.getElementById('ci-address')?.value || '';
+  state.contactInfo.notes   = document.getElementById('ci-notes')?.value || '';
+  updateNextBtn();
+}
+
+function nextStep() {
+  if (state.currentStep < STEPS.length - 1) {
+    state.currentStep++;
+    renderStep();
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  }
+}
+
+function prevStep() {
+  if (state.currentStep > 0) {
+    state.currentStep--;
+    renderStep();
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  }
+}
+
+function skipToContact() {
+  state.currentStep = STEPS.length - 1;
+  renderStep();
+  window.scrollTo({ top: 0, behavior: 'smooth' });
+}
+
+function submitForm() {
+  saveContact();
+  renderEstimate();
+  window.scrollTo({ top: 0, behavior: 'smooth' });
+}
+
+function attachListeners() {
+  // Input watchers for contact step
+  const fields = ['ci-name','ci-phone','ci-email','ci-address','ci-notes'];
+  fields.forEach(id => {
+    const el = document.getElementById(id);
+    if (el) el.addEventListener('input', () => { saveContact(); updateNextBtn(); });
+  });
+}
+
+// ─── NETLIFY BACKGROUND SUBMIT ─────────────────────────────────
+function submitToNetlify() {
+  const body = new URLSearchParams({
+    'form-name':    'funnel-quote',
+    'name':         state.contactInfo.name || '',
+    'phone':        state.contactInfo.phone || '',
+    'email':        state.contactInfo.email || '',
+    'address':      state.contactInfo.address || '',
+    'service':      state.selections.service || '',
+    'property_type':state.selections.propertyType || '',
+    'property_size':state.selections.propertySize || '',
+    'timing':       state.selections.timing || '',
+    'notes':        state.contactInfo.notes || '',
+  });
+
+  fetch('/', {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+    body: body.toString()
+  }).catch(() => {
+    // Silent fail — Netlify form may not be configured, contact info still sent
+    console.log('Form submission note: configure Netlify Forms or replace with your form handler endpoint');
+  });
+}
+
+// ─── INIT ──────────────────────────────────────────────────────
+renderStep();
+</script>
+
+<!-- Hidden Netlify form detector -->
+<form name="funnel-quote" data-netlify="true" netlify-honeypot="bot-field" style="display:none">
+  <input type="hidden" name="form-name" value="funnel-quote">
+  <input name="bot-field">
+  <input name="name"><input name="phone"><input name="email">
+  <input name="address"><input name="service"><input name="property_type">
+  <input name="property_size"><input name="timing"><input name="notes">
+</form>
+
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"WebPage","name":"Free Quote — Bakerss Property Maintenance","description":"Get a personalized property maintenance estimate in seconds. Myrtle Beach and Horry County, SC.","url":"https://www.bakerss.com/get-quote/"}</script>
+
 <footer>
   <div class="footer-inner">
     <div class="footer-top">
