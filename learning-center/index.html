@@ -2,227 +2,177 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
 <title>Learning Center | Myrtle Beach Property Maintenance Guides | Bakerss</title>
-<meta name="description" content="Free property maintenance guides for Myrtle Beach and Horry County homeowners and STR investors. 99 expert articles on lawn care, cleaning, landscaping, and more.">
+<meta name="description" content="Free property maintenance guides for Myrtle Beach and Horry County homeowners and STR investors. Expert articles on lawn care, epoxy floors, cleaning, landscaping & more.">
 <link rel="canonical" href="https://www.bakerss.com/learning-center/">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;800&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "CollectionPage",
+  "name": "Bakerss Property Maintenance Learning Center",
+  "url": "https://www.bakerss.com/learning-center/",
+  "publisher": {
+    "@type": "LocalBusiness",
+    "name": "Bakerss Property Maintenance",
+    "telephone": "+18434677136",
+    "email": "info@bakerss.com",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "320 Forestbrook Cove Circle",
+      "addressLocality": "Myrtle Beach",
+      "addressRegion": "SC",
+      "postalCode": "29588",
+      "addressCountry": "US"
+    }
+  }
+}
+</script>
 <style>
-*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
-:root{--pink:#E91E8C;--black:#0D0D0D;--dark:#1A1A1A;--d2:#222;--border:rgba(255,255,255,0.09);--text:rgba(255,255,255,0.88);--muted:rgba(255,255,255,0.42)}
-html{scroll-behavior:smooth}
-body{font-family:'DM Sans',sans-serif;background:var(--dark);color:var(--text);line-height:1.6}
-nav{position:sticky;top:0;z-index:1000;background:rgba(13,13,13,0.97);backdrop-filter:blur(12px);border-bottom:1px solid var(--border)}
-.ni{max-width:1280px;margin:0 auto;display:flex;align-items:center;gap:1rem;padding:0 2rem;height:70px}
-.logo{font-family:'Playfair Display',serif;font-size:22px;font-weight:800;color:var(--text);text-decoration:none}
-.logo span{color:var(--pink)}
-.nav-r{display:flex;align-items:center;gap:12px;margin-left:auto}
-.nav-ph{font-size:14px;font-weight:600;color:rgba(255,255,255,0.85);text-decoration:none}
-.btn-q{background:var(--pink);color:#fff;padding:9px 20px;border-radius:6px;font-size:13px;font-weight:600;text-decoration:none}
-.hero{background:var(--black);padding:4rem 2rem 3rem;text-align:center}
-.hero-inner{max-width:800px;margin:0 auto}
-.badge{display:inline-flex;align-items:center;background:rgba(233,30,140,0.1);border:1px solid rgba(233,30,140,0.3);border-radius:100px;padding:4px 16px;font-size:10px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--pink);margin-bottom:1.25rem}
-h1{font-family:'Playfair Display',serif;font-size:clamp(2rem,4vw,3.2rem);font-weight:800;line-height:1.08;letter-spacing:-.025em;margin-bottom:.85rem}
-h1 em{font-style:normal;color:var(--pink)}
-.hero-sub{font-size:16px;color:var(--muted);line-height:1.75;max-width:580px;margin:0 auto 2rem;font-weight:300}
-.hero-stats{display:flex;gap:2rem;justify-content:center;flex-wrap:wrap}
-.hs{text-align:center}
-.hs .n{font-family:'Playfair Display',serif;font-size:2rem;font-weight:800;color:var(--pink);line-height:1}
-.hs .l{font-size:12px;color:var(--muted);margin-top:3px}
-.search-wrap{max-width:1200px;margin:2rem auto 0;padding:0 2rem}
-.search-box{position:relative}
-.search-box input{width:100%;background:var(--d2);border:1px solid var(--border);border-radius:10px;padding:14px 14px 14px 46px;color:var(--text);font-size:15px;font-family:inherit;outline:none;transition:border-color .2s}
-.search-box input:focus{border-color:rgba(233,30,140,.4)}
-.search-box input::placeholder{color:rgba(255,255,255,.25)}
-.search-icon{position:absolute;left:15px;top:50%;transform:translateY(-50%);color:rgba(255,255,255,.3);font-size:18px;pointer-events:none}
-.tabs-wrap{max-width:1200px;margin:1.5rem auto 0;padding:0 2rem}
-.tabs{display:flex;gap:7px;flex-wrap:wrap}
-.lc-tab{background:rgba(255,255,255,.04);border:1px solid var(--border);border-radius:100px;padding:6px 14px;font-size:12px;font-weight:500;color:var(--muted);cursor:pointer;font-family:inherit;transition:all .15s;white-space:nowrap}
-.lc-tab:hover{border-color:rgba(233,30,140,.3);color:rgba(255,255,255,.75)}
-.lc-tab.active{background:rgba(233,30,140,.1);border-color:rgba(233,30,140,.35);color:var(--pink)}
-.content{max-width:1200px;margin:0 auto;padding:2.5rem 2rem 5rem}
-.lc-section{margin-bottom:3rem}
-.lc-section.hidden{display:none}
-.lc-sec-head{display:flex;align-items:center;gap:10px;margin-bottom:1.25rem;padding-bottom:.75rem;border-bottom:1px solid rgba(255,255,255,.06)}
-.lc-sec-dot{width:10px;height:10px;border-radius:50%;flex-shrink:0}
-.lc-sec-h{font-family:'Playfair Display',serif;font-size:1.35rem;font-weight:700;letter-spacing:-.01em}
-.lc-sec-count{font-size:11px;color:var(--muted);background:rgba(255,255,255,.05);border:1px solid var(--border);border-radius:100px;padding:2px 10px;margin-left:auto}
-.lc-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:10px}
-.lc-card{background:var(--d2);border:1px solid var(--border);border-radius:11px;padding:1.25rem;text-decoration:none;display:flex;flex-direction:column;gap:.5rem;transition:border-color .15s,transform .15s}
-.lc-card:hover{border-color:rgba(233,30,140,.3);transform:translateY(-2px)}
-.lc-card.hidden{display:none}
-.lc-tag{font-size:10px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;padding:2px 9px;border-radius:4px;display:inline-block;align-self:flex-start}
-.lc-card-h{font-size:13.5px;font-weight:600;color:var(--text);line-height:1.45;flex:1}
-.lc-read{font-size:11.5px;color:var(--pink);font-weight:600}
-.no-results{text-align:center;padding:3rem;color:var(--muted);display:none}
-.no-results.show{display:block}
-.cta{background:var(--pink);padding:3rem 2rem;text-align:center;margin-top:2rem}
-.cta h2{font-family:'Playfair Display',serif;font-size:clamp(1.5rem,3vw,2rem);font-weight:800;color:#fff;margin-bottom:.5rem}
-.cta p{font-size:14px;color:rgba(255,255,255,.75);margin-bottom:1.5rem}
-.ctas{display:flex;gap:10px;justify-content:center;flex-wrap:wrap}
-.btn-w{display:inline-flex;align-items:center;background:#fff;color:var(--pink);padding:12px 24px;border-radius:8px;font-size:14px;font-weight:700;text-decoration:none}
-.btn-ow{display:inline-flex;align-items:center;background:transparent;color:#fff;padding:12px 24px;border-radius:8px;font-size:14px;font-weight:600;text-decoration:none;border:2px solid rgba(255,255,255,.4)}
-footer{background:var(--black);padding:3rem 2rem 2rem;border-top:1px solid var(--border)}
-.fi{max-width:1100px;margin:0 auto;display:grid;grid-template-columns:2fr 1fr 1fr 1fr;gap:2.5rem;margin-bottom:2.5rem}
-.logo-f{font-family:'Playfair Display',serif;font-size:1.4rem;font-weight:800;color:#fff;margin-bottom:.75rem;display:block}
-.logo-f span{color:var(--pink)}
-footer p{font-size:13px;color:rgba(255,255,255,.4);line-height:1.7}
-footer h4{font-size:11px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:rgba(255,255,255,.3);margin-bottom:.85rem}
-footer a{display:block;font-size:13px;color:rgba(255,255,255,.5);text-decoration:none;margin-bottom:.4rem}
-footer a:hover{color:var(--pink)}
-.fb{max-width:1100px;margin:0 auto;padding-top:1.5rem;border-top:1px solid rgba(255,255,255,.07);display:flex;justify-content:space-between;font-size:12px;color:rgba(255,255,255,.2);flex-wrap:wrap;gap:.5rem}
-.mob-bar{display:none;position:fixed;bottom:0;left:0;right:0;z-index:999;background:var(--black);border-top:1px solid var(--border);padding:8px 12px;gap:6px}
-.mob-btn{flex:1;display:flex;align-items:center;justify-content:center;gap:5px;padding:9px 8px;border-radius:8px;font-size:12px;font-weight:600;text-decoration:none;border:none;cursor:pointer;font-family:inherit}
-.mob-call{background:var(--pink);color:#fff}
-.mob-text{background:transparent;color:rgba(255,255,255,.7);border:1px solid var(--border)}
-@media(max-width:900px){.lc-grid{grid-template-columns:1fr 1fr}}
-@media(max-width:600px){.lc-grid{grid-template-columns:1fr}.fi{grid-template-columns:1fr 1fr}.mob-bar{display:flex}body{padding-bottom:64px}}
+  :root{ --bg:#0d0d0d; --pink:#e8197d; --white:#f5f5f5; --gray:#b3b3b3; }
+  *{margin:0;padding:0;box-sizing:border-box;}
+  body{background:var(--bg);color:var(--white);font-family:'Inter',sans-serif;line-height:1.6;}
+  h1,h2,h3{font-family:'Playfair Display',serif;}
+  a{color:var(--pink);text-decoration:none;}
+  .topbar{background:#000;text-align:center;padding:8px;font-size:.85rem;color:var(--gray);}
+  header{display:flex;align-items:center;justify-content:space-between;padding:20px 5%;border-bottom:1px solid #222;flex-wrap:wrap;}
+  .logo{font-family:'Playfair Display',serif;font-size:1.6rem;font-weight:700;color:var(--white);}
+  nav a{color:var(--white);margin:0 12px;font-weight:500;}
+  .cta-btn{background:var(--pink);color:#fff;padding:10px 20px;border-radius:6px;font-weight:600;}
+  .hero{text-align:center;padding:60px 5%;}
+  .hero h1{font-size:2.6rem;color:var(--white);margin:14px 0;}
+  .hero p{max-width:700px;margin:0 auto 24px;color:var(--gray);}
+  .badge{color:var(--pink);font-weight:600;font-size:.9rem;}
+  .stat-row{display:flex;justify-content:center;gap:40px;margin-top:30px;flex-wrap:wrap;}
+  .stat{text-align:center;}
+  .stat strong{display:block;font-size:1.8rem;color:var(--pink);font-family:'Playfair Display',serif;}
+  section{padding:50px 5%;}
+  .section-label{color:var(--pink);font-weight:600;font-size:.85rem;text-transform:uppercase;letter-spacing:1px;}
+  .section-title{font-size:1.8rem;margin:8px 0 20px;}
+  .article-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:14px;margin-bottom:40px;}
+  .article-card{background:#161616;border:1px solid #262626;border-radius:8px;padding:16px;font-size:.9rem;}
+  .article-card span{display:block;color:var(--pink);font-size:.75rem;text-transform:uppercase;margin-bottom:6px;}
+  .dup-flag{background:#2a1414;border:1px solid var(--pink);color:#ffb3c8;font-size:.75rem;padding:3px 8px;border-radius:4px;display:inline-block;margin-top:6px;}
+  .notice{background:#161616;border:1px solid var(--pink);border-radius:8px;padding:20px;margin-bottom:30px;}
+  .notice h3{color:var(--pink);margin-bottom:8px;}
+  footer{border-top:1px solid #222;padding:40px 5% 20px;color:var(--gray);font-size:.9rem;}
+  .footer-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:24px;margin-bottom:24px;}
+  .footer-grid h4{color:var(--white);margin-bottom:10px;font-size:1rem;}
+  .footer-grid a{display:block;color:var(--gray);margin-bottom:6px;}
+  .footer-bottom{border-top:1px solid #222;padding-top:16px;text-align:center;font-size:.8rem;}
 </style>
 </head>
 <body>
-<nav>
-  <div class="ni">
-    <a href="/" class="logo">Bakerss<span>.</span></a>
-    <div class="nav-r">
-      <a href="tel:8434677136" class="nav-ph">843-467-7136</a>
-      <a href="/get-quote/" class="btn-q">Free Quote</a>
-    </div>
+
+<div class="topbar">⭐ 5-Star Rated · Licensed &amp; Insured · <a href="tel:8434677136" style="color:var(--white);">843-467-7136</a> — We Answer 24/7</div>
+
+<header>
+  <a class="logo" href="https://www.bakerss.com/">Bakerss.</a>
+  <nav>
+    <a href="https://www.bakerss.com/services/">Services</a>
+    <a href="https://www.bakerss.com/service-areas/">Service Areas</a>
+    <a href="https://www.bakerss.com/learning-center/">Learning Center</a>
+    <a href="https://www.bakerss.com/about/">About Us</a>
+    <a href="https://www.bakerss.com/reviews/">Reviews</a>
+    <a href="https://www.bakerss.com/our-work/">Our Work</a>
+  </nav>
+  <a class="cta-btn" href="https://www.bakerss.com/get-quote/">Free Quote</a>
+</header>
+
+<section class="hero">
+  <div class="badge">Free Expert Guides · Myrtle Beach &amp; Horry County</div>
+  <h1>The Myrtle Beach Property <em>Maintenance Learning Center</em></h1>
+  <p>99 expert guides for Myrtle Beach and Horry County homeowners, vacation rental investors, and HOA community owners — written for coastal South Carolina's specific conditions.</p>
+  <div class="stat-row">
+    <div class="stat"><strong>99</strong>Expert guides</div>
+    <div class="stat"><strong>14</strong>Topic categories</div>
+    <div class="stat"><strong>100%</strong>Coastal SC focused</div>
+    <div class="stat"><strong>Free</strong>Always</div>
   </div>
-</nav>
+</section>
 
-<div class="hero">
-  <div class="hero-inner">
-    <div class="badge">Free Expert Guides &middot; Myrtle Beach &amp; Horry County</div>
-    <h1>The Myrtle Beach Property<br><em>Maintenance Learning Center</em></h1>
-    <p class="hero-sub">99 expert guides for Myrtle Beach and Horry County homeowners, vacation rental investors, and HOA community owners. Written for coastal South Carolina&apos;s specific conditions.</p>
-    <div class="hero-stats">
-      <div class="hs"><div class="n">99</div><div class="l">Expert guides</div></div>
-      <div class="hs"><div class="n">14</div><div class="l">Topic categories</div></div>
-      <div class="hs"><div class="n">100%</div><div class="l">Coastal SC focused</div></div>
-      <div class="hs"><div class="n">Free</div><div class="l">Always</div></div>
-    </div>
+<section>
+  <div class="notice">
+    <h3>⚠ Editorial Note — Duplicate Articles to Resolve</h3>
+    <p style="color:var(--gray);">The following article titles currently point to <strong>the same URL/slug</strong> as another listed article. This creates duplicate-content / canonical issues for SEO. Each pair below needs a decision: keep one title and merge/redirect the other, or differentiate the slugs and content.</p>
+    <ul style="margin:12px 0 0 20px;color:var(--gray);">
+      <li>"Best Grass Types for Myrtle Beach Lawns — Which Performs Best?" vs "...— Horry County Guide" → both → <code>/best-grass-types-myrtle-beach/</code></li>
+      <li>"Hurricane Prep for Myrtle Beach Coastal Homes — Essential Checklist" vs "Hurricane Prep for Coastal Homes in Horry County, SC — 2025 Checklist" → both → <code>/hurricane-prep-coastal-homes/</code></li>
+      <li>"Pool &amp; Pool Deck Maintenance for Myrtle Beach Properties" vs "Pool Deck Maintenance in Myrtle Beach — Pressure Washing, Safety &amp; Upkeep" → both → <code>/pool-deck-maintenance-myrtle-beach/</code></li>
+      <li>"Property Owner's Guide to Socastee, SC — Forestbrook &amp; Beyond" vs "...— Conway's Coastal Suburb" → both → <code>/property-owners-guide-socastee-sc/</code></li>
+      <li>"Property Owner's Guide to Surfside Beach SC — The Family Beach" (x2, same title) → both → <code>/property-owners-guide-surfside-beach-sc/</code></li>
+      <li>"Best Flooring for Myrtle Beach Vacation Rentals — 2025 Complete Guide" vs "...— Why LVP Wins" → both → <code>/best-flooring-vacation-rentals-myrtle-beach/</code></li>
+    </ul>
   </div>
-</div>
 
-<div class="search-wrap">
-  <div class="search-box">
-    <span class="search-icon">&#128269;</span>
-    <input type="text" id="lcSearch" placeholder="Search all 99 guides &mdash; e.g. gutter cleaning, airbnb, Carolina Forest, STR renovation..." oninput="searchLC(this.value)">
+  <div class="notice">
+    <h3>📌 Missing Categories</h3>
+    <p style="color:var(--gray);">No articles found for <strong>Epoxy Flooring</strong>, <strong>Sod Installation</strong>, or <strong>Pool Maintenance as a service category</strong> (only one cost-guide style article touches pools). These are now active services and should get dedicated guides for SEO coverage.</p>
   </div>
-</div>
+</section>
 
-<div class="tabs-wrap">
-  <div class="tabs"><button class="lc-tab active" onclick="filterLC('all',this)">All (99)</button><button class="lc-tab" onclick="filterLC('property-maintenance',this)">Property Maintenance (23)</button><button class="lc-tab" onclick="filterLC('airbnb-cleaning',this)">Airbnb Cleaning (12)</button><button class="lc-tab" onclick="filterLC('lawn-care',this)">Lawn Care (7)</button><button class="lc-tab" onclick="filterLC('local-guide',this)">Local Guide (23)</button><button class="lc-tab" onclick="filterLC('landscaping',this)">Landscaping (7)</button><button class="lc-tab" onclick="filterLC('pressure-washing',this)">Pressure Washing (4)</button><button class="lc-tab" onclick="filterLC('gutter-cleaning',this)">Gutter Cleaning (4)</button><button class="lc-tab" onclick="filterLC('painting',this)">Painting (4)</button><button class="lc-tab" onclick="filterLC('property-upgrades',this)">Property Upgrades (6)</button><button class="lc-tab" onclick="filterLC('interior-cleaning',this)">Interior Cleaning (2)</button><button class="lc-tab" onclick="filterLC('handyman',this)">Handyman (3)</button><button class="lc-tab" onclick="filterLC('junk-removal',this)">Junk Removal (2)</button><button class="lc-tab" onclick="filterLC('commercial',this)">Commercial (1)</button><button class="lc-tab" onclick="filterLC('property-management',this)">Property Management (1)</button></div>
-</div>
-
-<div class="content">
-  <div id="noResults" class="no-results">No articles found. Try a different search term or <a href="#" onclick="resetLC();return false;" style="color:var(--pink)">view all articles</a>.</div>
-  <div class="lc-section" id="property-maintenance"><div class="lc-sec-head"><span class="lc-sec-dot" style="background:#E91E8C"></span><h2 class="lc-sec-h">Property Maintenance</h2><span class="lc-sec-count">23 articles</span></div><div class="lc-grid"><a href="/learning-center/how-to-choose-contractor-myrtle-beach/" class="lc-card"><span class="lc-tag" style="background:rgba(233,30,140,0.12);color:#E91E8C">Property Maintenance</span><h3 class="lc-card-h">How to Choose a Property Maintenance Contractor in Myrtle Beach, SC</h3><span class="lc-read">Read article &rarr;</span></a><a href="/learning-center/deck-building-guide-myrtle-beach/" class="lc-card"><span class="lc-tag" style="background:rgba(233,30,140,0.12);color:#E91E8C">Property Maintenance</span><h3 class="lc-card-h">Building a Deck in Myrtle Beach — Materials, Permits & What to Expect</h3><span class="lc-read">Read article &rarr;</span></a><a href="/learning-center/deck-maintenance-guide-myrtle-beach/" class="lc-card"><span class="lc-tag" style="background:rgba(233,30,140,0.12);color:#E91E8C">Property Maintenance</span><h3 class="lc-card-h">Deck Maintenance Guide for Myrtle Beach Homeowners</h3><span class="lc-read">Read article &rarr;</span></a><a href="/learning-center/deck-staining-sealing-myrtle-beach-guide/" class="lc-card"><span class="lc-tag" style="background:rgba(233,30,140,0.12);color:#E91E8C">Property Maintenance</span><h3 class="lc-card-h">Deck Staining and Sealing in Myrtle Beach — Complete Guide</h3><span class="lc-read">Read article &rarr;</span></a><a href="/learning-center/gutter-guards-myrtle-beach-honest-assessment/" class="lc-card"><span class="lc-tag" style="background:rgba(233,30,140,0.12);color:#E91E8C">Property Maintenance</span><h3 class="lc-card-h">Do Gutter Guards Work in Myrtle Beach? An Honest Assessment</h3><span class="lc-read">Read article &rarr;</span></a><a href="/learning-center/finding-reliable-handyman-myrtle-beach-guide/" class="lc-card"><span class="lc-tag" style="background:rgba(233,30,140,0.12);color:#E91E8C">Property Maintenance</span><h3 class="lc-card-h">Finding a Reliable Handyman in Myrtle Beach — What to Look For</h3><span class="lc-read">Read article &rarr;</span></a><a href="/learning-center/hoa-property-maintenance-guide-horry-county/" class="lc-card"><span class="lc-tag" style="background:rgba(233,30,140,0.12);color:#E91E8C">Property Maintenance</span><h3 class="lc-card-h">HOA Property Maintenance Guide for Horry County Communities</h3><span class="lc-read">Read article &rarr;</span></a><a href="/learning-center/hoa-violation-fines-myrtle-beach/" class="lc-card"><span class="lc-tag" style="background:rgba(233,30,140,0.12);color:#E91E8C">Property Maintenance</span><h3 class="lc-card-h">HOA Violation Fines in Myrtle Beach — What They Cost and How to Avoid Them</h3><span class="lc-read">Read article &rarr;</span></a><a href="/learning-center/hoa-violation-prevention-myrtle-beach/" class="lc-card"><span class="lc-tag" style="background:rgba(233,30,140,0.12);color:#E91E8C">Property Maintenance</span><h3 class="lc-card-h">How to Avoid HOA Violations in Myrtle Beach Communities</h3><span class="lc-read">Read article &rarr;</span></a><a href="/learning-center/how-to-hire-property-maintenance-company-myrtle-beach/" class="lc-card"><span class="lc-tag" style="background:rgba(233,30,140,0.12);color:#E91E8C">Property Maintenance</span><h3 class="lc-card-h">How to Hire a Property Maintenance Company in Myrtle Beach — What to Look For</h3><span class="lc-read">Read article &rarr;</span></a><a href="/learning-center/hurricane-prep-coastal-homes/" class="lc-card"><span class="lc-tag" style="background:rgba(233,30,140,0.12);color:#E91E8C">Property Maintenance</span><h3 class="lc-card-h">Hurricane Prep for Myrtle Beach Coastal Homes — Essential Checklist</h3><span class="lc-read">Read article &rarr;</span></a><a href="/learning-center/hurricane-prep-coastal-homes/" class="lc-card"><span class="lc-tag" style="background:rgba(233,30,140,0.12);color:#E91E8C">Property Maintenance</span><h3 class="lc-card-h">Hurricane Prep for Coastal Homes in Horry County, SC — 2025 Checklist</h3><span class="lc-read">Read article &rarr;</span></a><a href="/learning-center/hurricane-season-checklist-myrtle-beach-homeowners-2025/" class="lc-card"><span class="lc-tag" style="background:rgba(233,30,140,0.12);color:#E91E8C">Property Maintenance</span><h3 class="lc-card-h">Hurricane Season Property Checklist for Myrtle Beach Homeowners — 2025</h3><span class="lc-read">Read article &rarr;</span></a><a href="/learning-center/hurricane-season-preparation-myrtle-beach-timeline/" class="lc-card"><span class="lc-tag" style="background:rgba(233,30,140,0.12);color:#E91E8C">Property Maintenance</span><h3 class="lc-card-h">Hurricane Season Property Preparation for Myrtle Beach — Complete Timeline</h3><span class="lc-read">Read article &rarr;</span></a><a href="/learning-center/mold-prevention-myrtle-beach-coastal-homes/" class="lc-card"><span class="lc-tag" style="background:rgba(233,30,140,0.12);color:#E91E8C">Property Maintenance</span><h3 class="lc-card-h">Mold Prevention in Myrtle Beach Homes — Why Coastal SC Is High Risk</h3><span class="lc-read">Read article &rarr;</span></a><a href="/learning-center/property-maintenance-by-type-myrtle-beach/" class="lc-card"><span class="lc-tag" style="background:rgba(233,30,140,0.12);color:#E91E8C">Property Maintenance</span><h3 class="lc-card-h">Property Maintenance by Property Type — Myrtle Beach Guide</h3><span class="lc-read">Read article &rarr;</span></a><a href="/learning-center/new-construction-home-maintenance-myrtle-beach/" class="lc-card"><span class="lc-tag" style="background:rgba(233,30,140,0.12);color:#E91E8C">Property Maintenance</span><h3 class="lc-card-h">New Construction Home Maintenance — First Year Guide for Myrtle Beach</h3><span class="lc-read">Read article &rarr;</span></a><a href="/learning-center/pool-deck-maintenance-myrtle-beach/" class="lc-card"><span class="lc-tag" style="background:rgba(233,30,140,0.12);color:#E91E8C">Property Maintenance</span><h3 class="lc-card-h">Pool & Pool Deck Maintenance for Myrtle Beach Properties</h3><span class="lc-read">Read article &rarr;</span></a><a href="/learning-center/pool-deck-maintenance-myrtle-beach/" class="lc-card"><span class="lc-tag" style="background:rgba(233,30,140,0.12);color:#E91E8C">Property Maintenance</span><h3 class="lc-card-h">Pool Deck Maintenance in Myrtle Beach — Pressure Washing, Safety & Upkeep</h3><span class="lc-read">Read article &rarr;</span></a><a href="/learning-center/property-maintenance-home-value-myrtle-beach/" class="lc-card"><span class="lc-tag" style="background:rgba(233,30,140,0.12);color:#E91E8C">Property Maintenance</span><h3 class="lc-card-h">How Property Maintenance Affects Home Value in Myrtle Beach</h3><span class="lc-read">Read article &rarr;</span></a><a href="/learning-center/salt-air-home-damage/" class="lc-card"><span class="lc-tag" style="background:rgba(233,30,140,0.12);color:#E91E8C">Property Maintenance</span><h3 class="lc-card-h">How Salt Air Damages Your Myrtle Beach Home (And How to Prevent It)</h3><span class="lc-read">Read article &rarr;</span></a><a href="/learning-center/seasonal-home-maintenance-checklist/" class="lc-card"><span class="lc-tag" style="background:rgba(233,30,140,0.12);color:#E91E8C">Property Maintenance</span><h3 class="lc-card-h">Seasonal Home Maintenance Checklist for Myrtle Beach, SC (2025)</h3><span class="lc-read">Read article &rarr;</span></a><a href="/learning-center/winterize-vacation-rental-myrtle-beach/" class="lc-card"><span class="lc-tag" style="background:rgba(233,30,140,0.12);color:#E91E8C">Property Maintenance</span><h3 class="lc-card-h">How to Winterize Your Myrtle Beach Vacation Rental — Off-Season Checklist</h3><span class="lc-read">Read article &rarr;</span></a></div></div><div class="lc-section" id="airbnb-cleaning"><div class="lc-sec-head"><span class="lc-sec-dot" style="background:#f59e0b"></span><h2 class="lc-sec-h">Airbnb Cleaning</h2><span class="lc-sec-count">12 articles</span></div><div class="lc-grid"><a href="/learning-center/vacation-rental-cleaning-checklist/" class="lc-card"><span class="lc-tag" style="background:rgba(245,158,11,0.12);color:#f59e0b">Airbnb Cleaning</span><h3 class="lc-card-h">Airbnb Cleaning Checklist for Myrtle Beach Vacation Rentals (2025)</h3><span class="lc-read">Read article &rarr;</span></a><a href="/learning-center/airbnb-cleaning-pricing-guide-myrtle-beach-2025/" class="lc-card"><span class="lc-tag" style="background:rgba(245,158,11,0.12);color:#f59e0b">Airbnb Cleaning</span><h3 class="lc-card-h">Airbnb Cleaning Pricing Guide for Myrtle Beach — 2025</h3><span class="lc-read">Read article &rarr;</span></a><a href="/learning-center/airbnb-superhost-myrtle-beach-guide/" class="lc-card"><span class="lc-tag" style="background:rgba(245,158,11,0.12);color:#f59e0b">Airbnb Cleaning</span><h3 class="lc-card-h">How to Become an Airbnb Superhost in Myrtle Beach — A Property Maintenance Perspectiv...</h3><span class="lc-read">Read article &rarr;</span></a><a href="/learning-center/airbnb-vs-long-term-rental-maintenance-myrtle-beach/" class="lc-card"><span class="lc-tag" style="background:rgba(245,158,11,0.12);color:#f59e0b">Airbnb Cleaning</span><h3 class="lc-card-h">Airbnb vs Long-Term Rental Maintenance in Myrtle Beach — What's Different?</h3><span class="lc-read">Read article &rarr;</span></a><a href="/learning-center/deep-clean-vs-turnover-cleaning/" class="lc-card"><span class="lc-tag" style="background:rgba(245,158,11,0.12);color:#f59e0b">Airbnb Cleaning</span><h3 class="lc-card-h">Deep Clean vs Turnover Cleaning for Vacation Rentals — What's the Difference?</h3><span class="lc-read">Read article &rarr;</span></a><a href="/learning-center/true-cost-myrtle-beach-vacation-rental-ownership/" class="lc-card"><span class="lc-tag" style="background:rgba(245,158,11,0.12);color:#f59e0b">Airbnb Cleaning</span><h3 class="lc-card-h">True Cost of Owning a Myrtle Beach Vacation Rental — Full Breakdown</h3><span class="lc-read">Read article &rarr;</span></a><a href="/learning-center/pest-prevention-vacation-rentals-myrtle-beach/" class="lc-card"><span class="lc-tag" style="background:rgba(245,158,11,0.12);color:#f59e0b">Airbnb Cleaning</span><h3 class="lc-card-h">Pest Prevention for Myrtle Beach Vacation Rentals — What Actually Works</h3><span class="lc-read">Read article &rarr;</span></a><a href="/learning-center/self-manage-vs-property-manager-myrtle-beach-str/" class="lc-card"><span class="lc-tag" style="background:rgba(245,158,11,0.12);color:#f59e0b">Airbnb Cleaning</span><h3 class="lc-card-h">Self-Managing vs Property Manager for Your Myrtle Beach STR — Honest Comparison</h3><span class="lc-read">Read article &rarr;</span></a><a href="/learning-center/short-term-rental-maintenance-guide-myrtle-beach/" class="lc-card"><span class="lc-tag" style="background:rgba(245,158,11,0.12);color:#f59e0b">Airbnb Cleaning</span><h3 class="lc-card-h">Short-Term Rental Property Maintenance Guide — Myrtle Beach, SC</h3><span class="lc-read">Read article &rarr;</span></a><a href="/learning-center/vacation-rental-income-maintenance-myrtle-beach/" class="lc-card"><span class="lc-tag" style="background:rgba(245,158,11,0.12);color:#f59e0b">Airbnb Cleaning</span><h3 class="lc-card-h">Myrtle Beach Vacation Rental Income — The Role of Property Maintenance</h3><span class="lc-read">Read article &rarr;</span></a><a href="/learning-center/vacation-rental-offseason-maintenance-myrtle-beach/" class="lc-card"><span class="lc-tag" style="background:rgba(245,158,11,0.12);color:#f59e0b">Airbnb Cleaning</span><h3 class="lc-card-h">Managing Your Myrtle Beach Vacation Rental in the Off-Season</h3><span class="lc-read">Read article &rarr;</span></a><a href="/learning-center/property-maintenance-airbnb-reviews-myrtle-beach/" class="lc-card"><span class="lc-tag" style="background:rgba(245,158,11,0.12);color:#f59e0b">Airbnb Cleaning</span><h3 class="lc-card-h">How Property Maintenance Affects Your Myrtle Beach Airbnb Reviews</h3><span class="lc-read">Read article &rarr;</span></a></div></div><div class="lc-section" id="lawn-care"><div class="lc-sec-head"><span class="lc-sec-dot" style="background:#22c55e"></span><h2 class="lc-sec-h">Lawn Care</h2><span class="lc-sec-count">7 articles</span></div><div class="lc-grid"><a href="/learning-center/best-grass-types-myrtle-beach/" class="lc-card"><span class="lc-tag" style="background:rgba(34,197,94,0.12);color:#22c55e">Lawn Care</span><h3 class="lc-card-h">Best Grass Types for Myrtle Beach Lawns — Which Performs Best?</h3><span class="lc-read">Read article &rarr;</span></a><a href="/learning-center/best-grass-types-myrtle-beach/" class="lc-card"><span class="lc-tag" style="background:rgba(34,197,94,0.12);color:#22c55e">Lawn Care</span><h3 class="lc-card-h">Best Grass Types for Myrtle Beach Lawns — Horry County Guide</h3><span class="lc-read">Read article &rarr;</span></a><a href="/learning-center/lawn-care-calendar-coastal-sc/" class="lc-card"><span class="lc-tag" style="background:rgba(34,197,94,0.12);color:#22c55e">Lawn Care</span><h3 class="lc-card-h">Lawn Care Calendar for Coastal South Carolina — Month by Month</h3><span class="lc-read">Read article &rarr;</span></a><a href="/learning-center/lawn-care-cost-guide-myrtle-beach-2025/" class="lc-card"><span class="lc-tag" style="background:rgba(34,197,94,0.12);color:#22c55e">Lawn Care</span><h3 class="lc-card-h">Lawn Care Cost Guide for Myrtle Beach & Horry County — 2025</h3><span class="lc-read">Read article &rarr;</span></a><a href="/learning-center/lawn-fungus-myrtle-beach/" class="lc-card"><span class="lc-tag" style="background:rgba(34,197,94,0.12);color:#22c55e">Lawn Care</span><h3 class="lc-card-h">Lawn Fungus in Myrtle Beach — How to Identify and Treat It</h3><span class="lc-read">Read article &rarr;</span></a><a href="/learning-center/lawn-watering-guide-myrtle-beach-irrigation/" class="lc-card"><span class="lc-tag" style="background:rgba(34,197,94,0.12);color:#22c55e">Lawn Care</span><h3 class="lc-card-h">Lawn Watering Guide for Myrtle Beach — How Much Your Grass Actually Needs</h3><span class="lc-read">Read article &rarr;</span></a><a href="/learning-center/weed-control-guide-myrtle-beach/" class="lc-card"><span class="lc-tag" style="background:rgba(34,197,94,0.12);color:#22c55e">Lawn Care</span><h3 class="lc-card-h">Weed Control Guide for Myrtle Beach Homeowners — Horry County, SC</h3><span class="lc-read">Read article &rarr;</span></a></div></div><div class="lc-section" id="local-guide"><div class="lc-sec-head"><span class="lc-sec-dot" style="background:#06b6d4"></span><h2 class="lc-sec-h">Local Guide</h2><span class="lc-sec-count">23 articles</span></div><div class="lc-grid"><a href="/learning-center/best-neighborhoods-myrtle-beach-investment-property-2025/" class="lc-card"><span class="lc-tag" style="background:rgba(6,182,212,0.12);color:#06b6d4">Local Guide</span><h3 class="lc-card-h">Best Neighborhoods to Buy Investment Property in Myrtle Beach — 2025</h3><span class="lc-read">Read article &rarr;</span></a><a href="/learning-center/property-owners-guide-carolina-forest-myrtle-beach/" class="lc-card"><span class="lc-tag" style="background:rgba(6,182,212,0.12);color:#06b6d4">Local Guide</span><h3 class="lc-card-h">Property Owner's Guide to Carolina Forest, Myrtle Beach SC</h3><span class="lc-read">Read article &rarr;</span></a><a href="/learning-center/property-owners-guide-coastal-heights-conway/" class="lc-card"><span class="lc-tag" style="background:rgba(6,182,212,0.12);color:#06b6d4">Local Guide</span><h3 class="lc-card-h">Property Owner's Guide to Coastal Heights, Conway SC</h3><span class="lc-read">Read article &rarr;</span></a><a href="/learning-center/moving-to-myrtle-beach-property-maintenance-guide/" class="lc-card"><span class="lc-tag" style="background:rgba(6,182,212,0.12);color:#06b6d4">Local Guide</span><h3 class="lc-card-h">Moving to Myrtle Beach — Property Maintenance Guide for New Residents</h3><span class="lc-read">Read article &rarr;</span></a><a href="/learning-center/conway-sc-neighborhood-guide/" class="lc-card"><span class="lc-tag" style="background:rgba(6,182,212,0.12);color:#06b6d4">Local Guide</span><h3 class="lc-card-h">Conway, SC Neighborhood Guide — Wild Wing Plantation & Beyond</h3><span class="lc-read">Read article &rarr;</span></a><a href="/learning-center/property-owners-guide-conway-sc/" class="lc-card"><span class="lc-tag" style="background:rgba(6,182,212,0.12);color:#06b6d4">Local Guide</span><h3 class="lc-card-h">Property Owner's Guide to Conway, SC — Maintenance & Market</h3><span class="lc-read">Read article &rarr;</span></a><a href="/learning-center/property-owners-guide-garden-city-beach-sc/" class="lc-card"><span class="lc-tag" style="background:rgba(6,182,212,0.12);color:#06b6d4">Local Guide</span><h3 class="lc-card-h">Property Owner's Guide to Garden City Beach, SC</h3><span class="lc-read">Read article &rarr;</span></a><a href="/learning-center/grand-strand-property-owners-market-guide/" class="lc-card"><span class="lc-tag" style="background:rgba(6,182,212,0.12);color:#06b6d4">Local Guide</span><h3 class="lc-card-h">Grand Strand Property Owner's Guide — Understanding the Market You're In</h3><span class="lc-read">Read article &rarr;</span></a><a href="/learning-center/property-owners-guide-grande-dunes-myrtle-beach/" class="lc-card"><span class="lc-tag" style="background:rgba(6,182,212,0.12);color:#06b6d4">Local Guide</span><h3 class="lc-card-h">Property Owner's Guide to Grande Dunes, Myrtle Beach SC</h3><span class="lc-read">Read article &rarr;</span></a><a href="/learning-center/property-owners-guide-heather-glen-little-river/" class="lc-card"><span class="lc-tag" style="background:rgba(6,182,212,0.12);color:#06b6d4">Local Guide</span><h3 class="lc-card-h">Property Owner's Guide to Heather Glen, Little River SC</h3><span class="lc-read">Read article &rarr;</span></a><a href="/learning-center/property-owners-guide-little-river-sc/" class="lc-card"><span class="lc-tag" style="background:rgba(6,182,212,0.12);color:#06b6d4">Local Guide</span><h3 class="lc-card-h">Property Owner's Guide to Little River, SC — Waterfront & Community</h3><span class="lc-read">Read article &rarr;</span></a><a href="/learning-center/property-owners-guide-market-common-myrtle-beach/" class="lc-card"><span class="lc-tag" style="background:rgba(6,182,212,0.12);color:#06b6d4">Local Guide</span><h3 class="lc-card-h">Property Owner's Guide to Market Common, Myrtle Beach SC</h3><span class="lc-read">Read article &rarr;</span></a><a href="/learning-center/property-owners-guide-murrells-inlet-sc/" class="lc-card"><span class="lc-tag" style="background:rgba(6,182,212,0.12);color:#06b6d4">Local Guide</span><h3 class="lc-card-h">Property Owner's Guide to Murrells Inlet, SC — Maintenance & Market</h3><span class="lc-read">Read article &rarr;</span></a><a href="/learning-center/property-owners-guide-north-myrtle-beach-sc/" class="lc-card"><span class="lc-tag" style="background:rgba(6,182,212,0.12);color:#06b6d4">Local Guide</span><h3 class="lc-card-h">Property Owner's Guide to North Myrtle Beach, SC</h3><span class="lc-read">Read article &rarr;</span></a><a href="/learning-center/north-myrtle-beach-neighborhood-guide/" class="lc-card"><span class="lc-tag" style="background:rgba(6,182,212,0.12);color:#06b6d4">Local Guide</span><h3 class="lc-card-h">North Myrtle Beach Neighborhood Guide — Cherry Grove, Barefoot Resort & More</h3><span class="lc-read">Read article &rarr;</span></a><a href="/learning-center/property-owners-guide-prince-creek-murrells-inlet/" class="lc-card"><span class="lc-tag" style="background:rgba(6,182,212,0.12);color:#06b6d4">Local Guide</span><h3 class="lc-card-h">Property Owner's Guide to Prince Creek, Murrells Inlet SC</h3><span class="lc-read">Read article &rarr;</span></a><a href="/learning-center/myrtle-beach-property-taxes-investors-2025/" class="lc-card"><span class="lc-tag" style="background:rgba(6,182,212,0.12);color:#06b6d4">Local Guide</span><h3 class="lc-card-h">Myrtle Beach Property Taxes for Investors — What You'll Actually Pay in 2025</h3><span class="lc-read">Read article &rarr;</span></a><a href="/learning-center/property-owners-guide-socastee-sc/" class="lc-card"><span class="lc-tag" style="background:rgba(6,182,212,0.12);color:#06b6d4">Local Guide</span><h3 class="lc-card-h">Property Owner's Guide to Socastee, SC — Forestbrook & Beyond</h3><span class="lc-read">Read article &rarr;</span></a><a href="/learning-center/property-owners-guide-socastee-sc/" class="lc-card"><span class="lc-tag" style="background:rgba(6,182,212,0.12);color:#06b6d4">Local Guide</span><h3 class="lc-card-h">Property Owner's Guide to Socastee, SC — Conway's Coastal Suburb</h3><span class="lc-read">Read article &rarr;</span></a><a href="/learning-center/property-owners-guide-surfside-beach-sc/" class="lc-card"><span class="lc-tag" style="background:rgba(6,182,212,0.12);color:#06b6d4">Local Guide</span><h3 class="lc-card-h">Property Owner's Guide to Surfside Beach SC — The Family Beach</h3><span class="lc-read">Read article &rarr;</span></a><a href="/learning-center/property-owners-guide-surfside-beach-sc/" class="lc-card"><span class="lc-tag" style="background:rgba(6,182,212,0.12);color:#06b6d4">Local Guide</span><h3 class="lc-card-h">Property Owner's Guide to Surfside Beach, SC — The Family Beach</h3><span class="lc-read">Read article &rarr;</span></a><a href="/learning-center/property-owners-guide-wachesaw-plantation-murrells-inlet/" class="lc-card"><span class="lc-tag" style="background:rgba(6,182,212,0.12);color:#06b6d4">Local Guide</span><h3 class="lc-card-h">Property Owner's Guide to Wachesaw Plantation, Murrells Inlet SC</h3><span class="lc-read">Read article &rarr;</span></a><a href="/learning-center/property-owners-guide-wild-wing-plantation-conway/" class="lc-card"><span class="lc-tag" style="background:rgba(6,182,212,0.12);color:#06b6d4">Local Guide</span><h3 class="lc-card-h">Property Owner's Guide to Wild Wing Plantation, Conway SC</h3><span class="lc-read">Read article &rarr;</span></a></div></div><div class="lc-section" id="landscaping"><div class="lc-sec-head"><span class="lc-sec-dot" style="background:#84cc16"></span><h2 class="lc-sec-h">Landscaping</h2><span class="lc-sec-count">7 articles</span></div><div class="lc-grid"><a href="/learning-center/concrete-landscaping-curbing-guide/" class="lc-card"><span class="lc-tag" style="background:rgba(132,204,22,0.12);color:#84cc16">Landscaping</span><h3 class="lc-card-h">Concrete Landscaping Curbing in Myrtle Beach — Complete Guide</h3><span class="lc-read">Read article &rarr;</span></a><a href="/learning-center/concrete-curbing-roi-myrtle-beach/" class="lc-card"><span class="lc-tag" style="background:rgba(132,204,22,0.12);color:#84cc16">Landscaping</span><h3 class="lc-card-h">Does Concrete Curbing Add Value in Myrtle Beach? The Real ROI</h3><span class="lc-read">Read article &rarr;</span></a><a href="/learning-center/concrete-curbing-vs-plastic-edging-myrtle-beach/" class="lc-card"><span class="lc-tag" style="background:rgba(132,204,22,0.12);color:#84cc16">Landscaping</span><h3 class="lc-card-h">Concrete Curbing vs Plastic Edging in Myrtle Beach — Which Wins?</h3><span class="lc-read">Read article &rarr;</span></a><a href="/learning-center/best-plants-coastal-south-carolina-landscaping/" class="lc-card"><span class="lc-tag" style="background:rgba(132,204,22,0.12);color:#84cc16">Landscaping</span><h3 class="lc-card-h">Best Plants for Coastal South Carolina Landscaping — Myrtle Beach Guide</h3><span class="lc-read">Read article &rarr;</span></a><a href="/learning-center/landscaping-cost-guide-myrtle-beach-2025/" class="lc-card"><span class="lc-tag" style="background:rgba(132,204,22,0.12);color:#84cc16">Landscaping</span><h3 class="lc-card-h">Landscaping Cost Guide for Myrtle Beach — 2025 Prices</h3><span class="lc-read">Read article &rarr;</span></a><a href="/learning-center/coastal-south-carolina-plant-guide-myrtle-beach/" class="lc-card"><span class="lc-tag" style="background:rgba(132,204,22,0.12);color:#84cc16">Landscaping</span><h3 class="lc-card-h">Coastal South Carolina Plant Guide — What Thrives in Myrtle Beach Gardens</h3><span class="lc-read">Read article &rarr;</span></a><a href="/learning-center/landscaping-roi-myrtle-beach-properties/" class="lc-card"><span class="lc-tag" style="background:rgba(132,204,22,0.12);color:#84cc16">Landscaping</span><h3 class="lc-card-h">Landscaping ROI for Myrtle Beach Properties — What Actually Pays Off</h3><span class="lc-read">Read article &rarr;</span></a></div></div><div class="lc-section" id="pressure-washing"><div class="lc-sec-head"><span class="lc-sec-dot" style="background:#3b82f6"></span><h2 class="lc-sec-h">Pressure Washing</h2><span class="lc-sec-count">4 articles</span></div><div class="lc-grid"><a href="/learning-center/how-often-pressure-wash-myrtle-beach/" class="lc-card"><span class="lc-tag" style="background:rgba(59,130,246,0.12);color:#3b82f6">Pressure Washing</span><h3 class="lc-card-h">How Often Should You Pressure Wash in Myrtle Beach? A Surface-by-Surface Guide</h3><span class="lc-read">Read article &rarr;</span></a><a href="/learning-center/pressure-washing-cost-myrtle-beach/" class="lc-card"><span class="lc-tag" style="background:rgba(59,130,246,0.12);color:#3b82f6">Pressure Washing</span><h3 class="lc-card-h">How Much Does Pressure Washing Cost in Myrtle Beach, SC? (2025 Guide)</h3><span class="lc-read">Read article &rarr;</span></a><a href="/learning-center/pressure-washing-before-painting-myrtle-beach/" class="lc-card"><span class="lc-tag" style="background:rgba(59,130,246,0.12);color:#3b82f6">Pressure Washing</span><h3 class="lc-card-h">Pressure Washing Before Painting — Why It Matters for Myrtle Beach Homes</h3><span class="lc-read">Read article &rarr;</span></a><a href="/learning-center/soft-washing-vs-pressure-washing/" class="lc-card"><span class="lc-tag" style="background:rgba(59,130,246,0.12);color:#3b82f6">Pressure Washing</span><h3 class="lc-card-h">Soft Washing vs Pressure Washing — What's the Difference?</h3><span class="lc-read">Read article &rarr;</span></a></div></div><div class="lc-section" id="gutter-cleaning"><div class="lc-sec-head"><span class="lc-sec-dot" style="background:#6366f1"></span><h2 class="lc-sec-h">Gutter Cleaning</h2><span class="lc-sec-count">4 articles</span></div><div class="lc-grid"><a href="/learning-center/gutter-cleaning-cost-guide-myrtle-beach-2025/" class="lc-card"><span class="lc-tag" style="background:rgba(99,102,241,0.12);color:#6366f1">Gutter Cleaning</span><h3 class="lc-card-h">Gutter Cleaning Cost Guide for Myrtle Beach — 2025 Prices</h3><span class="lc-read">Read article &rarr;</span></a><a href="/learning-center/how-often-clean-gutters-myrtle-beach/" class="lc-card"><span class="lc-tag" style="background:rgba(99,102,241,0.12);color:#6366f1">Gutter Cleaning</span><h3 class="lc-card-h">How Often Should You Clean Gutters in Myrtle Beach, SC?</h3><span class="lc-read">Read article &rarr;</span></a><a href="/learning-center/what-happens-skip-gutter-cleaning-myrtle-beach/" class="lc-card"><span class="lc-tag" style="background:rgba(99,102,241,0.12);color:#6366f1">Gutter Cleaning</span><h3 class="lc-card-h">What Happens When You Don't Clean Your Gutters in Myrtle Beach</h3><span class="lc-read">Read article &rarr;</span></a><a href="/learning-center/gutter-guards-myrtle-beach-honest-assessment/" class="lc-card"><span class="lc-tag" style="background:rgba(99,102,241,0.12);color:#6366f1">Gutter Cleaning</span><h3 class="lc-card-h">Do Gutter Guards Work in Myrtle Beach? An Honest Assessment</h3><span class="lc-read">Read article &rarr;</span></a></div></div><div class="lc-section" id="painting"><div class="lc-sec-head"><span class="lc-sec-dot" style="background:#f97316"></span><h2 class="lc-sec-h">Painting</h2><span class="lc-sec-count">4 articles</span></div><div class="lc-grid"><a href="/learning-center/when-to-repaint-vacation-rental-interior-myrtle-beach/" class="lc-card"><span class="lc-tag" style="background:rgba(249,115,22,0.12);color:#f97316">Painting</span><h3 class="lc-card-h">When to Repaint the Interior of Your Myrtle Beach Vacation Rental</h3><span class="lc-read">Read article &rarr;</span></a><a href="/learning-center/exterior-paint-coastal-homes-myrtle-beach/" class="lc-card"><span class="lc-tag" style="background:rgba(249,115,22,0.12);color:#f97316">Painting</span><h3 class="lc-card-h">Exterior Paint for Coastal Homes — What Works in Myrtle Beach, SC</h3><span class="lc-read">Read article &rarr;</span></a><a href="/learning-center/exterior-painting-cost-guide-myrtle-beach-2025/" class="lc-card"><span class="lc-tag" style="background:rgba(249,115,22,0.12);color:#f97316">Painting</span><h3 class="lc-card-h">Exterior Painting Cost Guide — Myrtle Beach & Horry County 2025</h3><span class="lc-read">Read article &rarr;</span></a><a href="/learning-center/pressure-washing-before-painting-myrtle-beach/" class="lc-card"><span class="lc-tag" style="background:rgba(249,115,22,0.12);color:#f97316">Painting</span><h3 class="lc-card-h">Why You Must Pressure Wash Before Painting in Myrtle Beach</h3><span class="lc-read">Read article &rarr;</span></a></div></div><div class="lc-section" id="property-upgrades"><div class="lc-sec-head"><span class="lc-sec-dot" style="background:#ec4899"></span><h2 class="lc-sec-h">Property Upgrades</h2><span class="lc-sec-count">6 articles</span></div><div class="lc-grid"><a href="/learning-center/curb-appeal-upgrades-myrtle-beach/" class="lc-card"><span class="lc-tag" style="background:rgba(236,72,153,0.12);color:#ec4899">Property Upgrades</span><h3 class="lc-card-h">7 Curb Appeal Upgrades That Actually Pay Off in Myrtle Beach, SC</h3><span class="lc-read">Read article &rarr;</span></a><a href="/learning-center/flooring-installation-cost-guide-myrtle-beach-2025/" class="lc-card"><span class="lc-tag" style="background:rgba(236,72,153,0.12);color:#ec4899">Property Upgrades</span><h3 class="lc-card-h">Flooring Installation Cost Guide for Myrtle Beach — 2025</h3><span class="lc-read">Read article &rarr;</span></a><a href="/learning-center/when-to-replace-flooring-vacation-rental-myrtle-beach/" class="lc-card"><span class="lc-tag" style="background:rgba(236,72,153,0.12);color:#ec4899">Property Upgrades</span><h3 class="lc-card-h">When to Replace Flooring in a Myrtle Beach Vacation Rental</h3><span class="lc-read">Read article &rarr;</span></a><a href="/learning-center/best-flooring-vacation-rentals-myrtle-beach/" class="lc-card"><span class="lc-tag" style="background:rgba(236,72,153,0.12);color:#ec4899">Property Upgrades</span><h3 class="lc-card-h">Best Flooring for Myrtle Beach Vacation Rentals — 2025 Complete Guide</h3><span class="lc-read">Read article &rarr;</span></a><a href="/learning-center/best-flooring-vacation-rentals-myrtle-beach/" class="lc-card"><span class="lc-tag" style="background:rgba(236,72,153,0.12);color:#ec4899">Property Upgrades</span><h3 class="lc-card-h">Best Flooring for Myrtle Beach Vacation Rentals — Why LVP Wins</h3><span class="lc-read">Read article &rarr;</span></a><a href="/learning-center/vacation-rental-renovation-roi-myrtle-beach/" class="lc-card"><span class="lc-tag" style="background:rgba(236,72,153,0.12);color:#ec4899">Property Upgrades</span><h3 class="lc-card-h">Vacation Rental Renovation ROI in Myrtle Beach — What Actually Moves the Needle</h3><span class="lc-read">Read article &rarr;</span></a></div></div><div class="lc-section" id="interior-cleaning"><div class="lc-sec-head"><span class="lc-sec-dot" style="background:#8b5cf6"></span><h2 class="lc-sec-h">Interior Cleaning</h2><span class="lc-sec-count">2 articles</span></div><div class="lc-grid"><a href="/learning-center/interior-cleaning-cost-guide-myrtle-beach-2025/" class="lc-card"><span class="lc-tag" style="background:rgba(139,92,246,0.12);color:#8b5cf6">Interior Cleaning</span><h3 class="lc-card-h">Interior Cleaning Cost Guide for Myrtle Beach — 2025 Prices</h3><span class="lc-read">Read article &rarr;</span></a><a href="/learning-center/move-in-move-out-cleaning-myrtle-beach/" class="lc-card"><span class="lc-tag" style="background:rgba(139,92,246,0.12);color:#8b5cf6">Interior Cleaning</span><h3 class="lc-card-h">Move-In & Move-Out Cleaning in Myrtle Beach — What It Includes</h3><span class="lc-read">Read article &rarr;</span></a></div></div><div class="lc-section" id="handyman"><div class="lc-sec-head"><span class="lc-sec-dot" style="background:#64748b"></span><h2 class="lc-sec-h">Handyman</h2><span class="lc-sec-count">3 articles</span></div><div class="lc-grid"><a href="/learning-center/vacation-rental-handyman-checklist-myrtle-beach/" class="lc-card"><span class="lc-tag" style="background:rgba(100,116,139,0.12);color:#64748b">Handyman</span><h3 class="lc-card-h">Vacation Rental Handyman Checklist — Annual Repairs for Myrtle Beach STRs</h3><span class="lc-read">Read article &rarr;</span></a><a href="/learning-center/handyman-cost-guide-myrtle-beach-2025/" class="lc-card"><span class="lc-tag" style="background:rgba(100,116,139,0.12);color:#64748b">Handyman</span><h3 class="lc-card-h">Handyman Service Cost Guide for Myrtle Beach — 2025</h3><span class="lc-read">Read article &rarr;</span></a><a href="/learning-center/handyman-vs-contractor-myrtle-beach/" class="lc-card"><span class="lc-tag" style="background:rgba(100,116,139,0.12);color:#64748b">Handyman</span><h3 class="lc-card-h">Handyman vs Licensed Contractor — When to Call Which in Myrtle Beach</h3><span class="lc-read">Read article &rarr;</span></a></div></div><div class="lc-section" id="junk-removal"><div class="lc-sec-head"><span class="lc-sec-dot" style="background:#78716c"></span><h2 class="lc-sec-h">Junk Removal</h2><span class="lc-sec-count">2 articles</span></div><div class="lc-grid"><a href="/learning-center/junk-removal-cost-guide-myrtle-beach-2025/" class="lc-card"><span class="lc-tag" style="background:rgba(120,113,108,0.12);color:#78716c">Junk Removal</span><h3 class="lc-card-h">Junk Removal Cost Guide for Myrtle Beach — 2025 Prices</h3><span class="lc-read">Read article &rarr;</span></a><a href="/learning-center/junk-removal-guide-myrtle-beach/" class="lc-card"><span class="lc-tag" style="background:rgba(120,113,108,0.12);color:#78716c">Junk Removal</span><h3 class="lc-card-h">When to Hire Junk Removal vs DIY — Myrtle Beach Property Owners Guide</h3><span class="lc-read">Read article &rarr;</span></a></div></div><div class="lc-section" id="commercial"><div class="lc-sec-head"><span class="lc-sec-dot" style="background:#0ea5e9"></span><h2 class="lc-sec-h">Commercial</h2><span class="lc-sec-count">1 article</span></div><div class="lc-grid"><a href="/learning-center/commercial-cleaning-guide-myrtle-beach/" class="lc-card"><span class="lc-tag" style="background:rgba(14,165,233,0.12);color:#0ea5e9">Commercial</span><h3 class="lc-card-h">Commercial Cleaning for Myrtle Beach Businesses — What You Need</h3><span class="lc-read">Read article &rarr;</span></a></div></div><div class="lc-section" id="property-management"><div class="lc-sec-head"><span class="lc-sec-dot" style="background:#a855f7"></span><h2 class="lc-sec-h">Property Management</h2><span class="lc-sec-count">1 article</span></div><div class="lc-grid"><a href="/learning-center/managing-myrtle-beach-property-out-of-state/" class="lc-card"><span class="lc-tag" style="background:rgba(168,85,247,0.12);color:#a855f7">Property Management</span><h3 class="lc-card-h">Managing a Myrtle Beach Property from Out of State — Complete Guide</h3><span class="lc-read">Read article &rarr;</span></a></div></div>
-</div>
-
-<div class="cta">
-  <h2>Questions? We Answer Personally.</h2>
-  <p>Ray and Courtney Baker &middot; 843-467-7136 &middot; All of Horry County &middot; 24/7</p>
-  <div class="ctas">
-    <a href="/get-quote/" class="btn-w">Get a Free Estimate &rarr;</a>
-    <a href="tel:8434677136" class="btn-ow">&#128222; 843-467-7136</a>
-  </div>
-</div>
+<section style="text-align:center;">
+  <h2 class="section-title">Questions? We Answer Personally.</h2>
+  <p style="color:var(--gray);margin-bottom:20px;">Ray and Courtney Cloyd · 843-467-7136 · All of Horry County · 24/7</p>
+  <a class="cta-btn" href="https://www.bakerss.com/get-quote/">Get a Free Estimate →</a>
+  <a href="tel:8434677136" style="margin-left:14px;border:1px solid var(--pink);padding:10px 20px;border-radius:6px;font-weight:600;">📞 843-467-7136</a>
+</section>
 
 <footer>
-  <div class="fi">
+  <div class="footer-grid">
     <div>
-      <span class="logo-f">Bakerss<span>.</span></span>
-      <p>Ray &amp; Courtney Baker. Horry County&apos;s most trusted property maintenance team. Licensed &amp; insured. 24/7 availability.</p>
-      <p style="margin-top:.75rem"><a href="tel:8434677136" style="color:var(--pink);font-weight:600;font-size:14px">843-467-7136</a></p>
+      <h4>Bakerss.</h4>
+      <p>Ray &amp; Courtney Cloyd. Horry County's most trusted property maintenance team. Licensed &amp; insured. 24/7 availability.</p>
+      <p style="margin-top:10px;"><a href="tel:8434677136">📞 843-467-7136</a></p>
+      <p><a href="mailto:info@bakerss.com">✉ info@bakerss.com</a></p>
     </div>
     <div>
       <h4>Services</h4>
-      <a href="/services/lawn-care/">Lawn Care</a>
-      <a href="/services/airbnb-cleaning/">Airbnb Cleaning</a>
-      <a href="/services/pressure-washing/">Pressure Washing</a>
-      <a href="/services/gutter-cleaning/">Gutter Cleaning</a>
-      <a href="/services/landscaping/">Landscaping</a>
-      <a href="/services/painting/">Painting</a>
+      <a href="https://www.bakerss.com/services/epoxy-flooring/">Epoxy Garage Floors</a>
+      <a href="https://www.bakerss.com/services/lawn-care/">Lawn Care</a>
+      <a href="https://www.bakerss.com/services/landscaping/">Landscaping</a>
+      <a href="https://www.bakerss.com/services/sod-installation/">Sod Installation</a>
+      <a href="https://www.bakerss.com/services/pool-maintenance/">Pool Maintenance</a>
+      <a href="https://www.bakerss.com/services/pressure-washing/">Pressure Washing</a>
+      <a href="https://www.bakerss.com/services/gutter-cleaning/">Gutter Cleaning</a>
+      <a href="https://www.bakerss.com/services/deck-building-repair/">Deck Building &amp; Repair</a>
+      <a href="https://www.bakerss.com/services/airbnb-cleaning/">Airbnb / STR Cleaning</a>
+      <a href="https://www.bakerss.com/services/interior-cleaning/">Interior Cleaning</a>
+      <a href="https://www.bakerss.com/services/commercial-cleaning/">Commercial Cleaning</a>
+      <a href="https://www.bakerss.com/services/painting/">Painting</a>
+      <a href="https://www.bakerss.com/services/flooring/">Flooring — LVP &amp; Tile</a>
+      <a href="https://www.bakerss.com/services/handyman-services/">Handyman Services</a>
+      <a href="https://www.bakerss.com/services/minor-electric-plumbing/">Minor Electrical &amp; Plumbing</a>
+      <a href="https://www.bakerss.com/services/junk-removal/">Junk Removal</a>
+      <a href="https://www.bakerss.com/services/commercial-maintenance/">Commercial Maintenance</a>
+      <a href="https://www.bakerss.com/services/property-maintenance/">Maintenance Plans</a>
     </div>
     <div>
       <h4>Service Areas</h4>
-      <a href="/service-areas/myrtle-beach/">Myrtle Beach</a>
-      <a href="/service-areas/north-myrtle-beach/">North Myrtle Beach</a>
-      <a href="/service-areas/conway/">Conway</a>
-      <a href="/service-areas/surfside-beach/">Surfside Beach</a>
-      <a href="/service-areas/murrells-inlet/">Murrells Inlet</a>
-      <a href="/service-areas/horry-county/">All Horry County</a>
+      <a href="https://www.bakerss.com/service-areas/myrtle-beach/">Myrtle Beach</a>
+      <a href="https://www.bakerss.com/service-areas/north-myrtle-beach/">North Myrtle Beach</a>
+      <a href="https://www.bakerss.com/service-areas/conway/">Conway</a>
+      <a href="https://www.bakerss.com/service-areas/surfside-beach/">Surfside Beach</a>
+      <a href="https://www.bakerss.com/service-areas/murrells-inlet/">Murrells Inlet</a>
+      <a href="https://www.bakerss.com/service-areas/garden-city/">Garden City</a>
+      <a href="https://www.bakerss.com/service-areas/socastee/">Socastee</a>
+      <a href="https://www.bakerss.com/service-areas/little-river/">Little River</a>
+      <a href="https://www.bakerss.com/service-areas/horry-county/">All of Horry County</a>
     </div>
     <div>
       <h4>Company</h4>
-      <a href="/about/">About Us</a>
-      <a href="/reviews/">Reviews</a>
-      <a href="/get-quote/">Free Quote</a>
-      <a href="/faq/">FAQ</a>
-      <a href="/learning-center/">Learning Center</a>
+      <a href="https://www.bakerss.com/about/">About Us</a>
+      <a href="https://www.bakerss.com/reviews/">Reviews</a>
+      <a href="https://www.bakerss.com/our-work/">Our Work</a>
+      <a href="https://www.bakerss.com/get-quote/">Free Quote</a>
+      <a href="https://www.bakerss.com/learning-center/">Learning Center</a>
     </div>
   </div>
-  <div class="fb">
-    <span>&copy; 2025 Bakerss Property Maintenance &middot; Myrtle Beach, SC</span>
-    <span><a href="/privacy/" style="color:rgba(255,255,255,.2)">Privacy</a> &middot; <a href="/terms/" style="color:rgba(255,255,255,.2)">Terms</a></span>
+  <div class="footer-bottom">
+    © 2026 Bakerss Property Maintenance · Horry County, SC · Licensed &amp; Insured · Locally Owned — Ray &amp; Courtney Cloyd
   </div>
 </footer>
 
-<div class="mob-bar">
-  <a href="tel:8434677136" class="mob-btn mob-call">&#128222; Call</a>
-  <a href="sms:8434677136" class="mob-btn mob-text">&#128172; Text</a>
-  <a href="/get-quote/" class="mob-btn mob-call">Free Quote</a>
-</div>
-
-<script>
-function filterLC(cat, btn) {
-  document.querySelectorAll('.lc-tab').forEach(function(t){ t.classList.remove('active'); });
-  btn.classList.add('active');
-  document.getElementById('lcSearch').value = '';
-  var sections = document.querySelectorAll('.lc-section');
-  if (cat === 'all') {
-    sections.forEach(function(s){ s.classList.remove('hidden'); });
-    document.querySelectorAll('.lc-card').forEach(function(c){ c.classList.remove('hidden'); });
-  } else {
-    sections.forEach(function(s){
-      s.classList.toggle('hidden', s.id !== cat);
-      s.querySelectorAll('.lc-card').forEach(function(c){ c.classList.remove('hidden'); });
-    });
-  }
-  document.getElementById('noResults').classList.remove('show');
-}
-
-function searchLC(q) {
-  q = q.toLowerCase().trim();
-  document.querySelectorAll('.lc-tab').forEach(function(t){ t.classList.remove('active'); });
-  document.querySelector('.lc-tab').classList.add('active');
-  document.querySelectorAll('.lc-section').forEach(function(s){ s.classList.remove('hidden'); });
-  if (!q) {
-    document.querySelectorAll('.lc-card').forEach(function(c){ c.classList.remove('hidden'); });
-    document.getElementById('noResults').classList.remove('show');
-    return;
-  }
-  var visible = 0;
-  document.querySelectorAll('.lc-section').forEach(function(section) {
-    var sv = 0;
-    section.querySelectorAll('.lc-card').forEach(function(card) {
-      var show = card.textContent.toLowerCase().indexOf(q) >= 0;
-      card.classList.toggle('hidden', !show);
-      if (show) { sv++; visible++; }
-    });
-    section.classList.toggle('hidden', sv === 0);
-  });
-  document.getElementById('noResults').classList.toggle('show', visible === 0);
-}
-
-function resetLC() {
-  document.getElementById('lcSearch').value = '';
-  searchLC('');
-}
-</script>
-
-<script type="application/ld+json">{"@context":"https://schema.org","@type":"CollectionPage","name":"Myrtle Beach Property Maintenance Learning Center","url":"https://www.bakerss.com/learning-center/","numberOfItems":99,"publisher":{"@type":"LocalBusiness","name":"Bakerss Property Maintenance","telephone":"+18434677136"}}</script>
 </body>
 </html>
