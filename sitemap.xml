@@ -1,54 +1,430 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url><loc>https://www.bakerss.com/</loc><lastmod>2026-06-11</lastmod><changefreq>monthly</changefreq><priority>1.0</priority></url>
-  <url><loc>https://www.bakerss.com/about/</loc><lastmod>2026-06-11</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://www.bakerss.com/reviews/</loc><lastmod>2026-06-11</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://www.bakerss.com/our-work/</loc><lastmod>2026-06-11</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://www.bakerss.com/learning-center/</loc><lastmod>2026-06-11</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://www.bakerss.com/get-quote/</loc><lastmod>2026-06-11</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://www.bakerss.com/services/</loc><lastmod>2026-06-11</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://www.bakerss.com/services/lawn-care/</loc><lastmod>2026-06-11</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
-  <url><loc>https://www.bakerss.com/services/landscaping/</loc><lastmod>2026-06-11</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
-  <url><loc>https://www.bakerss.com/services/sod-installation/</loc><lastmod>2026-06-11</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
-  <url><loc>https://www.bakerss.com/services/concrete-curbing/</loc><lastmod>2026-06-11</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
-  <url><loc>https://www.bakerss.com/services/pressure-washing/</loc><lastmod>2026-06-11</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
-  <url><loc>https://www.bakerss.com/services/gutter-cleaning/</loc><lastmod>2026-06-11</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
-  <url><loc>https://www.bakerss.com/services/deck-building-repair/</loc><lastmod>2026-06-11</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
-  <url><loc>https://www.bakerss.com/services/interior-cleaning/</loc><lastmod>2026-06-11</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
-  <url><loc>https://www.bakerss.com/services/commercial-cleaning/</loc><lastmod>2026-06-11</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
-  <url><loc>https://www.bakerss.com/services/airbnb-cleaning/</loc><lastmod>2026-06-11</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
-  <url><loc>https://www.bakerss.com/services/painting/</loc><lastmod>2026-06-11</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
-  <url><loc>https://www.bakerss.com/services/handyman-services/</loc><lastmod>2026-06-11</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
-  <url><loc>https://www.bakerss.com/services/minor-electric-plumbing/</loc><lastmod>2026-06-11</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
-  <url><loc>https://www.bakerss.com/services/flooring/</loc><lastmod>2026-06-11</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
-  <url><loc>https://www.bakerss.com/services/junk-removal/</loc><lastmod>2026-06-11</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
-  <url><loc>https://www.bakerss.com/services/property-maintenance/</loc><lastmod>2026-06-11</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
-  <url><loc>https://www.bakerss.com/services/epoxy-flooring/</loc><lastmod>2026-06-11</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
-  <url><loc>https://www.bakerss.com/services/pool-maintenance/</loc><lastmod>2026-06-11</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
-  <url><loc>https://www.bakerss.com/services/commercial-maintenance/</loc><lastmod>2026-06-11</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
-  <url><loc>https://www.bakerss.com/service-areas/horry-county/</loc><lastmod>2026-06-11</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://www.bakerss.com/service-areas/myrtle-beach/</loc><lastmod>2026-06-11</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://www.bakerss.com/service-areas/myrtle-beach/epoxy-flooring/</loc><lastmod>2026-06-11</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://www.bakerss.com/service-areas/myrtle-beach/pool-maintenance/</loc><lastmod>2026-06-11</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://www.bakerss.com/service-areas/north-myrtle-beach/</loc><lastmod>2026-06-11</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://www.bakerss.com/service-areas/north-myrtle-beach/epoxy-flooring/</loc><lastmod>2026-06-11</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://www.bakerss.com/service-areas/north-myrtle-beach/pool-maintenance/</loc><lastmod>2026-06-11</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://www.bakerss.com/service-areas/conway/</loc><lastmod>2026-06-11</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://www.bakerss.com/service-areas/conway/epoxy-flooring/</loc><lastmod>2026-06-11</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://www.bakerss.com/service-areas/conway/pool-maintenance/</loc><lastmod>2026-06-11</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://www.bakerss.com/service-areas/surfside-beach/</loc><lastmod>2026-06-11</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://www.bakerss.com/service-areas/surfside-beach/epoxy-flooring/</loc><lastmod>2026-06-11</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://www.bakerss.com/service-areas/surfside-beach/pool-maintenance/</loc><lastmod>2026-06-11</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://www.bakerss.com/service-areas/murrells-inlet/</loc><lastmod>2026-06-11</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://www.bakerss.com/service-areas/murrells-inlet/epoxy-flooring/</loc><lastmod>2026-06-11</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://www.bakerss.com/service-areas/murrells-inlet/pool-maintenance/</loc><lastmod>2026-06-11</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://www.bakerss.com/service-areas/garden-city/</loc><lastmod>2026-06-11</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://www.bakerss.com/service-areas/garden-city/epoxy-flooring/</loc><lastmod>2026-06-11</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://www.bakerss.com/service-areas/garden-city/pool-maintenance/</loc><lastmod>2026-06-11</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://www.bakerss.com/service-areas/socastee/</loc><lastmod>2026-06-11</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://www.bakerss.com/service-areas/socastee/epoxy-flooring/</loc><lastmod>2026-06-11</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://www.bakerss.com/service-areas/socastee/pool-maintenance/</loc><lastmod>2026-06-11</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://www.bakerss.com/service-areas/little-river/</loc><lastmod>2026-06-11</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://www.bakerss.com/service-areas/little-river/epoxy-flooring/</loc><lastmod>2026-06-11</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://www.bakerss.com/service-areas/little-river/pool-maintenance/</loc><lastmod>2026-06-11</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+
+  <!-- ============================================ -->
+  <!-- CORE PAGES -->
+  <!-- ============================================ -->
+
+  <url>
+    <loc>https://www.bakerss.com/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+  </url>
+
+  <url>
+    <loc>https://www.bakerss.com/about/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://www.bakerss.com/reviews/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://www.bakerss.com/our-work/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://www.bakerss.com/get-quote/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <!-- ============================================ -->
+  <!-- SERVICE PAGES -->
+  <!-- ============================================ -->
+
+  <url>
+    <loc>https://www.bakerss.com/services/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <url>
+    <loc>https://www.bakerss.com/services/epoxy-flooring/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <url>
+    <loc>https://www.bakerss.com/services/lawn-care/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <url>
+    <loc>https://www.bakerss.com/services/landscaping/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://www.bakerss.com/services/sod-installation/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://www.bakerss.com/services/pool-maintenance/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://www.bakerss.com/services/pressure-washing/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <url>
+    <loc>https://www.bakerss.com/services/gutter-cleaning/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://www.bakerss.com/services/airbnb-cleaning/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <url>
+    <loc>https://www.bakerss.com/services/interior-cleaning/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://www.bakerss.com/services/commercial-cleaning/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://www.bakerss.com/services/painting/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://www.bakerss.com/services/handyman-services/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://www.bakerss.com/services/deck-building-repair/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://www.bakerss.com/services/flooring/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://www.bakerss.com/services/concrete-curbing/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://www.bakerss.com/services/junk-removal/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://www.bakerss.com/services/minor-electric-plumbing/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://www.bakerss.com/services/commercial-maintenance/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://www.bakerss.com/services/property-maintenance/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- ============================================ -->
+  <!-- SERVICE AREA HUB -->
+  <!-- ============================================ -->
+
+  <url>
+    <loc>https://www.bakerss.com/service-areas/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <url>
+    <loc>https://www.bakerss.com/service-areas/horry-county/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <!-- ============================================ -->
+  <!-- CITY PAGES -->
+  <!-- ============================================ -->
+
+  <url>
+    <loc>https://www.bakerss.com/service-areas/myrtle-beach/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>1.0</priority>
+  </url>
+
+  <url>
+    <loc>https://www.bakerss.com/service-areas/north-myrtle-beach/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <url>
+    <loc>https://www.bakerss.com/service-areas/conway/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <url>
+    <loc>https://www.bakerss.com/service-areas/surfside-beach/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://www.bakerss.com/service-areas/murrells-inlet/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://www.bakerss.com/service-areas/garden-city/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://www.bakerss.com/service-areas/socastee/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://www.bakerss.com/service-areas/little-river/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- ============================================ -->
+  <!-- CITY + SERVICE COMBINATION PAGES -->
+  <!-- ============================================ -->
+
+  <!-- Myrtle Beach city+service -->
+  <url><loc>https://www.bakerss.com/service-areas/myrtle-beach/epoxy-flooring/</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://www.bakerss.com/service-areas/myrtle-beach/lawn-care/</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://www.bakerss.com/service-areas/myrtle-beach/pressure-washing/</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://www.bakerss.com/service-areas/myrtle-beach/pool-maintenance/</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://www.bakerss.com/service-areas/myrtle-beach/airbnb-cleaning/</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://www.bakerss.com/service-areas/myrtle-beach/gutter-cleaning/</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.bakerss.com/service-areas/myrtle-beach/landscaping/</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.bakerss.com/service-areas/myrtle-beach/interior-cleaning/</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.bakerss.com/service-areas/myrtle-beach/sod-installation/</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.bakerss.com/service-areas/myrtle-beach/commercial-maintenance/</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+
+  <!-- Conway city+service -->
+  <url><loc>https://www.bakerss.com/service-areas/conway/epoxy-flooring/</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.bakerss.com/service-areas/conway/lawn-care/</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.bakerss.com/service-areas/conway/pressure-washing/</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.bakerss.com/service-areas/conway/gutter-cleaning/</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.bakerss.com/service-areas/conway/pool-maintenance/</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.bakerss.com/service-areas/conway/sod-installation/</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.bakerss.com/service-areas/conway/landscaping/</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.bakerss.com/service-areas/conway/airbnb-cleaning/</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.bakerss.com/service-areas/conway/commercial-maintenance/</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.bakerss.com/service-areas/conway/handyman-services/</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+
+  <!-- North Myrtle Beach city+service -->
+  <url><loc>https://www.bakerss.com/service-areas/north-myrtle-beach/epoxy-flooring/</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.bakerss.com/service-areas/north-myrtle-beach/lawn-care/</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.bakerss.com/service-areas/north-myrtle-beach/pressure-washing/</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.bakerss.com/service-areas/north-myrtle-beach/pool-maintenance/</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.bakerss.com/service-areas/north-myrtle-beach/airbnb-cleaning/</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.bakerss.com/service-areas/north-myrtle-beach/gutter-cleaning/</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+
+  <!-- Surfside Beach city+service -->
+  <url><loc>https://www.bakerss.com/service-areas/surfside-beach/epoxy-flooring/</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.bakerss.com/service-areas/surfside-beach/lawn-care/</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.bakerss.com/service-areas/surfside-beach/pressure-washing/</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.bakerss.com/service-areas/surfside-beach/airbnb-cleaning/</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.bakerss.com/service-areas/surfside-beach/pool-maintenance/</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+
+  <!-- Murrells Inlet city+service -->
+  <url><loc>https://www.bakerss.com/service-areas/murrells-inlet/epoxy-flooring/</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.bakerss.com/service-areas/murrells-inlet/lawn-care/</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.bakerss.com/service-areas/murrells-inlet/pressure-washing/</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.bakerss.com/service-areas/murrells-inlet/pool-maintenance/</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.bakerss.com/service-areas/murrells-inlet/airbnb-cleaning/</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+
+  <!-- Garden City city+service -->
+  <url><loc>https://www.bakerss.com/service-areas/garden-city/epoxy-flooring/</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.bakerss.com/service-areas/garden-city/lawn-care/</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.bakerss.com/service-areas/garden-city/airbnb-cleaning/</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.bakerss.com/service-areas/garden-city/pressure-washing/</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.bakerss.com/service-areas/garden-city/pool-maintenance/</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+
+  <!-- Socastee city+service -->
+  <url><loc>https://www.bakerss.com/service-areas/socastee/epoxy-flooring/</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.bakerss.com/service-areas/socastee/lawn-care/</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.bakerss.com/service-areas/socastee/pressure-washing/</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.bakerss.com/service-areas/socastee/gutter-cleaning/</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.bakerss.com/service-areas/socastee/pool-maintenance/</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+
+  <!-- Little River city+service -->
+  <url><loc>https://www.bakerss.com/service-areas/little-river/epoxy-flooring/</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.bakerss.com/service-areas/little-river/lawn-care/</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.bakerss.com/service-areas/little-river/pressure-washing/</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.bakerss.com/service-areas/little-river/pool-maintenance/</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+
+  <!-- ============================================ -->
+  <!-- LEARNING CENTER HUB -->
+  <!-- ============================================ -->
+
+  <url>
+    <loc>https://www.bakerss.com/learning-center/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <!-- NEW ARTICLES — June 2026 -->
+  <url>
+    <loc>https://www.bakerss.com/learning-center/epoxy-garage-floor-cost-myrtle-beach/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://www.bakerss.com/learning-center/best-sod-myrtle-beach/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://www.bakerss.com/learning-center/pool-maintenance-myrtle-beach/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- EXISTING LEARNING CENTER ARTICLES -->
+  <url><loc>https://www.bakerss.com/learning-center/best-grass-types-myrtle-beach/</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.bakerss.com/learning-center/hurricane-prep-coastal-homes/</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.bakerss.com/learning-center/property-owners-guide-socastee-sc/</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.bakerss.com/learning-center/property-owners-guide-surfside-beach-sc/</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.bakerss.com/learning-center/pool-deck-maintenance-myrtle-beach/</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.bakerss.com/learning-center/best-flooring-vacation-rentals-myrtle-beach/</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.bakerss.com/learning-center/pressure-washing-myrtle-beach-guide/</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.bakerss.com/learning-center/lawn-care-schedule-myrtle-beach/</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.bakerss.com/learning-center/gutter-cleaning-guide-horry-county/</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.bakerss.com/learning-center/landscaping-ideas-myrtle-beach/</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.bakerss.com/learning-center/airbnb-cleaning-guide-myrtle-beach/</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.bakerss.com/learning-center/painting-guide-coastal-homes/</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.bakerss.com/learning-center/deck-building-myrtle-beach/</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.bakerss.com/learning-center/property-maintenance-vacation-rental/</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.bakerss.com/learning-center/mold-mildew-prevention-coastal-sc/</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.bakerss.com/learning-center/hoa-lawn-care-myrtle-beach/</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.bakerss.com/learning-center/concrete-curbing-guide/</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.bakerss.com/learning-center/move-out-cleaning-myrtle-beach/</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.bakerss.com/learning-center/property-owners-guide-conway-sc/</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.bakerss.com/learning-center/property-owners-guide-murrells-inlet/</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.bakerss.com/learning-center/property-owners-guide-garden-city-sc/</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.bakerss.com/learning-center/property-owners-guide-little-river-sc/</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.bakerss.com/learning-center/property-owners-guide-north-myrtle-beach/</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.bakerss.com/learning-center/epoxy-colors-myrtle-beach/</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.bakerss.com/learning-center/cost-of-lawn-care-myrtle-beach/</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.bakerss.com/learning-center/hiring-property-manager-myrtle-beach/</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.bakerss.com/learning-center/sod-installation-guide-horry-county/</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.bakerss.com/learning-center/saltwater-pool-maintenance-myrtle-beach/</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.bakerss.com/learning-center/roof-cleaning-myrtle-beach/</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.bakerss.com/learning-center/window-cleaning-myrtle-beach/</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.bakerss.com/learning-center/fence-cleaning-myrtle-beach/</loc><changefreq>monthly</changefreq><priority>0.7</priority></div>
+  <url><loc>https://www.bakerss.com/learning-center/exterior-painting-cost-myrtle-beach/</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.bakerss.com/learning-center/handyman-services-myrtle-beach/</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.bakerss.com/learning-center/commercial-cleaning-myrtle-beach/</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.bakerss.com/learning-center/junk-removal-myrtle-beach/</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.bakerss.com/learning-center/carolina-forest-property-guide/</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.bakerss.com/learning-center/grande-dunes-property-guide/</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.bakerss.com/learning-center/ocean-lakes-property-guide/</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.bakerss.com/learning-center/market-common-property-guide/</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.bakerss.com/learning-center/barefoot-resort-property-guide/</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.bakerss.com/learning-center/wild-wing-plantation-guide/</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.bakerss.com/learning-center/prince-creek-property-guide/</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.bakerss.com/learning-center/wachesaw-plantation-guide/</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.bakerss.com/learning-center/coastal-heights-conway-guide/</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.bakerss.com/learning-center/str-property-maintenance-guide/</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.bakerss.com/learning-center/str-cleaning-checklist-myrtle-beach/</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.bakerss.com/learning-center/airbnb-review-score-cleaning/</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.bakerss.com/learning-center/vacation-rental-turnover-myrtle-beach/</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.bakerss.com/learning-center/how-to-find-property-maintenance-myrtle-beach/</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.bakerss.com/learning-center/commercial-property-maintenance-guide/</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.bakerss.com/learning-center/apartment-complex-maintenance-myrtle-beach/</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.bakerss.com/learning-center/hoa-property-management-guide/</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.bakerss.com/learning-center/salt-air-home-maintenance-myrtle-beach/</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.bakerss.com/learning-center/coastal-home-paint-guide/</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.bakerss.com/learning-center/post-hurricane-cleanup-myrtle-beach/</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.bakerss.com/learning-center/exterior-maintenance-schedule-coastal-sc/</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.bakerss.com/learning-center/garage-floor-coating-options/</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.bakerss.com/learning-center/epoxy-vs-polyaspartic-myrtle-beach/</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.bakerss.com/learning-center/how-to-prepare-concrete-for-epoxy/</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.bakerss.com/learning-center/bermuda-grass-care-guide-sc/</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.bakerss.com/learning-center/zoysia-grass-myrtle-beach/</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.bakerss.com/learning-center/st-augustine-grass-coastal-sc/</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.bakerss.com/learning-center/centipede-grass-horry-county/</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.bakerss.com/learning-center/fertilization-schedule-myrtle-beach/</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.bakerss.com/learning-center/pre-emergent-weed-control-myrtle-beach/</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.bakerss.com/learning-center/pool-chemistry-guide-coastal-sc/</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.bakerss.com/learning-center/pool-algae-treatment-myrtle-beach/</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.bakerss.com/learning-center/pool-opening-closing-horry-county/</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.bakerss.com/learning-center/lvp-flooring-vacation-rental/</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.bakerss.com/learning-center/tile-flooring-coastal-homes/</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.bakerss.com/learning-center/plumbing-maintenance-vacation-rental/</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.bakerss.com/learning-center/gfci-outlet-vacation-rental/</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.bakerss.com/learning-center/deck-staining-myrtle-beach/</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.bakerss.com/learning-center/composite-vs-wood-deck-coastal-sc/</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.bakerss.com/learning-center/curb-appeal-tips-myrtle-beach/</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.bakerss.com/learning-center/landscaping-ideas-coastal-sc/</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.bakerss.com/learning-center/pine-straw-vs-mulch-myrtle-beach/</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.bakerss.com/learning-center/palm-tree-care-myrtle-beach/</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.bakerss.com/learning-center/irrigation-system-myrtle-beach/</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.bakerss.com/learning-center/outdoor-lighting-myrtle-beach/</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.bakerss.com/learning-center/outdoor-kitchen-maintenance/</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.bakerss.com/learning-center/annual-home-maintenance-checklist-myrtle-beach/</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.bakerss.com/learning-center/seasonal-property-maintenance-checklist/</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.bakerss.com/learning-center/spring-home-maintenance-checklist-myrtle-beach/</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.bakerss.com/learning-center/winter-home-maintenance-coastal-sc/</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.bakerss.com/learning-center/myrtle-beach-property-investment-guide/</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.bakerss.com/learning-center/horry-county-real-estate-maintenance/</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.bakerss.com/learning-center/cost-of-property-maintenance-myrtle-beach/</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.bakerss.com/learning-center/out-of-state-property-owner-guide/</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.bakerss.com/learning-center/myrtle-beach-hoa-guide/</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.bakerss.com/learning-center/grande-dunes-maintenance-guide/</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.bakerss.com/learning-center/carolina-forest-hoa-lawn-guide/</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.bakerss.com/learning-center/forestbrook-socastee-guide/</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.bakerss.com/learning-center/murrells-inlet-property-guide/</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.bakerss.com/learning-center/cherry-grove-property-guide/</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.bakerss.com/learning-center/oceanside-village-surfside-guide/</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.bakerss.com/learning-center/garden-city-beach-property-guide/</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.bakerss.com/learning-center/little-river-waterway-property-guide/</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.bakerss.com/learning-center/ccu-conway-rental-property-guide/</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+
 </urlset>
