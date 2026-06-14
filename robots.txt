@@ -1,7 +1,44 @@
+# robots.txt for bakerss.com
+# Bakerss Property Maintenance — Myrtle Beach & Horry County, SC
+
 User-agent: *
 Allow: /
 
-Sitemap: https://www.bakerss.com/sitemap.xml
+# Allow all major search engine crawlers explicitly
+User-agent: Googlebot
+Allow: /
 
-# Bakerss Property Maintenance — bakerss.com
-# Serving all of Horry County, SC
+User-agent: Bingbot
+Allow: /
+
+User-agent: DuckDuckBot
+Allow: /
+
+# Block admin, private, and system paths only
+Disallow: /wp-admin/
+Disallow: /wp-login.php
+Disallow: /wp-json/
+Disallow: /xmlrpc.php
+Disallow: /cgi-bin/
+Disallow: /tmp/
+Disallow: /*.php$
+Disallow: /feed/
+Disallow: /trackback/
+Disallow: /?s=
+Disallow: /search/
+Disallow: /tag/
+Disallow: /author/
+Disallow: /page/
+
+# Explicitly allow all important site sections
+Allow: /services/
+Allow: /service-areas/
+Allow: /learning-center/
+Allow: /about/
+Allow: /reviews/
+Allow: /our-work/
+Allow: /get-quote/
+
+# Sitemap location
+Sitemap: https://www.bakerss.com/sitemap.xml
+Sitemap: https://www.bakerss.com/sitemap_index.xml
