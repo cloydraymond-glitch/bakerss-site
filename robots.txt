@@ -1,28 +1,11 @@
-# bakerss.com robots.txt
-# Bakerss Property Maintenance | Myrtle Beach & Horry County SC
-
-# Allow all legitimate search engine crawlers
 User-agent: *
 Allow: /
 
-# Block any crawl of the redirect/legacy pages (noindex already set on these)
-Disallow: /redirects/
+# Block non-public or utility paths if they exist
+Disallow: /admin/
+Disallow: /api/
+Disallow: /_next/
+Disallow: /preview/
+Disallow: /drafts/
 
-# AI crawlers — allow for citation in AI search (Perplexity, ChatGPT, Gemini, Claude)
-User-agent: GPTBot
-Allow: /
-
-User-agent: ClaudeBot
-Allow: /
-
-User-agent: PerplexityBot
-Allow: /
-
-User-agent: Google-Extended
-Allow: /
-
-User-agent: Bingbot
-Allow: /
-
-# Sitemap location
 Sitemap: https://www.bakerss.com/sitemap.xml
