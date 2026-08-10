@@ -1,202 +1,48 @@
 <!doctype html>
 <html lang="en">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width,initial-scale=1">
-
-<!-- ═══════════════════════════════════════════════════════════
-     CHANGELOG — Page 1: Homepage — A+ SEO Rebuild
-     ═══════════════════════════════════════════════════════════
-     1. Title tag shortened to 51 chars, primary keyword ("Property
-        Maintenance in Myrtle Beach, SC") moved to the front — was
-        63 chars with brand-first ordering, which wastes SERP
-        real estate and buries the keyword.
-     2. Meta description tightened to 153 chars with a clear CTA
-        ("Free quotes, licensed & insured").
-     3. Removed the WebSite "SearchAction" schema — there is no
-        working on-site search at /?s=, so that markup was
-        inaccurate. Only add it back once real search exists.
-     4. Added "sameAs" array to LocalBusiness schema — REQUIRED for
-        Google to consolidate your entity/reviews across GBP,
-        Facebook, Yelp, Instagram into one Knowledge Panel. Yelp
-        filled in with the confirmed live listing; Facebook,
-        Instagram and GBP place URL still marked TODO — provide
-        real URLs before launch.
-     5. Added "openingHoursSpecification" — hours below are a
-        PLACEHOLDER, not yet confirmed against your actual Google
-        Business Profile. Do not publish until verified — mismatched
-        hours between schema and GBP can trigger a "hours may be
-        inaccurate" flag on Google Maps, the same risk category as
-        publishing an unverified review count.
-     6. Added "datePublished"/"dateModified" to WebPage schema —
-        freshness signal for crawlers.
-     7. Added geo meta tags (geo.region / geo.placename / ICBM) —
-        small, cheap local-SEO signal, especially useful while
-        domain authority is still low.
-     8. AggregateRating ADDED — as of July 2026 the Google Business
-        Profile review count has been verified at 19 reviews, 5.0
-        rating. Do not raise this number again without re-verifying
-        directly against the live GBP listing.
-     9. Non-blocking font loading — swapped the render-blocking
-        Google Fonts <link rel="stylesheet"> for a
-        media="print" onload swap trick, which removes it from the
-        critical rendering path. Same fonts, faster paint.
-    10. Added GA4 + Google Search Console placeholders (commented,
-        clearly marked TODO) so lead tracking can be wired in
-        without guessing at your real IDs.
-    11. alternateName corrected to include "Bakerss Property
-        Maintenance" (the old legal/trading name) instead of a
-        redundant duplicate of the legalName — this is what lets
-        Google match older citations under the old name back to
-        this same business entity.
-    12. Added hreflang self-reference and format-detection meta tag
-        to match the site-wide meta tag standard used on the other
-        rebuilt pages.
-     ═══════════════════════════════════════════════════════════ -->
-
+<meta charset="utf-8"/>
+<meta content="width=device-width,initial-scale=1" name="viewport"/>
 <!-- TITLE: 51 chars, primary keyword first -->
-<title>Property Maintenance & HVAC in Myrtle Beach | Bakerss</title>
-
+<title>Property Maintenance Myrtle Beach, SC | Bakerss</title>
 <!-- META DESCRIPTION: 153 chars -->
-<meta name="description" content="Premium property maintenance in Myrtle Beach—estate care, HVAC, cleaning, grounds, pool and repairs with documented service. Request an assessment.">
-
-<link rel="canonical" href="https://www.bakerss.com/">
-<link rel="alternate" hreflang="en-us" href="https://www.bakerss.com/">
-<meta name="robots" content="index,follow,max-image-preview:large,max-snippet:-1,max-video-preview:-1">
-<meta name="theme-color" content="#e8186d">
-<meta name="author" content="Bakerss Property Services">
-<meta name="format-detection" content="telephone=yes">
-
+<meta content="Bakerss Property Services LLC provides property maintenance, HVAC, duct cleaning, pool, lawn, cleaning and repairs in Myrtle Beach with live client portal updates." name="description"/>
+<link href="https://www.bakerss.com/" rel="canonical"/>
+<link href="https://www.bakerss.com/" hreflang="en-US" rel="alternate"/>
+<meta content="index,follow,max-image-preview:large,max-snippet:-1,max-video-preview:-1" name="robots"/>
+<meta content="#e8197d" name="theme-color"/>
+<meta content="Bakerss Property Services LLC" name="author"/>
+<meta content="telephone=yes" name="format-detection"/>
 <!-- Geo / local SEO signals -->
-<meta name="geo.region" content="US-SC">
-<meta name="geo.placename" content="Myrtle Beach">
-<meta name="geo.position" content="33.6891;-78.8867">
-<meta name="ICBM" content="33.6891, -78.8867">
-
-<!-- TODO: Google Search Console verification — replace with your real verification code -->
-<!-- <meta name="google-site-verification" content="YOUR_GSC_VERIFICATION_CODE_HERE"> -->
+<meta content="US-SC" name="geo.region"/>
+<meta content="Myrtle Beach, South Carolina" name="geo.placename"/>
+<meta content="33.6891;-78.8867" name="geo.position"/>
+<meta content="33.6891, -78.8867" name="ICBM"/>
 
 <!-- Open Graph -->
-<meta property="og:type" content="website">
-<meta property="og:title" content="Property Maintenance & HVAC in Myrtle Beach | Bakerss">
-<meta property="og:description" content="Premium estate, residential and managed-property care with HVAC, cleaning, grounds, pool, repairs and documented client-portal updates.">
-<meta property="og:url" content="https://www.bakerss.com/">
-<meta property="og:site_name" content="Bakerss Property Services">
-<meta property="og:image" content="https://www.bakerss.com/images/truck.png">
-<meta property="og:image:secure_url" content="https://www.bakerss.com/images/truck.png">
-<meta property="og:image:width" content="1200">
-<meta property="og:image:height" content="630">
-<meta property="og:image:alt" content="Bakerss Property Services LLC black and pink service truck in Myrtle Beach, South Carolina">
-<meta property="og:locale" content="en_US">
-
+<meta content="website" property="og:type"/>
+<meta content="Property Maintenance Myrtle Beach, SC | Bakerss" property="og:title"/>
+<meta content="Full-service local property maintenance with HVAC, skilled trades, recurring PM programs and live service documentation." property="og:description"/>
+<meta content="https://www.bakerss.com/" property="og:url"/>
+<meta content="Bakerss Property Services LLC" property="og:site_name"/>
+<meta content="https://www.bakerss.com/images/truck.png" property="og:image"/>
+<meta content="https://www.bakerss.com/images/truck.png" property="og:image:secure_url"/>
+<meta content="1200" property="og:image:width"/>
+<meta content="630" property="og:image:height"/>
+<meta content="Bakerss Property Services LLC service truck in Myrtle Beach, South Carolina" property="og:image:alt"/>
+<meta content="en_US" property="og:locale"/>
 <!-- Twitter -->
-<meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="Property Maintenance & HVAC in Myrtle Beach | Bakerss">
-<meta name="twitter:description" content="Premium property care, HVAC, cleaning, grounds, pool and repair services across the Grand Strand.">
-<meta name="twitter:image" content="https://www.bakerss.com/images/truck.png">
-
+<meta content="summary_large_image" name="twitter:card"/>
+<meta content="Property Maintenance Myrtle Beach, SC | Bakerss" name="twitter:title"/>
+<meta content="Property maintenance, HVAC, pool, lawn, cleaning and repair services with documented client portal updates." name="twitter:description"/>
+<meta content="https://www.bakerss.com/images/truck.png" name="twitter:image"/>
 <!-- FONT LOADING — non-blocking swap (CWV improvement) -->
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;1,700&family=DM+Sans:wght@400;700;900&display=swap">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;1,700&family=DM+Sans:wght@400;700;900&display=swap" media="print" onload="this.media='all'">
-<noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;1,700&family=DM+Sans:wght@400;700;900&display=swap"></noscript>
-
+<link href="https://fonts.googleapis.com/" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com/" rel="preconnect"/>
+<link as="style" href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;1,700\&amp;family=DM+Sans:wght@400;700;900\&amp;display=swap" rel="preload"/>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;1,700\&amp;family=DM+Sans:wght@400;700;900\&amp;display=swap" media="print" onload="this.media='all'" rel="stylesheet"/>
+<noscript><link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;1,700&amp;family=DM+Sans:wght@400;700;900&amp;display=swap" rel="stylesheet"/></noscript>
 <!-- STRUCTURED DATA — @graph, sameAs + hours + verified AggregateRating -->
-<script type="application/ld+json">
-{
- "@context":"https://schema.org",
- "@graph":[
-  {
-   "@type":["LocalBusiness","HomeAndConstructionBusiness"],
-   "@id":"https://www.bakerss.com/#business",
-   "name":"Bakerss Property Services",
-   "legalName":"Bakerss Property Services LLC",
-   "alternateName":["Bakerss","Bakerss Services","Bakerss Property Maintenance"],
-   "url":"https://www.bakerss.com/",
-   "telephone":"+18434677136",
-   "email":"info@bakerss.com",
-   "founder":[{"@type":"Person","name":"Ray Cloyd"},{"@type":"Person","name":"Courtney Cloyd"}],
-   "logo":{"@type":"ImageObject","url":"https://www.bakerss.com/images/logo.png","caption":"Bakerss Property Services logo"},
-   "image":[
-    {"@type":"ImageObject","url":"https://www.bakerss.com/images/logo.png","caption":"Bakerss Property Services logo"},
-    {"@type":"ImageObject","url":"https://www.bakerss.com/images/truck.png","caption":"Bakerss Property Services LLC service truck serving Myrtle Beach and Horry County"},
-    {"@type":"ImageObject","url":"https://www.bakerss.com/images/about1.jpg","caption":"Ray and Courtney Cloyd, owners of Bakerss Property Services LLC"}
-   ],
-   "contactPoint":{"@type":"ContactPoint","telephone":"+18434677136","email":"info@bakerss.com","contactType":"customer service","areaServed":"Horry County, SC and Georgetown County, SC","availableLanguage":"English"},
-   "address":{"@type":"PostalAddress","streetAddress":"320 Forestbrook Cove Circle","addressLocality":"Myrtle Beach","addressRegion":"SC","postalCode":"29588","addressCountry":"US"},
-   "geo":{"@type":"GeoCoordinates","latitude":33.6891,"longitude":-78.8867},
-   "priceRange":"$$",
-   "aggregateRating":{"@type":"AggregateRating","ratingValue":"5.0","reviewCount":"19","bestRating":"5","worstRating":"1"},
-   "review":[
-    {"@type":"Review","reviewRating":{"@type":"Rating","ratingValue":"5","bestRating":"5"},"author":{"@type":"Person","name":"Jimmy B."},"reviewBody":"They are very accurate at doing the job they come to do. They go above and beyond every time."},
-    {"@type":"Review","reviewRating":{"@type":"Rating","ratingValue":"5","bestRating":"5"},"author":{"@type":"Person","name":"Vannah P."},"reviewBody":"Professional, friendly and willing to do the extras. Results beyond expectations every single time."},
-    {"@type":"Review","reviewRating":{"@type":"Rating","ratingValue":"5","bestRating":"5"},"author":{"@type":"Person","name":"Sheila C."},"reviewBody":"Ray listens and makes sure you are pleased before finished. Never had a problem, always on time."}
-   ],
-   "openingHoursSpecification":[
-    {"@type":"OpeningHoursSpecification","dayOfWeek":["Monday","Tuesday","Wednesday","Thursday","Friday"],"opens":"08:00","closes":"18:00"},
-    {"@type":"OpeningHoursSpecification","dayOfWeek":["Saturday"],"opens":"09:00","closes":"14:00"}
-   ],
-   "sameAs":[
-    "https://www.yelp.com/biz/bakerss-services-myrtle-beach"
-   ],
-   "description":"Bakerss Property Services provides premium residential and estate property care, HVAC repair and preventive maintenance, interior cleaning, full grounds maintenance, pool service, plumbing, electrical, handyman work, apartment maintenance, HOA maintenance, commercial maintenance and documented recurring property-service plans across Myrtle Beach, Surfside Beach, Murrells Inlet, Horry County and Georgetown County.",
-   "areaServed":[
-    {"@type":"Place","name":"Myrtle Beach, SC","url":"https://www.bakerss.com/service-areas/myrtle-beach/"},
-    {"@type":"Place","name":"North Myrtle Beach, SC","url":"https://www.bakerss.com/service-areas/north-myrtle-beach/"},
-    {"@type":"Place","name":"Surfside Beach, SC","url":"https://www.bakerss.com/service-areas/surfside-beach/"},
-    {"@type":"Place","name":"Murrells Inlet, SC","url":"https://www.bakerss.com/service-areas/murrells-inlet/"},
-    {"@type":"Place","name":"Garden City, SC","url":"https://www.bakerss.com/service-areas/garden-city/"},
-    {"@type":"Place","name":"Socastee, SC","url":"https://www.bakerss.com/service-areas/socastee/"},
-    {"@type":"Place","name":"Conway, SC","url":"https://www.bakerss.com/service-areas/conway/"},
-    {"@type":"Place","name":"Carolina Forest, SC","url":"https://www.bakerss.com/service-areas/carolina-forest/"},
-    {"@type":"Place","name":"Pawleys Island, SC","url":"https://www.bakerss.com/service-areas/pawleys-island/"},
-    {"@type":"Place","name":"Litchfield Beach, SC","url":"https://www.bakerss.com/service-areas/litchfield-beach/"},
-    {"@type":"AdministrativeArea","name":"Horry County, SC"},
-    {"@type":"AdministrativeArea","name":"Georgetown County, SC"}
-   ],
-   "knowsAbout":["luxury home maintenance Myrtle Beach","estate property care Myrtle Beach","HVAC repair Myrtle Beach","emergency AC service Myrtle Beach","client portal property maintenance","property maintenance Myrtle Beach","property maintenance Conway SC","property maintenance Carolina Forest","property maintenance Murrells Inlet","property maintenance Pawleys Island","property maintenance Litchfield Beach","HOA maintenance","apartment maintenance","commercial maintenance","lawn care","landscaping","sod installation","pool maintenance","Airbnb cleaning","handyman services","pressure washing","window cleaning","gutter cleaning","dryer vent cleaning","irrigation repair","fence repair","vacation home watch"],
-   "hasOfferCatalog":{
-    "@type":"OfferCatalog",
-    "name":"Bakerss Property Services Services",
-    "itemListElement":[
-     {"@type":"Offer","itemOffered":{"@type":"Service","name":"White Glove Estate Care","url":"https://www.bakerss.com/services/white-glove-estate-care/","provider":{"@id":"https://www.bakerss.com/#business"}}},
-     {"@type":"Offer","itemOffered":{"@type":"Service","name":"HVAC Repair and Maintenance","url":"https://www.bakerss.com/services/hvac-repair/","provider":{"@id":"https://www.bakerss.com/#business"}}},
-     {"@type":"Offer","itemOffered":{"@type":"Service","name":"Commercial Maintenance","url":"https://www.bakerss.com/services/commercial-maintenance/","provider":{"@id":"https://www.bakerss.com/#business"}}},
-     {"@type":"Offer","itemOffered":{"@type":"Service","name":"Apartment Maintenance","url":"https://www.bakerss.com/apartment-maintenance/","provider":{"@id":"https://www.bakerss.com/#business"}}},
-     {"@type":"Offer","itemOffered":{"@type":"Service","name":"HOA Maintenance","url":"https://www.bakerss.com/hoa-services/","provider":{"@id":"https://www.bakerss.com/#business"}}},
-     {"@type":"Offer","itemOffered":{"@type":"Service","name":"Property Maintenance Plans","url":"https://www.bakerss.com/services/property-maintenance/","provider":{"@id":"https://www.bakerss.com/#business"}}},
-     {"@type":"Offer","itemOffered":{"@type":"Service","name":"Lawn Care","url":"https://www.bakerss.com/services/lawn-care/","provider":{"@id":"https://www.bakerss.com/#business"}}},
-     {"@type":"Offer","itemOffered":{"@type":"Service","name":"Airbnb Cleaning","url":"https://www.bakerss.com/services/airbnb-cleaning/","provider":{"@id":"https://www.bakerss.com/#business"}}},
-     {"@type":"Offer","itemOffered":{"@type":"Service","name":"Pool Maintenance","url":"https://www.bakerss.com/services/pool-maintenance/","provider":{"@id":"https://www.bakerss.com/#business"}}},
-     {"@type":"Offer","itemOffered":{"@type":"Service","name":"Sod Installation","url":"https://www.bakerss.com/services/sod-installation/","provider":{"@id":"https://www.bakerss.com/#business"}}},
-     {"@type":"Offer","itemOffered":{"@type":"Service","name":"Handyman Services","url":"https://www.bakerss.com/services/handyman-services/","provider":{"@id":"https://www.bakerss.com/#business"}}}
-    ]
-   }
-  },
-  {"@type":"WebSite","@id":"https://www.bakerss.com/#website","url":"https://www.bakerss.com/","name":"Bakerss Property Services","publisher":{"@id":"https://www.bakerss.com/#business"}},
-  {"@type":"WebPage","@id":"https://www.bakerss.com/#webpage","url":"https://www.bakerss.com/","name":"Bakerss Property Services | Myrtle Beach & Horry County SC","isPartOf":{"@id":"https://www.bakerss.com/#website"},"about":{"@id":"https://www.bakerss.com/#business"},"primaryImageOfPage":{"@type":"ImageObject","url":"https://www.bakerss.com/images/truck.png","width":1200,"height":630},"breadcrumb":{"@id":"https://www.bakerss.com/#breadcrumb"},"speakable":{"@type":"SpeakableSpecification","cssSelector":[".hero h1",".lead"]},"datePublished":"2026-05-01","dateModified":"2026-07-20"},
-  {"@type":"BreadcrumbList","@id":"https://www.bakerss.com/#breadcrumb","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://www.bakerss.com/"}]},
-  {
-   "@type":"FAQPage",
-   "@id":"https://www.bakerss.com/#faq",
-   "mainEntity":[
-    {"@type":"Question","name":"What areas does Bakerss Property Services serve?","acceptedAnswer":{"@type":"Answer","text":"Bakerss serves Myrtle Beach, North Myrtle Beach, Surfside Beach, Murrells Inlet, Garden City, Socastee, Conway, Carolina Forest, Pawleys Island, Litchfield Beach, Horry County and Georgetown County."}},
-    {"@type":"Question","name":"What property maintenance services does Bakerss provide?","acceptedAnswer":{"@type":"Answer","text":"Bakerss provides White Glove estate care, HVAC repair and preventive maintenance, weekly interior cleaning, lawn and grounds care, pool maintenance, plumbing and electrical work-order support, handyman repairs, vacation-home care, apartment maintenance, HOA maintenance and commercial property maintenance."}},
-    {"@type":"Question","name":"Does Bakerss offer HOA and apartment maintenance?","acceptedAnswer":{"@type":"Answer","text":"Yes. Bakerss supports HOA communities, apartment communities, condo communities and managed properties with common-area cleaning, grounds maintenance, pool-area support, work orders, repairs, dryer vent cleaning, pressure washing and recurring maintenance plans."}},
-    {"@type":"Question","name":"Does Bakerss help vacation rental and second-home owners?","acceptedAnswer":{"@type":"Answer","text":"Yes. Bakerss supports vacation rentals, Airbnb properties and second homes with turnover cleaning, home watch, storm checks, lawn care, pool maintenance, handyman repairs, pressure washing, window cleaning and exterior maintenance."}},
-    {"@type":"Question","name":"Does Bakerss provide HVAC repair and preventive maintenance?","acceptedAnswer":{"@type":"Answer","text":"Yes. Bakerss provides HVAC diagnostics, repair, preventive maintenance, monthly system checks and qualifying emergency-service availability through experienced HVAC technicians. Service scope depends on the system, property and licensing requirements."}},
-     {"@type":"Question","name":"What can clients see in the Bakerss Client Portal?","acceptedAnswer":{"@type":"Answer","text":"Recurring clients can review documented technician arrival and departure times, field notes, property photographs, work-order activity and service history."}},
-     {"@type":"Question","name":"Does Bakerss offer a complete care plan for luxury homes?","acceptedAnswer":{"@type":"Answer","text":"Yes. White Glove Estate Care is designed for premium homes and second homes needing weekly interior cleaning, full grounds maintenance, HVAC preventive maintenance, property inspections and priority access to repair technicians."}},
-     {"@type":"Question","name":"How do I request a quote from Bakerss Property Services?","acceptedAnswer":{"@type":"Answer","text":"You can request a quote online at bakerss.com/get-quote/, call or text 843-467-7136, or email info@bakerss.com with the property address, service needs, photos if available and whether you need one-time or recurring maintenance."}},
-    {"@type":"Question","name":"How much does property maintenance cost in Myrtle Beach?","acceptedAnswer":{"@type":"Answer","text":"Bakerss publishes transparent starting prices for many popular property services at https://www.bakerss.com/pricing/. Final pricing depends on property size, access, condition, materials, frequency and service scope."}},
-    {"@type":"Question","name":"Does Bakerss serve Conway and Carolina Forest?","acceptedAnswer":{"@type":"Answer","text":"Yes. Bakerss Property Services serves Conway and Carolina Forest with lawn care, landscaping, cleaning, pool maintenance, handyman services, HOA maintenance, apartment maintenance and commercial property maintenance."}}
-   ]
-  }
- ]
-}
-</script>
-
 <style>
 :root{--pink:#e8197d;--pink2:#f0408a;--black:#0b0b0d;--black2:#151519;--text:#22232a;--muted:#646875;--line:#e6e7eb;--soft:#f7f7f9;--white:#fff;--green:#16a34a;--max:1180px;--shadow:0 14px 40px rgba(0,0,0,.12);--font:'DM Sans',Inter,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",Arial,sans-serif;--serif:'Playfair Display',Georgia,"Times New Roman",serif}
 *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font-family:var(--font);color:var(--text);background:var(--white);font-size:16px;line-height:1.65}img{max-width:100%;height:auto;display:block}a{color:inherit}.wrap{max-width:var(--max);margin:auto;padding:0 22px}.skip{position:absolute;left:-999px;top:auto}.skip:focus{left:16px;top:16px;background:#fff;z-index:999;padding:10px 14px;border-radius:8px}
@@ -221,567 +67,533 @@
 .sticky-mobile{display:none;position:fixed;left:0;right:0;bottom:0;background:#08080a;border-top:2px solid var(--pink);padding:10px;z-index:120;gap:8px}.sticky-mobile .btn{flex:1;padding:11px 8px;font-size:12.5px}
 @media(max-width:1050px){.premium-banner{grid-template-columns:1fr}.portal-grid,.trade-strip{grid-template-columns:repeat(2,1fr)}.navlinks{display:none}.hamb{display:block}.dropdown{display:none!important}.hero .wrap{grid-template-columns:1fr}.quote-card{max-width:580px}.service-grid{grid-template-columns:repeat(2,1fr)}.city-grid,.split,.why-grid{grid-template-columns:1fr}.footer-grid{grid-template-columns:1fr 1fr 1fr}.stats{grid-template-columns:repeat(3,1fr)}.review-cta{flex-direction:column;align-items:flex-start;text-align:left}}
 @media(max-width:620px){.premium-list,.portal-grid,.trade-strip{grid-template-columns:1fr}.premium-banner{padding:24px}body{padding-bottom:70px}.nav-actions .phone-btn{display:none}.hero{min-height:auto}.hero .wrap{padding-top:124px;padding-bottom:54px}.hero-ctas .btn{width:100%}.quote-card{padding:18px}.stats{grid-template-columns:repeat(2,1fr)}.service-grid,.footer-grid{grid-template-columns:1fr}.sticky-mobile{display:flex}.section{padding:54px 0}.pricing-popout{top:18px;right:18px;left:18px;width:auto;transform:none;text-align:center;padding:11px 14px}.pricing-popout strong{font-size:19px}.pricing-popout .pricing-note{display:none}}
+
+/* 2026 LOCAL SEO / CONVERSION ENHANCEMENTS */
+.portal-grid{grid-template-columns:repeat(3,1fr)}
+.trade-strip{grid-template-columns:repeat(3,1fr)}
+.capability-note{margin-top:18px;padding:16px 18px;border-left:4px solid var(--pink);background:#fff4f8;border-radius:10px;color:var(--muted)}
+@media(max-width:1050px){.portal-grid,.trade-strip{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:620px){.portal-grid,.trade-strip{grid-template-columns:1fr}}
 </style>
-</head>
-
+<link href="https://www.bakerss.com/" hreflang="x-default" rel="alternate"/><script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":["LocalBusiness","HomeAndConstructionBusiness"],"@id":"https://www.bakerss.com/#business","name":"Bakerss Property Services LLC","legalName":"Bakerss Property Services LLC","alternateName":["Bakerss Property Services","Bakerss","Bakerss Property Maintenance"],"url":"https://www.bakerss.com/","telephone":"+1-843-467-7136","email":"info@bakerss.com","description":"Full-service property maintenance company serving Myrtle Beach and surrounding Grand Strand communities with HVAC service, preventive maintenance, duct cleaning, pool maintenance, lawn and landscaping, cleaning, handyman repairs, plumbing and electrical work-order support, and documented client portal service history.","logo":{"@type":"ImageObject","url":"https://www.bakerss.com/images/logo.png"},"image":["https://www.bakerss.com/images/truck.png","https://www.bakerss.com/images/about1.jpg"],"address":{"@type":"PostalAddress","streetAddress":"320 Forestbrook Cove Circle","addressLocality":"Myrtle Beach","addressRegion":"SC","postalCode":"29588","addressCountry":"US"},"geo":{"@type":"GeoCoordinates","latitude":33.6891,"longitude":-78.8867},"contactPoint":{"@type":"ContactPoint","telephone":"+1-843-467-7136","email":"info@bakerss.com","contactType":"customer service","areaServed":["Horry County, SC","Georgetown County, SC"],"availableLanguage":"English"},"openingHoursSpecification":[{"@type":"OpeningHoursSpecification","dayOfWeek":["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"],"opens":"00:00","closes":"23:59"}],"areaServed":[{"@type":"City","name":"Myrtle Beach, South Carolina"},{"@type":"City","name":"North Myrtle Beach, South Carolina"},{"@type":"City","name":"Conway, South Carolina"},{"@type":"Place","name":"Carolina Forest, South Carolina"},{"@type":"City","name":"Surfside Beach, South Carolina"},{"@type":"Place","name":"Socastee, South Carolina"},{"@type":"Place","name":"Murrells Inlet, South Carolina"},{"@type":"Place","name":"Garden City Beach, South Carolina"},{"@type":"AdministrativeArea","name":"Horry County, South Carolina"},{"@type":"AdministrativeArea","name":"Georgetown County, South Carolina"}],"founder":[{"@type":"Person","@id":"https://www.bakerss.com/#ray-cloyd","name":"Ray Cloyd"},{"@type":"Person","@id":"https://www.bakerss.com/#courtney-cloyd","name":"Courtney Cloyd"}],"memberOf":{"@type":"Organization","name":"Myrtle Beach Area Chamber of Commerce"},"sameAs":["https://www.yelp.com/biz/bakerss-services-myrtle-beach"],"knowsAbout":["Property maintenance","HVAC repair","Air conditioning preventive maintenance","Air duct cleaning","Commercial property maintenance","Apartment maintenance","HOA maintenance","Pool maintenance","Lawn care","Landscaping","Vacation rental maintenance","Interior cleaning","Handyman services","Work-order coordination","Digital property service documentation"],"hasOfferCatalog":{"@type":"OfferCatalog","name":"Bakerss Property Services","itemListElement":[{"@type":"Offer","itemOffered":{"@type":"Service","name":"Full Property Maintenance Plans","url":"https://www.bakerss.com/services/property-maintenance/","provider":{"@id":"https://www.bakerss.com/#business"}}},{"@type":"Offer","itemOffered":{"@type":"Service","name":"HVAC Repair and Air Conditioning Service","url":"https://www.bakerss.com/services/hvac-repair/","provider":{"@id":"https://www.bakerss.com/#business"}}},{"@type":"Offer","itemOffered":{"@type":"Service","name":"HVAC Preventive Maintenance Programs","url":"https://www.bakerss.com/services/hvac-repair/","provider":{"@id":"https://www.bakerss.com/#business"}}},{"@type":"Offer","itemOffered":{"@type":"Service","name":"Air Duct Cleaning Programs","url":"https://www.bakerss.com/services/hvac-repair/","provider":{"@id":"https://www.bakerss.com/#business"}}},{"@type":"Offer","itemOffered":{"@type":"Service","name":"White Glove Estate Care","url":"https://www.bakerss.com/services/white-glove-estate-care/","provider":{"@id":"https://www.bakerss.com/#business"}}},{"@type":"Offer","itemOffered":{"@type":"Service","name":"Commercial Maintenance","url":"https://www.bakerss.com/services/commercial-maintenance/","provider":{"@id":"https://www.bakerss.com/#business"}}},{"@type":"Offer","itemOffered":{"@type":"Service","name":"Apartment Maintenance","url":"https://www.bakerss.com/apartment-maintenance/","provider":{"@id":"https://www.bakerss.com/#business"}}},{"@type":"Offer","itemOffered":{"@type":"Service","name":"HOA Maintenance","url":"https://www.bakerss.com/hoa-services/","provider":{"@id":"https://www.bakerss.com/#business"}}},{"@type":"Offer","itemOffered":{"@type":"Service","name":"Pool Maintenance","url":"https://www.bakerss.com/services/pool-maintenance/","provider":{"@id":"https://www.bakerss.com/#business"}}},{"@type":"Offer","itemOffered":{"@type":"Service","name":"Lawn Care","url":"https://www.bakerss.com/services/lawn-care/","provider":{"@id":"https://www.bakerss.com/#business"}}},{"@type":"Offer","itemOffered":{"@type":"Service","name":"Interior and Vacation Rental Cleaning","url":"https://www.bakerss.com/services/interior-cleaning/","provider":{"@id":"https://www.bakerss.com/#business"}}},{"@type":"Offer","itemOffered":{"@type":"Service","name":"Handyman Services","url":"https://www.bakerss.com/services/handyman-services/","provider":{"@id":"https://www.bakerss.com/#business"}}}]}},{"@type":"Person","@id":"https://www.bakerss.com/#ray-cloyd","name":"Ray Cloyd","jobTitle":"Co-Owner","worksFor":{"@id":"https://www.bakerss.com/#business"},"url":"https://www.bakerss.com/about/"},{"@type":"Person","@id":"https://www.bakerss.com/#courtney-cloyd","name":"Courtney Cloyd","jobTitle":"Co-Owner","worksFor":{"@id":"https://www.bakerss.com/#business"},"url":"https://www.bakerss.com/about/"},{"@type":"WebSite","@id":"https://www.bakerss.com/#website","url":"https://www.bakerss.com/","name":"Bakerss Property Services LLC","publisher":{"@id":"https://www.bakerss.com/#business"},"inLanguage":"en-US"},{"@type":"WebPage","@id":"https://www.bakerss.com/#webpage","url":"https://www.bakerss.com/","name":"Property Maintenance Myrtle Beach, SC | Bakerss","description":"Bakerss Property Services LLC provides property maintenance, HVAC, duct cleaning, pool, lawn, cleaning and repairs in Myrtle Beach with live client portal updates.","isPartOf":{"@id":"https://www.bakerss.com/#website"},"about":{"@id":"https://www.bakerss.com/#business"},"primaryImageOfPage":{"@type":"ImageObject","url":"https://www.bakerss.com/images/truck.png","width":1200,"height":630},"breadcrumb":{"@id":"https://www.bakerss.com/#breadcrumb"},"dateModified":"2026-08-10","inLanguage":"en-US"},{"@type":"BreadcrumbList","@id":"https://www.bakerss.com/#breadcrumb","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://www.bakerss.com/"}]}]}</script></head>
+<br/>
 <body>
-<a class="skip" href="#main">Skip to main content</a>
-
+<a class="skip" href="https://www.bakerss.com/#main">Skip to main content</a>
 <div class="topbar" role="banner">
-  <div class="wrap">Property maintenance across Myrtle Beach, Conway, Carolina Forest, Murrells Inlet, Pawleys Island, Litchfield Beach &amp; Horry County &middot; <a href="tel:8434677136">843-467-7136</a> &middot; <a href="mailto:info@bakerss.com">info@bakerss.com</a>
-  </div>
+<div class="wrap">Property maintenance across Myrtle Beach, Conway, Carolina Forest, Murrells Inlet, Pawleys Island, Litchfield Beach &amp; Horry County · <a href="tel:8434677136">843-467-7136</a> · <a href="mailto:info@bakerss.com">info@bakerss.com</a>
 </div>
-
+</div>
 <header class="site-header">
-  <div class="wrap nav">
-    <a class="logo" href="/" aria-label="Bakerss Property Services — home">Bakerss<span>.</span></a>
-    <nav aria-label="Primary navigation">
-      <ul class="navlinks">
-        <li class="dropdown-wrap">
-          <button type="button" aria-haspopup="true" aria-expanded="false">Services ▾</button>
-          <div class="dropdown" role="region" aria-label="Services menu">
-            <div class="dd-panel">
-              <div class="dd-col"><strong>Premium Property Care</strong>
-                <a href="/services/white-glove-estate-care/" class="highlight">White Glove Estate Care</a>
-                <a href="/services/property-maintenance/">Total Property Care</a>
-                <a href="/services/vacation-home-watch/">Second-Home Care</a>
-                <a href="/services/commercial-maintenance/">Commercial Maintenance</a>
-                <a href="/apartment-maintenance/">Apartment Maintenance</a>
-                <a href="/hoa-services/">HOA Maintenance</a>
-                <a href="/services/property-maintenance/">Property Maintenance Plans</a>
-              </div>
-              <div class="dd-col"><strong>Exterior</strong>
-                <a href="/services/lawn-care/">Lawn Care</a>
-                <a href="/services/landscaping/">Landscaping</a>
-                <a href="/services/sod-installation/">Sod Installation</a>
-                <a href="/services/pressure-washing/">Pressure Washing</a>
-                <a href="/services/gutter-cleaning/">Gutter Cleaning</a>
-              </div>
-              <div class="dd-col"><strong>Interior &amp; Rentals</strong>
-                <a href="/services/interior-cleaning/">Interior Cleaning</a>
-                <a href="/services/airbnb-cleaning/">Airbnb Cleaning</a>
-                <a href="/services/handyman-services/">Handyman Services</a>
-                <a href="/services/dryer-vent-cleaning/">Dryer Vent Cleaning</a>
-                <a href="/services/window-cleaning/">Window Cleaning</a>
-              </div>
-              <div class="dd-col"><strong>Skilled Property Services</strong>
-                <a href="/services/hvac-repair/" class="highlight">HVAC Repair &amp; Maintenance</a>
-                <a href="/services/pool-maintenance/">Pool Maintenance</a>
-                <a href="/services/irrigation-sprinkler-repair/">Irrigation Repair</a>
-                <a href="/services/fence-installation-repair/">Fence Repair</a>
-                <a href="/services/vacation-home-watch/">Vacation Home Watch</a>
-                <a href="/get-quote/" class="highlight">Get a Quote</a>
-              </div>
-            </div>
-          </div>
-        </li>
-        <li class="dropdown-wrap">
-          <button type="button" aria-haspopup="true" aria-expanded="false">Service Areas ▾</button>
-          <div class="dropdown" role="region" aria-label="Service areas menu">
-            <div class="dd-panel">
-              <div class="dd-col"><strong>Core City Hubs</strong>
-                <a href="/service-areas/myrtle-beach/">Myrtle Beach</a>
-                <a href="/service-areas/north-myrtle-beach/">North Myrtle Beach</a>
-                <a href="/service-areas/surfside-beach/">Surfside Beach</a>
-                <a href="/service-areas/conway/">Conway</a>
-                <a href="/service-areas/carolina-forest/">Carolina Forest</a>
-              </div>
-              <div class="dd-col"><strong>South Strand</strong>
-                <a href="/service-areas/murrells-inlet/">Murrells Inlet</a>
-                <a href="/service-areas/garden-city/">Garden City</a>
-                <a href="/service-areas/socastee/">Socastee</a>
-                <a href="/service-areas/pawleys-island/">Pawleys Island</a>
-                <a href="/service-areas/litchfield-beach/">Litchfield Beach</a>
-              </div>
-              <div class="dd-col"><strong>County Coverage</strong>
-                <a href="/service-areas/horry-county/">Horry County</a>
-                <a href="/service-areas/georgetown-county/">Georgetown County</a>
-                <a href="/neighborhoods/">Neighborhoods</a>
-                <a href="/get-quote/" class="highlight">Request a Quote</a>
-              </div>
-              <div class="dd-col"><strong>High-Intent Services</strong>
-                <a href="/services/lawn-care/">Lawn Care</a>
-                <a href="/services/airbnb-cleaning/">Airbnb Cleaning</a>
-                <a href="/services/pool-maintenance/">Pool Maintenance</a>
-                <a href="/services/handyman-services/">Handyman Services</a>
-                <a href="/services/sod-installation/">Sod Installation</a>
-              </div>
-            </div>
-          </div>
-        </li>
-        <li><a href="/services/white-glove-estate-care/">Estate Care</a></li>
-        <li><a href="/services/hvac-repair/">HVAC</a></li>
-        <li><a href="/hoa-services/">HOA</a></li>
-        <li><a href="/apartment-maintenance/">Apartments</a></li>
-        <li><a href="/services/commercial-maintenance/">Commercial</a></li>
-        <li><a href="/learning-center/">Resources</a></li>
-        <li><a href="/get-quote/">Quote</a></li>
-      </ul>
-    </nav>
-    <div class="nav-actions">
-      <a class="btn btn-ghost phone-btn" href="tel:8434677136">843-467-7136</a>
-      <a class="btn btn-primary" href="/get-quote/">Free Quote</a>
-      <button class="hamb" type="button" aria-controls="mobileMenu" aria-expanded="false" onclick="toggleMenu(this)">Menu</button>
-    </div>
-  </div>
-  <nav id="mobileMenu" class="mobile-menu" aria-label="Mobile navigation">
-    <div class="wrap">
-      <span class="mm-section">Premium Property Care</span>
-      <a href="/services/white-glove-estate-care/">White Glove Estate Care</a>
-      <a href="/services/hvac-repair/">HVAC Repair &amp; Maintenance</a>
-      <a href="/services/property-maintenance/">Total Property Care</a>
-      <span class="mm-section">Core Services</span>
-      <a href="/services/commercial-maintenance/">Commercial Maintenance</a>
-      <a href="/apartment-maintenance/">Apartment Maintenance</a>
-      <a href="/hoa-services/">HOA Maintenance</a>
-      <a href="/services/property-maintenance/">Property Maintenance Plans</a>
-      <a href="/services/lawn-care/">Lawn Care</a>
-      <a href="/services/airbnb-cleaning/">Airbnb Cleaning</a>
-      <a href="/services/pool-maintenance/">Pool Maintenance</a>
-      <a href="/services/handyman-services/">Handyman Services</a>
-      <span class="mm-section">City Hubs</span>
-      <a href="/service-areas/myrtle-beach/">Myrtle Beach</a>
-      <a href="/service-areas/north-myrtle-beach/">North Myrtle Beach</a>
-      <a href="/service-areas/surfside-beach/">Surfside Beach</a>
-      <a href="/service-areas/murrells-inlet/">Murrells Inlet</a>
-      <a href="/service-areas/garden-city/">Garden City</a>
-      <a href="/service-areas/socastee/">Socastee</a>
-      <a href="/service-areas/conway/">Conway</a>
-      <a href="/service-areas/carolina-forest/">Carolina Forest</a>
-      <a href="/service-areas/pawleys-island/">Pawleys Island</a>
-      <a href="/service-areas/litchfield-beach/">Litchfield Beach</a>
-      <span class="mm-section">Resources</span>
-      <a href="/neighborhoods/">Neighborhoods</a>
-      <a href="/learning-center/">Learning Center</a>
-      <a href="/get-quote/" style="color:var(--pink);font-weight:900;margin-top:10px">Get a Free Quote →</a>
-    </div>
-  </nav>
-</header>
-
-<main id="main">
-
-<section class="hero" aria-label="Property maintenance in Myrtle Beach and Horry County">
-  <img
-    src="https://www.bakerss.com/images/truck.png"
-    alt="Bakerss Property Services LLC service truck serving Myrtle Beach and Horry County SC"
-    class="hero-img"
-    fetchpriority="high"
-    decoding="async"
-    width="1200"
-    height="630"
-  >
-  <div class="hero-overlay" aria-hidden="true"></div>
-  <a class="pricing-popout" href="/pricing/" aria-label="View transparent starting prices for Bakerss Property Services">
-    <span class="pricing-new">New</span>
-    <strong>Transparent Pricing</strong>
-    <span class="pricing-click">Click Here →</span>
-    <span class="pricing-note">See starting prices for popular services</span>
-  </a>
-  <div class="wrap">
-    <div>
-      <span class="kicker">White Glove Estate Care · HVAC · Cleaning · Grounds · Repairs · Myrtle Beach Area</span>
-      <h1>Complete Property Maintenance for <em>Myrtle Beach Homes, Estates &amp; Managed Properties</em></h1>
-      <p class="lead">Bakerss gives homeowners, estate clients and property managers <strong>one accountable team for interior cleaning, full grounds care, HVAC service, pool maintenance, plumbing, electrical, repairs and preventive maintenance</strong>. Clients receive documented technician notes, arrival and departure times, service photos and work-order updates through the Bakerss Client Portal.</p>
-      <div class="hero-ctas">
-        <a class="btn btn-primary" href="/get-quote/">Schedule a Property Assessment</a>
-        <a class="btn btn-outline" href="tel:8434677136">Call or Text 843-467-7136</a>
-        <a class="btn btn-light" href="/services/white-glove-estate-care/">Explore Estate Care</a>
-        <a class="btn btn-light" href="/services/hvac-repair/">Request HVAC Service</a>
-      </div>
-      <div class="trust">
-        <span class="pill">Myrtle Beach Area Chamber member</span>
-        <span class="pill">Client portal documentation</span>
-        <span class="pill">Experienced licensed trade technicians</span>
-        <span class="pill">Priority property response</span>
-        <span class="pill">Recurring care memberships</span>
-      </div>
-      <div class="rating-badge">
-        <span class="rating-stars" aria-hidden="true">★★★★★</span>
-        <span class="rating-text">5.0 rated · Locally owned · Insured · Serving Horry and Georgetown Counties</span>
-      </div>
-    </div>
-    <aside class="quote-card" aria-label="Request a maintenance quote">
-      <h2>Tell us what your property needs.</h2>
-      <p>Request a private assessment for estate care, recurring maintenance, HVAC service or managed-property support.</p>
-      <div class="quick-list">
-        <div><span class="check" aria-hidden="true">✓</span><span>White Glove estate and second-home care</span></div>
-        <div><span class="check" aria-hidden="true">✓</span><span>HVAC diagnostics, repair and preventive maintenance</span></div>
-        <div><span class="check" aria-hidden="true">✓</span><span>Weekly cleaning and complete grounds maintenance</span></div>
-        <div><span class="check" aria-hidden="true">✓</span><span>Plumbing, electrical and general work-order support</span></div>
-        <div><span class="check" aria-hidden="true">✓</span><span>Portal notes, time onsite, photos and service history</span></div>
-      </div>
-      <a class="btn btn-primary" style="width:100%;margin-top:8px" href="/get-quote/">Request My Property Assessment</a>
-      <p style="text-align:center;font-size:12px;color:#888;margin:8px 0 0">Call or text <a href="tel:8434677136" style="color:var(--pink);font-weight:900">843-467-7136</a></p>
-    </aside>
-  </div>
-</section>
-
-<section class="stats" aria-label="Bakerss at a glance">
-  <div class="stat"><b>1</b><span>Call for complete property care</span></div>
-  <div class="stat"><b>24 hr</b><span>Target routine response for members</span></div>
-  <div class="stat"><b>4 hr</b><span>Target qualifying emergency response</span></div>
-  <div class="stat"><b>Live</b><span>Portal service documentation</span></div>
-  <div class="stat"><b>Local</b><span>Chamber-member company</span></div>
-</section>
-
-<section class="section" aria-labelledby="about-heading">
-  <div class="wrap">
-    <div class="section-head">
-      <span class="eyebrow">Premium full-service property care</span>
-      <h2 class="sh" id="about-heading">One Property. One Call. <em>Complete Care.</em></h2>
-      <p class="intro">Bakerss Property Services LLC is a veteran- and family-owned, Myrtle Beach Area Chamber of Commerce member serving discerning homeowners, second-home owners and managed properties across the Grand Strand.</p>
-    </div>
-    <div class="about-prose">
-      <p>Property owners across the Grand Strand face high humidity, salt exposure, storm seasons, demanding landscapes, HVAC strain and constant presentation standards. Bakerss was built to manage those responsibilities through one organized property-services relationship—not a disconnected list of contractors.</p>
-      <p>Our team supports interior cleaning, complete grounds care, HVAC, pool service, plumbing, electrical, general repairs, preventive maintenance and work orders. Every recurring client receives clear communication and documented service through the Bakerss Client Portal. <strong>Primary premium-service areas include Myrtle Beach, Surfside Beach and Murrells Inlet, with broader service across Horry and Georgetown Counties.</strong></p>
-    </div>
-  </div>
-</section>
-
-<section class="section alt" aria-labelledby="estate-heading">
-  <div class="wrap">
-    <div class="premium-banner">
-      <div>
-        <span class="eyebrow">Private property-care memberships</span>
-        <h2 class="sh" id="estate-heading">White Glove Estate Care for <em>Exceptional Homes</em></h2>
-        <p>Designed for luxury residences, waterfront homes and second homes that require consistent interior, exterior and mechanical care. Bakerss creates a customized annual property plan with one service team, one point of contact and documented accountability.</p>
-        <div style="display:flex;gap:10px;flex-wrap:wrap">
-          <a class="btn btn-primary" href="/services/white-glove-estate-care/">View White Glove Estate Care</a>
-          <a class="btn btn-outline" href="/get-quote/">Schedule a Private Assessment</a>
-        </div>
-      </div>
-      <div class="premium-list">
-        <div>Weekly interior cleaning</div>
-        <div>Full grounds and exterior care</div>
-        <div>Quarterly HVAC preventive maintenance</div>
-        <div>Annual dryer-vent service</div>
-        <div>Priority repair response</div>
-        <div>Digital service documentation</div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<section class="section" aria-labelledby="portal-heading">
-  <div class="wrap">
-    <div class="section-head">
-      <span class="eyebrow">Complete service visibility</span>
-      <h2 class="sh" id="portal-heading">The Bakerss Client Portal Keeps You <em>Connected to Your Property</em></h2>
-      <p class="intro">Clients can review field activity without chasing updates or wondering what happened onsite.</p>
-    </div>
-    <div class="portal-grid">
-      <div class="portal-card"><b>01</b><h3>Technician time onsite</h3><p>Documented arrival and departure times for service visits and work orders.</p></div>
-      <div class="portal-card"><b>02</b><h3>Real-time field notes</h3><p>Technician observations, progress notes and recommended next steps.</p></div>
-      <div class="portal-card"><b>03</b><h3>Service photographs</h3><p>Property photos that document conditions, completed work and concerns.</p></div>
-      <div class="portal-card"><b>04</b><h3>Client communication</h3><p>Centralized client notes, requests and service history for stronger accountability.</p></div>
-    </div>
-  </div>
-</section>
-
-<section class="section dark" aria-labelledby="trades-heading">
-  <div class="wrap">
-    <div class="section-head">
-      <span class="eyebrow">Skilled property-service capability</span>
-      <h2 class="sh" id="trades-heading">One Team for the Services Your Property <em>Actually Requires</em></h2>
-      <p class="intro">Services are performed by experienced technicians and appropriately licensed professionals where required, allowing Bakerss to manage more work without sending clients to multiple companies.</p>
-    </div>
-    <div class="trade-strip">
-      <div class="trade"><h3>HVAC</h3><p>Diagnostics, repairs, monthly checks, quarterly preventive maintenance and qualifying emergency response.</p></div>
-      <div class="trade"><h3>Plumbing</h3><p>Property work orders, fixture concerns, leaks and coordinated licensed plumbing service when required.</p></div>
-      <div class="trade"><h3>Electrical</h3><p>Electrical work-order support, diagnostics and appropriately licensed service based on scope.</p></div>
-      <div class="trade"><h3>Pool &amp; General Maintenance</h3><p>Routine pool care, property repairs, preventive maintenance and documented service visits.</p></div>
-    </div>
-  </div>
-</section>
-
-<section class="section dark" aria-labelledby="city-hubs-heading" id="city-hubs">
-  <div class="wrap">
-    <div class="section-head">
-      <span class="eyebrow">All service areas</span>
-      <h2 class="sh" id="city-hubs-heading">Property Maintenance Across Every <em>Grand Strand City</em></h2>
-      <p class="intro">Explore local property-care, HVAC, grounds, cleaning and managed-property services across each Grand Strand market we serve.</p>
-    </div>
-    <div class="city-grid">
-      <a class="city-card" href="/service-areas/myrtle-beach/"><strong>Myrtle Beach</strong><span>Boardwalk, Market Common, Grande Dunes, Broadway-area commercial, rentals and HOA properties.</span></a>
-      <a class="city-card" href="/service-areas/north-myrtle-beach/"><strong>North Myrtle Beach</strong><span>Cherry Grove, Ocean Drive, Crescent Beach, Windy Hill, Main Street and Barefoot Landing-area properties.</span></a>
-      <a class="city-card" href="/service-areas/surfside-beach/"><strong>Surfside Beach</strong><span>The Family Beach, Ocean Boulevard, Surfside Pier area, Surfside Drive, Deerfield and beach rentals.</span></a>
-      <a class="city-card" href="/service-areas/murrells-inlet/"><strong>Murrells Inlet</strong><span>MarshWalk, waterfront restaurants, Prince Creek, Wachesaw, marinas, golf homes and second homes.</span></a>
-      <a class="city-card" href="/service-areas/garden-city/"><strong>Garden City</strong><span>Garden City Pier, South Waccamaw Drive, inlet-side homes, beach rentals and storm-ready property care.</span></a>
-      <a class="city-card" href="/service-areas/socastee/"><strong>Socastee</strong><span>Highway 707, Highway 544, Socastee Boulevard, HOAs, apartments, homes and service-business corridors.</span></a>
-      <a class="city-card" href="/service-areas/conway/"><strong>Conway</strong><span>Historic Downtown Conway, Riverwalk, Waccamaw River properties, CCU/HGTC, Highway 501/90 and larger lots.</span></a>
-      <a class="city-card" href="/service-areas/carolina-forest/"><strong>Carolina Forest</strong><span>Carolina Forest Boulevard, The Farm, Berkshire Forest, Waterbridge, Plantation Lakes, HOAs and apartments.</span></a>
-      <a class="city-card" href="/service-areas/pawleys-island/"><strong>Pawleys Island</strong><span>Historic Pawleys, Waccamaw Neck, Hammock Shops, Pawleys Plantation, True Blue and coastal second homes.</span></a>
-      <a class="city-card" href="/service-areas/litchfield-beach/"><strong>Litchfield Beach</strong><span>North Litchfield, Litchfield by the Sea, resort condos, golf communities, vacation homes and HOAs.</span></a>
-    </div>
-  </div>
-</section>
-
-<section class="section alt" id="services" aria-labelledby="services-heading">
-  <div class="wrap">
-    <div class="section-head">
-      <span class="eyebrow">Full-service property maintenance</span>
-      <h2 class="sh" id="services-heading">Complete Property Services for <em>Homes, Estates &amp; Managed Properties</em></h2>
-      <p class="intro">Bakerss combines high-frequency recurring care with skilled repair capability, preventive maintenance and documented service—built to generate better property outcomes with fewer vendors.</p>
-    </div>
-    <div class="service-grid">
-      <a class="service-card feature" href="/services/white-glove-estate-care/"><span class="icon" aria-hidden="true">◆</span><h3>White Glove Estate Care</h3><p>Weekly cleaning, complete grounds, HVAC PM, inspections and priority property-service response.</p></a>
-      <a class="service-card feature" href="/services/hvac-repair/"><span class="icon" aria-hidden="true">❄</span><h3>HVAC Repair &amp; Maintenance</h3><p>AC diagnostics, repairs, preventive maintenance, monthly checks and emergency service availability.</p></a>
-      <a class="service-card feature" href="/services/commercial-maintenance/"><span class="icon" aria-hidden="true">🏬</span><h3>Commercial Maintenance</h3><p>Commercial property maintenance, exterior upkeep, cleaning, repairs and work order support.</p></a>
-      <a class="service-card feature" href="/apartment-maintenance/"><span class="icon" aria-hidden="true">🏢</span><h3>Apartment Maintenance</h3><p>Apartment turns, common areas, dryer vents, work orders and multi-family maintenance support.</p></a>
-      <a class="service-card feature" href="/hoa-services/"><span class="icon" aria-hidden="true">🏘️</span><h3>HOA Maintenance</h3><p>HOA common areas, entrances, amenities, pool areas, landscaping and board-ready maintenance plans.</p></a>
-      <a class="service-card feature" href="/services/property-maintenance/"><span class="icon" aria-hidden="true">📋</span><h3>Property Maintenance Plans</h3><p>Recurring maintenance plans for homes, rentals, HOAs, apartments, commercial and managed properties.</p></a>
-      <a class="service-card" href="/services/pool-maintenance/"><span class="icon" aria-hidden="true">🏊</span><h3>Pool Maintenance</h3><p>Pool maintenance for homes, rentals, HOAs, apartments and managed communities.</p></a>
-      <a class="service-card" href="/services/landscaping/"><span class="icon" aria-hidden="true">🌴</span><h3>Landscaping</h3><p>Mulch, rock, beds, palms, shrubs, seasonal refreshes and curb appeal upgrades.</p></a>
-      <a class="service-card" href="/services/lawn-care/"><span class="icon" aria-hidden="true">🌿</span><h3>Lawn Care</h3><p>Mowing, edging, trimming, blowing and recurring lawn care across Horry and Georgetown County.</p></a>
-      <a class="service-card" href="/services/handyman-services/"><span class="icon" aria-hidden="true">🔧</span><h3>Handyman Services</h3><p>Repairs, punch lists, fixture work, drywall, painting touchups and rental maintenance.</p></a>
-      <a class="service-card" href="/services/pressure-washing/"><span class="icon" aria-hidden="true">💦</span><h3>Pressure Washing</h3><p>Driveways, walkways, patios, pool decks, siding, storefronts and exterior surfaces.</p></a>
-      <a class="service-card" href="/services/interior-cleaning/"><span class="icon" aria-hidden="true">✨</span><h3>Interior Cleaning</h3><p>Residential, commercial, move-out, deep cleaning, common-area and rental cleaning.</p></a>
-      <a class="service-card" href="/services/airbnb-cleaning/"><span class="icon" aria-hidden="true">🏖️</span><h3>Airbnb Cleaning</h3><p>Vacation rental turnovers, guest-ready cleaning, restock notes and maintenance observations.</p></a>
-      <a class="service-card" href="/services/sod-installation/"><span class="icon" aria-hidden="true">🌱</span><h3>Sod Installation</h3><p>Sod replacement, new turf, soil prep, grading, watering coordination and bare spot repair.</p></a>
-      <a class="service-card" href="/services/window-cleaning/"><span class="icon" aria-hidden="true">🪟</span><h3>Window Cleaning</h3><p>Window cleaning for homes, rentals, condos, storefronts, offices and managed properties.</p></a>
-      <a class="service-card" href="/services/gutter-cleaning/"><span class="icon" aria-hidden="true">🍂</span><h3>Gutter Cleaning</h3><p>Gutter cleaning, downspout clearing, storm prep and drainage support.</p></a>
-      <a class="service-card" href="/services/dryer-vent-cleaning/"><span class="icon" aria-hidden="true">🧺</span><h3>Dryer Vent Cleaning</h3><p>Dryer vent cleaning for homes, rentals, apartments, condos and laundry areas.</p></a>
-      <a class="service-card" href="/services/irrigation-sprinkler-repair/"><span class="icon" aria-hidden="true">💧</span><h3>Irrigation &amp; Sprinkler Repair</h3><p>Sprinkler heads, timers, zones, leaks, dry spots and sod watering support.</p></a>
-      <a class="service-card" href="/services/fence-installation-repair/"><span class="icon" aria-hidden="true">🪵</span><h3>Fence Installation &amp; Repair</h3><p>Fence repair, posts, panels, gates, storm damage and privacy fence work.</p></a>
-      <a class="service-card" href="/services/vacation-home-watch/"><span class="icon" aria-hidden="true">🏠</span><h3>Vacation Home Watch</h3><p>Home watch, storm checks, absentee owner reporting and property observations.</p></a>
-    </div>
-  </div>
-</section>
-
-<section class="section" aria-labelledby="managed-heading">
-  <div class="wrap split">
-    <div class="content-box">
-      <span class="eyebrow">Managed property focus</span>
-      <h2 class="sh" id="managed-heading">Built for <em>Property Managers, HOA Boards, Apartment Communities &amp; Rental Owners</em></h2>
-      <p class="intro">Bakerss is positioned as a multi-service property maintenance vendor for owners who need consistent communication, clear scopes and recurring service.</p>
-      <ul>
-        <li>HOA common areas, entrances, amenities and pool-area support</li>
-        <li>Apartment turns, common-area cleaning, dryer vents and work orders</li>
-        <li>Vacation rental cleaning, home watch and maintenance observations</li>
-        <li>Commercial exterior upkeep, windows, pressure washing and repairs</li>
-        <li>Recurring property maintenance plans for owners who want fewer vendors</li>
-      </ul>
-    </div>
-    <div class="content-box">
-      <span class="eyebrow">Local search coverage</span>
-      <h2 class="sh">Different Cities, Different <em>Property Needs</em></h2>
-      <p class="intro">Conway is built around student housing, river properties, larger lots and commercial corridors. Carolina Forest is HOA and suburban growth. Murrells Inlet is MarshWalk, restaurants, marinas and waterfront homes. Pawleys and Litchfield are second-home, resort and coastal care markets.</p>
-      <ul>
-        <li>Beach communities: rentals, cleaning, pool service, home watch and storm exposure</li>
-        <li>Suburban communities: HOAs, sod, irrigation, lawn care, fencing and apartments</li>
-        <li>Commercial corridors: pressure washing, windows, repairs and recurring upkeep</li>
-        <li>Second-home areas: property checks, owner reporting and maintenance coordination</li>
-      </ul>
-    </div>
-  </div>
-</section>
-
-<section class="section alt" aria-labelledby="why-heading">
-  <div class="wrap">
-    <div class="section-head">
-      <span class="eyebrow">Why one vendor matters</span>
-      <h2 class="sh" id="why-heading">One Maintenance Partner Instead of <em>Five Separate Vendors</em></h2>
-      <p class="intro">Most properties need more than one service line. A rental may need cleaning, lawn care, pool checks and repairs. An HOA may need landscaping, pressure washing, pool-area support and work orders. A commercial property may need windows, exterior cleaning, repairs and recurring presentation standards.</p>
-    </div>
-    <div class="why-grid">
-      <div class="why"><h3>One point of contact</h3><p>Keep communication clean with one company handling multiple property maintenance categories.</p></div>
-      <div class="why"><h3>Cleaner scheduling</h3><p>Coordinate seasonal, recurring and one-time work without chasing multiple vendors.</p></div>
-      <div class="why"><h3>Client portal visibility</h3><p>Review technician notes, arrival and departure times, photos and service history in one place.</p></div>
-      <div class="why"><h3>Local property knowledge</h3><p>Beach, inland, HOA, apartment, commercial and second-home properties have different maintenance needs.</p></div>
-      <div class="why"><h3>Recurring plan options</h3><p>Build weekly, monthly, seasonal or customized maintenance coverage around the property.</p></div>
-      <div class="why"><h3>Skilled multi-trade support</h3><p>HVAC, pool, plumbing, electrical, cleaning, grounds and maintenance capability through one accountable provider.</p></div>
-    </div>
-  </div>
-</section>
-
-<section class="section" aria-labelledby="trust-heading">
-  <div class="wrap">
-    <div class="section-head">
-      <span class="eyebrow">Local credibility and accountability</span>
-      <h2 class="sh" id="trust-heading">A Professional Property-Service Company Built for <em>Long-Term Relationships</em></h2>
-      <p class="intro">Bakerss combines local ownership, professional systems and transparent field documentation to deliver service clients can verify.</p>
-    </div>
-    <div class="why-grid">
-      <div class="why"><h3>Myrtle Beach Chamber Member</h3><p>Proud member of the Myrtle Beach Area Chamber of Commerce and invested in the local business community.</p></div>
-      <div class="why"><h3>Documented Service</h3><p>Client portal records provide technician times, field notes, photos and work-order history.</p></div>
-      <div class="why"><h3>Experienced Trade Professionals</h3><p>HVAC, pool, plumbing, electrical and maintenance services are handled by experienced professionals, with licensed technicians where required.</p></div>
-    </div>
-  </div>
-</section>
-
-<section class="section alt" aria-labelledby="review-cta-heading">
-  <div class="wrap">
-    <div class="review-cta">
-      <div>
-        <h3 id="review-cta-heading">Worked with Bakerss? Leave us a review.</h3>
-        <p>Real reviews from real customers help other Horry County property owners find us — and help us keep improving.</p>
-      </div>
-      <!-- TODO: replace # with your real Google review link, e.g. https://g.page/r/XXXXXXXX/review -->
-      <a class="btn btn-primary" href="#" rel="nofollow">Leave a Google Review</a>
-    </div>
-  </div>
-</section>
-
-<section class="section" aria-labelledby="explore-heading">
-  <div class="wrap">
-    <div class="section-head">
-      <span class="eyebrow">Explore Bakerss resources</span>
-      <h2 class="sh" id="explore-heading">Neighborhood Guides &amp; <em>Property Maintenance Resources</em></h2>
-      <p class="intro">Dive deeper into Horry County neighborhoods and find property maintenance tips, cost guides and local seasonal care advice in our Learning Center.</p>
-    </div>
-    <div class="split">
-      <a class="content-box" href="/neighborhoods/" style="text-decoration:none;display:block;">
-        <span class="eyebrow">Horry County neighborhoods</span>
-        <h3 class="sh" style="font-size:clamp(20px,3vw,28px)">Neighborhood Guides — <em>Plantation Lakes, Berkshire Forest, Waterbridge &amp; More</em></h3>
-        <p style="color:var(--muted);font-size:14.5px;line-height:1.8;margin:10px 0 0">Hyperlocal subdivision guides covering HOA standards, lawn types, soil conditions and maintenance needs for Horry County's top communities.</p>
-      </a>
-      <a class="content-box" href="/learning-center/" style="text-decoration:none;display:block;">
-        <span class="eyebrow">Property maintenance tips</span>
-        <h3 class="sh" style="font-size:clamp(20px,3vw,28px)">Learning Center — <em>Lawn Care, Cleaning, Pool &amp; Seasonal Guides</em></h3>
-        <p style="color:var(--muted);font-size:14.5px;line-height:1.8;margin:10px 0 0">Articles covering pre-emergent timing, grass types for Horry County soil, Airbnb cleaning checklists, pool maintenance schedules and more.</p>
-      </a>
-    </div>
-  </div>
-</section>
-
-<section class="section" id="faq" aria-labelledby="faq-heading">
-  <div class="wrap">
-    <div class="section-head">
-      <span class="eyebrow">Frequently asked questions</span>
-      <h2 class="sh" id="faq-heading">Bakerss Property Services — <em>Common Questions</em></h2>
-    </div>
-    <div class="faq">
-      <details open>
-        <summary>What areas does Bakerss Property Services serve?</summary>
-        <p>Bakerss serves Myrtle Beach, North Myrtle Beach, Surfside Beach, Murrells Inlet, Garden City, Socastee, Conway, Carolina Forest, Pawleys Island, Litchfield Beach, Horry County and Georgetown County.</p>
-      </details>
-      <details>
-        <summary>What property maintenance services does Bakerss provide?</summary>
-        <p>Bakerss provides White Glove estate care, HVAC repair and preventive maintenance, weekly interior cleaning, lawn and grounds care, pool maintenance, plumbing and electrical work-order support, handyman repairs, vacation-home care, apartment maintenance, HOA maintenance and commercial property maintenance.</p>
-      </details>
-      <details>
-        <summary>Does Bakerss offer HOA and apartment maintenance?</summary>
-        <p>Yes. Bakerss supports HOA communities, apartment communities, condo communities and managed properties with common-area cleaning, grounds maintenance, pool-area support, work orders, repairs, dryer vent cleaning, pressure washing and recurring maintenance plans.</p>
-      </details>
-      <details>
-        <summary>Does Bakerss help vacation rental and second-home owners?</summary>
-        <p>Yes. Bakerss supports vacation rentals, Airbnb properties and second homes with turnover cleaning, home watch, storm checks, lawn care, pool maintenance, handyman repairs, pressure washing, window cleaning and exterior maintenance.</p>
-      </details>
-      <details>
-        <summary>Does Bakerss provide HVAC repair and preventive maintenance?</summary>
-        <p>Yes. Bakerss provides HVAC diagnostics, repair, preventive maintenance, monthly system checks and qualifying emergency-service availability through experienced HVAC technicians. Service scope depends on the system, property and licensing requirements.</p>
-      </details>
-      <details>
-        <summary>What can clients see in the Bakerss Client Portal?</summary>
-        <p>Recurring clients can review documented technician arrival and departure times, field notes, property photographs, work-order activity and service history.</p>
-      </details>
-      <details>
-        <summary>Does Bakerss offer a complete care plan for luxury homes?</summary>
-        <p>Yes. White Glove Estate Care is designed for premium homes and second homes needing weekly interior cleaning, full grounds maintenance, HVAC preventive maintenance, property inspections and priority access to repair technicians.</p>
-      </details>
-      <details>
-        <summary>How do I request a quote from Bakerss Property Services?</summary>
-        <p>You can request a quote online at <a href="/get-quote/" style="color:var(--pink);font-weight:700">bakerss.com/get-quote/</a>, call or text <a href="tel:8434677136" style="color:var(--pink);font-weight:700">843-467-7136</a>, or email <a href="mailto:info@bakerss.com" style="color:var(--pink);font-weight:700">info@bakerss.com</a> with the property address, service needs, photos if available and whether you need one-time or recurring maintenance.</p>
-      </details>
-      <details>
-        <summary>How much does property maintenance cost in Myrtle Beach?</summary>
-        <p>Bakerss publishes transparent starting prices for many of our most requested services. <a href="/pricing/" style="color:var(--pink);font-weight:900">View Transparent Pricing →</a> Final pricing depends on property size, access, condition, materials, frequency and service scope.</p>
-      </details>
-      <details>
-        <summary>Does Bakerss serve Conway and Carolina Forest?</summary>
-        <p>Yes. Bakerss Property Services serves Conway and Carolina Forest with lawn care, landscaping, cleaning, pool maintenance, handyman services, HOA maintenance, apartment maintenance and commercial property maintenance. Visit the <a href="/service-areas/conway/" style="color:var(--pink);font-weight:700">Conway</a> or <a href="/service-areas/carolina-forest/" style="color:var(--pink);font-weight:700">Carolina Forest</a> city pages for full details.</p>
-      </details>
-    </div>
-  </div>
-</section>
-
-<section class="cta" aria-labelledby="cta-heading">
-  <div class="wrap">
-    <span class="eyebrow">Schedule a private property assessment</span>
-    <h2 class="sh" id="cta-heading">Ready for One Accountable Team to Care for Your Property?</h2>
-    <p>Tell us about the property, service expectations and current needs. We will recommend the appropriate estate-care membership, recurring service plan, HVAC response or managed-property solution.</p>
-    <div style="display:flex;gap:12px;justify-content:center;flex-wrap:wrap">
-      <a class="btn btn-primary" href="/get-quote/">Schedule an Assessment</a>
-      <a class="btn btn-outline" href="tel:8434677136">Call 843-467-7136</a>
-      <a class="btn btn-outline" href="mailto:info@bakerss.com">Email info@bakerss.com</a>
-    </div>
-  </div>
-</section>
-
-</main>
-
-<footer class="footer">
-  <div class="wrap">
-    <div class="footer-grid">
-      <div>
-        <h3>Bakerss Property Services LLC</h3>
-        <p>Premium property maintenance, White Glove estate care, HVAC, cleaning, grounds, pool and repair services across Myrtle Beach, Surfside Beach, Murrells Inlet and the Grand Strand.</p>
-        <p><strong style="color:#fff">Call/Text:</strong> <a href="tel:8434677136">843-467-7136</a><br><strong style="color:#fff">Email:</strong> <a href="mailto:info@bakerss.com">info@bakerss.com</a></p>
-        <p style="margin-top:10px;font-size:12px;">320 Forestbrook Cove Circle<br>Myrtle Beach, SC 29588</p>
-      </div>
-      <div>
-        <h4>Grand Strand Cities</h4>
-        <a href="/service-areas/myrtle-beach/">Myrtle Beach</a>
-        <a href="/service-areas/north-myrtle-beach/">North Myrtle Beach</a>
-        <a href="/service-areas/surfside-beach/">Surfside Beach</a>
-        <a href="/service-areas/conway/">Conway</a>
-        <a href="/service-areas/carolina-forest/">Carolina Forest</a>
-        <a href="/service-areas/murrells-inlet/">Murrells Inlet</a>
-        <a href="/service-areas/garden-city/">Garden City</a>
-        <a href="/service-areas/socastee/">Socastee</a>
-        <a href="/service-areas/pawleys-island/">Pawleys Island</a>
-        <a href="/service-areas/litchfield-beach/">Litchfield Beach</a>
-      </div>
-      <div>
-        <h4>Managed Properties</h4>
-        <a href="/services/commercial-maintenance/">Commercial Maintenance</a>
-        <a href="/apartment-maintenance/">Apartment Maintenance</a>
-        <a href="/hoa-services/">HOA Maintenance</a>
-        <a href="/services/property-maintenance/">Property Maintenance Plans</a>
-        <h4 style="margin-top:16px">Explore</h4>
-        <a href="/neighborhoods/">Neighborhood Guides</a>
-        <a href="/learning-center/">Learning Center</a>
-      </div>
-      <div>
-        <h4>Premium Services</h4>
-        <a href="/services/white-glove-estate-care/">White Glove Estate Care</a>
-        <a href="/services/hvac-repair/">HVAC Repair &amp; Maintenance</a>
-        <a href="/services/property-maintenance/">Total Property Care</a>
-        <h4 style="margin-top:16px">Core Services</h4>
-        <a href="/services/lawn-care/">Lawn Care</a>
-        <a href="/services/landscaping/">Landscaping</a>
-        <a href="/services/sod-installation/">Sod Installation</a>
-        <a href="/services/airbnb-cleaning/">Airbnb Cleaning</a>
-        <a href="/services/interior-cleaning/">Interior Cleaning</a>
-        <a href="/services/pool-maintenance/">Pool Maintenance</a>
-        <a href="/services/handyman-services/">Handyman Services</a>
-        <a href="/services/pressure-washing/">Pressure Washing</a>
-      </div>
-      <div>
-        <h4>More Services</h4>
-        <a href="/services/window-cleaning/">Window Cleaning</a>
-        <a href="/services/gutter-cleaning/">Gutter Cleaning</a>
-        <a href="/services/dryer-vent-cleaning/">Dryer Vent Cleaning</a>
-        <a href="/services/irrigation-sprinkler-repair/">Irrigation Repair</a>
-        <a href="/services/fence-installation-repair/">Fence Repair</a>
-        <a href="/services/vacation-home-watch/">Vacation Home Watch</a>
-        <a href="/service-areas/horry-county/">Horry County</a>
-        <a href="/service-areas/georgetown-county/">Georgetown County</a>
-      </div>
-    </div>
-    <div class="fine">
-      <span>&copy; 2026 Bakerss Property Services LLC · 320 Forestbrook Cove Circle · Myrtle Beach, SC 29588 · <a href="tel:8434677136" style="color:#9696a0">843-467-7136</a></span>
-      <span>Estate Care · HVAC · Cleaning · Grounds · Pool · Work Orders · Grand Strand SC</span>
-    </div>
-  </div>
-</footer>
-
-<div class="sticky-mobile" role="complementary" aria-label="Quick contact">
-  <a class="btn btn-primary" href="tel:8434677136">Call</a>
-  <a class="btn btn-light" href="/get-quote/">Free Quote</a>
+<div class="wrap nav">
+<a aria-label="Bakerss Property Services — home" class="logo" href="https://www.bakerss.com/">Bakerss<span>.</span></a>
+<nav aria-label="Primary navigation">
+<ul class="navlinks">
+<li class="dropdown-wrap">
+<button aria-expanded="false" aria-haspopup="true" type="button">Services ▾</button>
+<div aria-label="Services menu" class="dropdown" role="region">
+<div class="dd-panel">
+<div class="dd-col"><strong>Premium Property Care</strong>
+<a class="highlight" href="https://www.bakerss.com/services/white-glove-estate-care/">White Glove Estate Care</a>
+<a href="https://www.bakerss.com/services/property-maintenance/">Total Property Care</a>
+<a href="https://www.bakerss.com/services/vacation-home-watch/">Second-Home Care</a>
+<a href="https://www.bakerss.com/services/commercial-maintenance/">Commercial Maintenance</a>
+<a href="https://www.bakerss.com/apartment-maintenance/">Apartment Maintenance</a>
+<a href="https://www.bakerss.com/hoa-services/">HOA Maintenance</a>
+<a href="https://www.bakerss.com/services/property-maintenance/">Property Maintenance Plans</a>
 </div>
-
-<!-- TODO: GA4 tracking — replace G-XXXXXXXXXX with your real Measurement ID -->
+<div class="dd-col"><strong>Exterior</strong>
+<a href="https://www.bakerss.com/services/lawn-care/">Lawn Care</a>
+<a href="https://www.bakerss.com/services/landscaping/">Landscaping</a>
+<a href="https://www.bakerss.com/services/sod-installation/">Sod Installation</a>
+<a href="https://www.bakerss.com/services/pressure-washing/">Pressure Washing</a>
+<a href="https://www.bakerss.com/services/gutter-cleaning/">Gutter Cleaning</a>
+</div>
+<div class="dd-col"><strong>Interior &amp; Rentals</strong>
+<a href="https://www.bakerss.com/services/interior-cleaning/">Interior Cleaning</a>
+<a href="https://www.bakerss.com/services/airbnb-cleaning/">Airbnb Cleaning</a>
+<a href="https://www.bakerss.com/services/handyman-services/">Handyman Services</a>
+<a href="https://www.bakerss.com/services/dryer-vent-cleaning/">Dryer Vent Cleaning</a>
+<a href="https://www.bakerss.com/services/window-cleaning/">Window Cleaning</a>
+</div>
+<div class="dd-col"><strong>Skilled Property Services</strong>
+<a class="highlight" href="https://www.bakerss.com/services/hvac-repair/">HVAC Repair &amp; Maintenance</a>
+<a href="https://www.bakerss.com/services/pool-maintenance/">Pool Maintenance</a>
+<a href="https://www.bakerss.com/services/irrigation-sprinkler-repair/">Irrigation Repair</a>
+<a href="https://www.bakerss.com/services/fence-installation-repair/">Fence Repair</a>
+<a href="https://www.bakerss.com/services/vacation-home-watch/">Vacation Home Watch</a>
+<a class="highlight" href="https://www.bakerss.com/get-quote/">Get a Quote</a>
+</div>
+</div>
+</div>
+</li>
+<li class="dropdown-wrap">
+<button aria-expanded="false" aria-haspopup="true" type="button">Service Areas ▾</button>
+<div aria-label="Service areas menu" class="dropdown" role="region">
+<div class="dd-panel">
+<div class="dd-col"><strong>Core City Hubs</strong>
+<a href="https://www.bakerss.com/service-areas/myrtle-beach/">Myrtle Beach</a>
+<a href="https://www.bakerss.com/service-areas/north-myrtle-beach/">North Myrtle Beach</a>
+<a href="https://www.bakerss.com/service-areas/surfside-beach/">Surfside Beach</a>
+<a href="https://www.bakerss.com/service-areas/conway/">Conway</a>
+<a href="https://www.bakerss.com/service-areas/carolina-forest/">Carolina Forest</a>
+</div>
+<div class="dd-col"><strong>South Strand</strong>
+<a href="https://www.bakerss.com/service-areas/murrells-inlet/">Murrells Inlet</a>
+<a href="https://www.bakerss.com/service-areas/garden-city/">Garden City</a>
+<a href="https://www.bakerss.com/service-areas/socastee/">Socastee</a>
+<a href="https://www.bakerss.com/service-areas/pawleys-island/">Pawleys Island</a>
+<a href="https://www.bakerss.com/service-areas/litchfield-beach/">Litchfield Beach</a>
+</div>
+<div class="dd-col"><strong>County Coverage</strong>
+<a href="https://www.bakerss.com/service-areas/horry-county/">Horry County</a>
+<a href="https://www.bakerss.com/service-areas/georgetown-county/">Georgetown County</a>
+<a href="https://www.bakerss.com/neighborhoods/">Neighborhoods</a>
+<a class="highlight" href="https://www.bakerss.com/get-quote/">Request a Quote</a>
+</div>
+<div class="dd-col"><strong>High-Intent Services</strong>
+<a href="https://www.bakerss.com/services/lawn-care/">Lawn Care</a>
+<a href="https://www.bakerss.com/services/airbnb-cleaning/">Airbnb Cleaning</a>
+<a href="https://www.bakerss.com/services/pool-maintenance/">Pool Maintenance</a>
+<a href="https://www.bakerss.com/services/handyman-services/">Handyman Services</a>
+<a href="https://www.bakerss.com/services/sod-installation/">Sod Installation</a>
+</div>
+</div>
+</div>
+</li>
+<li><a href="https://www.bakerss.com/services/white-glove-estate-care/">Estate Care</a></li>
+<li><a href="https://www.bakerss.com/services/hvac-repair/">HVAC</a></li>
+<li><a href="https://www.bakerss.com/hoa-services/">HOA</a></li>
+<li><a href="https://www.bakerss.com/apartment-maintenance/">Apartments</a></li>
+<li><a href="https://www.bakerss.com/services/commercial-maintenance/">Commercial</a></li>
+<li><a href="https://www.bakerss.com/learning-center/">Resources</a></li>
+<li><a href="https://www.bakerss.com/get-quote/">Quote</a></li>
+</ul>
+</nav>
+<div class="nav-actions">
+<a class="btn btn-ghost phone-btn" href="tel:8434677136">843-467-7136</a>
+<a class="btn btn-primary" href="https://www.bakerss.com/get-quote/">Free Quote</a>
+<button aria-controls="mobileMenu" aria-expanded="false" class="hamb" onclick="toggleMenu(this)" type="button">Menu</button>
+</div>
+</div>
+<nav aria-label="Mobile navigation" class="mobile-menu" id="mobileMenu">
+<div class="wrap">
+<span class="mm-section">Premium Property Care</span>
+<a href="https://www.bakerss.com/services/white-glove-estate-care/">White Glove Estate Care</a>
+<a href="https://www.bakerss.com/services/hvac-repair/">HVAC Repair &amp; Maintenance</a>
+<a href="https://www.bakerss.com/services/property-maintenance/">Total Property Care</a>
+<span class="mm-section">Core Services</span>
+<a href="https://www.bakerss.com/services/commercial-maintenance/">Commercial Maintenance</a>
+<a href="https://www.bakerss.com/apartment-maintenance/">Apartment Maintenance</a>
+<a href="https://www.bakerss.com/hoa-services/">HOA Maintenance</a>
+<a href="https://www.bakerss.com/services/property-maintenance/">Property Maintenance Plans</a>
+<a href="https://www.bakerss.com/services/lawn-care/">Lawn Care</a>
+<a href="https://www.bakerss.com/services/airbnb-cleaning/">Airbnb Cleaning</a>
+<a href="https://www.bakerss.com/services/pool-maintenance/">Pool Maintenance</a>
+<a href="https://www.bakerss.com/services/handyman-services/">Handyman Services</a>
+<span class="mm-section">City Hubs</span>
+<a href="https://www.bakerss.com/service-areas/myrtle-beach/">Myrtle Beach</a>
+<a href="https://www.bakerss.com/service-areas/north-myrtle-beach/">North Myrtle Beach</a>
+<a href="https://www.bakerss.com/service-areas/surfside-beach/">Surfside Beach</a>
+<a href="https://www.bakerss.com/service-areas/murrells-inlet/">Murrells Inlet</a>
+<a href="https://www.bakerss.com/service-areas/garden-city/">Garden City</a>
+<a href="https://www.bakerss.com/service-areas/socastee/">Socastee</a>
+<a href="https://www.bakerss.com/service-areas/conway/">Conway</a>
+<a href="https://www.bakerss.com/service-areas/carolina-forest/">Carolina Forest</a>
+<a href="https://www.bakerss.com/service-areas/pawleys-island/">Pawleys Island</a>
+<a href="https://www.bakerss.com/service-areas/litchfield-beach/">Litchfield Beach</a>
+<span class="mm-section">Resources</span>
+<a href="https://www.bakerss.com/neighborhoods/">Neighborhoods</a>
+<a href="https://www.bakerss.com/learning-center/">Learning Center</a>
+<a href="https://www.bakerss.com/get-quote/" style="color:var(--pink);font-weight:900;margin-top:10px">Get a Free Quote →</a>
+</div>
+</nav>
+</header>
+<main id="main">
+<br/>
+<section aria-label="Property maintenance in Myrtle Beach and Horry County" class="hero">
+<img alt="Bakerss Property Services LLC service truck serving Myrtle Beach and Horry County SC" class="hero-img" decoding="async" fetchpriority="high" height="630" src="https://www.bakerss.com/images/truck.png" width="1200"/>
+<div aria-hidden="true" class="hero-overlay"></div>
+<a aria-label="View transparent starting prices for Bakerss Property Services" class="pricing-popout" href="https://www.bakerss.com/pricing/">
+<span class="pricing-new">Pricing Guide</span>
+<strong>Transparent Pricing</strong>
+<span class="pricing-click">Click Here →</span>
+<span class="pricing-note">See starting prices for popular services</span>
+</a>
+<div class="wrap">
+<div>
+<span class="kicker">Property Maintenance · HVAC · Pool · Grounds · Cleaning · Skilled Repairs</span>
+<h1>Full-Service Property Maintenance for <em>Myrtle Beach &amp; Horry County</em></h1>
+<p class="lead">Bakerss Property Services LLC gives homeowners, estate clients, HOAs, apartments and commercial managers <strong>one accountable local team for HVAC, preventive maintenance, duct cleaning, pool care, grounds, cleaning, plumbing, electrical work orders and property repairs</strong>. Clients can submit work orders and follow live status, technician notes, job photos, proposals and service history through the Bakerss Client Portal.</p>
+<div class="hero-ctas">
+<a class="btn btn-primary" href="https://www.bakerss.com/get-quote/">Schedule a Property Assessment</a>
+<a class="btn btn-outline" href="tel:8434677136">Call or Text 843-467-7136</a>
+<a class="btn btn-light" href="https://www.bakerss.com/services/white-glove-estate-care/">Explore Estate Care</a>
+<a class="btn btn-light" href="https://www.bakerss.com/services/hvac-repair/">Request HVAC Service</a>
+</div>
+<div class="trust">
+<span class="pill">Myrtle Beach Area Chamber member</span>
+<span class="pill">Client portal documentation</span>
+<span class="pill">Experienced licensed trade technicians</span>
+<span class="pill">Priority property response</span>
+<span class="pill">Recurring care memberships</span>
+</div>
+<div class="rating-badge">
+<span aria-hidden="true" class="rating-stars">★★★★★</span>
+<span class="rating-text">5.0 ★ on Google · 18 reviews · Locally owned · Insured · Horry &amp; Georgetown Counties</span>
+</div>
+</div>
+<aside aria-label="Request a maintenance quote" class="quote-card">
+<h2>Tell us what your property needs.</h2>
+<p>Request an assessment for recurring property care, HVAC, duct cleaning, pool service, managed-property support or repair work.</p>
+<div class="quick-list"><div><span aria-hidden="true" class="check">✓</span><span>HVAC diagnostics, repair, PM programs and duct cleaning</span></div><div><span aria-hidden="true" class="check">✓</span><span>Certified Pool Operator-supported pool service</span></div><div><span aria-hidden="true" class="check">✓</span><span>Plumbing, electrical and general property work orders</span></div><div><span aria-hidden="true" class="check">✓</span><span>Full property maintenance plans for homes and managed properties</span></div><div><span aria-hidden="true" class="check">✓</span><span>Live portal status, photos, proposals, notes and service history</span></div></div>
+<a class="btn btn-primary" href="https://www.bakerss.com/get-quote/" style="width:100%;margin-top:8px">Request My Property Assessment</a>
+<p style="text-align:center;font-size:12px;color:#888;margin:8px 0 0">Call or text <a href="tel:8434677136" style="color:var(--pink);font-weight:900">843-467-7136</a></p>
+</aside>
+</div>
+</section>
+<br/>
+<section aria-label="Bakerss at a glance" class="stats"><div class="stat"><b>24/7</b><span>Service request intake</span></div><div class="stat"><b>Live</b><span>Work-order status &amp; photos</span></div><div class="stat"><b>HVAC</b><span>Repair + preventive maintenance</span></div><div class="stat"><b>CPO</b><span>Certified pool operations capability</span></div><div class="stat"><b>1 Team</b><span>Multi-service property care</span></div></section>
+<br/>
+<section aria-labelledby="about-heading" class="section">
+<div class="wrap">
+<div class="section-head">
+<span class="eyebrow">Premium full-service property care</span>
+<h2 class="sh" id="about-heading">One Property. One Call. <em>Complete Care.</em></h2>
+<p class="intro">Bakerss Property Services LLC is a veteran- and family-owned, Myrtle Beach Area Chamber of Commerce member serving discerning homeowners, second-home owners and managed properties across the Grand Strand.</p>
+</div>
+<div class="about-prose"><p>Coastal property ownership creates overlapping maintenance demands: air-conditioning load, humidity, storm exposure, salt and sand, fast landscape growth, pool care, cleaning, tenant or guest issues and ongoing repair work. Bakerss is structured to coordinate those needs through one local property-services relationship.</p><p>Our field capability includes <strong>HVAC technicians, Certified Pool Operators, plumbers, electricians, cleaning teams, grounds crews and property-maintenance technicians</strong>. Where a scope requires a particular license, permit or specialty credential, the work is assigned or coordinated accordingly.</p><p>The operational difference is visibility: recurring clients can submit work orders, follow status from <strong>scheduled → in progress → proposal submitted → completed</strong>, review live job photos and technician notes, and retain service history for owner, HOA, management or reporting needs.</p></div>
+</div>
+</section>
+<br/>
+<section aria-labelledby="estate-heading" class="section alt">
+<div class="wrap">
+<div class="premium-banner">
+<div>
+<span class="eyebrow">Private property-care memberships</span>
+<h2 class="sh" id="estate-heading">White Glove Estate Care for <em>Exceptional Homes</em></h2>
+<p>Designed for luxury residences, waterfront homes and second homes that require consistent interior, exterior and mechanical care. Bakerss creates a customized annual property plan with one service team, one point of contact and documented accountability.</p>
+<div style="display:flex;gap:10px;flex-wrap:wrap">
+<a class="btn btn-primary" href="https://www.bakerss.com/services/white-glove-estate-care/">View White Glove Estate Care</a>
+<a class="btn btn-outline" href="https://www.bakerss.com/get-quote/">Schedule a Private Assessment</a>
+</div>
+</div>
+<div class="premium-list">
+<div>Weekly interior cleaning</div>
+<div>Full grounds and exterior care</div>
+<div>Scheduled HVAC preventive maintenance</div>
+<div>Annual dryer-vent service</div>
+<div>Priority repair response</div>
+<div>Digital service documentation</div>
+<div>Digital work-order &amp; property history</div></div>
+</div>
+</div>
+</section>
+<br/>
+<section aria-labelledby="portal-heading" class="section">
+<div class="wrap">
+<div class="section-head">
+<span class="eyebrow">Complete service visibility</span>
+<h2 class="sh" id="portal-heading">The Bakerss Client Portal Keeps You <em>Connected to Your Property</em></h2>
+<p class="intro">The Bakerss Client Portal is built into how we operate—not added after the work is done. Clients can create requests, see where work stands and retain a documented history of service activity.</p>
+</div>
+<div class="portal-grid"><div class="portal-card"><b>01</b><h3>Submit work orders</h3><p>Clients can submit service requests directly into the property workflow instead of relying on scattered calls, texts or emails.</p></div><div class="portal-card"><b>02</b><h3>Live work-order status</h3><p>See scheduled, in-progress, proposal-submitted and completed status as the job moves through the service process.</p></div><div class="portal-card"><b>03</b><h3>Technician time onsite</h3><p>Arrival and departure activity is recorded for stronger service accountability and property reporting.</p></div><div class="portal-card"><b>04</b><h3>Live field notes &amp; photos</h3><p>Technicians document conditions, progress, completed work and concerns with notes and job photographs.</p></div><div class="portal-card"><b>05</b><h3>Proposals &amp; next steps</h3><p>When additional work is discovered, clients can see that a proposal or next action is pending instead of wondering where the job stopped.</p></div><div class="portal-card"><b>06</b><h3>Long-term service history</h3><p>Property records remain organized for owners, managers, HOA reporting, budgeting, vendor review and future maintenance decisions.</p></div></div>
+</div>
+</section>
+<br/>
+<section aria-labelledby="trades-heading" class="section dark">
+<div class="wrap">
+<div class="section-head">
+<span class="eyebrow">Skilled property-service capability</span>
+<h2 class="sh" id="trades-heading">One Team for the Services Your Property <em>Actually Requires</em></h2>
+<p class="intro">Bakerss combines certified and skilled field capability with one property-maintenance workflow. That means fewer vendor handoffs, clearer accountability and one service history for the property.</p>
+</div>
+<div class="trade-strip"><div class="trade"><h3>HVAC &amp; Air Conditioning</h3><p>Diagnostics, repairs, preventive maintenance programs, system checks and service coordination from experienced HVAC technicians.</p></div><div class="trade"><h3>Air Duct Cleaning</h3><p>Duct cleaning programs for homes, rentals and managed properties, coordinated with broader HVAC and indoor-property maintenance.</p></div><div class="trade"><h3>Pool Operations</h3><p>Routine pool service supported by Certified Pool Operators for residential, rental, HOA and managed-property needs.</p></div><div class="trade"><h3>Plumbing &amp; Electrical</h3><p>Property work orders, diagnostics and repair coordination through plumbers, electricians and appropriately licensed professionals where required.</p></div><div class="trade"><h3>Full Property PM Programs</h3><p>Recurring plans can combine HVAC PM, filters, dryer vents, cleaning, grounds, pool care, inspections and documented property checks.</p></div><div class="trade"><h3>Digital Work-Order Management</h3><p>Client-submitted requests, live statuses, photos, proposals, notes and service history stay connected to the property.</p></div></div>
+<p class="capability-note">Service availability varies by property and scope. Work requiring a specific trade license, permit or regulated credential is performed or coordinated through appropriately qualified personnel.</p></div>
+</section>
+<br/>
+<section aria-labelledby="city-hubs-heading" class="section dark" id="city-hubs">
+<div class="wrap">
+<div class="section-head">
+<span class="eyebrow">All service areas</span>
+<h2 class="sh" id="city-hubs-heading">Property Maintenance Across Every <em>Grand Strand City</em></h2>
+<p class="intro">Explore local property-care, HVAC, grounds, cleaning and managed-property services across each Grand Strand market we serve.</p>
+</div>
+<div class="city-grid">
+<a class="city-card" href="https://www.bakerss.com/service-areas/myrtle-beach/"><strong>Myrtle Beach</strong><span>Boardwalk, Market Common, Grande Dunes, Broadway-area commercial, rentals and HOA properties.</span></a>
+<a class="city-card" href="https://www.bakerss.com/service-areas/north-myrtle-beach/"><strong>North Myrtle Beach</strong><span>Cherry Grove, Ocean Drive, Crescent Beach, Windy Hill, Main Street and Barefoot Landing-area properties.</span></a>
+<a class="city-card" href="https://www.bakerss.com/service-areas/surfside-beach/"><strong>Surfside Beach</strong><span>The Family Beach, Ocean Boulevard, Surfside Pier area, Surfside Drive, Deerfield and beach rentals.</span></a>
+<a class="city-card" href="https://www.bakerss.com/service-areas/murrells-inlet/"><strong>Murrells Inlet</strong><span>MarshWalk, waterfront restaurants, Prince Creek, Wachesaw, marinas, golf homes and second homes.</span></a>
+<a class="city-card" href="https://www.bakerss.com/service-areas/garden-city/"><strong>Garden City</strong><span>Garden City Pier, South Waccamaw Drive, inlet-side homes, beach rentals and storm-ready property care.</span></a>
+<a class="city-card" href="https://www.bakerss.com/service-areas/socastee/"><strong>Socastee</strong><span>Highway 707, Highway 544, Socastee Boulevard, HOAs, apartments, homes and service-business corridors.</span></a>
+<a class="city-card" href="https://www.bakerss.com/service-areas/conway/"><strong>Conway</strong><span>Historic Downtown Conway, Riverwalk, Waccamaw River properties, CCU/HGTC, Highway 501/90 and larger lots.</span></a>
+<a class="city-card" href="https://www.bakerss.com/service-areas/carolina-forest/"><strong>Carolina Forest</strong><span>Carolina Forest Boulevard, The Farm, Berkshire Forest, Waterbridge, Plantation Lakes, HOAs and apartments.</span></a>
+<a class="city-card" href="https://www.bakerss.com/service-areas/pawleys-island/"><strong>Pawleys Island</strong><span>Historic Pawleys, Waccamaw Neck, Hammock Shops, Pawleys Plantation, True Blue and coastal second homes.</span></a>
+<a class="city-card" href="https://www.bakerss.com/service-areas/litchfield-beach/"><strong>Litchfield Beach</strong><span>North Litchfield, Litchfield by the Sea, resort condos, golf communities, vacation homes and HOAs.</span></a>
+</div>
+</div>
+</section>
+<br/>
+<section aria-labelledby="services-heading" class="section alt" id="services">
+<div class="wrap">
+<div class="section-head">
+<span class="eyebrow">Full-service property maintenance</span>
+<h2 class="sh" id="services-heading">Complete Property Services for <em>Homes, Estates &amp; Managed Properties</em></h2>
+<p class="intro">Bakerss combines high-frequency recurring care with skilled repair capability, preventive maintenance and documented service—built to generate better property outcomes with fewer vendors.</p>
+</div>
+<div class="service-grid">
+<a class="service-card feature" href="https://www.bakerss.com/services/white-glove-estate-care/"><span aria-hidden="true" class="icon">◆</span><h3>White Glove Estate Care</h3><p>Weekly cleaning, complete grounds, HVAC PM, inspections and priority property-service response.</p></a><a class="service-card feature" href="https://www.bakerss.com/services/hvac-repair/"><span aria-hidden="true" class="icon">◉</span><h3>Air Duct Cleaning Programs</h3><p>Duct cleaning for homes, rentals and managed properties, coordinated with HVAC and recurring property-maintenance programs.</p></a>
+<a class="service-card feature" href="https://www.bakerss.com/services/hvac-repair/"><span aria-hidden="true" class="icon">❄</span><h3>HVAC Repair, AC Service &amp; PM</h3><p>AC diagnostics, repair, preventive maintenance programs, system checks and qualifying emergency service.</p></a>
+<a class="service-card feature" href="https://www.bakerss.com/services/commercial-maintenance/"><span aria-hidden="true" class="icon">🏬</span><h3>Commercial Maintenance</h3><p>Commercial property maintenance, exterior upkeep, cleaning, repairs and work order support.</p></a>
+<a class="service-card feature" href="https://www.bakerss.com/apartment-maintenance/"><span aria-hidden="true" class="icon">🏢</span><h3>Apartment Maintenance</h3><p>Apartment turns, common areas, dryer vents, work orders and multi-family maintenance support.</p></a>
+<a class="service-card feature" href="https://www.bakerss.com/hoa-services/"><span aria-hidden="true" class="icon">🏘️</span><h3>HOA Maintenance</h3><p>HOA common areas, entrances, amenities, pool areas, landscaping and board-ready maintenance plans.</p></a>
+<a class="service-card feature" href="https://www.bakerss.com/services/property-maintenance/"><span aria-hidden="true" class="icon">📋</span><h3>Property Maintenance Plans</h3><p>Recurring maintenance plans for homes, rentals, HOAs, apartments, commercial and managed properties.</p></a>
+<a class="service-card" href="https://www.bakerss.com/services/pool-maintenance/"><span aria-hidden="true" class="icon">🏊</span><h3>Pool Maintenance</h3><p>Pool maintenance for homes, rentals, HOAs, apartments and managed communities.</p></a>
+<a class="service-card" href="https://www.bakerss.com/services/landscaping/"><span aria-hidden="true" class="icon">🌴</span><h3>Landscaping</h3><p>Mulch, rock, beds, palms, shrubs, seasonal refreshes and curb appeal upgrades.</p></a>
+<a class="service-card" href="https://www.bakerss.com/services/lawn-care/"><span aria-hidden="true" class="icon">🌿</span><h3>Lawn Care</h3><p>Mowing, edging, trimming, blowing and recurring lawn care across Horry and Georgetown County.</p></a>
+<a class="service-card" href="https://www.bakerss.com/services/handyman-services/"><span aria-hidden="true" class="icon">🔧</span><h3>Handyman Services</h3><p>Repairs, punch lists, fixture work, drywall, painting touchups and rental maintenance.</p></a>
+<a class="service-card" href="https://www.bakerss.com/services/pressure-washing/"><span aria-hidden="true" class="icon">💦</span><h3>Pressure Washing</h3><p>Driveways, walkways, patios, pool decks, siding, storefronts and exterior surfaces.</p></a>
+<a class="service-card" href="https://www.bakerss.com/services/interior-cleaning/"><span aria-hidden="true" class="icon">✨</span><h3>Interior Cleaning</h3><p>Residential, commercial, move-out, deep cleaning, common-area and rental cleaning.</p></a>
+<a class="service-card" href="https://www.bakerss.com/services/airbnb-cleaning/"><span aria-hidden="true" class="icon">🏖️</span><h3>Airbnb Cleaning</h3><p>Vacation rental turnovers, guest-ready cleaning, restock notes and maintenance observations.</p></a>
+<a class="service-card" href="https://www.bakerss.com/services/sod-installation/"><span aria-hidden="true" class="icon">🌱</span><h3>Sod Installation</h3><p>Sod replacement, new turf, soil prep, grading, watering coordination and bare spot repair.</p></a>
+<a class="service-card" href="https://www.bakerss.com/services/window-cleaning/"><span aria-hidden="true" class="icon">🪟</span><h3>Window Cleaning</h3><p>Window cleaning for homes, rentals, condos, storefronts, offices and managed properties.</p></a>
+<a class="service-card" href="https://www.bakerss.com/services/gutter-cleaning/"><span aria-hidden="true" class="icon">🍂</span><h3>Gutter Cleaning</h3><p>Gutter cleaning, downspout clearing, storm prep and drainage support.</p></a>
+<a class="service-card" href="https://www.bakerss.com/services/dryer-vent-cleaning/"><span aria-hidden="true" class="icon">🧺</span><h3>Dryer Vent Cleaning</h3><p>Dryer vent cleaning for homes, rentals, apartments, condos and laundry areas.</p></a>
+<a class="service-card" href="https://www.bakerss.com/services/irrigation-sprinkler-repair/"><span aria-hidden="true" class="icon">💧</span><h3>Irrigation &amp; Sprinkler Repair</h3><p>Sprinkler heads, timers, zones, leaks, dry spots and sod watering support.</p></a>
+<a class="service-card" href="https://www.bakerss.com/services/fence-installation-repair/"><span aria-hidden="true" class="icon">🪵</span><h3>Fence Installation &amp; Repair</h3><p>Fence repair, posts, panels, gates, storm damage and privacy fence work.</p></a>
+<a class="service-card" href="https://www.bakerss.com/services/vacation-home-watch/"><span aria-hidden="true" class="icon">🏠</span><h3>Vacation Home Watch</h3><p>Home watch, storm checks, absentee owner reporting and property observations.</p></a>
+</div>
+</div>
+</section>
+<br/>
+<section aria-labelledby="managed-heading" class="section">
+<div class="wrap split">
+<div class="content-box">
+<span class="eyebrow">Managed property focus</span>
+<h2 class="sh" id="managed-heading">Built for <em>Property Managers, HOA Boards, Apartment Communities &amp; Rental Owners</em></h2>
+<p class="intro">For property managers, HOA boards and apartment communities, Bakerss combines field service with the reporting layer that usually gets lost between vendors: work-order status, technician notes, live photos, proposals, completion history and recurring preventive-maintenance records.</p>
+<ul>
+<li>HOA common areas, entrances, amenities and pool-area support</li>
+<li>Apartment turns, common-area cleaning, dryer vents and work orders</li>
+<li>Vacation rental cleaning, home watch and maintenance observations</li>
+<li>Commercial exterior upkeep, windows, pressure washing and repairs</li>
+<li>Recurring property maintenance plans for owners who want fewer vendors</li>
+</ul>
+</div>
+<div class="content-box">
+<span class="eyebrow">Local search coverage</span>
+<h2 class="sh">Different Cities, Different <em>Property Needs</em></h2>
+<p class="intro">Conway is built around student housing, river properties, larger lots and commercial corridors. Carolina Forest is HOA and suburban growth. Murrells Inlet is MarshWalk, restaurants, marinas and waterfront homes. Pawleys and Litchfield are second-home, resort and coastal care markets.</p>
+<ul>
+<li>Beach communities: rentals, cleaning, pool service, home watch and storm exposure</li>
+<li>Suburban communities: HOAs, sod, irrigation, lawn care, fencing and apartments</li>
+<li>Commercial corridors: pressure washing, windows, repairs and recurring upkeep</li>
+<li>Second-home areas: property checks, owner reporting and maintenance coordination</li>
+</ul>
+</div>
+</div>
+</section>
+<br/>
+<section aria-labelledby="why-heading" class="section alt">
+<div class="wrap">
+<div class="section-head">
+<span class="eyebrow">Why one vendor matters</span>
+<h2 class="sh" id="why-heading">One Maintenance Partner Instead of <em>Five Separate Vendors</em></h2>
+<p class="intro">Most properties need more than one service line. A rental may need cleaning, lawn care, pool checks and repairs. An HOA may need landscaping, pressure washing, pool-area support and work orders. A commercial property may need windows, exterior cleaning, repairs and recurring presentation standards.</p>
+</div>
+<div class="why-grid">
+<div class="why"><h3>One point of contact</h3><p>Keep communication clean with one company handling multiple property maintenance categories.</p></div>
+<div class="why"><h3>Cleaner scheduling</h3><p>Coordinate seasonal, recurring and one-time work without chasing multiple vendors.</p></div>
+<div class="why"><h3>Client portal visibility</h3><p>Review technician notes, arrival and departure times, photos and service history in one place.</p></div>
+<div class="why"><h3>Local property knowledge</h3><p>Beach, inland, HOA, apartment, commercial and second-home properties have different maintenance needs.</p></div>
+<div class="why"><h3>Recurring plan options</h3><p>Build weekly, monthly, seasonal or customized maintenance coverage around the property.</p></div>
+<div class="why"><h3>Skilled multi-trade support</h3><p>HVAC, pool, plumbing, electrical, cleaning, grounds and maintenance capability through one accountable provider.</p></div>
+</div>
+</div>
+</section>
+<br/>
+<section aria-labelledby="trust-heading" class="section">
+<div class="wrap">
+<div class="section-head">
+<span class="eyebrow">Local credibility and accountability</span>
+<h2 class="sh" id="trust-heading">A Professional Property-Service Company Built for <em>Long-Term Relationships</em></h2>
+<p class="intro">Bakerss combines local ownership, professional systems and transparent field documentation to deliver service clients can verify.</p>
+</div>
+<div class="why-grid">
+<div class="why"><h3>Myrtle Beach Chamber Member</h3><p>Proud member of the Myrtle Beach Area Chamber of Commerce and invested in the local business community.</p></div>
+<div class="why"><h3>Documented Service</h3><p>Client portal records provide technician times, field notes, photos and work-order history.</p></div>
+<div class="why"><h3>Experienced Trade Professionals</h3><p>HVAC, pool, plumbing, electrical and maintenance services are handled by experienced professionals, with licensed technicians where required.</p></div>
+</div>
+</div>
+</section>
+<br/>
+<section aria-labelledby="review-cta-heading" class="section alt">
+<div class="wrap">
+<div class="review-cta">
+<div>
+<h3 id="review-cta-heading">Worked with Bakerss? Leave us a review.</h3>
+<p>Real reviews from real customers help other Horry County property owners find us — and help us keep improving.</p>
+</div>
+<a class="btn btn-primary" href="https://www.bakerss.com/#" rel="nofollow">Leave a Google Review</a>
+</div>
+</div>
+</section>
+<br/>
+<section aria-labelledby="explore-heading" class="section">
+<div class="wrap">
+<div class="section-head">
+<span class="eyebrow">Explore Bakerss resources</span>
+<h2 class="sh" id="explore-heading">Neighborhood Guides &amp; <em>Property Maintenance Resources</em></h2>
+<p class="intro">Dive deeper into Horry County neighborhoods and find property maintenance tips, cost guides and local seasonal care advice in our Learning Center.</p>
+</div>
+<div class="split">
+<a class="content-box" href="https://www.bakerss.com/neighborhoods/" style="text-decoration:none;display:block;">
+<span class="eyebrow">Horry County neighborhoods</span>
+<h3 class="sh" style="font-size:clamp(20px,3vw,28px)">Neighborhood Guides — <em>Plantation Lakes, Berkshire Forest, Waterbridge &amp; More</em></h3>
+<p style="color:var(--muted);font-size:14.5px;line-height:1.8;margin:10px 0 0">Hyperlocal subdivision guides covering HOA standards, lawn types, soil conditions and maintenance needs for Horry County's top communities.</p>
+</a>
+<a class="content-box" href="https://www.bakerss.com/learning-center/" style="text-decoration:none;display:block;">
+<span class="eyebrow">Property maintenance tips</span>
+<h3 class="sh" style="font-size:clamp(20px,3vw,28px)">Learning Center — <em>Lawn Care, Cleaning, Pool &amp; Seasonal Guides</em></h3>
+<p style="color:var(--muted);font-size:14.5px;line-height:1.8;margin:10px 0 0">Articles covering pre-emergent timing, grass types for Horry County soil, Airbnb cleaning checklists, pool maintenance schedules and more.</p>
+</a>
+</div>
+</div>
+</section>
+<br/>
+<section aria-labelledby="faq-heading" class="section" id="faq">
+<div class="wrap">
+<div class="section-head">
+<span class="eyebrow">Frequently asked questions</span>
+<h2 class="sh" id="faq-heading">Bakerss Property Services LLC — <em>Common Questions</em></h2>
+</div>
+<div class="faq">
+<details open="">
+<summary>What areas does Bakerss Property Services LLC serve?</summary>
+<p>Bakerss serves Myrtle Beach, North Myrtle Beach, Surfside Beach, Murrells Inlet, Garden City, Socastee, Conway, Carolina Forest, Pawleys Island, Litchfield Beach, Horry County and Georgetown County.</p>
+</details>
+<details>
+<summary>What property maintenance services does Bakerss provide?</summary>
+<p>Bakerss provides White Glove estate care, HVAC repair and preventive maintenance, weekly interior cleaning, lawn and grounds care, pool maintenance, plumbing and electrical work-order support, handyman repairs, vacation-home care, apartment maintenance, HOA maintenance and commercial property maintenance.</p>
+</details>
+<details>
+<summary>Does Bakerss offer HOA and apartment maintenance?</summary>
+<p>Yes. Bakerss supports HOA communities, apartment communities, condo communities and managed properties with common-area cleaning, grounds maintenance, pool-area support, work orders, repairs, dryer vent cleaning, pressure washing and recurring maintenance plans.</p>
+</details>
+<details>
+<summary>Does Bakerss help vacation rental and second-home owners?</summary>
+<p>Yes. Bakerss supports vacation rentals, Airbnb properties and second homes with turnover cleaning, home watch, storm checks, lawn care, pool maintenance, handyman repairs, pressure washing, window cleaning and exterior maintenance.</p>
+</details>
+<details>
+<summary>Does Bakerss provide HVAC repair and preventive maintenance?</summary>
+<p>Yes. Bakerss provides HVAC diagnostics, repair, preventive maintenance, monthly system checks and qualifying emergency-service availability through experienced HVAC technicians. Service scope depends on the system, property and licensing requirements.</p>
+</details>
+<details>
+<summary>What can clients see in the Bakerss Client Portal?</summary>
+<p>Recurring clients can review documented technician arrival and departure times, field notes, property photographs, work-order activity and service history.</p>
+</details>
+<details>
+<summary>Does Bakerss offer a complete care plan for luxury homes?</summary>
+<p>Yes. White Glove Estate Care is designed for premium homes and second homes needing weekly interior cleaning, full grounds maintenance, HVAC preventive maintenance, property inspections and priority access to repair technicians.</p>
+</details>
+<details>
+<summary>How do I request a quote from Bakerss Property Services LLC?</summary>
+<p>You can request a quote online at <a href="https://www.bakerss.com/get-quote/" style="color:var(--pink);font-weight:700">bakerss.com/get-quote/</a>, call or text <a href="tel:8434677136" style="color:var(--pink);font-weight:700">843-467-7136</a>, or email <a href="mailto:info@bakerss.com" style="color:var(--pink);font-weight:700">info@bakerss.com</a> with the property address, service needs, photos if available and whether you need one-time or recurring maintenance.</p>
+</details>
+<details>
+<summary>How much does property maintenance cost in Myrtle Beach?</summary>
+<p>Bakerss publishes transparent starting prices for many of our most requested services. <a href="https://www.bakerss.com/pricing/" style="color:var(--pink);font-weight:900">View Transparent Pricing →</a> Final pricing depends on property size, access, condition, materials, frequency and service scope.</p>
+</details>
+<details>
+<summary>Does Bakerss serve Conway and Carolina Forest?</summary>
+<p>Yes. Bakerss Property Services LLC serves Conway and Carolina Forest with lawn care, landscaping, cleaning, pool maintenance, handyman services, HOA maintenance, apartment maintenance and commercial property maintenance. Visit the <a href="https://www.bakerss.com/service-areas/conway/" style="color:var(--pink);font-weight:700">Conway</a> or <a href="https://www.bakerss.com/service-areas/carolina-forest/" style="color:var(--pink);font-weight:700">Carolina Forest</a> city pages for full details.</p>
+</details>
+<details><summary>What can clients do in the Bakerss Client Portal?</summary><p>Clients can submit work orders, follow live job status, review technician time onsite, see field notes and photos, track proposals or next steps, and retain service history for the property.</p></details><details><summary>Does Bakerss provide HVAC preventive maintenance and duct cleaning?</summary><p>Yes. Bakerss provides HVAC diagnostics and repair, preventive maintenance programs, recurring system checks and duct cleaning programs for residential, rental and managed properties. The exact service plan is based on the property and equipment.</p></details><details><summary>What skilled property services does Bakerss have on staff?</summary><p>Bakerss has HVAC technicians, Certified Pool Operators, plumbers, electricians, cleaning teams, grounds crews and general property-maintenance technicians. Work requiring a particular license or permit is assigned or coordinated accordingly.</p></details></div>
+</div>
+</section>
+<br/>
+<section aria-labelledby="cta-heading" class="cta">
+<div class="wrap">
+<span class="eyebrow">Schedule a private property assessment</span>
+<h2 class="sh" id="cta-heading">Ready for One Accountable Team to Care for Your Property?</h2>
+<p>Tell us about the property, service expectations and current needs. We will recommend the appropriate estate-care membership, recurring service plan, HVAC response or managed-property solution.</p>
+<div style="display:flex;gap:12px;justify-content:center;flex-wrap:wrap">
+<a class="btn btn-primary" href="https://www.bakerss.com/get-quote/">Schedule an Assessment</a>
+<a class="btn btn-outline" href="tel:8434677136">Call 843-467-7136</a>
+<a class="btn btn-outline" href="mailto:info@bakerss.com">Email info@bakerss.com</a>
+</div>
+</div>
+</section>
+<br/>
+</main>
+<footer class="footer">
+<div class="wrap">
+<div class="footer-grid">
+<div>
+<h3>Bakerss Property Services LLC</h3>
+<p>Premium property maintenance, White Glove estate care, HVAC, cleaning, grounds, pool and repair services across Myrtle Beach, Surfside Beach, Murrells Inlet and the Grand Strand.</p>
+<p><strong style="color:#fff">Call/Text:</strong> <a href="tel:8434677136">843-467-7136</a><br/><strong style="color:#fff">Email:</strong> <a href="mailto:info@bakerss.com">info@bakerss.com</a></p>
+<p style="margin-top:10px;font-size:12px;">320 Forestbrook Cove Circle<br/>Myrtle Beach, SC 29588</p>
+</div>
+<div>
+<h4>Grand Strand Cities</h4>
+<a href="https://www.bakerss.com/service-areas/myrtle-beach/">Myrtle Beach</a>
+<a href="https://www.bakerss.com/service-areas/north-myrtle-beach/">North Myrtle Beach</a>
+<a href="https://www.bakerss.com/service-areas/surfside-beach/">Surfside Beach</a>
+<a href="https://www.bakerss.com/service-areas/conway/">Conway</a>
+<a href="https://www.bakerss.com/service-areas/carolina-forest/">Carolina Forest</a>
+<a href="https://www.bakerss.com/service-areas/murrells-inlet/">Murrells Inlet</a>
+<a href="https://www.bakerss.com/service-areas/garden-city/">Garden City</a>
+<a href="https://www.bakerss.com/service-areas/socastee/">Socastee</a>
+<a href="https://www.bakerss.com/service-areas/pawleys-island/">Pawleys Island</a>
+<a href="https://www.bakerss.com/service-areas/litchfield-beach/">Litchfield Beach</a>
+</div>
+<div>
+<h4>Managed Properties</h4>
+<a href="https://www.bakerss.com/services/commercial-maintenance/">Commercial Maintenance</a>
+<a href="https://www.bakerss.com/apartment-maintenance/">Apartment Maintenance</a>
+<a href="https://www.bakerss.com/hoa-services/">HOA Maintenance</a>
+<a href="https://www.bakerss.com/services/property-maintenance/">Property Maintenance Plans</a>
+<h4 style="margin-top:16px">Explore</h4>
+<a href="https://www.bakerss.com/neighborhoods/">Neighborhood Guides</a>
+<a href="https://www.bakerss.com/learning-center/">Learning Center</a>
+</div>
+<div>
+<h4>Premium Services</h4>
+<a href="https://www.bakerss.com/services/white-glove-estate-care/">White Glove Estate Care</a>
+<a href="https://www.bakerss.com/services/hvac-repair/">HVAC Repair &amp; Maintenance</a>
+<a href="https://www.bakerss.com/services/property-maintenance/">Total Property Care</a>
+<h4 style="margin-top:16px">Core Services</h4>
+<a href="https://www.bakerss.com/services/lawn-care/">Lawn Care</a>
+<a href="https://www.bakerss.com/services/landscaping/">Landscaping</a>
+<a href="https://www.bakerss.com/services/sod-installation/">Sod Installation</a>
+<a href="https://www.bakerss.com/services/airbnb-cleaning/">Airbnb Cleaning</a>
+<a href="https://www.bakerss.com/services/interior-cleaning/">Interior Cleaning</a>
+<a href="https://www.bakerss.com/services/pool-maintenance/">Pool Maintenance</a>
+<a href="https://www.bakerss.com/services/handyman-services/">Handyman Services</a>
+<a href="https://www.bakerss.com/services/pressure-washing/">Pressure Washing</a>
+</div>
+<div>
+<h4>More Services</h4>
+<a href="https://www.bakerss.com/services/window-cleaning/">Window Cleaning</a>
+<a href="https://www.bakerss.com/services/gutter-cleaning/">Gutter Cleaning</a>
+<a href="https://www.bakerss.com/services/dryer-vent-cleaning/">Dryer Vent Cleaning</a>
+<a href="https://www.bakerss.com/services/irrigation-sprinkler-repair/">Irrigation Repair</a>
+<a href="https://www.bakerss.com/services/fence-installation-repair/">Fence Repair</a>
+<a href="https://www.bakerss.com/services/vacation-home-watch/">Vacation Home Watch</a>
+<a href="https://www.bakerss.com/service-areas/horry-county/">Horry County</a>
+<a href="https://www.bakerss.com/service-areas/georgetown-county/">Georgetown County</a>
+</div>
+</div>
+<div class="fine">
+<span>© 2026 Bakerss Property Services LLC · 320 Forestbrook Cove Circle · Myrtle Beach, SC 29588 · <a href="tel:8434677136" style="color:#9696a0">843-467-7136</a></span>
+<span>Estate Care · HVAC · Cleaning · Grounds · Pool · Work Orders · Grand Strand SC</span>
+</div>
+</div>
+</footer>
+<div aria-label="Quick contact" class="sticky-mobile" role="complementary">
+<a class="btn btn-primary" href="tel:8434677136">Call</a>
+<a class="btn btn-light" href="https://www.bakerss.com/get-quote/">Free Quote</a>
+</div>
 <!--
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
 <script>
@@ -791,7 +603,6 @@
   gtag('config', 'G-XXXXXXXXXX');
 </script>
 -->
-
 <script>
 function toggleMenu(btn){
   var menu=document.getElementById('mobileMenu');
