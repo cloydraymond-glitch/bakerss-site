@@ -1,0 +1,90 @@
+{
+  "$schema": "https://openapi.vercel.sh/vercel.json",
+  "redirects": [
+    { "source": "/about.html", "destination": "/about/", "permanent": true },
+    { "source": "/contact.html", "destination": "/get-quote/", "permanent": true },
+    { "source": "/contact/", "destination": "/get-quote/", "permanent": true },
+    { "source": "/reviews.html", "destination": "/reviews/", "permanent": true },
+    { "source": "/portfolio/", "destination": "/our-work/", "permanent": true },
+    { "source": "/sitemap.xml.xml", "destination": "/sitemap.xml", "permanent": true },
+    { "source": "/get-quote/bakerss-get-quote.html", "destination": "/get-quote/", "permanent": true },
+    { "source": "/get-quote/index.html.html", "destination": "/get-quote/", "permanent": true },
+    { "source": "/painting-north-myrtle-beach.html", "destination": "/service-areas/north-myrtle-beach/", "permanent": true },
+    { "source": "/plumbing-pawleys-island.html", "destination": "/service-areas/pawleys-island/", "permanent": true },
+    { "source": "/myrtle-beach/", "destination": "/service-areas/myrtle-beach/", "permanent": true },
+    { "source": "/north-myrtle-beach/", "destination": "/service-areas/north-myrtle-beach/", "permanent": true },
+    { "source": "/murrells-inlet/", "destination": "/service-areas/murrells-inlet/", "permanent": true },
+    { "source": "/surfside-beach/", "destination": "/service-areas/surfside-beach/", "permanent": true },
+    { "source": "/garden-city/", "destination": "/service-areas/garden-city/", "permanent": true },
+    { "source": "/conway/", "destination": "/service-areas/conway/", "permanent": true },
+    { "source": "/socastee/", "destination": "/service-areas/socastee/", "permanent": true },
+    { "source": "/learning-center/airbnb-checklist/", "destination": "/learning-center/vacation-rental-cleaning-checklist/", "permanent": true },
+    { "source": "/learning-center/lvp-flooring-rental/", "destination": "/learning-center/best-flooring-vacation-rentals-myrtle-beach/", "permanent": true },
+    { "source": "/learning-center/grand-strand-property-guide/", "destination": "/learning-center/grande-dunes-property-guide/", "permanent": true },
+    { "source": "/learning-center/gutter-guards/", "destination": "/learning-center/gutter-guards-worth-it/", "permanent": true },
+    { "source": "/learning-center/gutter-guards-myrtle-beach/", "destination": "/learning-center/gutter-guards-worth-it/", "permanent": true },
+    { "source": "/learning-center/myrtle-beach-lawn-fungus/", "destination": "/learning-center/lawn-fungus-myrtle-beach/", "permanent": true },
+    { "source": "/learning-center/socastee-guide/", "destination": "/learning-center/property-owners-guide-socastee-sc/", "permanent": true },
+    { "source": "/learning-center/socastee-neighborhood-guide/", "destination": "/learning-center/property-owners-guide-socastee-sc/", "permanent": true },
+    { "source": "/learning-center/surfside-beach-guide/", "destination": "/learning-center/property-owners-guide-surfside-beach-sc/", "permanent": true },
+    { "source": "/learning-center/seasonl-maintenance-checklist-myrtle-beach/", "destination": "/learning-center/seasonal-maintenance-checklist-myrtle-beach/", "permanent": true },
+    { "source": "/learning-center/deck-maintenance/", "destination": "/learning-center/coastal-home-paint-guide/", "permanent": true },
+    { "source": "/learning-center/seasonal-maintenance/", "destination": "/learning-center/seasonal-maintenance-checklist-myrtle-beach/", "permanent": true },
+    { "source": "/service-areas/conway/deck/", "destination": "/service-areas/conway/deck-building-repair/", "permanent": true },
+    { "source": "/service-areas/garden-city/deck/", "destination": "/service-areas/garden-city/deck-building-repair/", "permanent": true },
+    { "source": "/service-areas/little-river/handyman/", "destination": "/service-areas/little-river/handyman-services/", "permanent": true },
+    { "source": "/service-areas/murrells-inlet/collins-creek-landing/", "destination": "/service-areas/murrells-inlet/neighborhoods/collins-creek-landing/", "permanent": true },
+    { "source": "/service-areas/murrells-inlet/deck/", "destination": "/service-areas/murrells-inlet/deck-building-repair/", "permanent": true },
+    { "source": "/service-areas/murrells-inlet/minor-electric/", "destination": "/service-areas/murrells-inlet/minor-electric-plumbing/", "permanent": true },
+    { "source": "/service-areas/murrells-inlet/prince-creek/", "destination": "/service-areas/murrells-inlet/neighborhoods/prince-creek/", "permanent": true },
+    { "source": "/service-areas/myrtle-beach/property-maintenace/", "destination": "/service-areas/myrtle-beach/property-maintenance/", "permanent": true },
+    { "source": "/service-areas/north-myrtle-beach/deck/", "destination": "/service-areas/north-myrtle-beach/deck-building-repair/", "permanent": true },
+    { "source": "/service-areas/surfside-beach/airbnb/", "destination": "/service-areas/surfside-beach/airbnb-cleaning/", "permanent": true },
+    { "source": "/service-areas/surfside-beach/deck/", "destination": "/service-areas/surfside-beach/deck-building-repair/", "permanent": true },
+    { "source": "/service-areas/surfside-beach/fence-installation/", "destination": "/service-areas/surfside-beach/fence-installation-repair/", "permanent": true },
+    { "source": "/services/minr-electric-plumbing/", "destination": "/services/minor-electric-plumbing/", "permanent": true },
+    { "source": "/service-areas/carolina-forest/neighborhoods/avalon/bellegrove-preserve/", "destination": "/service-areas/carolina-forest/", "permanent": true },
+    { "source": "/service-areas/carolina-forest/neighborhoods/clear-pond/covington-lake-and-covington-lake-east/", "destination": "/service-areas/carolina-forest/", "permanent": true },
+    { "source": "/service-areas/carolina-forest/neighborhoods/waterbridge/", "destination": "/service-areas/carolina-forest/", "permanent": true },
+    { "source": "/service-areas/carolina-forest/neighborhoods/waterway-palms-plantation/", "destination": "/service-areas/carolina-forest/", "permanent": true },
+    { "source": "/service-areas/conway/neighborhoods/astoria-park/", "destination": "/service-areas/conway/", "permanent": true },
+    { "source": "/service-areas/garden-city/airbnb/", "destination": "/services/airbnb-cleaning/", "permanent": true },
+    { "source": "/service-areas/garden-city/neighborhoods/", "destination": "/service-areas/garden-city/", "permanent": true },
+    { "source": "/service-areas/garden-city/neighborhoods/garden-city-peninsula/", "destination": "/service-areas/garden-city/neighborhoods/garden-city-beach-oceanfront/", "permanent": true },
+    { "source": "/service-areas/myrtle-beach/neighborhoods/", "destination": "/service-areas/myrtle-beach/", "permanent": true },
+    { "source": "/service-areas/north-myrtle-beach/cherry-grove/", "destination": "/service-areas/north-myrtle-beach/", "permanent": true }
+    ,{ "source": "/airbnb-cleaning/", "destination": "/services/airbnb-cleaning/", "permanent": true }
+    ,{ "source": "/commercial-maintenance/", "destination": "/services/commercial-maintenance/", "permanent": true }
+    ,{ "source": "/hoa-maintenance/", "destination": "/hoa-services/", "permanent": true }
+    ,{ "source": "/landscaping/", "destination": "/services/landscaping/", "permanent": true }
+    ,{ "source": "/lawn-care/", "destination": "/services/lawn-care/", "permanent": true }
+    ,{ "source": "/pool-maintenance/", "destination": "/services/pool-maintenance/", "permanent": true }
+    ,{ "source": "/pressure-washing/", "destination": "/services/pressure-washing/", "permanent": true }
+    ,{ "source": "/sod-installation/", "destination": "/services/sod-installation/", "permanent": true }
+    ,{ "source": "/authors/ray-cloyd/", "destination": "/about/", "permanent": true }
+    ,{ "source": "/learning-center/mulch-pine-straw-rock-beds-myrtle-beach/", "destination": "/learning-center/lawn-care-schedule-myrtle-beach/", "permanent": true }
+    ,{ "source": "/service-areas/carolina-forest/lawn-care/", "destination": "/services/lawn-care/", "permanent": true }
+    ,{ "source": "/service-areas/horry-county/landscaping/", "destination": "/services/landscaping/", "permanent": true }
+    ,{ "source": "/service-areas/horry-county/lawn-care/", "destination": "/services/lawn-care/", "permanent": true }
+    ,{ "source": "/service-areas/little-river/sod-installation/", "destination": "/services/sod-installation/", "permanent": true }
+    ,{ "source": "/service-areas/myrtle-beach/neighborhoods/barefoot-resort-and-golf/", "destination": "/service-areas/north-myrtle-beach/neighborhoods/barefoot-resort-and-golf/", "permanent": true }
+    ,{ "source": "/service-areas/myrtle-beach/neighborhoods/cherry-grove/", "destination": "/service-areas/north-myrtle-beach/neighborhoods/cherry-grove/", "permanent": true }
+    ,{ "source": "/service-areas/myrtle-beach/neighborhoods/windy-hill/", "destination": "/service-areas/north-myrtle-beach/neighborhoods/windy-hill/", "permanent": true }
+    ,{ "source": "/service-areas/north-myrtle-beach/neighborhoods/tidewater-plantation/", "destination": "/service-areas/north-myrtle-beach/tidewater/", "permanent": true }
+    ,{ "source": "/service-areas/pawleys-island/neighborhoods/indigo-bay/", "destination": "/service-areas/carolina-forest/neighborhoods/indigo-bay/", "permanent": true }
+    ,{ "source": "/services/apartment-maintenance/", "destination": "/apartment-maintenance/", "permanent": true }
+    ,{ "source": "/services/hoa-maintenance/", "destination": "/hoa-services/", "permanent": true }
+    ,{ "source": "/services/home-watch/", "destination": "/services/vacation-home-watch/", "permanent": true }
+    ,{ "source": "/services/carpet-cleaning/", "destination": "/services/interior-cleaning/", "permanent": true }
+    ,{ "source": "/services/concrete-asphalt-services/", "destination": "/services/handyman-services/", "permanent": true }
+    ,{ "source": "/services/holiday-seasonal-decor/", "destination": "/services/handyman-services/", "permanent": true }
+    ,{ "source": "/services/hvac-filter-replacement/", "destination": "/services/hvac-repair/", "permanent": true }
+    ,{ "source": "/services/irrigation-sprinkler-systems/", "destination": "/services/irrigation-sprinkler-repair/", "permanent": true }
+    ,{ "source": "/services/new-construction-punch-list-clean/", "destination": "/services/interior-cleaning/", "permanent": true }
+    ,{ "source": "/services/storm-prep-post-storm-services/", "destination": "/services/vacation-home-watch/", "permanent": true }
+  ],
+  "headers": [
+    { "source": "/sitemap.xml", "headers": [{ "key": "Content-Type", "value": "application/xml; charset=utf-8" }] },
+    { "source": "/robots.txt", "headers": [{ "key": "Content-Type", "value": "text/plain; charset=utf-8" }] }
+  ]
+}
