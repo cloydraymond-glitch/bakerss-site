@@ -46,7 +46,7 @@
     { "source": "/service-areas/carolina-forest/neighborhoods/avalon/bellegrove-preserve/", "destination": "/service-areas/carolina-forest/", "permanent": true },
     { "source": "/service-areas/carolina-forest/neighborhoods/clear-pond/covington-lake-and-covington-lake-east/", "destination": "/service-areas/carolina-forest/", "permanent": true },
     { "source": "/service-areas/carolina-forest/neighborhoods/waterbridge/", "destination": "/service-areas/carolina-forest/", "permanent": true },
-    { "source": "/service-areas/carolina-forest/neighborhoods/waterway-palms-plantation/", "destination": "/service-areas/carolina-forest/", "permanent": true },
+    { "source": "/service-areas/carolina-forest/neighborhoods/waterway-palms-plantation/", "destination": "/service-areas/myrtle-beach/neighborhoods/waterway-palms-plantation-and-the-bluffs/", "permanent": true },
     { "source": "/service-areas/conway/neighborhoods/astoria-park/", "destination": "/service-areas/conway/", "permanent": true },
     { "source": "/service-areas/garden-city/airbnb/", "destination": "/services/airbnb-cleaning/", "permanent": true },
     { "source": "/service-areas/garden-city/neighborhoods/", "destination": "/service-areas/garden-city/", "permanent": true },
