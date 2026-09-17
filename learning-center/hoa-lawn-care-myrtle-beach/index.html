@@ -1,7 +1,16 @@
 <!DOCTYPE html>
 
 <html lang="en-US">
-<head>
+<head>\n<!-- Bakerss GA4 -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-BK16EH7PF9"></script>
+<script>
+window.dataLayer=window.dataLayer||[];
+function gtag(){dataLayer.push(arguments);}
+gtag('js',new Date());
+gtag('config','G-BK16EH7PF9');
+</script>
+<!-- /Bakerss GA4 -->
+
 <meta charset="utf-8"/>
 <meta content="width=device-width,initial-scale=1" name="viewport"/>
 <title>HOA Lawn Care in Myrtle Beach | Bakerss</title>
@@ -107,4 +116,40 @@ footer{background:#0d0d0d;color:#ddd;padding:44px 0 24px}.footer-grid{display:gr
 <div><h4>Explore</h4><a href="/services/">Services</a><a href="/service-areas/">Service Areas</a><a href="/learning-center/">Learning Center</a><a href="/about/">About</a></div>
 <div><h4>Get Started</h4><a href="/get-quote/">Request a Quote</a><a href="tel:+18434677136">Call/Text</a><a href="mailto:info@bakerss.com">Email Bakerss</a></div>
 </div><div class="copyright">© 2026 Bakerss Property Services LLC · NAP standardized for sitewide consistency.</div></div></footer>
-</body></html>
+</body></html>\n<!-- Bakerss conversion measurement -->
+<script>
+document.addEventListener('DOMContentLoaded',function(){
+  function bEvent(name,params){
+    if(typeof gtag==='function'){gtag('event',name,params||{});}
+  }
+  document.querySelectorAll('a[href^="tel:"]').forEach(function(a){
+    a.addEventListener('click',function(){
+      bEvent('click_to_call',{link_url:a.getAttribute('href'),page_location:location.href});
+    });
+  });
+  document.querySelectorAll('a[href^="mailto:"]').forEach(function(a){
+    a.addEventListener('click',function(){
+      bEvent('click_to_email',{link_url:a.getAttribute('href'),page_location:location.href});
+    });
+  });
+  document.querySelectorAll('a').forEach(function(a){
+    var h=(a.getAttribute('href')||'').toLowerCase();
+    var t=(a.textContent||'').toLowerCase().trim();
+    if(h.indexOf('/get-quote')!==-1 || t.indexOf('get quote')!==-1 ||
+       t.indexOf('request a quote')!==-1 || t.indexOf('free quote')!==-1){
+      a.addEventListener('click',function(){
+        bEvent('quote_request_click',{link_url:a.getAttribute('href'),page_location:location.href});
+      });
+    }
+  });
+  document.querySelectorAll('form').forEach(function(f){
+    f.addEventListener('submit',function(){
+      var sig=((f.getAttribute('action')||'')+' '+(f.id||'')+' '+(f.getAttribute('name')||'')+' '+(f.className||'')+' '+location.pathname).toLowerCase();
+      if(sig.indexOf('quote')!==-1 || sig.indexOf('contact')!==-1){
+        bEvent('generate_lead',{form_id:f.id||'',page_location:location.href});
+      }
+    });
+  });
+});
+</script>
+<!-- /Bakerss conversion measurement -->
