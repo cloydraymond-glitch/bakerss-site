@@ -1,5 +1,14 @@
 <!doctype html>
-<html lang="en-US"><head>
+<html lang="en-US"><head>\n<!-- Bakerss GA4 -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-BK16EH7PF9"></script>
+<script>
+window.dataLayer=window.dataLayer||[];
+function gtag(){dataLayer.push(arguments);}
+gtag('js',new Date());
+gtag('config','G-BK16EH7PF9');
+</script>
+<!-- /Bakerss GA4 -->
+
 <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
 <title>Market Common Property Maintenance | Myrtle Beach SC | Bakerss</title>
 <meta name="description" content="Market Common property maintenance in Myrtle Beach for homes, townhomes and rentals. Lawn, cleaning, pressure washing, home watch and handyman services.">
@@ -20,4 +29,40 @@
 <section class="section alt"><div class="wrap"><div class="head"><span class="k">Frequently Asked Questions</span><h2>Market Common property maintenance FAQ</h2><p>Answers to common questions from property owners looking for local maintenance support.</p></div><details><summary>Does Bakerss provide property maintenance in Market Common?</summary><p>Yes. Bakerss Property Services serves Market Common and the Myrtle Beach area with recurring and one-time property maintenance services based on the needs of the property.</p></details><details><summary>Can you provide recurring service in Market Common?</summary><p>Yes. Recurring service can be built around lawn and exterior care, cleaning, home watch and other maintenance needs. Frequency depends on the property and requested scope.</p></details><details><summary>Can Bakerss coordinate several property services through one company?</summary><p>Yes. The goal is to reduce the need to manage multiple service providers by coordinating compatible maintenance needs through one local relationship.</p></details><details><summary>Do you work with second-home and absentee owners?</summary><p>Yes. Home-watch style property checks, photo documentation and repair coordination can help owners who are away from the Myrtle Beach area.</p></details><details><summary>How do I request a property maintenance quote?</summary><p>Use the Bakerss quote request page or call 843-467-7136. Provide the property location, services needed and whether you are looking for one-time or recurring care.</p></details></div></section>
 <section class="cta"><div class="wrap"><h2>Need property maintenance in Market Common?</h2><p>Tell Bakerss what the property needs, whether the home is occupied or seasonal, and whether you want one-time or recurring service. We can build the scope around the property instead of forcing it into a generic package.</p><a class="btn" href="https://www.bakerss.com/get-quote/">Request a Quote</a></div></section></main>
 <footer class="footer"><div class="wrap">© 2026 Bakerss Property Services LLC · Myrtle Beach, SC · <a href="tel:+18434677136">843-467-7136</a> · <a href="mailto:info@bakerss.com">info@bakerss.com</a></div></footer>
-</body></html>
+</body></html>\n<!-- Bakerss conversion measurement -->
+<script>
+document.addEventListener('DOMContentLoaded',function(){
+  function bEvent(name,params){
+    if(typeof gtag==='function'){gtag('event',name,params||{});}
+  }
+  document.querySelectorAll('a[href^="tel:"]').forEach(function(a){
+    a.addEventListener('click',function(){
+      bEvent('click_to_call',{link_url:a.getAttribute('href'),page_location:location.href});
+    });
+  });
+  document.querySelectorAll('a[href^="mailto:"]').forEach(function(a){
+    a.addEventListener('click',function(){
+      bEvent('click_to_email',{link_url:a.getAttribute('href'),page_location:location.href});
+    });
+  });
+  document.querySelectorAll('a').forEach(function(a){
+    var h=(a.getAttribute('href')||'').toLowerCase();
+    var t=(a.textContent||'').toLowerCase().trim();
+    if(h.indexOf('/get-quote')!==-1 || t.indexOf('get quote')!==-1 ||
+       t.indexOf('request a quote')!==-1 || t.indexOf('free quote')!==-1){
+      a.addEventListener('click',function(){
+        bEvent('quote_request_click',{link_url:a.getAttribute('href'),page_location:location.href});
+      });
+    }
+  });
+  document.querySelectorAll('form').forEach(function(f){
+    f.addEventListener('submit',function(){
+      var sig=((f.getAttribute('action')||'')+' '+(f.id||'')+' '+(f.getAttribute('name')||'')+' '+(f.className||'')+' '+location.pathname).toLowerCase();
+      if(sig.indexOf('quote')!==-1 || sig.indexOf('contact')!==-1){
+        bEvent('generate_lead',{form_id:f.id||'',page_location:location.href});
+      }
+    });
+  });
+});
+</script>
+<!-- /Bakerss conversion measurement -->
