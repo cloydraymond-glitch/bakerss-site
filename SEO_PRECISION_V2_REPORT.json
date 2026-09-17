@@ -1,0 +1,46 @@
+{
+  "build": "Bakerss SEO Precision v2",
+  "source": "SEO Lead Machine v1",
+  "html_files": 737,
+  "ga4_pages": 719,
+  "jsonld_invalid_blocks_after_build": 0,
+  "apartment_schema_blocks_fixed": 1,
+  "old_email_replacements": 281,
+  "legacy_business_name_replacements": 3990,
+  "html_files_touched_for_entity_consistency": 478,
+  "redirects_added": [
+    {
+      "source": "/index.html",
+      "destination": "/"
+    },
+    {
+      "source": "/get-a-quote/",
+      "destination": "/get-quote/"
+    },
+    {
+      "source": "/vacation-rental-services/",
+      "destination": "/services/"
+    },
+    {
+      "source": "/services/home-repairs-handyman/",
+      "destination": "/services/handyman/"
+    },
+    {
+      "source": "/services/property-maintenance-plans/",
+      "destination": "/property-maintenance-plans/"
+    },
+    {
+      "source": "/vacation-home-watch/",
+      "destination": "/services/vacation-home-watch/"
+    },
+    {
+      "source": "/service-areas/socastee/dryer-vent-cleaning/",
+      "destination": "/services/dryer-vent-cleaning/"
+    }
+  ],
+  "notes": [
+    "No bulk service-area content rewrite performed.",
+    "No sitemap URLs removed or mass index requests made.",
+    "Search Console 404 list was not available, so only high-confidence internal dead-end redirects were added."
+  ]
+}
