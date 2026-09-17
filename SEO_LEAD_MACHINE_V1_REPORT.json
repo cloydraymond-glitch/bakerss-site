@@ -1,0 +1,28 @@
+{
+  "project": "Bakerss Property Services SEO / Local SEO Lead Machine v1",
+  "ga4_measurement_id": "G-BK16EH7PF9",
+  "html_files": 737,
+  "ga4_added": 718,
+  "conversion_tracking_added": 719,
+  "html_intentionally_untouched": 18,
+  "sitemap_url_count": 0,
+  "redirect_rules": 81,
+  "redirect_sources_in_primary_sitemap": [],
+  "preexisting_audit_counts": {
+    "missing_title": 737,
+    "missing_description": 737,
+    "missing_canonical": 737,
+    "missing_h1": 737
+  },
+  "tracked_events": [
+    "click_to_call",
+    "click_to_email",
+    "quote_request_click",
+    "generate_lead"
+  ],
+  "notes": [
+    "Primary sitemap was preserved because none of its listed URLs are direct Vercel redirect sources.",
+    "Existing redirects, canonicals, content, schema, design, CSS and JavaScript were preserved in this phase.",
+    "Google verification and non-document utility HTML were intentionally left untouched."
+  ]
+}
