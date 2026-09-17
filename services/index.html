@@ -1,6 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+<head>\n<!-- Bakerss GA4 -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-BK16EH7PF9"></script>
+<script>
+window.dataLayer=window.dataLayer||[];
+function gtag(){dataLayer.push(arguments);}
+gtag('js',new Date());
+gtag('config','G-BK16EH7PF9');
+</script>
+<!-- /Bakerss GA4 -->
+
 <meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0">
 <title>Property Maintenance Services in Myrtle Beach, SC | Bakerss</title>
 <meta name="description" content="Bakerss Property Maintenance offers lawn care, interior cleaning, pressure washing, deck building, painting, gutter cleaning, handyman services &amp; more across Horry County, SC. Call (843) 467-7136.">
@@ -342,3 +351,40 @@
 <div class="sticky-mobile-bar"><a href="tel:8434677136" class="sticky-bar-call">📞 Call Now</a><a href="sms:8434677136" class="sticky-bar-text">💬 Text Us</a><a href="/contact/" class="sticky-bar-est">📅 Free Estimate</a></div>
 <script>const t=document.getElementById('navToggle'),n=document.getElementById('mainNav');if(t){t.addEventListener('click',()=>{const o=n.classList.toggle('open');t.setAttribute('aria-expanded',o);document.body.style.overflow=o?'hidden':'';});n.querySelectorAll('a').forEach(l=>l.addEventListener('click',()=>{n.classList.remove('open');document.body.style.overflow='';}));}</script>
 </body></html>
+\n<!-- Bakerss conversion measurement -->
+<script>
+document.addEventListener('DOMContentLoaded',function(){
+  function bEvent(name,params){
+    if(typeof gtag==='function'){gtag('event',name,params||{});}
+  }
+  document.querySelectorAll('a[href^="tel:"]').forEach(function(a){
+    a.addEventListener('click',function(){
+      bEvent('click_to_call',{link_url:a.getAttribute('href'),page_location:location.href});
+    });
+  });
+  document.querySelectorAll('a[href^="mailto:"]').forEach(function(a){
+    a.addEventListener('click',function(){
+      bEvent('click_to_email',{link_url:a.getAttribute('href'),page_location:location.href});
+    });
+  });
+  document.querySelectorAll('a').forEach(function(a){
+    var h=(a.getAttribute('href')||'').toLowerCase();
+    var t=(a.textContent||'').toLowerCase().trim();
+    if(h.indexOf('/get-quote')!==-1 || t.indexOf('get quote')!==-1 ||
+       t.indexOf('request a quote')!==-1 || t.indexOf('free quote')!==-1){
+      a.addEventListener('click',function(){
+        bEvent('quote_request_click',{link_url:a.getAttribute('href'),page_location:location.href});
+      });
+    }
+  });
+  document.querySelectorAll('form').forEach(function(f){
+    f.addEventListener('submit',function(){
+      var sig=((f.getAttribute('action')||'')+' '+(f.id||'')+' '+(f.getAttribute('name')||'')+' '+(f.className||'')+' '+location.pathname).toLowerCase();
+      if(sig.indexOf('quote')!==-1 || sig.indexOf('contact')!==-1){
+        bEvent('generate_lead',{form_id:f.id||'',page_location:location.href});
+      }
+    });
+  });
+});
+</script>
+<!-- /Bakerss conversion measurement -->

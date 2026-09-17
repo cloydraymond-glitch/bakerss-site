@@ -1,5 +1,14 @@
 <!doctype html>
-<html lang="en-US"><head>
+<html lang="en-US"><head>\n<!-- Bakerss GA4 -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-BK16EH7PF9"></script>
+<script>
+window.dataLayer=window.dataLayer||[];
+function gtag(){dataLayer.push(arguments);}
+gtag('js',new Date());
+gtag('config','G-BK16EH7PF9');
+</script>
+<!-- /Bakerss GA4 -->
+
 <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
 <title>HVAC Maintenance Myrtle Beach, SC | Bakerss</title>
 <meta name="description" content="HVAC preventive maintenance programs in Myrtle Beach for homes, rentals, apartments and commercial properties with documented service history.">
@@ -119,4 +128,40 @@ img{max-width:100%;height:auto;display:block}a{color:inherit}.wrap{max-width:var
 <div><h4>Property Services</h4><a href="/services/property-maintenance/">Maintenance Plans</a><a href="/services/pool-maintenance/">Pool Maintenance</a><a href="/services/handyman-services/">Handyman</a><a href="/services/commercial-maintenance/">Commercial Maintenance</a></div>
 <div><h4>Company</h4><a href="/about/">About</a><a href="/service-areas/">Service Areas</a><a href="/learning-center/">Learning Center</a><a href="/get-quote/">Request a Quote</a></div>
 </div><div class="fine">© 2026 Bakerss Property Services LLC · Myrtle Beach, South Carolina</div></div></footer>
-</body></html>
+</body></html>\n<!-- Bakerss conversion measurement -->
+<script>
+document.addEventListener('DOMContentLoaded',function(){
+  function bEvent(name,params){
+    if(typeof gtag==='function'){gtag('event',name,params||{});}
+  }
+  document.querySelectorAll('a[href^="tel:"]').forEach(function(a){
+    a.addEventListener('click',function(){
+      bEvent('click_to_call',{link_url:a.getAttribute('href'),page_location:location.href});
+    });
+  });
+  document.querySelectorAll('a[href^="mailto:"]').forEach(function(a){
+    a.addEventListener('click',function(){
+      bEvent('click_to_email',{link_url:a.getAttribute('href'),page_location:location.href});
+    });
+  });
+  document.querySelectorAll('a').forEach(function(a){
+    var h=(a.getAttribute('href')||'').toLowerCase();
+    var t=(a.textContent||'').toLowerCase().trim();
+    if(h.indexOf('/get-quote')!==-1 || t.indexOf('get quote')!==-1 ||
+       t.indexOf('request a quote')!==-1 || t.indexOf('free quote')!==-1){
+      a.addEventListener('click',function(){
+        bEvent('quote_request_click',{link_url:a.getAttribute('href'),page_location:location.href});
+      });
+    }
+  });
+  document.querySelectorAll('form').forEach(function(f){
+    f.addEventListener('submit',function(){
+      var sig=((f.getAttribute('action')||'')+' '+(f.id||'')+' '+(f.getAttribute('name')||'')+' '+(f.className||'')+' '+location.pathname).toLowerCase();
+      if(sig.indexOf('quote')!==-1 || sig.indexOf('contact')!==-1){
+        bEvent('generate_lead',{form_id:f.id||'',page_location:location.href});
+      }
+    });
+  });
+});
+</script>
+<!-- /Bakerss conversion measurement -->
