@@ -1,6 +1,15 @@
 <!doctype html>
 <html lang="en-US">
-<head>
+<head>\n<!-- Bakerss GA4 -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-BK16EH7PF9"></script>
+<script>
+window.dataLayer=window.dataLayer||[];
+function gtag(){dataLayer.push(arguments);}
+gtag('js',new Date());
+gtag('config','G-BK16EH7PF9');
+</script>
+<!-- /Bakerss GA4 -->
+
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>Prestwick Property Maintenance | Surfside Beach SC | Bakersss</title>
@@ -53,4 +62,40 @@ body{margin:0;background:#0d0d0f;color:var(--text);font-family:Arial,Helvetica,s
 <section class="section"><div class="container cta"><h2>Request a property-maintenance quote in Prestwick</h2><p>Provide the address, photos, property type, desired service frequency and the work you want prioritized. Bakersss will review the requested scope and identify the next appropriate step.</p><div class="hero-actions"><a class="btn" style="background:#111;color:#fff" href="/get-quote/">Start Your Quote</a><a class="btn" style="border:1px solid #111" href="tel:+1-843-467-7136">Call 843-467-7136</a></div></div></section>
 </main>
 <footer><div class="container"><strong>Bakersss Property Services LLC</strong><br>320 Forestbrook Cove Circle, Myrtle Beach, SC 29588 · <a href="tel:+1-843-467-7136">843-467-7136</a> · <a href="mailto:info@bakerss.com">info@bakerss.com</a><p>Service availability depends on property location, scope, access and scheduling. Community rules and approvals remain the responsibility of the owner, manager or association.</p></div></footer>
-</body></html>
+</body></html>\n<!-- Bakerss conversion measurement -->
+<script>
+document.addEventListener('DOMContentLoaded',function(){
+  function bEvent(name,params){
+    if(typeof gtag==='function'){gtag('event',name,params||{});}
+  }
+  document.querySelectorAll('a[href^="tel:"]').forEach(function(a){
+    a.addEventListener('click',function(){
+      bEvent('click_to_call',{link_url:a.getAttribute('href'),page_location:location.href});
+    });
+  });
+  document.querySelectorAll('a[href^="mailto:"]').forEach(function(a){
+    a.addEventListener('click',function(){
+      bEvent('click_to_email',{link_url:a.getAttribute('href'),page_location:location.href});
+    });
+  });
+  document.querySelectorAll('a').forEach(function(a){
+    var h=(a.getAttribute('href')||'').toLowerCase();
+    var t=(a.textContent||'').toLowerCase().trim();
+    if(h.indexOf('/get-quote')!==-1 || t.indexOf('get quote')!==-1 ||
+       t.indexOf('request a quote')!==-1 || t.indexOf('free quote')!==-1){
+      a.addEventListener('click',function(){
+        bEvent('quote_request_click',{link_url:a.getAttribute('href'),page_location:location.href});
+      });
+    }
+  });
+  document.querySelectorAll('form').forEach(function(f){
+    f.addEventListener('submit',function(){
+      var sig=((f.getAttribute('action')||'')+' '+(f.id||'')+' '+(f.getAttribute('name')||'')+' '+(f.className||'')+' '+location.pathname).toLowerCase();
+      if(sig.indexOf('quote')!==-1 || sig.indexOf('contact')!==-1){
+        bEvent('generate_lead',{form_id:f.id||'',page_location:location.href});
+      }
+    });
+  });
+});
+</script>
+<!-- /Bakerss conversion measurement -->
