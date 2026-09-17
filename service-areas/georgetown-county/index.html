@@ -1,6 +1,15 @@
 <!DOCTYPE html>
 <html lang="en-US">
-<head>
+<head>\n<!-- Bakerss GA4 -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-BK16EH7PF9"></script>
+<script>
+window.dataLayer=window.dataLayer||[];
+function gtag(){dataLayer.push(arguments);}
+gtag('js',new Date());
+gtag('config','G-BK16EH7PF9');
+</script>
+<!-- /Bakerss GA4 -->
+
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width,initial-scale=1.0">
 <title>Georgetown County Estate & Property Maintenance Expansion | Bakerss</title>
@@ -198,4 +207,40 @@ footer a:hover{color:var(--pink)}
 <section class="cta"><div class="wrap cta-inner"><div><h2>Have a Georgetown County Property That Needs Complete Care?</h2><p>Send the address, property type, service priorities and requested frequency. Bakerss will confirm current availability without overstating coverage.</p></div><a class="btn" href="https://www.bakerss.com/get-quote/">Request Assessment</a></div></section>
 </main>
 <footer><div class="wrap"><div class="footer-grid"><div><h3>Bakerss Property Services LLC</h3><p>Premium estate care and complete property maintenance for homeowners, second homes, vacation rentals, multifamily communities and property managers across the Grand Strand.</p></div><div><h3>Contact</h3><p><a href="tel:+18434677136">843-467-7136</a><br><a href="mailto:info@bakerss.com">info@bakerss.com</a><br>320 Forestbrook Cove Circle<br>Myrtle Beach, SC 29588</p></div><div><h3>Service Area Links</h3><p><a href="https://www.bakerss.com/service-areas/">All Service Areas</a><br><a href="https://www.bakerss.com/service-areas/pawleys-island/">Pawleys Island</a><br><a href="https://www.bakerss.com/service-areas/litchfield-beach/">Litchfield Beach</a><br><a href="https://www.bakerss.com/get-quote/">Property Assessment</a></p></div></div><div class="legal">&copy; 2026 Bakerss Property Services LLC. One property. One call. Complete care.</div></div></footer>
-</body></html>
+</body></html>\n<!-- Bakerss conversion measurement -->
+<script>
+document.addEventListener('DOMContentLoaded',function(){
+  function bEvent(name,params){
+    if(typeof gtag==='function'){gtag('event',name,params||{});}
+  }
+  document.querySelectorAll('a[href^="tel:"]').forEach(function(a){
+    a.addEventListener('click',function(){
+      bEvent('click_to_call',{link_url:a.getAttribute('href'),page_location:location.href});
+    });
+  });
+  document.querySelectorAll('a[href^="mailto:"]').forEach(function(a){
+    a.addEventListener('click',function(){
+      bEvent('click_to_email',{link_url:a.getAttribute('href'),page_location:location.href});
+    });
+  });
+  document.querySelectorAll('a').forEach(function(a){
+    var h=(a.getAttribute('href')||'').toLowerCase();
+    var t=(a.textContent||'').toLowerCase().trim();
+    if(h.indexOf('/get-quote')!==-1 || t.indexOf('get quote')!==-1 ||
+       t.indexOf('request a quote')!==-1 || t.indexOf('free quote')!==-1){
+      a.addEventListener('click',function(){
+        bEvent('quote_request_click',{link_url:a.getAttribute('href'),page_location:location.href});
+      });
+    }
+  });
+  document.querySelectorAll('form').forEach(function(f){
+    f.addEventListener('submit',function(){
+      var sig=((f.getAttribute('action')||'')+' '+(f.id||'')+' '+(f.getAttribute('name')||'')+' '+(f.className||'')+' '+location.pathname).toLowerCase();
+      if(sig.indexOf('quote')!==-1 || sig.indexOf('contact')!==-1){
+        bEvent('generate_lead',{form_id:f.id||'',page_location:location.href});
+      }
+    });
+  });
+});
+</script>
+<!-- /Bakerss conversion measurement -->
