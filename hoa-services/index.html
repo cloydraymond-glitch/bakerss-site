@@ -452,12 +452,48 @@ bordered-card look used everywhere else on the page, styled for a non-clickable 
 <a class="btn btn-primary" href="https://www.bakerss.com/get-quote/">Request a Property Assessment</a>
 </div>
 <!-- GA4 TRACKING — added (was completely missing on this page).
-REPLACE "G-REPLACE-WITH-YOUR-ID" with your real GA4 Measurement ID — same one used on the homepage. -->
-<script async="" src="https://www.googletagmanager.com/gtag/js?id=G-REPLACE-WITH-YOUR-ID"></script>
+REPLACE "G-BK16EH7PF9-WITH-YOUR-ID" with your real GA4 Measurement ID — same one used on the homepage. -->
+<script async="" src="https://www.googletagmanager.com/gtag/js?id=G-BK16EH7PF9-WITH-YOUR-ID"></script>
 <script>
 window.dataLayer = window.dataLayer || [];
 function gtag(){dataLayer.push(arguments);}
 gtag('js', new Date());
-gtag('config', 'G-REPLACE-WITH-YOUR-ID');
+gtag('config', 'G-BK16EH7PF9-WITH-YOUR-ID');
 </script>
-<script>document.querySelectorAll('.faq-wrap details').forEach(d=>d.addEventListener('toggle',()=>{}));</script></body></html>
+<script>document.querySelectorAll('.faq-wrap details').forEach(d=>d.addEventListener('toggle',()=>{}));</script></body></html>\n<!-- Bakerss conversion measurement -->
+<script>
+document.addEventListener('DOMContentLoaded',function(){
+  function bEvent(name,params){
+    if(typeof gtag==='function'){gtag('event',name,params||{});}
+  }
+  document.querySelectorAll('a[href^="tel:"]').forEach(function(a){
+    a.addEventListener('click',function(){
+      bEvent('click_to_call',{link_url:a.getAttribute('href'),page_location:location.href});
+    });
+  });
+  document.querySelectorAll('a[href^="mailto:"]').forEach(function(a){
+    a.addEventListener('click',function(){
+      bEvent('click_to_email',{link_url:a.getAttribute('href'),page_location:location.href});
+    });
+  });
+  document.querySelectorAll('a').forEach(function(a){
+    var h=(a.getAttribute('href')||'').toLowerCase();
+    var t=(a.textContent||'').toLowerCase().trim();
+    if(h.indexOf('/get-quote')!==-1 || t.indexOf('get quote')!==-1 ||
+       t.indexOf('request a quote')!==-1 || t.indexOf('free quote')!==-1){
+      a.addEventListener('click',function(){
+        bEvent('quote_request_click',{link_url:a.getAttribute('href'),page_location:location.href});
+      });
+    }
+  });
+  document.querySelectorAll('form').forEach(function(f){
+    f.addEventListener('submit',function(){
+      var sig=((f.getAttribute('action')||'')+' '+(f.id||'')+' '+(f.getAttribute('name')||'')+' '+(f.className||'')+' '+location.pathname).toLowerCase();
+      if(sig.indexOf('quote')!==-1 || sig.indexOf('contact')!==-1){
+        bEvent('generate_lead',{form_id:f.id||'',page_location:location.href});
+      }
+    });
+  });
+});
+</script>
+<!-- /Bakerss conversion measurement -->
