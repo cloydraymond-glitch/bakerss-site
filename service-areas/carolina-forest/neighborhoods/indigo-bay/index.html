@@ -1,5 +1,14 @@
 <!doctype html>
-<html lang="en-US"><head>
+<html lang="en-US"><head>\n<!-- Bakerss GA4 -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-BK16EH7PF9"></script>
+<script>
+window.dataLayer=window.dataLayer||[];
+function gtag(){dataLayer.push(arguments);}
+gtag('js',new Date());
+gtag('config','G-BK16EH7PF9');
+</script>
+<!-- /Bakerss GA4 -->
+
 <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
 <title>Indigo Bay Property Maintenance & Lawn Care | Bakerss</title><meta name="description" content="Indigo Bay property maintenance and lawn care with high-visibility landscaping, lake-lot care, pressure washing, pool support and recurring service coordination.">
 <meta name="robots" content="index,follow,max-image-preview:large,max-snippet:-1,max-video-preview:-1">
@@ -41,4 +50,40 @@ footer{padding:38px 0;color:var(--muted);border-top:1px solid var(--line)}.foote
 <section class="section alt"><div class="container"><span class="eyebrow">Frequently asked questions</span><h2>Indigo Bay service questions</h2><div class="faq"><details><summary>Can Bakerss provide a premium recurring maintenance plan?</summary><p>Yes. The plan can combine approved lawn, landscape, exterior cleaning, pool and minor repair services.</p></details><details><summary>Do you maintain second homes?</summary><p>Yes. Recurring maintenance and property observations can be coordinated around owner needs.</p></details><details><summary>Can you handle small handyman items during maintenance?</summary><p>Yes, when the task is within scope and separately approved where required.</p></details><details><summary>How is pricing determined?</summary><p>Pricing is based on property size, condition, service frequency, access, labor and materials.</p></details></div></div></section>
 <section class="cta"><div class="container split"><div><span class="eyebrow" style="color:#5b102f">Request service</span><h2>Build a maintenance plan for your Indigo Bay property.</h2><p>Send the address, property type, photos, priorities and preferred frequency.</p></div><div class="actions"><a class="btn btn-primary" href="/get-quote/">Get a Free Quote</a><a class="btn btn-secondary" style="border-color:#5b102f;color:#5b102f" href="tel:+18434677136">843-467-7136</a></div></div></section></main>
 <footer><div class="container footer-grid"><div><a class="brand" href="/">Bakerss<span>.</span></a><p>Property maintenance across Carolina Forest and the Grand Strand.</p></div><div><strong>Contact</strong><p><a href="mailto:info@bakerss.com">info@bakerss.com</a><br><a href="tel:+18434677136">843-467-7136</a></p></div><div><strong>Explore</strong><p><a href="/service-areas/carolina-forest/">Carolina Forest Hub</a><br><a href="/service-areas/carolina-forest/neighborhoods/">Neighborhood Directory</a></p></div></div></footer>
-</body></html>
+</body></html>\n<!-- Bakerss conversion measurement -->
+<script>
+document.addEventListener('DOMContentLoaded',function(){
+  function bEvent(name,params){
+    if(typeof gtag==='function'){gtag('event',name,params||{});}
+  }
+  document.querySelectorAll('a[href^="tel:"]').forEach(function(a){
+    a.addEventListener('click',function(){
+      bEvent('click_to_call',{link_url:a.getAttribute('href'),page_location:location.href});
+    });
+  });
+  document.querySelectorAll('a[href^="mailto:"]').forEach(function(a){
+    a.addEventListener('click',function(){
+      bEvent('click_to_email',{link_url:a.getAttribute('href'),page_location:location.href});
+    });
+  });
+  document.querySelectorAll('a').forEach(function(a){
+    var h=(a.getAttribute('href')||'').toLowerCase();
+    var t=(a.textContent||'').toLowerCase().trim();
+    if(h.indexOf('/get-quote')!==-1 || t.indexOf('get quote')!==-1 ||
+       t.indexOf('request a quote')!==-1 || t.indexOf('free quote')!==-1){
+      a.addEventListener('click',function(){
+        bEvent('quote_request_click',{link_url:a.getAttribute('href'),page_location:location.href});
+      });
+    }
+  });
+  document.querySelectorAll('form').forEach(function(f){
+    f.addEventListener('submit',function(){
+      var sig=((f.getAttribute('action')||'')+' '+(f.id||'')+' '+(f.getAttribute('name')||'')+' '+(f.className||'')+' '+location.pathname).toLowerCase();
+      if(sig.indexOf('quote')!==-1 || sig.indexOf('contact')!==-1){
+        bEvent('generate_lead',{form_id:f.id||'',page_location:location.href});
+      }
+    });
+  });
+});
+</script>
+<!-- /Bakerss conversion measurement -->

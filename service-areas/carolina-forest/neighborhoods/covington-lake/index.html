@@ -1,4 +1,13 @@
-<!doctype html><html lang="en-US"><head>
+<!doctype html><html lang="en-US"><head>\n<!-- Bakerss GA4 -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-BK16EH7PF9"></script>
+<script>
+window.dataLayer=window.dataLayer||[];
+function gtag(){dataLayer.push(arguments);}
+gtag('js',new Date());
+gtag('config','G-BK16EH7PF9');
+</script>
+<!-- /Bakerss GA4 -->
+
 <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
 <title>Covington Lake Property Maintenance | Bakerss</title>
 <meta name="description" content="Property maintenance for Covington Lake in Carolina Forest, including lawn care, irrigation, cleaning, handyman, HVAC and recurring home maintenance.">
@@ -37,4 +46,40 @@ header{border-bottom:1px solid var(--line);background:#fff}.nav{min-height:70px;
 </div></div></section>
 <section class="cta"><div class="wrap"><h2>Need property service in Covington Lake?</h2><p>Tell Bakerss what you need and whether the property requires one-time or recurring maintenance.</p><a class="btn" href="https://www.bakerss.com/get-quote/">Request a Quote</a></div></section>
 </main><footer class="footer"><div class="wrap">© 2026 Bakerss Property Services LLC · Myrtle Beach, SC · 843-467-7136</div></footer>
-</body></html>
+</body></html>\n<!-- Bakerss conversion measurement -->
+<script>
+document.addEventListener('DOMContentLoaded',function(){
+  function bEvent(name,params){
+    if(typeof gtag==='function'){gtag('event',name,params||{});}
+  }
+  document.querySelectorAll('a[href^="tel:"]').forEach(function(a){
+    a.addEventListener('click',function(){
+      bEvent('click_to_call',{link_url:a.getAttribute('href'),page_location:location.href});
+    });
+  });
+  document.querySelectorAll('a[href^="mailto:"]').forEach(function(a){
+    a.addEventListener('click',function(){
+      bEvent('click_to_email',{link_url:a.getAttribute('href'),page_location:location.href});
+    });
+  });
+  document.querySelectorAll('a').forEach(function(a){
+    var h=(a.getAttribute('href')||'').toLowerCase();
+    var t=(a.textContent||'').toLowerCase().trim();
+    if(h.indexOf('/get-quote')!==-1 || t.indexOf('get quote')!==-1 ||
+       t.indexOf('request a quote')!==-1 || t.indexOf('free quote')!==-1){
+      a.addEventListener('click',function(){
+        bEvent('quote_request_click',{link_url:a.getAttribute('href'),page_location:location.href});
+      });
+    }
+  });
+  document.querySelectorAll('form').forEach(function(f){
+    f.addEventListener('submit',function(){
+      var sig=((f.getAttribute('action')||'')+' '+(f.id||'')+' '+(f.getAttribute('name')||'')+' '+(f.className||'')+' '+location.pathname).toLowerCase();
+      if(sig.indexOf('quote')!==-1 || sig.indexOf('contact')!==-1){
+        bEvent('generate_lead',{form_id:f.id||'',page_location:location.href});
+      }
+    });
+  });
+});
+</script>
+<!-- /Bakerss conversion measurement -->
