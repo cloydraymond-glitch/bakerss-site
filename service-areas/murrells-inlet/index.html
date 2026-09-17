@@ -1,6 +1,15 @@
 <!doctype html>
 <html lang="en-US">
-<head>
+<head>\n<!-- Bakerss GA4 -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-BK16EH7PF9"></script>
+<script>
+window.dataLayer=window.dataLayer||[];
+function gtag(){dataLayer.push(arguments);}
+gtag('js',new Date());
+gtag('config','G-BK16EH7PF9');
+</script>
+<!-- /Bakerss GA4 -->
+
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>Estate &amp; Property Maintenance Murrells Inlet, SC | Bakerss</title>
@@ -98,4 +107,40 @@
 </section>
 <footer class="footer"><div class="container"><div class="footer-grid"><div><h3>Bakerss Property Services</h3><p>Premium estate care and complete property maintenance for Murrells Inlet homes, rentals, golf communities, waterfront properties, HOAs and commercial sites.</p><p>320 Forestbrook Cove Circle<br>Myrtle Beach, SC 29588</p></div><div><h4>Murrells Inlet</h4><a href="https://www.bakerss.com/service-areas/murrells-inlet/">City Hub</a><a href="https://www.bakerss.com/service-areas/murrells-inlet/neighborhoods/">Neighborhoods</a><a href="https://www.bakerss.com/get-quote/">Request Quote</a></div><div><h4>Core Services</h4><a href="https://www.bakerss.com/services/white-glove-estate-care/">Estate Care</a><a href="https://www.bakerss.com/services/hvac-repair/">HVAC Service</a><a href="https://www.bakerss.com/services/interior-cleaning/">Interior Cleaning</a><a href="https://www.bakerss.com/services/lawn-care/">Lawn &amp; Grounds</a></div><div><h4>Contact</h4><a href="tel:+18434677136">843-467-7136</a><a href="mailto:info@bakerss.com">info@bakerss.com</a></div></div><div class="copyright">© 2026 Bakerss Property Services LLC · One property. One call. Complete care.</div></div></footer>
 <div class="mobile-bar"><a href="tel:+18434677136">Call 843-467-7136</a><a href="https://www.bakerss.com/get-quote/">Property Assessment</a></div>
-</body></html>
+</body></html>\n<!-- Bakerss conversion measurement -->
+<script>
+document.addEventListener('DOMContentLoaded',function(){
+  function bEvent(name,params){
+    if(typeof gtag==='function'){gtag('event',name,params||{});}
+  }
+  document.querySelectorAll('a[href^="tel:"]').forEach(function(a){
+    a.addEventListener('click',function(){
+      bEvent('click_to_call',{link_url:a.getAttribute('href'),page_location:location.href});
+    });
+  });
+  document.querySelectorAll('a[href^="mailto:"]').forEach(function(a){
+    a.addEventListener('click',function(){
+      bEvent('click_to_email',{link_url:a.getAttribute('href'),page_location:location.href});
+    });
+  });
+  document.querySelectorAll('a').forEach(function(a){
+    var h=(a.getAttribute('href')||'').toLowerCase();
+    var t=(a.textContent||'').toLowerCase().trim();
+    if(h.indexOf('/get-quote')!==-1 || t.indexOf('get quote')!==-1 ||
+       t.indexOf('request a quote')!==-1 || t.indexOf('free quote')!==-1){
+      a.addEventListener('click',function(){
+        bEvent('quote_request_click',{link_url:a.getAttribute('href'),page_location:location.href});
+      });
+    }
+  });
+  document.querySelectorAll('form').forEach(function(f){
+    f.addEventListener('submit',function(){
+      var sig=((f.getAttribute('action')||'')+' '+(f.id||'')+' '+(f.getAttribute('name')||'')+' '+(f.className||'')+' '+location.pathname).toLowerCase();
+      if(sig.indexOf('quote')!==-1 || sig.indexOf('contact')!==-1){
+        bEvent('generate_lead',{form_id:f.id||'',page_location:location.href});
+      }
+    });
+  });
+});
+</script>
+<!-- /Bakerss conversion measurement -->
