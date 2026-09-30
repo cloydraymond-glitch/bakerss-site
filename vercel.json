@@ -440,6 +440,21 @@
       "source": "/service-areas/socastee/dryer-vent-cleaning/",
       "destination": "/services/dryer-vent-cleaning/",
       "permanent": true
+    },
+    {
+      "source": "/services/pawleys-island/:path*",
+      "destination": "/service-areas/pawleys-island/:path*",
+      "permanent": true
+    },
+    {
+      "source": "/services/carolina-forest/:path*",
+      "destination": "/service-areas/carolina-forest/:path*",
+      "permanent": true
+    },
+    {
+      "source": "/service-areas/carolina-forest/kawn-care/",
+      "destination": "/service-areas/carolina-forest/lawn-care/",
+      "permanent": true
     }
   ],
   "headers": [

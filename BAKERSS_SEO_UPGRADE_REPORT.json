@@ -1,0 +1,39 @@
+{
+  "html_processed": 817,
+  "brand_replacements": 676,
+  "artifact_sections_removed": 198,
+  "artifact_labels_rewritten": 171,
+  "review_claims_normalized": 85,
+  "schema_faq_removed": 29,
+  "schema_rating_removed": 83,
+  "schema_localbusiness_removed": 11,
+  "redirect_hrefs_rewritten": 1390,
+  "malformed_links_fixed": 5,
+  "images_attributes_added": 925,
+  "images_converted": 67,
+  "priority_pages_updated": [
+    "index.html",
+    "services/pool-maintenance/index.html",
+    "services/sod-installation/index.html",
+    "services/landscaping/index.html",
+    "services/interior-cleaning/index.html",
+    "services/pressure-washing/index.html",
+    "services/lawn-care/index.html",
+    "services/handyman-services/index.html",
+    "services/hvac-repair/index.html",
+    "services/airbnb-cleaning/index.html",
+    "services/commercial-maintenance/index.html"
+  ],
+  "deleted_accidental_files": [
+    "get-quote/index.html.html",
+    "services/horry-county/index.html.html",
+    "service-areas/horry-county/index.html.html",
+    "service-areas/conway/neighborhoods/heritage-preserve/index.html.html",
+    "service-areas/socastee/flooring/index.html.html",
+    "services/deck-building/!index.html",
+    "sitemap.xml.xml",
+    "bakerss-sitemap.xml",
+    "bakerss-robots.txt"
+  ],
+  "redirects_added": 3
+}
