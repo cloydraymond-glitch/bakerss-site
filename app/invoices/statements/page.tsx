@@ -1,0 +1,2 @@
+import BillingTablePage from "../../../components/billing/BillingTablePage";
+export default function Page(){return <BillingTablePage eyebrow="Accounts Receivable" title="Statement Delivery" description="Statement delivery activity and customer statement history." tableName="statement_delivery_activity" columns={[{key:"delivery_status",label:"Status",format:"status"},{key:"client_id",label:"Client ID"},{key:"delivery_method",label:"Method"},{key:"delivered_to",label:"Recipient"},{key:"created_at",label:"Created",format:"datetime"}]}/>;}

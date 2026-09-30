@@ -1,0 +1,2 @@
+import {alerts} from '@/lib/data';
+export default function Page(){return <><div className="top"><div><div className="h1">Owner Alerts</div><div className="muted">High-priority follow-ups, operational risks, review requests, and equipment reminders.</div></div></div><div className="grid3">{alerts.map(a=><div className="card" key={a.id}><span className="badge">{a.priority}</span><h3>{a.type}</h3><p className="muted">{a.message}</p><button className="btn secondary">Mark Done</button></div>)}</div></>}

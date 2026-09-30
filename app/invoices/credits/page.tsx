@@ -1,0 +1,2 @@
+import BillingTablePage from "../../../components/billing/BillingTablePage";
+export default function Page(){return <BillingTablePage eyebrow="Accounts Receivable" title="Customer Credits" description="Available and applied customer credits used for cash application and account adjustments." tableName="customer_credits" columns={[{key:"status",label:"Status",format:"status"},{key:"amount",label:"Amount",format:"money"},{key:"remaining_amount",label:"Remaining",format:"money"},{key:"client_id",label:"Client ID"},{key:"created_at",label:"Created",format:"datetime"}]}/>;}
