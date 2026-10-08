@@ -50,7 +50,7 @@ gtag('config','G-BK16EH7PF9');
 <li><a href="/services/lawn-care/">Lawn</a></li>
 <li><a href="/service-areas/carolina-forest/">Carolina Forest</a></li>
 </ul></nav>
-<div class="nav-actions"><a class="btn btn-ghost phone-btn" href="tel:8434677136">843-467-7136</a><a class="btn btn-primary" href="/get-quote/">Free Quote</a></div>
+<div class="nav-actions"><a class="btn btn-ghost phone-btn" href="tel:8434677136">843-467-7136</a><a class="btn btn-primary" href="/get-quote/?service=Property+maintenance+plan">Free Quote</a></div>
 </div>
 </header>
 <main id="main">
@@ -61,7 +61,7 @@ gtag('config','G-BK16EH7PF9');
 <h1>Carolina Forest <em>Property Maintenance Plans</em> for Homes, HOAs, Rentals, Apartments &amp; Commercial Sites</h1>
 <p class="lead">Bakerss Property Services builds recurring property maintenance plans in Carolina Forest for <strong>homeowners, HOAs, rental owners, Airbnbs, apartment communities, condos, commercial properties, second homes and property managers</strong>. Instead of chasing separate vendors for lawn care, cleaning, repairs, work orders, pressure washing, pool maintenance, irrigation, gutters and exterior upkeep, your property gets one accountable service structure built around its actual operating needs.</p>
 <div class="hero-ctas">
-<a class="btn btn-primary" href="/get-quote/">Request Maintenance Plan Quote</a>
+<a class="btn btn-primary" href="/get-quote/?service=Property+maintenance+plan">Request Maintenance Plan Quote</a>
 <a class="btn btn-outline" href="tel:8434677136">Call or Text 843-467-7136</a>
 <a class="btn btn-light" href="/service-areas/carolina-forest/commercial-maintenance/">Commercial Maintenance</a>
 </div>
@@ -85,7 +85,7 @@ gtag('config','G-BK16EH7PF9');
 <div><span class="check">✓</span><span>Can include pool, gutters, windows, irrigation, fences and home watch</span></div>
 <div><span class="check">✓</span><span>Built for Carolina Forest’s HOA-heavy, high-growth property mix</span></div>
 </div>
-<a class="btn btn-primary" href="/get-quote/" style="width:100%;margin-top:8px">Start Plan Quote</a>
+<a class="btn btn-primary" href="/get-quote/?service=Property+maintenance+plan" style="width:100%;margin-top:8px">Start Plan Quote</a>
 <p style="text-align:center;font-size:12px;color:#888;margin:8px 0 0">Email <a href="mailto:info@bakerss.com" style="color:var(--pink);font-weight:900">info@bakerss.com</a></p>
 </aside>
 </div>
@@ -291,7 +291,7 @@ gtag('config','G-BK16EH7PF9');
 <h2 class="sh">Need a Property Maintenance Plan in Carolina Forest?</h2>
 <p>Bakerss Property Services can quote recurring maintenance plans for homes, rentals, Airbnbs, apartments, HOAs, commercial properties and managed properties with clear scopes, service schedules and quote rules.</p>
 <div style="display:flex;gap:12px;justify-content:center;flex-wrap:wrap">
-<a class="btn btn-primary" href="/get-quote/">Request Maintenance Plan Quote</a>
+<a class="btn btn-primary" href="/get-quote/?service=Property+maintenance+plan">Request Maintenance Plan Quote</a>
 <a class="btn btn-outline" href="tel:8434677136">Call 843-467-7136</a>
 <a class="btn btn-outline" href="mailto:info@bakerss.com">Email info@bakerss.com</a>
 </div>
@@ -309,42 +309,8 @@ gtag('config','G-BK16EH7PF9');
 <div class="fine"><span>© 2026 Bakerss Property Services LLC. All rights reserved.</span><span>Carolina Forest Property Maintenance Plans · Recurring Home, Rental, HOA &amp; Commercial Service</span></div>
 </div>
 </footer>
-<div class="sticky-mobile"><a class="btn btn-primary" href="tel:8434677136">Call</a><a class="btn btn-light" href="/get-quote/">Free Quote</a></div>
+<div class="sticky-mobile"><a class="btn btn-primary" href="tel:8434677136">Call</a><a class="btn btn-light" href="/get-quote/?service=Property+maintenance+plan">Free Quote</a></div>
+<script src="/assets/bakerss-conversions.js"></script>
 </body>
-</html>\n<!-- Bakerss conversion measurement -->
-<script>
-document.addEventListener('DOMContentLoaded',function(){
-  function bEvent(name,params){
-    if(typeof gtag==='function'){gtag('event',name,params||{});}
-  }
-  document.querySelectorAll('a[href^="tel:"]').forEach(function(a){
-    a.addEventListener('click',function(){
-      bEvent('click_to_call',{link_url:a.getAttribute('href'),page_location:location.href});
-    });
-  });
-  document.querySelectorAll('a[href^="mailto:"]').forEach(function(a){
-    a.addEventListener('click',function(){
-      bEvent('click_to_email',{link_url:a.getAttribute('href'),page_location:location.href});
-    });
-  });
-  document.querySelectorAll('a').forEach(function(a){
-    var h=(a.getAttribute('href')||'').toLowerCase();
-    var t=(a.textContent||'').toLowerCase().trim();
-    if(h.indexOf('/get-quote')!==-1 || t.indexOf('get quote')!==-1 ||
-       t.indexOf('request a quote')!==-1 || t.indexOf('free quote')!==-1){
-      a.addEventListener('click',function(){
-        bEvent('quote_request_click',{link_url:a.getAttribute('href'),page_location:location.href});
-      });
-    }
-  });
-  document.querySelectorAll('form').forEach(function(f){
-    f.addEventListener('submit',function(){
-      var sig=((f.getAttribute('action')||'')+' '+(f.id||'')+' '+(f.getAttribute('name')||'')+' '+(f.className||'')+' '+location.pathname).toLowerCase();
-      if(sig.indexOf('quote')!==-1 || sig.indexOf('contact')!==-1){
-        bEvent('generate_lead',{form_id:f.id||'',page_location:location.href});
-      }
-    });
-  });
-});
-</script>
-<!-- /Bakerss conversion measurement -->
+</html>
+

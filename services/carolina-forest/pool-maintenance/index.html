@@ -49,7 +49,7 @@ gtag('config','G-BK16EH7PF9');
 <li><a href="/services/lawn-care/">Lawn Care</a></li>
 <li><a href="/service-areas/carolina-forest/">Carolina Forest</a></li>
 </ul></nav>
-<div class="nav-actions"><a class="btn btn-ghost phone-btn" href="tel:8434677136">843-467-7136</a><a class="btn btn-primary" href="/get-quote/">Free Quote</a></div>
+<div class="nav-actions"><a class="btn btn-ghost phone-btn" href="tel:8434677136">843-467-7136</a><a class="btn btn-primary" href="/get-quote/?service=Pool+maintenance">Free Quote</a></div>
 </div>
 </header>
 <main id="main">
@@ -60,7 +60,7 @@ gtag('config','G-BK16EH7PF9');
 <h1>Carolina Forest <em>Pool Maintenance</em> for HOA Amenities, Backyard Pools, Rentals &amp; Managed Properties</h1>
 <p class="lead">Bakerss Property Services provides <strong>pool maintenance in Carolina Forest SC</strong> for residential pools, HOA amenity pools, apartment communities, rental homes, second homes and managed properties. Carolina Forest pools need more than occasional skimming. Between pollen season, summer heat, afternoon storms, high HOA expectations, rental turnover pressure and family-heavy neighborhoods, the pool area has to stay clean, documented and connected to the rest of the property.</p>
 <div class="hero-ctas">
-<a class="btn btn-primary" href="/get-quote/">Request Pool Maintenance Quote</a>
+<a class="btn btn-primary" href="/get-quote/?service=Pool+maintenance">Request Pool Maintenance Quote</a>
 <a class="btn btn-outline" href="tel:8434677136">Call or Text 843-467-7136</a>
 <a class="btn btn-light" href="/service-areas/carolina-forest/property-maintenance-plans/">Maintenance Plans</a>
 </div>
@@ -76,7 +76,7 @@ gtag('config','G-BK16EH7PF9');
 <div><span class="check">✓</span><span>Pool deck pressure washing, furniture area cleanup and exterior add-ons</span></div>
 <div><span class="check">✓</span><span>Can bundle with lawn care, cleaning, handyman work and HOA maintenance</span></div>
 </div>
-<a class="btn btn-primary" href="/get-quote/" style="width:100%;margin-top:8px">Start Pool Quote</a>
+<a class="btn btn-primary" href="/get-quote/?service=Pool+maintenance" style="width:100%;margin-top:8px">Start Pool Quote</a>
 <p style="text-align:center;font-size:12px;color:#888;margin:8px 0 0">Email <a href="mailto:info@bakerss.com" style="color:var(--pink);font-weight:900">info@bakerss.com</a></p>
 </aside>
 </div>
@@ -259,7 +259,7 @@ gtag('config','G-BK16EH7PF9');
 <h2 class="sh">Need Reliable Pool Maintenance in Carolina Forest?</h2>
 <p>Bakerss Property Services can quote pool maintenance for homes, HOA amenities, apartment communities, rental properties and managed properties in Carolina Forest SC.</p>
 <div style="display:flex;gap:12px;justify-content:center;flex-wrap:wrap">
-<a class="btn btn-primary" href="/get-quote/">Request Pool Quote</a>
+<a class="btn btn-primary" href="/get-quote/?service=Pool+maintenance">Request Pool Quote</a>
 <a class="btn btn-outline" href="tel:8434677136">Call 843-467-7136</a>
 <a class="btn btn-outline" href="mailto:info@bakerss.com">Email info@bakerss.com</a>
 </div>
@@ -277,42 +277,8 @@ gtag('config','G-BK16EH7PF9');
 <div class="fine"><span>© 2026 Bakerss Property Services LLC. All rights reserved.</span><span>Carolina Forest Pool Maintenance · HOA, Residential, Rental &amp; Apartment Pool Service</span></div>
 </div>
 </footer>
-<div class="sticky-mobile"><a class="btn btn-primary" href="tel:8434677136">Call</a><a class="btn btn-light" href="/get-quote/">Free Quote</a></div>
+<div class="sticky-mobile"><a class="btn btn-primary" href="tel:8434677136">Call</a><a class="btn btn-light" href="/get-quote/?service=Pool+maintenance">Free Quote</a></div>
+<script src="/assets/bakerss-conversions.js"></script>
 </body>
-</html>\n<!-- Bakerss conversion measurement -->
-<script>
-document.addEventListener('DOMContentLoaded',function(){
-  function bEvent(name,params){
-    if(typeof gtag==='function'){gtag('event',name,params||{});}
-  }
-  document.querySelectorAll('a[href^="tel:"]').forEach(function(a){
-    a.addEventListener('click',function(){
-      bEvent('click_to_call',{link_url:a.getAttribute('href'),page_location:location.href});
-    });
-  });
-  document.querySelectorAll('a[href^="mailto:"]').forEach(function(a){
-    a.addEventListener('click',function(){
-      bEvent('click_to_email',{link_url:a.getAttribute('href'),page_location:location.href});
-    });
-  });
-  document.querySelectorAll('a').forEach(function(a){
-    var h=(a.getAttribute('href')||'').toLowerCase();
-    var t=(a.textContent||'').toLowerCase().trim();
-    if(h.indexOf('/get-quote')!==-1 || t.indexOf('get quote')!==-1 ||
-       t.indexOf('request a quote')!==-1 || t.indexOf('free quote')!==-1){
-      a.addEventListener('click',function(){
-        bEvent('quote_request_click',{link_url:a.getAttribute('href'),page_location:location.href});
-      });
-    }
-  });
-  document.querySelectorAll('form').forEach(function(f){
-    f.addEventListener('submit',function(){
-      var sig=((f.getAttribute('action')||'')+' '+(f.id||'')+' '+(f.getAttribute('name')||'')+' '+(f.className||'')+' '+location.pathname).toLowerCase();
-      if(sig.indexOf('quote')!==-1 || sig.indexOf('contact')!==-1){
-        bEvent('generate_lead',{form_id:f.id||'',page_location:location.href});
-      }
-    });
-  });
-});
-</script>
-<!-- /Bakerss conversion measurement -->
+</html>
+

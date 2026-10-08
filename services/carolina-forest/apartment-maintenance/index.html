@@ -49,7 +49,7 @@ gtag('config','G-BK16EH7PF9');
 <li><a href="/service-areas/carolina-forest/interior-cleaning/">Cleaning</a></li>
 <li><a href="/service-areas/carolina-forest/">Carolina Forest</a></li>
 </ul></nav>
-<div class="nav-actions"><a class="btn btn-ghost phone-btn" href="tel:8434677136">843-467-7136</a><a class="btn btn-primary" href="/get-quote/">Free Quote</a></div>
+<div class="nav-actions"><a class="btn btn-ghost phone-btn" href="tel:8434677136">843-467-7136</a><a class="btn btn-primary" href="/get-quote/?service=HOA+%2F+apartment+%2F+commercial">Free Quote</a></div>
 </div>
 </header>
 <main id="main">
@@ -60,7 +60,7 @@ gtag('config','G-BK16EH7PF9');
 <h1>Carolina Forest <em>Apartment Maintenance</em> for Unit Turns, Work Orders, Amenities &amp; Common Areas</h1>
 <p class="lead">Bakerss Property Services supports Carolina Forest apartment communities and multi-family properties with <strong>work order support, unit turns, make-ready repairs, common area cleaning, clubhouse upkeep, pressure washing, grounds care, pool-area support, exterior maintenance and recurring property service plans</strong>. Carolina Forest is not a beachfront turnover market or an older downtown apartment district. It is a fast-growing master-planned corridor with high resident expectations, heavy amenity use, busy traffic routes, and property managers who need a vendor that can move across cleaning, repairs, grounds, exterior care and visible issue reporting.</p>
 <div class="hero-ctas">
-<a class="btn btn-primary" href="/get-quote/">Request Apartment Maintenance Quote</a>
+<a class="btn btn-primary" href="/get-quote/?service=HOA+%2F+apartment+%2F+commercial">Request Apartment Maintenance Quote</a>
 <a class="btn btn-outline" href="tel:8434677136">Call or Text 843-467-7136</a>
 <a class="btn btn-light" href="/service-areas/carolina-forest/property-maintenance-plans/">Maintenance Plans</a>
 </div>
@@ -76,7 +76,7 @@ gtag('config','G-BK16EH7PF9');
 <div><span class="check">✓</span><span>Grounds care, pressure washing and exterior property services</span></div>
 <div><span class="check">✓</span><span>Recurring plans for owners, managers and community operators</span></div>
 </div>
-<a class="btn btn-primary" href="/get-quote/" style="width:100%;margin-top:8px">Get Apartment Quote</a>
+<a class="btn btn-primary" href="/get-quote/?service=HOA+%2F+apartment+%2F+commercial" style="width:100%;margin-top:8px">Get Apartment Quote</a>
 <p style="text-align:center;font-size:12px;color:#888;margin:8px 0 0">Email <a href="mailto:info@bakerss.com" style="color:var(--pink);font-weight:900">info@bakerss.com</a></p>
 </aside>
 </div>
@@ -251,7 +251,7 @@ gtag('config','G-BK16EH7PF9');
 <h2 class="sh">Need Apartment Maintenance Support in Carolina Forest?</h2>
 <p>Bakerss Property Services can quote recurring apartment maintenance, unit turn support, work orders, common area cleaning, pressure washing, grounds care and exterior property services for Carolina Forest communities.</p>
 <div style="display:flex;gap:12px;justify-content:center;flex-wrap:wrap">
-<a class="btn btn-primary" href="/get-quote/">Request Apartment Quote</a>
+<a class="btn btn-primary" href="/get-quote/?service=HOA+%2F+apartment+%2F+commercial">Request Apartment Quote</a>
 <a class="btn btn-outline" href="tel:8434677136">Call 843-467-7136</a>
 <a class="btn btn-outline" href="mailto:info@bakerss.com">Email info@bakerss.com</a>
 </div>
@@ -269,42 +269,8 @@ gtag('config','G-BK16EH7PF9');
 <div class="fine"><span>© 2026 Bakerss Property Services LLC. All rights reserved.</span><span>Carolina Forest Apartment Maintenance · Unit Turns, Work Orders, Common Areas &amp; Amenities</span></div>
 </div>
 </footer>
-<div class="sticky-mobile"><a class="btn btn-primary" href="tel:8434677136">Call</a><a class="btn btn-light" href="/get-quote/">Free Quote</a></div>
+<div class="sticky-mobile"><a class="btn btn-primary" href="tel:8434677136">Call</a><a class="btn btn-light" href="/get-quote/?service=HOA+%2F+apartment+%2F+commercial">Free Quote</a></div>
+<script src="/assets/bakerss-conversions.js"></script>
 </body>
-</html>\n<!-- Bakerss conversion measurement -->
-<script>
-document.addEventListener('DOMContentLoaded',function(){
-  function bEvent(name,params){
-    if(typeof gtag==='function'){gtag('event',name,params||{});}
-  }
-  document.querySelectorAll('a[href^="tel:"]').forEach(function(a){
-    a.addEventListener('click',function(){
-      bEvent('click_to_call',{link_url:a.getAttribute('href'),page_location:location.href});
-    });
-  });
-  document.querySelectorAll('a[href^="mailto:"]').forEach(function(a){
-    a.addEventListener('click',function(){
-      bEvent('click_to_email',{link_url:a.getAttribute('href'),page_location:location.href});
-    });
-  });
-  document.querySelectorAll('a').forEach(function(a){
-    var h=(a.getAttribute('href')||'').toLowerCase();
-    var t=(a.textContent||'').toLowerCase().trim();
-    if(h.indexOf('/get-quote')!==-1 || t.indexOf('get quote')!==-1 ||
-       t.indexOf('request a quote')!==-1 || t.indexOf('free quote')!==-1){
-      a.addEventListener('click',function(){
-        bEvent('quote_request_click',{link_url:a.getAttribute('href'),page_location:location.href});
-      });
-    }
-  });
-  document.querySelectorAll('form').forEach(function(f){
-    f.addEventListener('submit',function(){
-      var sig=((f.getAttribute('action')||'')+' '+(f.id||'')+' '+(f.getAttribute('name')||'')+' '+(f.className||'')+' '+location.pathname).toLowerCase();
-      if(sig.indexOf('quote')!==-1 || sig.indexOf('contact')!==-1){
-        bEvent('generate_lead',{form_id:f.id||'',page_location:location.href});
-      }
-    });
-  });
-});
-</script>
-<!-- /Bakerss conversion measurement -->
+</html>
+
