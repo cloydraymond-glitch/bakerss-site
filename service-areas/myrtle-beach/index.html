@@ -47,7 +47,7 @@ gtag('config','G-BK16EH7PF9');
 <br/>
 <style>
 :root{--pink:#e8197d;--pink2:#f0408a;--black:#0b0b0d;--black2:#151519;--text:#22232a;--muted:#646875;--line:#e6e7eb;--soft:#f7f7f9;--white:#fff;--green:#16a34a;--max:1180px;--shadow:0 14px 40px rgba(0,0,0,.12);--font:'DM Sans',Inter,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",Arial,sans-serif;--serif:'Playfair Display',Georgia,"Times New Roman",serif}
-\*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font-family:var(--font);color:var(--text);background:#fff;font-size:16px;line-height:1.65}img{max-width:100%;height:auto;display:block}a{color:inherit}.wrap{max-width:var(--max);margin:auto;padding:0 22px}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font-family:var(--font);color:var(--text);background:#fff;font-size:16px;line-height:1.65}img{max-width:100%;height:auto;display:block}a{color:inherit}.wrap{max-width:var(--max);margin:auto;padding:0 22px}
 .btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;border-radius:999px;padding:12px 22px;font-weight:900;text-decoration:none;border:2px solid transparent;line-height:1.1;transition:.18s ease;font-size:14px}.btn:hover{transform:translateY(-1px)}.btn-primary{background:var(--pink);color:#fff;box-shadow:0 10px 24px rgba(232,24,109,.28)}.btn-light{background:#fff;color:var(--black)}.btn-dark{background:var(--black);color:#fff}.btn-ghost{border-color:var(--pink);color:var(--pink);background:#fff}
 .topbar{background:var(--black);color:#d7d7dc;font-size:13px}.topbar .wrap{display:flex;justify-content:center;gap:16px;align-items:center;min-height:38px;text-align:center;flex-wrap:wrap}.topbar a{color:#fff;font-weight:900;text-decoration:none}
 .site-header{position:sticky;top:0;z-index:100;background:rgba(255,255,255,.96);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}.nav{display:flex;align-items:center;justify-content:space-between;gap:22px;min-height:72px}.logo{font-size:24px;font-weight:950;text-decoration:none;letter-spacing:-.04em;color:var(--black)}.logo span{color:var(--pink)}.navlinks{display:flex;align-items:center;gap:4px;list-style:none;margin:0;padding:0}.navlinks a{font-size:13.5px;font-weight:800;color:#30313a;text-decoration:none;padding:9px 11px;border-radius:10px;white-space:nowrap}.navlinks a:hover,.navlinks a[aria-current="page"]{background:var(--soft);color:var(--pink)}.hamb{display:none;border:0;background:var(--black);color:#fff;border-radius:10px;padding:10px 12px;font-weight:900;cursor:pointer}.mobile-menu{display:none;background:var(--black);color:#fff;padding:20px 0}.mobile-menu.open{display:block}.mobile-menu a{display:block;padding:10px 0;text-decoration:none;border-bottom:1px solid rgba(255,255,255,.08);color:#ddd}
@@ -356,41 +356,7 @@ var open=menu.classList.toggle('open');
 btn.setAttribute('aria-expanded',open?'true':'false');
 }
 </script>
+<script src="/assets/bakerss-conversions.js"></script>
 </body>
-</html>\n<!-- Bakerss conversion measurement -->
-<script>
-document.addEventListener('DOMContentLoaded',function(){
-  function bEvent(name,params){
-    if(typeof gtag==='function'){gtag('event',name,params||{});}
-  }
-  document.querySelectorAll('a[href^="tel:"]').forEach(function(a){
-    a.addEventListener('click',function(){
-      bEvent('click_to_call',{link_url:a.getAttribute('href'),page_location:location.href});
-    });
-  });
-  document.querySelectorAll('a[href^="mailto:"]').forEach(function(a){
-    a.addEventListener('click',function(){
-      bEvent('click_to_email',{link_url:a.getAttribute('href'),page_location:location.href});
-    });
-  });
-  document.querySelectorAll('a').forEach(function(a){
-    var h=(a.getAttribute('href')||'').toLowerCase();
-    var t=(a.textContent||'').toLowerCase().trim();
-    if(h.indexOf('/get-quote')!==-1 || t.indexOf('get quote')!==-1 ||
-       t.indexOf('request a quote')!==-1 || t.indexOf('free quote')!==-1){
-      a.addEventListener('click',function(){
-        bEvent('quote_request_click',{link_url:a.getAttribute('href'),page_location:location.href});
-      });
-    }
-  });
-  document.querySelectorAll('form').forEach(function(f){
-    f.addEventListener('submit',function(){
-      var sig=((f.getAttribute('action')||'')+' '+(f.id||'')+' '+(f.getAttribute('name')||'')+' '+(f.className||'')+' '+location.pathname).toLowerCase();
-      if(sig.indexOf('quote')!==-1 || sig.indexOf('contact')!==-1){
-        bEvent('generate_lead',{form_id:f.id||'',page_location:location.href});
-      }
-    });
-  });
-});
-</script>
-<!-- /Bakerss conversion measurement -->
+</html>
+
