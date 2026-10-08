@@ -117,7 +117,7 @@ gtag('config','G-BK16EH7PF9');
 <p>Our goal is straightforward: <strong>make property maintenance easier to manage, easier to document and easier to trust.</strong> That means clear communication, professional field service, documented work and a team that understands the property—not just the individual work order.</p>
 </div>
 <div>
-<div class="photo-card"><img alt="Bakerss Property Services team serving Myrtle Beach and the Grand Strand" decoding="async" loading="lazy" src="https://www.bakerss.com/images/about1.jpg"/></div>
+<div class="photo-card"><img alt="Bakerss Property Services team serving Myrtle Beach and the Grand Strand" decoding="async" loading="lazy" src="https://www.bakerss.com/images/about1.jpg" width="817" height="699"/></div>
 <div class="caption">Bakerss Property Services LLC · Myrtle Beach, South Carolina</div>
 </div>
 </div>
@@ -272,42 +272,8 @@ function toggleMenu(btn){
   btn.setAttribute('aria-expanded',open?'true':'false');
 }
 </script>
+<script src="/assets/bakerss-conversions.js"></script>
 </body>
 </html>
-\n<!-- Bakerss conversion measurement -->
-<script>
-document.addEventListener('DOMContentLoaded',function(){
-  function bEvent(name,params){
-    if(typeof gtag==='function'){gtag('event',name,params||{});}
-  }
-  document.querySelectorAll('a[href^="tel:"]').forEach(function(a){
-    a.addEventListener('click',function(){
-      bEvent('click_to_call',{link_url:a.getAttribute('href'),page_location:location.href});
-    });
-  });
-  document.querySelectorAll('a[href^="mailto:"]').forEach(function(a){
-    a.addEventListener('click',function(){
-      bEvent('click_to_email',{link_url:a.getAttribute('href'),page_location:location.href});
-    });
-  });
-  document.querySelectorAll('a').forEach(function(a){
-    var h=(a.getAttribute('href')||'').toLowerCase();
-    var t=(a.textContent||'').toLowerCase().trim();
-    if(h.indexOf('/get-quote')!==-1 || t.indexOf('get quote')!==-1 ||
-       t.indexOf('request a quote')!==-1 || t.indexOf('free quote')!==-1){
-      a.addEventListener('click',function(){
-        bEvent('quote_request_click',{link_url:a.getAttribute('href'),page_location:location.href});
-      });
-    }
-  });
-  document.querySelectorAll('form').forEach(function(f){
-    f.addEventListener('submit',function(){
-      var sig=((f.getAttribute('action')||'')+' '+(f.id||'')+' '+(f.getAttribute('name')||'')+' '+(f.className||'')+' '+location.pathname).toLowerCase();
-      if(sig.indexOf('quote')!==-1 || sig.indexOf('contact')!==-1){
-        bEvent('generate_lead',{form_id:f.id||'',page_location:location.href});
-      }
-    });
-  });
-});
-</script>
-<!-- /Bakerss conversion measurement -->
+
+

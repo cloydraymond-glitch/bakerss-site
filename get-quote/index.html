@@ -75,6 +75,7 @@ footer{border-top:1px solid var(--line);padding:26px 0 90px;color:var(--soft);fo
 <label class="chip"><input type="radio" name="service" value="HVAC"><span>❄️ HVAC</span></label>
 <label class="chip"><input type="radio" name="service" value="Property maintenance plan"><span>📋 Maintenance plan</span></label>
 <label class="chip"><input type="radio" name="service" value="HOA / apartment / commercial"><span>🏢 HOA, apartment, commercial</span></label>
+<label class="chip"><input type="radio" name="service" value="Window cleaning"><span>Window cleaning</span></label>
 <label class="chip"><input type="radio" name="service" value="Other / multiple services"><span>➕ Other / multiple</span></label>
 </div><p class="msg" id="svc-msg" style="display:none;color:var(--err);font-size:13px;margin-top:6px">Please choose a service.</p></fieldset>
 
@@ -120,16 +121,18 @@ var form=document.getElementById('qf'),go=document.getElementById('go'),err=docu
 var files=[],started=false;
 function ev(n,p){if(typeof gtag==='function')gtag('event',n,p||{});}
 function val(n){return(form.elements[n].value||'').trim();}
-function mark(el,bad){var f=el.closest('.f');if(f)f.classList.toggle('bad',bad);}
-var hints={'Handyman & repairs':'List the repairs (doors, drywall, fixtures...). Photos help a lot.','Cleaning':'Home size, bedrooms and bathrooms, and one-time or recurring?','Lawn care & landscaping':'Approximate yard size and what you want done (mowing, mulch, beds...).','Pool maintenance':'Pool type and size, and how often you need service.','Pressure washing':'What surfaces (driveway, siding, pool deck...) and approximate size?','HVAC':'What is the system doing? Age of the unit if you know it.','Property maintenance plan':'Which services you want bundled and how often.','HOA / apartment / commercial':'Property name, number of buildings or units, and current needs.','Other / multiple services':'Tell us everything you need and we will sort out the scope.'};
+function mark(el,bad){var f=el.closest('.f');if(f)f.classList.toggle('bad',bad);el.setAttribute('aria-invalid',bad?'true':'false');}
+var hints={'Window cleaning':'Interior, exterior or both? Approximate window count, stories and photos help us define the scope.','Handyman & repairs':'List the repairs (doors, drywall, fixtures...). Photos help a lot.','Cleaning':'Home size, bedrooms and bathrooms, and one-time or recurring?','Lawn care & landscaping':'Approximate yard size and what you want done (mowing, mulch, beds...).','Pool maintenance':'Pool type and size, and how often you need service.','Pressure washing':'What surfaces (driveway, siding, pool deck...) and approximate size?','HVAC':'What is the system doing? Age of the unit if you know it.','Property maintenance plan':'Which services you want bundled and how often.','HOA / apartment / commercial':'Property name, number of buildings or units, and current needs.','Other / multiple services':'Tell us everything you need and we will sort out the scope.'};
 document.querySelectorAll('#svc input').forEach(function(r){r.addEventListener('change',function(){document.getElementById('svc-msg').style.display='none';document.getElementById('details').placeholder=hints[r.value]||'';});});
 form.addEventListener('input',function(){if(!started){started=true;ev('form_start',{form_id:'quote'});}});
 ['name','phone','city','email'].forEach(function(n){form.elements[n].addEventListener('blur',function(){check(n);});});
 function check(n){var el=form.elements[n],v=el.value.trim(),bad=false;
-if(n==='phone'){bad=v.replace(/\D/g,'').length<10;}
-else if(n==='email'){bad=v!==''&&!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(v);}
+if(n==='phone'){var digits=v.replace(/\D/g,'');bad=!(digits.length===10||(digits.length===11&&digits.charAt(0)==='1'));}
+else if(n==='email'){var emailRequired=form.querySelector('input[name=contact_preference]:checked').value==='Email';bad=(emailRequired&&v==='')||(v!==''&&!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(v));}
 else{bad=v==='';}
 mark(el,bad);return!bad;}
+document.querySelectorAll('input[name=contact_preference]').forEach(function(r){r.addEventListener('change',function(){var required=r.checked&&r.value==='Email';form.elements.email.required=required;check('email');});});
+var requestedService=new URLSearchParams(location.search).get('service');if(requestedService){document.querySelectorAll('#svc input').forEach(function(r){if(r.value===requestedService){r.checked=true;r.dispatchEvent(new Event('change'));}});}
 /* photos */
 var inp=document.getElementById('photos'),list=document.getElementById('files'),fmsg=document.getElementById('fmsg'),drop=document.getElementById('drop');
 function fm(t){fmsg.textContent=t;fmsg.style.display=t?'block':'none';fmsg.style.color='var(--err)';fmsg.style.fontSize='13px';}
@@ -140,11 +143,11 @@ inp.addEventListener('change',function(){fm('');Array.prototype.forEach.call(inp
 drop.addEventListener('drop',function(x){var dt=x.dataTransfer;if(dt&&dt.files){inp.files=dt.files;inp.dispatchEvent(new Event('change'));}});
 /* submit */
 function showErr(msg){err.innerHTML=msg;err.classList.add('on');err.focus();}
-form.addEventListener('submit',function(e){e.preventDefault();err.classList.remove('on');
+form.addEventListener('submit',function(e){e.preventDefault();if(go.disabled)return;err.classList.remove('on');
 if(val('_honey')){return;}
 var ok=true;['name','phone','city','email'].forEach(function(n){if(!check(n))ok=false;});
 var svc=form.querySelector('input[name=service]:checked');if(!svc){document.getElementById('svc-msg').style.display='block';ok=false;}
-if(!ok){var first=form.querySelector('.f.bad input')||document.getElementById('svc');(first.focus||function(){}).call(first);if(!svc)document.getElementById('svc').scrollIntoView({behavior:'smooth',block:'center'});return;}
+if(!ok){showErr('Please check the highlighted fields. If you select Email, include a valid email address.');var first=form.querySelector('.f.bad input')||document.getElementById('svc');(first.focus||function(){}).call(first);if(!svc)document.getElementById('svc').scrollIntoView({behavior:'smooth',block:'center'});return;}
 var fd=new FormData();
 var d={service:svc.value,name:val('name'),phone:val('phone'),email:val('email'),city:val('city'),property_type:val('property_type'),timing:val('timing'),contact_preference:form.querySelector('input[name=contact_preference]:checked').value,details:val('details')};
 Object.keys(d).forEach(function(k){fd.append(k,d[k]||'Not provided');});
@@ -157,7 +160,7 @@ if(d.email)fd.append('_replyto',d.email);
 fd.append('_autoresponse','Thanks for contacting Bakerss Property Services. We received your quote request and Ray or Courtney will follow up soon. For anything urgent call or text 843-467-7136.');
 go.disabled=true;go.textContent='Sending...';
 var ctl=new AbortController(),t=setTimeout(function(){ctl.abort();},45000);
-fetch(ENDPOINT,{method:'POST',body:fd,headers:{'Accept':'application/json'},signal:ctl.signal}).then(function(r){return r.json().catch(function(){return{};}).then(function(j){if(!r.ok||j.success==='false'||j.success===false)throw new Error('fail');});}).then(function(){clearTimeout(t);
+fetch(ENDPOINT,{method:'POST',body:fd,headers:{'Accept':'application/json'},signal:ctl.signal}).then(function(r){return r.json().catch(function(){return{};}).then(function(j){if(!r.ok||(j.success!==true&&j.success!=='true'))throw new Error('fail');});}).then(function(){clearTimeout(t);
 ev('generate_lead',{form_id:'quote',service:d.service,city:d.city,has_photos:files.length>0,page_location:location.href});
 document.getElementById('d-name').textContent=d.name.split(' ')[0];document.getElementById('d-pref').textContent=d.contact_preference==='Text'?'text':d.contact_preference==='Email'?'email':'phone';
 var rc=document.getElementById('recap');rc.innerHTML='';[['Service',d.service],['City',d.city],['Phone',d.phone]].forEach(function(p){var div=document.createElement('div');var b=document.createElement('b');b.textContent=p[0]+': ';div.appendChild(b);div.appendChild(document.createTextNode(p[1]));rc.appendChild(div);});
@@ -167,7 +170,7 @@ var body=encodeURIComponent('NEW QUOTE REQUEST\nName: '+d.name+'\nPhone: '+d.pho
 showErr('<b>We could not send your request.</b> Your details are still here. Please try again, or call or text <a href="tel:+18434677136">843-467-7136</a>, or <a href="mailto:info@bakerss.com?subject='+encodeURIComponent('Quote request - '+d.service)+'&body='+body+'">send it by email instead</a>.');
 ev('form_error',{form_id:'quote'});});
 });
-document.querySelectorAll('a[href^="tel:"],a[href^="sms:"]').forEach(function(a){a.addEventListener('click',function(){ev('click_to_call',{link_url:a.getAttribute('href'),page_location:location.href});});});
+document.querySelectorAll('a[href^="tel:"],a[href^="sms:"]').forEach(function(a){a.addEventListener('click',function(){ev(a.getAttribute('href').indexOf('sms:')===0?'click_to_text':'click_to_call',{link_url:a.getAttribute('href'),page_location:location.href});});});
 document.querySelectorAll('a[href^="mailto:"]').forEach(function(a){a.addEventListener('click',function(){ev('click_to_email',{link_url:a.getAttribute('href'),page_location:location.href});});});
 </script>
 </body>

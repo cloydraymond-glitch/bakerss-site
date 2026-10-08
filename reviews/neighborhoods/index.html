@@ -26,7 +26,7 @@ gtag('config','G-BK16EH7PF9');
 <meta content="summary_large_image" name="twitter:card"/><meta content="Grand Strand Property Maintenance by Neighborhood | Bakerss" name="twitter:title"/><meta content="Explore property maintenance by Grand Strand neighborhood. HVAC, pool, lawn, cleaning, home watch and documented work orders from Bakerss." name="twitter:description"/><meta content="https://www.bakerss.com/images/neighborhoods/grand-strand-neighborhoods-16x9.jpg" name="twitter:image"/>
 <style>
 :root{--pink:#e8197d;--pink2:#ff55a7;--black:#0b0b0d;--dark:#151518;--dark2:#202026;--white:#fff;--muted:rgba(255,255,255,.66);--line:rgba(255,255,255,.10);--max:1200px;--display:'Playfair Display',Georgia,serif;--body:'DM Sans',Arial,sans-serif}
-\*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--black);color:#fff;font-family:var(--body);line-height:1.68}a{color:inherit}.wrap{max-width:var(--max);margin:auto;padding:0 22px}.skip{position:absolute;left:-999px}.skip:focus{left:16px;top:16px;background:#fff;color:#111;padding:10px 14px;z-index:999;border-radius:8px}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--black);color:#fff;font-family:var(--body);line-height:1.68}a{color:inherit}.wrap{max-width:var(--max);margin:auto;padding:0 22px}.skip{position:absolute;left:-999px}.skip:focus{left:16px;top:16px;background:#fff;color:#111;padding:10px 14px;z-index:999;border-radius:8px}
 .topbar{background:var(--pink);color:#fff;font-size:13px;font-weight:800;text-align:center;padding:9px 16px}.topbar a{color:#fff;text-decoration:none}
 header{position:sticky;top:0;z-index:50;background:rgba(11,11,13,.97);backdrop-filter:blur(12px);border-bottom:1px solid var(--line)}.nav{min-height:72px;display:flex;align-items:center;justify-content:space-between;gap:20px}.logo{font-family:var(--display);font-size:26px;font-weight:800;text-decoration:none}.logo span{color:var(--pink)}.navlinks{display:flex;gap:14px;align-items:center}.navlinks a{text-decoration:none;color:rgba(255,255,255,.72);font-size:13.5px;font-weight:700}.navlinks a:hover{color:#fff}
 .btn{display:inline-flex;align-items:center;justify-content:center;border-radius:999px;padding:12px 20px;font-weight:900;font-size:14px;text-decoration:none;border:2px solid transparent}.btn-primary{background:var(--pink);color:#fff}.btn-outline{border-color:rgba(255,255,255,.35);color:#fff}
@@ -168,40 +168,6 @@ footer{background:#060607;border-top:1px solid var(--line);padding:44px 0 24px}.
 <div><h4>Core Services</h4><a href="/services/property-maintenance/">Property Maintenance</a><a href="/services/hvac-repair/">HVAC Repair</a><a href="/services/pool-maintenance/">Pool Maintenance</a><a href="/services/interior-cleaning/">Cleaning</a><a href="/services/lawn-care/">Lawn Care</a></div>
 <div><h4>Company</h4><a href="/services/">All Services</a><a href="/service-areas/">Service Areas</a><a href="/learning-center/">Learning Center</a><a href="/about/">About</a><a href="/get-quote/">Request a Quote</a></div>
 </div><div class="fine">© 2026 Bakerss Property Services LLC · One property. One call. Complete care.</div></div></footer>
-</body></html>\n<!-- Bakerss conversion measurement -->
-<script>
-document.addEventListener('DOMContentLoaded',function(){
-  function bEvent(name,params){
-    if(typeof gtag==='function'){gtag('event',name,params||{});}
-  }
-  document.querySelectorAll('a[href^="tel:"]').forEach(function(a){
-    a.addEventListener('click',function(){
-      bEvent('click_to_call',{link_url:a.getAttribute('href'),page_location:location.href});
-    });
-  });
-  document.querySelectorAll('a[href^="mailto:"]').forEach(function(a){
-    a.addEventListener('click',function(){
-      bEvent('click_to_email',{link_url:a.getAttribute('href'),page_location:location.href});
-    });
-  });
-  document.querySelectorAll('a').forEach(function(a){
-    var h=(a.getAttribute('href')||'').toLowerCase();
-    var t=(a.textContent||'').toLowerCase().trim();
-    if(h.indexOf('/get-quote')!==-1 || t.indexOf('get quote')!==-1 ||
-       t.indexOf('request a quote')!==-1 || t.indexOf('free quote')!==-1){
-      a.addEventListener('click',function(){
-        bEvent('quote_request_click',{link_url:a.getAttribute('href'),page_location:location.href});
-      });
-    }
-  });
-  document.querySelectorAll('form').forEach(function(f){
-    f.addEventListener('submit',function(){
-      var sig=((f.getAttribute('action')||'')+' '+(f.id||'')+' '+(f.getAttribute('name')||'')+' '+(f.className||'')+' '+location.pathname).toLowerCase();
-      if(sig.indexOf('quote')!==-1 || sig.indexOf('contact')!==-1){
-        bEvent('generate_lead',{form_id:f.id||'',page_location:location.href});
-      }
-    });
-  });
-});
-</script>
-<!-- /Bakerss conversion measurement -->
+<script src="/assets/bakerss-conversions.js"></script>
+</body></html>
+

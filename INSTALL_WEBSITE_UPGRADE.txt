@@ -1,0 +1,40 @@
+BAKERSS WEBSITE-ONLY UPGRADE — MERGE UPDATE
+Target repository: cloydraymond-glitch/bakerss-site
+Do not upload this package to bakerss-os.
+
+This ZIP contains ONLY changed and added public website files compared with
+bakerss-site-main (4).zip. It is an update, not a complete standalone website.
+The paths inside the ZIP are repository-relative; there is no wrapper folder.
+
+INSTALL
+1. Download/retain a backup of the current bakerss-site repository.
+2. Extract this ZIP to a new folder.
+3. Copy its contents INTO the existing bakerss-site repository root, merging
+   folders and replacing matching files. Preserve every other existing file.
+   Do not delete the repository contents or use a mirror/delete operation.
+4. Confirm index.html, vercel.json, sitemap.xml, and assets/ are at the same
+   repository level as their current counterparts, not inside an extra folder.
+5. Commit only to bakerss-site; use a preview branch/deployment for review.
+6. Check desktop/mobile layout, quote service selection, Garden City neighborhood
+   navigation, and Surfside Landing. Verify actual quote email delivery before
+   promoting the preview to production.
+
+SCOPE
+No app/, components/, lib/, supabase/, public/, operations source, dependency
+manifests, build configuration, environment files, or database migrations are
+included. vercel.json contains website redirect/header changes; its original
+non-redirect settings are preserved. This package does not deploy the app.
+
+VERIFICATION
+Included website bytes match the previously validated upgraded package.
+Static checks found no missing referenced local assets or broken internal
+link destinations in the complete merged website. Quote validation logic and
+lead tracking were tested without sending a real quote email.
+Rendered desktop/mobile review and live email delivery remain unverified.
+If the current repository differs from the supplied source ZIP, review the
+changes against that current repository before replacing matching files.
+
+MANIFEST
+WEBSITE_UPGRADE_MANIFEST.json lists each included website file, whether it is
+new or modified compared with the supplied ZIP, and its SHA-256 checksum.
+These two instruction/manifest files are documentation, not website pages.

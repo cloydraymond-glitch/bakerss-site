@@ -1,0 +1,5 @@
+/* Bakerss interaction tracking. Accepted leads are tracked by the quote form after server confirmation. */
+(function(){'use strict';if(window.bakerssConversionTrackingInstalled)return;window.bakerssConversionTrackingInstalled=true;
+function ev(name,params){if(typeof window.gtag==='function')window.gtag('event',name,params);}
+document.addEventListener('click',function(e){var a=e.target.closest&&e.target.closest('a[href]');if(!a)return;var h=a.getAttribute('href')||'',n='';if(h.indexOf('tel:')===0)n='click_to_call';else if(h.indexOf('sms:')===0)n='click_to_text';else if(h.indexOf('mailto:')===0)n='click_to_email';else{try{var u=new URL(h,location.href);if(u.origin===location.origin&&/^\/get-quote\/?$/.test(u.pathname))n='quote_request_click';}catch(err){}}if(n)ev(n,{link_url:h,page_location:location.href});});
+document.addEventListener('submit',function(e){var f=e.target;if(!f||f.tagName!=='FORM')return;var sig=(f.id+' '+f.getAttribute('action')+' '+location.pathname).toLowerCase();if(/quote|contact/.test(sig))ev('quote_form_submit',{form_id:f.id||'',page_location:location.href});});})();
