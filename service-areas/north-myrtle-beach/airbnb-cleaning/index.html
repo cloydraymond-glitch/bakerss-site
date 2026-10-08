@@ -55,7 +55,7 @@ gtag('config','G-BK16EH7PF9');
 <li><a href="/service-areas/north-myrtle-beach/pool-maintenance/">Pool</a></li>
 <li><a href="/service-areas/north-myrtle-beach/">North Myrtle Beach</a></li>
 </ul></nav>
-<div class="nav-actions"><a class="btn btn-ghost phone-btn" href="tel:8434677136">843-467-7136</a><a class="btn btn-primary" href="/get-quote/">Free Quote</a></div>
+<div class="nav-actions"><a class="btn btn-ghost phone-btn" href="tel:8434677136">843-467-7136</a><a class="btn btn-primary" href="/get-quote/?service=Cleaning">Free Quote</a></div>
 </div>
 </header>
 <main id="main">
@@ -66,7 +66,7 @@ gtag('config','G-BK16EH7PF9');
 <h1>North Myrtle Beach <em>Airbnb Cleaning Services</em> for Guest-Ready Vacation Rentals</h1>
 <p class="lead">Bakerss Property Services provides Airbnb cleaning and vacation rental turnover cleaning in North Myrtle Beach for <strong>short-term rentals, beach condos, second homes, VRBO properties, oceanfront units, family vacation homes and managed rental properties</strong>. We help hosts, owners and property managers keep rentals clean, reset and ready for the next guest.</p>
 <div class="hero-ctas">
-<a class="btn btn-primary" href="/get-quote/">Request Airbnb Cleaning Quote</a>
+<a class="btn btn-primary" href="/get-quote/?service=Cleaning">Request Airbnb Cleaning Quote</a>
 <a class="btn btn-outline" href="tel:8434677136">Call or Text 843-467-7136</a>
 <a class="btn btn-light" href="/service-areas/north-myrtle-beach/interior-cleaning/">Interior Cleaning</a>
 </div>
@@ -85,7 +85,7 @@ gtag('config','G-BK16EH7PF9');
 <div><span class="check">✓</span><span>Deep cleaning and seasonal reset cleaning available</span></div>
 <div><span class="check">✓</span><span>Can pair with handyman, lawn, pool, home watch and storm checks</span></div>
 </div>
-<a class="btn btn-primary" href="/get-quote/" style="width:100%;margin-top:8px">Start Airbnb Cleaning Quote</a>
+<a class="btn btn-primary" href="/get-quote/?service=Cleaning" style="width:100%;margin-top:8px">Start Airbnb Cleaning Quote</a>
 <p style="text-align:center;font-size:12px;color:#888;margin:8px 0 0">Email <a href="mailto:info@bakerss.com" style="color:var(--pink);font-weight:900">info@bakerss.com</a></p>
 </aside>
 </div>
@@ -281,7 +281,7 @@ gtag('config','G-BK16EH7PF9');
 <h2 class="sh">Need Vacation Rental Cleaning for a North Myrtle Beach Airbnb?</h2>
 <p>Bakerss Property Services can quote Airbnb cleaning, VRBO cleaning, condo turnover cleaning, deep cleaning and vacation rental maintenance support.</p>
 <div style="display:flex;gap:12px;justify-content:center;flex-wrap:wrap">
-<a class="btn btn-primary" href="/get-quote/">Request Airbnb Cleaning Quote</a>
+<a class="btn btn-primary" href="/get-quote/?service=Cleaning">Request Airbnb Cleaning Quote</a>
 <a class="btn btn-outline" href="tel:8434677136">Call 843-467-7136</a>
 <a class="btn btn-outline" href="mailto:info@bakerss.com">Email info@bakerss.com</a>
 </div>
@@ -299,42 +299,8 @@ gtag('config','G-BK16EH7PF9');
 <div class="fine"><span>© 2026 Bakerss Property Services LLC. All rights reserved.</span><span>North Myrtle Beach Airbnb Cleaning · Vacation Rental Turnover Cleaning · Condo Cleaning</span></div>
 </div>
 </footer>
-<div class="sticky-mobile"><a class="btn btn-primary" href="tel:8434677136">Call</a><a class="btn btn-light" href="/get-quote/">Free Quote</a></div>
+<div class="sticky-mobile"><a class="btn btn-primary" href="tel:8434677136">Call</a><a class="btn btn-light" href="/get-quote/?service=Cleaning">Free Quote</a></div>
+<script src="/assets/bakerss-conversions.js"></script>
 </body>
-</html>\n<!-- Bakerss conversion measurement -->
-<script>
-document.addEventListener('DOMContentLoaded',function(){
-  function bEvent(name,params){
-    if(typeof gtag==='function'){gtag('event',name,params||{});}
-  }
-  document.querySelectorAll('a[href^="tel:"]').forEach(function(a){
-    a.addEventListener('click',function(){
-      bEvent('click_to_call',{link_url:a.getAttribute('href'),page_location:location.href});
-    });
-  });
-  document.querySelectorAll('a[href^="mailto:"]').forEach(function(a){
-    a.addEventListener('click',function(){
-      bEvent('click_to_email',{link_url:a.getAttribute('href'),page_location:location.href});
-    });
-  });
-  document.querySelectorAll('a').forEach(function(a){
-    var h=(a.getAttribute('href')||'').toLowerCase();
-    var t=(a.textContent||'').toLowerCase().trim();
-    if(h.indexOf('/get-quote')!==-1 || t.indexOf('get quote')!==-1 ||
-       t.indexOf('request a quote')!==-1 || t.indexOf('free quote')!==-1){
-      a.addEventListener('click',function(){
-        bEvent('quote_request_click',{link_url:a.getAttribute('href'),page_location:location.href});
-      });
-    }
-  });
-  document.querySelectorAll('form').forEach(function(f){
-    f.addEventListener('submit',function(){
-      var sig=((f.getAttribute('action')||'')+' '+(f.id||'')+' '+(f.getAttribute('name')||'')+' '+(f.className||'')+' '+location.pathname).toLowerCase();
-      if(sig.indexOf('quote')!==-1 || sig.indexOf('contact')!==-1){
-        bEvent('generate_lead',{form_id:f.id||'',page_location:location.href});
-      }
-    });
-  });
-});
-</script>
-<!-- /Bakerss conversion measurement -->
+</html>
+
