@@ -49,7 +49,7 @@ gtag('config','G-BK16EH7PF9');
 <li><a href="/service-areas/litchfield-beach/hoa-maintenance/">HOA</a></li>
 <li><a href="/services/pool-maintenance/">Pool Service</a></li>
 </ul></nav>
-<div class="nav-actions"><a class="btn btn-ghost phone-btn" href="tel:8434677136">843-467-7136</a><a class="btn btn-primary" href="/get-quote/">Free Quote</a></div>
+<div class="nav-actions"><a class="btn btn-ghost phone-btn" href="tel:8434677136">843-467-7136</a><a class="btn btn-primary" href="/get-quote/?service=Pool+maintenance">Free Quote</a></div>
 </div>
 </header>
 <main id="main">
@@ -61,7 +61,7 @@ gtag('config','G-BK16EH7PF9');
 <p class="lead">Bakerss Property Services provides pool maintenance in <strong>Litchfield Beach, North Litchfield, Litchfield by the Sea, Waccamaw Neck and the Pawleys Island corridor</strong>. Our work is built for coastal properties where salt air, heat, sand, pine pollen, live oak debris, summer storms, heavy rental turnover and HOA expectations make pool care a real operational need—not a casual once-in-a-while cleanup.</p>
 <p class="lead">We help homeowners, absentee owners, short-term rental operators, property managers, HOAs, apartment communities and commercial properties with recurring pool cleaning, skimming, brushing, vacuuming, basket cleaning, chemical checks, visible equipment observations, pool-area notes and coordinated property maintenance support.</p>
 <div class="hero-ctas">
-<a class="btn btn-primary" href="/get-quote/">Request Pool Maintenance Quote</a>
+<a class="btn btn-primary" href="/get-quote/?service=Pool+maintenance">Request Pool Maintenance Quote</a>
 <a class="btn btn-outline" href="tel:8434677136">Call or Text 843-467-7136</a>
 <a class="btn btn-light" href="/service-areas/litchfield-beach/property-maintenance-plans/">View Maintenance Plans</a>
 </div>
@@ -77,7 +77,7 @@ gtag('config','G-BK16EH7PF9');
 <div><span class="check">✓</span><span>HOA, apartment, commercial and amenity-area support</span></div>
 <div><span class="check">✓</span><span>Can pair with pressure washing, lawn care, cleaning and home watch</span></div>
 </div>
-<a class="btn btn-primary" href="/get-quote/" style="width:100%;margin-top:8px">Start Quote</a>
+<a class="btn btn-primary" href="/get-quote/?service=Pool+maintenance" style="width:100%;margin-top:8px">Start Quote</a>
 </aside>
 </div>
 </section>
@@ -342,7 +342,7 @@ gtag('config','G-BK16EH7PF9');
 <h2 class="sh">Need Reliable Pool Maintenance in Litchfield Beach?</h2>
 <p>Bakerss Property Services can quote recurring pool cleaning, rental pool checks, chemical checks, HOA pool-area support and complete property maintenance plans for Litchfield Beach, North Litchfield, Litchfield by the Sea, Waccamaw Neck and nearby Pawleys Island properties.</p>
 <div style="display:flex;gap:12px;justify-content:center;flex-wrap:wrap">
-<a class="btn btn-primary" href="/get-quote/">Request Pool Maintenance Quote</a>
+<a class="btn btn-primary" href="/get-quote/?service=Pool+maintenance">Request Pool Maintenance Quote</a>
 <a class="btn btn-outline" href="tel:8434677136">Call 843-467-7136</a>
 <a class="btn btn-outline" href="mailto:info@bakerss.com">Email info@bakerss.com</a>
 </div>
@@ -360,43 +360,9 @@ gtag('config','G-BK16EH7PF9');
 <div class="fine"><span>© 2026 Bakerss Property Services LLC. All rights reserved.</span><span>Litchfield Beach Pool Maintenance · Residential, Rental, HOA &amp; Managed Property Pool Support</span></div>
 </div>
 </footer>
-<div class="sticky-mobile"><a class="btn btn-primary" href="tel:8434677136">Call</a><a class="btn btn-light" href="/get-quote/">Free Quote</a></div>
+<div class="sticky-mobile"><a class="btn btn-primary" href="tel:8434677136">Call</a><a class="btn btn-light" href="/get-quote/?service=Pool+maintenance">Free Quote</a></div>
+<script src="/assets/bakerss-conversions.js"></script>
 </body>
 </html>
-\n<!-- Bakerss conversion measurement -->
-<script>
-document.addEventListener('DOMContentLoaded',function(){
-  function bEvent(name,params){
-    if(typeof gtag==='function'){gtag('event',name,params||{});}
-  }
-  document.querySelectorAll('a[href^="tel:"]').forEach(function(a){
-    a.addEventListener('click',function(){
-      bEvent('click_to_call',{link_url:a.getAttribute('href'),page_location:location.href});
-    });
-  });
-  document.querySelectorAll('a[href^="mailto:"]').forEach(function(a){
-    a.addEventListener('click',function(){
-      bEvent('click_to_email',{link_url:a.getAttribute('href'),page_location:location.href});
-    });
-  });
-  document.querySelectorAll('a').forEach(function(a){
-    var h=(a.getAttribute('href')||'').toLowerCase();
-    var t=(a.textContent||'').toLowerCase().trim();
-    if(h.indexOf('/get-quote')!==-1 || t.indexOf('get quote')!==-1 ||
-       t.indexOf('request a quote')!==-1 || t.indexOf('free quote')!==-1){
-      a.addEventListener('click',function(){
-        bEvent('quote_request_click',{link_url:a.getAttribute('href'),page_location:location.href});
-      });
-    }
-  });
-  document.querySelectorAll('form').forEach(function(f){
-    f.addEventListener('submit',function(){
-      var sig=((f.getAttribute('action')||'')+' '+(f.id||'')+' '+(f.getAttribute('name')||'')+' '+(f.className||'')+' '+location.pathname).toLowerCase();
-      if(sig.indexOf('quote')!==-1 || sig.indexOf('contact')!==-1){
-        bEvent('generate_lead',{form_id:f.id||'',page_location:location.href});
-      }
-    });
-  });
-});
-</script>
-<!-- /Bakerss conversion measurement -->
+
+

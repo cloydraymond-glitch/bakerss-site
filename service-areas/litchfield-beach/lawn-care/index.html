@@ -50,7 +50,7 @@ gtag('config','G-BK16EH7PF9');
 <li><a href="/service-areas/litchfield-beach/hoa-maintenance/">HOA</a></li>
 <li><a href="/service-areas/litchfield-beach/">Litchfield Beach</a></li>
 </ul></nav>
-<div class="nav-actions"><a class="btn btn-ghost phone-btn" href="tel:8434677136">843-467-7136</a><a class="btn btn-primary" href="/get-quote/">Free Quote</a></div>
+<div class="nav-actions"><a class="btn btn-ghost phone-btn" href="tel:8434677136">843-467-7136</a><a class="btn btn-primary" href="/get-quote/?service=Lawn+care+%26+landscaping">Free Quote</a></div>
 </div>
 </header>
 <main>
@@ -61,7 +61,7 @@ gtag('config','G-BK16EH7PF9');
 <h1>Litchfield Beach <em>Lawn Care</em> for Coastal Homes, Rentals, HOAs &amp; Managed Properties</h1>
 <p class="lead">Bakerss Property Services provides lawn care in <strong>Litchfield Beach, North Litchfield, Litchfield by the Sea, Pawleys Island, Ocean Highway and Waccamaw Neck</strong>. We help homeowners, vacation rental owners, HOAs, commercial properties and property managers keep lawns clean, edged, trimmed, blown off and maintained with a recurring plan that fits coastal growth, sandy soil, humidity, storm cleanup, guest arrivals and curb appeal expectations.</p>
 <div class="hero-ctas">
-<a class="btn btn-primary" href="/get-quote/">Request Lawn Care Quote</a>
+<a class="btn btn-primary" href="/get-quote/?service=Lawn+care+%26+landscaping">Request Lawn Care Quote</a>
 <a class="btn btn-outline" href="tel:8434677136">Call or Text 843-467-7136</a>
 <a class="btn btn-light" href="/service-areas/litchfield-beach/property-maintenance-plans/">Maintenance Plans</a>
 </div>
@@ -77,7 +77,7 @@ gtag('config','G-BK16EH7PF9');
 <div><span class="check">✓</span><span>Can pair with landscaping, sod, irrigation and sprinkler repair</span></div>
 <div><span class="check">✓</span><span>Property maintenance plans for complete exterior care</span></div>
 </div>
-<a class="btn btn-primary" href="/get-quote/" style="width:100%;margin-top:8px">Get Quote</a>
+<a class="btn btn-primary" href="/get-quote/?service=Lawn+care+%26+landscaping" style="width:100%;margin-top:8px">Get Quote</a>
 </aside>
 </div>
 </section>
@@ -267,7 +267,7 @@ gtag('config','G-BK16EH7PF9');
 <h2 class="sh">Need Lawn Care in Litchfield Beach?</h2>
 <p>Bakerss Property Services can quote mowing, edging, trimming, blowing, recurring yard service, rental lawn care, HOA grounds support, commercial lawn care and full exterior property maintenance plans.</p>
 <div style="display:flex;gap:12px;justify-content:center;flex-wrap:wrap">
-<a class="btn btn-primary" href="/get-quote/">Request Lawn Care Quote</a>
+<a class="btn btn-primary" href="/get-quote/?service=Lawn+care+%26+landscaping">Request Lawn Care Quote</a>
 <a class="btn btn-outline" href="tel:8434677136">Call 843-467-7136</a>
 <a class="btn btn-outline" href="mailto:info@bakerss.com">Email info@bakerss.com</a>
 </div>
@@ -285,42 +285,8 @@ gtag('config','G-BK16EH7PF9');
 <div class="fine"><span>© 2026 Bakerss Property Services LLC. All rights reserved.</span><span>Litchfield Beach Lawn Care · Mowing, Edging, Trimming, Blowing &amp; Recurring Yard Service</span></div>
 </div>
 </footer>
-<div class="sticky-mobile"><a class="btn btn-primary" href="tel:8434677136">Call</a><a class="btn btn-light" href="/get-quote/">Free Quote</a></div>
+<div class="sticky-mobile"><a class="btn btn-primary" href="tel:8434677136">Call</a><a class="btn btn-light" href="/get-quote/?service=Lawn+care+%26+landscaping">Free Quote</a></div>
+<script src="/assets/bakerss-conversions.js"></script>
 </body>
-</html>\n<!-- Bakerss conversion measurement -->
-<script>
-document.addEventListener('DOMContentLoaded',function(){
-  function bEvent(name,params){
-    if(typeof gtag==='function'){gtag('event',name,params||{});}
-  }
-  document.querySelectorAll('a[href^="tel:"]').forEach(function(a){
-    a.addEventListener('click',function(){
-      bEvent('click_to_call',{link_url:a.getAttribute('href'),page_location:location.href});
-    });
-  });
-  document.querySelectorAll('a[href^="mailto:"]').forEach(function(a){
-    a.addEventListener('click',function(){
-      bEvent('click_to_email',{link_url:a.getAttribute('href'),page_location:location.href});
-    });
-  });
-  document.querySelectorAll('a').forEach(function(a){
-    var h=(a.getAttribute('href')||'').toLowerCase();
-    var t=(a.textContent||'').toLowerCase().trim();
-    if(h.indexOf('/get-quote')!==-1 || t.indexOf('get quote')!==-1 ||
-       t.indexOf('request a quote')!==-1 || t.indexOf('free quote')!==-1){
-      a.addEventListener('click',function(){
-        bEvent('quote_request_click',{link_url:a.getAttribute('href'),page_location:location.href});
-      });
-    }
-  });
-  document.querySelectorAll('form').forEach(function(f){
-    f.addEventListener('submit',function(){
-      var sig=((f.getAttribute('action')||'')+' '+(f.id||'')+' '+(f.getAttribute('name')||'')+' '+(f.className||'')+' '+location.pathname).toLowerCase();
-      if(sig.indexOf('quote')!==-1 || sig.indexOf('contact')!==-1){
-        bEvent('generate_lead',{form_id:f.id||'',page_location:location.href});
-      }
-    });
-  });
-});
-</script>
-<!-- /Bakerss conversion measurement -->
+</html>
+

@@ -80,7 +80,7 @@ header{position:sticky;top:0;z-index:30;background:rgba(255,255,255,.96);border-
 <article class="local"><b>Vacation Use</b><h3>Turnovers and repairs</h3><p>Rental homes benefit from cleaning, property resets, quick repair response and recurring exterior care.</p></article>
 <article class="local"><b>Waterfront Homes</b><h3>Drainage and moisture</h3><p>Waterway and pond-influenced properties may need added attention to drainage, humidity, landscaping and exterior wear.</p></article></div></div></section>
 <section class="section dark"><div class="wrap"><div class="section-head"><span class="eyebrow">Garden City Communities</span><h2 class="sh">Neighborhood-level service coverage.</h2><p class="intro">Bakerss serves properties throughout the Garden City area. Choose your community below to explore local services, or browse the full Garden City neighborhood directory.</p></div><div class="neighborhoods"><a href="/service-areas/garden-city/neighborhoods/garden-city-beach-oceanfront/">Garden City Beach Oceanfront</a>
-<a href="/service-areas/garden-city/neighborhoods/garden-city-peninsula/">Garden City Peninsula</a>
+<a href="/service-areas/garden-city/neighborhoods/garden-city-beach-oceanfront/">Garden City Peninsula</a>
 <a href="/service-areas/garden-city/neighborhoods/inlet-harbour/">Inlet Harbour</a>
 <a href="/service-areas/garden-city/neighborhoods/salters-cove/">Salters Cove</a>
 <a href="/service-areas/garden-city/neighborhoods/oceanside-village/">Oceanside Village</a>
@@ -107,42 +107,7 @@ header{position:sticky;top:0;z-index:30;background:rgba(255,255,255,.96);border-
 </section>
 </main>
 <footer class="footer"><div class="wrap"><div class="footer-grid"><div><h3>Bakerss Property Services LLC</h3><p>Veteran- and family-owned property maintenance serving the Grand Strand.</p><a href="tel:+18434677136">843-467-7136</a><a href="mailto:info@bakerss.com">info@bakerss.com</a></div><div><h4>Garden City</h4><a href="https://www.bakerss.com/service-areas/garden-city/">Garden City Services</a><a href="/service-areas/garden-city/neighborhoods/">Garden City Neighborhoods</a><a href="https://www.bakerss.com/service-areas/">All Service Areas</a></div><div><h4>Popular Services</h4><a href="https://www.bakerss.com/services/property-maintenance/">Property Maintenance</a><a href="https://www.bakerss.com/services/lawn-care/">Lawn Care</a><a href="https://www.bakerss.com/services/interior-cleaning/">Cleaning</a><a href="https://www.bakerss.com/services/handyman-services/">Handyman</a></div></div><div class="fine"><span>© 2026 Bakerss Property Services LLC · 320 Forestbrook Cove Circle · Myrtle Beach, SC 29588</span><span>Garden City · Grand Strand SC</span></div></div></footer>
-<!-- Bakerss conversion measurement -->
-<script>
-document.addEventListener('DOMContentLoaded',function(){
-  function bEvent(name,params){
-    if(typeof gtag==='function'){gtag('event',name,params||{});}
-  }
-  document.querySelectorAll('a[href^="tel:"]').forEach(function(a){
-    a.addEventListener('click',function(){
-      bEvent('click_to_call',{link_url:a.getAttribute('href'),page_location:location.href});
-    });
-  });
-  document.querySelectorAll('a[href^="mailto:"]').forEach(function(a){
-    a.addEventListener('click',function(){
-      bEvent('click_to_email',{link_url:a.getAttribute('href'),page_location:location.href});
-    });
-  });
-  document.querySelectorAll('a').forEach(function(a){
-    var h=(a.getAttribute('href')||'').toLowerCase();
-    var t=(a.textContent||'').toLowerCase().trim();
-    if(h.indexOf('/get-quote')!==-1 || t.indexOf('get quote')!==-1 ||
-       t.indexOf('request a quote')!==-1 || t.indexOf('free quote')!==-1){
-      a.addEventListener('click',function(){
-        bEvent('quote_request_click',{link_url:a.getAttribute('href'),page_location:location.href});
-      });
-    }
-  });
-  document.querySelectorAll('form').forEach(function(f){
-    f.addEventListener('submit',function(){
-      var sig=((f.getAttribute('action')||'')+' '+(f.id||'')+' '+(f.getAttribute('name')||'')+' '+(f.className||'')+' '+location.pathname).toLowerCase();
-      if(sig.indexOf('quote')!==-1 || sig.indexOf('contact')!==-1){
-        bEvent('generate_lead',{form_id:f.id||'',page_location:location.href});
-      }
-    });
-  });
-});
-</script>
-<!-- /Bakerss conversion measurement -->
+
+<script src="/assets/bakerss-conversions.js"></script>
 </body>
 </html>
