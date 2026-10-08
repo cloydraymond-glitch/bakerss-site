@@ -270,7 +270,7 @@ footer{background:#060606;border-top:1px solid var(--border);padding:52px 0 24px
 </section>
 <section class="section alt">
 <div class="wrap owner">
-<img alt="Ray and Courtney Cloyd, owners of Bakerss Property Services in Myrtle Beach SC" decoding="async" loading="lazy" src="https://www.bakerss.com/images/about1.jpg"/>
+<img alt="Ray and Courtney Cloyd, owners of Bakerss Property Services in Myrtle Beach SC" decoding="async" loading="lazy" src="https://www.bakerss.com/images/about1.jpg" width="817" height="699"/>
 <div>
 <span class="eyebrow" style="text-align:left">Local Ownership</span>
 <h2>Owned by Ray &amp; Courtney Cloyd</h2>
@@ -400,43 +400,9 @@ footer{background:#060606;border-top:1px solid var(--border);padding:52px 0 24px
 <div class="copyright"><span>© 2026 Bakerss Property Services · Horry County, SC · Licensed &amp; Insured</span><span>Painting Services · Interior Painting · Exterior Painting · Vacation Rental Refresh</span></div>
 </div>
 </footer>
-<div class="sticky"><a href="tel:8434677136">📞 Call</a><a href="sms:8434677136">💬 Text</a><a class="primary" href="https://www.bakerss.com/get-quote/">Free Quote</a></div>
+<div class="sticky"><a href="tel:8434677136">📞 Call</a><a href="sms:+18434677136">💬 Text</a><a class="primary" href="https://www.bakerss.com/get-quote/">Free Quote</a></div>
+<script src="/assets/bakerss-conversions.js"></script>
 </body>
 </html>
-\n<!-- Bakerss conversion measurement -->
-<script>
-document.addEventListener('DOMContentLoaded',function(){
-  function bEvent(name,params){
-    if(typeof gtag==='function'){gtag('event',name,params||{});}
-  }
-  document.querySelectorAll('a[href^="tel:"]').forEach(function(a){
-    a.addEventListener('click',function(){
-      bEvent('click_to_call',{link_url:a.getAttribute('href'),page_location:location.href});
-    });
-  });
-  document.querySelectorAll('a[href^="mailto:"]').forEach(function(a){
-    a.addEventListener('click',function(){
-      bEvent('click_to_email',{link_url:a.getAttribute('href'),page_location:location.href});
-    });
-  });
-  document.querySelectorAll('a').forEach(function(a){
-    var h=(a.getAttribute('href')||'').toLowerCase();
-    var t=(a.textContent||'').toLowerCase().trim();
-    if(h.indexOf('/get-quote')!==-1 || t.indexOf('get quote')!==-1 ||
-       t.indexOf('request a quote')!==-1 || t.indexOf('free quote')!==-1){
-      a.addEventListener('click',function(){
-        bEvent('quote_request_click',{link_url:a.getAttribute('href'),page_location:location.href});
-      });
-    }
-  });
-  document.querySelectorAll('form').forEach(function(f){
-    f.addEventListener('submit',function(){
-      var sig=((f.getAttribute('action')||'')+' '+(f.id||'')+' '+(f.getAttribute('name')||'')+' '+(f.className||'')+' '+location.pathname).toLowerCase();
-      if(sig.indexOf('quote')!==-1 || sig.indexOf('contact')!==-1){
-        bEvent('generate_lead',{form_id:f.id||'',page_location:location.href});
-      }
-    });
-  });
-});
-</script>
-<!-- /Bakerss conversion measurement -->
+
+

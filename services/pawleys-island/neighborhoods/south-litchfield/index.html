@@ -37,7 +37,7 @@ gtag('config','G-BK16EH7PF9');
 <meta content="https://www.bakerss.com/images/logo.webp" name="twitter:image"/>
 <style>
 :root{--pink:#e8186d;--pink2:#f0408a;--black:#0b0b0d;--text:#22232a;--muted:#646875;--line:#e6e7eb;--soft:#f7f7f9;--green:#16a34a;--max:1180px;--shadow:0 14px 40px rgba(0,0,0,.12);--font:"DM Sans",system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",Arial,sans-serif;--serif:"Playfair Display",Georgia,"Times New Roman",serif}
-\*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font-family:var(--font);color:var(--text);background:#fff;line-height:1.65}a{color:inherit}.wrap{max-width:var(--max);margin:auto;padding:0 22px}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font-family:var(--font);color:var(--text);background:#fff;line-height:1.65}a{color:inherit}.wrap{max-width:var(--max);margin:auto;padding:0 22px}
 .btn{display:inline-flex;align-items:center;justify-content:center;border-radius:999px;padding:12px 22px;font-weight:900;text-decoration:none;border:2px solid transparent;transition:.18s}.btn-primary{background:var(--pink);color:#fff;box-shadow:0 10px 24px rgba(232,24,109,.28)}.btn-outline{border-color:rgba(255,255,255,.38);color:#fff}.btn-light{background:#fff;color:var(--black)}.btn-ghost{border-color:var(--pink);color:var(--pink);background:#fff}
 .topbar{background:var(--black);color:#d7d7dc;font-size:13px}.topbar .wrap{display:flex;justify-content:center;gap:16px;align-items:center;min-height:38px;text-align:center;flex-wrap:wrap}.topbar a{color:#fff;font-weight:900;text-decoration:none}.site-header{position:sticky;top:0;z-index:100;background:rgba(255,255,255,.96);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}.nav{display:flex;align-items:center;justify-content:space-between;gap:22px;min-height:72px}.logo{font-size:24px;font-weight:950;text-decoration:none;letter-spacing:-.04em}.logo span{color:var(--pink)}.navlinks{display:flex;gap:4px;list-style:none;margin:0;padding:0}.navlinks a{font-size:13.5px;font-weight:800;text-decoration:none;padding:9px 10px;border-radius:10px}.navlinks a:hover{background:var(--soft);color:var(--pink)}.nav-actions{display:flex;gap:8px}
 .breadcrumb{background:#fafafa;border-bottom:1px solid var(--line)}.breadcrumb ol{display:flex;gap:8px;list-style:none;margin:0 auto;padding:12px 22px;max-width:var(--max);flex-wrap:wrap;font-size:13px}.breadcrumb li:not(:last-child)::after{content:"/";margin-left:8px;color:#999}
@@ -81,40 +81,6 @@ gtag('config','G-BK16EH7PF9');
 <div><h4>Services</h4><a href="/service-areas/pawleys-island/lawn-care/">Lawn Care</a><a href="/service-areas/pawleys-island/landscaping/">Landscaping</a><a href="/service-areas/pawleys-island/pressure-washing/">Pressure Washing</a><a href="/service-areas/pawleys-island/handyman-services/">Handyman</a></div>
 <div><h4>Nearby Areas</h4><a href="/service-areas/litchfield-beach/">Litchfield Beach</a><a href="/service-areas/murrells-inlet/">Murrells Inlet</a><a href="/service-areas/garden-city/">Garden City</a><a href="/service-areas/surfside-beach/">Surfside Beach</a></div></div>
 <div class="fine"><span>© 2026 Bakerss Property Services LLC. All rights reserved.</span><span>Pawleys Island neighborhood property maintenance</span></div></div></footer>
-<div class="sticky-mobile"><a class="btn btn-primary" href="tel:8434677136">Call</a><a class="btn btn-light" href="/get-quote/">Free Quote</a></div></body></html>\n<!-- Bakerss conversion measurement -->
-<script>
-document.addEventListener('DOMContentLoaded',function(){
-  function bEvent(name,params){
-    if(typeof gtag==='function'){gtag('event',name,params||{});}
-  }
-  document.querySelectorAll('a[href^="tel:"]').forEach(function(a){
-    a.addEventListener('click',function(){
-      bEvent('click_to_call',{link_url:a.getAttribute('href'),page_location:location.href});
-    });
-  });
-  document.querySelectorAll('a[href^="mailto:"]').forEach(function(a){
-    a.addEventListener('click',function(){
-      bEvent('click_to_email',{link_url:a.getAttribute('href'),page_location:location.href});
-    });
-  });
-  document.querySelectorAll('a').forEach(function(a){
-    var h=(a.getAttribute('href')||'').toLowerCase();
-    var t=(a.textContent||'').toLowerCase().trim();
-    if(h.indexOf('/get-quote')!==-1 || t.indexOf('get quote')!==-1 ||
-       t.indexOf('request a quote')!==-1 || t.indexOf('free quote')!==-1){
-      a.addEventListener('click',function(){
-        bEvent('quote_request_click',{link_url:a.getAttribute('href'),page_location:location.href});
-      });
-    }
-  });
-  document.querySelectorAll('form').forEach(function(f){
-    f.addEventListener('submit',function(){
-      var sig=((f.getAttribute('action')||'')+' '+(f.id||'')+' '+(f.getAttribute('name')||'')+' '+(f.className||'')+' '+location.pathname).toLowerCase();
-      if(sig.indexOf('quote')!==-1 || sig.indexOf('contact')!==-1){
-        bEvent('generate_lead',{form_id:f.id||'',page_location:location.href});
-      }
-    });
-  });
-});
-</script>
-<!-- /Bakerss conversion measurement -->
+<div class="sticky-mobile"><a class="btn btn-primary" href="tel:8434677136">Call</a><a class="btn btn-light" href="/get-quote/">Free Quote</a></div><script src="/assets/bakerss-conversions.js"></script>
+</body></html>
+
