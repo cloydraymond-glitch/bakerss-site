@@ -71,43 +71,9 @@ gtag('config','G-BK16EH7PF9');
 <section class="cta-band"><div class="container"><span class="label" style="color:var(--pink-light)">Need Help With the Property?</span><h2>Get a Clear Property-Maintenance Quote</h2><p>Tell us the address, service needed and whether the work is one-time or recurring.</p><div class="cta-group"><a class="btn-primary" href="/get-quote/">Request a Free Quote</a><a class="btn-outline" href="tel:8434677136" style="border-color:rgba(255,255,255,.3);color:#fff">Call (843) 467-7136</a></div></div></section>
 </main>
 <footer class="site-footer"><div class="container"><div class="footer-inner"><div class="footer-brand"><div class="footer-logo">Bakerss<span>.</span></div><p>Property maintenance for homes, rentals, apartments, HOAs and commercial properties across the Grand Strand.</p><div class="footer-contact"><a href="tel:8434677136">(843) 467-7136</a><a href="mailto:info@bakerss.com">info@bakerss.com</a></div></div><div><div class="footer-heading">Services</div><div class="footer-links"><a href="/services/property-maintenance/">Property Maintenance</a><a href="/services/lawn-care/">Lawn Care</a><a href="/services/interior-cleaning/">Interior Cleaning</a><a href="/services/pool-maintenance/">Pool Maintenance</a><a href="/services/handyman-services/">Handyman Services</a></div></div><div><div class="footer-heading">Clients</div><div class="footer-links"><a href="/services/white-glove-estate-care/">Estate Care</a><a href="/apartment-maintenance/">Apartments</a><a href="/hoa-services/">HOAs</a><a href="/services/commercial-maintenance/">Commercial</a><a href="/services/vacation-home-watch/">Second Homes</a></div></div><div><div class="footer-heading">Company</div><div class="footer-links"><a href="/about/">About</a><a href="/our-work/">Our Work</a><a href="/reviews/">Reviews</a><a href="/service-areas/">Service Areas</a><a href="/get-quote/">Get a Quote</a></div></div></div><div class="footer-bottom"><span>© 2026 Bakerss Property Services LLC. All rights reserved.</span><div class="footer-badges"><span class="footer-badge">Veteran Owned</span><span class="footer-badge">Family Owned</span><span class="footer-badge">Insured</span></div></div></div></footer>
-<div class="sticky-mobile-bar"><a class="sticky-bar-call" href="tel:8434677136">Call</a><a class="sticky-bar-text" href="sms:8434677136">Text</a><a class="sticky-bar-est" href="/get-quote/">Free Quote</a></div>
+<div class="sticky-mobile-bar"><a class="sticky-bar-call" href="tel:8434677136">Call</a><a class="sticky-bar-text" href="sms:+18434677136">Text</a><a class="sticky-bar-est" href="/get-quote/">Free Quote</a></div>
 <script>const t=document.getElementById('navToggle'),n=document.getElementById('mainNav');if(t&&n){t.addEventListener('click',()=>{const o=n.classList.toggle('open');t.setAttribute('aria-expanded',String(o));document.body.style.overflow=o?'hidden':'';});}</script>
+<script src="/assets/bakerss-conversions.js"></script>
 </body></html>
-\n<!-- Bakerss conversion measurement -->
-<script>
-document.addEventListener('DOMContentLoaded',function(){
-  function bEvent(name,params){
-    if(typeof gtag==='function'){gtag('event',name,params||{});}
-  }
-  document.querySelectorAll('a[href^="tel:"]').forEach(function(a){
-    a.addEventListener('click',function(){
-      bEvent('click_to_call',{link_url:a.getAttribute('href'),page_location:location.href});
-    });
-  });
-  document.querySelectorAll('a[href^="mailto:"]').forEach(function(a){
-    a.addEventListener('click',function(){
-      bEvent('click_to_email',{link_url:a.getAttribute('href'),page_location:location.href});
-    });
-  });
-  document.querySelectorAll('a').forEach(function(a){
-    var h=(a.getAttribute('href')||'').toLowerCase();
-    var t=(a.textContent||'').toLowerCase().trim();
-    if(h.indexOf('/get-quote')!==-1 || t.indexOf('get quote')!==-1 ||
-       t.indexOf('request a quote')!==-1 || t.indexOf('free quote')!==-1){
-      a.addEventListener('click',function(){
-        bEvent('quote_request_click',{link_url:a.getAttribute('href'),page_location:location.href});
-      });
-    }
-  });
-  document.querySelectorAll('form').forEach(function(f){
-    f.addEventListener('submit',function(){
-      var sig=((f.getAttribute('action')||'')+' '+(f.id||'')+' '+(f.getAttribute('name')||'')+' '+(f.className||'')+' '+location.pathname).toLowerCase();
-      if(sig.indexOf('quote')!==-1 || sig.indexOf('contact')!==-1){
-        bEvent('generate_lead',{form_id:f.id||'',page_location:location.href});
-      }
-    });
-  });
-});
-</script>
-<!-- /Bakerss conversion measurement -->
+
+
