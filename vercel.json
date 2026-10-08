@@ -242,11 +242,6 @@
       "permanent": true
     },
     {
-      "source": "/service-areas/garden-city/neighborhoods/",
-      "destination": "/service-areas/garden-city/",
-      "permanent": true
-    },
-    {
       "source": "/service-areas/garden-city/neighborhoods/garden-city-peninsula/",
       "destination": "/service-areas/garden-city/neighborhoods/garden-city-beach-oceanfront/",
       "permanent": true
@@ -453,7 +448,247 @@
     },
     {
       "source": "/service-areas/carolina-forest/kawn-care/",
-      "destination": "/service-areas/carolina-forest/lawn-care/",
+      "destination": "/services/lawn-care/",
+      "permanent": true
+    },
+    {
+      "source": "/learning-center/airbnb-superhost-guide/",
+      "destination": "/learning-center/airbnb-superhost-myrtle-beach-guide/",
+      "permanent": true
+    },
+    {
+      "source": "/learning-center/airbnb-vs-long-term/",
+      "destination": "/learning-center/airbnb-vs-long-term-rental-maintenance-myrtle-beach/",
+      "permanent": true
+    },
+    {
+      "source": "/learning-center/best-neighborhoods-myrtle-beach/",
+      "destination": "/learning-center/best-neighborhoods-myrtle-beach-investment-property-2025/",
+      "permanent": true
+    },
+    {
+      "source": "/learning-center/carolina-forest-guide/",
+      "destination": "/learning-center/property-owners-guide-carolina-forest-myrtle-beach/",
+      "permanent": true
+    },
+    {
+      "source": "/learning-center/commercial-cleaning-guide/",
+      "destination": "/learning-center/commercial-cleaning-guide-myrtle-beach/",
+      "permanent": true
+    },
+    {
+      "source": "/learning-center/concrete-curbing-guide/",
+      "destination": "/learning-center/concrete-landscaping-curbing-guide/",
+      "permanent": true
+    },
+    {
+      "source": "/learning-center/concrete-curbing-roi/",
+      "destination": "/learning-center/concrete-curbing-roi-myrtle-beach/",
+      "permanent": true
+    },
+    {
+      "source": "/learning-center/concrete-curbing-vs-edging/",
+      "destination": "/learning-center/concrete-curbing-vs-plastic-edging-myrtle-beach/",
+      "permanent": true
+    },
+    {
+      "source": "/learning-center/curb-appeal-myrtle-beach/",
+      "destination": "/learning-center/curb-appeal-upgrades-myrtle-beach/",
+      "permanent": true
+    },
+    {
+      "source": "/learning-center/deck-building-guide/",
+      "destination": "/learning-center/deck-building-guide-myrtle-beach/",
+      "permanent": true
+    },
+    {
+      "source": "/learning-center/deck-maintenance/bakerss-lc-deck-maintenance.html",
+      "destination": "/learning-center/deck-maintenance-guide-myrtle-beach/",
+      "permanent": true
+    },
+    {
+      "source": "/learning-center/deck-staining-coastal-sc.html/",
+      "destination": "/learning-center/deck-staining-coastal-sc/",
+      "permanent": true
+    },
+    {
+      "source": "/learning-center/deck-staining-guide/",
+      "destination": "/learning-center/deck-staining-sealing-myrtle-beach-guide/",
+      "permanent": true
+    },
+    {
+      "source": "/learning-center/deep-clean-vs-turnover/",
+      "destination": "/learning-center/deep-clean-vs-turnover-cleaning/",
+      "permanent": true
+    },
+    {
+      "source": "/learning-center/flooring-replacement-timing/",
+      "destination": "/learning-center/when-to-replace-flooring-vacation-rental-myrtle-beach/",
+      "permanent": true
+    },
+    {
+      "source": "/learning-center/grande-dunes-guide/",
+      "destination": "/learning-center/property-owners-guide-grande-dunes-myrtle-beach/",
+      "permanent": true
+    },
+    {
+      "source": "/learning-center/gutter-cleaning-guide/",
+      "destination": "/learning-center/how-often-clean-gutters-myrtle-beach/",
+      "permanent": true
+    },
+    {
+      "source": "/learning-center/gutter-damage-prevention/",
+      "destination": "/learning-center/what-happens-skip-gutter-cleaning-myrtle-beach/",
+      "permanent": true
+    },
+    {
+      "source": "/learning-center/handyman-checklist/",
+      "destination": "/learning-center/vacation-rental-handyman-checklist-myrtle-beach/",
+      "permanent": true
+    },
+    {
+      "source": "/learning-center/handyman-guide-myrtle-beach/",
+      "destination": "/learning-center/finding-reliable-handyman-myrtle-beach-guide/",
+      "permanent": true
+    },
+    {
+      "source": "/learning-center/handyman-vs-contractor/",
+      "destination": "/learning-center/handyman-vs-contractor-myrtle-beach/",
+      "permanent": true
+    },
+    {
+      "source": "/learning-center/hoa-maintenance/",
+      "destination": "/learning-center/hoa-property-maintenance-guide-horry-county/",
+      "permanent": true
+    },
+    {
+      "source": "/learning-center/how-to-hire-maintenance/",
+      "destination": "/learning-center/how-to-hire-property-maintenance-company-myrtle-beach/",
+      "permanent": true
+    },
+    {
+      "source": "/learning-center/hurrican-prep-myrtle-beach/",
+      "destination": "/learning-center/hurricane-prep-myrtle-beach/",
+      "permanent": true
+    },
+    {
+      "source": "/learning-center/hurricane-season-checklist/",
+      "destination": "/learning-center/hurricane-season-checklist-myrtle-beach-homeowners-2025/",
+      "permanent": true
+    },
+    {
+      "source": "/learning-center/interior-paint-rentals/",
+      "destination": "/learning-center/when-to-repaint-vacation-rental-interior-myrtle-beach/",
+      "permanent": true
+    },
+    {
+      "source": "/learning-center/junk-removal-guide/",
+      "destination": "/learning-center/junk-removal-guide-myrtle-beach/",
+      "permanent": true
+    },
+    {
+      "source": "/learning-center/landscaping-coastal-sc/",
+      "destination": "/learning-center/best-plants-coastal-south-carolina-landscaping/",
+      "permanent": true
+    },
+    {
+      "source": "/learning-center/lawn-care-calendar/",
+      "destination": "/learning-center/lawn-care-calendar-coastal-sc/",
+      "permanent": true
+    },
+    {
+      "source": "/learning-center/mold-prevention-myrtle-beach/",
+      "destination": "/learning-center/mold-prevention-myrtle-beach-coastal-homes/",
+      "permanent": true
+    },
+    {
+      "source": "/learning-center/move-in-cleaning/",
+      "destination": "/learning-center/move-in-move-out-cleaning-myrtle-beach/",
+      "permanent": true
+    },
+    {
+      "source": "/learning-center/murrells-inlet-guide/",
+      "destination": "/learning-center/property-owners-guide-murrells-inlet-sc/",
+      "permanent": true
+    },
+    {
+      "source": "/learning-center/myrtle-beach-property-types/",
+      "destination": "/learning-center/property-maintenance-by-type-myrtle-beach/",
+      "permanent": true
+    },
+    {
+      "source": "/learning-center/new-construction-maintenance/",
+      "destination": "/learning-center/new-construction-home-maintenance-myrtle-beach/",
+      "permanent": true
+    },
+    {
+      "source": "/learning-center/nmb-neighborhood-guide/",
+      "destination": "/learning-center/north-myrtle-beach-neighborhood-guide/",
+      "permanent": true
+    },
+    {
+      "source": "/learning-center/out-of-state-owner/",
+      "destination": "/learning-center/managing-myrtle-beach-property-out-of-state/",
+      "permanent": true
+    },
+    {
+      "source": "/learning-center/painting-coastal-homes/",
+      "destination": "/learning-center/exterior-paint-coastal-homes-myrtle-beach/",
+      "permanent": true
+    },
+    {
+      "source": "/learning-center/painting-cost-guide/",
+      "destination": "/learning-center/exterior-painting-cost-guide-myrtle-beach-2025/",
+      "permanent": true
+    },
+    {
+      "source": "/learning-center/pool-deck-maintenance/",
+      "destination": "/learning-center/pool-deck-maintenance-myrtle-beach/",
+      "permanent": true
+    },
+    {
+      "source": "/learning-center/pressure-wash-frequency/",
+      "destination": "/learning-center/how-often-pressure-wash-myrtle-beach/",
+      "permanent": true
+    },
+    {
+      "source": "/learning-center/property-taxes-myrtle-beach/",
+      "destination": "/learning-center/myrtle-beach-property-taxes-investors-2025/",
+      "permanent": true
+    },
+    {
+      "source": "/learning-center/salt-air-damage/",
+      "destination": "/learning-center/salt-air-home-damage/",
+      "permanent": true
+    },
+    {
+      "source": "/learning-center/soft-washing/",
+      "destination": "/learning-center/soft-washing-vs-pressure-washing/",
+      "permanent": true
+    },
+    {
+      "source": "/learning-center/str-maintenance-guide/",
+      "destination": "/learning-center/short-term-rental-maintenance-guide-myrtle-beach/",
+      "permanent": true
+    },
+    {
+      "source": "/learning-center/str-renovation-roi/",
+      "destination": "/learning-center/vacation-rental-renovation-roi-myrtle-beach/",
+      "permanent": true
+    },
+    {
+      "source": "/learning-center/vacation-rental-reviews/",
+      "destination": "/learning-center/property-maintenance-airbnb-reviews-myrtle-beach/",
+      "permanent": true
+    },
+    {
+      "source": "/learning-center/weed-control/",
+      "destination": "/learning-center/weed-control-guide-myrtle-beach/",
+      "permanent": true
+    },
+    {
+      "source": "/learning-center/wild-wing-guide/",
+      "destination": "/learning-center/property-owners-guide-wild-wing-plantation-conway/",
       "permanent": true
     }
   ],
