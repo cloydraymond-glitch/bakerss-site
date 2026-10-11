@@ -35,49 +35,64 @@ export default async function handler(req, res) {
     return reply(res, 400, {success:false, message:'Please check your name, US phone number, ZIP code and cleaning selections.'});
   }
   const eventId = randomUUID();
+  const apiKey = process.env.RESEND_API_KEY;
+  const sender = string(process.env.CLEANING_FROM_EMAIL, 254);
+  if (!apiKey || !/^[^\s@<>]+@[^\s@<>]+\.[^\s@<>]+$/.test(sender)) {
+    console.error('cleaning_email_config_missing', {eventId});
+    return reply(res, 503, {success:false, message:'Online requests are temporarily unavailable. Please call 843-467-7136 so we can help.'});
+  }
   const fields = {
-    name, phone, ...(email ? {email} : {}), 'ZIP code':zip,
+    'Name':name, 'Phone':phone, 'Email':email || 'Not provided', 'ZIP code':zip,
     'Cleaning type':type, 'Service needed':service,
     'Property / timing details':string(body.details, 1500) || 'Not provided',
     'Campaign source':string(body.utm_source, 100), 'Campaign medium':string(body.utm_medium, 100),
     'Campaign name':string(body.utm_campaign, 100), 'Ad content':string(body.utm_content, 100),
-    'Request reference':eventId, 'Ad measurement permission':body.measurement === true ? 'Yes' : 'No',
-    _subject:`Bakerss cleaning quote: ${type} / ${zip}`, _template:'table', _captcha:'false',
-    _url:PAGE, ...(email ? {_replyto:email} : {})
+    'Request reference':eventId, 'Ad measurement permission':body.measurement === true ? 'Yes' : 'No'
   };
-  const emailDiagnostic = { stage:'connecting' };
-  try {
-    const response = await fetch('https://formsubmit.co/ajax/info@bakerss.com', {
-      method:'POST', headers:{'Content-Type':'application/json', Accept:'application/json', Referer:PAGE},
-      body:JSON.stringify(fields), signal:AbortSignal.timeout(12000)
-    });
-    emailDiagnostic.status = response.status;
-    emailDiagnostic.contentType = (response.headers.get('content-type') || '').split(';')[0];
-    emailDiagnostic.stage = 'reading_response';
-    const text = await response.text();
-    let result;
-    try { result = JSON.parse(text); } catch {
-      emailDiagnostic.stage = 'non_json_response';
-      emailDiagnostic.reason = /cloudflare|access denied|forbidden|challenge|captcha/i.test(text) ? 'provider_block_or_challenge' : 'unexpected_response_format';
-      throw new Error('non_json');
-    }
-    if (!response.ok || !(result.success === true || result.success === 'true')) {
+  const emailPayload = {
+    from:`Bakerss Cleaning Quotes <${sender}>`, to:['info@bakerss.com'],
+    subject:`Bakerss cleaning quote: ${type} / ${zip}`,
+    text:Object.entries(fields).map(([key,value]) => `${key}: ${value}`).join('\n\n'),
+    ...(email ? {reply_to:email} : {})
+  };
+  let emailAccepted = false;
+  let emailDiagnostic;
+  for (let attempt=0; attempt<2; attempt++) {
+    emailDiagnostic = {stage:'connecting', attempt:attempt+1};
+    let retry = false;
+    try {
+      const response = await fetch('https://api.resend.com/emails', {
+        method:'POST', headers:{'Content-Type':'application/json', Accept:'application/json',
+          Authorization:`Bearer ${apiKey}`, 'Idempotency-Key':`cleaning-${eventId}`},
+        body:JSON.stringify(emailPayload), signal:AbortSignal.timeout(6000)
+      });
+      emailDiagnostic.status = response.status;
+      emailDiagnostic.contentType = (response.headers.get('content-type') || '').split(';')[0];
+      retry = response.status >= 500;
+      const raw = await response.text();
+      let result;
+      try { result = JSON.parse(raw); } catch {
+        emailDiagnostic.stage = 'non_json_response';
+        emailDiagnostic.reason = 'unexpected_response_format';
+        throw new Error('non_json');
+      }
+      if (response.ok && typeof result.id === 'string' && result.id.length > 0) {
+        emailAccepted = true;
+        break;
+      }
       emailDiagnostic.stage = 'provider_rejected';
-      // Classify the provider message; never log its raw body or customer fields.
-      const message = typeof result.message === 'string' ? result.message : JSON.stringify(result.message || '');
-      emailDiagnostic.reason = /activat|confirm.*email|verif/i.test(message) ? 'activation_required' :
-        /referer|referrer|origin|domain|website/i.test(message) ? 'website_origin_requirement' :
-        /captcha|bot|spam|block|forbidden/i.test(message) ? 'provider_block_or_challenge' :
-        /email.*invalid|invalid.*email/i.test(message) ? 'invalid_email' :
-        /limit|too many/i.test(message) ? 'provider_rate_limit' : 'provider_rejection_other';
-      throw new Error('not_accepted');
+      // Log only a constrained error category, never raw responses or customer data.
+      const code = result.name;
+      emailDiagnostic.reason = typeof code === 'string' && /^[a-z_]{1,60}$/.test(code) ? code : 'provider_rejection_other';
+    } catch (error) {
+      if (emailDiagnostic.stage === 'connecting') {
+        emailDiagnostic.reason = error.name === 'TimeoutError' ? 'upstream_timeout' : 'upstream_connection_failed';
+        retry = true;
+      }
     }
-  } catch (error) {
-    if (emailDiagnostic.stage === 'connecting') {
-      emailDiagnostic.reason = error.name === 'TimeoutError' ? 'upstream_timeout' : 'upstream_connection_failed';
-      const code = error.cause?.code;
-      if (typeof code === 'string' && /^[A-Z0-9_]{1,60}$/.test(code)) emailDiagnostic.transportCode = code;
-    }
+    if (!retry || attempt === 1) break;
+  }
+  if (!emailAccepted) {
     console.error('cleaning_email_not_confirmed', {eventId, ...emailDiagnostic});
     return reply(res, 502, {success:false, message:'We could not confirm your request. Please call 843-467-7136 so we can help.'});
   }
