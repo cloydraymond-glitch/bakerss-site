@@ -45,15 +45,40 @@ export default async function handler(req, res) {
     _subject:`Bakerss cleaning quote: ${type} / ${zip}`, _template:'table', _captcha:'false',
     _url:PAGE, ...(email ? {_replyto:email} : {})
   };
+  const emailDiagnostic = { stage:'connecting' };
   try {
     const response = await fetch('https://formsubmit.co/ajax/info@bakerss.com', {
       method:'POST', headers:{'Content-Type':'application/json', Accept:'application/json', Referer:PAGE},
       body:JSON.stringify(fields), signal:AbortSignal.timeout(12000)
     });
-    const result = await response.json();
-    if (!response.ok || !(result.success === true || result.success === 'true')) throw new Error('not accepted');
-  } catch {
-    console.error('cleaning_email_not_confirmed', {eventId});
+    emailDiagnostic.status = response.status;
+    emailDiagnostic.contentType = (response.headers.get('content-type') || '').split(';')[0];
+    emailDiagnostic.stage = 'reading_response';
+    const text = await response.text();
+    let result;
+    try { result = JSON.parse(text); } catch {
+      emailDiagnostic.stage = 'non_json_response';
+      emailDiagnostic.reason = /cloudflare|access denied|forbidden|challenge|captcha/i.test(text) ? 'provider_block_or_challenge' : 'unexpected_response_format';
+      throw new Error('non_json');
+    }
+    if (!response.ok || !(result.success === true || result.success === 'true')) {
+      emailDiagnostic.stage = 'provider_rejected';
+      // Classify the provider message; never log its raw body or customer fields.
+      const message = typeof result.message === 'string' ? result.message : JSON.stringify(result.message || '');
+      emailDiagnostic.reason = /activat|confirm.*email|verif/i.test(message) ? 'activation_required' :
+        /referer|referrer|origin|domain|website/i.test(message) ? 'website_origin_requirement' :
+        /captcha|bot|spam|block|forbidden/i.test(message) ? 'provider_block_or_challenge' :
+        /email.*invalid|invalid.*email/i.test(message) ? 'invalid_email' :
+        /limit|too many/i.test(message) ? 'provider_rate_limit' : 'provider_rejection_other';
+      throw new Error('not_accepted');
+    }
+  } catch (error) {
+    if (emailDiagnostic.stage === 'connecting') {
+      emailDiagnostic.reason = error.name === 'TimeoutError' ? 'upstream_timeout' : 'upstream_connection_failed';
+      const code = error.cause?.code;
+      if (typeof code === 'string' && /^[A-Z0-9_]{1,60}$/.test(code)) emailDiagnostic.transportCode = code;
+    }
+    console.error('cleaning_email_not_confirmed', {eventId, ...emailDiagnostic});
     return reply(res, 502, {success:false, message:'We could not confirm your request. Please call 843-467-7136 so we can help.'});
   }
   // Email acceptance is independent of advertising measurement; never lose a lead because Meta fails.
