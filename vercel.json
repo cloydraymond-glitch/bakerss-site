@@ -711,5 +711,10 @@
         }
       ]
     }
-  ]
+  ],
+  "functions": {
+    "api/cleaning-lead.mjs": {
+      "maxDuration": 30
+    }
+  }
 }
