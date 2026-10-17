@@ -690,6 +690,46 @@
       "source": "/learning-center/wild-wing-guide/",
       "destination": "/learning-center/property-owners-guide-wild-wing-plantation-conway/",
       "permanent": true
+    },
+    {
+      "source": "/services/carolina-forest/neighborhoods/avalon/bellegrove-preserve/",
+      "destination": "/service-areas/carolina-forest/",
+      "permanent": true
+    },
+    {
+      "source": "/services/carolina-forest/neighborhoods/clear-pond/covington-lake-and-covington-lake-east/",
+      "destination": "/service-areas/carolina-forest/",
+      "permanent": true
+    },
+    {
+      "source": "/services/carolina-forest/neighborhoods/waterbridge/",
+      "destination": "/service-areas/carolina-forest/",
+      "permanent": true
+    },
+    {
+      "source": "/services/carolina-forest/neighborhoods/waterway-palms-plantation/",
+      "destination": "/service-areas/carolina-forest/",
+      "permanent": true
+    },
+    {
+      "source": "/services/georgetown-county/carolina-forest/neighborhoods/avalon/bellegrove-preserve/",
+      "destination": "/service-areas/carolina-forest/",
+      "permanent": true
+    },
+    {
+      "source": "/services/georgetown-county/carolina-forest/neighborhoods/clear-pond/covington-lake-and-covington-lake-east/",
+      "destination": "/service-areas/carolina-forest/",
+      "permanent": true
+    },
+    {
+      "source": "/services/georgetown-county/carolina-forest/neighborhoods/waterbridge/",
+      "destination": "/service-areas/carolina-forest/",
+      "permanent": true
+    },
+    {
+      "source": "/services/georgetown-county/carolina-forest/neighborhoods/waterway-palms-plantation/",
+      "destination": "/service-areas/carolina-forest/",
+      "permanent": true
     }
   ],
   "headers": [
