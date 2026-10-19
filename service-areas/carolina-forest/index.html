@@ -1,42 +1,168 @@
 <!DOCTYPE html>
-
-<html lang="en-US">
-<head>
-<!-- Bakerss GA4 -->
-<script async="" src="https://www.googletagmanager.com/gtag/js?id=G-BK16EH7PF9"></script>
-<script>
-window.dataLayer=window.dataLayer||[];
-function gtag(){dataLayer.push(arguments);}
-gtag('js',new Date());
-gtag('config','G-BK16EH7PF9');
-</script>
-<!-- /Bakerss GA4 -->
+<html lang="en">
+<head><style>
+:root{--pink:#e8197d;--pink2:#f0408a;--black:#0b0b0d;--black2:#151519;--text:#22232a;--muted:#646875;--line:#e6e7eb;--soft:#f7f7f9;--max:1180px;--shadow:0 14px 40px rgba(0,0,0,.12);--font:'DM Sans',Inter,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",Arial,sans-serif;--serif:'Playfair Display',Georgia,"Times New Roman",serif}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font-family:var(--font);color:var(--text);font-size:16px;line-height:1.65}img{max-width:100%;display:block}a{color:inherit}.wrap{max-width:var(--max);margin:auto;padding:0 22px}
+.btn{display:inline-flex;align-items:center;justify-content:center;border-radius:999px;padding:12px 22px;font-weight:900;text-decoration:none;border:2px solid transparent;font-size:14px}.btn-primary{background:var(--pink);color:#fff}.btn-light{background:#fff;color:var(--black)}.topbar{background:var(--black);color:#ddd;font-size:13px}.topbar .wrap{min-height:38px;display:flex;justify-content:center;align-items:center;gap:14px;flex-wrap:wrap}.topbar a{color:#fff;font-weight:900;text-decoration:none}
+header{position:sticky;top:0;z-index:30;background:rgba(255,255,255,.96);border-bottom:1px solid var(--line);backdrop-filter:blur(10px)}.nav{min-height:72px;display:flex;align-items:center;justify-content:space-between;gap:22px}.logo{font-size:24px;font-weight:950;text-decoration:none;letter-spacing:-.04em}.logo span{color:var(--pink)}.navlinks{display:flex;align-items:center;gap:6px}.navlinks a{font-size:13.5px;font-weight:800;text-decoration:none;padding:8px 10px;border-radius:10px}.navlinks a:hover{background:var(--soft);color:var(--pink)}
+.hero{position:relative;min-height:610px;display:flex;align-items:center;color:#fff;overflow:hidden;isolation:isolate}.hero img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:-2}.hero:after{content:"";position:absolute;inset:0;background:linear-gradient(105deg,rgba(5,5,8,.97),rgba(8,8,12,.90) 46%,rgba(44,15,30,.8) 78%,rgba(5,5,8,.92));z-index:-1}.hero .wrap{width:100%;padding-top:88px;padding-bottom:88px}.kicker{display:inline-flex;color:#ffd7e7;background:rgba(232,24,109,.22);border:1px solid rgba(232,24,109,.55);border-radius:999px;padding:7px 12px;font-size:12px;font-weight:950;letter-spacing:.08em;text-transform:uppercase}.hero h1{font-family:var(--serif);font-size:clamp(38px,6vw,66px);line-height:1.04;letter-spacing:-.045em;max-width:940px;margin:18px 0}.hero h1 em{color:var(--pink2)}.lead{font-size:18px;color:#d4d4dc;max-width:830px;line-height:1.85}.hero-ctas{display:flex;gap:10px;flex-wrap:wrap;margin-top:24px}
+.section{padding:74px 0}.alt{background:var(--soft)}.dark{background:var(--black);color:#fff}.section-head{max-width:920px;margin-bottom:32px}.eyebrow{font-size:11.5px;color:var(--pink);letter-spacing:.13em;text-transform:uppercase;font-weight:950}.sh{font-family:var(--serif);font-size:clamp(28px,4vw,44px);line-height:1.12;letter-spacing:-.03em;margin:7px 0 12px}.intro{color:var(--muted);font-size:16.5px;line-height:1.85}.dark .intro{color:#c7c7ce}
+.service-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}.card{background:#fff;border:1px solid var(--line);border-radius:16px;padding:19px;text-decoration:none;box-shadow:0 6px 20px rgba(0,0,0,.05)}.card:hover{border-color:var(--pink);transform:translateY(-2px)}.card h3{font-size:15.5px;margin:0 0 6px}.card p{font-size:13px;color:var(--muted);margin:0}
+.local-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:15px}.local{background:#fff;border:1px solid var(--line);border-radius:18px;padding:23px}.local b{color:var(--pink);font-size:12px;letter-spacing:.1em;text-transform:uppercase}.local h3{margin:7px 0}.local p{color:var(--muted);margin:0;font-size:14.5px}
+.neighborhoods{display:flex;flex-wrap:wrap;gap:9px}.neighborhoods span{background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.16);border-radius:999px;padding:8px 13px;font-size:13px}.hub-link{margin-top:22px}.faq{display:grid;gap:10px;max-width:950px}.faq details{background:#fff;border:1px solid var(--line);border-radius:14px;padding:16px 20px}.faq summary{font-weight:900;cursor:pointer}.faq p{color:var(--muted);font-size:14.5px}
+.cta{background:linear-gradient(135deg,var(--black),#280b19);color:#fff;text-align:center;padding:76px 0}.cta p{color:#c7c7ce;max-width:760px;margin:0 auto 24px}.footer{background:#070708;color:#9696a0;padding:46px 0 24px}.footer-grid{display:grid;grid-template-columns:1.5fr 1fr 1fr;gap:28px}.footer h3,.footer h4{color:#fff}.footer a{display:block;color:#9696a0;text-decoration:none;font-size:13px;margin:5px 0}.fine{border-top:1px solid #1f1f25;margin-top:26px;padding-top:15px;font-size:11.5px;display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}
+@media(max-width:950px){.navlinks{display:none}.service-grid{grid-template-columns:repeat(2,1fr)}.local-grid{grid-template-columns:1fr}.footer-grid{grid-template-columns:1fr 1fr}}
+@media(max-width:620px){.service-grid,.footer-grid{grid-template-columns:1fr}.section{padding:54px 0}.hero{min-height:auto}.hero .wrap{padding-top:66px;padding-bottom:60px}.hero-ctas .btn{width:100%}}
+</style><script async="" src="https://www.googletagmanager.com/gtag/js?id=G-BK16EH7PF9"></script><script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-BK16EH7PF9');</script>
 <meta charset="utf-8"/>
 <meta content="width=device-width,initial-scale=1" name="viewport"/>
-<title>Property Maintenance Carolina Forest SC | Bakerss</title>
-<meta content="Property maintenance in Carolina Forest, SC for homes, HOAs and apartments. Lawn, irrigation, pressure washing, repairs and community care. Request a quote." name="description"/>
-<link href="https://www.bakerss.com/service-areas/carolina-forest/" rel="canonical"/>
-<link href="https://www.bakerss.com/service-areas/carolina-forest/" hreflang="en-US" rel="alternate"/>
-<link href="https://www.bakerss.com/service-areas/carolina-forest/" hreflang="x-default" rel="alternate"/>
-<meta content="index,follow,max-image-preview:large,max-snippet:-1,max-video-preview:-1" name="robots"/>
-<meta content="#e8197d" name="theme-color"/>
-<meta content="Ray Cloyd" name="author"/>
-<meta content="US-SC" name="geo.region"/>
-<meta content="Carolina Forest, South Carolina" name="geo.placename"/>
-<meta content="website" property="og:type"/>
-<meta content="Property Maintenance Carolina Forest SC | Bakerss" property="og:title"/>
-<meta content="Property maintenance in Carolina Forest, SC for homes, HOAs and apartments. Lawn, irrigation, pressure washing, repairs and community care. Request a quote." property="og:description"/>
-<meta content="https://www.bakerss.com/service-areas/carolina-forest/" property="og:url"/>
-<meta content="Bakerss Property Services" property="og:site_name"/>
-<meta content="https://www.bakerss.com/images/truck.webp" property="og:image"/>
-<meta content="1200" property="og:image:width"/>
-<meta content="630" property="og:image:height"/>
-<meta content="Bakerss Property Services vehicle supporting Carolina Forest properties" property="og:image:alt"/>
-<meta content="en_US" property="og:locale"/>
-<meta content="summary_large_image" name="twitter:card"/>
-<meta content="Property Maintenance Carolina Forest SC | Bakerss" name="twitter:title"/>
-<meta content="Property maintenance in Carolina Forest, SC for homes, HOAs and apartments. Lawn, irrigation, pressure washing, repairs and community care. Request a quote." name="twitter:description"/>
-<meta content="https://www.bakerss.com/images/truck.webp" name="twitter:image"/>
+<meta content="telephone=yes" name="format-detection"/>
+<link href="https://fonts.googleapis.com/" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com/" rel="preconnect"/>
+<link as="style" href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700;900&amp;family=Playfair+Display:ital,wght@0,700;1,700&amp;display=swap" rel="preload"/>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700;900&amp;family=Playfair+Display:ital,wght@0,700;1,700&amp;display=swap" media="print" onload="this.media='all'" rel="stylesheet"/>
+<noscript><link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700;900&amp;family=Playfair+Display:ital,wght@0,700;1,700&amp;display=swap" rel="stylesheet"/></noscript>
+<style>
+:root{--pink:#e8197d;--pink2:#f0408a;--black:#0b0b0d;--black2:#151519;--text:#22232a;--muted:#646875;--line:#e6e7eb;--soft:#f7f7f9;--white:#fff;--green:#16a34a;--max:1180px;--shadow:0 14px 40px rgba(0,0,0,.12);--font:'DM Sans',Inter,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",Arial,sans-serif;--serif:'Playfair Display',Georgia,"Times New Roman",serif}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font-family:var(--font);color:var(--text);background:var(--white);font-size:16px;line-height:1.65}img{max-width:100%;height:auto;display:block}a{color:inherit}.wrap{max-width:var(--max);margin:auto;padding:0 22px}.skip{position:absolute;left:-999px;top:auto}.skip:focus{left:16px;top:16px;background:#fff;z-index:999;padding:10px 14px;border-radius:8px}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;border-radius:999px;padding:12px 22px;font-weight:900;text-decoration:none;border:2px solid transparent;line-height:1.1;transition:.18s ease;font-size:14px}.btn:hover{transform:translateY(-1px)}.btn-primary{background:var(--pink);color:#fff;box-shadow:0 10px 24px rgba(232,24,109,.28)}.btn-outline{border-color:rgba(255,255,255,.4);color:#fff}.btn-light{background:#fff;color:var(--black)}.btn-ghost{border-color:var(--pink);color:var(--pink);background:#fff}.btn-dark{background:var(--black);color:#fff}
+.topbar{background:var(--black);color:#d7d7dc;font-size:13px}.topbar .wrap{display:flex;justify-content:center;gap:16px;align-items:center;min-height:38px;text-align:center;flex-wrap:wrap}.topbar a{color:#fff;font-weight:900;text-decoration:none}
+.site-header{position:sticky;top:0;z-index:100;background:rgba(255,255,255,.96);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}.nav{display:flex;align-items:center;justify-content:space-between;gap:22px;min-height:72px}.logo{font-size:24px;font-weight:950;text-decoration:none;letter-spacing:-.04em;color:var(--black)}.logo span{color:var(--pink)}.navlinks{display:flex;align-items:center;gap:4px;list-style:none;margin:0;padding:0}.navlinks a,.navlinks button{font:inherit;font-size:13.5px;font-weight:800;color:#30313a;text-decoration:none;border:0;background:none;padding:9px 11px;border-radius:10px;cursor:pointer;white-space:nowrap}.navlinks a:hover,.navlinks button:hover{background:var(--soft);color:var(--pink)}.dropdown-wrap{position:relative}.dropdown{position:absolute;left:0;top:100%;min-width:820px;padding-top:14px;display:none}.dropdown-wrap:hover .dropdown,.dropdown-wrap:focus-within .dropdown{display:block}.dd-panel{background:#fff;border:1px solid var(--line);box-shadow:var(--shadow);border-radius:18px;padding:22px;display:grid;grid-template-columns:repeat(4,1fr);gap:20px}.dd-col strong{display:block;font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:var(--pink);margin-bottom:10px;padding-bottom:6px;border-bottom:1px solid var(--line)}.dd-col a{display:block;padding:6px 0;color:#3f424c;font-size:13.5px;text-decoration:none}.dd-col a:hover,.dd-col a.highlight{color:var(--pink);font-weight:900}.nav-actions{display:flex;gap:8px;align-items:center}.hamb{display:none;border:0;background:var(--black);color:#fff;border-radius:10px;padding:10px 12px;font-weight:900;cursor:pointer}.mobile-menu{display:none;background:var(--black);color:#fff;padding:20px 0}.mobile-menu.open{display:block}.mobile-menu a{display:block;padding:10px 0;text-decoration:none;border-bottom:1px solid rgba(255,255,255,.08);color:#ddd;font-size:14px}.mobile-menu .mm-section{display:block;padding:10px 0 2px;font-size:10.5px;letter-spacing:.12em;text-transform:uppercase;color:rgba(255,255,255,.42);margin-top:10px}
+.hero{position:relative;color:#fff;overflow:hidden;isolation:isolate;min-height:650px;display:flex;align-items:center}.hero-img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:-2}.hero-overlay{position:absolute;inset:0;background:linear-gradient(105deg,rgba(5,5,8,.96) 0%,rgba(8,8,12,.88) 42%,rgba(44,15,30,.78) 74%,rgba(5,5,8,.92) 100%);z-index:-1}.hero .wrap{display:grid;grid-template-columns:minmax(0,1.25fr) 390px;gap:42px;align-items:center;padding-top:88px;padding-bottom:88px}.kicker{display:inline-flex;align-items:center;gap:8px;color:#ffd7e7;background:rgba(232,24,109,.22);border:1px solid rgba(232,24,109,.55);border-radius:999px;padding:7px 12px;font-size:12px;font-weight:950;letter-spacing:.08em;text-transform:uppercase}.hero h1{font-family:var(--serif);font-size:clamp(34px,5vw,64px);line-height:1.03;letter-spacing:-.045em;margin:18px 0}.hero h1 em,.sh em{color:var(--pink2);font-style:italic}.lead{font-size:17.5px;color:#d4d4dc;max-width:760px;margin:0 0 24px;line-height:1.85}.lead strong{color:#fff}.hero-ctas{display:flex;gap:10px;flex-wrap:wrap;margin:24px 0}.trust{display:flex;gap:8px;flex-wrap:wrap}.pill{border:1px solid rgba(255,255,255,.22);background:rgba(0,0,0,.38);border-radius:999px;padding:6px 10px;font-size:11.5px;color:#f0f0f5}
+.rating-badge{display:inline-flex;align-items:center;gap:8px;background:rgba(0,0,0,.45);border:1px solid rgba(255,255,255,.22);border-radius:999px;padding:7px 13px;margin-top:12px}.rating-stars{color:#ffb800;font-size:13px;letter-spacing:1px}.rating-text{font-size:12.5px;color:#e7e7ed;font-weight:700}
+.pricing-popout{position:absolute;z-index:5;top:20px;right:max(22px,calc((100vw - var(--max))/2));width:220px;background:linear-gradient(135deg,#fff,#fff4f8);color:var(--black);border:2px solid var(--pink);border-radius:18px;padding:14px 16px;text-decoration:none;box-shadow:0 18px 45px rgba(0,0,0,.32);transform:rotate(2deg);transition:.2s ease}.pricing-popout:hover{transform:rotate(0deg) translateY(-2px);box-shadow:0 22px 52px rgba(0,0,0,.4)}.pricing-popout .pricing-new{display:block;font-size:10px;letter-spacing:.14em;text-transform:uppercase;color:var(--pink);font-weight:950;margin-bottom:2px}.pricing-popout strong{display:block;font-family:var(--serif);font-size:20px;line-height:1.05}.pricing-popout .pricing-click{display:block;font-size:12px;font-weight:900;color:var(--pink);margin-top:5px}.pricing-popout .pricing-note{display:block;font-size:10.5px;color:var(--muted);margin-top:3px}
+.quote-card{color:var(--text);border-radius:22px;padding:24px;box-shadow:0 30px 80px rgba(0,0,0,.55),0 0 0 1px rgba(232,24,109,.12);background:#fff}.quote-card h2{font-size:20px;line-height:1.18;margin:0 0 8px}.quote-card p{color:var(--muted);margin:0 0 12px;font-size:13.5px}.quick-list{display:grid;gap:8px;margin:14px 0}.quick-list div{display:flex;gap:9px;align-items:flex-start;font-size:13px}.check{color:var(--green);font-weight:950;flex-shrink:0}
+.stats{display:grid;grid-template-columns:repeat(5,1fr);gap:1px;background:#26262d}.stat{background:var(--black2);color:#fff;text-align:center;padding:20px 10px}.stat b{display:block;color:var(--pink2);font-size:25px;line-height:1}.stat span{display:block;color:#aaa;font-size:11px;margin-top:4px}
+.section{padding:72px 0}.section.alt{background:var(--soft)}.section.dark{background:var(--black);color:#fff}.section-head{max-width:920px;margin-bottom:32px}.eyebrow{font-size:11.5px;color:var(--pink);letter-spacing:.13em;text-transform:uppercase;font-weight:950;margin:0 0 8px;display:block}.sh{font-family:var(--serif);font-size:clamp(26px,4vw,44px);line-height:1.12;letter-spacing:-.03em;margin:0 0 12px;color:var(--black)}.section.dark .sh{color:#fff}.intro{color:var(--muted);font-size:16.5px;margin:0;line-height:1.8}.section.dark .intro{color:#c7c7ce}
+.about-prose{max-width:860px;margin:28px 0 0;font-size:16px;line-height:1.9;color:var(--muted)}.about-prose strong{color:var(--text)}
+.service-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}.service-card{border-radius:16px;padding:18px;text-decoration:none;color:inherit;transition:.18s ease;background:#fff;border:1px solid var(--line);box-shadow:0 6px 20px rgba(0,0,0,.05)}.service-card:hover{border-color:var(--pink);transform:translateY(-2px);box-shadow:var(--shadow)}.service-card.feature{border:2px solid var(--pink);background:linear-gradient(135deg,#fff4f8,#fff)}.service-card .icon{font-size:24px;display:block;margin-bottom:7px}.service-card h3{font-size:15.5px;margin:0 0 6px;color:var(--black);line-height:1.2;font-weight:900}.service-card p{font-size:13px;color:var(--muted);margin:0;line-height:1.6}
+.city-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:14px}.city-card{border-radius:16px;padding:18px;text-decoration:none;color:var(--text);transition:.18s ease;display:block;background:#fff;border:1px solid var(--line);box-shadow:0 6px 20px rgba(0,0,0,.05)}.city-card:hover{border-color:var(--pink);transform:translateY(-2px);box-shadow:var(--shadow)}.city-card strong{display:block;font-size:18px;color:var(--black);margin-bottom:6px}.city-card span{display:block;color:var(--muted);font-size:13.5px;line-height:1.65}
+.split{display:grid;grid-template-columns:1fr 1fr;gap:28px;align-items:start}.content-box{border-radius:20px;padding:26px;background:#fff;border:1px solid var(--line);box-shadow:0 6px 20px rgba(0,0,0,.05)}.content-box ul{margin:10px 0 0;padding-left:18px;color:var(--muted)}.content-box li{margin:5px 0;font-size:14.5px}
+.why-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}.why{border-radius:16px;padding:22px;background:#fff;border:1px solid var(--line);box-shadow:0 6px 20px rgba(0,0,0,.05)}.why h3{margin:8px 0 7px;font-size:16px}.why p{margin:0;color:var(--muted);font-size:14.5px}
+.review-cta{border-radius:18px;padding:28px;background:linear-gradient(135deg,#fff4f8,#fff);border:2px solid var(--pink);display:flex;align-items:center;justify-content:space-between;gap:20px;flex-wrap:wrap}.review-cta h3{margin:0 0 6px;font-size:19px}.review-cta p{margin:0;color:var(--muted);font-size:14px;max-width:520px}.premium-banner{background:linear-gradient(135deg,#0b0b0d,#2b0d1c);color:#fff;border-radius:24px;padding:34px;display:grid;grid-template-columns:1.2fr .8fr;gap:28px;align-items:center;box-shadow:var(--shadow)}.premium-banner h2{color:#fff;margin:0 0 12px}.premium-banner p{color:#d2d2d8;margin:0 0 18px}.premium-list{display:grid;grid-template-columns:repeat(2,1fr);gap:10px}.premium-list div{background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.12);border-radius:12px;padding:12px;font-size:13px}.portal-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}.portal-card{background:#fff;border:1px solid var(--line);border-radius:16px;padding:20px;box-shadow:0 6px 20px rgba(0,0,0,.05)}.portal-card b{display:block;color:var(--pink);font-size:21px;margin-bottom:4px}.portal-card h3{font-size:15px;margin:0 0 6px}.portal-card p{font-size:13.5px;color:var(--muted);margin:0}.trade-strip{display:grid;grid-template-columns:repeat(4,1fr);gap:12px}.trade{background:var(--black2);color:#fff;border-radius:14px;padding:18px;border:1px solid #2d2d34}.trade h3{margin:0 0 5px;font-size:16px}.trade p{margin:0;color:#bdbdc5;font-size:13px}.member-badge{display:inline-flex;align-items:center;gap:8px;background:#fff;border:1px solid var(--line);border-radius:999px;padding:8px 13px;font-size:12px;font-weight:900;color:var(--black)}
+.faq{display:grid;gap:10px;max-width:940px}.faq details{border-radius:14px;padding:16px 20px;background:#fff;border:1px solid var(--line);box-shadow:0 6px 20px rgba(0,0,0,.05)}.faq details[open]{border-color:var(--pink)}.faq summary{font-weight:900;cursor:pointer;font-size:15px;line-height:1.4;list-style:none;display:flex;justify-content:space-between;gap:12px}.faq summary::-webkit-details-marker{display:none}.faq summary::after{content:'+';color:var(--pink);font-size:18px;flex-shrink:0}.faq details[open] summary::after{content:'−'}.faq p{color:var(--muted);margin:10px 0 0;font-size:14.5px;line-height:1.75}
+.cta{background:linear-gradient(135deg,var(--black),#280b19);color:#fff;text-align:center;padding:76px 0}.cta .sh{color:#fff}.cta p{color:#c7c7ce;max-width:760px;margin:0 auto 26px;font-size:15.5px}
+
+.work-preview{background:#0d0d0f;color:#fff}.work-preview .sh{color:#fff}.work-preview .intro{color:#b8b8c0}.project-preview-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.project-preview-card{display:block;background:#17171a;border:1px solid #2c2c32;border-radius:16px;overflow:hidden;color:#fff;text-decoration:none;transition:transform .2s ease,border-color .2s ease}.project-preview-card:hover{transform:translateY(-3px);border-color:var(--pink);color:#fff}.project-preview-card img{width:100%;aspect-ratio:4/3;object-fit:cover}.project-preview-body{padding:18px}.project-preview-body span{color:var(--pink);font-size:11px;font-weight:900;letter-spacing:.1em;text-transform:uppercase}.project-preview-body h3{font-size:19px;margin:5px 0 7px}.project-preview-body p{color:#b8b8c0;font-size:13.5px;line-height:1.65;margin:0}.project-preview-action{text-align:center;margin-top:26px}
+.footer{background:#070708;color:#9696a0;padding:52px 0 24px}.footer-grid{display:grid;grid-template-columns:1.7fr 1fr 1fr 1fr 1fr;gap:28px}.footer h3,.footer h4{color:#fff}.footer h4{font-size:11px;letter-spacing:.1em;text-transform:uppercase;margin:0 0 10px}.footer p,.footer a{font-size:13px;color:#9696a0}.footer a{display:block;text-decoration:none;margin:5px 0}.footer a:hover{color:var(--pink)}.fine{border-top:1px solid #1f1f25;margin-top:28px;padding-top:16px;font-size:11.5px;display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}
+.sticky-mobile{display:none;position:fixed;left:0;right:0;bottom:0;background:#08080a;border-top:2px solid var(--pink);padding:10px;z-index:120;gap:8px}.sticky-mobile .btn{flex:1;padding:11px 8px;font-size:12.5px}
+@media(max-width:1050px){.project-preview-grid{grid-template-columns:repeat(2,1fr)}.premium-banner{grid-template-columns:1fr}.portal-grid,.trade-strip{grid-template-columns:repeat(2,1fr)}.navlinks{display:none}.hamb{display:block}.dropdown{display:none!important}.hero .wrap{grid-template-columns:1fr}.quote-card{max-width:580px}.service-grid{grid-template-columns:repeat(2,1fr)}.city-grid,.split,.why-grid{grid-template-columns:1fr}.footer-grid{grid-template-columns:1fr 1fr 1fr}.stats{grid-template-columns:repeat(3,1fr)}.review-cta{flex-direction:column;align-items:flex-start;text-align:left}}
+@media(max-width:620px){.project-preview-grid,.premium-list,.portal-grid,.trade-strip{grid-template-columns:1fr}.premium-banner{padding:24px}body{padding-bottom:70px}.nav-actions .phone-btn{display:none}.hero{min-height:auto}.hero .wrap{padding-top:124px;padding-bottom:54px}.hero-ctas .btn{width:100%}.quote-card{padding:18px}.stats{grid-template-columns:repeat(2,1fr)}.service-grid,.footer-grid{grid-template-columns:1fr}.sticky-mobile{display:flex}.section{padding:54px 0}.pricing-popout{top:18px;right:18px;left:18px;width:auto;transform:none;text-align:center;padding:11px 14px}.pricing-popout strong{font-size:19px}.pricing-popout .pricing-note{display:none}}
+/* 2026 LOCAL SEO / CONVERSION ENHANCEMENTS */
+.portal-grid{grid-template-columns:repeat(3,1fr)}
+.trade-strip{grid-template-columns:repeat(3,1fr)}
+.capability-note{margin-top:18px;padding:16px 18px;border-left:4px solid var(--pink);background:#fff4f8;border-radius:10px;color:var(--muted)}
+@media(max-width:1050px){.portal-grid,.trade-strip{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:620px){.portal-grid,.trade-strip{grid-template-columns:1fr}}
+
+.hero-links{margin:6px 0 18px;font-size:13.5px;color:#cfcfd8}.hero-links a{color:#fff;font-weight:800;text-decoration:underline;text-underline-offset:3px}
+.lead-form label{display:block;font-size:12px;font-weight:800;color:var(--text);margin:10px 0 4px}
+.lead-form input,.lead-form select{width:100%;font:inherit;font-size:15px;padding:11px 12px;border:1.5px solid var(--line);border-radius:10px;background:#fff;color:var(--text)}
+.lead-form input:focus,.lead-form select:focus{outline:2px solid var(--pink);outline-offset:1px;border-color:var(--pink)}
+.lead-form .hp{position:absolute;left:-9999px;height:0;overflow:hidden}
+.lf-msg{min-height:18px;margin:8px 0 0;font-size:12.5px;font-weight:700;color:#b42318}.lf-msg.ok{color:var(--green)}
+.lf-fine{text-align:center;font-size:11.5px;color:#888;margin:6px 0 0}
+.proof-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.proof{margin:0;background:#fff;border:1px solid var(--line);border-radius:16px;padding:22px;box-shadow:0 6px 20px rgba(0,0,0,.05);display:flex;flex-direction:column;gap:10px}
+.proof blockquote{margin:0;font-size:15px;line-height:1.7;color:var(--text)}.proof figcaption{margin-top:auto;font-size:12.5px;font-weight:800;color:var(--muted)}
+.proof-more{margin:26px 0 0;text-align:center}
+@media(max-width:900px){.proof-grid{grid-template-columns:1fr}}
+
+@media(min-width:1051px){.dropdown-wrap > button[aria-expanded="true"] + .dropdown{display:block}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*::before,*::after{transition:none!important}}
+</style>
+<style>.hoa-page img{max-width:100%;display:block}
+.hoa-page a{color:inherit}
+.hoa-page .hero-b2b{background:radial-gradient(circle at 10% 20%,rgba(232,24,109,.18),transparent 35%),linear-gradient(135deg,#08080b,#181820 60%,#22081a);color:#fff;padding:80px 0 64px}
+.hoa-page .breadcrumb{display:flex;gap:6px;font-size:12px;color:rgba(255,255,255,.4);margin-bottom:18px;flex-wrap:wrap}
+.hoa-page .breadcrumb a{color:rgba(255,255,255,.5);text-decoration:none}
+.hoa-page .breadcrumb a:hover{color:var(--pink)}
+.hoa-page .badge-row{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:18px}
+.hoa-page .badge{display:inline-flex;align-items:center;gap:6px;background:rgba(232,24,109,.15);border:1px solid rgba(232,24,109,.35);border-radius:999px;padding:5px 12px;font-size:11px;font-weight:900;letter-spacing:.1em;text-transform:uppercase;color:var(--pink)}
+.hoa-page .hero-b2b h1{font-family:var(--serif);font-size:clamp(32px,5vw,58px);line-height:1.05;letter-spacing:-.04em;margin:0 0 18px}
+.hoa-page .hero-b2b h1 em{color:var(--pink2);font-style:italic}
+.hoa-page .hero-b2b .lead{font-size:17px;color:rgba(255,255,255,.75);max-width:760px;margin:0 0 28px;line-height:1.85}
+.hoa-page .hero-grid{display:grid;grid-template-columns:1fr 360px;gap:40px;align-items:start}
+.hoa-page .cta-card{background:#fff;color:var(--text);border-radius:20px;padding:24px;box-shadow:0 24px 60px rgba(0,0,0,.45)}
+.hoa-page .cta-card h3{font-size:20px;margin:0 0 8px}
+.hoa-page .cta-card p{font-size:13.5px;color:var(--muted);margin:0 0 18px}
+.hoa-page .cta-feats{display:grid;gap:8px;margin:16px 0}
+.hoa-page .cta-feat{display:flex;gap:9px;align-items:flex-start;font-size:13px}
+.hoa-page .cta-feat .ck{color:var(--green);font-weight:900;flex-shrink:0}
+.hoa-page .section{padding:72px 0}
+.hoa-page .section.alt{background:var(--soft)}
+.hoa-page .section.dark{background:var(--black);color:#fff}
+.hoa-page .sh{font-family:var(--serif);font-size:clamp(26px,4vw,42px);line-height:1.12;letter-spacing:-.03em;margin:0 0 14px;color:var(--black)}
+.hoa-page .section.dark .sh{color:#fff}
+.hoa-page .sh em{color:var(--pink);font-style:italic}
+.hoa-page .eyebrow{font-size:11.5px;color:var(--pink);letter-spacing:.13em;text-transform:uppercase;font-weight:900;margin:0 0 8px;display:block}
+.hoa-page .intro{color:var(--muted);font-size:16.5px;margin:0 0 32px;max-width:820px;line-height:1.8}
+.hoa-page .why-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+.hoa-page .why-card{background:#fff;border:1px solid var(--line);border-radius:16px;padding:22px}
+.hoa-page .why-card.dark-c{background:#14141a;border-color:#2a2a35;color:#fff}
+.hoa-page .why-card h3{font-size:16px;font-weight:800;margin:8px 0 8px;color:var(--black)}
+.hoa-page .why-card.dark-c h3{color:#fff}
+.hoa-page .why-card p{font-size:13.5px;color:var(--muted);margin:0;line-height:1.65}
+.hoa-page .why-card.dark-c p{color:#9999aa}
+.hoa-page .icon{font-size:26px;display:block;margin-bottom:4px}
+.hoa-page .service-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+.hoa-page .svc-card{background:#fff;border:1px solid var(--line);border-radius:16px;padding:20px;text-decoration:none;color:inherit;transition:.15s ease}
+.hoa-page .svc-card:hover{border-color:var(--pink);transform:translateY(-2px);box-shadow:var(--shadow)}
+.hoa-page .svc-card h3{font-size:15.5px;font-weight:800;margin:8px 0 6px}
+.hoa-page .svc-card p{font-size:13px;color:var(--muted);margin:0;line-height:1.6}
+.hoa-page .svc-card .price-t{font-size:12px;color:var(--pink);font-weight:900;margin-top:10px}
+.hoa-page .feature-card{background:#fff;border:1px solid var(--line);border-radius:16px;padding:20px;box-shadow:0 6px 20px rgba(0,0,0,.05)}
+.hoa-page .feature-card h3{font-size:15.5px;font-weight:800;margin:8px 0 6px;color:var(--black)}
+.hoa-page .feature-card p{font-size:13px;color:var(--muted);margin:0;line-height:1.6}
+.hoa-page .compare-wrap{overflow-x:auto;margin-top:24px}
+.hoa-page .compare-table{width:100%;border-collapse:collapse;font-size:14px;min-width:500px}
+.hoa-page .compare-table th{padding:12px 14px;text-align:left;font-size:11px;letter-spacing:.09em;text-transform:uppercase;color:#888;background:#f9f9fb;border-bottom:2px solid var(--line)}
+.hoa-page .compare-table th:last-child{background:rgba(232,24,109,.06);color:var(--pink);border-bottom:2px solid var(--pink)}
+.hoa-page .compare-table td{padding:12px 14px;border-bottom:1px solid var(--line)}
+.hoa-page .compare-table td:last-child{background:rgba(232,24,109,.03);font-weight:800}
+.hoa-page .tick{color:var(--green)}
+.hoa-page .cross{color:#d1d5db}
+.hoa-page .pricing-table{width:100%;border-collapse:collapse;margin-top:20px;font-size:14px}
+.hoa-page .pricing-table th{padding:11px 14px;text-align:left;background:var(--pink);color:#fff;font-size:11px;letter-spacing:.09em;text-transform:uppercase}
+.hoa-page .pricing-table td{padding:12px 14px;border-bottom:1px solid var(--line)}
+.hoa-page .pricing-table tr:nth-child(even) td{background:var(--soft)}
+.hoa-page .pricing-table .p{color:var(--pink);font-weight:900}
+.hoa-page .faq-wrap{display:grid;gap:10px;max-width:900px}
+.hoa-page .faq-wrap details{background:#fff;border:1px solid var(--line);border-radius:14px;padding:16px 20px}
+.hoa-page .faq-wrap details[open]{border-color:var(--pink)}
+.hoa-page .faq-wrap summary{font-weight:800;cursor:pointer;font-size:15px;list-style:none;display:flex;justify-content:space-between;align-items:center;gap:12px}
+.hoa-page .faq-wrap summary::-webkit-details-marker{display:none}
+.hoa-page .faq-wrap summary::after{content:"+";color:var(--pink);font-size:18px;flex-shrink:0}
+.hoa-page .faq-wrap details[open] summary::after{content:"−"}
+.hoa-page .faq-wrap p{margin:10px 0 0;color:var(--muted);font-size:14.5px;line-height:1.75}
+.hoa-page .proof-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+.hoa-page .proof-card{background:#fff;border:1px solid var(--line);border-radius:14px;padding:20px}
+.hoa-page .proof-stars{color:#ffb800;font-size:12px;margin-bottom:8px}
+.hoa-page .proof-text{font-size:14px;font-style:italic;color:var(--text);margin:0 0 12px;line-height:1.7}
+.hoa-page .proof-name{font-weight:900;font-size:13px}
+.hoa-page .proof-detail{font-size:11.5px;color:var(--muted)}
+.hoa-page .cta-section{background:linear-gradient(135deg,var(--black),#280b19);color:#fff;text-align:center;padding:72px 0}
+.hoa-page .cta-section .sh{color:#fff}
+.hoa-page .cta-section p{color:rgba(255,255,255,.72);max-width:680px;margin:0 auto 28px;font-size:16px}
+.hoa-page .cta-btns{display:flex;justify-content:center;gap:12px;flex-wrap:wrap}
+.hoa-page .highlight-box{background:linear-gradient(135deg,rgba(232,24,109,.07),rgba(232,24,109,.02));border:1px solid rgba(232,24,109,.2);border-radius:16px;padding:28px 32px;margin-top:28px}
+@media (max-width:900px){.hoa-page .hero-grid,.hoa-page .why-grid,.hoa-page .service-grid,.hoa-page .proof-grid{grid-template-columns:1fr}}
+@media (max-width:620px){.hoa-page .section{padding:52px 0}
+.hoa-page .hero-b2b{padding:52px 0 44px}}
+@media (max-width:900px){}
+@media (max-width:620px){.hoa-page .hero-grid{grid-template-columns:1fr}
+.hoa-page .pricing-table{display:block;overflow-x:auto}}
+.hoa-page .hero-grid{display:grid;grid-template-columns:minmax(0,1fr) 360px;gap:40px;align-items:start}
+.hoa-page .cta-card{color:#22232a}
+.hoa-page .hero-b2b .btn-outline{color:#fff;border-color:rgba(255,255,255,.5)}
+.hoa-page .service-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px}
+.hoa-page .why-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px}
+.hoa-page .feature-card{background:#fff;border:1px solid #e6e7eb;border-radius:16px;padding:20px}
+.hoa-page .feature-card h3{color:#22232a}
+.hoa-page .feature-card p{color:#646875}
+.hoa-page .section.dark .intro{color:rgba(255,255,255,.7)}
+.hoa-page .cta-section .btn-outline{color:#fff;border-color:rgba(255,255,255,.5)}
+@media(max-width:900px){.hoa-page .hero-grid,.hoa-page .why-grid,.hoa-page .service-grid,.hoa-page .proof-grid{grid-template-columns:1fr}}</style>
 <link href="https://fonts.googleapis.com/" rel="preconnect"/>
 <link crossorigin="" href="https://fonts.gstatic.com/" rel="preconnect"/>
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;1,700&amp;family=DM+Sans:wght@400;700;900&amp;display=swap" rel="stylesheet"/>
@@ -53,17 +179,523 @@ header{position:sticky;top:0;z-index:30;background:rgba(255,255,255,.96);border-
 .cta{background:linear-gradient(135deg,var(--black),#280b19);color:#fff;text-align:center;padding:76px 0}.cta p{color:#c7c7ce;max-width:760px;margin:0 auto 24px}.footer{background:#070708;color:#9696a0;padding:46px 0 24px}.footer-grid{display:grid;grid-template-columns:1.5fr 1fr 1fr;gap:28px}.footer h3,.footer h4{color:#fff}.footer a{display:block;color:#9696a0;text-decoration:none;font-size:13px;margin:5px 0}.fine{border-top:1px solid #1f1f25;margin-top:26px;padding-top:15px;font-size:11.5px;display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}
 @media(max-width:950px){.navlinks{display:none}.service-grid{grid-template-columns:repeat(2,1fr)}.local-grid{grid-template-columns:1fr}.footer-grid{grid-template-columns:1fr 1fr}}
 @media(max-width:620px){.service-grid,.footer-grid{grid-template-columns:1fr}.section{padding:54px 0}.hero{min-height:auto}.hero .wrap{padding-top:66px;padding-bottom:60px}.hero-ctas .btn{width:100%}}
+
+.skip-link{position:absolute;left:12px;top:-70px;z-index:100;background:#fff;color:#111;padding:12px}.skip-link:focus{top:12px}a:focus-visible,button:focus-visible,summary:focus-visible{outline:3px solid var(--pink);outline-offset:3px}.nav-toggle{display:none;border:1px solid #ddd;background:#fff;border-radius:9px;padding:9px 12px;font-weight:800;cursor:pointer}@media(max-width:950px){.nav-toggle{display:inline-flex}.navlinks.is-open{display:flex;position:absolute;top:100%;left:0;right:0;background:#fff;flex-direction:column;align-items:stretch;padding:12px 22px 20px;box-shadow:0 16px 22px rgba(0,0,0,.13)}.navlinks.is-open a{padding:12px}}@media(max-width:620px){.nav-toggle{font-size:13px}.hero h1{font-size:clamp(32px,8vw,44px)}}</style>
+<link href="/assets/bakerss-brand-unified.css" rel="stylesheet"/>
+<style>.surfside-area-page{--pink:#e8197d;--pink2:#f0408a;--black:#0b0b0d;--black2:#151519;--text:#22232a;--muted:#646875;--line:#e6e7eb;--soft:#f7f7f9;--max:1180px;--shadow:0 14px 40px rgba(0,0,0,.12);--font:"DM Sans",Inter,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",Arial,sans-serif;--serif:"Playfair Display",Georgia,"Times New Roman",serif}
+.surfside-area-page, .surfside-area-page *{box-sizing:border-box}
+.surfside-area-page{margin:0;font-family:var(--font);color:var(--text);font-size:16px;line-height:1.65}
+.surfside-area-page img{max-width:100%;display:block}
+.surfside-area-page a{color:inherit}
+.surfside-area-page .wrap{max-width:var(--max);margin:auto;padding:0 22px}
+.surfside-area-page .btn{display:inline-flex;align-items:center;justify-content:center;border-radius:999px;padding:12px 22px;font-weight:900;text-decoration:none;border:2px solid transparent;font-size:14px}
+.surfside-area-page .btn-primary{background:var(--pink);color:#fff}
+.surfside-area-page .btn-light{background:#fff;color:var(--black)}
+.surfside-area-page .topbar{background:var(--black);color:#ddd;font-size:13px}
+.surfside-area-page .topbar .wrap{min-height:38px;display:flex;justify-content:center;align-items:center;gap:14px;flex-wrap:wrap}
+.surfside-area-page .topbar a{color:#fff;font-weight:900;text-decoration:none}
+.surfside-area-page header{position:sticky;top:0;z-index:30;background:rgba(255,255,255,.96);border-bottom:1px solid var(--line);backdrop-filter:blur(10px)}
+.surfside-area-page .nav{min-height:72px;display:flex;align-items:center;justify-content:space-between;gap:22px}
+.surfside-area-page .logo{font-size:24px;font-weight:950;text-decoration:none;letter-spacing:-.04em}
+.surfside-area-page .logo span{color:var(--pink)}
+.surfside-area-page .navlinks{display:flex;align-items:center;gap:6px}
+.surfside-area-page .navlinks a{font-size:13.5px;font-weight:800;text-decoration:none;padding:8px 10px;border-radius:10px}
+.surfside-area-page .navlinks a:hover{background:var(--soft);color:var(--pink)}
+.surfside-area-page .hero{position:relative;min-height:610px;display:flex;align-items:center;color:#fff;overflow:hidden;isolation:isolate}
+.surfside-area-page .hero img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:-2}
+.surfside-area-page .hero:after{content:"";position:absolute;inset:0;background:linear-gradient(105deg,rgba(5,5,8,.97),rgba(8,8,12,.90) 46%,rgba(44,15,30,.8) 78%,rgba(5,5,8,.92));z-index:-1}
+.surfside-area-page .hero .wrap{width:100%;padding-top:88px;padding-bottom:88px}
+.surfside-area-page .kicker{display:inline-flex;color:#ffd7e7;background:rgba(232,24,109,.22);border:1px solid rgba(232,24,109,.55);border-radius:999px;padding:7px 12px;font-size:12px;font-weight:950;letter-spacing:.08em;text-transform:uppercase}
+.surfside-area-page .hero h1{font-family:var(--serif);font-size:clamp(38px,6vw,66px);line-height:1.04;letter-spacing:-.045em;max-width:940px;margin:18px 0}
+.surfside-area-page .hero h1 em{color:var(--pink2)}
+.surfside-area-page .lead{font-size:18px;color:#d4d4dc;max-width:830px;line-height:1.85}
+.surfside-area-page .hero-ctas{display:flex;gap:10px;flex-wrap:wrap;margin-top:24px}
+.surfside-area-page .section{padding:74px 0}
+.surfside-area-page .alt{background:var(--soft)}
+.surfside-area-page .dark{background:var(--black);color:#fff}
+.surfside-area-page .section-head{max-width:920px;margin-bottom:32px}
+.surfside-area-page .eyebrow{font-size:11.5px;color:var(--pink);letter-spacing:.13em;text-transform:uppercase;font-weight:950}
+.surfside-area-page .sh{font-family:var(--serif);font-size:clamp(28px,4vw,44px);line-height:1.12;letter-spacing:-.03em;margin:7px 0 12px}
+.surfside-area-page .intro{color:var(--muted);font-size:16.5px;line-height:1.85}
+.surfside-area-page .dark .intro{color:#c7c7ce}
+.surfside-area-page .service-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}
+.surfside-area-page .card{background:#fff;border:1px solid var(--line);border-radius:16px;padding:19px;text-decoration:none;box-shadow:0 6px 20px rgba(0,0,0,.05)}
+.surfside-area-page .card:hover{border-color:var(--pink);transform:translateY(-2px)}
+.surfside-area-page .card h3{font-size:15.5px;margin:0 0 6px}
+.surfside-area-page .card p{font-size:13px;color:var(--muted);margin:0}
+.surfside-area-page .local-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:15px}
+.surfside-area-page .local{background:#fff;border:1px solid var(--line);border-radius:18px;padding:23px}
+.surfside-area-page .local b{color:var(--pink);font-size:12px;letter-spacing:.1em;text-transform:uppercase}
+.surfside-area-page .local h3{margin:7px 0}
+.surfside-area-page .local p{color:var(--muted);margin:0;font-size:14.5px}
+.surfside-area-page .neighborhoods{display:flex;flex-wrap:wrap;gap:9px}
+.surfside-area-page .neighborhoods span{background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.16);border-radius:999px;padding:8px 13px;font-size:13px}
+.surfside-area-page .hub-link{margin-top:22px}
+.surfside-area-page .faq{display:grid;gap:10px;max-width:950px}
+.surfside-area-page .faq details{background:#fff;border:1px solid var(--line);border-radius:14px;padding:16px 20px}
+.surfside-area-page .faq summary{font-weight:900;cursor:pointer}
+.surfside-area-page .faq p{color:var(--muted);font-size:14.5px}
+.surfside-area-page .cta{background:linear-gradient(135deg,var(--black),#280b19);color:#fff;text-align:center;padding:76px 0}
+.surfside-area-page .cta p{color:#c7c7ce;max-width:760px;margin:0 auto 24px}
+.surfside-area-page .footer{background:#070708;color:#9696a0;padding:46px 0 24px}
+.surfside-area-page .footer-grid{display:grid;grid-template-columns:1.5fr 1fr 1fr;gap:28px}
+.surfside-area-page .footer h3,.surfside-area-page .footer h4{color:#fff}
+.surfside-area-page .footer a{display:block;color:#9696a0;text-decoration:none;font-size:13px;margin:5px 0}
+.surfside-area-page .fine{border-top:1px solid #1f1f25;margin-top:26px;padding-top:15px;font-size:11.5px;display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}
+@media (max-width:950px){.surfside-area-page .navlinks{display:none}
+.surfside-area-page .service-grid{grid-template-columns:repeat(2,1fr)}
+.surfside-area-page .local-grid{grid-template-columns:1fr}
+.surfside-area-page .footer-grid{grid-template-columns:1fr 1fr}}
+@media (max-width:620px){.surfside-area-page .service-grid,.surfside-area-page .footer-grid{grid-template-columns:1fr}
+.surfside-area-page .section{padding:54px 0}
+.surfside-area-page .hero{min-height:auto}
+.surfside-area-page .hero .wrap{padding-top:66px;padding-bottom:60px}
+.surfside-area-page .hero-ctas .btn{width:100%}}
+.surfside-area-page .skip-link{position:absolute;left:12px;top:-70px;z-index:100;background:#fff;color:#111;padding:12px}
+.surfside-area-page .skip-link:focus{top:12px}
+.surfside-area-page a:focus-visible,.surfside-area-page button:focus-visible,.surfside-area-page summary:focus-visible{outline:3px solid var(--pink);outline-offset:3px}
+.surfside-area-page .nav-toggle{display:none;border:1px solid #ddd;background:#fff;border-radius:9px;padding:9px 12px;font-weight:800;cursor:pointer}
+@media (max-width:950px){.surfside-area-page .nav-toggle{display:inline-flex}
+.surfside-area-page .navlinks.is-open{display:flex;position:absolute;top:100%;left:0;right:0;background:#fff;flex-direction:column;align-items:stretch;padding:12px 22px 20px;box-shadow:0 16px 22px rgba(0,0,0,.13)}
+.surfside-area-page .navlinks.is-open a{padding:12px}}
+@media (max-width:620px){.surfside-area-page .nav-toggle{font-size:13px}
+.surfside-area-page .hero h1{font-size:clamp(32px,8vw,44px)}}
+.surfside-area-page{--pink:#e8197d;--pink2:#f0408a;--black:#0b0b0d;--black2:#151519;--text:#22232a;--muted:#646875;--line:#e6e7eb;--soft:#f7f7f9;--white:#fff;--max:1180px;--font:'DM Sans',sans-serif;--serif:'Playfair Display',Georgia,serif;color:var(--text);background:#fff;font-family:var(--font);line-height:1.65}.surfside-area-page .hero{min-height:620px}.surfside-area-page .hero .wrap{position:relative;z-index:2}.surfside-area-page .hero img{z-index:-2}.surfside-area-page .bps-project-proof{font-family:var(--font)}.surfside-area-page .bps-project-proof h2{font-family:var(--serif)}.surfside-area-page .bps-proof-card h3,.surfside-area-page .bps-proof-card p{font-family:var(--font)}@media(max-width:620px){.surfside-area-page .hero{min-height:unset}.surfside-area-page .stats{grid-template-columns:repeat(2,minmax(0,1fr))}}</style>
+<style>/* North Myrtle Beach page-only styling; master navigation remains unchanged */
+.nmb-page *{box-sizing:border-box}
+.nmb-page a{color:inherit;text-decoration:none}
+.nmb-page img{max-width:100%;display:block}
+.nmb-page .container,.nmb-page .wrap{width:min(var(--max),calc(100% - 40px));margin:auto}
+.nmb-page .topbar{background:var(--pink);color:#fff;font-size:.88rem;font-weight:800}
+.nmb-page .topbar .container{display:flex;justify-content:space-between;gap:18px;padding:9px 0}
+.nmb-page .site-header{position:sticky;top:0;z-index:50;background:rgba(11,11,13,.96);backdrop-filter:blur(12px);border-bottom:1px solid rgba(255,255,255,.08)}
+.nmb-page .nav{min-height:76px;display:flex;align-items:center;justify-content:space-between;gap:24px}
+.nmb-page .brand{font-family:var(--serif);font-size:2rem;font-weight:700;color:#fff}
+.nmb-page .brand span{color:var(--pink)}
+.nmb-page .nav-links{display:flex;gap:23px;align-items:center;color:#fff;font-size:.92rem;font-weight:800}
+.nmb-page .nav-links a:hover{color:var(--pink2)}
+.nmb-page .btn{display:inline-flex;align-items:center;justify-content:center;border-radius:999px;padding:13px 22px;font-weight:900;transition:.22s ease;border:2px solid transparent}
+.nmb-page .btn:hover{transform:translateY(-2px)}
+.nmb-page .btn-primary{background:var(--pink);color:#fff;box-shadow:0 12px 28px rgba(232,25,125,.25)}
+.nmb-page .btn-secondary{background:#fff;color:var(--black)}
+.nmb-page .btn-outline{border-color:rgba(255,255,255,.75);color:#fff;background:rgba(0,0,0,.18)}
+.nmb-page .breadcrumb{background:#111116;color:#bbb;font-size:.86rem}
+.nmb-page .breadcrumb ol{list-style:none;margin:0;padding:12px 0;display:flex;gap:10px;flex-wrap:wrap}
+.nmb-page .breadcrumb li:not(:last-child)::after{content:"/";margin-left:10px;color:#666}
+.nmb-page .breadcrumb a:hover{color:var(--pink)}
+.nmb-page .hero{
+position:relative;
+min-height:650px;
+display:flex;
+align-items:center;
+color:#fff;
+overflow:hidden;
+background:
+linear-gradient(90deg,rgba(4,4,6,.96) 0%,rgba(4,4,6,.86) 42%,rgba(4,4,6,.34) 100%),
+linear-gradient(180deg,rgba(232,25,125,.16),rgba(0,0,0,.24)),
+url("https://www.bakerss.com/images/truck.webp") center/cover no-repeat;
+}
+.nmb-page .hero::after{content:"";position:absolute;inset:auto 0 0;height:8px;background:linear-gradient(90deg,var(--pink),var(--pink2),var(--pink))}
+.nmb-page .hero-grid{position:relative;z-index:2;display:grid;grid-template-columns:minmax(0,1.3fr) minmax(310px,.7fr);gap:50px;align-items:center;padding:78px 0}
+.nmb-page .kicker,.nmb-page .eyebrow{display:inline-block;text-transform:uppercase;letter-spacing:.18em;font-size:.78rem;font-weight:900;color:var(--pink2)}
+.nmb-page .hero h1,.nmb-page .section-head h2,.nmb-page .sh{font-family:var(--serif);line-height:1.02;margin:14px 0}
+.nmb-page .hero h1{font-size:clamp(3rem,6vw,5.4rem);max-width:850px}
+.nmb-page .hero h1 em,.nmb-page .sh em{color:var(--pink2);font-style:italic}
+.nmb-page .hero .lead{font-size:1.14rem;max-width:780px;color:#e9e9ed}
+.nmb-page .hero-ctas,.nmb-page .hero-actions{display:flex;gap:13px;flex-wrap:wrap;margin-top:27px}
+.nmb-page .trust{display:flex;gap:10px;flex-wrap:wrap;margin-top:27px}
+.nmb-page .pill{border:1px solid rgba(255,255,255,.25);background:rgba(255,255,255,.08);padding:8px 12px;border-radius:999px;font-size:.8rem;font-weight:800}
+.nmb-page .quote-card{background:rgba(255,255,255,.96);color:var(--text);border-radius:28px;padding:30px;box-shadow:var(--shadow);border:1px solid rgba(255,255,255,.7)}
+.nmb-page .quote-card h2{font-family:var(--serif);font-size:1.85rem;line-height:1.1;margin:0 0 12px}
+.nmb-page .quick-list{display:grid;gap:11px;margin:21px 0}
+.nmb-page .quick-list div{display:flex;gap:10px;align-items:flex-start}
+.nmb-page .check{width:24px;height:24px;border-radius:50%;display:inline-grid;place-items:center;background:var(--pink);color:#fff;font-size:.8rem;flex:0 0 auto}
+.nmb-page .stats{display:grid;grid-template-columns:repeat(5,1fr);background:var(--black);color:#fff}
+.nmb-page .stat{padding:25px 18px;text-align:center;border-right:1px solid rgba(255,255,255,.1)}
+.nmb-page .stat:last-child{border-right:0}
+.nmb-page .stat b{display:block;color:var(--pink2);font-size:1.1rem}
+.nmb-page .stat span{font-size:.8rem;color:#bbb}
+.nmb-page .section{padding:88px 0}
+.nmb-page .section.alt{background:var(--soft)}
+.nmb-page .section.dark{background:var(--black);color:#fff}
+.nmb-page .section-head{max-width:850px;margin-bottom:36px}
+.nmb-page .section-head h2{font-size:clamp(2.3rem,4vw,4rem)}
+.nmb-page .section-head p{font-size:1.05rem;color:var(--muted)}
+.nmb-page .dark .section-head p{color:#bbb}
+.nmb-page .grid-3{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+.nmb-page .card{background:#fff;border:1px solid var(--line);border-radius:23px;padding:25px;box-shadow:0 10px 30px rgba(0,0,0,.06);transition:.22s ease}
+.nmb-page .card:hover{transform:translateY(-5px);box-shadow:0 20px 45px rgba(0,0,0,.12);border-color:rgba(232,25,125,.35)}
+.nmb-page .card h3{font-family:var(--serif);font-size:1.45rem;line-height:1.18;margin:0 0 12px}
+.nmb-page .card p{color:var(--muted);margin:0 0 16px}
+.nmb-page .badge{display:inline-block;border-radius:999px;background:#ffe7f2;color:#b20f5c;padding:7px 11px;font-size:.72rem;font-weight:900;text-transform:uppercase;letter-spacing:.08em}
+.nmb-page .text-link{color:var(--pink);font-weight:900}
+.nmb-page .local-box{background:var(--black);color:#fff;padding:34px;border-radius:28px;box-shadow:var(--shadow)}
+.nmb-page .local-box h3{font-family:var(--serif);font-size:2rem;margin:10px 0}
+.nmb-page .local-box p{color:#ccc}
+.nmb-page .cta-band{background:linear-gradient(135deg,#e8197d,#9f0f58);color:#fff;padding:70px 0}
+.nmb-page .cta-grid{display:grid;grid-template-columns:1.35fr .65fr;gap:35px;align-items:center}
+.nmb-page .cta-grid h2{font-family:var(--serif);font-size:clamp(2.2rem,4vw,4rem);line-height:1;margin:0 0 15px}
+.nmb-page .faq{display:grid;gap:14px}
+.nmb-page details{border:1px solid var(--line);border-radius:17px;padding:18px 20px;background:#fff}
+.nmb-page summary{cursor:pointer;font-weight:900}
+.nmb-page details p{color:var(--muted);margin:12px 0 0}
+.nmb-page .footer{background:#08080a;color:#bdbdc5;padding:70px 0 28px}
+.nmb-page .footer-grid{display:grid;grid-template-columns:1.3fr repeat(3,1fr);gap:38px}
+.nmb-page .footer h3{color:#fff;font-size:1rem}
+.nmb-page .footer-links{display:grid;gap:9px;font-size:.9rem}
+.nmb-page .footer a:hover{color:var(--pink2)}
+.nmb-page .copyright{border-top:1px solid rgba(255,255,255,.1);margin-top:42px;padding-top:22px;font-size:.85rem}
+.nmb-page .mobile-bar{display:none}
+@media (max-width:980px){.nmb-page .nav-links{display:none}
+.nmb-page .hero-grid,.nmb-page .cta-grid{grid-template-columns:1fr}
+.nmb-page .hero{background-position:62% center}
+.nmb-page .stats{grid-template-columns:repeat(2,1fr)}
+.nmb-page .stat:last-child{grid-column:1/-1}
+.nmb-page .grid-3{grid-template-columns:repeat(2,1fr)}
+.nmb-page .footer-grid{grid-template-columns:repeat(2,1fr)}}
+@media (max-width:680px){.nmb-page .topbar .container{display:block;text-align:center}
+.nmb-page .nav .btn{display:none}
+.nmb-page .hero{min-height:auto;background-position:67% center}
+.nmb-page .hero-grid{padding:55px 0 68px}
+.nmb-page .hero h1{font-size:2.65rem}
+.nmb-page .quote-card{padding:23px}
+.nmb-page .stats,.nmb-page .grid-3,.nmb-page .footer-grid{grid-template-columns:1fr}
+.nmb-page .stat,.nmb-page .stat:last-child{grid-column:auto;border-right:0;border-bottom:1px solid rgba(255,255,255,.1)}
+.nmb-page .section{padding:64px 0}
+.nmb-page .mobile-bar{display:grid;grid-template-columns:1fr 1fr;position:fixed;bottom:0;left:0;right:0;z-index:80;box-shadow:0 -8px 30px rgba(0,0,0,.18)}
+.nmb-page .mobile-bar a{padding:14px;text-align:center;font-weight:900;color:#fff}
+.nmb-page .mobile-bar a:first-child{background:#17171c}
+.nmb-page .mobile-bar a:last-child{background:var(--pink)}}
+.nmb-page .menu-toggle{display:none;background:#e8197d;color:white;border:0;border-radius:9px;padding:10px 16px;font-weight:800;cursor:pointer}
+.nmb-page .nmb-mobile-nav{display:none;background:#111116;padding:12px 20px}
+.nmb-page .nmb-mobile-nav.open{display:grid;gap:4px}
+.nmb-page .nmb-mobile-nav a{color:#fff;padding:11px;border-bottom:1px solid #333}
+.nmb-page .nmb-mobile-nav a:focus-visible,.nmb-page .menu-toggle:focus-visible,.nmb-page a:focus-visible{outline:3px solid #ff4fa3;outline-offset:3px}
+.nmb-page .section.dark .card h3{color:#23242b}
+.nmb-page .section.dark .card p{color:#666a76}
+.nmb-page .section.dark .card{color:#23242b}
+.nmb-page .city-services{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:14px}
+.nmb-page .city-services a{display:block;background:#fff;border:1px solid #e4e5ea;border-radius:16px;padding:18px;font-weight:800;color:#25252b}
+.nmb-page .city-services a:hover{border-color:#e8197d;color:#b20f5c}
+.nmb-page .city-services small{display:block;color:#666a76;font-weight:400;margin-top:6px;line-height:1.5}
+.nmb-page .nmb-local-factors{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.nmb-page .nmb-local-factors article{border:1px solid #e4e5ea;border-radius:16px;padding:22px;background:#fff}
+.nmb-page .nmb-local-factors h3{margin-top:0}
+@media (max-width:980px){.nmb-page .menu-toggle{display:inline-block}
+.nmb-page .city-services{grid-template-columns:repeat(2,1fr)}}
+@media (max-width:680px){.nmb-page .city-services,.nmb-page .nmb-local-factors{grid-template-columns:1fr}
+.nmb-page .menu-toggle{display:inline-block}
+.nmb-page .nav .btn{display:none}}
+.nmb-page .city-services{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:14px}.nmb-page .city-services a{display:block;background:#fff;border:1px solid #e4e5ea;border-radius:16px;padding:18px;font-weight:800;color:#25252b}.nmb-page .city-services small{display:block;color:#666a76;font-weight:400;margin-top:6px}.nmb-page .nmb-local-factors{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.nmb-page .nmb-local-factors article{border:1px solid #e4e5ea;border-radius:16px;padding:22px;background:#fff}@media(max-width:980px){.nmb-page .city-services{grid-template-columns:repeat(2,1fr)}}@media(max-width:680px){.nmb-page .city-services,.nmb-page .nmb-local-factors{grid-template-columns:1fr}}</style>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<link href="https://fonts.googleapis.com/" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com/" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;1,700&amp;family=DM+Sans:wght@400;700;900&amp;display=swap" rel="stylesheet"/>
+<style>
+:root{--pink:#e8197d;--pink2:#f0408a;--black:#0b0b0d;--black2:#151519;--text:#22232a;--muted:#646875;--line:#e6e7eb;--soft:#f7f7f9;--white:#fff;--green:#16a34a;--max:1180px;--shadow:0 14px 40px rgba(0,0,0,.12);--font:'DM Sans',Inter,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",Arial,sans-serif;--serif:'Playfair Display',Georgia,"Times New Roman",serif}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font-family:var(--font);color:var(--text);background:#fff;font-size:16px;line-height:1.65}img{max-width:100%;height:auto;display:block}a{color:inherit}.wrap{max-width:var(--max);margin:auto;padding:0 22px}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;border-radius:999px;padding:12px 22px;font-weight:900;text-decoration:none;border:2px solid transparent;line-height:1.1;transition:.18s ease;font-size:14px}.btn:hover{transform:translateY(-1px)}.btn-primary{background:var(--pink);color:#fff;box-shadow:0 10px 24px rgba(232,24,109,.28)}.btn-light{background:#fff;color:var(--black)}.btn-dark{background:var(--black);color:#fff}.btn-ghost{border-color:var(--pink);color:var(--pink);background:#fff}
+.topbar{background:var(--black);color:#d7d7dc;font-size:13px}.topbar .wrap{display:flex;justify-content:center;gap:16px;align-items:center;min-height:38px;text-align:center;flex-wrap:wrap}.topbar a{color:#fff;font-weight:900;text-decoration:none}
+.site-header{position:sticky;top:0;z-index:100;background:rgba(255,255,255,.96);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}.nav{display:flex;align-items:center;justify-content:space-between;gap:22px;min-height:72px}.logo{font-size:24px;font-weight:950;text-decoration:none;letter-spacing:-.04em;color:var(--black)}.logo span{color:var(--pink)}.navlinks{display:flex;align-items:center;gap:4px;list-style:none;margin:0;padding:0}.navlinks a{font-size:13.5px;font-weight:800;color:#30313a;text-decoration:none;padding:9px 11px;border-radius:10px;white-space:nowrap}.navlinks a:hover,.navlinks a[aria-current="page"]{background:var(--soft);color:var(--pink)}.hamb{display:none;border:0;background:var(--black);color:#fff;border-radius:10px;padding:10px 12px;font-weight:900;cursor:pointer}.mobile-menu{display:none;background:var(--black);color:#fff;padding:20px 0}.mobile-menu.open{display:block}.mobile-menu a{display:block;padding:10px 0;text-decoration:none;border-bottom:1px solid rgba(255,255,255,.08);color:#ddd}
+.hero{position:relative;color:#fff;overflow:hidden;isolation:isolate;min-height:650px;display:flex;align-items:center}.hero-img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:-2}.hero-overlay{position:absolute;inset:0;background:linear-gradient(105deg,rgba(5,5,8,.97) 0%,rgba(8,8,12,.90) 43%,rgba(44,15,30,.80) 75%,rgba(5,5,8,.92) 100%);z-index:-1}.hero .wrap{padding-top:94px;padding-bottom:94px;width:100%}.kicker{display:inline-flex;color:#ffd7e7;background:rgba(232,24,109,.22);border:1px solid rgba(232,24,109,.55);border-radius:999px;padding:7px 12px;font-size:12px;font-weight:950;letter-spacing:.08em;text-transform:uppercase}.hero h1{font-family:var(--serif);font-size:clamp(38px,6vw,68px);line-height:1.03;letter-spacing:-.045em;margin:18px 0;max-width:940px}.hero h1 em{color:var(--pink2);font-style:italic}.lead{font-size:18px;color:#d4d4dc;max-width:840px;margin:0 0 26px;line-height:1.85}.hero-ctas{display:flex;gap:10px;flex-wrap:wrap}.trust{display:flex;gap:8px;flex-wrap:wrap;margin-top:18px}.pill{border:1px solid rgba(255,255,255,.22);background:rgba(0,0,0,.38);border-radius:999px;padding:6px 10px;font-size:11.5px;color:#f0f0f5}
+.stats{display:grid;grid-template-columns:repeat(5,1fr);gap:1px;background:#26262d}.stat{background:var(--black2);color:#fff;text-align:center;padding:21px 10px}.stat b{display:block;color:var(--pink2);font-size:24px;line-height:1.1}.stat span{display:block;color:#aaa;font-size:11.5px;margin-top:5px}
+.section{padding:76px 0}.section.alt{background:var(--soft)}.section.dark{background:var(--black);color:#fff}.section-head{max-width:930px;margin-bottom:34px}.eyebrow{font-size:11.5px;color:var(--pink);letter-spacing:.13em;text-transform:uppercase;font-weight:950;margin:0 0 8px;display:block}.sh{font-family:var(--serif);font-size:clamp(28px,4vw,46px);line-height:1.12;letter-spacing:-.03em;margin:0 0 12px;color:var(--black)}.section.dark .sh{color:#fff}.intro{color:var(--muted);font-size:16.5px;margin:0;line-height:1.85}.section.dark .intro{color:#c7c7ce}
+.service-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}.service-card{border-radius:16px;padding:19px;text-decoration:none;color:inherit;transition:.18s ease;background:#fff;border:1px solid var(--line);box-shadow:0 6px 20px rgba(0,0,0,.05)}.service-card:hover{border-color:var(--pink);transform:translateY(-2px);box-shadow:var(--shadow)}.service-card.feature{border:2px solid var(--pink);background:linear-gradient(135deg,#fff4f8,#fff)}.service-card h3{font-size:15.5px;margin:0 0 6px;color:var(--black);line-height:1.25;font-weight:900}.service-card p{font-size:13px;color:var(--muted);margin:0;line-height:1.6}
+.split{display:grid;grid-template-columns:1.05fr .95fr;gap:38px;align-items:start}.content-box{border-radius:20px;padding:27px;background:#fff;border:1px solid var(--line);box-shadow:0 6px 20px rgba(0,0,0,.05)}.content-box h3{margin-top:0}.content-box p,.content-box li{color:var(--muted)}.content-box ul{padding-left:20px;margin-bottom:0}
+.problem-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:15px}.problem{background:#fff;border:1px solid var(--line);border-radius:18px;padding:23px}.problem b{color:var(--pink);font-size:12px;text-transform:uppercase;letter-spacing:.1em}.problem h3{margin:7px 0;font-size:18px}.problem p{margin:0;color:var(--muted);font-size:14.5px}
+.property-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:15px}.property{background:#fff;border:1px solid var(--line);border-radius:18px;padding:23px;box-shadow:0 6px 20px rgba(0,0,0,.05)}.property h3{margin:0 0 7px}.property p{margin:0;color:var(--muted);font-size:14.5px}
+.neighborhood-box{background:linear-gradient(135deg,#0b0b0d,#2b0d1c);color:#fff;border-radius:24px;padding:34px;box-shadow:var(--shadow)}.neighborhood-box .sh{color:#fff}.neighborhood-box p{color:#d2d2d8}.neighborhoods{display:flex;flex-wrap:wrap;gap:9px;margin-top:20px}.neighborhoods a{background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.16);border-radius:999px;padding:8px 13px;text-decoration:none;font-size:13px}.neighborhoods a:hover{border-color:var(--pink2);color:#fff}
+.process{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}.step{background:#fff;border:1px solid var(--line);border-radius:16px;padding:20px}.step b{display:block;color:var(--pink);font-size:22px}.step h3{font-size:15px;margin:5px 0}.step p{font-size:13.5px;color:var(--muted);margin:0}
+.faq{display:grid;gap:10px;max-width:950px}.faq details{border-radius:14px;padding:16px 20px;background:#fff;border:1px solid var(--line);box-shadow:0 6px 20px rgba(0,0,0,.05)}.faq details[open]{border-color:var(--pink)}.faq summary{font-weight:900;cursor:pointer;font-size:15px;line-height:1.4;list-style:none;display:flex;justify-content:space-between;gap:12px}.faq summary::-webkit-details-marker{display:none}.faq summary::after{content:'+';color:var(--pink);font-size:18px}.faq details[open] summary::after{content:'−'}.faq p{color:var(--muted);margin:10px 0 0;font-size:14.5px;line-height:1.75}
+.cta{background:linear-gradient(135deg,var(--black),#280b19);color:#fff;text-align:center;padding:78px 0}.cta .sh{color:#fff}.cta p{color:#c7c7ce;max-width:760px;margin:0 auto 26px;font-size:15.5px}
+.footer{background:#070708;color:#9696a0;padding:52px 0 24px}.footer-grid{display:grid;grid-template-columns:1.5fr 1fr 1fr 1fr;gap:28px}.footer h3,.footer h4{color:#fff}.footer h4{font-size:11px;letter-spacing:.1em;text-transform:uppercase;margin:0 0 10px}.footer p,.footer a{font-size:13px;color:#9696a0}.footer a{display:block;text-decoration:none;margin:5px 0}.footer a:hover{color:var(--pink)}.fine{border-top:1px solid #1f1f25;margin-top:28px;padding-top:16px;font-size:11.5px;display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}
+.sticky-mobile{display:none;position:fixed;left:0;right:0;bottom:0;background:#08080a;border-top:2px solid var(--pink);padding:10px;z-index:120;gap:8px}.sticky-mobile .btn{flex:1;padding:11px 8px;font-size:12.5px}
+@media(max-width:1000px){.navlinks{display:none}.hamb{display:block}.service-grid{grid-template-columns:repeat(2,1fr)}.split{grid-template-columns:1fr}.problem-grid,.property-grid{grid-template-columns:1fr 1fr}.process{grid-template-columns:1fr 1fr}.footer-grid{grid-template-columns:1fr 1fr}.stats{grid-template-columns:repeat(3,1fr)}}
+@media(max-width:620px){body{padding-bottom:70px}.hero{min-height:auto}.hero .wrap{padding-top:72px;padding-bottom:62px}.hero-ctas .btn{width:100%}.service-grid,.problem-grid,.property-grid,.process,.footer-grid{grid-template-columns:1fr}.stats{grid-template-columns:repeat(2,1fr)}.section{padding:56px 0}.sticky-mobile{display:flex}}
 </style>
-
-
-<style> .menu-toggle{display:none;background:#fff;border:1px solid #d9d9df;border-radius:10px;padding:10px 14px;font-weight:800;cursor:pointer}.menu-toggle:focus-visible,a:focus-visible,summary:focus-visible{outline:3px solid #e8197d;outline-offset:3px}@media(max-width:950px){.menu-toggle{display:inline-flex}.navlinks.is-open{display:flex;position:absolute;top:100%;left:0;right:0;background:#fff;flex-direction:column;align-items:stretch;padding:14px 22px;box-shadow:0 16px 26px rgba(0,0,0,.16)}.navlinks.is-open a{padding:12px}.nav{position:relative}}</style><script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": ["LocalBusiness", "HomeAndConstructionBusiness"], "@id": "https://www.bakerss.com/#business", "name": "Bakerss Property Services", "legalName": "Bakerss Property Services LLC", "url": "https://www.bakerss.com/", "telephone": "+1-843-467-7136", "email": "info@bakerss.com", "address": {"@type": "PostalAddress", "addressLocality": "Myrtle Beach", "addressRegion": "SC", "addressCountry": "US"}, "areaServed": {"@type": "Place", "name": "Carolina Forest, Horry County, South Carolina"}}, {"@type": "WebSite", "@id": "https://www.bakerss.com/#website", "url": "https://www.bakerss.com/", "name": "Bakerss Property Services", "publisher": {"@id": "https://www.bakerss.com/#business"}}, {"@type": "WebPage", "@id": "https://www.bakerss.com/service-areas/carolina-forest/#webpage", "url": "https://www.bakerss.com/service-areas/carolina-forest/", "name": "Property Maintenance Carolina Forest SC | Bakerss", "description": "Property maintenance in Carolina Forest, SC for homes, HOAs and apartments. Lawn, irrigation, pressure washing, repairs and community care. Request a quote.", "inLanguage": "en-US", "isPartOf": {"@id": "https://www.bakerss.com/#website"}, "about": {"@id": "https://www.bakerss.com/#business"}, "breadcrumb": {"@id": "https://www.bakerss.com/service-areas/carolina-forest/#breadcrumb"}}, {"@type": "Service", "@id": "https://www.bakerss.com/service-areas/carolina-forest/#service", "name": "Property maintenance in Carolina Forest, SC", "serviceType": "Property maintenance and managed-property care", "provider": {"@id": "https://www.bakerss.com/#business"}, "areaServed": {"@type": "Place", "name": "Carolina Forest, South Carolina"}, "url": "https://www.bakerss.com/service-areas/carolina-forest/"}, {"@type": "BreadcrumbList", "@id": "https://www.bakerss.com/service-areas/carolina-forest/#breadcrumb", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.bakerss.com/"}, {"@type": "ListItem", "position": 2, "name": "Service Areas", "item": "https://www.bakerss.com/service-areas/"}, {"@type": "ListItem", "position": 3, "name": "Carolina Forest", "item": "https://www.bakerss.com/service-areas/carolina-forest/"}]}, {"@type": "FAQPage", "@id": "https://www.bakerss.com/service-areas/carolina-forest/#faq", "mainEntity": [{"@type": "Question", "name": "How much does property maintenance cost in Carolina Forest?", "acceptedAnswer": {"@type": "Answer", "text": "Costs depend on the property size, frequency, number of systems, labor requirements and whether work is recurring or project-based. Request a walkthrough or send photos for a scoped estimate."}}, {"@type": "Question", "name": "How much does lawn care cost in Carolina Forest, SC?", "acceptedAnswer": {"@type": "Answer", "text": "Lawn pricing depends on turf area, access, edging, trimming, slope and visit frequency. Larger or shared HOA areas require a separate site assessment."}}, {"@type": "Question", "name": "What do Carolina Forest HOAs require for lawn and exterior upkeep?", "acceptedAnswer": {"@type": "Answer", "text": "Requirements vary by association and can address mowing frequency, visible weeds, fences, exterior appearance and approved work hours. Review your current covenants and architectural rules before starting work."}}, {"@type": "Question", "name": "Who maintains common areas in Carolina Forest communities?", "acceptedAnswer": {"@type": "Answer", "text": "An HOA or its property manager typically contracts vendors for approved common-area work. Bakerss can quote grounds, cleaning, repairs and related maintenance under a defined scope."}}, {"@type": "Question", "name": "How can I address standing water in my Carolina Forest yard?", "acceptedAnswer": {"@type": "Answer", "text": "Start by checking downspouts, grading, irrigation leaks and where water collects after rain. Pond-adjacent properties may have drainage restrictions; significant grading or drainage work may need a qualified specialist and approvals."}}, {"@type": "Question", "name": "When should I fertilize or overseed a Carolina Forest lawn?", "acceptedAnswer": {"@type": "Answer", "text": "Timing depends on grass species. Warm-season turf is usually fertilized during active growth; overseeding plans differ for Bermuda, centipede and other grasses. Soil testing and turf identification help avoid unnecessary applications."}}, {"@type": "Question", "name": "Does Bakerss handle handyman work and new-home punch lists in Carolina Forest?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. We can review minor repairs, door and gate adjustments, paint touch-ups and other approved punch-list items, subject to trade licensing requirements and project scope."}}, {"@type": "Question", "name": "How do I choose an HOA maintenance vendor in Carolina Forest?", "acceptedAnswer": {"@type": "Answer", "text": "Compare insurance documentation, scope clarity, communication, work-order reporting, references, response expectations and the ability to coordinate recurring tasks. Ask for a property-specific proposal."}}, {"@type": "Question", "name": "Can Bakerss support Carolina Forest apartments and rental properties?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. Services can include turnover cleaning, painting coordination, minor repairs, common-area care and documented work orders."}}, {"@type": "Question", "name": "Does Bakerss offer irrigation repair and new sod installation?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. We can evaluate sprinkler issues, uneven watering and turf replacement needs, then quote an approved repair or installation scope."}}, {"@type": "Question", "name": "Can Bakerss pressure wash siding and remove mildew or algae?", "acceptedAnswer": {"@type": "Answer", "text": "We offer exterior washing and can assess suitable methods for siding, hardscapes and other surfaces. Cleaning methods depend on the material and condition; not every surface should receive high pressure."}}, {"@type": "Question", "name": "Do you serve Carolina Forest even though many addresses say Myrtle Beach?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. Carolina Forest is an unincorporated Horry County area, and many properties use Myrtle Beach mailing addresses. Share the actual location when requesting service."}}]}]}</script></head>
-<body>
-<div class="topbar"><div class="wrap">Property maintenance across Carolina Forest &amp; the Grand Strand · <a href="tel:8434677136">843-467-7136</a> · <a href="mailto:info@bakerss.com">info@bakerss.com</a></div></div>
-<header><div class="wrap nav"><a class="logo" href="https://www.bakerss.com/">Bakerss<span>.</span></a><button aria-controls="primary-nav" aria-expanded="false" aria-label="Toggle navigation" class="menu-toggle" type="button">Menu ☰</button><nav class="navlinks" id="primary-nav"><a href="https://www.bakerss.com/services/property-maintenance/">Property Maintenance</a><a href="https://www.bakerss.com/services/">Services</a><a href="https://www.bakerss.com/service-areas/">Service Areas</a><a href="https://www.bakerss.com/about/">About</a><a class="btn btn-primary" href="https://www.bakerss.com/get-quote/">Get a Quote</a></nav></div></header>
-<main>
-<section class="hero"><img alt="Bakerss Property Services serving Carolina Forest, South Carolina" decoding="async" fetchpriority="high" loading="eager" src="https://www.bakerss.com/images/truck.webp"/><div class="wrap"><span class="kicker">Carolina Forest · Myrtle Beach mailing area · Horry County</span><h1>Property Maintenance in Carolina Forest, SC for <em>Homes, HOAs &amp; Communities</em></h1><p class="lead">Bakerss Property Services provides property maintenance in Carolina Forest, SC for homeowners, HOA communities, apartments and local businesses. From lawn and sprinkler care to exterior washing, repairs and documented work orders, we help keep properties ready for everyday use.</p><div class="hero-ctas"><a class="btn btn-primary" href="https://www.bakerss.com/get-quote/">Request a Free Quote</a><a class="btn btn-light" href="tel:8434677136">Call 843-467-7136</a></div></div></section>
-<section class="section"><div class="wrap"><div class="section-head"><span class="eyebrow">Carolina Forest Property Services</span><h2 class="sh">Coordinated local maintenance across the property.</h2><p class="intro">Carolina Forest is an unincorporated Horry County community with many Myrtle Beach mailing addresses. Planned neighborhoods, retention ponds, family homes and busy commercial corridors create distinct needs for grounds, irrigation, exterior cleaning, drainage observation and coordinated HOA work orders.</p></div><div class="service-grid"><a class="card" href="https://www.bakerss.com/services/property-maintenance/"><h3>Property Maintenance Plans</h3><p>Scheduled inspections, preventive care and documented repairs.</p></a><a class="card" href="https://www.bakerss.com/hoa-services/"><h3>HOA &amp; Community Maintenance</h3><p>Common-area grounds, exterior cleaning and recurring work orders.</p></a><a class="card" href="https://www.bakerss.com/services/apartment-maintenance/"><h3>Apartment &amp; Multifamily Maintenance</h3><p>Unit turns, common-area cleaning and maintenance coordination.</p></a><a class="card" href="https://www.bakerss.com/services/lawn-care/"><h3>Lawn Care</h3><p>Mowing, edging and lawn presentation for homes and communities.</p></a><a class="card" href="https://www.bakerss.com/services/landscaping/"><h3>Landscaping</h3><p>Mulch, pine straw, shrubs and improvements for established beds.</p></a><a class="card" href="https://www.bakerss.com/services/irrigation-sprinkler-repair/"><h3>Irrigation &amp; Sprinkler Repair</h3><p>Sprinkler diagnosis, coverage adjustments and repairs.</p></a><a class="card" href="https://www.bakerss.com/services/pressure-washing/"><h3>Pressure Washing</h3><p>Driveways, walkways, siding and HOA common surfaces.</p></a><a class="card" href="https://www.bakerss.com/services/handyman-services/"><h3>Handyman Services</h3><p>Home repairs, rental work orders and builder punch lists.</p></a><a class="card" href="https://www.bakerss.com/services/hvac-repair/"><h3>HVAC Repair &amp; Maintenance</h3><p>Air-conditioning maintenance and service coordination.</p></a><a class="card" href="https://www.bakerss.com/services/fence-installation-repair/"><h3>Fence Installation &amp; Repair</h3><p>Gate, post and fence repair or installation planning.</p></a><a class="card" href="https://www.bakerss.com/services/sod-installation/"><h3>Sod Installation</h3><p>New lawn establishment and damaged-turf replacement.</p></a><a class="card" href="https://www.bakerss.com/services/interior-cleaning/"><h3>Interior Cleaning</h3><p>Home, rental, office and unit-turn cleaning.</p></a><a class="card" href="https://www.bakerss.com/services/gutter-cleaning/"><h3>Gutter Cleaning</h3><p>Leaf and debris removal for roof drainage.</p></a><a class="card" href="https://www.bakerss.com/services/window-cleaning/"><h3>Window Cleaning</h3><p>Residential and commercial glass cleaning.</p></a><a class="card" href="https://www.bakerss.com/services/dryer-vent-cleaning/"><h3>Dryer Vent Cleaning</h3><p>Dryer-vent service for homes and multifamily units.</p></a><a class="card" href="https://www.bakerss.com/services/pool-maintenance/"><h3>Pool Maintenance</h3><p>Routine pool care for eligible residential and managed sites.</p></a></div></div></section>
-<section class="section alt"><div class="wrap"><div class="section-head"><span class="eyebrow">Local Maintenance Priorities</span><h2 class="sh">Why Carolina Forest properties need a local maintenance plan.</h2></div><div class="local-grid"><article class="local"><b>HOA &amp; Community Standards</b><h3>Common areas and consistent curb appeal</h3><p>HOA boards and property managers can coordinate grounds, sidewalks, landscaping, pool-area support and recurring repairs under an approved scope.</p></article><article class="local"><b>Ponds, Rain &amp; Sandy Soil</b><h3>Drainage and irrigation observations</h3><p>Lakefront and pond-front homes may experience wet areas, runoff or uneven turf performance. We can assess landscape and irrigation issues and identify when specialist drainage work is needed.</p></article><article class="local"><b>New Homes &amp; Busy Families</b><h3>Punch lists and routine home upkeep</h3><p>New-home settling, new sod, fence gates, mildew on siding and growing landscaping create maintenance needs along Carolina Forest Boulevard and International Drive.</p></article></div></div></section><section class="section" id="managed-property-care"><div class="wrap"><div class="section-head"><span class="eyebrow">For HOA boards, managers and builders</span><h2 class="sh">Community maintenance with a clear scope and work-order trail</h2><p class="intro">From Carolina Forest Boulevard and International Drive to retail properties near Highways 501 and 31, Bakerss can coordinate routine care for managed sites. We focus on consistent execution rather than promising a one-size-fits-all package.</p></div><div class="local-grid"><article class="local"><b>Associations</b><h3>HOA and shared-property upkeep</h3><p>Scheduled common-area cleaning, landscape upkeep, irrigation observations, storm debris response and repair reporting. Community standards and approvals guide the scope.</p></article><article class="local"><b>Multifamily &amp; rentals</b><h3>Turns and recurring work orders</h3><p>Apartment and rental make-ready cleaning, painting coordination, minor repairs and maintenance documentation for managers with multiple units.</p></article><article class="local"><b>New construction</b><h3>Builder and homeowner punch lists</h3><p>Move-in repairs, sod establishment, fence and gate work, exterior cleaning and landscape improvements based on project requirements.</p></article></div><p class="hub-link"><a class="btn btn-primary" href="https://www.bakerss.com/get-quote/">Request a Community Walkthrough</a></p></div></section>
+<link href="/assets/bakerss-brand-unified.css" rel="stylesheet"/>
+<style>.mb-city-hub{--pink:#e8197d;--pink2:#f0408a;--black:#0b0b0d;--black2:#151519;--text:#22232a;--muted:#646875;--line:#e6e7eb;--soft:#f7f7f9;--white:#fff;--green:#16a34a;--max:1180px;--shadow:0 14px 40px rgba(0,0,0,.12);--font:"DM Sans",Inter,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",Arial,sans-serif;--serif:"Playfair Display",Georgia,"Times New Roman",serif}
+.mb-city-hub *{box-sizing:border-box}
+.mb-city-hub img{max-width:100%;height:auto;display:block}
+.mb-city-hub a{color:inherit}
+.mb-city-hub .wrap{max-width:var(--max);margin:auto;padding:0 22px}
+.mb-city-hub .btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;border-radius:999px;padding:12px 22px;font-weight:900;text-decoration:none;border:2px solid transparent;line-height:1.1;transition:.18s ease;font-size:14px}
+.mb-city-hub .btn:hover{transform:translateY(-1px)}
+.mb-city-hub .btn-primary{background:var(--pink);color:#fff;box-shadow:0 10px 24px rgba(232,24,109,.28)}
+.mb-city-hub .btn-light{background:#fff;color:var(--black)}
+.mb-city-hub .btn-dark{background:var(--black);color:#fff}
+.mb-city-hub .btn-ghost{border-color:var(--pink);color:var(--pink);background:#fff}
+.mb-city-hub .topbar{background:var(--black);color:#d7d7dc;font-size:13px}
+.mb-city-hub .topbar .wrap{display:flex;justify-content:center;gap:16px;align-items:center;min-height:38px;text-align:center;flex-wrap:wrap}
+.mb-city-hub .topbar a{color:#fff;font-weight:900;text-decoration:none}
+.mb-city-hub .site-header{position:sticky;top:0;z-index:100;background:rgba(255,255,255,.96);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+.mb-city-hub .nav{display:flex;align-items:center;justify-content:space-between;gap:22px;min-height:72px}
+.mb-city-hub .logo{font-size:24px;font-weight:950;text-decoration:none;letter-spacing:-.04em;color:var(--black)}
+.mb-city-hub .logo span{color:var(--pink)}
+.mb-city-hub .navlinks{display:flex;align-items:center;gap:4px;list-style:none;margin:0;padding:0}
+.mb-city-hub .navlinks a{font-size:13.5px;font-weight:800;color:#30313a;text-decoration:none;padding:9px 11px;border-radius:10px;white-space:nowrap}
+.mb-city-hub .navlinks a:hover,.mb-city-hub .navlinks a[aria-current="page"]{background:var(--soft);color:var(--pink)}
+.mb-city-hub .hamb{display:none;border:0;background:var(--black);color:#fff;border-radius:10px;padding:10px 12px;font-weight:900;cursor:pointer}
+.mb-city-hub .mobile-menu{display:none;background:var(--black);color:#fff;padding:20px 0}
+.mb-city-hub .mobile-menu.open{display:block}
+.mb-city-hub .mobile-menu a{display:block;padding:10px 0;text-decoration:none;border-bottom:1px solid rgba(255,255,255,.08);color:#ddd}
+.mb-city-hub .hero{position:relative;color:#fff;overflow:hidden;isolation:isolate;min-height:650px;display:flex;align-items:center}
+.mb-city-hub .hero-img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:-2}
+.mb-city-hub .hero-overlay{position:absolute;inset:0;background:linear-gradient(105deg,rgba(5,5,8,.97) 0%,rgba(8,8,12,.90) 43%,rgba(44,15,30,.80) 75%,rgba(5,5,8,.92) 100%);z-index:-1}
+.mb-city-hub .hero .wrap{padding-top:94px;padding-bottom:94px;width:100%}
+.mb-city-hub .kicker{display:inline-flex;color:#ffd7e7;background:rgba(232,24,109,.22);border:1px solid rgba(232,24,109,.55);border-radius:999px;padding:7px 12px;font-size:12px;font-weight:950;letter-spacing:.08em;text-transform:uppercase}
+.mb-city-hub .hero h1{font-family:var(--serif);font-size:clamp(38px,6vw,68px);line-height:1.03;letter-spacing:-.045em;margin:18px 0;max-width:940px}
+.mb-city-hub .hero h1 em{color:var(--pink2);font-style:italic}
+.mb-city-hub .lead{font-size:18px;color:#d4d4dc;max-width:840px;margin:0 0 26px;line-height:1.85}
+.mb-city-hub .hero-ctas{display:flex;gap:10px;flex-wrap:wrap}
+.mb-city-hub .trust{display:flex;gap:8px;flex-wrap:wrap;margin-top:18px}
+.mb-city-hub .pill{border:1px solid rgba(255,255,255,.22);background:rgba(0,0,0,.38);border-radius:999px;padding:6px 10px;font-size:11.5px;color:#f0f0f5}
+.mb-city-hub .stats{display:grid;grid-template-columns:repeat(5,1fr);gap:1px;background:#26262d}
+.mb-city-hub .stat{background:var(--black2);color:#fff;text-align:center;padding:21px 10px}
+.mb-city-hub .stat b{display:block;color:var(--pink2);font-size:24px;line-height:1.1}
+.mb-city-hub .stat span{display:block;color:#aaa;font-size:11.5px;margin-top:5px}
+.mb-city-hub .section{padding:76px 0}
+.mb-city-hub .section.alt{background:var(--soft)}
+.mb-city-hub .section.dark{background:var(--black);color:#fff}
+.mb-city-hub .section-head{max-width:930px;margin-bottom:34px}
+.mb-city-hub .eyebrow{font-size:11.5px;color:var(--pink);letter-spacing:.13em;text-transform:uppercase;font-weight:950;margin:0 0 8px;display:block}
+.mb-city-hub .sh{font-family:var(--serif);font-size:clamp(28px,4vw,46px);line-height:1.12;letter-spacing:-.03em;margin:0 0 12px;color:var(--black)}
+.mb-city-hub .section.dark .sh{color:#fff}
+.mb-city-hub .intro{color:var(--muted);font-size:16.5px;margin:0;line-height:1.85}
+.mb-city-hub .section.dark .intro{color:#c7c7ce}
+.mb-city-hub .service-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}
+.mb-city-hub .service-card{border-radius:16px;padding:19px;text-decoration:none;color:inherit;transition:.18s ease;background:#fff;border:1px solid var(--line);box-shadow:0 6px 20px rgba(0,0,0,.05)}
+.mb-city-hub .service-card:hover{border-color:var(--pink);transform:translateY(-2px);box-shadow:var(--shadow)}
+.mb-city-hub .service-card.feature{border:2px solid var(--pink);background:linear-gradient(135deg,#fff4f8,#fff)}
+.mb-city-hub .service-card h3{font-size:15.5px;margin:0 0 6px;color:var(--black);line-height:1.25;font-weight:900}
+.mb-city-hub .service-card p{font-size:13px;color:var(--muted);margin:0;line-height:1.6}
+.mb-city-hub .split{display:grid;grid-template-columns:1.05fr .95fr;gap:38px;align-items:start}
+.mb-city-hub .content-box{border-radius:20px;padding:27px;background:#fff;border:1px solid var(--line);box-shadow:0 6px 20px rgba(0,0,0,.05)}
+.mb-city-hub .content-box h3{margin-top:0}
+.mb-city-hub .content-box p,.mb-city-hub .content-box li{color:var(--muted)}
+.mb-city-hub .content-box ul{padding-left:20px;margin-bottom:0}
+.mb-city-hub .problem-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:15px}
+.mb-city-hub .problem{background:#fff;border:1px solid var(--line);border-radius:18px;padding:23px}
+.mb-city-hub .problem b{color:var(--pink);font-size:12px;text-transform:uppercase;letter-spacing:.1em}
+.mb-city-hub .problem h3{margin:7px 0;font-size:18px}
+.mb-city-hub .problem p{margin:0;color:var(--muted);font-size:14.5px}
+.mb-city-hub .property-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:15px}
+.mb-city-hub .property{background:#fff;border:1px solid var(--line);border-radius:18px;padding:23px;box-shadow:0 6px 20px rgba(0,0,0,.05)}
+.mb-city-hub .property h3{margin:0 0 7px}
+.mb-city-hub .property p{margin:0;color:var(--muted);font-size:14.5px}
+.mb-city-hub .neighborhood-box{background:linear-gradient(135deg,#0b0b0d,#2b0d1c);color:#fff;border-radius:24px;padding:34px;box-shadow:var(--shadow)}
+.mb-city-hub .neighborhood-box .sh{color:#fff}
+.mb-city-hub .neighborhood-box p{color:#d2d2d8}
+.mb-city-hub .neighborhoods{display:flex;flex-wrap:wrap;gap:9px;margin-top:20px}
+.mb-city-hub .neighborhoods a{background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.16);border-radius:999px;padding:8px 13px;text-decoration:none;font-size:13px}
+.mb-city-hub .neighborhoods a:hover{border-color:var(--pink2);color:#fff}
+.mb-city-hub .process{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}
+.mb-city-hub .step{background:#fff;border:1px solid var(--line);border-radius:16px;padding:20px}
+.mb-city-hub .step b{display:block;color:var(--pink);font-size:22px}
+.mb-city-hub .step h3{font-size:15px;margin:5px 0}
+.mb-city-hub .step p{font-size:13.5px;color:var(--muted);margin:0}
+.mb-city-hub .faq{display:grid;gap:10px;max-width:950px}
+.mb-city-hub .faq details{border-radius:14px;padding:16px 20px;background:#fff;border:1px solid var(--line);box-shadow:0 6px 20px rgba(0,0,0,.05)}
+.mb-city-hub .faq details[open]{border-color:var(--pink)}
+.mb-city-hub .faq summary{font-weight:900;cursor:pointer;font-size:15px;line-height:1.4;list-style:none;display:flex;justify-content:space-between;gap:12px}
+.mb-city-hub .faq summary::-webkit-details-marker{display:none}
+.mb-city-hub .faq summary::after{content:"+";color:var(--pink);font-size:18px}
+.mb-city-hub .faq details[open] summary::after{content:"−"}
+.mb-city-hub .faq p{color:var(--muted);margin:10px 0 0;font-size:14.5px;line-height:1.75}
+.mb-city-hub .cta{background:linear-gradient(135deg,var(--black),#280b19);color:#fff;text-align:center;padding:78px 0}
+.mb-city-hub .cta .sh{color:#fff}
+.mb-city-hub .cta p{color:#c7c7ce;max-width:760px;margin:0 auto 26px;font-size:15.5px}
+.mb-city-hub .footer{background:#070708;color:#9696a0;padding:52px 0 24px}
+.mb-city-hub .footer-grid{display:grid;grid-template-columns:1.5fr 1fr 1fr 1fr;gap:28px}
+.mb-city-hub .footer h3,.mb-city-hub .footer h4{color:#fff}
+.mb-city-hub .footer h4{font-size:11px;letter-spacing:.1em;text-transform:uppercase;margin:0 0 10px}
+.mb-city-hub .footer p,.mb-city-hub .footer a{font-size:13px;color:#9696a0}
+.mb-city-hub .footer a{display:block;text-decoration:none;margin:5px 0}
+.mb-city-hub .footer a:hover{color:var(--pink)}
+.mb-city-hub .fine{border-top:1px solid #1f1f25;margin-top:28px;padding-top:16px;font-size:11.5px;display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}
+.mb-city-hub .sticky-mobile{display:none;position:fixed;left:0;right:0;bottom:0;background:#08080a;border-top:2px solid var(--pink);padding:10px;z-index:120;gap:8px}
+.mb-city-hub .sticky-mobile .btn{flex:1;padding:11px 8px;font-size:12.5px}
+@media (max-width:1000px){.mb-city-hub .navlinks{display:none}
+.mb-city-hub .hamb{display:block}
+.mb-city-hub .service-grid{grid-template-columns:repeat(2,1fr)}
+.mb-city-hub .split{grid-template-columns:1fr}
+.mb-city-hub .problem-grid,.mb-city-hub .property-grid{grid-template-columns:1fr 1fr}
+.mb-city-hub .process{grid-template-columns:1fr 1fr}
+.mb-city-hub .footer-grid{grid-template-columns:1fr 1fr}
+.mb-city-hub .stats{grid-template-columns:repeat(3,1fr)}}
+@media (max-width:620px){.mb-city-hub .hero{min-height:auto}
+.mb-city-hub .hero .wrap{padding-top:72px;padding-bottom:62px}
+.mb-city-hub .hero-ctas .btn{width:100%}
+.mb-city-hub .service-grid,.mb-city-hub .problem-grid,.mb-city-hub .property-grid,.mb-city-hub .process,.mb-city-hub .footer-grid{grid-template-columns:1fr}
+.mb-city-hub .stats{grid-template-columns:repeat(2,1fr)}
+.mb-city-hub .section{padding:56px 0}
+.mb-city-hub .sticky-mobile{display:flex}}
+.mb-city-hub .hero{min-height:610px}.mb-city-hub .hero .wrap{width:100%}.mb-city-hub .hero-img{width:100%;height:100%;object-fit:cover}.mb-city-hub .bps-project-proof{font-family:var(--font)}</style><style>
+.bps-skip{position:absolute;left:12px;top:-80px;z-index:1000;background:#fff;color:#111;padding:10px 16px;border:2px solid #e8197d;border-radius:8px}.bps-skip:focus{top:12px}a:focus-visible,button:focus-visible,summary:focus-visible{outline:3px solid #e8197d;outline-offset:3px}@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*::before,*::after{transition-duration:.01ms!important;animation-duration:.01ms!important}}
+</style><title>Property Maintenance Carolina Forest SC | Bakerss</title><meta content="Property maintenance in Carolina Forest, SC for homes, HOAs and apartments. Lawn, irrigation, pressure washing, repairs and community care. Request a quote." name="description"/><link href="https://www.bakerss.com/service-areas/carolina-forest/" rel="canonical"/><link href="https://www.bakerss.com/service-areas/carolina-forest/" hreflang="en-US" rel="alternate"/><link href="https://www.bakerss.com/service-areas/carolina-forest/" hreflang="x-default" rel="alternate"/><meta content="index,follow,max-image-preview:large,max-snippet:-1,max-video-preview:-1" name="robots"/><meta content="#e8197d" name="theme-color"/><meta content="Ray Cloyd" name="author"/><meta content="US-SC" name="geo.region"/><meta content="Carolina Forest, South Carolina" name="geo.placename"/><meta content="website" property="og:type"/><meta content="Property Maintenance Carolina Forest SC | Bakerss" property="og:title"/><meta content="Property maintenance in Carolina Forest, SC for homes, HOAs and apartments. Lawn, irrigation, pressure washing, repairs and community care. Request a quote." property="og:description"/><meta content="https://www.bakerss.com/service-areas/carolina-forest/" property="og:url"/><meta content="Bakerss Property Services" property="og:site_name"/><meta content="https://www.bakerss.com/images/truck.webp" property="og:image"/><meta content="1200" property="og:image:width"/><meta content="630" property="og:image:height"/><meta content="Bakerss Property Services vehicle supporting Carolina Forest properties" property="og:image:alt"/><meta content="en_US" property="og:locale"/><meta content="summary_large_image" name="twitter:card"/><meta content="Property Maintenance Carolina Forest SC | Bakerss" name="twitter:title"/><meta content="Property maintenance in Carolina Forest, SC for homes, HOAs and apartments. Lawn, irrigation, pressure washing, repairs and community care. Request a quote." name="twitter:description"/><meta content="https://www.bakerss.com/images/truck.webp" name="twitter:image"/><script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": ["LocalBusiness", "HomeAndConstructionBusiness"], "@id": "https://www.bakerss.com/#business", "name": "Bakerss Property Services", "legalName": "Bakerss Property Services LLC", "url": "https://www.bakerss.com/", "telephone": "+1-843-467-7136", "email": "info@bakerss.com", "address": {"@type": "PostalAddress", "addressLocality": "Myrtle Beach", "addressRegion": "SC", "addressCountry": "US"}, "areaServed": {"@type": "Place", "name": "Carolina Forest, Horry County, South Carolina"}}, {"@type": "WebSite", "@id": "https://www.bakerss.com/#website", "url": "https://www.bakerss.com/", "name": "Bakerss Property Services", "publisher": {"@id": "https://www.bakerss.com/#business"}}, {"@type": "WebPage", "@id": "https://www.bakerss.com/service-areas/carolina-forest/#webpage", "url": "https://www.bakerss.com/service-areas/carolina-forest/", "name": "Property Maintenance Carolina Forest SC | Bakerss", "description": "Property maintenance in Carolina Forest, SC for homes, HOAs and apartments. Lawn, irrigation, pressure washing, repairs and community care. Request a quote.", "inLanguage": "en-US", "isPartOf": {"@id": "https://www.bakerss.com/#website"}, "about": {"@id": "https://www.bakerss.com/#business"}, "breadcrumb": {"@id": "https://www.bakerss.com/service-areas/carolina-forest/#breadcrumb"}}, {"@type": "Service", "@id": "https://www.bakerss.com/service-areas/carolina-forest/#service", "name": "Property maintenance in Carolina Forest, SC", "serviceType": "Property maintenance and managed-property care", "provider": {"@id": "https://www.bakerss.com/#business"}, "areaServed": {"@type": "Place", "name": "Carolina Forest, South Carolina"}, "url": "https://www.bakerss.com/service-areas/carolina-forest/"}, {"@type": "BreadcrumbList", "@id": "https://www.bakerss.com/service-areas/carolina-forest/#breadcrumb", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.bakerss.com/"}, {"@type": "ListItem", "position": 2, "name": "Service Areas", "item": "https://www.bakerss.com/service-areas/"}, {"@type": "ListItem", "position": 3, "name": "Carolina Forest", "item": "https://www.bakerss.com/service-areas/carolina-forest/"}]}, {"@type": "FAQPage", "@id": "https://www.bakerss.com/service-areas/carolina-forest/#faq", "mainEntity": [{"@type": "Question", "name": "How much does property maintenance cost in Carolina Forest?", "acceptedAnswer": {"@type": "Answer", "text": "Costs depend on the property size, frequency, number of systems, labor requirements and whether work is recurring or project-based. Request a walkthrough or send photos for a scoped estimate."}}, {"@type": "Question", "name": "How much does lawn care cost in Carolina Forest, SC?", "acceptedAnswer": {"@type": "Answer", "text": "Lawn pricing depends on turf area, access, edging, trimming, slope and visit frequency. Larger or shared HOA areas require a separate site assessment."}}, {"@type": "Question", "name": "What do Carolina Forest HOAs require for lawn and exterior upkeep?", "acceptedAnswer": {"@type": "Answer", "text": "Requirements vary by association and can address mowing frequency, visible weeds, fences, exterior appearance and approved work hours. Review your current covenants and architectural rules before starting work."}}, {"@type": "Question", "name": "Who maintains common areas in Carolina Forest communities?", "acceptedAnswer": {"@type": "Answer", "text": "An HOA or its property manager typically contracts vendors for approved common-area work. Bakerss can quote grounds, cleaning, repairs and related maintenance under a defined scope."}}, {"@type": "Question", "name": "How can I address standing water in my Carolina Forest yard?", "acceptedAnswer": {"@type": "Answer", "text": "Start by checking downspouts, grading, irrigation leaks and where water collects after rain. Pond-adjacent properties may have drainage restrictions; significant grading or drainage work may need a qualified specialist and approvals."}}, {"@type": "Question", "name": "When should I fertilize or overseed a Carolina Forest lawn?", "acceptedAnswer": {"@type": "Answer", "text": "Timing depends on grass species. Warm-season turf is usually fertilized during active growth; overseeding plans differ for Bermuda, centipede and other grasses. Soil testing and turf identification help avoid unnecessary applications."}}, {"@type": "Question", "name": "Does Bakerss handle handyman work and new-home punch lists in Carolina Forest?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. We can review minor repairs, door and gate adjustments, paint touch-ups and other approved punch-list items, subject to trade licensing requirements and project scope."}}, {"@type": "Question", "name": "How do I choose an HOA maintenance vendor in Carolina Forest?", "acceptedAnswer": {"@type": "Answer", "text": "Compare insurance documentation, scope clarity, communication, work-order reporting, references, response expectations and the ability to coordinate recurring tasks. Ask for a property-specific proposal."}}, {"@type": "Question", "name": "Can Bakerss support Carolina Forest apartments and rental properties?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. Services can include turnover cleaning, painting coordination, minor repairs, common-area care and documented work orders."}}, {"@type": "Question", "name": "Does Bakerss offer irrigation repair and new sod installation?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. We can evaluate sprinkler issues, uneven watering and turf replacement needs, then quote an approved repair or installation scope."}}, {"@type": "Question", "name": "Can Bakerss pressure wash siding and remove mildew or algae?", "acceptedAnswer": {"@type": "Answer", "text": "We offer exterior washing and can assess suitable methods for siding, hardscapes and other surfaces. Cleaning methods depend on the material and condition; not every surface should receive high pressure."}}, {"@type": "Question", "name": "Do you serve Carolina Forest even though many addresses say Myrtle Beach?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. Carolina Forest is an unincorporated Horry County area, and many properties use Myrtle Beach mailing addresses. Share the actual location when requesting service."}}]}]}</script><style>
+/* Carolina Forest content refinements */
+.hero .hero-img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:-2}
+.hero:after{pointer-events:none}
+.card:focus-visible,.neighborhoods a:focus-visible{outline:3px solid var(--pink);outline-offset:3px}
+.dark .neighborhoods span{color:#fff}
+.section .local-grid a,.section .intro a{color:var(--pink);text-underline-offset:3px}
+@media(max-width:1000px){.local-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:650px){.local-grid{grid-template-columns:1fr}.hero .wrap{padding-top:72px;padding-bottom:62px}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.card:hover{transform:none}}
+</style></head>
+<body><a class="bps-skip" href="#main">Skip to main content</a>
+<a class="skip" href="#main">Skip to main content</a>
+<div class="topbar" role="banner">
+<div class="wrap">Property maintenance across Myrtle Beach, Conway, Carolina Forest, Murrells Inlet, Pawleys Island, Litchfield Beach &amp; Horry County · <a href="tel:8434677136">843-467-7136</a> · <a href="mailto:info@bakerss.com">info@bakerss.com</a>
+</div>
+</div>
+<header class="site-header">
+<div class="wrap nav">
+<a aria-label="Bakerss Property Services — home" class="logo" href="https://www.bakerss.com/">Bakerss<span>.</span></a>
+<nav aria-label="Primary navigation">
+<ul class="navlinks">
+<li class="dropdown-wrap">
+<button aria-expanded="false" aria-haspopup="true" type="button">Services ▾</button>
+<div aria-label="Services menu" class="dropdown" role="region">
+<div class="dd-panel">
+<div class="dd-col"><strong>Premium Property Care</strong>
+<a class="highlight" href="https://www.bakerss.com/services/white-glove-estate-care/">White Glove Estate Care</a>
+<a href="https://www.bakerss.com/services/property-maintenance/">Total Property Care</a>
+<a href="https://www.bakerss.com/services/vacation-home-watch/">Second-Home Care</a>
+<a href="https://www.bakerss.com/services/commercial-maintenance/">Commercial Maintenance</a>
+<a href="https://www.bakerss.com/apartment-maintenance/">Apartment Maintenance</a>
+<a href="https://www.bakerss.com/hoa-services/">HOA Maintenance</a>
+<a href="https://www.bakerss.com/services/property-maintenance/">Property Maintenance Plans</a>
+</div>
+<div class="dd-col"><strong>Exterior</strong>
+<a href="https://www.bakerss.com/services/lawn-care/">Lawn Care</a>
+<a href="https://www.bakerss.com/services/landscaping/">Landscaping</a>
+<a href="https://www.bakerss.com/services/sod-installation/">Sod Installation</a>
+<a href="https://www.bakerss.com/services/pressure-washing/">Pressure Washing</a>
+<a href="https://www.bakerss.com/services/gutter-cleaning/">Gutter Cleaning</a>
+</div>
+<div class="dd-col"><strong>Interior &amp; Rentals</strong>
+<a href="https://www.bakerss.com/services/interior-cleaning/">Interior Cleaning</a>
+<a href="https://www.bakerss.com/services/airbnb-cleaning/">Airbnb Cleaning</a>
+<a href="https://www.bakerss.com/services/handyman-services/">Handyman Services</a>
+<a href="https://www.bakerss.com/services/dryer-vent-cleaning/">Dryer Vent Cleaning</a>
+<a href="https://www.bakerss.com/services/window-cleaning/">Window Cleaning</a>
+</div>
+<div class="dd-col"><strong>Skilled Property Services</strong>
+<a class="highlight" href="https://www.bakerss.com/services/hvac-repair/">HVAC Repair &amp; Maintenance</a>
+<a href="https://www.bakerss.com/services/pool-maintenance/">Pool Maintenance</a>
+<a href="https://www.bakerss.com/services/irrigation-sprinkler-repair/">Irrigation Repair</a>
+<a href="https://www.bakerss.com/services/fence-installation-repair/">Fence Repair</a>
+<a href="https://www.bakerss.com/services/vacation-home-watch/">Vacation Home Watch</a>
+<a class="highlight" href="https://www.bakerss.com/get-quote/">Get a Quote</a>
+</div>
+</div>
+</div>
+</li>
+<li class="dropdown-wrap">
+<button aria-expanded="false" aria-haspopup="true" type="button">Service Areas ▾</button>
+<div aria-label="Service areas menu" class="dropdown" role="region">
+<div class="dd-panel">
+<div class="dd-col"><strong>Core City Hubs</strong>
+<a aria-current="page" href="https://www.bakerss.com/service-areas/myrtle-beach/">Myrtle Beach</a>
+<a href="https://www.bakerss.com/service-areas/north-myrtle-beach/">North Myrtle Beach</a>
+<a href="https://www.bakerss.com/service-areas/surfside-beach/">Surfside Beach</a>
+<a href="https://www.bakerss.com/service-areas/conway/">Conway</a>
+<a href="https://www.bakerss.com/service-areas/carolina-forest/">Carolina Forest</a>
+</div>
+<div class="dd-col"><strong>South Strand</strong>
+<a href="https://www.bakerss.com/service-areas/murrells-inlet/">Murrells Inlet</a>
+<a href="https://www.bakerss.com/service-areas/garden-city/">Garden City</a>
+<a href="https://www.bakerss.com/service-areas/socastee/">Socastee</a>
+<a href="https://www.bakerss.com/service-areas/pawleys-island/">Pawleys Island</a>
+<a href="https://www.bakerss.com/service-areas/litchfield-beach/">Litchfield Beach</a>
+</div>
+<div class="dd-col"><strong>County Coverage</strong>
+<a href="https://www.bakerss.com/service-areas/horry-county/">Horry County</a>
+<a href="https://www.bakerss.com/service-areas/georgetown-county/">Georgetown County</a>
+<a href="https://www.bakerss.com/neighborhoods/">Neighborhoods</a>
+<a class="highlight" href="https://www.bakerss.com/get-quote/">Request a Quote</a>
+</div>
+<div class="dd-col"><strong>High-Intent Services</strong>
+<a href="https://www.bakerss.com/services/lawn-care/">Lawn Care</a>
+<a href="https://www.bakerss.com/services/airbnb-cleaning/">Airbnb Cleaning</a>
+<a href="https://www.bakerss.com/services/pool-maintenance/">Pool Maintenance</a>
+<a href="https://www.bakerss.com/services/handyman-services/">Handyman Services</a>
+<a href="https://www.bakerss.com/services/sod-installation/">Sod Installation</a>
+</div>
+</div>
+</div>
+</li>
+<li><a href="https://www.bakerss.com/services/white-glove-estate-care/">Estate Care</a></li>
+<li><a href="https://www.bakerss.com/services/hvac-repair/">HVAC</a></li>
+<li><a href="https://www.bakerss.com/hoa-services/">HOA</a></li>
+<li><a href="https://www.bakerss.com/apartment-maintenance/">Apartments</a></li>
+<li><a href="https://www.bakerss.com/services/commercial-maintenance/">Commercial</a></li>
+<li><a href="https://www.bakerss.com/learning-center/">Resources</a></li>
+<li><a href="https://www.bakerss.com/our-work/">Our Work</a></li>
+</ul>
+</nav>
+<div class="nav-actions">
+<a class="btn btn-ghost phone-btn" href="tel:8434677136">843-467-7136</a>
+<a class="btn btn-primary" href="https://www.bakerss.com/get-quote/">Free Quote</a>
+<button aria-controls="mobileMenu" aria-expanded="false" class="hamb" onclick="toggleMenu(this)" type="button">Menu</button>
+</div>
+</div>
+<nav aria-label="Mobile navigation" class="mobile-menu" id="mobileMenu">
+<div class="wrap">
+<span class="mm-section">Premium Property Care</span>
+<a href="https://www.bakerss.com/services/white-glove-estate-care/">White Glove Estate Care</a>
+<a href="https://www.bakerss.com/services/hvac-repair/">HVAC Repair &amp; Maintenance</a>
+<a href="https://www.bakerss.com/services/property-maintenance/">Total Property Care</a>
+<span class="mm-section">Core Services</span>
+<a href="https://www.bakerss.com/services/commercial-maintenance/">Commercial Maintenance</a>
+<a href="https://www.bakerss.com/apartment-maintenance/">Apartment Maintenance</a>
+<a href="https://www.bakerss.com/hoa-services/">HOA Maintenance</a>
+<a href="https://www.bakerss.com/services/property-maintenance/">Property Maintenance Plans</a>
+<a href="https://www.bakerss.com/services/lawn-care/">Lawn Care</a>
+<a href="https://www.bakerss.com/services/airbnb-cleaning/">Airbnb Cleaning</a>
+<a href="https://www.bakerss.com/services/pool-maintenance/">Pool Maintenance</a>
+<a href="https://www.bakerss.com/services/handyman-services/">Handyman Services</a>
+<span class="mm-section">City Hubs</span>
+<a aria-current="page" href="https://www.bakerss.com/service-areas/myrtle-beach/">Myrtle Beach</a>
+<a href="https://www.bakerss.com/service-areas/north-myrtle-beach/">North Myrtle Beach</a>
+<a href="https://www.bakerss.com/service-areas/surfside-beach/">Surfside Beach</a>
+<a href="https://www.bakerss.com/service-areas/murrells-inlet/">Murrells Inlet</a>
+<a href="https://www.bakerss.com/service-areas/garden-city/">Garden City</a>
+<a href="https://www.bakerss.com/service-areas/socastee/">Socastee</a>
+<a href="https://www.bakerss.com/service-areas/conway/">Conway</a>
+<a href="https://www.bakerss.com/service-areas/carolina-forest/">Carolina Forest</a>
+<a href="https://www.bakerss.com/service-areas/pawleys-island/">Pawleys Island</a>
+<a href="https://www.bakerss.com/service-areas/litchfield-beach/">Litchfield Beach</a>
+<span class="mm-section">Resources</span>
+<a href="https://www.bakerss.com/our-work/">Our Work</a>
+<a href="https://www.bakerss.com/neighborhoods/">Neighborhoods</a>
+<a href="https://www.bakerss.com/learning-center/">Learning Center</a>
+<a href="https://www.bakerss.com/get-quote/" style="color:var(--pink);font-weight:900;margin-top:10px">Get a Free Quote →</a>
+</div>
+</nav>
+</header>
+<main id="main">
+<section class="hero"><img alt="Bakerss Property Services serving Carolina Forest, South Carolina" class="hero-img" decoding="async" fetchpriority="high" loading="eager" src="https://www.bakerss.com/images/truck.webp"/><div class="wrap"><span class="kicker">Carolina Forest · Myrtle Beach mailing area · Horry County</span><h1>Property Maintenance in Carolina Forest, SC for <em>Homes, HOAs &amp; Communities</em></h1><p class="lead">Bakerss Property Services provides property maintenance in Carolina Forest, SC for homeowners, HOA communities, apartments and local businesses. From lawn and sprinkler care to exterior washing, repairs and documented work orders, we help keep properties ready for everyday use.</p><div class="hero-ctas"><a class="btn btn-primary" href="https://www.bakerss.com/get-quote/">Request a Free Quote</a><a class="btn btn-light" href="tel:8434677136">Call 843-467-7136</a></div></div></section>
+<section class="section"><div class="wrap"><div class="section-head"><span class="eyebrow">Carolina Forest Property Services</span><h2 class="sh">Coordinated local maintenance across the property.</h2><p class="intro">Carolina Forest is an unincorporated Horry County community with many Myrtle Beach mailing addresses. Planned neighborhoods, retention ponds, family homes and busy commercial corridors create distinct needs for grounds, irrigation, exterior cleaning, drainage observation and coordinated HOA work orders.</p></div><div class="service-grid"><a class="card" href="https://www.bakerss.com/services/property-maintenance/"><h3>Property Maintenance Plans</h3><p>Scheduled inspections, preventive care and documented repairs.</p></a><a class="card" href="https://www.bakerss.com/hoa-services/"><h3>HOA &amp; Community Maintenance</h3><p>Common-area grounds, exterior cleaning and recurring work orders.</p></a><a class="card" href="https://www.bakerss.com/apartment-maintenance/"><h3>Apartment &amp; Multifamily Maintenance</h3><p>Unit turns, common-area cleaning and maintenance coordination.</p></a><a class="card" href="https://www.bakerss.com/services/lawn-care/"><h3>Lawn Care</h3><p>Mowing, edging and lawn presentation for homes and communities.</p></a><a class="card" href="https://www.bakerss.com/services/landscaping/"><h3>Landscaping</h3><p>Mulch, pine straw, shrubs and improvements for established beds.</p></a><a class="card" href="https://www.bakerss.com/services/irrigation-sprinkler-repair/"><h3>Irrigation &amp; Sprinkler Repair</h3><p>Sprinkler diagnosis, coverage adjustments and repairs.</p></a><a class="card" href="https://www.bakerss.com/services/pressure-washing/"><h3>Pressure Washing</h3><p>Driveways, walkways, siding and HOA common surfaces.</p></a><a class="card" href="https://www.bakerss.com/services/handyman-services/"><h3>Handyman Services</h3><p>Home repairs, rental work orders and builder punch lists.</p></a><a class="card" href="https://www.bakerss.com/services/hvac-repair/"><h3>HVAC Repair &amp; Maintenance</h3><p>Air-conditioning maintenance and service coordination.</p></a><a class="card" href="https://www.bakerss.com/services/fence-installation-repair/"><h3>Fence Installation &amp; Repair</h3><p>Gate, post and fence repair or installation planning.</p></a><a class="card" href="https://www.bakerss.com/services/sod-installation/"><h3>Sod Installation</h3><p>New lawn establishment and damaged-turf replacement.</p></a><a class="card" href="https://www.bakerss.com/services/interior-cleaning/"><h3>Interior Cleaning</h3><p>Home, rental, office and unit-turn cleaning.</p></a><a class="card" href="https://www.bakerss.com/services/gutter-cleaning/"><h3>Gutter Cleaning</h3><p>Leaf and debris removal for roof drainage.</p></a><a class="card" href="https://www.bakerss.com/services/window-cleaning/"><h3>Window Cleaning</h3><p>Residential and commercial glass cleaning.</p></a><a class="card" href="https://www.bakerss.com/services/dryer-vent-cleaning/"><h3>Dryer Vent Cleaning</h3><p>Dryer-vent service for homes and multifamily units.</p></a><a class="card" href="https://www.bakerss.com/services/pool-maintenance/"><h3>Pool Maintenance</h3><p>Routine pool care for eligible residential and managed sites.</p></a></div></div></section>
+<section class="section alt"><div class="wrap"><div class="section-head"><span class="eyebrow">Local Maintenance Priorities</span><h2 class="sh">Why Carolina Forest properties need a local maintenance plan.</h2></div><div class="local-grid"><article class="local"><b>HOA &amp; Community Standards</b><h3>Common areas and consistent curb appeal</h3><p>HOA boards and property managers can coordinate grounds, sidewalks, landscaping, pool-area support and recurring repairs under an approved scope.</p></article><article class="local"><b>Ponds, Rain &amp; Sandy Soil</b><h3>Drainage and irrigation observations</h3><p>Lakefront and pond-front homes may experience wet areas, runoff or uneven turf performance. We can assess landscape and irrigation issues and identify when specialist drainage work is needed.</p></article><article class="local"><b>New Homes &amp; Busy Families</b><h3>Punch lists and routine home upkeep</h3><p>New-home settling, new sod, fence gates, mildew on siding and growing landscaping create maintenance needs along Carolina Forest Boulevard and International Drive.</p></article></div></div></section><section class="section" id="managed-property-care"><div class="wrap"><div class="section-head"><span class="eyebrow">For HOA boards, managers and builders</span><h2 class="sh">Community maintenance with a clear scope and work-order trail</h2><p class="intro">From Carolina Forest Boulevard and International Drive to retail properties near Highways 501 and 31, Bakerss can coordinate routine care for managed sites. We focus on consistent execution rather than promising a one-size-fits-all package.</p><p class="intro">Explore dedicated programs for <a href="/hoa-services/">HOA maintenance</a>, <a href="/apartment-maintenance/">apartment maintenance</a> and <a href="/services/commercial-maintenance/">commercial property maintenance</a>. Each property receives a scope tailored to its requirements.</p></div><div class="local-grid"><article class="local"><b>Associations</b><h3>HOA and shared-property upkeep</h3><p>Scheduled common-area cleaning, landscape upkeep, irrigation observations, storm debris response and repair reporting. Community standards and approvals guide the scope.</p></article><article class="local"><b>Multifamily &amp; rentals</b><h3>Turns and recurring work orders</h3><p>Apartment and rental make-ready cleaning, painting coordination, minor repairs and maintenance documentation for managers with multiple units.</p></article><article class="local"><b>New construction</b><h3>Builder and homeowner punch lists</h3><p>Move-in repairs, sod establishment, fence and gate work, exterior cleaning and landscape improvements based on project requirements.</p></article></div><p class="hub-link"><a class="btn btn-primary" href="https://www.bakerss.com/get-quote/">Request a Community Walkthrough</a></p></div></section>
 <section class="section dark"><div class="wrap"><div class="section-head"><span class="eyebrow">Carolina Forest Communities</span><h2 class="sh">Neighborhood-level service coverage.</h2><p class="intro">Carolina Forest neighborhoods differ in landscaping standards, retention-pond access, lot sizes and HOA procedures. The communities below are geographic references, not a claim of existing contracts or HOA endorsement. Confirm access and service availability for your address.</p></div><div class="neighborhoods"><span>The Farm</span>
 <span>Berkshire Forest</span>
 <span>Waterbridge</span>
@@ -75,12 +707,91 @@ header{position:sticky;top:0;z-index:30;background:rgba(255,255,255,.96);border-
 <span>Clear Pond</span>
 <span>The Parks</span>
 <span>Sago Plantation</span>
-<span>Covington Lake</span></div><p class="intro">Nearby areas include Conway and Socastee, which have separate service-area pages. Community examples include Waterbridge, Plantation Lakes, Berkshire Forest, The Farm and Clear Pond; specific HOA rules should be confirmed with the association.</p><div class="hub-link"><a class="btn btn-primary" href="https://www.bakerss.com/service-areas/carolina-forest/neighborhoods/">Explore Carolina Forest Neighborhoods</a></div></div></section>
+<span>Covington Lake</span></div><p class="intro">Nearby areas include Conway and Socastee, which have separate service-area pages. Community examples include Waterbridge, Plantation Lakes, Berkshire Forest, The Farm and Clear Pond; specific HOA rules should be confirmed with the association.</p><div class="hub-link"><a class="btn btn-primary" href="https://www.bakerss.com/service-areas/carolina-forest/neighborhoods/">Explore Carolina Forest Neighborhoods</a></div><p class="intro">For properties outside Carolina Forest, see our <a href="/service-areas/myrtle-beach/">Myrtle Beach</a>, <a href="/service-areas/conway/">Conway</a> or <a href="/service-areas/socastee/">Socastee</a> service-area guides. Carolina Forest is covered here separately to address its HOA, irrigation and residential maintenance needs.</p></div></section>
 <section class="section alt"><div class="wrap"><div class="section-head"><span class="eyebrow">Carolina Forest FAQ</span><h2 class="sh">Property maintenance questions.</h2></div><div class="faq"><details><summary>How much does property maintenance cost in Carolina Forest?</summary><p>Costs depend on the property size, frequency, number of systems, labor requirements and whether work is recurring or project-based. Request a walkthrough or send photos for a scoped estimate.</p></details><details><summary>How much does lawn care cost in Carolina Forest, SC?</summary><p>Lawn pricing depends on turf area, access, edging, trimming, slope and visit frequency. Larger or shared HOA areas require a separate site assessment.</p></details><details><summary>What do Carolina Forest HOAs require for lawn and exterior upkeep?</summary><p>Requirements vary by association and can address mowing frequency, visible weeds, fences, exterior appearance and approved work hours. Review your current covenants and architectural rules before starting work.</p></details><details><summary>Who maintains common areas in Carolina Forest communities?</summary><p>An HOA or its property manager typically contracts vendors for approved common-area work. Bakerss can quote grounds, cleaning, repairs and related maintenance under a defined scope.</p></details><details><summary>How can I address standing water in my Carolina Forest yard?</summary><p>Start by checking downspouts, grading, irrigation leaks and where water collects after rain. Pond-adjacent properties may have drainage restrictions; significant grading or drainage work may need a qualified specialist and approvals.</p></details><details><summary>When should I fertilize or overseed a Carolina Forest lawn?</summary><p>Timing depends on grass species. Warm-season turf is usually fertilized during active growth; overseeding plans differ for Bermuda, centipede and other grasses. Soil testing and turf identification help avoid unnecessary applications.</p></details><details><summary>Does Bakerss handle handyman work and new-home punch lists in Carolina Forest?</summary><p>Yes. We can review minor repairs, door and gate adjustments, paint touch-ups and other approved punch-list items, subject to trade licensing requirements and project scope.</p></details><details><summary>How do I choose an HOA maintenance vendor in Carolina Forest?</summary><p>Compare insurance documentation, scope clarity, communication, work-order reporting, references, response expectations and the ability to coordinate recurring tasks. Ask for a property-specific proposal.</p></details><details><summary>Can Bakerss support Carolina Forest apartments and rental properties?</summary><p>Yes. Services can include turnover cleaning, painting coordination, minor repairs, common-area care and documented work orders.</p></details><details><summary>Does Bakerss offer irrigation repair and new sod installation?</summary><p>Yes. We can evaluate sprinkler issues, uneven watering and turf replacement needs, then quote an approved repair or installation scope.</p></details><details><summary>Can Bakerss pressure wash siding and remove mildew or algae?</summary><p>We offer exterior washing and can assess suitable methods for siding, hardscapes and other surfaces. Cleaning methods depend on the material and condition; not every surface should receive high pressure.</p></details><details><summary>Do you serve Carolina Forest even though many addresses say Myrtle Beach?</summary><p>Yes. Carolina Forest is an unincorporated Horry County area, and many properties use Myrtle Beach mailing addresses. Share the actual location when requesting service.</p></details></div></div></section>
-<section class="cta"><div class="wrap"><span class="eyebrow">Carolina Forest Property Service</span><h2 class="sh">One property. One local team. Complete care.</h2><p>Tell Bakerss what the property needs today or ask about a recurring maintenance relationship for your Carolina Forest home, rental, HOA or managed property.</p><a class="btn btn-primary" href="https://www.bakerss.com/get-quote/">Request a Free Quote</a></div></section>
+<section class="cta"><div class="wrap"><span class="eyebrow">Carolina Forest Property Service</span><h2 class="sh">One property. One local team. Complete care.</h2><p>Tell Bakerss what the property needs today or ask about a recurring maintenance relationship for your Carolina Forest home, rental, HOA or managed property.</p><p>For a useful estimate, include your neighborhood, property type, service priorities, and photos if available.</p><a class="btn btn-primary" href="https://www.bakerss.com/get-quote/">Request a Free Quote</a></div></section>
 </main>
-<br/>
-
-<footer class="footer"><div class="wrap"><div class="footer-grid"><div><h3>Bakerss Property Services</h3><p>Veteran- and family-owned property maintenance serving the Grand Strand.</p><a href="tel:8434677136">843-467-7136</a><a href="mailto:info@bakerss.com">info@bakerss.com</a></div><div><h4>Carolina Forest</h4><a href="https://www.bakerss.com/service-areas/carolina-forest/">Carolina Forest Services</a><a href="https://www.bakerss.com/service-areas/carolina-forest/neighborhoods/">Carolina Forest Neighborhoods</a><a href="https://www.bakerss.com/service-areas/">All Service Areas</a></div><div><h4>Popular Services</h4><a href="https://www.bakerss.com/services/property-maintenance/">Property Maintenance</a><a href="https://www.bakerss.com/services/lawn-care/">Lawn Care</a><a href="https://www.bakerss.com/services/interior-cleaning/">Cleaning</a><a href="https://www.bakerss.com/services/handyman-services/">Handyman</a></div></div><div class="fine"><span>© 2026 Bakerss Property Services · Myrtle Beach, SC · Serving Horry &amp; Georgetown counties</span><span>Carolina Forest · Grand Strand SC</span></div></div></footer>
-<script src="/assets/bakerss-conversions.js"></script>
-<script>(function(){const b=document.querySelector('.menu-toggle'),n=document.getElementById('primary-nav');if(!b||!n)return;b.addEventListener('click',function(){const open=b.getAttribute('aria-expanded')==='true';b.setAttribute('aria-expanded',String(!open));n.classList.toggle('is-open',!open)});})();</script></body></html>
+<footer class="footer">
+<div class="wrap">
+<div class="footer-grid">
+<div>
+<h3>Bakerss Property Services</h3>
+<p>Premium property maintenance, White Glove estate care, HVAC, cleaning, grounds, pool and repair services across Myrtle Beach, Surfside Beach, Murrells Inlet and the Grand Strand.</p>
+<p><strong style="color:#fff">Call/Text:</strong> <a href="tel:8434677136">843-467-7136</a><br/><strong style="color:#fff">Email:</strong> <a href="mailto:info@bakerss.com">info@bakerss.com</a></p>
+<p style="margin-top:10px;font-size:12px;"><strong style="color:#fff">Hours:</strong> Open 24 hours, 7 days a week<br/>Serving Myrtle Beach and the Grand Strand, South Carolina</p>
+</div>
+<div>
+<h4>Grand Strand Cities</h4>
+<a href="https://www.bakerss.com/service-areas/carolina-forest/">Carolina Forest Services</a>
+<a href="https://www.bakerss.com/service-areas/north-myrtle-beach/">North Myrtle Beach</a>
+<a href="https://www.bakerss.com/service-areas/surfside-beach/">Surfside Beach</a>
+<a href="https://www.bakerss.com/service-areas/conway/">Conway</a>
+<a href="https://www.bakerss.com/service-areas/carolina-forest/">Carolina Forest</a>
+<a href="https://www.bakerss.com/service-areas/murrells-inlet/">Murrells Inlet</a>
+<a href="https://www.bakerss.com/service-areas/garden-city/">Garden City</a>
+<a href="https://www.bakerss.com/service-areas/socastee/">Socastee</a>
+<a href="https://www.bakerss.com/service-areas/pawleys-island/">Pawleys Island</a>
+<a href="https://www.bakerss.com/service-areas/litchfield-beach/">Litchfield Beach</a>
+</div>
+<div>
+<h4>Managed Properties</h4>
+<a href="https://www.bakerss.com/services/commercial-maintenance/">Commercial Maintenance</a>
+<a href="https://www.bakerss.com/apartment-maintenance/">Apartment Maintenance</a>
+<a href="https://www.bakerss.com/hoa-services/">HOA Maintenance</a>
+<a href="https://www.bakerss.com/services/property-maintenance/">Property Maintenance Plans</a>
+<h4 style="margin-top:16px">Explore</h4>
+<a href="https://www.bakerss.com/neighborhoods/">Neighborhood Guides</a>
+<a href="https://www.bakerss.com/learning-center/">Learning Center</a>
+</div>
+<div>
+<h4>Premium Services</h4>
+<a href="https://www.bakerss.com/services/white-glove-estate-care/">White Glove Estate Care</a>
+<a href="https://www.bakerss.com/services/hvac-repair/">HVAC Repair &amp; Maintenance</a>
+<a href="https://www.bakerss.com/services/property-maintenance/">Total Property Care</a>
+<h4 style="margin-top:16px">Core Services</h4>
+<a href="https://www.bakerss.com/services/lawn-care/">Lawn Care</a>
+<a href="https://www.bakerss.com/services/landscaping/">Landscaping</a>
+<a href="https://www.bakerss.com/services/sod-installation/">Sod Installation</a>
+<a href="https://www.bakerss.com/services/airbnb-cleaning/">Airbnb Cleaning</a>
+<a href="https://www.bakerss.com/services/interior-cleaning/">Interior Cleaning</a>
+<a href="https://www.bakerss.com/services/pool-maintenance/">Pool Maintenance</a>
+<a href="https://www.bakerss.com/services/handyman-services/">Handyman Services</a>
+<a href="https://www.bakerss.com/services/pressure-washing/">Pressure Washing</a>
+</div>
+<div>
+<h4>More Services</h4>
+<a href="https://www.bakerss.com/services/window-cleaning/">Window Cleaning</a>
+<a href="https://www.bakerss.com/services/gutter-cleaning/">Gutter Cleaning</a>
+<a href="https://www.bakerss.com/services/dryer-vent-cleaning/">Dryer Vent Cleaning</a>
+<a href="https://www.bakerss.com/services/irrigation-sprinkler-repair/">Irrigation Repair</a>
+<a href="https://www.bakerss.com/services/fence-installation-repair/">Fence Repair</a>
+<a href="https://www.bakerss.com/services/vacation-home-watch/">Vacation Home Watch</a>
+<a href="https://www.bakerss.com/service-areas/horry-county/">Horry County</a>
+<a href="https://www.bakerss.com/service-areas/georgetown-county/">Georgetown County</a>
+</div>
+</div>
+<div class="vob-member-banner" style="margin-top:28px;padding:18px 20px;border-top:1px solid #1f1f25;text-align:center;">
+<p style="margin:0 auto;max-width:1000px;font-size:12px;line-height:1.7;color:#9696a0;">
+<a href="https://www.veteranownedbusiness.com/" rel="noopener" style="color:#fff;font-weight:900;" target="_blank" title="Veteran Owned Business Marketplace"><strong>Veteran Owned Business Member</strong></a> — Our business is a proud member of the Veteran Owned Business Project, America's largest veteran owned business marketplace. Since launching on Veterans Day 2008, VOB has grown to nearly 41,000 verified member profiles, more than 400,000 supporters, 50+ million visitors and 150+ million page views. The Veteran Owned Business Marketplace connects consumers, corporations, government agencies, prime contractors and fellow business owners with companies owned by veterans, active duty military members, reservists, service disabled veterans and military spouses of the United States Army, Navy, Marine Corps, Coast Guard, Air Force, Space Force and National Guard.
+</p>
+</div>
+<div class="fine">
+<span>© 2026 Bakerss Property Services · <a href="tel:8434677136" style="color:#9696a0">843-467-7136</a></span>
+<span>Estate Care · HVAC · Cleaning · Grounds · Pool · Work Orders · Grand Strand SC</span>
+</div>
+</div>
+</footer>
+<div aria-label="Quick contact" class="sticky-mobile" role="complementary">
+<a class="btn btn-primary" href="tel:8434677136">Call</a>
+<a class="btn btn-light" href="https://www.bakerss.com/get-quote/">Free Quote</a>
+</div>
+<script>
+function toggleMenu(btn){
+var menu=document.getElementById('mobileMenu');
+var open=menu.classList.toggle('open');
+btn.setAttribute('aria-expanded',open?'true':'false');
+}
+</script>
+<script>document.querySelectorAll('.dropdown-wrap > button').forEach(function(button){button.addEventListener('click',function(){var expanded=button.getAttribute('aria-expanded')==='true';document.querySelectorAll('.dropdown-wrap > button').forEach(function(b){b.setAttribute('aria-expanded','false')});button.setAttribute('aria-expanded',String(!expanded));});button.addEventListener('keydown',function(e){if(e.key==='Escape'){button.setAttribute('aria-expanded','false');button.focus();}});});</script>
+<script src="/assets/bakerss-conversions.js"></script></body>
+</html>
