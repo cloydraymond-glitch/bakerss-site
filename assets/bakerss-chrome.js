@@ -1,0 +1,3 @@
+/* Shared mobile menu behavior for all Bakerss pages. */
+window.toggleMenu=function(btn){var m=document.getElementById('mobileMenu');if(!m)return;var expanded=m.classList.toggle('open');btn.setAttribute('aria-expanded',String(expanded));};
+document.addEventListener('click',function(e){var m=document.getElementById('mobileMenu');if(!m)return;if(!e.target.closest('.bakerss-chrome.site-header')&&m.classList.contains('open')){m.classList.remove('open');var b=document.querySelector('.bakerss-chrome .hamb');if(b)b.setAttribute('aria-expanded','false');}});

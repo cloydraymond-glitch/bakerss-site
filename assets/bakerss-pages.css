@@ -1,0 +1,23 @@
+/* Conversion-friendly, readable service and learning-center layouts */
+.bps-hero{background:linear-gradient(125deg,#0c0c10 0%,#1b1721 65%,#3b1028 100%);color:#fff;padding:78px 0 70px}
+.bps-wrap{width:min(1160px,calc(100% - 36px));margin:0 auto}
+.bps-kicker{color:#ff8cc3;font-size:13px;letter-spacing:.12em;text-transform:uppercase;font-weight:800}
+.bps-hero h1{font:700 clamp(2.2rem,5vw,4.25rem)/1.1 'Playfair Display',Georgia,serif;max-width:850px;margin:14px 0 22px}
+.bps-hero p{font-size:1.12rem;max-width:780px;color:#ede5e9;line-height:1.7}
+.bps-btn{display:inline-block;border-radius:50px;padding:13px 24px;text-decoration:none;background:#e8197d;color:#fff;font-weight:800;margin:10px 10px 0 0}
+.bps-btn--outline{border:1px solid #e8197d;color:#e8197d;background:#fff}
+.bps-section{padding:64px 0}.bps-section--soft{background:#f7f7f9}
+.bps-section h2{font:700 clamp(1.7rem,3vw,2.5rem)/1.2 'Playfair Display',Georgia,serif;margin:0 0 18px}
+.bps-section h3{font-size:1.13rem;margin:0 0 10px}
+.bps-section p,.bps-section li{color:#444752;line-height:1.7}
+.bps-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:20px;margin:24px 0}
+.bps-card{background:#fff;border:1px solid #dedee5;border-radius:16px;padding:24px;box-shadow:0 10px 26px #00000008}
+.bps-card a{color:#ad115b;font-weight:800}.bps-card a:hover{text-decoration:underline}
+.bps-card p{margin:9px 0 0}
+.bps-details{border-bottom:1px solid #ddd;padding:17px 0}.bps-details summary{font-weight:800;cursor:pointer;color:#24212b}.bps-details p{padding:6px 0 0}
+.bps-small{font-size:.88rem;color:#555!important}.bps-crumb{color:#666;font-size:.92rem;margin:0 0 22px}
+.bps-chips{display:flex;flex-wrap:wrap;gap:10px}.bps-chips a{display:inline-block;border:1px solid #dedee5;border-radius:100px;padding:7px 15px;color:#a31158;text-decoration:none;background:#fff}
+.bps-lead{font-size:1.18rem;line-height:1.85;max-width:850px}.bps-links{display:grid;grid-template-columns:repeat(2,1fr);gap:9px}
+.bps-links a{display:block;padding:10px 14px;background:#fff;border:1px solid #eee;border-radius:10px;color:#aa155b;text-decoration:none;font-weight:700}
+@media(max-width:800px){.bps-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:560px){.bps-grid,.bps-links{grid-template-columns:1fr}.bps-hero{padding:55px 0}.bps-section{padding:42px 0}}

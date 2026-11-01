@@ -1,0 +1,65 @@
+/* Bakerss Property Services: single-source shared website chrome. */
+:root{--pink:#e8197d;--pink2:#f0408a;--black:#0b0b0d;--black2:#151519;--text:#22232a;--muted:#646875;--line:#e6e7eb;--soft:#f7f7f9;--white:#fff;--green:#16a34a;--max:1180px;--shadow:0 14px 40px rgba(0,0,0,.12);--font:'DM Sans',Inter,system-ui,sans-serif;--serif:'Playfair Display',Georgia,serif}
+body .bakerss-chrome.wrap,body .bakerss-chrome .wrap{max-width:var(--max);margin:auto;padding:0 22px}
+body .bakerss-chrome.skip,body .bakerss-chrome .skip{position:absolute;left:-999px;top:auto}
+body .bakerss-chrome.skip:focus,body .bakerss-chrome .skip:focus{left:16px;top:16px;background:#fff;z-index:999;padding:10px 14px;border-radius:8px}
+body .bakerss-chrome.btn,body .bakerss-chrome .btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;border-radius:999px;padding:12px 22px;font-weight:900;text-decoration:none;border:2px solid transparent;line-height:1.1;transition:.18s ease;font-size:14px}
+body .bakerss-chrome.btn-primary,body .bakerss-chrome .btn-primary{background:var(--pink);color:#fff;box-shadow:0 10px 24px rgba(232,24,109,.28)}
+body .bakerss-chrome.btn-outline,body .bakerss-chrome .btn-outline{border-color:rgba(255,255,255,.4);color:#fff}
+body .bakerss-chrome.btn-light,body .bakerss-chrome .btn-light{background:#fff;color:var(--black)}
+body .bakerss-chrome.btn-ghost,body .bakerss-chrome .btn-ghost{border-color:var(--pink);color:var(--pink);background:#fff}
+body .bakerss-chrome.btn-dark,body .bakerss-chrome .btn-dark{background:var(--black);color:#fff}
+body .bakerss-chrome.topbar,body .bakerss-chrome .topbar{background:var(--black);color:#d7d7dc;font-size:13px}
+body .bakerss-chrome.topbar .wrap,body .bakerss-chrome .topbar .wrap{display:flex;justify-content:center;gap:16px;align-items:center;min-height:38px;text-align:center;flex-wrap:wrap}
+body .bakerss-chrome.topbar a,body .bakerss-chrome .topbar a{color:#fff;font-weight:900;text-decoration:none}
+body .bakerss-chrome.site-header,body .bakerss-chrome .site-header{position:sticky;top:0;z-index:100;background:rgba(255,255,255,.96);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+body .bakerss-chrome.nav,body .bakerss-chrome .nav{display:flex;align-items:center;justify-content:space-between;gap:22px;min-height:72px}
+body .bakerss-chrome.logo,body .bakerss-chrome .logo{font-size:24px;font-weight:950;text-decoration:none;letter-spacing:-.04em;color:var(--black)}
+body .bakerss-chrome.logo span,body .bakerss-chrome .logo span{color:var(--pink)}
+body .bakerss-chrome.navlinks,body .bakerss-chrome .navlinks{display:flex;align-items:center;gap:4px;list-style:none;margin:0;padding:0}
+body .bakerss-chrome.navlinks a,body .bakerss-chrome .navlinks a,body .bakerss-chrome.navlinks button,body .bakerss-chrome .navlinks button{font:inherit;font-size:13.5px;font-weight:800;color:#30313a;text-decoration:none;border:0;background:none;padding:9px 11px;border-radius:10px;cursor:pointer;white-space:nowrap}
+body .bakerss-chrome.navlinks a:hover,body .bakerss-chrome .navlinks a:hover,body .bakerss-chrome.navlinks button:hover,body .bakerss-chrome .navlinks button:hover{background:var(--soft);color:var(--pink)}
+body .bakerss-chrome.dropdown-wrap,body .bakerss-chrome .dropdown-wrap{position:relative}
+body .bakerss-chrome.dropdown,body .bakerss-chrome .dropdown{position:absolute;left:0;top:100%;min-width:820px;padding-top:14px;display:none}
+body .bakerss-chrome.dropdown-wrap:hover .dropdown,body .bakerss-chrome .dropdown-wrap:hover .dropdown,body .bakerss-chrome.dropdown-wrap:focus-within .dropdown,body .bakerss-chrome .dropdown-wrap:focus-within .dropdown{display:block}
+body .bakerss-chrome.dd-panel,body .bakerss-chrome .dd-panel{background:#fff;border:1px solid var(--line);box-shadow:var(--shadow);border-radius:18px;padding:22px;display:grid;grid-template-columns:repeat(4,1fr);gap:20px}
+body .bakerss-chrome.dd-col strong,body .bakerss-chrome .dd-col strong{display:block;font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:var(--pink);margin-bottom:10px;padding-bottom:6px;border-bottom:1px solid var(--line)}
+body .bakerss-chrome.dd-col a,body .bakerss-chrome .dd-col a{display:block;padding:6px 0;color:#3f424c;font-size:13.5px;text-decoration:none}
+body .bakerss-chrome.dd-col a:hover,body .bakerss-chrome .dd-col a:hover,body .bakerss-chrome.dd-col a.highlight,body .bakerss-chrome .dd-col a.highlight{color:var(--pink);font-weight:900}
+body .bakerss-chrome.nav-actions,body .bakerss-chrome .nav-actions{display:flex;gap:8px;align-items:center}
+body .bakerss-chrome.hamb,body .bakerss-chrome .hamb{display:none;border:0;background:var(--black);color:#fff;border-radius:10px;padding:10px 12px;font-weight:900;cursor:pointer}
+body .bakerss-chrome.mobile-menu,body .bakerss-chrome .mobile-menu{display:none;background:var(--black);color:#fff;padding:20px 0}
+body .bakerss-chrome.mobile-menu.open,body .bakerss-chrome .mobile-menu.open{display:block}
+body .bakerss-chrome.mobile-menu a,body .bakerss-chrome .mobile-menu a{display:block;padding:10px 0;text-decoration:none;border-bottom:1px solid rgba(255,255,255,.08);color:#ddd;font-size:14px}
+body .bakerss-chrome.mobile-menu .mm-section,body .bakerss-chrome .mobile-menu .mm-section{display:block;padding:10px 0 2px;font-size:10.5px;letter-spacing:.12em;text-transform:uppercase;color:rgba(255,255,255,.42);margin-top:10px}
+body .bakerss-chrome.footer,body .bakerss-chrome .footer{background:#070708;color:#9696a0;padding:52px 0 24px}
+body .bakerss-chrome.footer-grid,body .bakerss-chrome .footer-grid{display:grid;grid-template-columns:1.7fr 1fr 1fr 1fr 1fr;gap:28px}
+body .bakerss-chrome.footer h3,body .bakerss-chrome .footer h3,body .bakerss-chrome.footer h4,body .bakerss-chrome .footer h4{color:#fff}
+body .bakerss-chrome.footer h4,body .bakerss-chrome .footer h4{font-size:11px;letter-spacing:.1em;text-transform:uppercase;margin:0 0 10px}
+body .bakerss-chrome.footer p,body .bakerss-chrome .footer p,body .bakerss-chrome.footer a,body .bakerss-chrome .footer a{font-size:13px;color:#9696a0}
+body .bakerss-chrome.footer a,body .bakerss-chrome .footer a{display:block;text-decoration:none;margin:5px 0}
+body .bakerss-chrome.footer a:hover,body .bakerss-chrome .footer a:hover{color:var(--pink)}
+body .bakerss-chrome.sticky-mobile,body .bakerss-chrome .sticky-mobile{display:none;position:fixed;left:0;right:0;bottom:0;background:#08080a;border-top:2px solid var(--pink);padding:10px;z-index:120;gap:8px}
+body .bakerss-chrome.sticky-mobile .btn,body .bakerss-chrome .sticky-mobile .btn{flex:1;padding:11px 8px;font-size:12.5px}
+@media (max-width:1050px){body .bakerss-chrome.navlinks,body .bakerss-chrome .navlinks{display:none}
+body .bakerss-chrome.hamb,body .bakerss-chrome .hamb{display:block}
+body .bakerss-chrome.dropdown,body .bakerss-chrome .dropdown{display:none!important}
+body .bakerss-chrome.footer-grid,body .bakerss-chrome .footer-grid{grid-template-columns:1fr 1fr 1fr}}
+@media (max-width:620px){body .bakerss-chrome.nav-actions .phone-btn,body .bakerss-chrome .nav-actions .phone-btn{display:none}
+body .bakerss-chrome.service-grid,body .bakerss-chrome .service-grid,body .bakerss-chrome.footer-grid,body .bakerss-chrome .footer-grid{grid-template-columns:1fr}
+body .bakerss-chrome.sticky-mobile,body .bakerss-chrome .sticky-mobile{display:flex}}
+@media (min-width:1051px){body .bakerss-chrome.dropdown-wrap > button[aria-expanded="true"] + .dropdown,body .bakerss-chrome .dropdown-wrap > button[aria-expanded="true"] + .dropdown{display:block}}
+/* Guard old template styles and permit a readable, accessible mobile mega-menu. */
+body .bakerss-chrome.site-header{display:block;background:rgba(255,255,255,.97);color:#22232a;z-index:999;position:sticky;top:0}
+body .bakerss-chrome .wrap{max-width:1180px;margin:0 auto;padding-left:22px;padding-right:22px}
+body .bakerss-chrome .navlinks{display:flex;align-items:center;list-style:none;gap:4px}
+body .bakerss-chrome .mobile-menu{display:none}
+body .bakerss-chrome .mobile-menu.open{display:block}
+body .bakerss-chrome .mobile-menu a{color:#eee}
+body .bakerss-chrome.footer{background:#101014;color:#f2f2f5}
+body .bakerss-chrome.footer a{color:#d5d5df}
+body .bakerss-chrome .logo, body .bakerss-chrome .logo span{font-family:'DM Sans',system-ui,sans-serif}
+body .bakerss-chrome.topbar{background:#0b0b0d;color:#eee}
+body .bakerss-chrome.sticky-mobile{z-index:999}
+@media(max-width:1050px){body .bakerss-chrome .navlinks{display:none}body .bakerss-chrome .hamb{display:block}body .bakerss-chrome .nav{min-height:68px}}
+@media(max-width:620px){body .bakerss-chrome.sticky-mobile{display:flex}body{padding-bottom:68px}}
