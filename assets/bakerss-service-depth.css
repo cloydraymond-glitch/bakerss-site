@@ -1,0 +1,15 @@
+/* Useful, service-specific information for standalone Bakerss landing pages */
+.bps-depth{background:#fff;color:#202025;padding:48px 0 64px;font-family:'DM Sans',Arial,sans-serif}
+.bps-depth .inner{width:min(1110px,calc(100% - 40px));margin:auto}
+.bps-depth h2{font-family:'Playfair Display',Georgia,serif;font-size:clamp(1.45rem,2.9vw,2.1rem);line-height:1.25;margin:30px 0 14px}
+.bps-depth h3{font-size:1.13rem;margin:20px 0 9px;color:#202025}
+.bps-depth p,.bps-depth li{line-height:1.72;color:#4b4b50}
+.bps-depth .lead{font-size:1.1rem;max-width:840px}
+.bps-depth ul{padding-left:22px}
+.bps-depth .columns{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:20px}
+.bps-depth .panel{background:#f9f8fa;border:1px solid #e9e7ea;border-radius:13px;padding:21px}
+.bps-depth .faq{border-top:1px solid #e6e4e7;padding:13px 0}
+.bps-depth .faq h3{margin-top:0}
+.bps-depth a{color:#b90c68;font-weight:700;text-decoration:underline}
+.bps-depth .service-cta{padding:20px;border-left:4px solid #e8197d;background:#faf7fa;margin:28px 0 0}
+@media(max-width:750px){.bps-depth .columns{grid-template-columns:1fr}.bps-depth{padding:35px 0}}

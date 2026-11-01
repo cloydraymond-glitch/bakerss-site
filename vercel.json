@@ -8,12 +8,7 @@
     },
     {
       "source": "/contact.html",
-      "destination": "/get-quote/",
-      "permanent": true
-    },
-    {
-      "source": "/contact/",
-      "destination": "/get-quote/",
+      "destination": "/contact/",
       "permanent": true
     },
     {
@@ -418,12 +413,12 @@
     },
     {
       "source": "/services/home-repairs-handyman/",
-      "destination": "/services/handyman/",
+      "destination": "/services/handyman-services/",
       "permanent": true
     },
     {
       "source": "/services/property-maintenance-plans/",
-      "destination": "/property-maintenance-plans/",
+      "destination": "/services/property-maintenance/",
       "permanent": true
     },
     {
@@ -730,6 +725,461 @@
       "source": "/services/georgetown-county/carolina-forest/neighborhoods/waterway-palms-plantation/",
       "destination": "/service-areas/carolina-forest/",
       "permanent": true
+    },
+    {
+      "source": "/georgetown-county/",
+      "destination": "/service-areas/georgetown-county/",
+      "permanent": true
+    },
+    {
+      "source": "/horry-county/",
+      "destination": "/service-areas/horry-county/",
+      "permanent": true
+    },
+    {
+      "source": "/horry-county/index.html.html",
+      "destination": "/service-areas/horry-county/",
+      "permanent": true
+    },
+    {
+      "source": "/georgetown-county/commercial-cleaning/",
+      "destination": "/services/commercial-cleaning/",
+      "permanent": true
+    },
+    {
+      "source": "/georgetown-county/airbnb-cleaning/",
+      "destination": "/services/airbnb-cleaning/",
+      "permanent": true
+    },
+    {
+      "source": "/georgetown-county/commercial-hvac-maintenance/",
+      "destination": "/services/hvac-maintenance/",
+      "permanent": true
+    },
+    {
+      "source": "/georgetown-county/carolina-forest/",
+      "destination": "/service-areas/carolina-forest/",
+      "permanent": true
+    },
+    {
+      "source": "/georgetown-county/concrete-curbing/",
+      "destination": "/services/concrete-curbing/",
+      "permanent": true
+    },
+    {
+      "source": "/georgetown-county/commercial-maintenance/",
+      "destination": "/services/commercial-maintenance/",
+      "permanent": true
+    },
+    {
+      "source": "/georgetown-county/air-duct-cleaning/",
+      "destination": "/services/air-duct-cleaning/",
+      "permanent": true
+    },
+    {
+      "source": "/georgetown-county/hvac-repair/",
+      "destination": "/services/hvac-repair/",
+      "permanent": true
+    },
+    {
+      "source": "/georgetown-county/deck-building-repair/",
+      "destination": "/services/deck-building-repair/",
+      "permanent": true
+    },
+    {
+      "source": "/georgetown-county/carolina-forest/airbnb-cleaning/",
+      "destination": "/service-areas/carolina-forest/airbnb-cleaning/",
+      "permanent": true
+    },
+    {
+      "source": "/georgetown-county/carolina-forest/handyman-services/",
+      "destination": "/service-areas/carolina-forest/handyman-services/",
+      "permanent": true
+    },
+    {
+      "source": "/georgetown-county/carolina-forest/fence-installation-repair/",
+      "destination": "/service-areas/carolina-forest/fence-installation-repair/",
+      "permanent": true
+    },
+    {
+      "source": "/georgetown-county/carolina-forest/painting/",
+      "destination": "/service-areas/carolina-forest/painting/",
+      "permanent": true
+    },
+    {
+      "source": "/georgetown-county/carolina-forest/dryer-vent-cleaning/",
+      "destination": "/service-areas/carolina-forest/dryer-vent-cleaning/",
+      "permanent": true
+    },
+    {
+      "source": "/georgetown-county/carolina-forest/apartment-maintenance/",
+      "destination": "/service-areas/carolina-forest/apartment-maintenance/",
+      "permanent": true
+    },
+    {
+      "source": "/georgetown-county/carolina-forest/gutter-cleaning/",
+      "destination": "/service-areas/carolina-forest/gutter-cleaning/",
+      "permanent": true
+    },
+    {
+      "source": "/georgetown-county/carolina-forest/interior-cleaning/",
+      "destination": "/service-areas/carolina-forest/interior-cleaning/",
+      "permanent": true
+    },
+    {
+      "source": "/georgetown-county/carolina-forest/irrigation-sprinkler-repair/",
+      "destination": "/service-areas/carolina-forest/irrigation-sprinkler-repair/",
+      "permanent": true
+    },
+    {
+      "source": "/georgetown-county/carolina-forest/commercial-maintenance/",
+      "destination": "/service-areas/carolina-forest/commercial-maintenance/",
+      "permanent": true
+    },
+    {
+      "source": "/georgetown-county/carolina-forest/pressure-washing/",
+      "destination": "/service-areas/carolina-forest/pressure-washing/",
+      "permanent": true
+    },
+    {
+      "source": "/georgetown-county/carolina-forest/property-maintenance-plans/",
+      "destination": "/service-areas/carolina-forest/property-maintenance-plans/",
+      "permanent": true
+    },
+    {
+      "source": "/georgetown-county/carolina-forest/window-cleaning/",
+      "destination": "/service-areas/carolina-forest/window-cleaning/",
+      "permanent": true
+    },
+    {
+      "source": "/georgetown-county/carolina-forest/neighborhoods/",
+      "destination": "/service-areas/carolina-forest/neighborhoods/",
+      "permanent": true
+    },
+    {
+      "source": "/georgetown-county/carolina-forest/sod-installation/",
+      "destination": "/service-areas/carolina-forest/sod-installation/",
+      "permanent": true
+    },
+    {
+      "source": "/georgetown-county/carolina-forest/epoxy-flooring/",
+      "destination": "/service-areas/carolina-forest/epoxy-flooring/",
+      "permanent": true
+    },
+    {
+      "source": "/georgetown-county/carolina-forest/pool-maintenance/",
+      "destination": "/service-areas/carolina-forest/pool-maintenance/",
+      "permanent": true
+    },
+    {
+      "source": "/georgetown-county/carolina-forest/landscaping/",
+      "destination": "/service-areas/carolina-forest/landscaping/",
+      "permanent": true
+    },
+    {
+      "source": "/georgetown-county/carolina-forest/hoa-maintenance/",
+      "destination": "/service-areas/carolina-forest/hoa-maintenance/",
+      "permanent": true
+    },
+    {
+      "source": "/georgetown-county/carolina-forest/kawn-care/",
+      "destination": "/services/lawn-care/",
+      "permanent": true
+    },
+    {
+      "source": "/georgetown-county/carolina-forest/vacation-home-watch/",
+      "destination": "/service-areas/carolina-forest/vacation-home-watch/",
+      "permanent": true
+    },
+    {
+      "source": "/georgetown-county/carolina-forest/neighborhoods/brighton-lakes/",
+      "destination": "/service-areas/carolina-forest/neighborhoods/brighton-lakes/",
+      "permanent": true
+    },
+    {
+      "source": "/georgetown-county/carolina-forest/neighborhoods/berkshire-forest/",
+      "destination": "/service-areas/carolina-forest/neighborhoods/berkshire-forest/",
+      "permanent": true
+    },
+    {
+      "source": "/georgetown-county/carolina-forest/neighborhoods/avalon/",
+      "destination": "/service-areas/carolina-forest/neighborhoods/avalon/",
+      "permanent": true
+    },
+    {
+      "source": "/georgetown-county/carolina-forest/neighborhoods/the-farm-at-carolina-forest/",
+      "destination": "/service-areas/carolina-forest/neighborhoods/the-farm-at-carolina-forest/",
+      "permanent": true
+    },
+    {
+      "source": "/georgetown-county/carolina-forest/neighborhoods/clear-pond/",
+      "destination": "/service-areas/carolina-forest/neighborhoods/clear-pond/",
+      "permanent": true
+    },
+    {
+      "source": "/georgetown-county/carolina-forest/neighborhoods/the-cottages-at-carolina-forest/",
+      "destination": "/service-areas/carolina-forest/neighborhoods/the-cottages-at-carolina-forest/",
+      "permanent": true
+    },
+    {
+      "source": "/georgetown-county/carolina-forest/neighborhoods/black-creek-plantation/",
+      "destination": "/service-areas/carolina-forest/neighborhoods/black-creek-plantation/",
+      "permanent": true
+    },
+    {
+      "source": "/georgetown-county/carolina-forest/neighborhoods/bellegrove-preserve/",
+      "destination": "/service-areas/carolina-forest/neighborhoods/bellegrove-preserve/",
+      "permanent": true
+    },
+    {
+      "source": "/georgetown-county/carolina-forest/neighborhoods/the-reserve-at-walkers-woods/",
+      "destination": "/service-areas/carolina-forest/neighborhoods/the-reserve-at-walkers-woods/",
+      "permanent": true
+    },
+    {
+      "source": "/georgetown-county/carolina-forest/neighborhoods/covington-lake/",
+      "destination": "/service-areas/carolina-forest/neighborhoods/covington-lake/",
+      "permanent": true
+    },
+    {
+      "source": "/georgetown-county/carolina-forest/neighborhoods/covington-lake-and-covington-lake-east/",
+      "destination": "/service-areas/carolina-forest/neighborhoods/covington-lake-and-covington-lake-east/",
+      "permanent": true
+    },
+    {
+      "source": "/georgetown-county/carolina-forest/neighborhoods/plantation-lakes/",
+      "destination": "/service-areas/carolina-forest/neighborhoods/plantation-lakes/",
+      "permanent": true
+    },
+    {
+      "source": "/georgetown-county/carolina-forest/neighborhoods/sago-plantation/",
+      "destination": "/service-areas/carolina-forest/neighborhoods/sago-plantation/",
+      "permanent": true
+    },
+    {
+      "source": "/georgetown-county/carolina-forest/neighborhoods/the-bluffs-on-the-waterway/",
+      "destination": "/service-areas/carolina-forest/neighborhoods/the-bluffs-on-the-waterway/",
+      "permanent": true
+    },
+    {
+      "source": "/georgetown-county/carolina-forest/neighborhoods/summerlyn/",
+      "destination": "/service-areas/carolina-forest/neighborhoods/summerlyn/",
+      "permanent": true
+    },
+    {
+      "source": "/georgetown-county/carolina-forest/neighborhoods/carolina-waterway-plantation/",
+      "destination": "/service-areas/carolina-forest/neighborhoods/carolina-waterway-plantation/",
+      "permanent": true
+    },
+    {
+      "source": "/georgetown-county/carolina-forest/neighborhoods/walkers-woods/",
+      "destination": "/service-areas/carolina-forest/neighborhoods/walkers-woods/",
+      "permanent": true
+    },
+    {
+      "source": "/georgetown-county/carolina-forest/neighborhoods/spring-lake/",
+      "destination": "/service-areas/carolina-forest/neighborhoods/spring-lake/",
+      "permanent": true
+    },
+    {
+      "source": "/georgetown-county/carolina-forest/neighborhoods/the-parks-at-carolina-forest/",
+      "destination": "/service-areas/carolina-forest/neighborhoods/the-parks-at-carolina-forest/",
+      "permanent": true
+    },
+    {
+      "source": "/georgetown-county/carolina-forest/neighborhoods/indigo-bay/",
+      "destination": "/service-areas/carolina-forest/neighborhoods/indigo-bay/",
+      "permanent": true
+    },
+    {
+      "source": "/georgetown-county/carolina-forest/neighborhoods/the-battery-on-the-waterway/",
+      "destination": "/service-areas/carolina-forest/neighborhoods/the-battery-on-the-waterway/",
+      "permanent": true
+    },
+    {
+      "source": "/service-areas/horry-county/index.html.html",
+      "destination": "/service-areas/horry-county/",
+      "permanent": true
+    },
+    {
+      "source": "/service-areas/garden-city/airbnb/index..html",
+      "destination": "/service-areas/garden-city/airbnb-cleaning/",
+      "permanent": true
+    },
+    {
+      "source": "/service-areas/north-myrtle-beach/neighborhoods/tilghman-estates-and-tilghman-beach/",
+      "destination": "/service-areas/north-myrtle-beach/neighborhoods/tilghman-forest/",
+      "permanent": true
+    },
+    {
+      "source": "/service-areas/north-myrtle-beach/neighborhoods/tidewater-plantatioin/",
+      "destination": "/service-areas/north-myrtle-beach/tidewater/",
+      "permanent": true
+    },
+    {
+      "source": "/service-areas/litchfield-beach/neighborhoods/litchfield-by-the-sea/",
+      "destination": "/service-areas/litchfield-beach/neighborhoods/marsh-hawk/",
+      "permanent": true
+    },
+    {
+      "source": "/service-areas/conway/property-maintenance-plans/",
+      "destination": "/service-areas/carolina-forest/property-maintenance-plans/",
+      "permanent": true
+    },
+    {
+      "source": "/service-areas/conway/neighborhoods/bear-bluff-plantation/",
+      "destination": "/service-areas/conway/neighborhoods/castlewood-and-forest-glen/",
+      "permanent": true
+    },
+    {
+      "source": "/service-areas/conway/neighborhoods/heritage-preserve/index.html.html",
+      "destination": "/service-areas/conway/neighborhoods/heritage-preserve/",
+      "permanent": true
+    },
+    {
+      "source": "/service-areas/murrells-inlet/pressure-washing/",
+      "destination": "/service-areas/garden-city/pressure-washing/",
+      "permanent": true
+    },
+    {
+      "source": "/service-areas/myrtle-beach/forestbrook/",
+      "destination": "/service-areas/socastee/forestbrook/",
+      "permanent": true
+    },
+    {
+      "source": "/service-areas/myrtle-beach/neighborhoods/astoria-park/",
+      "destination": "/service-areas/conway/",
+      "permanent": true
+    },
+    {
+      "source": "/service-areas/socastee/flooring/index.html.html",
+      "destination": "/service-areas/socastee/flooring/",
+      "permanent": true
+    },
+    {
+      "source": "/services/deck-building/",
+      "destination": "/services/deck-building-repair/",
+      "permanent": true
+    },
+    {
+      "source": "/services/deck-building/!index.html",
+      "destination": "/services/deck-building-repair/",
+      "permanent": true
+    },
+    {
+      "source": "/reviews/neighborhoods/",
+      "destination": "/neighborhoods/",
+      "permanent": true
+    },
+    {
+      "source": "/reviews/neighborhoods/waterbridge/",
+      "destination": "/neighborhoods/waterbridge/",
+      "permanent": true
+    },
+    {
+      "source": "/reviews/neighborhoods/arrowhead/",
+      "destination": "/neighborhoods/arrowhead/",
+      "permanent": true
+    },
+    {
+      "source": "/reviews/neighborhoods/socastee/",
+      "destination": "/neighborhoods/socastee/",
+      "permanent": true
+    },
+    {
+      "source": "/reviews/neighborhoods/berkshire-forest/",
+      "destination": "/neighborhoods/berkshire-forest/",
+      "permanent": true
+    },
+    {
+      "source": "/reviews/neighborhoods/carolina-forest/",
+      "destination": "/neighborhoods/carolina-forest/",
+      "permanent": true
+    },
+    {
+      "source": "/reviews/neighborhoods/the-dunes/",
+      "destination": "/neighborhoods/the-dunes/",
+      "permanent": true
+    },
+    {
+      "source": "/reviews/neighborhoods/the-farm/",
+      "destination": "/neighborhoods/the-farm/",
+      "permanent": true
+    },
+    {
+      "source": "/reviews/neighborhoods/grand-dunes/",
+      "destination": "/neighborhoods/grand-dunes/",
+      "permanent": true
+    },
+    {
+      "source": "/reviews/neighborhoods/arcadian-shores/",
+      "destination": "/neighborhoods/arcadian-shores/",
+      "permanent": true
+    },
+    {
+      "source": "/reviews/neighborhoods/covington-lake/",
+      "destination": "/neighborhoods/covington-lake/",
+      "permanent": true
+    },
+    {
+      "source": "/reviews/neighborhoods/windy-hill-crescent-beach/",
+      "destination": "/neighborhoods/windy-hill-crescent-beach/",
+      "permanent": true
+    },
+    {
+      "source": "/reviews/neighborhoods/plantation-lakes/",
+      "destination": "/neighborhoods/plantation-lakes/",
+      "permanent": true
+    },
+    {
+      "source": "/reviews/neighborhoods/pawleys-plantation/",
+      "destination": "/neighborhoods/pawleys-plantation/",
+      "permanent": true
+    },
+    {
+      "source": "/reviews/neighborhoods/cherry-grove/",
+      "destination": "/neighborhoods/cherry-grove/",
+      "permanent": true
+    },
+    {
+      "source": "/reviews/neighborhoods/indigo-bay/",
+      "destination": "/neighborhoods/indigo-bay/",
+      "permanent": true
+    },
+    {
+      "source": "/reviews/neighborhoods/tidewater-plantation/",
+      "destination": "/neighborhoods/tidewater-plantation/",
+      "permanent": true
+    },
+    {
+      "source": "/reviews/neighborhoods/prince-creek/",
+      "destination": "/neighborhoods/prince-creek/",
+      "permanent": true
+    },
+    {
+      "source": "/images/",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/georgetown-county/carolina-forest/neighborhoods/waterbridge/",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/georgetown-county/carolina-forest/neighborhoods/waterway-palms-plantation/",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/georgetown-county/carolina-forest/neighborhoods/clear-pond/covington-lake-and-covington-lake-east/",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/georgetown-county/carolina-forest/neighborhoods/avalon/bellegrove-preserve/",
+      "destination": "/",
+      "permanent": true
     }
   ],
   "headers": [
@@ -751,5 +1201,5 @@
         }
       ]
     }
-]
+  ]
 }
