@@ -1,0 +1,789 @@
+{
+  "included": 682,
+  "excluded": 193,
+  "reasonCounts": {
+    "manual-exclusion": 1,
+    "noindex": 9,
+    "non-self-canonical": 4,
+    "redirect": 178,
+    "utility-page": 1
+  },
+  "excludedPages": [
+    {
+      "route": "/404.html",
+      "reason": "utility-page"
+    },
+    {
+      "route": "/about.html",
+      "reason": "redirect"
+    },
+    {
+      "route": "/cleaning-quote/",
+      "reason": "manual-exclusion"
+    },
+    {
+      "route": "/contact.html",
+      "reason": "redirect"
+    },
+    {
+      "route": "/georgetown-county/",
+      "reason": "redirect"
+    },
+    {
+      "route": "/georgetown-county/air-duct-cleaning/",
+      "reason": "redirect"
+    },
+    {
+      "route": "/georgetown-county/airbnb-cleaning/",
+      "reason": "redirect"
+    },
+    {
+      "route": "/georgetown-county/carolina-forest/",
+      "reason": "redirect"
+    },
+    {
+      "route": "/georgetown-county/carolina-forest/airbnb-cleaning/",
+      "reason": "redirect"
+    },
+    {
+      "route": "/georgetown-county/carolina-forest/apartment-maintenance/",
+      "reason": "redirect"
+    },
+    {
+      "route": "/georgetown-county/carolina-forest/commercial-maintenance/",
+      "reason": "redirect"
+    },
+    {
+      "route": "/georgetown-county/carolina-forest/dryer-vent-cleaning/",
+      "reason": "redirect"
+    },
+    {
+      "route": "/georgetown-county/carolina-forest/epoxy-flooring/",
+      "reason": "redirect"
+    },
+    {
+      "route": "/georgetown-county/carolina-forest/fence-installation-repair/",
+      "reason": "redirect"
+    },
+    {
+      "route": "/georgetown-county/carolina-forest/gutter-cleaning/",
+      "reason": "redirect"
+    },
+    {
+      "route": "/georgetown-county/carolina-forest/handyman-services/",
+      "reason": "redirect"
+    },
+    {
+      "route": "/georgetown-county/carolina-forest/hoa-maintenance/",
+      "reason": "redirect"
+    },
+    {
+      "route": "/georgetown-county/carolina-forest/interior-cleaning/",
+      "reason": "redirect"
+    },
+    {
+      "route": "/georgetown-county/carolina-forest/irrigation-sprinkler-repair/",
+      "reason": "redirect"
+    },
+    {
+      "route": "/georgetown-county/carolina-forest/kawn-care/",
+      "reason": "redirect"
+    },
+    {
+      "route": "/georgetown-county/carolina-forest/landscaping/",
+      "reason": "redirect"
+    },
+    {
+      "route": "/georgetown-county/carolina-forest/neighborhoods/",
+      "reason": "redirect"
+    },
+    {
+      "route": "/georgetown-county/carolina-forest/neighborhoods/avalon/",
+      "reason": "redirect"
+    },
+    {
+      "route": "/georgetown-county/carolina-forest/neighborhoods/avalon/bellegrove-preserve/",
+      "reason": "redirect"
+    },
+    {
+      "route": "/georgetown-county/carolina-forest/neighborhoods/bellegrove-preserve/",
+      "reason": "redirect"
+    },
+    {
+      "route": "/georgetown-county/carolina-forest/neighborhoods/berkshire-forest/",
+      "reason": "redirect"
+    },
+    {
+      "route": "/georgetown-county/carolina-forest/neighborhoods/black-creek-plantation/",
+      "reason": "redirect"
+    },
+    {
+      "route": "/georgetown-county/carolina-forest/neighborhoods/brighton-lakes/",
+      "reason": "redirect"
+    },
+    {
+      "route": "/georgetown-county/carolina-forest/neighborhoods/carolina-waterway-plantation/",
+      "reason": "redirect"
+    },
+    {
+      "route": "/georgetown-county/carolina-forest/neighborhoods/clear-pond/",
+      "reason": "redirect"
+    },
+    {
+      "route": "/georgetown-county/carolina-forest/neighborhoods/clear-pond/covington-lake-and-covington-lake-east/",
+      "reason": "redirect"
+    },
+    {
+      "route": "/georgetown-county/carolina-forest/neighborhoods/covington-lake-and-covington-lake-east/",
+      "reason": "redirect"
+    },
+    {
+      "route": "/georgetown-county/carolina-forest/neighborhoods/covington-lake/",
+      "reason": "redirect"
+    },
+    {
+      "route": "/georgetown-county/carolina-forest/neighborhoods/indigo-bay/",
+      "reason": "redirect"
+    },
+    {
+      "route": "/georgetown-county/carolina-forest/neighborhoods/plantation-lakes/",
+      "reason": "redirect"
+    },
+    {
+      "route": "/georgetown-county/carolina-forest/neighborhoods/sago-plantation/",
+      "reason": "redirect"
+    },
+    {
+      "route": "/georgetown-county/carolina-forest/neighborhoods/spring-lake/",
+      "reason": "redirect"
+    },
+    {
+      "route": "/georgetown-county/carolina-forest/neighborhoods/summerlyn/",
+      "reason": "redirect"
+    },
+    {
+      "route": "/georgetown-county/carolina-forest/neighborhoods/the-battery-on-the-waterway/",
+      "reason": "redirect"
+    },
+    {
+      "route": "/georgetown-county/carolina-forest/neighborhoods/the-bluffs-on-the-waterway/",
+      "reason": "redirect"
+    },
+    {
+      "route": "/georgetown-county/carolina-forest/neighborhoods/the-cottages-at-carolina-forest/",
+      "reason": "redirect"
+    },
+    {
+      "route": "/georgetown-county/carolina-forest/neighborhoods/the-farm-at-carolina-forest/",
+      "reason": "redirect"
+    },
+    {
+      "route": "/georgetown-county/carolina-forest/neighborhoods/the-parks-at-carolina-forest/",
+      "reason": "redirect"
+    },
+    {
+      "route": "/georgetown-county/carolina-forest/neighborhoods/the-reserve-at-walkers-woods/",
+      "reason": "redirect"
+    },
+    {
+      "route": "/georgetown-county/carolina-forest/neighborhoods/walkers-woods/",
+      "reason": "redirect"
+    },
+    {
+      "route": "/georgetown-county/carolina-forest/neighborhoods/waterbridge/",
+      "reason": "redirect"
+    },
+    {
+      "route": "/georgetown-county/carolina-forest/neighborhoods/waterway-palms-plantation/",
+      "reason": "redirect"
+    },
+    {
+      "route": "/georgetown-county/carolina-forest/painting/",
+      "reason": "redirect"
+    },
+    {
+      "route": "/georgetown-county/carolina-forest/pool-maintenance/",
+      "reason": "redirect"
+    },
+    {
+      "route": "/georgetown-county/carolina-forest/pressure-washing/",
+      "reason": "redirect"
+    },
+    {
+      "route": "/georgetown-county/carolina-forest/property-maintenance-plans/",
+      "reason": "redirect"
+    },
+    {
+      "route": "/georgetown-county/carolina-forest/sod-installation/",
+      "reason": "redirect"
+    },
+    {
+      "route": "/georgetown-county/carolina-forest/vacation-home-watch/",
+      "reason": "redirect"
+    },
+    {
+      "route": "/georgetown-county/carolina-forest/window-cleaning/",
+      "reason": "redirect"
+    },
+    {
+      "route": "/georgetown-county/commercial-cleaning/",
+      "reason": "redirect"
+    },
+    {
+      "route": "/georgetown-county/commercial-hvac-maintenance/",
+      "reason": "redirect"
+    },
+    {
+      "route": "/georgetown-county/commercial-maintenance/",
+      "reason": "redirect"
+    },
+    {
+      "route": "/georgetown-county/concrete-curbing/",
+      "reason": "redirect"
+    },
+    {
+      "route": "/georgetown-county/deck-building-repair/",
+      "reason": "redirect"
+    },
+    {
+      "route": "/georgetown-county/hvac-repair/",
+      "reason": "redirect"
+    },
+    {
+      "route": "/get-quote/bakerss-get-quote.html",
+      "reason": "redirect"
+    },
+    {
+      "route": "/get-quote/index.html.html",
+      "reason": "redirect"
+    },
+    {
+      "route": "/horry-county/",
+      "reason": "redirect"
+    },
+    {
+      "route": "/horry-county/index.html.html",
+      "reason": "redirect"
+    },
+    {
+      "route": "/learning-center/airbnb-checklist/",
+      "reason": "redirect"
+    },
+    {
+      "route": "/learning-center/airbnb-superhost-guide/",
+      "reason": "redirect"
+    },
+    {
+      "route": "/learning-center/airbnb-vs-long-term/",
+      "reason": "redirect"
+    },
+    {
+      "route": "/learning-center/best-neighborhoods-myrtle-beach/",
+      "reason": "redirect"
+    },
+    {
+      "route": "/learning-center/carolina-forest-guide/",
+      "reason": "redirect"
+    },
+    {
+      "route": "/learning-center/commercial-cleaning-guide/",
+      "reason": "redirect"
+    },
+    {
+      "route": "/learning-center/concrete-curbing-guide/",
+      "reason": "redirect"
+    },
+    {
+      "route": "/learning-center/concrete-curbing-roi/",
+      "reason": "redirect"
+    },
+    {
+      "route": "/learning-center/concrete-curbing-vs-edging/",
+      "reason": "redirect"
+    },
+    {
+      "route": "/learning-center/curb-appeal-myrtle-beach/",
+      "reason": "redirect"
+    },
+    {
+      "route": "/learning-center/deck-building-guide/",
+      "reason": "redirect"
+    },
+    {
+      "route": "/learning-center/deck-maintenance/",
+      "reason": "redirect"
+    },
+    {
+      "route": "/learning-center/deck-maintenance/bakerss-lc-deck-maintenance.html",
+      "reason": "redirect"
+    },
+    {
+      "route": "/learning-center/deck-staining-coastal-sc.html/",
+      "reason": "redirect"
+    },
+    {
+      "route": "/learning-center/deck-staining-guide/",
+      "reason": "redirect"
+    },
+    {
+      "route": "/learning-center/deep-clean-vs-turnover/",
+      "reason": "redirect"
+    },
+    {
+      "route": "/learning-center/flooring-replacement-timing/",
+      "reason": "redirect"
+    },
+    {
+      "route": "/learning-center/grand-strand-property-guide/",
+      "reason": "redirect"
+    },
+    {
+      "route": "/learning-center/grande-dunes-guide/",
+      "reason": "redirect"
+    },
+    {
+      "route": "/learning-center/gutter-cleaning-guide/",
+      "reason": "redirect"
+    },
+    {
+      "route": "/learning-center/gutter-damage-prevention/",
+      "reason": "redirect"
+    },
+    {
+      "route": "/learning-center/gutter-guards-myrtle-beach/",
+      "reason": "redirect"
+    },
+    {
+      "route": "/learning-center/gutter-guards/",
+      "reason": "redirect"
+    },
+    {
+      "route": "/learning-center/handyman-checklist/",
+      "reason": "redirect"
+    },
+    {
+      "route": "/learning-center/handyman-guide-myrtle-beach/",
+      "reason": "redirect"
+    },
+    {
+      "route": "/learning-center/handyman-vs-contractor/",
+      "reason": "redirect"
+    },
+    {
+      "route": "/learning-center/hoa-maintenance/",
+      "reason": "redirect"
+    },
+    {
+      "route": "/learning-center/how-to-hire-maintenance/",
+      "reason": "redirect"
+    },
+    {
+      "route": "/learning-center/hurrican-prep-myrtle-beach/",
+      "reason": "redirect"
+    },
+    {
+      "route": "/learning-center/hurricane-season-checklist/",
+      "reason": "redirect"
+    },
+    {
+      "route": "/learning-center/interior-paint-rentals/",
+      "reason": "redirect"
+    },
+    {
+      "route": "/learning-center/junk-removal-guide/",
+      "reason": "redirect"
+    },
+    {
+      "route": "/learning-center/landscaping-coastal-sc/",
+      "reason": "redirect"
+    },
+    {
+      "route": "/learning-center/lawn-care-calendar/",
+      "reason": "redirect"
+    },
+    {
+      "route": "/learning-center/lvp-flooring-rental/",
+      "reason": "redirect"
+    },
+    {
+      "route": "/learning-center/maintenance-budget/",
+      "reason": "non-self-canonical",
+      "canonical": "https://www.bakerss.com/learning-center/calculators/maintenance-budget/"
+    },
+    {
+      "route": "/learning-center/mold-prevention-myrtle-beach/",
+      "reason": "redirect"
+    },
+    {
+      "route": "/learning-center/move-in-cleaning/",
+      "reason": "redirect"
+    },
+    {
+      "route": "/learning-center/murrells-inlet-guide/",
+      "reason": "redirect"
+    },
+    {
+      "route": "/learning-center/myrtle-beach-lawn-fungus/",
+      "reason": "redirect"
+    },
+    {
+      "route": "/learning-center/myrtle-beach-property-taxes-investors-2025/",
+      "reason": "noindex"
+    },
+    {
+      "route": "/learning-center/myrtle-beach-property-types/",
+      "reason": "redirect"
+    },
+    {
+      "route": "/learning-center/new-construction-maintenance/",
+      "reason": "redirect"
+    },
+    {
+      "route": "/learning-center/nmb-neighborhood-guide/",
+      "reason": "redirect"
+    },
+    {
+      "route": "/learning-center/out-of-state-owner/",
+      "reason": "redirect"
+    },
+    {
+      "route": "/learning-center/painting-coastal-homes/",
+      "reason": "redirect"
+    },
+    {
+      "route": "/learning-center/painting-cost-guide/",
+      "reason": "redirect"
+    },
+    {
+      "route": "/learning-center/pool-deck-maintenance/",
+      "reason": "redirect"
+    },
+    {
+      "route": "/learning-center/pressure-wash-frequency/",
+      "reason": "redirect"
+    },
+    {
+      "route": "/learning-center/pressure-washing/",
+      "reason": "non-self-canonical",
+      "canonical": "https://www.bakerss.com/learning-center/calculators/pressure-washing/"
+    },
+    {
+      "route": "/learning-center/property-taxes-myrtle-beach/",
+      "reason": "redirect"
+    },
+    {
+      "route": "/learning-center/salt-air-damage/",
+      "reason": "redirect"
+    },
+    {
+      "route": "/learning-center/seasonal-maintenance/",
+      "reason": "redirect"
+    },
+    {
+      "route": "/learning-center/seasonl-maintenance-checklist-myrtle-beach/",
+      "reason": "redirect"
+    },
+    {
+      "route": "/learning-center/socastee-guide/",
+      "reason": "redirect"
+    },
+    {
+      "route": "/learning-center/socastee-neighborhood-guide/",
+      "reason": "redirect"
+    },
+    {
+      "route": "/learning-center/soft-washing/",
+      "reason": "redirect"
+    },
+    {
+      "route": "/learning-center/str-maintenance-guide/",
+      "reason": "redirect"
+    },
+    {
+      "route": "/learning-center/str-renovation-roi/",
+      "reason": "redirect"
+    },
+    {
+      "route": "/learning-center/surfside-beach-guide/",
+      "reason": "redirect"
+    },
+    {
+      "route": "/learning-center/vacation-rental-reviews/",
+      "reason": "redirect"
+    },
+    {
+      "route": "/learning-center/weed-control/",
+      "reason": "redirect"
+    },
+    {
+      "route": "/learning-center/wild-wing-guide/",
+      "reason": "redirect"
+    },
+    {
+      "route": "/reviews.html",
+      "reason": "redirect"
+    },
+    {
+      "route": "/reviews/neighborhoods/",
+      "reason": "redirect"
+    },
+    {
+      "route": "/reviews/neighborhoods/arcadian-shores/",
+      "reason": "redirect"
+    },
+    {
+      "route": "/reviews/neighborhoods/arrowhead/",
+      "reason": "redirect"
+    },
+    {
+      "route": "/reviews/neighborhoods/berkshire-forest/",
+      "reason": "redirect"
+    },
+    {
+      "route": "/reviews/neighborhoods/carolina-forest/",
+      "reason": "redirect"
+    },
+    {
+      "route": "/reviews/neighborhoods/cherry-grove/",
+      "reason": "redirect"
+    },
+    {
+      "route": "/reviews/neighborhoods/covington-lake/",
+      "reason": "redirect"
+    },
+    {
+      "route": "/reviews/neighborhoods/grand-dunes/",
+      "reason": "redirect"
+    },
+    {
+      "route": "/reviews/neighborhoods/indigo-bay/",
+      "reason": "redirect"
+    },
+    {
+      "route": "/reviews/neighborhoods/pawleys-plantation/",
+      "reason": "redirect"
+    },
+    {
+      "route": "/reviews/neighborhoods/plantation-lakes/",
+      "reason": "redirect"
+    },
+    {
+      "route": "/reviews/neighborhoods/prince-creek/",
+      "reason": "redirect"
+    },
+    {
+      "route": "/reviews/neighborhoods/socastee/",
+      "reason": "redirect"
+    },
+    {
+      "route": "/reviews/neighborhoods/the-dunes/",
+      "reason": "redirect"
+    },
+    {
+      "route": "/reviews/neighborhoods/the-farm/",
+      "reason": "redirect"
+    },
+    {
+      "route": "/reviews/neighborhoods/tidewater-plantation/",
+      "reason": "redirect"
+    },
+    {
+      "route": "/reviews/neighborhoods/waterbridge/",
+      "reason": "redirect"
+    },
+    {
+      "route": "/reviews/neighborhoods/windy-hill-crescent-beach/",
+      "reason": "redirect"
+    },
+    {
+      "route": "/service-areas/carolina-forest/kawn-care/",
+      "reason": "redirect"
+    },
+    {
+      "route": "/service-areas/carolina-forest/neighborhoods/avalon/bellegrove-preserve/",
+      "reason": "redirect"
+    },
+    {
+      "route": "/service-areas/carolina-forest/neighborhoods/carolina-waterway-plantation/",
+      "reason": "non-self-canonical",
+      "canonical": "https://www.bakerss.com/service-areas/carolina-forest/neighborhoods/bellegrove-preserve/"
+    },
+    {
+      "route": "/service-areas/carolina-forest/neighborhoods/clear-pond/covington-lake-and-covington-lake-east/",
+      "reason": "redirect"
+    },
+    {
+      "route": "/service-areas/carolina-forest/neighborhoods/covington-lake-and-covington-lake-east/",
+      "reason": "non-self-canonical",
+      "canonical": "https://www.bakerss.com/service-areas/carolina-forest/neighborhoods/covington-lake/"
+    },
+    {
+      "route": "/service-areas/carolina-forest/neighborhoods/the-cottages-at-carolina-forest/",
+      "reason": "noindex"
+    },
+    {
+      "route": "/service-areas/carolina-forest/neighborhoods/waterbridge/",
+      "reason": "redirect"
+    },
+    {
+      "route": "/service-areas/carolina-forest/neighborhoods/waterway-palms-plantation/",
+      "reason": "redirect"
+    },
+    {
+      "route": "/service-areas/conway/deck/",
+      "reason": "redirect"
+    },
+    {
+      "route": "/service-areas/conway/neighborhoods/aquila-estate/",
+      "reason": "noindex"
+    },
+    {
+      "route": "/service-areas/conway/neighborhoods/astoria-park/",
+      "reason": "redirect"
+    },
+    {
+      "route": "/service-areas/conway/neighborhoods/bear-bluff-plantation/",
+      "reason": "redirect"
+    },
+    {
+      "route": "/service-areas/conway/neighborhoods/heritage-preserve/index.html.html",
+      "reason": "redirect"
+    },
+    {
+      "route": "/service-areas/conway/property-maintenance-plans/",
+      "reason": "redirect"
+    },
+    {
+      "route": "/service-areas/conway/quail-creek/",
+      "reason": "noindex"
+    },
+    {
+      "route": "/service-areas/garden-city/airbnb/",
+      "reason": "redirect"
+    },
+    {
+      "route": "/service-areas/garden-city/airbnb/index..html",
+      "reason": "redirect"
+    },
+    {
+      "route": "/service-areas/garden-city/deck/",
+      "reason": "redirect"
+    },
+    {
+      "route": "/service-areas/garden-city/neighborhoods/garden-city-peninsula/",
+      "reason": "redirect"
+    },
+    {
+      "route": "/service-areas/garden-city/neighborhoods/garden-city-west/",
+      "reason": "noindex"
+    },
+    {
+      "route": "/service-areas/horry-county/index.html.html",
+      "reason": "redirect"
+    },
+    {
+      "route": "/service-areas/litchfield-beach/neighborhoods/litchfield-by-the-sea/",
+      "reason": "redirect"
+    },
+    {
+      "route": "/service-areas/little-river/handyman/",
+      "reason": "redirect"
+    },
+    {
+      "route": "/service-areas/murrells-inlet/collins-creek-landing/",
+      "reason": "redirect"
+    },
+    {
+      "route": "/service-areas/murrells-inlet/deck/",
+      "reason": "redirect"
+    },
+    {
+      "route": "/service-areas/murrells-inlet/minor-electric/",
+      "reason": "redirect"
+    },
+    {
+      "route": "/service-areas/murrells-inlet/pressure-washing/",
+      "reason": "redirect"
+    },
+    {
+      "route": "/service-areas/murrells-inlet/prince-creek/",
+      "reason": "redirect"
+    },
+    {
+      "route": "/service-areas/myrtle-beach/forestbrook/",
+      "reason": "redirect"
+    },
+    {
+      "route": "/service-areas/myrtle-beach/marina-district/",
+      "reason": "noindex"
+    },
+    {
+      "route": "/service-areas/myrtle-beach/neighborhoods/",
+      "reason": "redirect"
+    },
+    {
+      "route": "/service-areas/myrtle-beach/neighborhoods/astoria-park/",
+      "reason": "redirect"
+    },
+    {
+      "route": "/service-areas/myrtle-beach/neighborhoods/carolina-bays/",
+      "reason": "noindex"
+    },
+    {
+      "route": "/service-areas/myrtle-beach/property-maintenace/",
+      "reason": "redirect"
+    },
+    {
+      "route": "/service-areas/north-myrtle-beach/cherry-grove/",
+      "reason": "redirect"
+    },
+    {
+      "route": "/service-areas/north-myrtle-beach/deck/",
+      "reason": "redirect"
+    },
+    {
+      "route": "/service-areas/north-myrtle-beach/neighborhoods/seaside-village/",
+      "reason": "noindex"
+    },
+    {
+      "route": "/service-areas/north-myrtle-beach/neighborhoods/tidewater-plantatioin/",
+      "reason": "redirect"
+    },
+    {
+      "route": "/service-areas/north-myrtle-beach/neighborhoods/tilghman-estates-and-tilghman-beach/",
+      "reason": "redirect"
+    },
+    {
+      "route": "/service-areas/socastee/flooring/index.html.html",
+      "reason": "redirect"
+    },
+    {
+      "route": "/service-areas/socastee/forestbrook/",
+      "reason": "noindex"
+    },
+    {
+      "route": "/service-areas/surfside-beach/airbnb/",
+      "reason": "redirect"
+    },
+    {
+      "route": "/service-areas/surfside-beach/deck/",
+      "reason": "redirect"
+    },
+    {
+      "route": "/service-areas/surfside-beach/fence-installation/",
+      "reason": "redirect"
+    },
+    {
+      "route": "/services/deck-building/",
+      "reason": "redirect"
+    },
+    {
+      "route": "/services/deck-building/!index.html",
+      "reason": "redirect"
+    },
+    {
+      "route": "/services/minr-electric-plumbing/",
+      "reason": "redirect"
+    }
+  ]
+}
