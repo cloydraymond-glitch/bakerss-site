@@ -43,8 +43,17 @@ export default async function handler(req, res) {
       cache:'no-store',
       signal:AbortSignal.timeout(9000)
     });
+    // Diagnose only response metadata; never log credentials, tokens, IPs, URLs, or payloads.
+    const upstreamType = (upstream.headers.get('content-type') || '').toLowerCase();
+    if (!upstreamType.includes('application/json')) {
+      console.warn('[bakerss-website-lead-staging] upstream_non_json', upstream.status);
+      return reply(res,502,{error:'Unexpected intake response'});
+    }
     let result;
-    try { result = await upstream.json(); } catch { return reply(res,502,{error:'Unexpected intake response'}); }
+    try { result = await upstream.json(); } catch {
+      console.warn('[bakerss-website-lead-staging] upstream_invalid_json', upstream.status);
+      return reply(res,502,{error:'Unexpected intake response'});
+    }
     if (!result || typeof result !== 'object' || Array.isArray(result)) return reply(res,502,{error:'Unexpected intake response'});
     // Return only approved response fields; never surface backend diagnostics.
     const out = { ...(result.received === true ? {received:true} : {}),
@@ -52,5 +61,10 @@ export default async function handler(req, res) {
       ...(typeof result.reference === 'string' && /^[0-9a-f-]{36}$/i.test(result.reference) ? {reference:result.reference} : {}),
       ...(typeof result.error === 'string' ? {error:result.error.slice(0,160)} : {}) };
     return reply(res,upstream.status,out);
-  } catch { return reply(res,502,{error:'Request could not be confirmed. Please call Bakerss.'}); }
+  } catch (err) {
+    // Distinguish timeout from other fetch failures without logging exception data.
+    const timeout = err instanceof Error && (err.name === 'TimeoutError' || err.name === 'AbortError');
+    console.warn('[bakerss-website-lead-staging]', timeout ? 'upstream_timeout' : 'upstream_fetch_failure');
+    return reply(res,502,{error:'Request could not be confirmed. Please call Bakerss.'});
+  }
 }
