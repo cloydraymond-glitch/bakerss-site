@@ -7,24 +7,33 @@ const reply = (res, status, data) => {
   return res.status(status).json(data);
 };
 const allowedOrigin = () => process.env.WEBSITE_LEADS_ALLOWED_ORIGIN;
+// Log only a fixed diagnostic code. Never log tokens, IPs, headers, URLs or payloads.
+const reject = (res, reason, error = 'Website intake unavailable') => {
+  console.warn('[bakerss-website-lead-staging] rejected:', reason);
+  return reply(res, 503, { error });
+};
 export default async function handler(req, res) {
   if (req.method !== 'POST') { res.setHeader('Allow','POST'); return reply(res,405,{error:'Method not allowed'}); }
   const origin = req.headers.origin;
   const target = process.env.WEBSITE_LEADS_OS_URL;
   const secret = process.env.WEBSITE_LEADS_PROXY_SECRET;
-  if (process.env.WEBSITE_LEADS_PROXY_ENABLED !== 'true' || !origin || !allowedOrigin() || origin !== allowedOrigin() || !target || !secret || secret.length < 32)
-    return reply(res,503,{error:'Website intake unavailable'});
+  if (process.env.WEBSITE_LEADS_PROXY_ENABLED !== 'true') return reject(res,'proxy_disabled');
+  if (!origin) return reject(res,'origin_header_absent');
+  if (!allowedOrigin()) return reject(res,'allowed_origin_not_configured');
+  if (origin !== allowedOrigin()) return reject(res,'origin_mismatch');
+  if (!target) return reject(res,'os_url_not_configured');
+  if (!secret || secret.length < 32) return reject(res,'proxy_secret_missing_or_short');
   // Destination must be a configured HTTPS OS endpoint, not a client-supplied URL.
   let url;
-  try { url = new URL(target); } catch { return reply(res,503,{error:'Website intake unavailable'}); }
+  try { url = new URL(target); } catch { return reject(res,'os_url_invalid'); }
   if (url.protocol !== 'https:' || url.username || url.password || url.search || url.hash || !url.pathname.endsWith('/api/public/website-lead'))
-    return reply(res,503,{error:'Website intake unavailable'});
+    return reject(res,'os_url_rejected');
   if (!/^application\/json(?:\s*;|$)/i.test(req.headers['content-type'] || '')) return reply(res,415,{error:'JSON required'});
   const body = typeof req.body === 'string' ? req.body : JSON.stringify(req.body ?? {});
   if (Buffer.byteLength(body,'utf8') > 8192) return reply(res,413,{error:'Request too large'});
   // Verify Vercel-provided ingress IP before activation. Do not trust arbitrary browser headers.
   const ip = String(req.headers['x-vercel-forwarded-for'] || '');
-  if (!isIP(ip)) return reply(res,503,{error:'IP verification unavailable'});
+  if (!isIP(ip)) return reject(res, !ip ? 'vercel_ip_missing' : ip.includes(',') ? 'vercel_ip_multiple' : 'vercel_ip_invalid', 'IP verification unavailable');
   try {
     const upstream = await fetch(url, {
       method:'POST',
