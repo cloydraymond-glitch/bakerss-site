@@ -67,6 +67,10 @@ export default async function handler(req, res) {
   if (process.env.WEBSITE_LEADS_PROXY_ENABLED !== 'true') return reject(res, 'proxy_disabled');
   if (!origin || !expectedOrigin || origin !== expectedOrigin) return reject(res, 'origin_mismatch');
   if (!secret || secret.length < 32) return reject(res, 'proxy_secret_missing_or_short');
+  // Node's HTTPS client rejects line breaks and other control characters in
+  // header values before any connection is attempted. Do not print the secret.
+  if (/[\x00-\x1F\x7F]/.test(secret)) return reject(res, 'proxy_secret_invalid_header_char');
+  if (secret !== secret.trim()) return reject(res, 'proxy_secret_surrounding_whitespace');
   if (!/^application\/json(?:\s*;|$)/i.test(req.headers['content-type'] || '')) return reply(res, 415, { error: 'JSON required' });
   const body = typeof req.body === 'string' ? req.body : JSON.stringify(req.body ?? {});
   if (Buffer.byteLength(body, 'utf8') > 8192) return reply(res, 413, { error: 'Request too large' });
@@ -77,16 +81,23 @@ export default async function handler(req, res) {
   try {
     upstream = await sendToOs(body, origin, secret, ip);
   } catch (failure) {
-    const raw = failure?.err?.code;
+    // httpsRequest() can throw synchronously inside the Promise constructor.
+    // Such errors reject the Promise as Error directly, not {err,phase}.
+    // The old handler labeled every direct exception OTHER_NETWORK_ERROR.
+    const err = failure?.err || failure;
+    const raw = typeof err?.code === 'string' ? err.code : '';
     const safeCodes = new Set([
       'ENOTFOUND', 'EAI_AGAIN', 'ECONNREFUSED', 'ECONNRESET', 'EHOSTUNREACH',
       'ENETUNREACH', 'ETIMEDOUT', 'UPSTREAM_TIMEOUT', 'EPROTO',
       'ERR_TLS_CERT_ALTNAME_INVALID', 'UNABLE_TO_VERIFY_LEAF_SIGNATURE',
-      'CERT_HAS_EXPIRED', 'RESPONSE_TOO_LARGE'
+      'CERT_HAS_EXPIRED', 'RESPONSE_TOO_LARGE', 'ERR_INVALID_CHAR',
+      'ERR_HTTP_INVALID_HEADER_VALUE', 'ERR_INVALID_ARG_TYPE',
+      'ERR_INVALID_PROTOCOL', 'ERR_INVALID_URL', 'ERR_SSL_WRONG_VERSION_NUMBER'
     ]);
     const code = safeCodes.has(raw) ? raw : 'OTHER_NETWORK_ERROR';
     const phase = failure?.phase === 'response' ? 'response' : 'connect';
-    console.warn(logTag, 'https_request_failure', `phase=${phase}`, `code=${code}`);
+    const errorType = err instanceof TypeError ? 'TYPE_ERROR' : err instanceof Error ? 'ERROR' : 'NON_ERROR';
+    console.warn(logTag, 'https_request_failure', `phase=${phase}`, `code=${code}`, `type=${errorType}`);
     return reply(res, 502, { error: 'Request could not be confirmed. Please call Bakerss.' });
   }
 
