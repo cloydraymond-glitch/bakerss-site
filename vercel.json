@@ -133,7 +133,7 @@
     },
     {
       "source": "/learning-center/deck-maintenance/",
-      "destination": "/learning-center/coastal-home-paint-guide/",
+      "destination": "/learning-center/deck-maintenance-guide-myrtle-beach/",
       "permanent": true
     },
     {
@@ -298,7 +298,7 @@
     },
     {
       "source": "/learning-center/mulch-pine-straw-rock-beds-myrtle-beach/",
-      "destination": "/learning-center/lawn-care-schedule-myrtle-beach/",
+      "destination": "/learning-center/mulching-guide-myrtle-beach/",
       "permanent": true
     },
     {
@@ -1008,7 +1008,7 @@
     },
     {
       "source": "/service-areas/north-myrtle-beach/neighborhoods/tilghman-estates-and-tilghman-beach/",
-      "destination": "/service-areas/north-myrtle-beach/neighborhoods/tilghman-forest/",
+      "destination": "/service-areas/north-myrtle-beach/neighborhoods/",
       "permanent": true
     },
     {
@@ -1018,7 +1018,7 @@
     },
     {
       "source": "/service-areas/litchfield-beach/neighborhoods/litchfield-by-the-sea/",
-      "destination": "/service-areas/litchfield-beach/neighborhoods/marsh-hawk/",
+      "destination": "/service-areas/litchfield-beach/neighborhoods/",
       "permanent": true
     },
     {
@@ -1028,7 +1028,7 @@
     },
     {
       "source": "/service-areas/conway/neighborhoods/bear-bluff-plantation/",
-      "destination": "/service-areas/conway/neighborhoods/castlewood-and-forest-glen/",
+      "destination": "/service-areas/conway/neighborhoods/",
       "permanent": true
     },
     {
