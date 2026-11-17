@@ -1,82 +1,114 @@
-import { isIP } from 'node:net';
 
-// Staging-only proxy. Website form is NOT connected until live end-to-end verification.
+import { isIP } from 'node:net';
+import { request as httpsRequest } from 'node:https';
+
+// STAGING BRANCH ONLY. Never deploy to the live main branch.
+// A public, fixed endpoint eliminates the opaque WEBSITE_LEADS_OS_URL variable
+// and guarantees this proxy cannot accidentally send leads to production OS.
+const OS_ENDPOINT = new URL('https://bakerss-os-staging.vercel.app/api/public/website-lead');
+const logTag = '[bakerss-website-lead-staging]';
 const reply = (res, status, data) => {
   res.setHeader('Cache-Control', 'no-store');
   res.setHeader('X-Content-Type-Options', 'nosniff');
   return res.status(status).json(data);
 };
-const allowedOrigin = () => process.env.WEBSITE_LEADS_ALLOWED_ORIGIN;
-// Log only a fixed diagnostic code. Never log tokens, IPs, headers, URLs or payloads.
-const reject = (res, reason, error = 'Website intake unavailable') => {
-  console.warn('[bakerss-website-lead-staging] rejected:', reason);
-  return reply(res, 503, { error });
+const reject = (res, code, message = 'Website intake unavailable') => {
+  console.warn(logTag, 'rejected', code);
+  return reply(res, 503, { error: message });
 };
-export default async function handler(req, res) {
-  if (req.method !== 'POST') { res.setHeader('Allow','POST'); return reply(res,405,{error:'Method not allowed'}); }
-  const origin = req.headers.origin;
-  const target = process.env.WEBSITE_LEADS_OS_URL;
-  const secret = process.env.WEBSITE_LEADS_PROXY_SECRET;
-  if (process.env.WEBSITE_LEADS_PROXY_ENABLED !== 'true') return reject(res,'proxy_disabled');
-  if (!origin) return reject(res,'origin_header_absent');
-  if (!allowedOrigin()) return reject(res,'allowed_origin_not_configured');
-  if (origin !== allowedOrigin()) return reject(res,'origin_mismatch');
-  if (!target) return reject(res,'os_url_not_configured');
-  if (!secret || secret.length < 32) return reject(res,'proxy_secret_missing_or_short');
-  // Destination must be a configured HTTPS OS endpoint, not a client-supplied URL.
-  let url;
-  try { url = new URL(target); } catch { return reject(res,'os_url_invalid'); }
-  if (url.protocol !== 'https:' || url.username || url.password || url.search || url.hash || !url.pathname.endsWith('/api/public/website-lead'))
-    return reject(res,'os_url_rejected');
-  if (!/^application\/json(?:\s*;|$)/i.test(req.headers['content-type'] || '')) return reply(res,415,{error:'JSON required'});
-  const body = typeof req.body === 'string' ? req.body : JSON.stringify(req.body ?? {});
-  if (Buffer.byteLength(body,'utf8') > 8192) return reply(res,413,{error:'Request too large'});
-  // Verify Vercel-provided ingress IP before activation. Do not trust arbitrary browser headers.
-  const ip = String(req.headers['x-vercel-forwarded-for'] || '');
-  if (!isIP(ip)) return reject(res, !ip ? 'vercel_ip_missing' : ip.includes(',') ? 'vercel_ip_multiple' : 'vercel_ip_invalid', 'IP verification unavailable');
-  try {
-    const upstream = await fetch(url, {
-      method:'POST',
-      headers:{'Content-Type':'application/json','Origin':origin,
-        'x-bakerss-proxy-secret':secret,'x-bakerss-verified-ip':ip},
-      body,
-      cache:'no-store',
-      signal:AbortSignal.timeout(9000)
+
+function sendToOs(body, origin, secret, ip) {
+  return new Promise((resolve, rejectRequest) => {
+    let phase = 'connect';
+    const req = httpsRequest(OS_ENDPOINT, {
+      method: 'POST',
+      headers: {
+        'content-type': 'application/json',
+        'content-length': Buffer.byteLength(body, 'utf8'),
+        'origin': origin,
+        'x-bakerss-proxy-secret': secret,
+        'x-bakerss-verified-ip': ip
+      },
+      timeout: 9000,
+      agent: false
+    }, (response) => {
+      phase = 'response';
+      let chunks = [];
+      let total = 0;
+      response.on('data', chunk => {
+        total += chunk.length;
+        if (total > 65536) {
+          response.destroy(Object.assign(new Error('Response too large'), { code: 'RESPONSE_TOO_LARGE' }));
+          return;
+        }
+        chunks.push(chunk);
+      });
+      response.on('end', () => resolve({
+        status: response.statusCode || 502,
+        type: String(response.headers['content-type'] || '').toLowerCase(),
+        text: Buffer.concat(chunks).toString('utf8')
+      }));
+      response.on('error', err => rejectRequest({ err, phase }));
     });
-    // Diagnose only response metadata; never log credentials, tokens, IPs, URLs, or payloads.
-    const upstreamType = (upstream.headers.get('content-type') || '').toLowerCase();
-    if (!upstreamType.includes('application/json')) {
-      console.warn('[bakerss-website-lead-staging] upstream_non_json', upstream.status);
-      return reply(res,502,{error:'Unexpected intake response'});
-    }
-    let result;
-    try { result = await upstream.json(); } catch {
-      console.warn('[bakerss-website-lead-staging] upstream_invalid_json', upstream.status);
-      return reply(res,502,{error:'Unexpected intake response'});
-    }
-    if (!result || typeof result !== 'object' || Array.isArray(result)) return reply(res,502,{error:'Unexpected intake response'});
-    // Return only approved response fields; never surface backend diagnostics.
-    const out = { ...(result.received === true ? {received:true} : {}),
-      ...(result.duplicate === true ? {duplicate:true} : {}),
-      ...(typeof result.reference === 'string' && /^[0-9a-f-]{36}$/i.test(result.reference) ? {reference:result.reference} : {}),
-      ...(typeof result.error === 'string' ? {error:result.error.slice(0,160)} : {}) };
-    return reply(res,upstream.status,out);
-  } catch (err) {
-    // Diagnostic classification is allowlisted: never log exception messages,
-    // destination URLs, request bodies, headers, IPs, secrets or Turnstile tokens.
-    const name = err instanceof Error ? err.name : '';
-    const cause = err && typeof err === 'object' ? err.cause : null;
-    const rawCode = cause && typeof cause === 'object' && typeof cause.code === 'string' ? cause.code : '';
-    const codes = new Set([
-      'ENOTFOUND', 'EAI_AGAIN', 'ECONNREFUSED', 'ECONNRESET', 'ETIMEDOUT',
-      'EHOSTUNREACH', 'ENETUNREACH', 'EPIPE', 'UND_ERR_CONNECT_TIMEOUT',
-      'UND_ERR_SOCKET', 'ERR_TLS_CERT_ALTNAME_INVALID',
-      'UNABLE_TO_VERIFY_LEAF_SIGNATURE', 'CERT_HAS_EXPIRED'
-    ]);
-    const code = codes.has(rawCode) ? rawCode : 'UNKNOWN';
-    const kind = name === 'TimeoutError' || name === 'AbortError'
-      ? 'upstream_timeout' : 'upstream_fetch_failure';
-    console.warn('[bakerss-website-lead-staging]', kind, 'cause_code=' + code);
-    return reply(res,502,{error:'Request could not be confirmed. Please call Bakerss.'});
+    req.on('timeout', () => req.destroy(Object.assign(new Error('Timeout'), { code: 'UPSTREAM_TIMEOUT' })));
+    req.on('error', err => rejectRequest({ err, phase }));
+    req.end(body);
+  });
+}
+
+export default async function handler(req, res) {
+  if (req.method !== 'POST') {
+    res.setHeader('Allow', 'POST');
+    return reply(res, 405, { error: 'Method not allowed' });
   }
+  const origin = req.headers.origin;
+  const secret = process.env.WEBSITE_LEADS_PROXY_SECRET;
+  const expectedOrigin = process.env.WEBSITE_LEADS_ALLOWED_ORIGIN;
+  if (process.env.WEBSITE_LEADS_PROXY_ENABLED !== 'true') return reject(res, 'proxy_disabled');
+  if (!origin || !expectedOrigin || origin !== expectedOrigin) return reject(res, 'origin_mismatch');
+  if (!secret || secret.length < 32) return reject(res, 'proxy_secret_missing_or_short');
+  if (!/^application\/json(?:\s*;|$)/i.test(req.headers['content-type'] || '')) return reply(res, 415, { error: 'JSON required' });
+  const body = typeof req.body === 'string' ? req.body : JSON.stringify(req.body ?? {});
+  if (Buffer.byteLength(body, 'utf8') > 8192) return reply(res, 413, { error: 'Request too large' });
+  const ip = String(req.headers['x-vercel-forwarded-for'] || '');
+  if (!isIP(ip)) return reject(res, 'invalid_vercel_ingress_ip', 'IP verification unavailable');
+
+  let upstream;
+  try {
+    upstream = await sendToOs(body, origin, secret, ip);
+  } catch (failure) {
+    const raw = failure?.err?.code;
+    const safeCodes = new Set([
+      'ENOTFOUND', 'EAI_AGAIN', 'ECONNREFUSED', 'ECONNRESET', 'EHOSTUNREACH',
+      'ENETUNREACH', 'ETIMEDOUT', 'UPSTREAM_TIMEOUT', 'EPROTO',
+      'ERR_TLS_CERT_ALTNAME_INVALID', 'UNABLE_TO_VERIFY_LEAF_SIGNATURE',
+      'CERT_HAS_EXPIRED', 'RESPONSE_TOO_LARGE'
+    ]);
+    const code = safeCodes.has(raw) ? raw : 'OTHER_NETWORK_ERROR';
+    const phase = failure?.phase === 'response' ? 'response' : 'connect';
+    console.warn(logTag, 'https_request_failure', `phase=${phase}`, `code=${code}`);
+    return reply(res, 502, { error: 'Request could not be confirmed. Please call Bakerss.' });
+  }
+
+  if (!upstream.type.includes('application/json')) {
+    console.warn(logTag, 'upstream_non_json', `status=${upstream.status}`);
+    return reply(res, 502, { error: 'Unexpected intake response' });
+  }
+  let result;
+  try { result = JSON.parse(upstream.text); }
+  catch {
+    console.warn(logTag, 'upstream_invalid_json', `status=${upstream.status}`);
+    return reply(res, 502, { error: 'Unexpected intake response' });
+  }
+  if (!result || typeof result !== 'object' || Array.isArray(result)) {
+    return reply(res, 502, { error: 'Unexpected intake response' });
+  }
+  const out = {
+    ...(result.received === true ? { received: true } : {}),
+    ...(result.duplicate === true ? { duplicate: true } : {}),
+    ...(typeof result.reference === 'string' && /^[0-9a-f-]{36}$/i.test(result.reference) ? { reference: result.reference } : {}),
+    ...(typeof result.error === 'string' ? { error: result.error.slice(0, 160) } : {})
+  };
+  console.info(logTag, 'upstream_http', `status=${upstream.status}`, `received=${result.received === true}`);
+  return reply(res, upstream.status, out);
 }
