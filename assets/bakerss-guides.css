@@ -1,0 +1,10 @@
+/* Editorial guidance expansions for thin teaser pages; scoped to avoid changing chrome. */
+.bakerss-seo-guide{background:#fff;padding:54px 0;border-top:1px solid #ececf0}
+.bakerss-seo-guide .guide-inner{width:min(960px,calc(100% - 36px));margin:0 auto}
+.bakerss-seo-guide h2{font:700 clamp(1.7rem,3vw,2.35rem)/1.2 'Playfair Display',Georgia,serif;color:#17171b;margin:0 0 20px}
+.bakerss-seo-guide h3{font:700 1.22rem/1.35 'DM Sans',Arial,sans-serif;color:#202025;margin:26px 0 8px}
+.bakerss-seo-guide p{font:400 1rem/1.8 'DM Sans',Arial,sans-serif;color:#3f3f48;margin:0 0 13px}
+.bakerss-seo-guide .guide-links{margin-top:26px;padding-top:22px;border-top:1px solid #e7e7eb;display:flex;gap:12px;flex-wrap:wrap}
+.bakerss-seo-guide .guide-links a{display:inline-flex;padding:11px 17px;border:1px solid #e8197d;border-radius:9px;color:#a50958;background:#fff4f9;font-weight:700;text-decoration:none}
+.bakerss-seo-guide .guide-links a:hover,.bakerss-seo-guide .guide-links a:focus-visible{background:#e8197d;color:#fff}
+@media(max-width:600px){.bakerss-seo-guide{padding:37px 0}.bakerss-seo-guide .guide-inner{width:calc(100% - 28px)}}

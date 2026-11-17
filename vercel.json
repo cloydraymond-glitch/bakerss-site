@@ -1163,22 +1163,32 @@
     },
     {
       "source": "/georgetown-county/carolina-forest/neighborhoods/waterbridge/",
-      "destination": "/",
+      "destination": "/service-areas/carolina-forest/neighborhoods/waterbridge/",
       "permanent": true
     },
     {
       "source": "/georgetown-county/carolina-forest/neighborhoods/waterway-palms-plantation/",
-      "destination": "/",
+      "destination": "/service-areas/carolina-forest/neighborhoods/waterway-palms-plantation/",
       "permanent": true
     },
     {
       "source": "/georgetown-county/carolina-forest/neighborhoods/clear-pond/covington-lake-and-covington-lake-east/",
-      "destination": "/",
+      "destination": "/service-areas/carolina-forest/neighborhoods/covington-lake-and-covington-lake-east/",
       "permanent": true
     },
     {
       "source": "/georgetown-county/carolina-forest/neighborhoods/avalon/bellegrove-preserve/",
-      "destination": "/",
+      "destination": "/service-areas/carolina-forest/neighborhoods/bellegrove-preserve/",
+      "permanent": true
+    },
+    {
+      "source": "/learning-center/maintenance-budget/",
+      "destination": "/learning-center/calculators/maintenance-budget/",
+      "permanent": true
+    },
+    {
+      "source": "/learning-center/pressure-washing/",
+      "destination": "/learning-center/calculators/pressure-washing/",
       "permanent": true
     }
   ],
