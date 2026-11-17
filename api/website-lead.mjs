@@ -62,9 +62,21 @@ export default async function handler(req, res) {
       ...(typeof result.error === 'string' ? {error:result.error.slice(0,160)} : {}) };
     return reply(res,upstream.status,out);
   } catch (err) {
-    // Distinguish timeout from other fetch failures without logging exception data.
-    const timeout = err instanceof Error && (err.name === 'TimeoutError' || err.name === 'AbortError');
-    console.warn('[bakerss-website-lead-staging]', timeout ? 'upstream_timeout' : 'upstream_fetch_failure');
+    // Diagnostic classification is allowlisted: never log exception messages,
+    // destination URLs, request bodies, headers, IPs, secrets or Turnstile tokens.
+    const name = err instanceof Error ? err.name : '';
+    const cause = err && typeof err === 'object' ? err.cause : null;
+    const rawCode = cause && typeof cause === 'object' && typeof cause.code === 'string' ? cause.code : '';
+    const codes = new Set([
+      'ENOTFOUND', 'EAI_AGAIN', 'ECONNREFUSED', 'ECONNRESET', 'ETIMEDOUT',
+      'EHOSTUNREACH', 'ENETUNREACH', 'EPIPE', 'UND_ERR_CONNECT_TIMEOUT',
+      'UND_ERR_SOCKET', 'ERR_TLS_CERT_ALTNAME_INVALID',
+      'UNABLE_TO_VERIFY_LEAF_SIGNATURE', 'CERT_HAS_EXPIRED'
+    ]);
+    const code = codes.has(rawCode) ? rawCode : 'UNKNOWN';
+    const kind = name === 'TimeoutError' || name === 'AbortError'
+      ? 'upstream_timeout' : 'upstream_fetch_failure';
+    console.warn('[bakerss-website-lead-staging]', kind, 'cause_code=' + code);
     return reply(res,502,{error:'Request could not be confirmed. Please call Bakerss.'});
   }
 }
