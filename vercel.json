@@ -218,7 +218,7 @@
     },
     {
       "source": "/service-areas/carolina-forest/neighborhoods/waterbridge/",
-      "destination": "/service-areas/carolina-forest/",
+      "destination": "/neighborhoods/waterbridge/",
       "permanent": true
     },
     {
@@ -698,12 +698,12 @@
     },
     {
       "source": "/services/carolina-forest/neighborhoods/waterbridge/",
-      "destination": "/service-areas/carolina-forest/",
+      "destination": "/neighborhoods/waterbridge/",
       "permanent": true
     },
     {
       "source": "/services/carolina-forest/neighborhoods/waterway-palms-plantation/",
-      "destination": "/service-areas/carolina-forest/",
+      "destination": "/service-areas/myrtle-beach/neighborhoods/waterway-palms-plantation-and-the-bluffs/",
       "permanent": true
     },
     {
@@ -718,12 +718,12 @@
     },
     {
       "source": "/services/georgetown-county/carolina-forest/neighborhoods/waterbridge/",
-      "destination": "/service-areas/carolina-forest/",
+      "destination": "/neighborhoods/waterbridge/",
       "permanent": true
     },
     {
       "source": "/services/georgetown-county/carolina-forest/neighborhoods/waterway-palms-plantation/",
-      "destination": "/service-areas/carolina-forest/",
+      "destination": "/service-areas/myrtle-beach/neighborhoods/waterway-palms-plantation-and-the-bluffs/",
       "permanent": true
     },
     {
@@ -1038,7 +1038,7 @@
     },
     {
       "source": "/service-areas/murrells-inlet/pressure-washing/",
-      "destination": "/service-areas/garden-city/pressure-washing/",
+      "destination": "/services/pressure-washing/",
       "permanent": true
     },
     {
@@ -1163,12 +1163,12 @@
     },
     {
       "source": "/georgetown-county/carolina-forest/neighborhoods/waterbridge/",
-      "destination": "/service-areas/carolina-forest/neighborhoods/waterbridge/",
+      "destination": "/neighborhoods/waterbridge/",
       "permanent": true
     },
     {
       "source": "/georgetown-county/carolina-forest/neighborhoods/waterway-palms-plantation/",
-      "destination": "/service-areas/carolina-forest/neighborhoods/waterway-palms-plantation/",
+      "destination": "/service-areas/myrtle-beach/neighborhoods/waterway-palms-plantation-and-the-bluffs/",
       "permanent": true
     },
     {
