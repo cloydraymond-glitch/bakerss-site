@@ -288,7 +288,7 @@ main .grid .side .card{margin-bottom:18px}
 </div>
 <div class="f"><label for="details">Details <span class="opt">(optional)</span></label><textarea id="details" maxlength="3000" name="details" placeholder="What needs attention? Anything we should know about access, size or timing?"></textarea></div>
 <div class="f"><label for="photos">Photos <span class="opt">(optional, helps us quote faster)</span></label>
-<label class="drop" for="photos" id="drop"><b>📷 Tap to add photos</b><small>Up to 5 images, 5 MB each</small><input accept="image/*" id="photos" multiple="" name="attachment" type="file"/></label><ul aria-live="polite" class="files" id="files"></ul><p class="msg" id="fmsg"></p></div>
+<label class="drop" for="photos" id="drop"><b>📷 Tap to add photos</b><small>Up to 5 photos, 5 MB each / 9 MB combined</small><input accept="image/*" id="photos" multiple="" name="attachment" type="file"/></label><ul aria-live="polite" class="files" id="files"></ul><p class="msg" id="fmsg"></p></div>
 <fieldset><legend>Best way to reach you</legend><div class="pref"><label><input checked="" name="contact_preference" type="radio" value="Call"/><span>Call</span></label><label><input name="contact_preference" type="radio" value="Text"/><span>Text</span></label><label><input name="contact_preference" type="radio" value="Email"/><span>Email</span></label></div></fieldset>
 <div aria-hidden="true" class="hp"><label>Leave blank<input autocomplete="off" name="_honey" tabindex="-1" type="text"/></label></div>
 <button class="submit" id="go" type="submit">Send My Free Quote Request</button>
@@ -308,7 +308,7 @@ main .grid .side .card{margin-bottom:18px}
 /* ENDPOINT: FormSubmit delivers submissions to info@bakerss.com. The first submission triggers a one-time activation email to that inbox.
    To use another service (Formspree, Web3Forms, your own API), change ENDPOINT and keep the same FormData fields. */
 var ENDPOINT='https://formsubmit.co/ajax/info@bakerss.com';
-var MAXF=5,MAXB=5*1024*1024;
+var MAXF=5,MAXB=5*1024*1024,MAXTOTAL=9*1024*1024;
 var form=document.getElementById('qf'),go=document.getElementById('go'),err=document.getElementById('err'),done=document.getElementById('done');
 var files=[],started=false;
 function ev(n,p){if(typeof gtag==='function')gtag('event',n,p||{});}
@@ -370,7 +370,7 @@ if(requestedService){
 var inp=document.getElementById('photos'),list=document.getElementById('files'),fmsg=document.getElementById('fmsg'),drop=document.getElementById('drop');
 function fm(t){fmsg.textContent=t;fmsg.style.display=t?'block':'none';fmsg.style.color='var(--err)';fmsg.style.fontSize='13px';}
 function render(){list.innerHTML='';files.forEach(function(f,i){var li=document.createElement('li');var s=document.createElement('span');s.textContent=f.name+' ('+(f.size/1048576).toFixed(1)+' MB)';var b=document.createElement('button');b.type='button';b.textContent='Remove';b.setAttribute('aria-label','Remove '+f.name);b.onclick=function(){files.splice(i,1);render();};li.appendChild(s);li.appendChild(b);list.appendChild(li);});}
-inp.addEventListener('change',function(){fm('');Array.prototype.forEach.call(inp.files,function(f){if(files.length>=MAXF){fm('You can add up to '+MAXF+' photos.');return;}if(f.size>MAXB){fm(f.name+' is larger than 5 MB.');return;}if(!/^image\//.test(f.type)){fm(f.name+' is not an image.');return;}files.push(f);});inp.value='';render();});
+inp.addEventListener('change',function(){fm('');Array.prototype.forEach.call(inp.files,function(f){if(files.length>=MAXF){fm('You can add up to '+MAXF+' photos.');return;}if(f.size>MAXB){fm(f.name+' is larger than 5 MB.');return;}if(!/^image\//.test(f.type)){fm(f.name+' is not an image.');return;}if(files.reduce(function(total,file){return total+file.size;},0)+f.size>MAXTOTAL){fm('Photos cannot exceed 9 MB combined. Remove a photo or choose smaller images.');return;}files.push(f);});inp.value='';render();});
 ['dragenter','dragover'].forEach(function(e){drop.addEventListener(e,function(x){x.preventDefault();drop.classList.add('on');});});
 ['dragleave','drop'].forEach(function(e){drop.addEventListener(e,function(x){x.preventDefault();drop.classList.remove('on');});});
 drop.addEventListener('drop',function(x){var dt=x.dataTransfer;if(dt&&dt.files){inp.files=dt.files;inp.dispatchEvent(new Event('change'));}});
@@ -393,6 +393,50 @@ files.forEach(function(f){fd.append('attachment',f,f.name);});
 fd.append('_subject','New quote request: '+d.service+' ('+d.city+')');fd.append('_template','table');fd.append('_captcha','false');
 if(d.email)fd.append('_replyto',d.email);
 fd.append('_autoresponse','Thanks for contacting Bakerss Property Services. We received your quote request and Ray or Courtney will follow up soon. For anything urgent call or text 843-467-7136.');
+// FormSubmit documents photo uploads through a native multipart POST, not the AJAX route.
+// Preserve the already-working AJAX experience for text-only requests.
+if(files.length){
+  if(files.reduce(function(total,file){return total+file.size;},0)>MAXTOTAL){
+    showErr('Photo attachments must be 9 MB or less combined. Please remove or resize a photo.');return;
+  }
+  try{
+    var nativeForm=document.createElement('form');
+    nativeForm.method='POST';
+    nativeForm.action='https://formsubmit.co/info@bakerss.com';
+    nativeForm.enctype='multipart/form-data';
+    nativeForm.style.display='none';
+    var photoNumber=0;
+    fd.forEach(function(value,key){
+      var input=document.createElement('input');
+      if(value instanceof File){
+        var transfer=new DataTransfer();
+        transfer.items.add(value);
+        input.type='file';
+        input.name=(++photoNumber===1)?'attachment':'attachment_'+photoNumber;
+        input.files=transfer.files;
+      }else{
+        input.type='hidden';
+        input.name=key;
+        input.value=String(value);
+      }
+      nativeForm.appendChild(input);
+    });
+    var next=document.createElement('input');
+    next.type='hidden';next.name='_next';
+    next.value=location.origin+'/get-quote/received/';
+    nativeForm.appendChild(next);
+    document.body.appendChild(nativeForm);
+    go.disabled=true;go.textContent='Sending photos...';
+    nativeForm.submit();
+    return;
+  }catch(uploadError){
+    if(nativeForm&&nativeForm.parentNode)nativeForm.parentNode.removeChild(nativeForm);
+    go.disabled=false;go.textContent='Send My Free Quote Request';
+    showErr('Photos could not be prepared for delivery. Please retry with smaller JPEG/PNG photos, or call or text 843-467-7136.');
+    ev('form_error',{form_id:'quote',photo_upload:true});
+    return;
+  }
+}
 go.disabled=true;go.textContent='Sending...';
 var ctl=new AbortController(),t=setTimeout(function(){ctl.abort();},45000);
 fetch(ENDPOINT,{method:'POST',body:fd,headers:{'Accept':'application/json'},signal:ctl.signal}).then(function(r){return r.json().catch(function(){return{};}).then(function(j){if(!r.ok||(j.success!==true&&j.success!=='true'))throw new Error('fail');});}).then(function(){clearTimeout(t);
