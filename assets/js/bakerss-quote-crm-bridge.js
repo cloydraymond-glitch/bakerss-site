@@ -119,7 +119,26 @@
         property === 'Apartment / multifamily' ? 'Apartment maintenance' : 'Commercial maintenance';
     }
     const contactPreference = form.querySelector('input[name="contact_preference"]:checked')?.value || 'Call';
-    const extendedDetails = description + '\nPreferred contact: ' + contactPreference;
+    // Preserve service-specific quote-link intent, without overriding an explicit user change.
+    const referral = form.dataset.requestedService && form.dataset.prefillRadio === rawService
+      ? form.dataset.requestedService : '';
+    const referralServiceMap = {
+      'airbnb cleaning':'Airbnb / vacation rental cleaning',
+      'interior cleaning':'Interior cleaning',
+      'commercial maintenance':'Commercial maintenance',
+      'painting & apartment repaints':'Painting',
+      'window cleaning':'Window cleaning',
+      'sod installation':'Landscaping',
+      'irrigation repair':'Irrigation & sprinkler repair',
+      'landscaping':'Landscaping',
+      'fence installation and repair':'Fence installation & repair',
+      'vacation home watch':'Vacation home watch / second-home care'
+    };
+    if (referral && referralServiceMap[referral.toLowerCase()]) {
+      service = referralServiceMap[referral.toLowerCase()];
+    }
+    const extendedDetails = (referral ? 'Requested service: ' + referral + '\n' : '')
+      + description + '\nPreferred contact: ' + contactPreference;
     const payload = {
       request_id: requestId,
       full_name: fullName, phone, email: userEmail,
