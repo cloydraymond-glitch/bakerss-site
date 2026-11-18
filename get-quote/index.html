@@ -287,8 +287,9 @@ main .grid .side .card{margin-bottom:18px}
 <div class="f"><label for="when">When do you need it?</label><select id="when" name="timing"><option value="">Select (optional)</option><option>As soon as possible</option><option>This week</option><option>Within a month</option><option>Flexible / just pricing</option></select></div>
 </div>
 <div class="f"><label for="details">Details <span class="opt">(optional)</span></label><textarea id="details" maxlength="3000" name="details" placeholder="What needs attention? Anything we should know about access, size or timing?"></textarea></div>
-<div class="f"><label for="photos">Photos <span class="opt">(optional, helps us quote faster)</span></label>
-<label class="drop" for="photos" id="drop"><b>📷 Tap to add photos</b><small>Up to 5 photos, 5 MB each / 9 MB combined</small><input accept="image/*" id="photos" multiple="" name="attachment" type="file"/></label><ul aria-live="polite" class="files" id="files"></ul><p class="msg" id="fmsg"></p></div>
+<div class="f"><label for="photos">Photos <span class="opt">(temporarily unavailable on the form)</span></label>
+<p style="background:#241b20;border:1px solid #e8197d;border-radius:10px;padding:12px;line-height:1.6">We can still review photos. Submit your quote request first, then <a href="sms:+18434677136" style="color:#ff72b8;text-decoration:underline">text your photos to 843-467-7136</a> with your name and the service requested. Photos cannot be uploaded through this form yet.</p>
+<label class="drop" id="drop" style="display:none"><b>Photo uploads temporarily unavailable</b><input accept="image/*" id="photos" multiple="" name="attachment" type="file" disabled="disabled"/></label><ul aria-live="polite" class="files" id="files"></ul><p class="msg" id="fmsg"></p></div>
 <fieldset><legend>Best way to reach you</legend><div class="pref"><label><input checked="" name="contact_preference" type="radio" value="Call"/><span>Call</span></label><label><input name="contact_preference" type="radio" value="Text"/><span>Text</span></label><label><input name="contact_preference" type="radio" value="Email"/><span>Email</span></label></div></fieldset>
 <div aria-hidden="true" class="hp"><label>Leave blank<input autocomplete="off" name="_honey" tabindex="-1" type="text"/></label></div>
 <button class="submit" id="go" type="submit">Send My Free Quote Request</button>
@@ -396,46 +397,8 @@ fd.append('_autoresponse','Thanks for contacting Bakerss Property Services. We r
 // FormSubmit documents photo uploads through a native multipart POST, not the AJAX route.
 // Preserve the already-working AJAX experience for text-only requests.
 if(files.length){
-  if(files.reduce(function(total,file){return total+file.size;},0)>MAXTOTAL){
-    showErr('Photo attachments must be 9 MB or less combined. Please remove or resize a photo.');return;
-  }
-  try{
-    var nativeForm=document.createElement('form');
-    nativeForm.method='POST';
-    nativeForm.action='https://formsubmit.co/info@bakerss.com';
-    nativeForm.enctype='multipart/form-data';
-    nativeForm.style.display='none';
-    var photoNumber=0;
-    fd.forEach(function(value,key){
-      var input=document.createElement('input');
-      if(value instanceof File){
-        var transfer=new DataTransfer();
-        transfer.items.add(value);
-        input.type='file';
-        input.name=(++photoNumber===1)?'attachment':'attachment_'+photoNumber;
-        input.files=transfer.files;
-      }else{
-        input.type='hidden';
-        input.name=key;
-        input.value=String(value);
-      }
-      nativeForm.appendChild(input);
-    });
-    var next=document.createElement('input');
-    next.type='hidden';next.name='_next';
-    next.value=location.origin+'/get-quote/received/';
-    nativeForm.appendChild(next);
-    document.body.appendChild(nativeForm);
-    go.disabled=true;go.textContent='Sending photos...';
-    nativeForm.submit();
-    return;
-  }catch(uploadError){
-    if(nativeForm&&nativeForm.parentNode)nativeForm.parentNode.removeChild(nativeForm);
-    go.disabled=false;go.textContent='Send My Free Quote Request';
-    showErr('Photos could not be prepared for delivery. Please retry with smaller JPEG/PNG photos, or call or text 843-467-7136.');
-    ev('form_error',{form_id:'quote',photo_upload:true});
-    return;
-  }
+  showErr('Photo uploads are temporarily unavailable. Submit your request without photos, then text the photos to 843-467-7136 with your name and service.');
+  return;
 }
 go.disabled=true;go.textContent='Sending...';
 var ctl=new AbortController(),t=setTimeout(function(){ctl.abort();},45000);

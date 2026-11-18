@@ -9,7 +9,7 @@
   const notice = document.createElement('div');
   notice.setAttribute('role', 'status');
   notice.style.cssText = 'padding:12px 14px;margin:12px 0;background:#281523;border:1px solid #e8197d;border-radius:10px;color:#fff;font-size:13px;line-height:1.6';
-  notice.textContent = 'Staging CRM test mode: an email and detailed description are required. Photos can only be submitted through the existing email form.';
+  notice.textContent = 'Staging CRM test mode: an email and detailed description are required. Photos are temporarily unavailable through the form. Submit your request first, then text photos to 843-467-7136.';
   form.insertBefore(notice, go);
   const email = document.getElementById('email');
   const details = document.getElementById('details');
@@ -19,7 +19,7 @@
   details.maxLength = 2500;
   const alternate = document.createElement('label');
   alternate.style.cssText = 'display:block;color:#fff;font-size:13px;margin:8px 0 14px';
-  alternate.innerHTML = '<input type="checkbox" id="use-email-delivery" style="margin-right:7px">Use existing email delivery instead (supports photo attachments; does not create a CRM opportunity)';
+  alternate.innerHTML = '<input type="checkbox" id="use-email-delivery" style="margin-right:7px">Use existing email delivery instead (text-only; does not create a CRM opportunity)';
   form.insertBefore(alternate, go);
   const sendByEmail = alternate.querySelector('input');
   function syncAlternate() {
@@ -95,7 +95,7 @@
     const photoInput = document.getElementById('photos');
     // The original form maintains its selected files in a closure, so use the rendered list.
     if (document.querySelectorAll('#files li').length || (photoInput && photoInput.files.length)) {
-      msg('Photos are not transmitted to Bakerss OS in this test. Select “Use existing email delivery instead” to send your photos, or remove the photos for the CRM test.');
+      msg('Photo uploads are temporarily unavailable. Please submit your request without photos, then text the photos to 843-467-7136 with your name and service.');
       return;
     }
     if (!checked || !fullName || fullName.length < 2 || fullName.length > 120 ||
