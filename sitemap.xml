@@ -1,10 +1,9 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version='1.0' encoding='utf-8'?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url><loc>https://www.bakerss.com/</loc></url>
   <url><loc>https://www.bakerss.com/about/</loc></url>
   <url><loc>https://www.bakerss.com/apartment-maintenance/</loc></url>
   <url><loc>https://www.bakerss.com/contact/</loc></url>
-  <url><loc>https://www.bakerss.com/get-quote/</loc></url>
   <url><loc>https://www.bakerss.com/hoa-services/</loc></url>
   <url><loc>https://www.bakerss.com/hoa-services/cleaning/</loc></url>
   <url><loc>https://www.bakerss.com/hoa-services/landscaping/</loc></url>
@@ -682,4 +681,6 @@
   <url><loc>https://www.bakerss.com/services/white-glove-estate-care/</loc></url>
   <url><loc>https://www.bakerss.com/services/window-cleaning/</loc></url>
   <url><loc>https://www.bakerss.com/terms/</loc></url>
+<url><loc>https://www.bakerss.com/service-areas/myrtle-beach/neighborhoods/carolina-bays/</loc></url>
+<url><loc>https://www.bakerss.com/get-quote/</loc></url>
 </urlset>

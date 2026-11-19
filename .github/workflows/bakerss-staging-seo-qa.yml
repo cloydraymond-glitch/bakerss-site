@@ -1,0 +1,38 @@
+name: Bakerss Staging SEO Route QA
+
+on:
+  push:
+    branches: [staging]
+    paths:
+      - '.github/workflows/bakerss-staging-seo-qa.yml'
+      - 'scripts/bakerss-staging-seo-qa.mjs'
+      - 'seo-cleanup/redirect-shadow-manifest.txt'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  verify:
+    name: Verify redirects and sitemap on staging
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '24'
+      - name: Validate source routes and 181 candidate removals
+        run: node scripts/bakerss-staging-seo-qa.mjs --static
+      - name: Give Vercel Preview time to deploy new commit
+        run: sleep 30
+      - name: Check redirects on deployed staging URL
+        run: node scripts/bakerss-staging-seo-qa.mjs --live
+      - name: Upload QA report
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: bakerss-staging-seo-qa-report
+          path: seo-cleanup/qa-results/
+          if-no-files-found: warn
+          retention-days: 14

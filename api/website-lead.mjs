@@ -61,6 +61,8 @@ export default async function handler(req, res) {
     res.setHeader('Allow', 'POST');
     return reply(res, 405, { error: 'Method not allowed' });
   }
+  // Extra safety barrier: never route Production traffic to the OS staging endpoint.
+  if (process.env.VERCEL_ENV === 'production') return reject(res, 'production_disabled');
   const origin = req.headers.origin;
   const secret = process.env.WEBSITE_LEADS_PROXY_SECRET;
   const expectedOrigin = process.env.WEBSITE_LEADS_ALLOWED_ORIGIN;

@@ -287,8 +287,9 @@ main .grid .side .card{margin-bottom:18px}
 <div class="f"><label for="when">When do you need it?</label><select id="when" name="timing"><option value="">Select (optional)</option><option>As soon as possible</option><option>This week</option><option>Within a month</option><option>Flexible / just pricing</option></select></div>
 </div>
 <div class="f"><label for="details">Details <span class="opt">(optional)</span></label><textarea id="details" maxlength="3000" name="details" placeholder="What needs attention? Anything we should know about access, size or timing?"></textarea></div>
-<div class="f"><label for="photos">Photos <span class="opt">(optional, helps us quote faster)</span></label>
-<label class="drop" for="photos" id="drop"><b>📷 Tap to add photos</b><small>Up to 5 images, 5 MB each</small><input accept="image/*" id="photos" multiple="" name="attachment" type="file"/></label><ul aria-live="polite" class="files" id="files"></ul><p class="msg" id="fmsg"></p></div>
+<div class="f"><label for="photos">Photos <span class="opt">(temporarily unavailable on the form)</span></label>
+<p style="background:#241b20;border:1px solid #e8197d;border-radius:10px;padding:12px;line-height:1.6">We can still review photos. Submit your quote request first, then <a href="sms:+18434677136" style="color:#ff72b8;text-decoration:underline">text your photos to 843-467-7136</a> with your name and the service requested. Photos cannot be uploaded through this form yet.</p>
+<label class="drop" id="drop" style="display:none"><b>Photo uploads temporarily unavailable</b><input accept="image/*" id="photos" multiple="" name="attachment" type="file" disabled="disabled"/></label><ul aria-live="polite" class="files" id="files"></ul><p class="msg" id="fmsg"></p></div>
 <fieldset><legend>Best way to reach you</legend><div class="pref"><label><input checked="" name="contact_preference" type="radio" value="Call"/><span>Call</span></label><label><input name="contact_preference" type="radio" value="Text"/><span>Text</span></label><label><input name="contact_preference" type="radio" value="Email"/><span>Email</span></label></div></fieldset>
 <div aria-hidden="true" class="hp"><label>Leave blank<input autocomplete="off" name="_honey" tabindex="-1" type="text"/></label></div>
 <button class="submit" id="go" type="submit">Send My Free Quote Request</button>
@@ -308,7 +309,7 @@ main .grid .side .card{margin-bottom:18px}
 /* ENDPOINT: FormSubmit delivers submissions to info@bakerss.com. The first submission triggers a one-time activation email to that inbox.
    To use another service (Formspree, Web3Forms, your own API), change ENDPOINT and keep the same FormData fields. */
 var ENDPOINT='https://formsubmit.co/ajax/info@bakerss.com';
-var MAXF=5,MAXB=5*1024*1024;
+var MAXF=5,MAXB=5*1024*1024,MAXTOTAL=9*1024*1024;
 var form=document.getElementById('qf'),go=document.getElementById('go'),err=document.getElementById('err'),done=document.getElementById('done');
 var files=[],started=false;
 function ev(n,p){if(typeof gtag==='function')gtag('event',n,p||{});}
@@ -324,12 +325,53 @@ else if(n==='email'){var emailRequired=form.querySelector('input[name=contact_pr
 else{bad=v==='';}
 mark(el,bad);return!bad;}
 document.querySelectorAll('input[name=contact_preference]').forEach(function(r){r.addEventListener('change',function(){var required=r.checked&&r.value==='Email';form.elements.email.required=required;check('email');});});
-var requestedService=new URLSearchParams(location.search).get('service');if(requestedService){document.querySelectorAll('#svc input').forEach(function(r){if(r.value===requestedService){r.checked=true;r.dispatchEvent(new Event('change'));}});}
+// Match the service names used by Bakerss service-page quote links to this form's broader choices.
+// Keep the originating service visible and preserve it for either lead-delivery method.
+var requestedService=new URLSearchParams(location.search).get('service');
+if(requestedService){
+  var referral=requestedService.trim().slice(0,100);
+  var referralAliases={
+    'airbnb cleaning':'Cleaning',
+    'interior cleaning':'Cleaning',
+    'commercial maintenance':'HOA / apartment / commercial',
+    'painting & apartment repaints':'Other / multiple services',
+    'window cleaning':'Window cleaning',
+    'sod installation':'Lawn care & landscaping',
+    'irrigation repair':'Lawn care & landscaping',
+    'landscaping':'Lawn care & landscaping',
+    'dryer vent cleaning':'Other / multiple services',
+    'fence installation and repair':'Handyman & repairs',
+    'vacation home watch':'Property maintenance plan'
+  };
+  var category=referralAliases[referral.toLowerCase()]||referral;
+  var choices=Array.from(document.querySelectorAll('#svc input[name="service"]'));
+  var selected=choices.find(function(r){return r.value.toLowerCase()===category.toLowerCase();});
+  if(selected){
+    selected.checked=true;
+    selected.dispatchEvent(new Event('change'));
+    if(referral.toLowerCase()!==selected.value.toLowerCase()){
+      form.dataset.requestedService=referral;
+      form.dataset.prefillRadio=selected.value;
+      var referralNote=document.createElement('p');
+      referralNote.id='requested-service-note';
+      referralNote.style.cssText='margin:8px 0;font-size:13px;opacity:.9';
+      referralNote.textContent='You requested: '+referral+'. We preselected the closest service category; describe the work below.';
+      document.getElementById('svc').insertAdjacentElement('afterend',referralNote);
+      choices.forEach(function(r){r.addEventListener('change',function(){
+        if(r.checked&&r.value!==form.dataset.prefillRadio){
+          delete form.dataset.requestedService;
+          delete form.dataset.prefillRadio;
+          referralNote.remove();
+        }
+      });});
+    }
+  }
+}
 /* photos */
 var inp=document.getElementById('photos'),list=document.getElementById('files'),fmsg=document.getElementById('fmsg'),drop=document.getElementById('drop');
 function fm(t){fmsg.textContent=t;fmsg.style.display=t?'block':'none';fmsg.style.color='var(--err)';fmsg.style.fontSize='13px';}
 function render(){list.innerHTML='';files.forEach(function(f,i){var li=document.createElement('li');var s=document.createElement('span');s.textContent=f.name+' ('+(f.size/1048576).toFixed(1)+' MB)';var b=document.createElement('button');b.type='button';b.textContent='Remove';b.setAttribute('aria-label','Remove '+f.name);b.onclick=function(){files.splice(i,1);render();};li.appendChild(s);li.appendChild(b);list.appendChild(li);});}
-inp.addEventListener('change',function(){fm('');Array.prototype.forEach.call(inp.files,function(f){if(files.length>=MAXF){fm('You can add up to '+MAXF+' photos.');return;}if(f.size>MAXB){fm(f.name+' is larger than 5 MB.');return;}if(!/^image\//.test(f.type)){fm(f.name+' is not an image.');return;}files.push(f);});inp.value='';render();});
+inp.addEventListener('change',function(){fm('');Array.prototype.forEach.call(inp.files,function(f){if(files.length>=MAXF){fm('You can add up to '+MAXF+' photos.');return;}if(f.size>MAXB){fm(f.name+' is larger than 5 MB.');return;}if(!/^image\//.test(f.type)){fm(f.name+' is not an image.');return;}if(files.reduce(function(total,file){return total+file.size;},0)+f.size>MAXTOTAL){fm('Photos cannot exceed 9 MB combined. Remove a photo or choose smaller images.');return;}files.push(f);});inp.value='';render();});
 ['dragenter','dragover'].forEach(function(e){drop.addEventListener(e,function(x){x.preventDefault();drop.classList.add('on');});});
 ['dragleave','drop'].forEach(function(e){drop.addEventListener(e,function(x){x.preventDefault();drop.classList.remove('on');});});
 drop.addEventListener('drop',function(x){var dt=x.dataTransfer;if(dt&&dt.files){inp.files=dt.files;inp.dispatchEvent(new Event('change'));}});
@@ -343,6 +385,8 @@ if(!ok){showErr('Please check the highlighted fields. If you select Email, inclu
 var fd=new FormData();
 var d={service:svc.value,name:val('name'),phone:val('phone'),email:val('email'),city:val('city'),property_type:val('property_type'),timing:val('timing'),contact_preference:form.querySelector('input[name=contact_preference]:checked').value,details:val('details')};
 Object.keys(d).forEach(function(k){fd.append(k,d[k]||'Not provided');});
+ var referralForEmail=form.dataset.requestedService&&form.dataset.prefillRadio===svc.value?form.dataset.requestedService:'';
+ if(referralForEmail)fd.append('requested_service',referralForEmail);
 var q=new URLSearchParams(location.search);
 ['utm_source','utm_medium','utm_campaign'].forEach(function(k){if(q.get(k))fd.append(k,q.get(k));});
 fd.append('referrer',document.referrer||'direct');fd.append('submitted_from',location.href);
@@ -350,6 +394,12 @@ files.forEach(function(f){fd.append('attachment',f,f.name);});
 fd.append('_subject','New quote request: '+d.service+' ('+d.city+')');fd.append('_template','table');fd.append('_captcha','false');
 if(d.email)fd.append('_replyto',d.email);
 fd.append('_autoresponse','Thanks for contacting Bakerss Property Services. We received your quote request and Ray or Courtney will follow up soon. For anything urgent call or text 843-467-7136.');
+// FormSubmit documents photo uploads through a native multipart POST, not the AJAX route.
+// Preserve the already-working AJAX experience for text-only requests.
+if(files.length){
+  showErr('Photo uploads are temporarily unavailable. Submit your request without photos, then text the photos to 843-467-7136 with your name and service.');
+  return;
+}
 go.disabled=true;go.textContent='Sending...';
 var ctl=new AbortController(),t=setTimeout(function(){ctl.abort();},45000);
 fetch(ENDPOINT,{method:'POST',body:fd,headers:{'Accept':'application/json'},signal:ctl.signal}).then(function(r){return r.json().catch(function(){return{};}).then(function(j){if(!r.ok||(j.success!==true&&j.success!=='true'))throw new Error('fail');});}).then(function(){clearTimeout(t);
@@ -371,7 +421,10 @@ var menu=document.getElementById('mobileMenu');
 var open=menu.classList.toggle('open');
 btn.setAttribute('aria-expanded',open?'true':'false');
 }
-</script><script>document.querySelectorAll('.dropdown-wrap > button').forEach(function(button){button.addEventListener('click',function(){var expanded=button.getAttribute('aria-expanded')==='true';document.querySelectorAll('.dropdown-wrap > button').forEach(function(b){b.setAttribute('aria-expanded','false')});button.setAttribute('aria-expanded',String(!expanded));});button.addEventListener('keydown',function(e){if(e.key==='Escape'){button.setAttribute('aria-expanded','false');button.focus();}});});</script><script src="/assets/bakerss-conversions.js"></script><footer class="footer bakerss-chrome">
+</script><script>document.querySelectorAll('.dropdown-wrap > button').forEach(function(button){button.addEventListener('click',function(){var expanded=button.getAttribute('aria-expanded')==='true';document.querySelectorAll('.dropdown-wrap > button').forEach(function(b){b.setAttribute('aria-expanded','false')});button.setAttribute('aria-expanded',String(!expanded));});button.addEventListener('keydown',function(e){if(e.key==='Escape'){button.setAttribute('aria-expanded','false');button.focus();}});});</script><script src="/assets/bakerss-conversions.js"></script>
+<!-- STAGING-ONLY: CRM is opt-in; existing FormSubmit remains the default delivery method. -->
+<script defer src="/assets/js/bakerss-crm-staging-config.js"></script>
+<script defer src="/assets/js/bakerss-quote-crm-bridge.js"></script><footer class="footer bakerss-chrome">
 <div class="wrap">
 <div class="footer-grid">
 <div>
