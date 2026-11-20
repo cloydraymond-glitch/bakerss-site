@@ -1017,11 +1017,6 @@
       "permanent": true
     },
     {
-      "source": "/service-areas/litchfield-beach/neighborhoods/litchfield-by-the-sea/",
-      "destination": "/service-areas/litchfield-beach/neighborhoods/",
-      "permanent": true
-    },
-    {
       "source": "/service-areas/conway/property-maintenance-plans/",
       "destination": "/service-areas/carolina-forest/property-maintenance-plans/",
       "permanent": true
@@ -1189,6 +1184,16 @@
     {
       "source": "/learning-center/pressure-washing/",
       "destination": "/learning-center/calculators/pressure-washing/",
+      "permanent": true
+    },
+    {
+      "source": "/service-areas/carolina-forest/neighborhoods/covington-lake-and-covington-lake-east/",
+      "destination": "/service-areas/carolina-forest/neighborhoods/covington-lake/",
+      "permanent": true
+    },
+    {
+      "source": "/service-areas/conway/neighborhoods/aquila-estate/",
+      "destination": "/service-areas/conway/neighborhoods/aquila-estates/",
       "permanent": true
     }
   ],

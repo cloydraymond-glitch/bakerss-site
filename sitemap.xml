@@ -340,6 +340,7 @@
   <url><loc>https://www.bakerss.com/service-areas/litchfield-beach/neighborhoods/huntington-lake/</loc></url>
   <url><loc>https://www.bakerss.com/service-areas/litchfield-beach/neighborhoods/huntington-marsh/</loc></url>
   <url><loc>https://www.bakerss.com/service-areas/litchfield-beach/neighborhoods/inlet-point/</loc></url>
+  <url><loc>https://www.bakerss.com/service-areas/litchfield-beach/neighborhoods/litchfield-by-the-sea/</loc></url>
   <url><loc>https://www.bakerss.com/service-areas/litchfield-beach/neighborhoods/marsh-hawk/</loc></url>
   <url><loc>https://www.bakerss.com/service-areas/litchfield-beach/neighborhoods/north-litchfield-beach/</loc></url>
   <url><loc>https://www.bakerss.com/service-areas/litchfield-beach/neighborhoods/osprey-watch/</loc></url>
@@ -683,4 +684,13 @@
   <url><loc>https://www.bakerss.com/terms/</loc></url>
 <url><loc>https://www.bakerss.com/service-areas/myrtle-beach/neighborhoods/carolina-bays/</loc></url>
 <url><loc>https://www.bakerss.com/get-quote/</loc></url>
+  <url>
+    <loc>https://www.bakerss.com/service-areas/carolina-forest/neighborhoods/carolina-waterway-plantation/</loc>
+  </url>
+  <url>
+    <loc>https://www.bakerss.com/service-areas/conway/neighborhoods/aquila-estates/</loc>
+  </url>
+  <url>
+    <loc>https://www.bakerss.com/service-areas/myrtle-beach/neighborhoods/seaside-village/</loc>
+  </url>
 </urlset>
